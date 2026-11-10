@@ -114,7 +114,7 @@ html,body,#map{margin:0;height:100%;font:13px/1.4 system-ui,-apple-system,"Segoe
 <div class="row"><span>Day</span><div class="seg" data-g="day"><button data-v="weekday" class="on">Weekday</button><button data-v="saturday">Sat</button><button data-v="sunday">Sun</button></div></div>
 <div class="row"><span>Time</span><div class="seg" data-g="per"><button data-v="peak" class="on" title="07:00–09:00, 17:00–19:00">Peak</button><button data-v="day" title="09:00–17:00">Day</button><button data-v="night" title="22:00–06:00">Night</button></div></div>
 <div class="row"><span>Trip</span><div class="seg" data-g="time"><button data-v="t_min">Min</button><button data-v="t_med" class="on">Median</button><button data-v="t_max">Max</button></div></div>
-<div class="row"><span>Base</span><select id="basesel"><option value="minimal">Minimal</option><option value="streets">Streets</option><option value="detailed">Detailed</option><option value="satellite">Satellite</option><option value="hybrid">Hybrid</option></select></div>
+<div class="row"><span>Base</span><select id="basesel"><option value="minimal">Minimal</option><option value="streets">Streets</option><option value="detailed">Detailed</option><option value="satellite">Google satellite</option><option value="hybrid">Google hybrid</option></select></div>
 <div class="t">Connections &amp; nodes</div>
 <label><input type="checkbox" data-l="bigrail" checked><span class="sw" style="border-color:#d62728"></span><span id="nl-bigrail" class="nd"><i class="dotn" style="background:#d62728"></i></span>National railways</label><label><input type="checkbox" data-l="localrail" checked><span class="sw" style="border-color:#2ca02c"></span><span id="nl-localrail" class="nd"><i class="dotn" style="background:#2ca02c"></i></span>Local railways</label><label><input type="checkbox" data-l="bus" checked><span class="sw dash" style="border-color:#1f77b4"></span><span id="nl-bus" class="nd"><i class="dotn" style="background:#1f77b4"></i></span>Regional bus</label>
 <label><input type="checkbox" data-l="walk" checked><span class="sw dot"></span>Walk between stations</label>
@@ -223,11 +223,10 @@ const isCol=v=>typeof v==='string'&&/^(#[0-9a-f]{3,8}$|rgba?\(|hsla?\(|white$|bl
 function recolor(v){if(isCol(v))return conv(v);if(Array.isArray(v))return v.map(recolor);if(v&&typeof v==='object'){const o={};for(const k in v)o[k]=k==='stops'?v[k].map(([z,c])=>[z,recolor(c)]):recolor(v[k]);return o;}return v;}
 function darken(st){for(const L of st.layers){if(!L.paint)continue;for(const k in L.paint)if(/color/.test(k))L.paint[k]=recolor(L.paint[k]);}return st;}
 const SAT=()=>BASE==='satellite'||BASE==='hybrid';
-function rasterStyle(){const T=(p)=>'https://server.arcgisonline.com/ArcGIS/rest/services/'+p+'/MapServer/tile/{z}/{y}/{x}';
- const st={version:8,glyphs:'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf',sources:{sat:{type:'raster',tiles:[T('World_Imagery')],tileSize:256,maxzoom:19,attribution:'Imagery © Esri, Maxar, Earthstar Geographics'}},
-  layers:[{id:'sat',type:'raster',source:'sat',paint:{'raster-brightness-max':MODE==='dark'?0.6:1}}]};
- if(BASE==='hybrid'){st.sources.ref={type:'raster',tiles:[T('Reference/World_Boundaries_and_Places')],tileSize:256,maxzoom:19};st.layers.push({id:'ref',type:'raster',source:'ref'});}
- return st;}
+function rasterStyle(){   // Google satellite (lyrs=s) / hybrid (lyrs=y: imagery with labels and roads)
+ const ly=BASE==='hybrid'?'y':'s',T=['0','1','2','3'].map(k=>`https://mt${k}.google.com/vt/lyrs=${ly}&x={x}&y={y}&z={z}`);
+ return {version:8,glyphs:'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf',sources:{sat:{type:'raster',tiles:T,tileSize:256,maxzoom:21,attribution:'Imagery © Google'}},
+  layers:[{id:'sat',type:'raster',source:'sat',paint:{'raster-brightness-max':MODE==='dark'?0.6:1}}]};}
 async function styleFor(){if(SAT())return rasterStyle();const st=await (await fetch(STYLES[BASE])).json();if(MODE!=='dark')return st;try{return darken(JSON.parse(JSON.stringify(st)));}catch(e){console.error('dark style failed',e);return st;}}
 function theme(){document.body.classList.toggle('dark',MODE==='dark');const d=MODE==='dark'||SAT();
  const set=(l,p,v)=>{if(map.getLayer(l))map.setPaintProperty(l,p,v);};

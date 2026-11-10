@@ -120,7 +120,7 @@ def main():
 <a href="docs/literature.html"><b>Literature</b></a>
 <a href="docs/readme.html"><b>Code</b></a></div>
 <h2>Papers</h2><div class="links">{plinks}</div>
-<footer>Data: Mobilitätsverbünde Österreich, opentransportdata.swiss, Basque open data, Transitland, OpenStreetMap, OpenFreeMap, Esri, WorldPop.</footer>"""
+<footer>Data: Mobilitätsverbünde Österreich, opentransportdata.swiss, Basque open data, Transitland, OpenStreetMap, OpenFreeMap, Google, WorldPop.</footer>"""
     open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8").write(
         page("Takt network maps", body, "Interactive public-transport network and symmetry-node maps for five regions"))
     print("index.html, docs/rules.html, docs/literature.html written")
