@@ -24,17 +24,9 @@ article code{background:var(--bg);padding:1px 4px;border-radius:4px;font-size:90
 :root{--soft:#eceff4}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--soft:#262e3d}}:root[data-theme="dark"]{--soft:#262e3d}
 canvas{width:100%;height:auto;display:block;border-radius:12px;background:var(--soft)}.stage{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
 ul{color:var(--ink);font-size:14.5px;line-height:1.55;padding-left:20px}main{max-width:920px}</style></head>
-<body><main><a class="back" href="../../index.html">← all regions and explainers</a>
-<h1>How clock-phase scheduling works</h1>
-<p class="lead">One hub, one pulse. All lines repeat at the same rhythm and meet around a common minute, the symmetry minute (here :00).</p>
-<div class="stage"><canvas id="anim" width="720" height="330"></canvas></div>
-<ul>
-<li>Local trains and buses arrive first, a few minutes before the symmetry minute. Buses may arrive up to 12′ early.</li>
-<li>The fast trains arrive last, on the centre tracks, just before :00.</li>
-<li>Around :00 everyone changes, often just across the platform. Then the fast trains leave first, and the locals and buses follow.</li>
-<li>Arrivals before the minute mirror the departures after it, so the same changes work in every direction. This is what makes a hub symmetric.</li>
-<li>Next: <a href="../symmetry/">why symmetry is needed and not just coordination</a>.</li>
-</ul></main><script>
+<body><main><a class="back" href="../../index.html">← back</a>
+<h1>Clock-face hub</h1>
+<div class="stage"><canvas id="anim" width="720" height="330"></canvas></div></main><script>
 const SK=['bigrail','localrail','bus'],COL={bigrail:'#d32f2f',localrail:'#2e7d32',bus:'#1e6fd9'};
  const ANIM=(()=>{const cv=document.getElementById('anim'),g=cv.getContext('2d'),W=cv.width,H=cv.height;let raf=0,t0=0;
   const css=(v)=>getComputedStyle(document.body).getPropertyValue(v).trim()||'#222';

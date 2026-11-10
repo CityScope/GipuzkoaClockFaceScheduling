@@ -22,26 +22,20 @@ article table{border-collapse:collapse;font-size:13.5px;width:100%;display:block
 article code{background:var(--bg);padding:1px 4px;border-radius:4px;font-size:90%}
 .back{display:inline-block;margin-bottom:14px}
 </style></head>
-<body><main><h1>Takt / timetable network maps</h1>
-<p class="lead">Interactive maps of the regional public-transport network built from GTFS timetables: nodes, links and headways,
-timed connections between directions, and symmetry nodes (Taktknoten) where arrivals come just before and departures just after a
-common minute. Choose a region to open its map — the day and time band can be changed on the map; click a node for its symmetry diagram,
-connections and timetable.</p>
-<div class="leg"><span><i style="background:#d32f2f"></i>national / mainline rail</span><span><i style="background:#2e7d32"></i>local rail</span><span><i style="background:#1e6fd9"></i>regional bus</span></div>
-<h2>Regions</h2><div class="grid"><a class="card" href="maps/gipuzkoa/"><img src="output/gipuzkoa/overview.png" alt="Network overview of Gipuzkoa" loading="lazy"><div class="b"><h3>Gipuzkoa</h3><div class="c">Spain · Basque Country · Gipuzkoa public transport</div>
-<div class="s"><div><b>63</b>nodes</div><div><b>18</b>symmetry nodes (peak)</div></div></div></a><a class="card" href="maps/vorarlberg/"><img src="output/vorarlberg/overview.png" alt="Network overview of Vorarlberg" loading="lazy"><div class="b"><h3>Vorarlberg</h3><div class="c">Austria · Vorarlberg public transport</div>
-<div class="s"><div><b>53</b>nodes</div><div><b>21</b>symmetry nodes (peak)</div></div></div></a><a class="card" href="maps/aargau/"><img src="output/aargau/overview.png" alt="Network overview of Aargau" loading="lazy"><div class="b"><h3>Aargau</h3><div class="c">Switzerland · Aargau public transport</div>
-<div class="s"><div><b>87</b>nodes</div><div><b>42</b>symmetry nodes (peak)</div></div></div></a><a class="card" href="maps/luzern/"><img src="output/luzern/overview.png" alt="Network overview of Luzern" loading="lazy"><div class="b"><h3>Luzern</h3><div class="c">Switzerland · Lucerne canton public transport</div>
-<div class="s"><div><b>60</b>nodes</div><div><b>23</b>symmetry nodes (peak)</div></div></div></a><a class="card" href="maps/oberoesterreich/"><img src="output/oberoesterreich/overview.png" alt="Network overview of Oberösterreich" loading="lazy"><div class="b"><h3>Oberösterreich</h3><div class="c">Austria · Upper Austria (Linz–Wels–Steyr) public transport</div>
-<div class="s"><div><b>107</b>nodes</div><div><b>21</b>symmetry nodes (peak)</div></div></div></a></div>
+<body><main><h1>Clock-face timetable maps</h1>
+<div class="leg"><span><i style="background:#d32f2f"></i>rail</span><span><i style="background:#2e7d32"></i>local rail</span><span><i style="background:#1e6fd9"></i>bus</span></div>
+<h2>Regions</h2><div class="grid"><a class="card" href="maps/gipuzkoa/"><img src="output/gipuzkoa/overview.png" alt="Network overview of Gipuzkoa" loading="lazy"><div class="b"><h3>Gipuzkoa</h3><div class="c">Spain · Basque Country</div>
+<div class="s"><div><b>63</b>nodes</div><div><b>18</b>symmetric</div></div></div></a><a class="card" href="maps/vorarlberg/"><img src="output/vorarlberg/overview.png" alt="Network overview of Vorarlberg" loading="lazy"><div class="b"><h3>Vorarlberg</h3><div class="c">Austria</div>
+<div class="s"><div><b>53</b>nodes</div><div><b>21</b>symmetric</div></div></div></a><a class="card" href="maps/aargau/"><img src="output/aargau/overview.png" alt="Network overview of Aargau" loading="lazy"><div class="b"><h3>Aargau</h3><div class="c">Switzerland</div>
+<div class="s"><div><b>87</b>nodes</div><div><b>42</b>symmetric</div></div></div></a><a class="card" href="maps/luzern/"><img src="output/luzern/overview.png" alt="Network overview of Luzern" loading="lazy"><div class="b"><h3>Luzern</h3><div class="c">Switzerland</div>
+<div class="s"><div><b>60</b>nodes</div><div><b>23</b>symmetric</div></div></div></a><a class="card" href="maps/oberoesterreich/"><img src="output/oberoesterreich/overview.png" alt="Network overview of Oberösterreich" loading="lazy"><div class="b"><h3>Oberösterreich</h3><div class="c">Austria</div>
+<div class="s"><div><b>107</b>nodes</div><div><b>21</b>symmetric</div></div></div></a></div>
 <h2>Explainers</h2><div class="links">
-<a href="explain/clock-phase/"><b>How clock-phase scheduling works</b><span>Animation of a pulse at a hub: locals and buses arrive first, fast trains at the symmetry minute, everyone changes and leaves</span></a>
-<a href="explain/symmetry/"><b>Why symmetry, not just coordination</b><span>A grid of four hubs: local coordination without symmetry versus a symmetric clock-face timetable</span></a></div>
-<h2>Method and background</h2><div class="links">
-<a href="docs/rules.html"><b>Network rules</b><span>How nodes, links, connections and symmetries are defined</span></a>
-<a href="docs/literature.html"><b>Literature notes</b><span>Taktfahrplan / ITF review with page references</span></a>
-<a href="docs/readme.html"><b>README · code</b><span>Folders, how to run the Python analysis and map generation</span></a></div>
-<h2>Papers</h2><div class="links"><a href="literature/papers/BMK_Zielnetz2040_Fachentwurf.pdf"><b>BMK Zielnetz2040 Fachentwurf</b><span>PDF</span></a><a href="literature/papers/Fischer_2024_OeBB_Zielnetz_TUWien.pdf"><b>Fischer 2024 OeBB Zielnetz TUWien</b><span>PDF</span></a><a href="literature/papers/Fuchs_etal_2025_Integrated_Periodic_Railway_Timetabling_SMT.pdf"><b>Fuchs etal 2025 Integrated Periodic Railway Timetabling SMT</b><span>PDF</span></a><a href="literature/papers/Hesse_etal_2000_ITF.pdf"><b>Hesse etal 2000 ITF</b><span>PDF</span></a><a href="literature/papers/Kraft_Thalmann_2022_Anschlussoptimierung.pdf"><b>Kraft Thalmann 2022 Anschlussoptimierung</b><span>PDF</span></a><a href="literature/papers/Paetzold_2019_Robust_Periodic_Timetables_Delay_Mgmt.pdf"><b>Paetzold 2019 Robust Periodic Timetables Delay Mgmt</b><span>PDF</span></a><a href="literature/papers/Riedmueller_Lindner_2025_Column_Generation_Periodic_Timetabling.pdf"><b>Riedmueller Lindner 2025 Column Generation Periodic Timetabling</b><span>PDF</span></a><a href="literature/papers/Schiewe_Schoebel_2021_Integrated_Optimization_Public_Transport.pdf"><b>Schiewe Schoebel 2021 Integrated Optimization Public Transport</b><span>PDF</span></a><a href="literature/papers/Teichmann_2007_ITF_Planung.pdf"><b>Teichmann 2007 ITF Planung</b><span>PDF</span></a></div>
-<footer>Timetable data: Mobilitätsverbünde Österreich OG (Austria), opentransportdata.swiss (Switzerland), Basque / Spanish open data and
-Transitland (Gipuzkoa). Base map: OpenFreeMap / OpenStreetMap contributors; satellite: Esri. Population: WorldPop.
-Papers are the property of their authors and publishers.</footer></main></body></html>
+<a href="explain/clock-phase/"><b>Clock-face hub</b></a>
+<a href="explain/symmetry/"><b>Why symmetry</b></a></div>
+<h2>Method</h2><div class="links">
+<a href="docs/rules.html"><b>Rules</b></a>
+<a href="docs/literature.html"><b>Literature</b></a>
+<a href="docs/readme.html"><b>Code</b></a></div>
+<h2>Papers</h2><div class="links"><a href="literature/papers/BMK_Zielnetz2040_Fachentwurf.pdf"><b>BMK Zielnetz2040 Fachentwurf</b></a><a href="literature/papers/Fischer_2024_OeBB_Zielnetz_TUWien.pdf"><b>Fischer 2024 OeBB Zielnetz TUWien</b></a><a href="literature/papers/Fuchs_etal_2025_Integrated_Periodic_Railway_Timetabling_SMT.pdf"><b>Fuchs etal 2025 Integrated Periodic Railway Timetabling SMT</b></a><a href="literature/papers/Hesse_etal_2000_ITF.pdf"><b>Hesse etal 2000 ITF</b></a><a href="literature/papers/Kraft_Thalmann_2022_Anschlussoptimierung.pdf"><b>Kraft Thalmann 2022 Anschlussoptimierung</b></a><a href="literature/papers/Paetzold_2019_Robust_Periodic_Timetables_Delay_Mgmt.pdf"><b>Paetzold 2019 Robust Periodic Timetables Delay Mgmt</b></a><a href="literature/papers/Riedmueller_Lindner_2025_Column_Generation_Periodic_Timetabling.pdf"><b>Riedmueller Lindner 2025 Column Generation Periodic Timetabling</b></a><a href="literature/papers/Schiewe_Schoebel_2021_Integrated_Optimization_Public_Transport.pdf"><b>Schiewe Schoebel 2021 Integrated Optimization Public Transport</b></a><a href="literature/papers/Teichmann_2007_ITF_Planung.pdf"><b>Teichmann 2007 ITF Planung</b></a></div>
+<footer>Data: Mobilitätsverbünde Österreich, opentransportdata.swiss, Basque open data, Transitland, OpenStreetMap, OpenFreeMap, Esri, WorldPop.</footer></main></body></html>

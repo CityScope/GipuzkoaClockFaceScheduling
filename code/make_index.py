@@ -63,7 +63,7 @@ def md_page(src, out, title):
     body = markdown.markdown(txt, extensions=["tables", "fenced_code", "sane_lists"])
     os.makedirs(os.path.dirname(os.path.join(ROOT, out)), exist_ok=True)
     open(os.path.join(ROOT, out), "w", encoding="utf-8").write(
-        page(title, f'<a class="back" href="../index.html">← all regions and explainers</a><article>{body}</article>'))
+        page(title, f'<a class="back" href="../index.html">← back</a><article>{body}</article>'))
 
 
 def clock_phase_page():
@@ -74,17 +74,9 @@ def clock_phase_page():
     css = CSS + """:root{--soft:#eceff4}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--soft:#262e3d}}:root[data-theme="dark"]{--soft:#262e3d}
 canvas{width:100%;height:auto;display:block;border-radius:12px;background:var(--soft)}.stage{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
 ul{color:var(--ink);font-size:14.5px;line-height:1.55;padding-left:20px}main{max-width:920px}"""
-    body = """<a class="back" href="../../index.html">← all regions and explainers</a>
-<h1>How clock-phase scheduling works</h1>
-<p class="lead">One hub, one pulse. All lines repeat at the same rhythm and meet around a common minute, the symmetry minute (here :00).</p>
-<div class="stage"><canvas id="anim" width="720" height="330"></canvas></div>
-<ul>
-<li>Local trains and buses arrive first, a few minutes before the symmetry minute. Buses may arrive up to 12′ early.</li>
-<li>The fast trains arrive last, on the centre tracks, just before :00.</li>
-<li>Around :00 everyone changes, often just across the platform. Then the fast trains leave first, and the locals and buses follow.</li>
-<li>Arrivals before the minute mirror the departures after it, so the same changes work in every direction. This is what makes a hub symmetric.</li>
-<li>Next: <a href="../symmetry/">why symmetry is needed and not just coordination</a>.</li>
-</ul>"""
+    body = """<a class="back" href="../../index.html">← back</a>
+<h1>Clock-face hub</h1>
+<div class="stage"><canvas id="anim" width="720" height="330"></canvas></div>"""
     script = """<script>
 const SK=['bigrail','localrail','bus'],COL={bigrail:'#d32f2f',localrail:'#2e7d32',bus:'#1e6fd9'};
 """ + js + """ANIM.start();
@@ -109,32 +101,26 @@ def main():
         nn, ns = stats(r)
         img = f"output/{r}/overview.png"
         im = f'<img src="{img}" alt="Network overview of {NICE[r]}" loading="lazy">' if os.path.exists(os.path.join(ROOT, img)) else ""
-        cards.append(f"""<a class="card" href="{mp}">{im}<div class="b"><h3>{NICE[r]}</h3><div class="c">{COUNTRY[r]} · {html.escape(title)}</div>
-<div class="s"><div><b>{nn if nn is not None else '–'}</b>nodes</div><div><b>{ns if ns is not None else '–'}</b>symmetry nodes (peak)</div></div></div></a>""")
+        cards.append(f"""<a class="card" href="{mp}">{im}<div class="b"><h3>{NICE[r]}</h3><div class="c">{COUNTRY[r]}</div>
+<div class="s"><div><b>{nn if nn is not None else '–'}</b>nodes</div><div><b>{ns if ns is not None else '–'}</b>symmetric</div></div></div></a>""")
     md_page("sources/network_rules.md", "docs/rules.html", "Network rules")
     md_page("literature/taktfahrplan_review.md", "docs/literature.html", "Literature notes")
     md_page("README.md", "docs/readme.html", "README")
     clock_phase_page()
     papers = sorted(os.listdir(os.path.join(ROOT, "literature", "papers")))
-    plinks = "".join(f'<a href="literature/papers/{p}"><b>{html.escape(p.rsplit(".", 1)[0].replace("_", " "))}</b><span>PDF</span></a>' for p in papers)
-    body = f"""<h1>Takt / timetable network maps</h1>
-<p class="lead">Interactive maps of the regional public-transport network built from GTFS timetables: nodes, links and headways,
-timed connections between directions, and symmetry nodes (Taktknoten) where arrivals come just before and departures just after a
-common minute. Choose a region to open its map — the day and time band can be changed on the map; click a node for its symmetry diagram,
-connections and timetable.</p>
-<div class="leg"><span><i style="background:#d32f2f"></i>national / mainline rail</span><span><i style="background:#2e7d32"></i>local rail</span><span><i style="background:#1e6fd9"></i>regional bus</span></div>
+    plinks = "".join(f'<a href="literature/papers/{p}"><b>{html.escape(p.rsplit(".", 1)[0].replace("_", " "))}</b></a>' for p in papers)
+    body = f"""<h1>Clock-face timetable maps</h1>
+<div class="leg"><span><i style="background:#d32f2f"></i>rail</span><span><i style="background:#2e7d32"></i>local rail</span><span><i style="background:#1e6fd9"></i>bus</span></div>
 <h2>Regions</h2><div class="grid">{''.join(cards)}</div>
 <h2>Explainers</h2><div class="links">
-<a href="explain/clock-phase/"><b>How clock-phase scheduling works</b><span>Animation of a pulse at a hub: locals and buses arrive first, fast trains at the symmetry minute, everyone changes and leaves</span></a>
-<a href="explain/symmetry/"><b>Why symmetry, not just coordination</b><span>A grid of four hubs: local coordination without symmetry versus a symmetric clock-face timetable</span></a></div>
-<h2>Method and background</h2><div class="links">
-<a href="docs/rules.html"><b>Network rules</b><span>How nodes, links, connections and symmetries are defined</span></a>
-<a href="docs/literature.html"><b>Literature notes</b><span>Taktfahrplan / ITF review with page references</span></a>
-<a href="docs/readme.html"><b>README · code</b><span>Folders, how to run the Python analysis and map generation</span></a></div>
+<a href="explain/clock-phase/"><b>Clock-face hub</b></a>
+<a href="explain/symmetry/"><b>Why symmetry</b></a></div>
+<h2>Method</h2><div class="links">
+<a href="docs/rules.html"><b>Rules</b></a>
+<a href="docs/literature.html"><b>Literature</b></a>
+<a href="docs/readme.html"><b>Code</b></a></div>
 <h2>Papers</h2><div class="links">{plinks}</div>
-<footer>Timetable data: Mobilitätsverbünde Österreich OG (Austria), opentransportdata.swiss (Switzerland), Basque / Spanish open data and
-Transitland (Gipuzkoa). Base map: OpenFreeMap / OpenStreetMap contributors; satellite: Esri. Population: WorldPop.
-Papers are the property of their authors and publishers.</footer>"""
+<footer>Data: Mobilitätsverbünde Österreich, opentransportdata.swiss, Basque open data, Transitland, OpenStreetMap, OpenFreeMap, Esri, WorldPop.</footer>"""
     open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8").write(
         page("Takt network maps", body, "Interactive public-transport network and symmetry-node maps for five regions"))
     print("index.html, docs/rules.html, docs/literature.html written")
