@@ -4,163 +4,90 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Why Symmetry</title>
-<meta name="description" content="Why a clock-face timetable needs symmetric hub minutes and fitting travel times, not only local coordination.">
+<meta name="description" content="A grid of four hubs: local coordination without symmetry versus a symmetric clock-face timetable.">
 <style>
-:root{--ink:#1d2433;--mute:#5d6678;--line:#dfe3ea;--bg:#f6f7fa;--card:#fff;--soft:#eef1f6;--link:#1d4ed8;--ok:#16a34a;--bad:#dc2626;--rail:#d32f2f;--bus:#1e6fd9}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--soft:#262e3d;--link:#93b4ff;--ok:#22c55e;--bad:#f87171;--rail:#ef5350;--bus:#5b9cf0}}
-:root[data-theme="dark"]{--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--soft:#262e3d;--link:#93b4ff;--ok:#22c55e;--bad:#f87171;--rail:#ef5350;--bus:#5b9cf0}
+:root{--ink:#1d2433;--mute:#5d6678;--line:#dfe3ea;--bg:#f6f7fa;--card:#fff;--soft:#eef1f6;--link:#1d4ed8;--ok:#16a34a;--bad:#dc2626;--rail:#d32f2f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--soft:#262e3d;--link:#93b4ff;--ok:#22c55e;--bad:#f87171;--rail:#ef5350}}
+:root[data-theme="dark"]{--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--soft:#262e3d;--link:#93b4ff;--ok:#22c55e;--bad:#f87171;--rail:#ef5350}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:920px;margin:0 auto;padding:22px 16px 40px}
+main{max-width:860px;margin:0 auto;padding:22px 16px 40px}
 a{color:var(--link)}
-h1{font-size:24px;margin:6px 0 4px}
-.lead{color:var(--mute);margin:0 0 14px}
-.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
-.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:5px 12px;font:600 13px system-ui,sans-serif;cursor:pointer}
+h1{font-size:24px;margin:6px 0 12px}
+.tabs{display:flex;gap:6px;margin-bottom:10px}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 14px;font:600 14px system-ui,sans-serif;cursor:pointer}
 .tabs button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .stage{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
 svg{display:block;width:100%;height:auto;background:var(--soft)}
-.cap{padding:12px 16px 4px}
-.cap h2{font-size:17px;margin:0 0 4px}
-.cap p{margin:0;color:var(--mute)}
-.res{padding:8px 16px 14px;display:grid;gap:6px}
-.row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px}
-.row b{min-width:58px}
-.chip{border-radius:999px;padding:1px 10px;font-size:13px;font-weight:600}
-.chip.ok{background:color-mix(in srgb,var(--ok) 16%,transparent);color:var(--ok)}
-.chip.bad{background:color-mix(in srgb,var(--bad) 16%,transparent);color:var(--bad)}
-.ctl{display:flex;gap:8px;align-items:center;padding:0 16px 14px}
-.ctl button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:4px 12px;cursor:pointer;font-size:14px}
-.ctl span{color:var(--mute);font-size:13px;margin-left:auto}
-.note{color:var(--mute);font-size:13px;margin-top:16px}
 svg text{font-family:system-ui,sans-serif}
+.cap{padding:12px 16px 14px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.cap p{margin:0;color:var(--mute);flex:1 1 320px}
+.score{font-size:20px;font-weight:800}
+.score.ok{color:var(--ok)}.score.bad{color:var(--bad)}
 </style>
 </head>
 <body>
 <main>
 <a href="../../index.html">← all regions and explainers</a>
 <h1>Why symmetry, not just coordination</h1>
-<p class="lead">Timing one change at one station is easy. A network of timed hubs only works when every line repeats with the same rhythm, the hub minutes are symmetric, and the travel times between hubs fit the clock.</p>
-<div class="tabs" id="tabs"></div>
+<div class="tabs"><button data-s="0" class="on">Coordination only</button><button data-s="1">Symmetric</button></div>
 <div class="stage">
-<svg id="sv" viewBox="0 0 800 430" role="img" aria-label="Animated timetable example"></svg>
-<div class="cap"><h2 id="ttl"></h2><p id="txt"></p></div>
-<div class="res" id="res"></div>
-<div class="ctl"><button id="prev" aria-label="Previous">◀</button><button id="play">Pause</button><button id="next" aria-label="Next">▶</button><span id="clk"></span></div>
+<svg id="sv" viewBox="0 0 700 540" role="img" aria-label="Four hubs in a square grid with trains running every hour"></svg>
+<div class="cap"><span class="score" id="score"></span><p id="txt"></p></div>
 </div>
-<p class="note">Rule of thumb from the Bavarian ITF study (Hesse et al., p. 6): main hubs at :00 or :30 and edge times of n · T/2 − D minutes (T = 60 or 120, D ≈ 3–10), e.g. 27, 56 or 85 minutes. See the <a href="../../docs/literature.html">literature notes</a>.</p>
 </main>
 <script>
 const NS='http://www.w3.org/2000/svg',sv=document.getElementById('sv');
 const el=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);(p||sv).appendChild(e);return e;};
 const mod=(x,n)=>((x%n)+n)%n,mm=(x)=>':'+String(mod(Math.round(x),60)).padStart(2,'0');
-const CH=6;   // a change is timed if the wait is at most 6 min (buses arrive 3' before the hub minute and leave 3' after it)
-
+// four hubs in a square; one train per hour and direction on each edge; every train leaves its hub 3' after the hub minute;
+// a change is timed when the train arrives within 3' of the hub minute (wait <= 6')
+const P={A:[150,150],B:[550,150],C:[550,410],D:[150,410]},ORDER=['A','B','C','D'],cx=350,cy=280;
 const SC=[
- {k:'hw',t:'1 · Different headways',
-  p:'Line A arrives every 30′, line B leaves every 40′. The gap between them changes every time, so a short change happens only once in two hours.'},
- {k:'net',t:'2 · Coordination without symmetry',
-  p:'A and B are hubs: feeder buses arrive 3′ before the hub minute and leave 3′ after it. A 20′ train can be timed at both ends going A → B (B\'s hub is set to :25), but the return trip then reaches A at :47 and misses the buses.',
-  N:[{id:'A',x:190,y:215,h:0},{id:'B',x:610,y:215,h:25}],E:[{a:'A',b:'B',tt:20,da:3,db:27}]},
- {k:'net',t:'3 · Symmetric hubs',
-  p:'With 24′ (half an hour minus the 6′ change) A can be the hub at :00 and B at :30. Arrivals and departures mirror each other around the hub minute, so the return trip is timed as well.',
-  N:[{id:'A',x:190,y:215,h:0},{id:'B',x:610,y:215,h:30}],E:[{a:'A',b:'B',tt:24,da:3,db:33}]},
- {k:'net',t:'4 · A loop in the grid',
-  p:'Three 24′ edges in a loop. Going round, the hub minutes must alternate :00 → :30 → :00 → :30, but a loop of three cannot alternate. The third edge cannot fit, and passengers there wait 30′ or more.',
-  N:[{id:'A',x:170,y:340,h:0},{id:'B',x:630,y:340,h:30},{id:'C',x:400,y:95,h:0}],
-  E:[{a:'A',b:'B',tt:24,da:3,db:33},{a:'B',b:'C',tt:24,da:33,db:3},{a:'C',b:'A',tt:24,da:3,db:3}]},
- {k:'net',t:'5 · Fitting the loop',
-  p:'Make the third edge 54′ (a full hour minus the change), by slowing it down or by building it faster than an hour. Now every change in the loop works in both directions. This is why clock-face networks plan edge times of n·30′ − a few minutes and invest where a link is just too slow.',
-  N:[{id:'A',x:170,y:340,h:0},{id:'B',x:630,y:340,h:30},{id:'C',x:400,y:95,h:0}],
-  E:[{a:'A',b:'B',tt:24,da:3,db:33},{a:'B',b:'C',tt:24,da:33,db:3},{a:'C',b:'A',tt:54,da:3,db:3}]}
+ {tt:{AB:17,BC:23,CD:19,DA:26},h:{A:0,B:20,C:46,D:8},
+  txt:'Each hub is timed for the train coming round clockwise, and every edge has its own travel time. Back at A the loop does not close, and in the other direction almost nothing connects.'},
+ {tt:{AB:24,BC:24,CD:24,DA:24},h:{A:0,B:30,C:0,D:30},
+  txt:'Every edge takes 24′ (half an hour minus the change), so the hubs alternate :00 / :30. Arrivals mirror departures around each hub minute, so the loop closes and every change works in both directions.'}
 ];
-
-let S=0,T=0,run=true,last=0,dyn=null;
-const tabs=document.getElementById('tabs');
-SC.forEach((s,i)=>{const b=document.createElement('button');b.textContent=s.t.split(' · ')[0]+' '+s.t.split(' · ')[1];b.onclick=()=>show(i);tabs.appendChild(b);});
-
-function waitsOf(sc){   // per direction: wait bus → train at the origin, train → bus at the destination
- const H=Object.fromEntries(sc.N.map(n=>[n.id,n.h])),out=[];
- for(const e of sc.E)for(const [o,d,dep] of [[e.a,e.b,e.da],[e.b,e.a,e.db]]){
-  const arr=dep+e.tt;out.push({o,d,dep,arr,w1:mod(dep-(H[o]-3),60),w2:mod(H[d]+3-arr,60)});}
- return out;}
-
-function show(i){S=i;T=0;if(location.hash!=='#'+(i+1))history.replaceState(null,'','#'+(i+1));const sc=SC[i];
- tabs.querySelectorAll('button').forEach((b,k)=>b.classList.toggle('on',k===i));
- document.getElementById('ttl').textContent=sc.t;document.getElementById('txt').textContent=sc.p;
- sv.innerHTML='';const res=document.getElementById('res');res.innerHTML='';
- if(sc.k==='hw')buildHW(sc);else buildNet(sc,res);}
-
-// ---------- scene 1: timeline of two lines with different headways
-function buildHW(){
- const X=(m)=>60+m*(680/130),yA=130,yB=300;
- el('text',{x:60,y:yA-40,'font-size':14,'font-weight':700,fill:'var(--rail)'}).textContent='Line A arrives (every 30′)';
- el('text',{x:60,y:yB+40,'font-size':14,'font-weight':700,fill:'var(--bus)'}).textContent='Line B leaves (every 40′)';
- for(const y of [yA,yB])el('line',{x1:X(0),x2:X(130),y1:y,y2:y,stroke:'var(--line)','stroke-width':2});
- for(let m=0;m<=120;m+=15){el('line',{x1:X(m),x2:X(m),y1:yA+18,y2:yB-18,stroke:'var(--line)','stroke-dasharray':'2 4'});
-  el('text',{x:X(m),y:yB+76,'text-anchor':'middle','font-size':11,fill:'var(--mute)'}).textContent=(7+Math.floor(m/60))+mm(m);}
- const A=[-3,27,57,87,117],B=[3,43,83,123];
- for(const a of A){if(a<0)continue;el('circle',{cx:X(a),cy:yA,r:7,fill:'var(--rail)'});}
- for(const b of B)el('circle',{cx:X(b),cy:yB,r:7,fill:'var(--bus)'});
- for(const a of A.filter(a=>a>=0)){const b=B.find(x=>x>=a),w=b-a,ok=w<=CH,c=ok?'var(--ok)':'var(--bad)';
-  el('path',{d:`M${X(a)},${yA+8} C${X(a)},${(yA+yB)/2} ${X(b)},${(yA+yB)/2} ${X(b)},${yB-8}`,fill:'none',stroke:c,'stroke-width':ok?3:2,'stroke-dasharray':ok?'':'5 4'});
-  const tx=(X(a)+X(b))/2,t=el('text',{x:tx+6,y:(yA+yB)/2-14,'font-size':13,'font-weight':700,fill:c});t.textContent=w+'′ '+(ok?'✓':'✗');}
- const cur=el('line',{x1:0,x2:0,y1:yA-24,y2:yB+60,stroke:'var(--ink)','stroke-width':1.5});
- dyn=(m)=>{const x=X(mod(m,130));cur.setAttribute('x1',x);cur.setAttribute('x2',x);return 130;};
- const res=document.getElementById('res');
- res.innerHTML=`<div class="row"><b>Waits</b>${A.filter(a=>a>=0).map(a=>{const w=B.find(x=>x>=a)-a;return `<span class="chip ${w<=CH?'ok':'bad'}">${w}′</span>`;}).join('')}<span style="color:var(--mute);font-size:13px">only 1 of 4 changes is timed</span></div>`;}
-
-// ---------- scenes 2–5: hubs with clocks, a train line between them and feeder buses
-function buildNet(sc,res){
- const N=Object.fromEntries(sc.N.map(n=>[n.id,n])),W=waitsOf(sc);
- const cx=sc.N.reduce((s,n)=>s+n.x,0)/sc.N.length,cy=sc.N.reduce((s,n)=>s+n.y,0)/sc.N.length;
- const gE=el('g',{}),gB=el('g',{}),gT=el('g',{}),gN=el('g',{});
- const trains=[],buses=[],hubs=[];
- for(const e of sc.E){const a=N[e.a],b=N[e.b],ux=(b.x-a.x),uy=(b.y-a.y),L=Math.hypot(ux,uy),px=-uy/L,py=ux/L;
-  el('line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y,stroke:'var(--rail)','stroke-width':5,'stroke-linecap':'round',opacity:.35},gE);
-  const t=el('text',{x:(a.x+b.x)/2+px*26,y:(a.y+b.y)/2+py*26+5,'text-anchor':'middle','font-size':15,'font-weight':700,fill:'var(--ink)'},gE);t.textContent=e.tt+'′';
-  for(const [o,d,dep,sd] of [[a,b,e.da,1],[b,a,e.db,-1]]){const w=W.find(x=>x.o===o.id&&x.d===d.id&&x.dep===dep);
-   const r=el('rect',{width:30,height:12,rx:4,fill:'var(--rail)',stroke:'var(--card)','stroke-width':1.5},gT);
-   trains.push({o,d,dep,tt:e.tt,off:sd*9,px,py,r,ok:w.w1<=CH&&w.w2<=CH});}}
- for(const n of sc.N){   // two feeder bus stubs per hub, pointing away from the centre of the network
-  const ox=n.x-cx,oy=n.y-cy,L=Math.hypot(ox,oy)||1,base=Math.atan2(oy/L,ox/L);
-  for(const s of [-1,1]){const an=base+s*0.55,ex=n.x+Math.cos(an)*95,ey=n.y+Math.sin(an)*95;
-   el('line',{x1:n.x,y1:n.y,x2:ex,y2:ey,stroke:'var(--bus)','stroke-width':3,opacity:.35,'stroke-dasharray':'6 5'},gE);
-   const c=el('circle',{r:7,fill:'var(--bus)',stroke:'var(--card)','stroke-width':1.5},gB);buses.push({n,ex,ey,c,s});}
-  const g=el('g',{transform:`translate(${n.x},${n.y})`},gN);
-  const ring=el('circle',{r:34,fill:'none','stroke-width':4,opacity:0},g);
-  el('circle',{r:26,fill:'var(--card)',stroke:'var(--ink)','stroke-width':2},g);
-  for(let k=0;k<12;k++){const a=k/12*2*Math.PI;el('line',{x1:Math.sin(a)*22,y1:-Math.cos(a)*22,x2:Math.sin(a)*25,y2:-Math.cos(a)*25,stroke:'var(--mute)','stroke-width':1},g);}
-  const ha=n.h/60*2*Math.PI;el('line',{x1:0,y1:0,x2:Math.sin(ha)*21,y2:-Math.cos(ha)*21,stroke:'var(--ink)','stroke-width':4,'stroke-linecap':'round'},g);
-  const mh=el('line',{x1:0,y1:0,x2:0,y2:-22,stroke:'var(--bad)','stroke-width':2,'stroke-linecap':'round'},g);
-  el('circle',{r:2.5,fill:'var(--ink)'},g);
-  const lab=el('text',{x:0,y:(n.y>cy?52:-40),'text-anchor':'middle','font-size':14,'font-weight':700,fill:'var(--ink)'},g);lab.textContent=`${n.id} · hub ${mm(n.h)}`;
+let T=0,last=0,dyn=null;
+const edges=(sc)=>ORDER.map((a,i)=>{const b=ORDER[(i+1)%4];return {a,b,tt:sc.tt[a+b]};});
+function build(i){sv.innerHTML='';const sc=SC[i],E=edges(sc);
+ document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on',+b.dataset.s===i));
+ const tr=[];for(const e of E)for(const [o,d] of [[e.a,e.b],[e.b,e.a]])tr.push({o,d,tt:e.tt,dep:sc.h[o]+3,arr:sc.h[o]+3+e.tt});
+ const wait=(t)=>mod(sc.h[t.d]+3-t.arr,60);   // arrive, change, leave on the other edge at hub + 3'
+ const good=tr.filter(t=>wait(t)<=6).length;
+ const s=document.getElementById('score');s.textContent=`${good} of 8 changes timed`;s.className='score '+(good===8?'ok':'bad');
+ document.getElementById('txt').textContent=sc.txt;
+ const gE=el('g',{}),gT=el('g',{}),gN=el('g',{});
+ for(const e of E){const [ax,ay]=P[e.a],[bx,by]=P[e.b];
+  el('line',{x1:ax,y1:ay,x2:bx,y2:by,stroke:'var(--rail)','stroke-width':6,'stroke-linecap':'round',opacity:.3},gE);
+  const mx=(ax+bx)/2,my=(ay+by)/2,ox=mx-cx,oy=my-cy,L=Math.hypot(ox,oy);
+  el('text',{x:mx-ox/L*34,y:my-oy/L*34+6,'text-anchor':'middle','font-size':19,'font-weight':800,fill:'var(--ink)'},gE).textContent=e.tt+'′';}
+ for(const t of tr){const [ax,ay]=P[t.o],[bx,by]=P[t.d],L=Math.hypot(bx-ax,by-ay);
+  t.px=-(by-ay)/L*9;t.py=(bx-ax)/L*9;t.ok=wait(t)<=6;   // the two directions run side by side
+  t.r=el('rect',{width:34,height:13,rx:4,fill:'var(--rail)',stroke:'var(--card)','stroke-width':1.5},gT);}
+ const hubs=[];
+ for(const n of ORDER){const [x,y]=P[n],g=el('g',{transform:`translate(${x},${y})`},gN),up=y<cy;
+  const ring=el('circle',{r:40,fill:'none','stroke-width':5,opacity:0},g);
+  el('circle',{r:31,fill:'var(--card)',stroke:'var(--ink)','stroke-width':2.2},g);
+  for(let k=0;k<12;k++){const a=k/12*2*Math.PI;el('line',{x1:Math.sin(a)*26,y1:-Math.cos(a)*26,x2:Math.sin(a)*30,y2:-Math.cos(a)*30,stroke:'var(--mute)','stroke-width':1.2},g);}
+  const ha=sc.h[n]/60*2*Math.PI;el('line',{x1:0,y1:0,x2:Math.sin(ha)*25,y2:-Math.cos(ha)*25,stroke:'var(--ink)','stroke-width':5,'stroke-linecap':'round'},g);
+  const mh=el('line',{x1:0,y1:0,x2:0,y2:-27,stroke:'var(--bad)','stroke-width':2.2,'stroke-linecap':'round'},g);
+  el('circle',{r:3,fill:'var(--ink)'},g);
+  const y0=up?-52:64;el('text',{x:0,y:y0,'text-anchor':'middle','font-size':16,'font-weight':800,fill:'var(--ink)'},g).textContent=`${n} · hub ${mm(sc.h[n])}`;
+  tr.filter(t=>t.d===n).forEach((t,k)=>{const w=wait(t),ok=w<=6;
+   el('text',{x:0,y:y0+(up?-19:19)*(k+1),'text-anchor':'middle','font-size':13.5,'font-weight':700,fill:ok?'var(--ok)':'var(--bad)'},g).textContent=`from ${t.o}: ${ok?'✓':'✗'} wait ${w}′`;});
   hubs.push({n,mh,ring});}
- res.innerHTML=W.map(w=>`<div class="row"><b>${w.o} → ${w.d}</b><span class="chip ${w.w1<=CH?'ok':'bad'}">bus → train at ${w.o}: ${w.w1}′</span><span class="chip ${w.w2<=CH?'ok':'bad'}">train → bus at ${w.d}: ${w.w2}′</span><span style="color:var(--mute);font-size:13px">dep ${mm(w.dep)} · arr ${mm(w.arr)}</span></div>`).join('');
  dyn=(m)=>{const t=mod(m,60);
-  for(const tr of trains){const f=mod(t-tr.dep,60)/tr.tt;
-   if(f>1){tr.r.setAttribute('opacity',0);continue;}
-   const x=tr.o.x+(tr.d.x-tr.o.x)*f+tr.px*tr.off,y=tr.o.y+(tr.d.y-tr.o.y)*f+tr.py*tr.off,ang=Math.atan2(tr.d.y-tr.o.y,tr.d.x-tr.o.x)*180/Math.PI;
-   tr.r.setAttribute('opacity',1);tr.r.setAttribute('transform',`translate(${x},${y}) rotate(${ang}) translate(-15,-6)`);}
-  for(const b of buses){const h=b.n.h,dIn=mod(t-(h-9),60),dOut=mod(t-(h+3),60);let f=null;
-   if(b.s<0&&dIn<=6)f=1-dIn/6;else if(b.s>0&&dOut<=6)f=dOut/6;else if(mod(t-(h-3),60)<=6)f=0.18;
-   if(f==null){b.c.setAttribute('opacity',0);continue;}
-   b.c.setAttribute('opacity',1);b.c.setAttribute('cx',b.n.x+(b.ex-b.n.x)*f);b.c.setAttribute('cy',b.n.y+(b.ey-b.n.y)*f);}
-  for(const hb of hubs){const a=t/60*2*Math.PI;hb.mh.setAttribute('x2',Math.sin(a)*22);hb.mh.setAttribute('y2',-Math.cos(a)*22);
-   // ring: green / red flash when a train arrives here
-   let st=null;for(const tr of trains)if(tr.d===hb.n){const s=mod(t-(tr.dep+tr.tt),60);if(s<=4)st=(st===false?false:tr.ok);}
-   hb.ring.setAttribute('opacity',st==null?0:.9);hb.ring.setAttribute('stroke',st?'var(--ok)':'var(--bad)');}
-  return 60;};}
-
-const clk=document.getElementById('clk');
-function frame(ts){const dt=last?(ts-last)/1000:0;last=ts;if(run)T+=dt*4;   // 4 timetable minutes per second
- if(dyn){const P=dyn(T);clk.textContent=SC[S].k==='hw'?'minute '+Math.floor(mod(T,P)):'clock '+mm(Math.floor(T));}
- requestAnimationFrame(frame);}
-document.getElementById('play').onclick=function(){run=!run;this.textContent=run?'Pause':'Play';};
-document.getElementById('prev').onclick=()=>show(mod(S-1,SC.length));
-document.getElementById('next').onclick=()=>show(mod(S+1,SC.length));
-show(Math.max(0,Math.min(SC.length-1,(parseInt(location.hash.slice(1))||1)-1)));requestAnimationFrame(frame);
-addEventListener('hashchange',()=>show(Math.max(0,Math.min(SC.length-1,(parseInt(location.hash.slice(1))||1)-1))));
+  for(const x of tr){const f=mod(t-x.dep,60)/x.tt;if(f>1){x.r.setAttribute('opacity',0);continue;}
+   const [ax,ay]=P[x.o],[bx,by]=P[x.d],X=ax+(bx-ax)*f+x.px,Y=ay+(by-ay)*f+x.py,ang=Math.atan2(by-ay,bx-ax)*180/Math.PI;
+   x.r.setAttribute('opacity',1);x.r.setAttribute('transform',`translate(${X},${Y}) rotate(${ang}) translate(-17,-6.5)`);}
+  for(const hb of hubs){const a=t/60*2*Math.PI;hb.mh.setAttribute('x2',Math.sin(a)*27);hb.mh.setAttribute('y2',-Math.cos(a)*27);
+   let st=null;for(const x of tr)if(x.d===hb.n&&mod(t-x.arr,60)<=4)st=(st===false?false:x.ok);   // flash green / red when a train arrives
+   hb.ring.setAttribute('opacity',st==null?0:.9);hb.ring.setAttribute('stroke',st?'var(--ok)':'var(--bad)');}};}
+function frame(ts){const dt=last?(ts-last)/1000:0;last=ts;T+=dt*4;if(dyn)dyn(T);requestAnimationFrame(frame);}   // 4 timetable minutes per second
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{build(+b.dataset.s);history.replaceState(null,'','#'+(+b.dataset.s+1));});
+build(location.hash==='#2'?1:0);requestAnimationFrame(frame);
 </script>
 </body>
 </html>

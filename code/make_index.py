@@ -126,7 +126,7 @@ connections and timetable.</p>
 <h2>Regions</h2><div class="grid">{''.join(cards)}</div>
 <h2>Explainers</h2><div class="links">
 <a href="explain/clock-phase/"><b>How clock-phase scheduling works</b><span>Animation of a pulse at a hub: locals and buses arrive first, fast trains at the symmetry minute, everyone changes and leaves</span></a>
-<a href="explain/symmetry/"><b>Why symmetry, not just coordination</b><span>Animation: different headways, a timed line without symmetry, symmetric hubs, and the loop condition in a grid</span></a></div>
+<a href="explain/symmetry/"><b>Why symmetry, not just coordination</b><span>A grid of four hubs: local coordination without symmetry versus a symmetric clock-face timetable</span></a></div>
 <h2>Method and background</h2><div class="links">
 <a href="docs/rules.html"><b>Network rules</b><span>How nodes, links, connections and symmetries are defined</span></a>
 <a href="docs/literature.html"><b>Literature notes</b><span>Taktfahrplan / ITF review with page references</span></a>
