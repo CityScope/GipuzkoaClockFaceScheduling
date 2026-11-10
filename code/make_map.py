@@ -348,16 +348,9 @@ __ROWS__
 <div class="ctl"><button id="cplay">▶ Play</button><button data-sp="1">1×</button><button data-sp="2">2×</button><button data-sp="3" class="on">3×</button><button data-sp="10">10×</button></div></div>
 </div>
 <div id="ttpanel" hidden></div>
-<div id="info" hidden><div class="ibox"><button id="infox" title="Close">×</button><h2>How connections and symmetry are read</h2><p style="margin:0 0 8px;font-size:12.5px"><a href="../../explain/clock-phase/" target="_blank">Clock-phase animation</a> · <a href="../../explain/symmetry/" target="_blank">Why symmetry</a> · <a href="../../index.html">All regions</a></p>
+<div id="info" hidden><div class="ibox"><button id="infox" title="Close">×</button><h2>Clock-face hub</h2>
 <canvas id="anim" width="720" height="330"></canvas>
-<ul>
-<li><b>Node</b>: a station that branches (≥ 3 directions; stations within a 5-min walk count if they add a third direction) and offers a change between two lines that cannot be made at any other node; or a route terminus. Every route keeps at least two nodes.</li>
-<li><b>Edge</b>: one direction out of a node, towards a neighbouring station, per mode. Two edges less than 45° apart lead the same way (a change between them goes back). A link with two clear service patterns (slow one ≥ 2 more stops and ≥ 6 min slower, headways within a factor 2) is treated as a fast and a slow edge.</li>
-<li><b>Frequent</b>: a relation that runs more often than every 15 min (all services, real timetable) needs no timing; such relations are left out of the symmetry count, and if they make up ≥ 75 % of a node no symmetry is needed. A good direct service (about as frequent as possible) needs no timing either.</li>
-<li><b>Timed change</b>: wait ≤ 6 min (≤ 12 min when arriving by bus), walk ≤ 5 min (+2 min when changing mode or station); not the same vehicle or the same line continuing, not overtaken by a later, better option, and gaining ≥ 30 min or 25 % of the direct headway (whichever is smaller) over the next direct service.</li>
-<li><b>Connected</b> (A → B): ≥ 2 timed changes in the period (or the average wait with all services is within the limit); with the changes the headway is at least twice as good as with direct services only (or there is none); and most services of the less frequent edge connect.</li>
-<li><b>Symmetry</b>: connected relations grouped by their change minute (symmetries ≥ 10 min apart; timed changes towards ≥ 3 different neighbouring stations). <b>Complete</b> (solid hand) if more than 50 % of its relations work both ways — the return may be timed in another pulse of the node, or need no timing; <b>half</b> (dotted) if more than 50 % are timed at least one way, or if its timed changes run every 60 min or better; otherwise none. Shares are weighted by the frequency of the less frequent edge. The map shows the largest; the popup lists all.</li>
-</ul></div></div><script>/*JS*/</script><script>
+<p style="margin:8px 0 0;font-size:13px"><a href="../../explain/symmetry/" target="_blank">Why symmetry</a> · <a href="../../docs/rules.html" target="_blank">Rules</a> · <a href="../../index.html">All regions</a></p></div></div><script>/*JS*/</script><script>
 const CFG=__CFG__;const SYS=CFG.systems,SK=SYS.map(s=>s.key),COL=Object.fromEntries(SYS.map(s=>[s.key,s.color]));
 const D=__DATA__,BOUND=__BOUNDARY__;let PER='peak',TIME='t_med',DAY='weekday',BASE='minimal',MODE='light',WALK=true,CONN=false;const ON=new Set(SK);
 const STYLES={minimal:'https://tiles.openfreemap.org/styles/positron',streets:'https://tiles.openfreemap.org/styles/bright',detailed:'https://tiles.openfreemap.org/styles/liberty'};
