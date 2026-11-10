@@ -1,0 +1,237 @@
+node,band,from_line,to_line,wait_min,transfer_min,frequency,reversing
+Bludenz|bigrail,peak,Nenzing,Schruns,3.2,2.8,direct None / with changes 60,False
+Bludenz|bigrail,peak,Feldkirch,Schruns,4.2,2.8,direct None / with changes 120,False
+Bludenz|bigrail,peak,Feldkirch,Klösterle,6.2,4.8,direct None / with changes 120,False
+Bludenz|bigrail,peak,Brand,Ludesch,12.2,4.8,direct None / with changes 82,False
+Bludenz|bigrail,peak,Brand,Nenzing,3.2,4.8,direct None / with changes 90,False
+Bludenz|bigrail,peak,Ludesch,Schruns,9.6,4.4,direct None / with changes 90,False
+Bludenz|bigrail,peak,Brand,Schruns,8.6,4.4,direct None / with changes 82,False
+Bludenz|bigrail,peak,Brand,Ludesch,3.0,0.0,direct None / with changes 90,False
+Bludenz|bigrail,day,Feldkirch,Schruns,4.2,2.8,direct None / with changes 75,False
+Bludenz|bigrail,day,Nenzing,Schruns,3.2,2.8,direct None / with changes 60,False
+Bludenz|bigrail,day,Brand,Ludesch,12.2,4.8,direct None / with changes 49,False
+Bludenz|bigrail,day,Brand,Nenzing,3.2,4.8,direct None / with changes 75,False
+Bludenz|bigrail,day,Feldkirch,Klösterle,5.2,4.8,direct None / with changes 75,False
+Bludenz|bigrail,day,Brand,Sankt Anton am Arlberg,10.7,4.8,direct None / with changes 120,False
+Bludenz|bigrail,day,Brand,Schruns,8.6,4.4,direct None / with changes 49,False
+Bludenz|bigrail,day,Brand,Ludesch,3.0,0.0,direct None / with changes 75,False
+Bregenz|bigrail,peak,Lochau,Wolfurt,4.0,0.0,direct 120 / with changes 30,False
+Bregenz|bigrail,peak,Hard,Wolfurt,4.0,0.0,direct None / with changes 60,False
+Bregenz|bigrail,peak,Lochau,Wolfurt,5.2,5.8,direct None / with changes 38,False
+Bregenz|bigrail,peak,Lochau,Wolfurt,4.5,5.8,direct None / with changes 31,False
+Bregenz|bigrail,peak,Hard (slow),Lochau,7.5,5.8,direct None / with changes 53,False
+Bregenz|bigrail,peak,Hard (slow),Wolfurt,2.2,5.8,direct None / with changes 52,False
+Bregenz|bigrail,peak,Hard,Wolfurt,4.2,5.8,direct None / with changes 60,False
+Bregenz|bigrail,peak,Lingenau,Lochau,9.2,5.8,direct None / with changes 120,False
+Bregenz|bigrail,peak,Lingenau,Wolfurt,4.2,5.8,direct None / with changes 120,False
+Bregenz|bigrail,peak,Lindau (Bodensee),Wolfurt,2.2,5.8,direct None / with changes 120,False
+Bregenz|bigrail,peak,Scheidegg (slow),Wolfurt,4.2,5.8,direct None / with changes 120,False
+Bregenz|bigrail,peak,St. Margrethen,Wolfurt,1.2,5.8,direct None / with changes 120,False
+Bregenz|bigrail,peak,Lochau,Wolfurt,7.4,0.0,direct None / with changes 38,False
+Bregenz|bigrail,peak,Hard (slow),Wolfurt,4.0,0.0,direct None / with changes 50,False
+Bregenz|bigrail,peak,Lingenau,Wolfurt,3.0,0.0,direct None / with changes 120,False
+Bregenz|bigrail,peak,Scheidegg (slow),Wolfurt,9.0,0.0,direct None / with changes 120,False
+Bregenz|bigrail,day,Lochau,Wolfurt,4.6,0.0,direct 105 / with changes 38,False
+Bregenz|bigrail,day,Hard,Wolfurt,4.0,0.0,direct None / with changes 60,False
+Bregenz|bigrail,day,Hard (slow),Wolfurt,2.2,5.8,direct None / with changes 30,False
+Bregenz|bigrail,day,Lochau,Wolfurt,5.2,5.8,direct None / with changes 30,False
+Bregenz|bigrail,day,Hard (slow),Lochau,7.7,5.8,direct None / with changes 34,False
+Bregenz|bigrail,day,Lochau,Wolfurt,5.0,5.8,direct None / with changes 31,False
+Bregenz|bigrail,day,Hard,Wolfurt,4.2,5.8,direct None / with changes 60,False
+Bregenz|bigrail,day,Lingenau,Wolfurt,6.2,5.8,direct None / with changes 131,False
+Bregenz|bigrail,day,Hard,Scheidegg (slow),5.2,5.8,direct None / with changes 120,False
+Bregenz|bigrail,day,Lindau (Bodensee),Wolfurt,2.2,5.8,direct None / with changes 120,False
+Bregenz|bigrail,day,Scheidegg (slow),Wolfurt,4.2,5.8,direct None / with changes 120,False
+Bregenz|bigrail,day,St. Margrethen,Wolfurt,1.2,5.8,direct None / with changes 120,False
+Bregenz|bigrail,day,Hard (slow),Wolfurt,4.0,0.0,direct None / with changes 31,False
+Bregenz|bigrail,day,Lochau,Wolfurt,7.0,0.0,direct None / with changes 31,False
+Bregenz|bigrail,day,Lingenau,Wolfurt,7.8,0.0,direct None / with changes 117,False
+Bregenz|bigrail,day,Scheidegg (slow),Wolfurt,9.0,0.0,direct None / with changes 120,False
+Bregenz|bigrail,night,Hard,Wolfurt,4.0,0.0,direct None / with changes 285,False
+Bregenz|bigrail,night,Hard,Wolfurt,6.2,5.8,direct None / with changes 375,False
+Bregenz|bigrail,night,Lochau,Wolfurt,4.2,5.8,direct None / with changes 322,False
+Bregenz|bigrail,night,Hard (slow),Lochau,7.2,5.8,direct None / with changes 333,False
+Bregenz|bigrail,night,Hard (slow),Wolfurt,2.2,5.8,direct None / with changes 322,False
+Bregenz|bigrail,night,Lochau,Wolfurt,5.2,5.8,direct None / with changes 371,False
+Bregenz|bigrail,night,Hard (slow),Wolfurt,3.0,0.0,direct None / with changes 371,False
+Bregenz|bigrail,night,Lochau,Wolfurt,6.0,0.0,direct None / with changes 371,False
+Dornbirn|bigrail,peak,Bregenz,Lustenau,4.8,3.5,direct None / with changes 30,False
+Dornbirn|bigrail,peak,Hohenems,Schwarzach,0.5,3.5,direct None / with changes 45,False
+Dornbirn|bigrail,peak,Hohenems,Wolfurt,0.5,3.5,direct None / with changes 38,False
+Dornbirn|bigrail,peak,Alberschwende,Bregenz,11.5,3.5,direct None / with changes 60,False
+Dornbirn|bigrail,peak,Alberschwende,Hohenems,2.5,3.5,direct None / with changes 60,False
+Dornbirn|bigrail,peak,Hohenems,Wolfurt,2.0,0.0,direct None / with changes 38,False
+Dornbirn|bigrail,peak,Lustenau,Schwarzach,1.0,0.0,direct None / with changes 38,False
+Dornbirn|bigrail,peak,Lustenau,Wolfurt,11.0,0.0,direct None / with changes 38,False
+Dornbirn|bigrail,peak,Alberschwende,Lustenau,4.0,0.0,direct None / with changes 60,False
+Dornbirn|bigrail,day,Bregenz,Lustenau,4.6,3.5,direct None / with changes 30,False
+Dornbirn|bigrail,day,Hohenems,Schwarzach,0.5,3.5,direct None / with changes 34,False
+Dornbirn|bigrail,day,Hohenems,Wolfurt,2.9,3.5,direct None / with changes 30,False
+Dornbirn|bigrail,day,Alberschwende,Bregenz,11.1,3.5,direct None / with changes 60,False
+Dornbirn|bigrail,day,Alberschwende,Hohenems,2.5,3.5,direct None / with changes 60,False
+Dornbirn|bigrail,day,Hohenems,Wolfurt,2.0,0.0,direct None / with changes 30,False
+Dornbirn|bigrail,day,Lustenau,Schwarzach,1.0,0.0,direct None / with changes 30,False
+Dornbirn|bigrail,day,Lustenau,Wolfurt,11.0,0.0,direct None / with changes 30,False
+Dornbirn|bigrail,day,Alberschwende,Lustenau,4.0,0.0,direct None / with changes 60,False
+Dornbirn|bigrail,night,Hohenems,Lustenau,0.5,3.5,direct None / with changes 326,False
+Dornbirn|bigrail,night,Hohenems,Schwarzach,0.5,3.5,direct None / with changes 371,False
+Dornbirn|bigrail,night,Hohenems,Wolfurt,6.2,3.5,direct None / with changes 371,False
+Dornbirn|bigrail,night,Lustenau,Schwarzach,1.0,0.0,direct None / with changes 322,False
+Dornbirn|bigrail,night,Hohenems,Wolfurt,2.0,0.0,direct None / with changes 371,False
+Dornbirn|bigrail,night,Lustenau,Wolfurt,11.0,0.0,direct None / with changes 371,False
+Feldkirch|bigrail,peak,Mauren,Rankweil,7.4,3.6,direct None / with changes 38,False
+Feldkirch|bigrail,peak,Frastanz,Ruggell,6.4,3.6,direct None / with changes 60,False
+Feldkirch|bigrail,peak,Rankweil,Ruggell,5.4,3.6,direct None / with changes 60,False
+Feldkirch|bigrail,peak,Göfis,Rankweil,9.4,3.6,direct None / with changes 90,False
+Feldkirch|bigrail,peak,Frastanz,Göfis (fast),3.4,3.6,direct None / with changes 90,False
+Feldkirch|bigrail,peak,Frastanz (fast),Rankweil,5.0,0.0,direct None / with changes 90,False
+Feldkirch|bigrail,peak,Frastanz (fast),Ruggell,12.0,0.0,direct None / with changes 90,False
+Feldkirch|bigrail,peak,Mauren,Ruggell,3.0,0.0,direct None / with changes 60,False
+Feldkirch|bigrail,peak,Rankweil,Ruggell,10.0,0.0,direct None / with changes 60,False
+Feldkirch|bigrail,peak,Göfis,Mauren,7.0,0.0,direct None / with changes 90,False
+Feldkirch|bigrail,peak,Göfis,Rankweil,10.7,0.0,direct None / with changes 83,False
+Feldkirch|bigrail,peak,Frastanz (fast),Göfis (fast),9.0,0.0,direct None / with changes 90,False
+Feldkirch|bigrail,day,Mauren,Rankweil,9.8,3.6,direct None / with changes 32,False
+Feldkirch|bigrail,day,Göfis,Rankweil,9.5,3.6,direct None / with changes 46,False
+Feldkirch|bigrail,day,Frastanz,Göfis (fast),3.4,3.6,direct None / with changes 60,False
+Feldkirch|bigrail,day,Frastanz,Ruggell,6.4,3.6,direct None / with changes 60,False
+Feldkirch|bigrail,day,Rankweil,Ruggell,5.4,3.6,direct None / with changes 60,False
+Feldkirch|bigrail,day,Göfis,Mauren,5.2,0.0,direct None / with changes 60,False
+Feldkirch|bigrail,day,Göfis,Rankweil,8.0,0.0,direct None / with changes 34,False
+Feldkirch|bigrail,day,Frastanz (fast),Göfis (fast),9.0,0.0,direct None / with changes 60,False
+Feldkirch|bigrail,day,Frastanz (fast),Rankweil,5.0,0.0,direct None / with changes 60,False
+Feldkirch|bigrail,day,Frastanz (fast),Ruggell,12.0,0.0,direct None / with changes 60,False
+Feldkirch|bigrail,day,Mauren,Ruggell,3.0,0.0,direct None / with changes 60,False
+Feldkirch|bigrail,day,Rankweil,Ruggell,10.0,0.0,direct None / with changes 60,False
+Frastanz|bigrail,peak,Feldkirch,Satteins,5.5,3.1,direct None / with changes 47,False
+Frastanz|bigrail,peak,Nenzing,Satteins,3.7,3.1,direct None / with changes 61,False
+Frastanz|bigrail,day,Feldkirch,Satteins,5.9,3.1,direct None / with changes 42,False
+Frastanz|bigrail,day,Nenzing,Satteins,0.9,3.1,direct None / with changes 60,False
+Frastanz|bigrail,day,Göfis,Nenzing,8.9,3.1,direct None / with changes 75,False
+Götzis|bigrail,peak,Hohenems,Rankweil,5.0,3.0,direct None / with changes 75,False
+Götzis|bigrail,peak,Hohenems,Klaus,1.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,peak,Hohenems,Koblach (fast),2.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,peak,Hohenems,Koblach (slow),4.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,peak,Hohenems,Rankweil,3.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,peak,Klaus,Koblach (fast),2.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,peak,Klaus,Koblach (slow),4.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,peak,Hohenems,Koblach (slow),0.0,0.0,direct None / with changes 60,False
+Götzis|bigrail,peak,Koblach (slow),Rankweil,10.0,0.0,direct None / with changes 60,False
+Götzis|bigrail,day,Hohenems,Rankweil,5.8,3.0,direct None / with changes 52,False
+Götzis|bigrail,day,Hohenems,Klaus,1.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,day,Hohenems,Koblach (fast),2.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,day,Hohenems,Koblach (slow),4.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,day,Hohenems,Rankweil,3.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,day,Klaus,Koblach (fast),2.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,day,Klaus,Koblach (slow),4.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,day,Hohenems,Koblach (slow),0.0,0.0,direct None / with changes 60,False
+Götzis|bigrail,day,Koblach (slow),Rankweil,10.0,0.0,direct None / with changes 60,False
+Hard|bigrail,peak,Bregenz,Lustenau,9.8,4.2,direct None / with changes 60,False
+Hard|bigrail,peak,Höchst (slow),Lustenau,5.8,4.2,direct None / with changes 60,False
+Hard|bigrail,day,Bregenz,Lustenau,9.8,4.2,direct None / with changes 60,False
+Hard|bigrail,day,Höchst (slow),Lustenau,5.8,4.2,direct None / with changes 60,False
+Hard|bigrail,night,Bregenz,Lustenau,9.8,4.2,direct None / with changes 375,False
+Hohenems|bigrail,peak,Dornbirn,Götzis,2.8,2.9,direct None / with changes 46,False
+Hohenems|bigrail,peak,Dornbirn,Mäder,3.1,2.9,direct None / with changes 60,False
+Hohenems|bigrail,peak,Götzis,Lustenau,1.1,2.9,direct None / with changes 60,False
+Hohenems|bigrail,peak,Dornbirn,Mäder,4.0,0.0,direct None / with changes 60,False
+Hohenems|bigrail,peak,Lustenau,Mäder,10.0,0.0,direct None / with changes 60,False
+Hohenems|bigrail,day,Dornbirn,Götzis,3.1,2.9,direct None / with changes 42,False
+Hohenems|bigrail,day,Dornbirn,Mäder,3.1,2.9,direct None / with changes 60,False
+Hohenems|bigrail,day,Götzis,Lustenau,1.1,2.9,direct None / with changes 60,False
+Hohenems|bigrail,day,Dornbirn,Mäder,4.0,0.0,direct None / with changes 60,False
+Hohenems|bigrail,day,Lustenau,Mäder,10.0,0.0,direct None / with changes 60,False
+Hohenems|bigrail,night,Götzis,Lustenau,1.1,2.9,direct None / with changes 375,False
+Klaus|bigrail,peak,Götzis,Rankweil,1.9,4.1,direct None / with changes 60,False
+Klaus|bigrail,peak,Götzis,Rankweil,0.9,4.1,direct None / with changes 60,False
+Klaus|bigrail,peak,Götzis,Koblach (slow),4.0,0.0,direct None / with changes 60,False
+Klaus|bigrail,peak,Götzis,Rankweil,10.0,0.0,direct None / with changes 60,False
+Klaus|bigrail,peak,Koblach (slow),Rankweil,9.0,0.0,direct None / with changes 90,False
+Klaus|bigrail,day,Götzis,Rankweil,1.9,4.1,direct None / with changes 60,False
+Klaus|bigrail,day,Götzis,Rankweil,0.9,4.1,direct None / with changes 60,False
+Klaus|bigrail,day,Götzis,Koblach (slow),4.0,0.0,direct None / with changes 60,False
+Klaus|bigrail,day,Götzis,Rankweil,10.0,0.0,direct None / with changes 60,False
+Klaus|bigrail,day,Koblach (slow),Rankweil,9.0,0.0,direct None / with changes 60,False
+Klaus|bigrail,night,Götzis,Rankweil,1.9,4.1,direct None / with changes 424,False
+Lochau|bigrail,peak,Bregenz,Sigmarszell,2.7,3.0,direct None / with changes 45,False
+Lochau|bigrail,peak,Bregenz,Möggers,0.8,3.0,direct None / with changes 60,False
+Lochau|bigrail,day,Bregenz,Sigmarszell,2.9,3.0,direct None / with changes 38,False
+Lochau|bigrail,day,Bregenz,Möggers,0.5,3.0,direct None / with changes 60,False
+Ludesch|bigrail,peak,Bludenz,Nenzing,9.5,3.8,direct None / with changes 45,False
+Ludesch|bigrail,peak,Bludenz,Raggal,4.2,3.8,direct None / with changes 98,False
+Ludesch|bigrail,peak,Nenzing,Raggal,3.2,3.8,direct None / with changes 98,False
+Ludesch|bigrail,day,Bludenz,Nenzing,11.7,3.8,direct None / with changes 34,False
+Lustenau|bigrail,peak,Hard,Hohenems,0.2,4.8,direct None / with changes 120,False
+Lustenau|bigrail,peak,Hohenems,St. Margrethen,5.2,4.8,direct None / with changes 120,False
+Lustenau|bigrail,peak,Dornbirn,Hohenems,5.0,0.0,direct None / with changes 120,False
+Lustenau|bigrail,peak,Hohenems,Höchst,8.0,0.0,direct None / with changes 60,False
+Lustenau|bigrail,peak,Dornbirn,Hard,5.0,0.0,direct None / with changes 120,False
+Lustenau|bigrail,peak,Hard,Hohenems,3.0,0.0,direct None / with changes 90,False
+Lustenau|bigrail,day,Hard,Hohenems,0.2,4.8,direct None / with changes 75,False
+Lustenau|bigrail,day,Hohenems,St. Margrethen,5.2,4.8,direct None / with changes 75,False
+Lustenau|bigrail,day,Dornbirn,Hard,5.0,0.0,direct None / with changes 75,False
+Lustenau|bigrail,day,Dornbirn,Hohenems,5.0,0.0,direct None / with changes 75,False
+Lustenau|bigrail,day,Hard,Hohenems,3.0,0.0,direct None / with changes 60,False
+Lustenau|bigrail,day,Hohenems,Höchst,8.0,0.0,direct None / with changes 60,False
+Lustenau|bigrail,night,Hard,Hohenems,0.2,4.8,direct None / with changes 375,False
+Lustenau|bigrail,night,Hohenems,St. Margrethen,5.2,4.8,direct None / with changes 375,False
+Lustenau|bigrail,night,Dornbirn,Hohenems,5.0,0.0,direct None / with changes 375,False
+Lustenau|bigrail,night,Hard,Hohenems,3.0,0.0,direct None / with changes 285,False
+Lustenau|bigrail,night,Hohenems,Höchst,8.0,0.0,direct None / with changes 375,False
+Nenzing|bigrail,peak,Ludesch,Schlins,2.4,5.6,direct None / with changes 60,False
+Nenzing|bigrail,peak,Frastanz,Thüringen,4.2,5.6,direct None / with changes 61,False
+Nenzing|bigrail,peak,Schlins (fast),Thüringen,4.5,0.0,direct None / with changes 91,False
+Nenzing|bigrail,peak,Schlins (slow),Thüringen,3.0,0.0,direct None / with changes 90,False
+Nenzing|bigrail,day,Ludesch,Schlins,2.4,5.6,direct None / with changes 60,False
+Nenzing|bigrail,day,Frastanz,Thüringen,1.4,5.6,direct None / with changes 60,False
+Nenzing|bigrail,day,Schlins (slow),Thüringen,3.0,0.0,direct None / with changes 60,False
+Rankweil|bigrail,peak,Feldkirch,Götzis,3.6,4.8,direct None / with changes 38,False
+Rankweil|bigrail,peak,Feldkirch,Götzis,3.2,4.8,direct None / with changes 60,False
+Rankweil|bigrail,peak,Feldkirch,Klaus,4.2,4.8,direct None / with changes 60,False
+Rankweil|bigrail,peak,Feldkirch,Laterns,2.2,4.8,direct None / with changes 90,False
+Rankweil|bigrail,peak,Götzis,Laterns,1.2,4.8,direct None / with changes 90,False
+Rankweil|bigrail,peak,Göfis,Klaus,1.2,4.8,direct None / with changes 90,False
+Rankweil|bigrail,peak,Feldkirch,Laterns,0.0,0.0,direct None / with changes 90,False
+Rankweil|bigrail,day,Feldkirch,Klaus,11.7,4.8,direct None / with changes 34,False
+Rankweil|bigrail,day,Feldkirch,Götzis,4.2,4.8,direct None / with changes 44,False
+Rankweil|bigrail,day,Feldkirch,Götzis,3.2,4.8,direct None / with changes 60,False
+Rankweil|bigrail,day,Feldkirch,Klaus,4.2,4.8,direct None / with changes 60,False
+Rankweil|bigrail,day,Göfis,Klaus,1.2,4.8,direct None / with changes 60,False
+Rankweil|bigrail,day,Feldkirch,Laterns,2.2,4.8,direct None / with changes 120,False
+Rankweil|bigrail,day,Götzis,Laterns,1.2,4.8,direct None / with changes 120,False
+Rankweil|bigrail,day,Feldkirch,Laterns,0.0,0.0,direct None / with changes 120,False
+Rankweil|bigrail,night,Feldkirch,Götzis,3.2,4.8,direct None / with changes 375,False
+Schruns|bus,peak,Bartholomäberg (slow),St. Gallenkirch,2.0,0.0,direct None / with changes 90,False
+Schruns|bus,day,Bartholomäberg (slow),St. Gallenkirch,2.0,0.0,direct None / with changes 60,False
+Schruns|bus,night,Bludenz,St. Gallenkirch,4.7,2.3,direct None / with changes 375,False
+Schwarzach|bigrail,peak,Dornbirn,Wolfurt,5.3,3.7,direct None / with changes 30,False
+Schwarzach|bigrail,peak,Alberschwende,Dornbirn,6.5,3.7,direct None / with changes 52,False
+Schwarzach|bigrail,day,Dornbirn,Wolfurt,5.3,3.7,direct None / with changes 30,False
+Schwarzach|bigrail,day,Alberschwende,Dornbirn,5.4,3.7,direct None / with changes 56,False
+Schwarzach|bigrail,day,Alberschwende,Wolfurt,12.3,3.7,direct None / with changes 52,False
+Schwarzach|bigrail,night,Dornbirn,Wolfurt,5.3,3.7,direct None / with changes 322,False
+Wolfurt|bigrail,peak,Bregenz,Schwarzach,5.2,6.8,direct None / with changes 38,False
+Wolfurt|bigrail,peak,Bregenz,Dornbirn,3.0,6.8,direct None / with changes 45,False
+Wolfurt|bigrail,day,Bregenz,Schwarzach,5.2,6.8,direct None / with changes 30,False
+Wolfurt|bigrail,day,Bregenz,Dornbirn,2.7,6.8,direct None / with changes 34,False
+Wolfurt|bigrail,day,Alberschwende (fast),Bregenz,2.0,0.0,direct None / with changes 120,False
+Wolfurt|bigrail,night,Bregenz,Schwarzach,5.2,6.8,direct None / with changes 278,False
+Wolfurt|bigrail,night,Bregenz,Dornbirn,2.9,6.8,direct None / with changes 371,False
+Bezau|bus,peak,Andelsbuch,Bizau,2.0,0.0,direct None / with changes 90,False
+Bezau|bus,day,Andelsbuch,Bizau,2.0,0.0,direct None / with changes 60,False
+Egg|bus,peak,Alberschwende,Lingenau,2.8,0.0,direct None / with changes 69,False
+Egg|bus,peak,Andelsbuch,Lingenau,8.0,0.0,direct None / with changes 120,False
+Egg|bus,day,Alberschwende,Lingenau,2.3,0.0,direct None / with changes 53,False
+Egg|bus,day,Andelsbuch,Lingenau,8.0,0.0,direct None / with changes 75,False
+Göfis|bus,peak,Frastanz,Rankweil,8.0,0.0,direct None / with changes 90,False
+Göfis|bus,day,Frastanz,Rankweil,8.0,0.0,direct None / with changes 60,False
+Koblach|bus,peak,Götzis (fast),Klaus (slow),9.0,0.0,direct None / with changes 120,False
+Koblach|bus,day,Götzis (fast),Klaus (slow),9.0,0.0,direct None / with changes 75,False
+Laterns|bus,peak,Damüls,Rankweil,7.0,0.0,direct None / with changes 90,False
+Schoppernau|bus,peak,Bezau,Warth,1.0,0.0,direct None / with changes 120,False
+Schoppernau|bus,day,Bezau,Warth,1.0,0.0,direct None / with changes 90,False
+Thüringen|bus,peak,Nenzing,Raggal,3.0,0.0,direct None / with changes 120,False
+Thüringen|bus,day,Damüls,Nenzing,6.0,0.0,direct None / with changes 120,False
+Thüringen|bus,day,Nenzing,Raggal,3.0,0.0,direct None / with changes 120,False
+Klösterle|bus|1,peak,Bludenz,Lech,4.3,0.0,direct None / with changes 90,False
+Klösterle|bus|1,day,Bludenz,Lech,5.0,0.0,direct None / with changes 120,False

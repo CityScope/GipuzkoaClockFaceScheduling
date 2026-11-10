@@ -1,0 +1,6 @@
+pandas>=2.0
+numpy>=1.24
+polars>=1.0
+geopandas>=0.14
+shapely>=2.0
+rasterio>=1.3      # only for code/make_population.py

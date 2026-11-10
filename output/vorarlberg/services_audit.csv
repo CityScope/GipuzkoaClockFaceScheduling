@@ -1,0 +1,92 @@
+route_key,trips,stops,munis,feed,regional,other,on_map
+Rail Austria:A-1@12-A-1-j26-1,3,4,3,Rail Austria,True,False,True
+Rail Austria:A-1@13-A-1-j26-1,1,2,2,Rail Austria,True,False,True
+Rail Austria:A11@10-A11-j26-1,9,8,4,Rail Austria,True,False,True
+Rail Austria:A13@13-A13-j26-1,2,8,4,Rail Austria,True,False,True
+Rail Austria:A15-A@12-A15-A-j26-1,1,2,2,Rail Austria,True,False,True
+Rail Austria:A18@10-A18-j26-1,2,4,2,Rail Austria,True,False,True
+Rail Austria:A3@10-A3-j26-1,20,19,7,Rail Austria,True,False,True
+Rail Austria:A3@12-A3-j26-1,4,16,8,Rail Austria,True,False,True
+Rail Austria:A3@13-A3-j26-1,1,7,6,Rail Austria,True,False,True
+Rail Austria:A94@12-A94-j26-1,2,4,3,Rail Austria,True,False,True
+Rail Austria:R1@3-R1-V-j26-1,18,53,18,Rail Austria,True,False,True
+Rail Austria:R5@3-R5-V-j26-1,15,26,11,Rail Austria,True,False,True
+Rail Austria:REX1@2-RX1-V-j26-1,44,29,10,Rail Austria,True,False,True
+Rail Austria:S1@1-MS1-V-j26-1,1,23,17,Rail Austria,True,False,True
+Rail Austria:S1@1-S1-V-j26-1,76,57,18,Rail Austria,True,False,True
+Rail Austria:S2@1-S2-V-j26-1,1,7,6,Rail Austria,True,False,True
+Rail Austria:S3@1-S3-V-j26-1,68,12,4,Rail Austria,True,False,True
+Rail Austria:S4@1-MB4-j26-1,68,14,5,Rail Austria,True,False,True
+Rail Austria:WB1-W@9-WB1-W-j26-1,4,19,9,Rail Austria,True,False,True
+VMOBIL:121@at:vvv:121:,37,37,3,VMOBIL,True,False,True
+VMOBIL:126@at:vvv:126:,34,38,3,VMOBIL,True,False,True
+VMOBIL:127@at:vvv:127:,29,32,3,VMOBIL,True,False,True
+VMOBIL:130@at:vvv:130:,67,66,5,VMOBIL,True,False,True
+VMOBIL:131@at:vvv:131:,67,46,4,VMOBIL,True,False,True
+VMOBIL:135@at:vvv:135:,70,64,5,VMOBIL,True,False,True
+VMOBIL:140@at:vvv:140:,68,65,5,VMOBIL,True,False,True
+VMOBIL:141@at:vvv:141:,67,49,5,VMOBIL,True,False,True
+VMOBIL:145@at:vvv:145:,59,51,4,VMOBIL,True,False,True
+VMOBIL:150@at:vvv:150:,67,57,5,VMOBIL,True,False,True
+VMOBIL:151@at:vvv:151:,71,51,4,VMOBIL,True,False,True
+VMOBIL:158@at:vvv:158:,23,36,3,VMOBIL,True,False,True
+VMOBIL:159@at:vvv:159:,23,35,4,VMOBIL,True,False,True
+VMOBIL:160@at:vvv:160:,72,81,4,VMOBIL,True,False,True
+VMOBIL:163@at:vvv:163:,60,43,3,VMOBIL,True,False,True
+VMOBIL:180@at:vvv:180:,63,60,3,VMOBIL,True,False,True
+VMOBIL:182@at:vvv:182:,55,58,4,VMOBIL,True,False,True
+VMOBIL:185@at:vvv:185:,71,73,3,VMOBIL,True,False,True
+VMOBIL:186@at:vvv:186:,65,57,5,VMOBIL,True,False,True
+VMOBIL:425@at:vvv:425:,153,83,4,VMOBIL,True,False,True
+VMOBIL:430@at:vvv:430:,78,80,6,VMOBIL,True,False,True
+VMOBIL:431@at:vvv:431:,29,39,6,VMOBIL,True,False,True
+VMOBIL:440@at:vvv:440:,61,81,7,VMOBIL,True,False,True
+VMOBIL:441@at:vvv:441:,59,41,7,VMOBIL,True,False,True
+VMOBIL:445@at:vvv:445:,8,74,8,VMOBIL,True,False,True
+VMOBIL:461@at:vvv:461:,32,35,4,VMOBIL,True,False,True
+VMOBIL:470@at:vvv:470:,16,76,6,VMOBIL,True,False,True
+VMOBIL:480@at:vvv:480:,124,52,4,VMOBIL,True,False,True
+VMOBIL:495@at:vvv:495:,40,66,4,VMOBIL,True,False,True
+VMOBIL:521@at:vvv:521:,13,47,5,VMOBIL,True,False,True
+VMOBIL:525@at:vvv:525:,24,32,4,VMOBIL,True,False,True
+VMOBIL:530@at:vvv:530:,33,39,6,VMOBIL,True,False,True
+VMOBIL:531@at:vvv:531:,21,100,10,VMOBIL,True,False,True
+VMOBIL:535@at:vvv:535:,25,54,7,VMOBIL,True,False,True
+VMOBIL:540@at:vvv:540:,26,33,4,VMOBIL,True,False,True
+VMOBIL:545@at:vvv:545:,23,38,6,VMOBIL,True,False,True
+VMOBIL:550@at:vvv:550:,27,56,6,VMOBIL,True,False,True
+VMOBIL:551@at:vvv:551:,18,53,11,VMOBIL,True,False,True
+VMOBIL:560@at:vvv:560:,56,50,6,VMOBIL,True,False,True
+VMOBIL:561@at:vvv:561:,44,92,7,VMOBIL,True,False,True
+VMOBIL:565@at:vvv:565:,53,53,6,VMOBIL,True,False,True
+VMOBIL:570@at:vvv:570:,36,64,8,VMOBIL,True,False,True
+VMOBIL:575@at:vvv:575:,32,54,6,VMOBIL,True,False,True
+VMOBIL:580@at:vvv:580:,34,46,4,VMOBIL,True,False,True
+VMOBIL:641@at:vvv:641:,8,75,4,VMOBIL,True,False,True
+VMOBIL:650@at:vvv:650:,72,91,6,VMOBIL,True,False,True
+VMOBIL:651@at:vvv:651:,7,26,6,VMOBIL,True,False,True
+VMOBIL:670@at:vvv:670:,24,71,3,VMOBIL,True,False,True
+VMOBIL:720@at:vvv:720:,50,76,4,VMOBIL,True,False,True
+VMOBIL:760@at:vvv:760:,24,16,2,VMOBIL,True,False,True
+VMOBIL:820@at:vvv:820:,52,110,9,VMOBIL,True,False,True
+VMOBIL:821@at:vvv:821:,26,40,3,VMOBIL,True,False,True
+VMOBIL:830@at:vvv:830:,41,96,11,VMOBIL,True,False,True
+VMOBIL:831@at:vvv:831:,39,21,3,VMOBIL,True,False,True
+VMOBIL:840@at:vvv:840:,31,111,11,VMOBIL,True,False,True
+VMOBIL:850@at:vvv:850:,56,139,12,VMOBIL,True,False,True
+VMOBIL:852@at:vvv:852:,22,46,4,VMOBIL,True,False,True
+VMOBIL:860@at:vvv:860:,31,85,5,VMOBIL,True,False,True
+VMOBIL:870@at:vvv:870:,45,53,4,VMOBIL,True,False,True
+VMOBIL:890@at:vvv:890:,64,64,5,VMOBIL,True,False,True
+VMOBIL:8R1@at:vvv:923:,14,27,12,VMOBIL,True,False,True
+VMOBIL:N6@at:vvv:930:,11,70,4,VMOBIL,True,False,True
+VMOBIL:SK@at:vvv:9401:,1,25,4,VMOBIL,True,False,True
+VMOBIL:SK@at:vvv:9402:,1,28,5,VMOBIL,True,False,True
+VMOBIL:SK@at:vvv:9405:,1,33,4,VMOBIL,True,False,True
+VMOBIL:SK@at:vvv:9406:,1,22,4,VMOBIL,True,False,True
+VMOBIL:SK@at:vvv:9407:,1,27,5,VMOBIL,True,False,True
+VMOBIL:SK@at:vvv:9410:,1,22,4,VMOBIL,True,False,True
+VMOBIL:SK@at:vvv:9412:,1,36,5,VMOBIL,True,False,True
+VMOBIL:SK@at:vvv:9421:,1,25,5,VMOBIL,True,False,True
+VMOBIL:SK@at:vvv:9422:,1,41,6,VMOBIL,True,False,True
+VMOBIL:SK@at:vvv:9423:,1,33,4,VMOBIL,True,False,True

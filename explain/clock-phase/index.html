@@ -1,0 +1,75 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clock-Phase Scheduling</title><meta name="description" content="Animation of a clock-face timetable hub (Taktknoten)."><style>
+:root{--ink:#1d2433;--mute:#5d6678;--line:#e2e6ee;--bg:#f6f7fa;--card:#fff;--acc:#c62828;--link:#1d4ed8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--acc:#ef5350;--link:#93b4ff}}
+:root[data-theme="dark"]{--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--acc:#ef5350;--link:#93b4ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--link)}main{max-width:1100px;margin:0 auto;padding:28px 16px 48px}
+h1{font-size:28px;margin:0 0 6px}h2{font-size:18px;margin:32px 0 12px}.lead{color:var(--mute);max-width:760px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:transform .12s,box-shadow .12s}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 20px #0002}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#fff;border-bottom:1px solid var(--line)}
+.card .b{padding:12px 14px}.card h3{margin:0;font-size:17px}.card .c{color:var(--mute);font-size:13px}
+.card .s{display:flex;gap:14px;margin-top:8px;font-size:13px}.card .s b{font-size:16px;display:block}
+.links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.links a{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-decoration:none;color:inherit}
+.links a b{color:var(--link)}.links a span{display:block;color:var(--mute);font-size:13px}
+.leg{display:flex;flex-wrap:wrap;gap:16px;color:var(--mute);font-size:13px;margin-top:12px}.leg i{display:inline-block;width:18px;height:4px;border-radius:2px;vertical-align:middle;margin-right:6px}
+footer{color:var(--mute);font-size:12.5px;margin-top:36px;border-top:1px solid var(--line);padding-top:14px}
+article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 28px 24px;max-width:900px;margin:0 auto}
+article table{border-collapse:collapse;font-size:13.5px;width:100%;display:block;overflow-x:auto}article td,article th{border:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
+article code{background:var(--bg);padding:1px 4px;border-radius:4px;font-size:90%}
+.back{display:inline-block;margin-bottom:14px}
+:root{--soft:#eceff4}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--soft:#262e3d}}:root[data-theme="dark"]{--soft:#262e3d}
+canvas{width:100%;height:auto;display:block;border-radius:12px;background:var(--soft)}.stage{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
+ul{color:var(--ink);font-size:14.5px;line-height:1.55;padding-left:20px}main{max-width:920px}</style></head>
+<body><main><a class="back" href="../../index.html">← all regions and explainers</a>
+<h1>How clock-phase scheduling works</h1>
+<p class="lead">One hub, one pulse. All lines repeat at the same rhythm and meet around a common minute, the symmetry minute (here :00).</p>
+<div class="stage"><canvas id="anim" width="720" height="330"></canvas></div>
+<ul>
+<li>Local trains and buses arrive first, a few minutes before the symmetry minute. Buses may arrive up to 12′ early.</li>
+<li>The fast trains arrive last, on the centre tracks, just before :00.</li>
+<li>Around :00 everyone changes, often just across the platform. Then the fast trains leave first, and the locals and buses follow.</li>
+<li>Arrivals before the minute mirror the departures after it, so the same changes work in every direction. This is what makes a hub symmetric.</li>
+<li>Next: <a href="../symmetry/">why symmetry is needed and not just coordination</a>.</li>
+</ul></main><script>
+const SK=['bigrail','localrail','bus'],COL={bigrail:'#d32f2f',localrail:'#2e7d32',bus:'#1e6fd9'};
+ const ANIM=(()=>{const cv=document.getElementById('anim'),g=cv.getContext('2d'),W=cv.width,H=cv.height;let raf=0,t0=0;
+  const css=(v)=>getComputedStyle(document.body).getPropertyValue(v).trim()||'#222';
+  const RED=(COL[SK[0]]||'#d62728'),GRN=(SK[1]&&COL[SK[1]])||'#2ca02c',BLU=COL[SK[SK.length-1]]||'#1f77b4';
+  // vehicles: [kind, colour, y, from x, stop x, to x, arrive min, depart min, label]
+  // 2 running tracks; at the station 4 tracks: fast trains on the centre tracks, locals on the outer ones (overtaken)
+  // vehicle: [kind, colour, main track y, station track y, from x, stop x, to x, arrive min, depart min, label]
+  const yA=118,yB=150,oA=86,oB=182,S0=140,S1=W-140;
+  const V=[['r',GRN,yA,oA,-140,270,W+140,50,2,'local A'],['r',GRN,yB,oB,W+140,450,-140,51,3,'local B'],
+   ['t',RED,yA,yA,-180,330,W+180,55,0,'fast train A'],['t',RED,yB,yB,W+180,390,-180,56,1,'fast train B'],
+   ['b',BLU,0,250,-80,170,-80,49,2,'bus 1'],['b',BLU,0,250,W+80,330,W+80,50,3,'bus 2'],['b',BLU,0,296,W+80,520,W+80,48,4,'bus 3']];
+  const pos=(v,m)=>{const tr=4,a=v[7],d=v[8]+(v[8]<30?60:0),mm=m<30?m+60:m;
+   if(mm<a-tr||mm>d+tr)return null;if(mm<a)return v[4]+(v[5]-v[4])*(1-(a-mm)/tr);if(mm<=d)return v[5];return v[5]+(v[6]-v[5])*((mm-d)/tr);};
+  const ypos=(v,x)=>{if(v[0]==='b')return v[3];const r=30;const f=x<S0-r||x>S1+r?0:(x<S0?(x-(S0-r))/r:(x>S1?((S1+r)-x)/r:1));return v[2]+(v[3]-v[2])*Math.max(0,Math.min(1,f));};
+  const draw=(m)=>{const ink=css('--ink'),mute=css('--mute');g.clearRect(0,0,W,H);
+   g.fillStyle=css('--soft');g.fillRect(0,0,W,H);
+   // platforms (islands between an outer and a centre track: cross-platform changes)
+   g.fillStyle='rgba(120,120,120,.28)';g.fillRect(S0+10,oA+12,S1-S0-20,yA-oA-20);g.fillRect(S0+10,yB+12,S1-S0-20,oB-yB-20);
+   g.fillStyle=mute;g.font='10px sans-serif';g.fillText('platform',S0+16,oA+24);g.fillText('platform',S0+16,yB+24);
+   // tracks: 2 running tracks, splitting into 4 at the station
+   g.strokeStyle=mute;g.lineWidth=2;
+   for(const y of [yA,yB]){g.beginPath();g.moveTo(0,y+9);g.lineTo(W,y+9);g.stroke();}
+   for(const [ym,yo] of [[yA,oA],[yB,oB]]){g.beginPath();g.moveTo(S0-30,ym+9);g.lineTo(S0,yo+9);g.lineTo(S1,yo+9);g.lineTo(S1+30,ym+9);g.stroke();}
+   g.fillStyle='rgba(120,120,120,.18)';g.fillRect(120,226,460,96);g.fillStyle=mute;g.fillText('bus station',128,316);
+   const mm=m<30?m+60:m;if(mm>=57&&mm<=61){g.fillStyle=ink;for(let i=0;i<16;i++){const p=((mm-57)/4+i/16)%1,x0=S0+30+i*24,y0=i%2?oA+20:yB+20,y1=i%3?yA+20:(i%2?262:300);g.globalAlpha=.7;g.beginPath();g.arc(x0+(i%2?16:-8)*p,y0+(y1-y0)*p,2.6,0,7);g.fill();}g.globalAlpha=1;}
+   for(const v of V){const x=pos(v,m);if(x==null)continue;const L=v[0]==='t'?150:v[0]==='r'?96:52,h=v[0]==='b'?20:16,y=ypos(v,x)-h/2+(v[0]==='b'?0:2);
+    g.fillStyle=v[1];g.strokeStyle='#fff';g.lineWidth=1.5;g.beginPath();g.roundRect?g.roundRect(x-L/2,y,L,h,5):g.rect(x-L/2,y,L,h);g.fill();g.stroke();
+    g.fillStyle='rgba(255,255,255,.9)';for(let k=x-L/2+8;k<x+L/2-10;k+=14)g.fillRect(k,y+4,8,5);
+    g.fillStyle=ink;g.font='10px sans-serif';g.fillText(v[9],x-L/2,y-3);}
+   const cx=W-48,cy=40,R=28;g.fillStyle=css('--bg');g.strokeStyle=ink;g.lineWidth=2;g.beginPath();g.arc(cx,cy,R,0,7);g.fill();g.stroke();
+   g.strokeStyle='#000';g.lineWidth=2;g.beginPath();g.moveTo(cx,cy);g.lineTo(cx,cy-R);g.stroke();
+   const a=m/60*2*Math.PI-Math.PI/2;g.strokeStyle='#d62728';g.lineWidth=2.4;g.beginPath();g.moveTo(cx,cy);g.lineTo(cx+Math.cos(a)*(R-5),cy+Math.sin(a)*(R-5));g.stroke();
+   g.fillStyle=ink;g.font='bold 15px sans-serif';g.fillText(':'+String(Math.floor(m)%60).padStart(2,'0'),cx-62,cy+5);
+   g.font='12px sans-serif';const txt=mm<53?'the local trains and the buses arrive first (outer tracks, bus station)':mm<57?'the fast trains arrive on the centre tracks; the locals wait':mm<=61?'symmetry minute :00 - changes across the platform - the fast trains leave first':mm<=64?'the locals follow behind the fast trains':'all have left';g.fillText(txt,16,22);};
+  const loop=(ts)=>{if(!t0)t0=ts;const m=(47+((ts-t0)/1000*2.0)%22)%60;draw(m);raf=requestAnimationFrame(loop);};   // :47 -> :09, then again
+  return {start(){t0=0;cancelAnimationFrame(raf);raf=requestAnimationFrame(loop);},stop(){cancelAnimationFrame(raf);},frame:draw};})();
+ANIM.start();
+</script></body></html>

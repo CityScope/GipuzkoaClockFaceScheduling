@@ -1,0 +1,343 @@
+node,band,n,minutes,interval,share_in_window
+Alkoven|bus,peak,5,38,60,0.8
+Alkoven|bus,day,9,"10,37",0,0.7777777777777778
+Alkoven|bus,night,2,"15,23",0,1.0
+Amstetten|bigrail,peak,20,"0,5,9,29,56",0,1.0
+Amstetten|bigrail,day,40,"0,5,9,29,56",0,1.0
+Amstetten|bigrail,night,16,"0,5,9,28,40,52",0,0.9375
+Ansfelden|bus|1,peak,12,"18,29,39",0,0.75
+Ansfelden|bus|1,day,24,"19,29,38,46",0,1.0
+Ansfelden|bus|1,night,4,29,60,0.75
+Asten|bus,peak,8,"6,55",0,1.0
+Asten|bus,day,18,"5,55",0,0.9444444444444444
+Asten|bus,night,4,"5,36,54",0,1.0
+Attnang-Puchheim|bigrail,peak,19,"0,7,11,17,36",0,0.9473684210526315
+Attnang-Puchheim|bigrail,day,29,"2,6,10,37",0,0.9310344827586207
+Attnang-Puchheim|bigrail,night,12,"0,9,22,38",0,0.8333333333333334
+Bad Hall|bus,peak,16,"15,23,37,41,46",0,0.9375
+Bad Hall|bus,day,30,"19,23,37",0,0.7333333333333333
+Bad Hall|bus,night,1,23,0,1.0
+Bad Schallerbach|bigrail,peak,9,"19,41,53",0,0.8888888888888888
+Bad Schallerbach|bigrail,day,16,"19,41",0,1.0
+Bad Schallerbach|bigrail,night,7,19,60,0.5714285714285714
+Bad Schallerbach|bus,peak,4,"49,55",0,1.0
+Bad Schallerbach|bus,day,7,"47,53",0,1.0
+Bad Schallerbach|bus,night,0,,0,0.0
+Eferding|bus,peak,9,"28,38",0,0.6666666666666666
+Eferding|bus,day,21,"5,18,24,30,38,58",0,1.0
+Eferding|bus,night,2,"6,31",0,1.0
+Eferding|localrail,peak,10,31,60,0.8
+Eferding|localrail,day,16,31,60,1.0
+Eferding|localrail,night,5,31,60,0.8
+Engerwitzdorf|bus,peak,14,"4,18,37,47",0,1.0
+Engerwitzdorf|bus,day,27,"5,18,37,47",0,0.9259259259259259
+Engerwitzdorf|bus,night,3,"24,34",0,1.0
+Enns|bigrail,peak,9,"10,48",0,0.7777777777777778
+Enns|bigrail,day,20,"10,47",0,0.8
+Enns|bigrail,night,9,"10,41",30,0.6666666666666666
+Enns|bus,peak,8,"17,42",0,1.0
+Enns|bus,day,17,"17,42",0,0.9411764705882353
+Enns|bus,night,3,"18,27,43",0,1.0
+Feldkirchen an der Donau|bus,peak,14,"12,43",30,0.6428571428571429
+Feldkirchen an der Donau|bus,day,40,"12,43",30,0.55
+Feldkirchen an der Donau|bus,night,6,"17,23",0,0.8333333333333334
+Freistadt|bus,peak,5,"17,48,59",0,1.0
+Freistadt|bus,day,10,"48,59",0,0.8
+Freistadt|bus,night,2,"15,47",0,1.0
+Gallneukirchen|bus,peak,10,"15,41,46",0,1.0
+Gallneukirchen|bus,day,19,"15,40,44",0,0.9473684210526315
+Gallneukirchen|bus,night,3,"22,36",0,1.0
+Garsten|bigrail,peak,7,"9,50",0,0.8571428571428571
+Garsten|bigrail,day,12,"9,50",0,1.0
+Garsten|bigrail,night,4,"9,32,36,51",0,1.0
+Garsten|bus,peak,4,"5,14,34,49",0,1.0
+Garsten|bus,day,11,"5,33,49",0,0.9090909090909091
+Garsten|bus,night,0,,0,0.0
+Gaspoltshofen|bus,peak,2,1,0,1.0
+Gaspoltshofen|bus,day,4,1,60,1.0
+Gaspoltshofen|bus,night,0,,0,0.0
+Gramastetten|bus,peak,8,"26,36",0,0.875
+Gramastetten|bus,day,19,"26,35",0,0.8421052631578947
+Gramastetten|bus,night,2,"26,35",0,1.0
+Großraming|bus,peak,3,"0,5,52",0,1.0
+Großraming|bus,day,2,"10,50",0,1.0
+Großraming|bus,night,0,,0,0.0
+Grünau im Almtal|bigrail,peak,3,6,60,1.0
+Grünau im Almtal|bigrail,day,6,6,60,1.0
+Grünau im Almtal|bigrail,night,2,"0,4",0,1.0
+Gunskirchen|bigrail,peak,8,29,60,1.0
+Gunskirchen|bigrail,day,16,30,60,1.0
+Gunskirchen|bigrail,night,8,"27,31",0,0.75
+Gunskirchen|bus,peak,6,30,60,0.6666666666666666
+Gunskirchen|bus,day,11,30,60,1.0
+Gunskirchen|bus,night,0,,0,0.0
+Gurten|bigrail,peak,4,48,60,1.0
+Gurten|bigrail,day,7,48,60,1.0
+Gurten|bigrail,night,1,40,0,1.0
+Haag am Hausruck|bus,peak,2,1,0,1.0
+Haag am Hausruck|bus,day,2,1,0,1.0
+Haag am Hausruck|bus,night,0,,0,0.0
+Hagenberg im Mühlkreis|bus,peak,4,"20,41",0,1.0
+Hagenberg im Mühlkreis|bus,day,10,"20,41",0,0.8
+Hagenberg im Mühlkreis|bus,night,2,"12,23",0,1.0
+Haibach ob der Donau|bus,peak,2,"3,59",0,1.0
+Haibach ob der Donau|bus,day,6,"49,57",0,0.8333333333333334
+Haibach ob der Donau|bus,night,1,56,0,1.0
+Hartkirchen|bus,peak,5,15,60,0.8
+Hartkirchen|bus,day,10,"15,34",0,0.8
+Hartkirchen|bus,night,2,"6,33",0,1.0
+Hellmonsödt|bus,peak,14,"0,6,12",0,0.8571428571428571
+Hellmonsödt|bus,day,29,"0,6",0,0.6896551724137931
+Hellmonsödt|bus,night,4,"6,12,22",0,1.0
+Herzogsdorf|bus,peak,13,"0,10,45",0,0.7692307692307693
+Herzogsdorf|bus,day,37,"0,9,20,29,45",0,0.8918918918918919
+Herzogsdorf|bus,night,6,18,60,0.3333333333333333
+Hörsching|bigrail,peak,10,"10,50",0,0.8
+Hörsching|bigrail,day,16,"10,50",0,0.9375
+Hörsching|bigrail,night,9,"9,49",0,0.7777777777777778
+Hörsching|bus,peak,20,"6,52",0,1.0
+Hörsching|bus,day,40,"6,52",0,0.975
+Hörsching|bus,night,8,"9,29",0,0.625
+Kirchdorf an der Krems|bigrail,peak,8,"14,25",0,1.0
+Kirchdorf an der Krems|bigrail,day,15,"14,26",0,1.0
+Kirchdorf an der Krems|bigrail,night,4,"14,26,56",0,1.0
+Kirchdorf an der Krems|bus,peak,4,"6,44",0,1.0
+Kirchdorf an der Krems|bus,day,9,"43,51",0,0.6666666666666666
+Kirchdorf an der Krems|bus,night,0,,0,0.0
+Kremsmünster|bus,peak,3,"6,42",0,1.0
+Kremsmünster|bus,day,5,43,60,0.6
+Kremsmünster|bus,night,0,,0,0.0
+Laakirchen|bus,peak,1,53,0,1.0
+Laakirchen|bus,day,3,"50,56",0,1.0
+Laakirchen|bus,night,0,,0,0.0
+Lambach|bigrail,peak,8,"26,34",0,1.0
+Lambach|bigrail,day,16,"28,33",0,1.0
+Lambach|bigrail,night,9,"27,33",0,0.6666666666666666
+Lambach|bus,peak,8,43,60,0.625
+Lambach|bus,day,13,"18,43",0,1.0
+Lambach|bus,night,0,,0,0.0
+Lambach|localrail,peak,3,"29,40",0,1.0
+Lambach|localrail,day,4,40,60,1.0
+Lambach|localrail,night,2,34,0,1.0
+Leonding|bigrail,peak,18,"3,21,42,55",0,0.9444444444444444
+Leonding|bigrail,day,32,"3,19,42,54",0,1.0
+Leonding|bigrail,night,15,"3,42,55",0,0.7333333333333333
+Leonding|bus,peak,52,"4,12,31,35,45,51",0,0.7692307692307693
+Leonding|bus,day,109,"5,12,30,34,45,51",0,0.7614678899082569
+Leonding|bus,night,30,"21,39,45,52,59",0,0.6333333333333333
+Linz|bigrail,peak,59,"5,31,36",0,0.5084745762711864
+Linz|bigrail,day,117,"5,31,36",0,0.48717948717948717
+Linz|bigrail,night,42,"0,31,36,44,53",0,0.6428571428571429
+Linz|bigrail|1,peak,7,"0,29",30,0.8571428571428571
+Linz|bigrail|1,day,15,"0,29",30,1.0
+Linz|bigrail|1,night,3,"29,36,59",0,1.0
+Linz|bus,peak,92,"6,11,29,36,41,53",0,0.7608695652173914
+Linz|bus,day,206,"6,12,29,34,39,53",0,0.7135922330097088
+Linz|bus,night,59,"12,44,53,57",0,0.5932203389830508
+Linz|localrail,peak,92,"3,10,18,33,42,48",0,0.6739130434782609
+Linz|localrail,day,198,"3,10,18,25,33,48",0,0.7474747474747475
+Linz|localrail,night,67,"11,41,47",0,0.43283582089552236
+Linz|localrail|1,peak,28,"3,12,19,27,48,57",0,0.7142857142857143
+Linz|localrail|1,day,64,"3,11,18,25,34,40",0,0.75
+Linz|localrail|1,night,28,"17,47",30,0.5714285714285714
+Linz|localrail|16,peak,14,"12,20,27,40,44,58",0,0.9285714285714286
+Linz|localrail|16,day,33,"8,23,39,54",15,0.7878787878787878
+Linz|localrail|16,night,19,"0,7,12,38,42",0,0.8421052631578947
+Linz|localrail|2,peak,93,"4,20,30,34,42,50",0,0.5483870967741935
+Linz|localrail|2,day,207,"4,28,34,42,49,58",0,0.5362318840579711
+Linz|localrail|2,night,64,"1,10,27,31,42,50",0,0.6875
+Linz|localrail|30,peak,45,"0,7,12,27,42,53",0,0.7333333333333333
+Linz|localrail|30,day,97,"0,7,15,24,30,55",0,0.6804123711340206
+Linz|localrail|30,night,47,"8,25,32,40,56",0,0.6382978723404256
+Linz|localrail|34,peak,8,"1,31",30,1.0
+Linz|localrail|34,day,16,"1,31",30,1.0
+Linz|localrail|34,night,3,"1,31",30,1.0
+Losenstein|bigrail,peak,4,"17,21,43",0,1.0
+Losenstein|bigrail,day,8,"17,44",0,1.0
+Losenstein|bigrail,night,2,"14,38",0,1.0
+Losenstein|bus,peak,1,10,0,1.0
+Losenstein|bus,day,1,53,0,1.0
+Losenstein|bus,night,0,,0,0.0
+Marchtrenk|bus,peak,10,"6,52",0,0.9
+Marchtrenk|bus,day,20,"6,52",0,0.95
+Marchtrenk|bus,night,3,"28,46,56",0,1.0
+Mauthausen|bus,peak,5,5,60,0.6
+Mauthausen|bus,day,14,5,60,0.5714285714285714
+Mauthausen|bus,night,4,"5,14,18,24",0,1.0
+Meggenhofen|bus,peak,4,"18,37",0,1.0
+Meggenhofen|bus,day,4,"18,37",0,1.0
+Meggenhofen|bus,night,0,,0,0.0
+Neufelden|bus,peak,8,"3,50",0,0.875
+Neufelden|bus,day,19,"3,17,49",0,0.8421052631578947
+Neufelden|bus,night,1,6,0,1.0
+Neuhofen an der Krems|bigrail,peak,16,"0,23,37",0,1.0
+Neuhofen an der Krems|bigrail,day,31,"0,23",0,0.7741935483870968
+Neuhofen an der Krems|bigrail,night,8,0,60,0.75
+Neuhofen an der Krems|bus,peak,1,6,0,1.0
+Neuhofen an der Krems|bus,day,3,6,60,1.0
+Neuhofen an der Krems|bus,night,0,,0,0.0
+Neumarkt im Hausruckkreis|bigrail,peak,12,"24,35,40",0,0.8333333333333334
+Neumarkt im Hausruckkreis|bigrail,day,23,"24,40",0,0.6086956521739131
+Neumarkt im Hausruckkreis|bigrail,night,9,"36,40",0,0.5555555555555556
+Neumarkt im Mühlkreis|bus,peak,11,"1,15,47,55",0,0.9090909090909091
+Neumarkt im Mühlkreis|bus,day,22,"1,14,18,47,54",0,0.9090909090909091
+Neumarkt im Mühlkreis|bus,night,6,"18,49",30,0.8333333333333334
+Niederwaldkirchen|bus,peak,10,56,60,0.7
+Niederwaldkirchen|bus,day,26,"21,25,54,59",0,0.7692307692307693
+Niederwaldkirchen|bus,night,3,"6,27",0,1.0
+Ottensheim|bus,peak,20,"22,33,39,43",0,0.75
+Ottensheim|bus,day,60,"1,7,20,32,39,43",0,0.9166666666666666
+Ottensheim|bus,night,9,"15,25",0,0.4444444444444444
+Ottensheim|bus|1,peak,10,"36,40",0,0.5
+Ottensheim|bus|1,day,35,"3,7,38",0,0.9142857142857143
+Ottensheim|bus|1,night,7,13,60,0.2857142857142857
+Perg|bus|1,peak,0,,0,0.0
+Perg|bus|1,day,2,"0,15",0,1.0
+Perg|bus|1,night,2,"0,15",0,1.0
+Peuerbach|bus,peak,0,,0,0.0
+Peuerbach|bus,day,1,40,0,1.0
+Peuerbach|bus,night,1,40,0,1.0
+Pichl bei Wels|bus,peak,4,"26,30",0,1.0
+Pichl bei Wels|bus,day,6,29,60,1.0
+Pichl bei Wels|bus,night,0,,0,0.0
+Prambachkirchen|bus,peak,0,,0,0.0
+Prambachkirchen|bus,day,2,"43,54",0,1.0
+Prambachkirchen|bus,night,2,"43,54",0,1.0
+Pregarten|bigrail,peak,6,43,60,0.6666666666666666
+Pregarten|bigrail,day,9,43,60,0.6666666666666666
+Pregarten|bigrail,night,2,43,0,1.0
+Pregarten|bus,peak,6,"25,36",0,1.0
+Pregarten|bus,day,11,"20,27,35",0,1.0
+Pregarten|bus,night,4,"1,20,30",0,1.0
+Rohr im Kremstal|bigrail,peak,16,"10,30,50",20,1.0
+Rohr im Kremstal|bigrail,day,31,"10,30,49",20,1.0
+Rohr im Kremstal|bigrail,night,8,"10,31,48",0,1.0
+Rohr im Kremstal|bus,peak,7,"15,35",0,1.0
+Rohr im Kremstal|bus,day,17,"15,35",0,0.9411764705882353
+Rohr im Kremstal|bus,night,0,,0,0.0
+Rohrbach-Berg|bus,peak,5,36,60,0.8
+Rohrbach-Berg|bus,day,14,"6,36",30,0.8571428571428571
+Rohrbach-Berg|bus,night,2,"49,58",0,1.0
+Sandl|bus,peak,0,,0,0.0
+Sandl|bus,day,1,3,0,1.0
+Sandl|bus,night,1,3,0,1.0
+Sankt Gallen|bigrail,peak,1,50,0,1.0
+Sankt Gallen|bigrail,day,2,"43,47",0,1.0
+Sankt Gallen|bigrail,night,0,,0,0.0
+Sankt Valentin|bigrail,peak,22,"15,22,40,49",0,0.9090909090909091
+Sankt Valentin|bigrail,day,42,"15,22,40,49",0,1.0
+Sankt Valentin|bigrail,night,20,"16,22,44",0,0.6
+Sattledt|bigrail,peak,6,"10,52",0,0.8333333333333334
+Sattledt|bigrail,day,12,"10,50",0,1.0
+Sattledt|bigrail,night,2,"10,47",0,1.0
+Sattledt|bus,peak,3,"1,53",0,1.0
+Sattledt|bus,day,2,"1,14",0,1.0
+Sattledt|bus,night,0,,0,0.0
+Schlierbach|bus,peak,7,15,60,0.42857142857142855
+Schlierbach|bus,day,12,"15,46",30,0.75
+Schlierbach|bus,night,0,,0,0.0
+Schlierbach|bus|1,peak,3,"14,47",0,1.0
+Schlierbach|bus|1,day,9,"14,48",0,0.7777777777777778
+Schlierbach|bus|1,night,0,,0,0.0
+Schlüßlberg|bigrail,peak,9,"23,37,47",0,0.8888888888888888
+Schlüßlberg|bigrail,day,16,"23,37",0,1.0
+Schlüßlberg|bigrail,night,7,24,60,0.42857142857142855
+Schärding|bigrail,peak,8,"3,52",0,0.625
+Schärding|bigrail,day,10,"0,13,50",0,1.0
+Schärding|bigrail,night,3,"31,52,57",0,1.0
+Sierning|bus,peak,12,"20,33",0,0.75
+Sierning|bus,day,27,"20,28,33",0,0.8888888888888888
+Sierning|bus,night,1,34,0,1.0
+St. Florian|bus,peak,9,"5,55",0,0.8888888888888888
+St. Florian|bus,day,24,"4,55",0,0.8333333333333334
+St. Florian|bus,night,2,4,0,1.0
+St. Marienkirchen an der Polsenz|bus,peak,4,"46,55",0,1.0
+St. Marienkirchen an der Polsenz|bus,day,7,"45,55",0,1.0
+St. Marienkirchen an der Polsenz|bus,night,0,,0,0.0
+St. Marien|bus,peak,2,"15,39",0,1.0
+St. Marien|bus,day,6,"15,39",0,1.0
+St. Marien|bus,night,0,,0,0.0
+St. Oswald bei Freistadt|bus,peak,0,,0,0.0
+St. Oswald bei Freistadt|bus,day,1,56,0,1.0
+St. Oswald bei Freistadt|bus,night,1,56,0,1.0
+Stadl-Paura|bus,peak,7,"6,52",0,0.7142857142857143
+Stadl-Paura|bus,day,10,6,60,0.7
+Stadl-Paura|bus,night,0,,0,0.0
+Steinerkirchen an der Traun|bus,peak,2,57,0,1.0
+Steinerkirchen an der Traun|bus,day,3,57,60,1.0
+Steinerkirchen an der Traun|bus,night,0,,0,0.0
+Steyr|bigrail,peak,9,"15,47",0,0.8888888888888888
+Steyr|bigrail,day,16,"15,47",0,1.0
+Steyr|bigrail,night,5,"15,32,36,45",0,1.0
+Steyr|bus,peak,14,"5,56",0,0.6428571428571429
+Steyr|bus,day,31,"5,56",0,0.6129032258064516
+Steyr|bus,night,1,56,0,1.0
+Traun|bigrail,peak,16,"13,48",0,1.0
+Traun|bigrail,day,31,"13,48",0,1.0
+Traun|bigrail,night,8,"13,48",0,1.0
+Traun|bus,peak,36,46,60,0.4444444444444444
+Traun|bus,day,74,46,60,0.4189189189189189
+Traun|bus,night,20,"16,47",30,0.6
+Unterweitersdorf|bus,peak,6,"10,46",0,1.0
+Unterweitersdorf|bus,day,10,"10,46",0,0.9
+Unterweitersdorf|bus,night,3,"15,40",0,1.0
+Vorchdorf|bus,peak,2,33,0,1.0
+Vorchdorf|bus,day,2,33,0,1.0
+Vorchdorf|bus,night,0,,0,0.0
+Vorchdorf|localrail|1,peak,2,53,0,1.0
+Vorchdorf|localrail|1,day,4,53,60,1.0
+Vorchdorf|localrail|1,night,3,"0,50",0,1.0
+Waidhofen an der Ybbs|bigrail,peak,8,29,60,0.75
+Waidhofen an der Ybbs|bigrail,day,12,29,60,1.0
+Waidhofen an der Ybbs|bigrail,night,4,29,60,0.75
+Waizenkirchen|bus,peak,0,,0,0.0
+Waizenkirchen|bus,day,2,48,0,1.0
+Waizenkirchen|bus,night,2,48,0,1.0
+Waizenkirchen|localrail,peak,4,0,60,1.0
+Waizenkirchen|localrail,day,8,0,60,1.0
+Waizenkirchen|localrail,night,0,,0,0.0
+Walding|bigrail|1,peak,9,"23,54",30,0.7777777777777778
+Walding|bigrail|1,day,14,"23,54",30,1.0
+Walding|bigrail|1,night,2,"7,22",0,1.0
+Walding|bus,peak,16,"17,37,45,58",0,0.8125
+Walding|bus,day,44,"17,36,45,59",0,0.7954545454545454
+Walding|bus,night,7,20,60,0.42857142857142855
+Waldkirchen am Wesen|bus,peak,1,56,0,1.0
+Waldkirchen am Wesen|bus,day,1,56,0,1.0
+Waldkirchen am Wesen|bus,night,0,,0,0.0
+Waldneukirchen|bus,peak,13,28,60,0.6923076923076923
+Waldneukirchen|bus,day,24,28,60,0.75
+Waldneukirchen|bus,night,2,"28,58",30,1.0
+Wallern an der Trattnach|bus,peak,4,"49,55",0,1.0
+Wallern an der Trattnach|bus,day,7,"48,54",0,1.0
+Wallern an der Trattnach|bus,night,0,,0,0.0
+Wartberg ob der Aist|bus|1,peak,7,"28,35",0,0.8571428571428571
+Wartberg ob der Aist|bus|1,day,11,"28,33",0,0.8181818181818182
+Wartberg ob der Aist|bus|1,night,4,"3,8,20,25",0,1.0
+Wels|bigrail,peak,46,"10,20,51",0,0.5217391304347826
+Wels|bigrail,day,84,"10,51",0,0.4642857142857143
+Wels|bigrail,night,35,"3,10,17,23,27,42",0,0.7428571428571429
+Wels|bus,peak,20,"3,9,14,29,35,39",0,0.9
+Wels|bus,day,30,"3,15,35,40",0,0.7333333333333333
+Wels|bus,night,1,44,0,1.0
+Weyer|bigrail,peak,6,"12,49",0,0.8333333333333334
+Weyer|bigrail,day,10,"10,19,48",0,1.0
+Weyer|bigrail,night,2,"15,50",0,1.0
+Weyer|bus,peak,1,38,0,1.0
+Weyer|bus,day,0,,0,0.0
+Weyer|bus,night,0,,0,0.0
+Wilhering|bus,peak,14,"2,32,41,57",0,0.9285714285714286
+Wilhering|bus,day,27,"3,7,34,42,57",0,0.8148148148148148
+Wilhering|bus,night,2,19,0,1.0
+Wilhering|localrail,peak,12,"0,27,31,56",0,1.0
+Wilhering|localrail,day,16,"0,56",0,1.0
+Wilhering|localrail,night,9,"1,57",0,0.7777777777777778
+Wolfern|bus,peak,5,"2,22,33",0,1.0
+Wolfern|bus,day,7,"22,34",0,1.0
+Wolfern|bus,night,0,,0,0.0
+Wolfsegg am Hausruck|bus,peak,2,48,0,1.0
+Wolfsegg am Hausruck|bus,day,4,48,60,1.0
+Wolfsegg am Hausruck|bus,night,0,,0,0.0
+Zwettl an der Rodl|bus,peak,5,53,60,0.8
+Zwettl an der Rodl|bus,day,10,53,60,0.8
+Zwettl an der Rodl|bus,night,1,17,0,1.0

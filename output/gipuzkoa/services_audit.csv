@@ -1,0 +1,109 @@
+route_key,trips,stops,munis,feed,regional,other,on_map
+Euskotren:E1@ES:Euskotren:Line:11:,164,23,10,Euskotren,True,False,True
+Euskotren:E2@ES:Euskotren:Line:12:,137,36,7,Euskotren,True,False,True
+Renfe Cercanias:C1@61T0001C1,27,30,19,Renfe Cercanias,True,False,True
+Renfe Cercanias:C1@61T0002C1,26,30,19,Renfe Cercanias,True,False,True
+Renfe Cercanias:C1@61T0003C1,1,26,17,Renfe Cercanias,True,False,True
+Renfe Cercanias:C1@61T0005C1,3,9,9,Renfe Cercanias,True,False,True
+Renfe Cercanias:C1@61T0006C1,3,9,9,Renfe Cercanias,True,False,True
+Renfe Cercanias:C1@61T0007C1,2,14,12,Renfe Cercanias,True,False,True
+Renfe Cercanias:C1@61T0008C1,1,14,12,Renfe Cercanias,True,False,True
+Renfe MD/Alvia:ALVIA@1151171801GL023,1,2,2,Renfe MD/Alvia,True,False,True
+Renfe MD/Alvia:ALVIA@1151178400GL023,1,2,2,Renfe MD/Alvia,True,False,True
+Renfe MD/Alvia:ALVIA@1160017000GL023,2,4,4,Renfe MD/Alvia,True,False,True
+Renfe MD/Alvia:ALVIA@1700011600GL023,2,4,4,Renfe MD/Alvia,True,False,True
+Renfe MD/Alvia:ALVIA@7180111511GL023,2,2,2,Renfe MD/Alvia,True,False,True
+Renfe MD/Alvia:Intercity@1151117000GL026,1,3,3,Renfe MD/Alvia,True,False,True
+Renfe MD/Alvia:Intercity@1700011600GL026,1,4,4,Renfe MD/Alvia,True,False,True
+Renfe MD/Alvia:MD@1000011600VRX,2,12,12,Renfe MD/Alvia,True,False,True
+Renfe MD/Alvia:MD@1160010000VRX,2,12,12,Renfe MD/Alvia,True,False,True
+Renfe MD/Alvia:MD@1160014100VRX,2,12,12,Renfe MD/Alvia,True,False,True
+Renfe MD/Alvia:MD@1410011600VRX,2,12,12,Renfe MD/Alvia,True,False,True
+Renfe MD/Alvia:REG.EXP.@1120011600VRE,1,12,12,Renfe MD/Alvia,True,False,True
+Renfe MD/Alvia:REG.EXP.@1160011200VRE,2,19,13,Renfe MD/Alvia,True,False,True
+ALSA:ALSA - Pam-S.Seb@3180,7,3,3,ALSA,True,False,True
+ALSA:ALSA - Pm-S.S Pu@1426,5,8,8,ALSA,True,False,True
+ALSA:ALSA - S.S-Pa Pu@1427,4,8,8,ALSA,True,False,True
+ALSA:ALSA - S.Seb-Pam@3181,8,2,2,ALSA,True,False,True
+ALSA:ALSA@10037,1,6,6,ALSA,True,False,True
+ALSA:ALSA@10040,1,3,3,ALSA,True,False,True
+ALSA:ALSA@10087,1,6,6,ALSA,True,False,True
+ALSA:ALSA@10090,1,3,3,ALSA,True,False,True
+ALSA:ALSA@1060,1,2,2,ALSA,True,False,True
+ALSA:ALSA@1061,1,2,2,ALSA,True,False,True
+ALSA:ALSA@1160,1,2,2,ALSA,True,False,True
+ALSA:ALSA@3234,8,7,7,ALSA,True,False,True
+ALSA:ALSA@3280,7,7,7,ALSA,True,False,True
+ALSA:ALSA@5690,1,5,5,ALSA,True,False,True
+ALSA:ALSA@5691,1,5,5,ALSA,True,False,True
+ALSA:ALSA@5719,2,2,2,ALSA,True,False,True
+ALSA:ALSA@5727,1,2,2,ALSA,True,False,True
+ALSA:ALSA@5729,3,2,2,ALSA,True,False,True
+ALSA:ALSA@5769,1,2,2,ALSA,True,False,True
+ALSA:ALSA@5777,1,2,2,ALSA,True,False,True
+ALSA:ALSA@5779,2,2,2,ALSA,True,False,True
+Lurraldebus:To01@1,39,31,4,Lurraldebus,True,False,True
+Lurraldebus:To02@2,26,38,6,Lurraldebus,True,False,True
+Lurraldebus:To03@3,36,25,4,Lurraldebus,True,False,True
+Lurraldebus:To05@5,12,24,3,Lurraldebus,True,False,True
+Lurraldebus:To07@7,31,39,8,Lurraldebus,True,False,True
+Lurraldebus:To41g@41,6,28,4,Lurraldebus,True,False,True
+Lurraldebus:To47g@47,13,28,6,Lurraldebus,True,False,True
+Lurraldebus:E02@2,100,49,4,Lurraldebus,True,False,True
+Lurraldebus:E03@3,30,24,4,Lurraldebus,True,False,True
+Lurraldebus:E04@4,28,39,3,Lurraldebus,True,False,True
+Lurraldebus:E07@7,32,34,3,Lurraldebus,True,False,True
+Lurraldebus:E20@20,36,52,6,Lurraldebus,True,False,True
+Lurraldebus:E23@23,4,25,3,Lurraldebus,True,False,True
+Lurraldebus:E26@26,37,54,7,Lurraldebus,True,False,True
+Lurraldebus:E27@27,27,67,7,Lurraldebus,True,False,True
+Lurraldebus:E28@28,26,34,3,Lurraldebus,True,False,True
+Lurraldebus:E29@29,26,38,3,Lurraldebus,True,False,True
+Lurraldebus:E71@71,4,36,5,Lurraldebus,True,False,True
+Lurraldebus:GO01@1,51,80,8,Lurraldebus,True,False,True
+Lurraldebus:GO04@4,63,62,6,Lurraldebus,True,False,True
+Lurraldebus:GO05@5,33,58,7,Lurraldebus,True,False,True
+Lurraldebus:GO06@6,65,36,5,Lurraldebus,True,False,True
+Lurraldebus:Go07@7,32,14,6,Lurraldebus,True,False,True
+Lurraldebus:Uk01@11,58,47,4,Lurraldebus,True,False,True
+Lurraldebus:Uk02@12,18,62,6,Lurraldebus,True,False,True
+Lurraldebus:Uk03@13,30,45,7,Lurraldebus,True,False,True
+Lurraldebus:Uk04@14,18,22,3,Lurraldebus,True,False,True
+Lurraldebus:Uk05@15,32,36,5,Lurraldebus,True,False,True
+Lurraldebus:Uk06@16,38,61,6,Lurraldebus,True,False,True
+Lurraldebus:DB02@2,40,14,4,Lurraldebus,True,False,True
+Lurraldebus:DB03@3,11,20,4,Lurraldebus,True,False,True
+Lurraldebus:DB04@4,97,55,5,Lurraldebus,True,False,True
+Lurraldebus:DB05@5,24,32,4,Lurraldebus,True,False,True
+Lurraldebus:DB06@6,14,48,6,Lurraldebus,True,False,True
+Lurraldebus:UK08@8,19,33,3,Lurraldebus,True,False,True
+Lurraldebus:UK09@9,50,64,8,Lurraldebus,True,False,True
+Lurraldebus:UK10@10,43,25,4,Lurraldebus,True,False,True
+Lurraldebus:UK11@11,29,33,6,Lurraldebus,True,False,True
+Lurraldebus:BU02@2,30,33,4,Lurraldebus,True,False,True
+Lurraldebus:BU03@3,55,49,3,Lurraldebus,True,False,True
+Lurraldebus:BU04@4,26,40,3,Lurraldebus,True,False,True
+Lurraldebus:BU05@5,67,65,4,Lurraldebus,True,False,True
+Lurraldebus:BU06@6,42,52,4,Lurraldebus,True,False,True
+Lurraldebus:BU07@7,43,71,6,Lurraldebus,True,False,True
+Lurraldebus:BU08@8,60,30,4,Lurraldebus,True,False,True
+Lurraldebus:BU09@9,18,18,4,Lurraldebus,True,False,True
+Lurraldebus:BU12@12,59,48,3,Lurraldebus,True,False,True
+Lurraldebus:DG01@1,12,8,3,Lurraldebus,True,False,True
+Lurraldebus:DG02@2,6,7,3,Lurraldebus,True,False,True
+Lurraldebus:DG04B@64,1,2,2,Lurraldebus,True,False,True
+Lurraldebus:DG05@5,30,64,6,Lurraldebus,True,False,True
+Lurraldebus:DG05A@26,39,11,4,Lurraldebus,True,False,True
+Lurraldebus:DG05D@27,10,21,7,Lurraldebus,True,False,True
+Lurraldebus:DG07@7,37,16,8,Lurraldebus,True,False,True
+Lurraldebus:DG10@10,70,36,4,Lurraldebus,True,False,True
+Lurraldebus:DG11@28,34,46,4,Lurraldebus,True,False,True
+Lurraldebus:DG21E@21,34,25,4,Lurraldebus,True,False,True
+Lurraldebus:DG45G@45,1,32,6,Lurraldebus,True,False,True
+Lurraldebus:DG48G@48,1,5,4,Lurraldebus,True,False,True
+Lurraldebus:DG56B@56,11,5,4,Lurraldebus,True,False,True
+Lurraldebus:DO01@11,57,3,2,Lurraldebus,True,False,True
+Lurraldebus:DO02@12,34,3,2,Lurraldebus,True,False,True
+Lurraldebus:DO03@13,4,34,17,Lurraldebus,True,False,True
+Lurraldebus:Dg04@4,71,29,4,Lurraldebus,True,False,True
+Lurraldebus:Do04@50,33,3,2,Lurraldebus,True,False,True

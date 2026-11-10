@@ -1,0 +1,32 @@
+a,b,meters,walk_min
+Bad Schallerbach|bigrail,Bad Schallerbach|bus,152,2.0
+Eferding|localrail,Eferding|bus,93,1.2
+Enns|bigrail,Enns|bus,160,2.1
+Garsten|bigrail,Garsten|bus,146,1.9
+Gunskirchen|bigrail,Gunskirchen|bus,89,1.2
+Hörsching|bigrail,Hörsching|bus,63,0.8
+Kirchdorf an der Krems|bigrail,Kirchdorf an der Krems|bus,273,3.6
+Lambach|bigrail,Lambach|localrail,42,0.6
+Lambach|bigrail,Lambach|bus,56,0.7
+Lambach|localrail,Lambach|bus,65,0.9
+Leonding|bigrail,Leonding|bus,142,1.9
+Linz|bigrail,Linz|localrail,86,1.1
+Linz|bigrail,Linz|bus,275,3.7
+Linz|localrail,Linz|bus,190,2.5
+Losenstein|bigrail,Losenstein|bus,305,4.1
+Neuhofen an der Krems|bigrail,Neuhofen an der Krems|bus,240,3.2
+Pregarten|bigrail,Pregarten|bus,120,1.6
+Rohr im Kremstal|bigrail,Rohr im Kremstal|bus,118,1.6
+Sattledt|bigrail,Sattledt|bus,49,0.7
+Schlüßlberg|bigrail,Schlüßlberg|bus,264,3.5
+Steyr|bigrail,Steyr|bus,73,1.0
+Traun|bigrail,Traun|bus,356,4.8
+Waizenkirchen|localrail,Waizenkirchen|bus,63,0.8
+Wels|bigrail,Wels|bus,139,1.9
+Weyer|bigrail,Weyer|bus,117,1.6
+Wilhering|localrail,Wilhering|bus,112,1.5
+Asten|bus,St. Florian|bus,50,0.7
+Ottensheim|bus,Ottensheim|bus|1,273,3.6
+Vorchdorf|bus,Vorchdorf|localrail|1,32,0.4
+Walding|bus,Walding|bigrail|1,66,0.9
+Linz|bigrail|1,Linz|localrail|2,303,4.0

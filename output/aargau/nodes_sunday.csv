@@ -1,0 +1,117 @@
+,lat,lon,anchor,town,system,label,name,departures,routes,score,important,group
+Aarau|bigrail,47.391331212857146,8.052067015714286,Aarau,Aarau,bigrail,Aarau,Aarau · National railways,314.0,13.0,379.0,True,Aarau|bigrail
+Aarau|localrail,47.390860765,8.05261948,Aarau,Aarau,localrail,Aarau,Aarau · Local railways,110.0,1.0,115.0,True,Aarau|bigrail
+Baden|bigrail,47.475986615,8.3072278575,Baden,Baden,bigrail,Baden,Baden · National railways,277.0,9.0,322.0,True,Baden|bigrail
+Basel|bigrail,47.546720882399995,7.589800078000001,Basel SBB,Basel,bigrail,Basel · SBB,Basel · SBB · National railways,230.0,23.0,345.0,True,Basel|bigrail
+Beinwil am See|bigrail,47.26776694,8.202305755000001,Beinwil am See,Beinwil am See,bigrail,Beinwil am See,Beinwil am See · National railways,70.0,1.0,75.0,True,Beinwil am See|bigrail
+Berikon|localrail,47.362059875,8.366369565,Berikon-Widen,Berikon,localrail,Berikon,Berikon · Local railways,113.0,1.0,118.0,True,Berikon|bus
+Bremgarten|localrail,47.35116279666667,8.345579556666666,Bremgarten,Bremgarten,localrail,Bremgarten,Bremgarten · Local railways,95.0,1.0,100.0,True,Bremgarten|bus
+Brugg|bigrail,47.481210147999995,8.209439276000001,Brugg AG,Brugg,bigrail,Brugg,Brugg · National railways,274.0,10.0,324.0,True,Brugg|bigrail
+Bülach|bigrail,47.524120158,8.536034376,Bülach,Bülach,bigrail,Bülach,Bülach · National railways,75.0,6.0,105.0,True,Bülach|bigrail
+Dietikon|bigrail,47.4046306,8.40581459,Dietikon,Dietikon,bigrail,Dietikon,Dietikon · National railways,205.0,8.0,245.0,True,Dietikon|bigrail
+Dietikon|localrail,47.4047826,8.40473302,Dietikon,Dietikon,localrail,Dietikon · main station,Dietikon · main station · Local railways,132.0,2.0,142.0,True,Dietikon|bigrail
+Döttingen|bigrail,47.575024330000005,8.256626879999999,Döttingen,Döttingen,bigrail,Döttingen,Döttingen · National railways,57.0,1.0,62.0,True,Döttingen|bigrail
+Frick|bigrail,47.50701044666666,8.012621993333333,Frick,Frick,bigrail,Frick,Frick · National railways,101.0,3.0,116.0,True,Frick|bigrail
+Gelterkinden|bigrail,47.46589599,7.8467435850000005,Gelterkinden,Gelterkinden,bigrail,Gelterkinden,Gelterkinden · National railways,166.0,4.0,186.0,True,Gelterkinden|bigrail
+Hochdorf|bigrail,47.167339255,8.288238595,Hochdorf,Hochdorf,bigrail,Hochdorf,Hochdorf · National railways,35.0,1.0,40.0,True,Hochdorf|bigrail
+Kaiseraugst|bigrail,47.53870174,7.7239888,Kaiseraugst,Kaiseraugst,bigrail,Kaiseraugst,Kaiseraugst · National railways,84.0,1.0,89.0,True,Kaiseraugst|bigrail
+Killwangen|bigrail,47.43351762,8.354421975000001,Killwangen-Spreitenbach,Killwangen,bigrail,Killwangen,Killwangen · National railways,150.0,5.0,175.0,True,Killwangen|bigrail
+Killwangen|localrail,47.43336267,8.35357756,"Killwangen, Bahnhof",Killwangen,localrail,Killwangen,Killwangen · Local railways,72.0,1.0,77.0,True,Killwangen|bigrail
+Laufenburg|bigrail,47.55981695,8.06150831,Laufenburg,Laufenburg,bigrail,Laufenburg,Laufenburg · National railways,19.0,1.0,24.0,True,Laufenburg|bigrail
+Lenzburg|bigrail,47.391437677272734,8.169973346363635,Lenzburg,Lenzburg,bigrail,Lenzburg,Lenzburg · National railways,129.0,4.0,149.0,True,Lenzburg|bigrail
+Mellingen|bigrail,47.428121315,8.27626405,Mellingen Heitersberg,Mellingen,bigrail,Mellingen,Mellingen · National railways,78.0,1.0,83.0,True,Mellingen|bigrail
+Menziken|localrail,47.24081088,8.18929366,Menziken,Menziken,localrail,Menziken,Menziken · Local railways,38.0,1.0,43.0,True,Menziken|bus
+Muri|bigrail,47.27678683,8.33989322,Muri AG,Muri,bigrail,Muri,Muri · National railways,88.0,2.0,98.0,True,Muri|bigrail
+Möhlin|bigrail,47.561817379999994,7.833111645000001,Möhlin,Möhlin,bigrail,Möhlin,Möhlin · National railways,159.0,3.0,174.0,True,Möhlin|bigrail
+Möriken-Wildegg|bigrail,47.41643957,8.16393422,Wildegg,Möriken-Wildegg,bigrail,Möriken-Wildegg,Möriken-Wildegg · National railways,87.0,3.0,102.0,True,Möriken-Wildegg|bigrail
+Olten|bigrail,47.352380681111114,7.90785996388889,Olten,Olten,bigrail,Olten,Olten · National railways,344.0,29.0,489.0,True,Olten|bigrail
+Othmarsingen|bigrail,47.407339150000006,8.21424212,Othmarsingen,Othmarsingen,bigrail,Othmarsingen,Othmarsingen · National railways,92.0,3.0,107.0,True,Othmarsingen|bigrail
+Pratteln|bigrail,47.5227877125,7.691251945,Pratteln,Pratteln,bigrail,Pratteln,Pratteln · National railways,192.0,4.0,212.0,True,Pratteln|bigrail
+Regensdorf|bigrail,47.437142195,8.471364659999999,Regensdorf-Watt,Regensdorf,bigrail,Regensdorf,Regensdorf · National railways,44.0,2.0,54.0,True,Regensdorf|bigrail
+Rheinfelden|bigrail,47.55088988,7.791730755,Rheinfelden,Rheinfelden,bigrail,Rheinfelden,Rheinfelden · National railways,159.0,3.0,174.0,True,Rheinfelden|bigrail
+Risch-Rotkreuz|bigrail,47.14204807000001,8.430808713333333,Rotkreuz,Risch-Rotkreuz,bigrail,Risch-Rotkreuz,Risch-Rotkreuz · National railways,94.0,5.0,119.0,True,Risch-Rotkreuz|bigrail
+Schöftland|localrail,47.30589415,8.050036825,Schöftland,Schöftland,localrail,Schöftland,Schöftland · Local railways,55.0,1.0,60.0,True,Schöftland|bus
+Stein|bigrail,47.541476155,7.948601305,Stein-Säckingen,Stein,bigrail,Stein,Stein · National railways,159.0,3.0,174.0,True,Stein|bigrail
+Suhr|bigrail,47.37111336,8.08194498,Suhr,Suhr,bigrail,Suhr,Suhr · National railways,37.0,1.0,42.0,True,Suhr|bigrail
+Suhr|localrail,47.37107382,8.082093205,Suhr,Suhr,localrail,Suhr,Suhr · Local railways,93.0,1.0,98.0,True,Suhr|bigrail
+Sursee|bigrail,47.170231582,8.09822605,Sursee,Sursee,bigrail,Sursee,Sursee · National railways,115.0,7.0,150.0,True,Sursee|bigrail
+Teufenthal|localrail,47.32938016,8.1144101,Teufenthal AG,Teufenthal,localrail,Teufenthal,Teufenthal · Local railways,77.0,1.0,82.0,True,Teufenthal|bus
+Wohlen|bigrail,47.34790764,8.27026331,Wohlen AG,Wohlen,bigrail,Wohlen,Wohlen · National railways,109.0,2.0,119.0,True,Wohlen|bigrail
+Würenlingen|bigrail,47.52066598,8.24069526,Siggenthal-Würenlingen,Würenlingen,bigrail,Würenlingen,Würenlingen · National railways,75.0,1.0,80.0,True,Würenlingen|bigrail
+Zofingen|bigrail,47.28823851749999,7.942822895,Zofingen,Zofingen,bigrail,Zofingen,Zofingen · National railways,175.0,7.0,210.0,True,Zofingen|bigrail
+Zurzach|bigrail,47.58807043,8.29600453,Bad Zurzach,Zurzach,bigrail,Zurzach · Bad,Zurzach · Bad · National railways,37.0,2.0,47.0,True,Zurzach|bigrail
+Zürich|bigrail,47.37881242045455,8.536782834545456,Zürich HB,Zürich,bigrail,Zürich · HB,Zürich · HB · National railways,483.0,54.0,753.0,True,Zürich|bigrail
+Aarau|bus,47.39181252,8.051047425,"Aarau, Bahnhof",Aarau,bus,Aarau,Aarau · Regional bus,47.0,9.0,92.0,True,Aarau|bigrail
+Abtwil|bus,47.183267709999996,8.358329645,"Abtwil AG, Langegg",Abtwil,bus,Abtwil,Abtwil · Regional bus,23.0,1.0,28.0,True,Abtwil|bus
+Affoltern am Albis|bus,47.275840112,8.44664841,"Affoltern a.A., Bahnhof",Affoltern am Albis,bus,Affoltern am Albis,Affoltern am Albis · Regional bus,50.0,7.0,85.0,True,Affoltern am Albis|bus
+Augst|bus,47.53493861,7.71162349,"Augst BL, Stundeglas",Augst,bus,Augst,Augst · Regional bus,175.0,4.0,195.0,True,Augst|bus
+Baden|bus,47.47670837166667,8.307625735833334,"Baden, Bahnhof West",Baden,bus,Baden,Baden · Regional bus,455.0,18.0,545.0,True,Baden|bigrail
+Beinwil (Freiamt)|bus,47.22942009,8.34289659,"Beinwil (Freiamt), Dorf",Beinwil (Freiamt),bus,Beinwil (Freiamt),Beinwil (Freiamt) · Regional bus,0.0,0.0,0.0,True,Beinwil (Freiamt)|bus
+Beinwil am See|bus,47.26740729,8.20221592,"Beinwil am See, Bahnhof",Beinwil am See,bus,Beinwil am See,Beinwil am See · Regional bus,14.0,2.0,24.0,True,Beinwil am See|bigrail
+Berikon|bus,47.362062306,8.36694449,"Berikon-Widen, Bahnhof",Berikon,bus,Berikon,Berikon · Regional bus,88.0,3.0,103.0,True,Berikon|bus
+Beromünster|bus,47.204394465,8.200554045,"Beromünster, Mooskapelle",Beromünster,bus,Beromünster,Beromünster · Regional bus,33.0,7.0,68.0,True,Beromünster|bus
+Bettwil|bus,47.29034983,8.26954915,"Bettwil, Oberdorf",Bettwil,bus,Bettwil,Bettwil · Regional bus,14.0,1.0,19.0,True,Bettwil|bus
+Birmensdorf (ZH)|bus,47.35698891333334,8.438466855,"Birmensdorf ZH, Bahnhof",Birmensdorf (ZH),bus,Birmensdorf (ZH),Birmensdorf (ZH) · Regional bus,136.0,7.0,171.0,True,Birmensdorf (ZH)|bus
+Birmenstorf|bus,47.461058726666664,8.245677913333333,"Birmenstorf AG, Strählgass",Birmenstorf,bus,Birmenstorf,Birmenstorf · Regional bus,75.0,2.0,85.0,True,Birmenstorf|bus
+Bottenwil|bus,47.28535933,8.00596548,"Bottenwil, Dorf",Bottenwil,bus,Bottenwil,Bottenwil · Regional bus,30.0,1.0,35.0,True,Bottenwil|bus
+Bremgarten|bus,47.35134091599999,8.345169328,"Bremgarten AG, Bahnhof",Bremgarten,bus,Bremgarten,Bremgarten · Regional bus,75.0,3.0,90.0,True,Bremgarten|bus
+Brugg|bus,47.481215272222215,8.20959159111111,"Brugg AG, Bahnhof/Zentrum",Brugg,bus,Brugg,Brugg · Regional bus,143.0,12.0,203.0,True,Brugg|bigrail
+Döttingen|bus,47.57566066,8.255863315,"Döttingen, Bahnhof",Döttingen,bus,Döttingen,Döttingen · Regional bus,55.0,5.0,80.0,True,Döttingen|bigrail
+Endingen|bus,47.5375323,8.290201413333333,"Endingen, Zentrum",Endingen,bus,Endingen,Endingen · Regional bus,103.0,4.0,123.0,True,Endingen|bus
+Fislisbach|bus,47.43592289333333,8.29128538,"Fislisbach, Post",Fislisbach,bus,Fislisbach,Fislisbach · Regional bus,265.0,8.0,305.0,True,Fislisbach|bus
+Frick|bus,47.506817274999996,8.012930411666668,"Frick, Bahnhof",Frick,bus,Frick,Frick · Regional bus,79.0,4.0,99.0,True,Frick|bigrail
+Gebenstorf|bus,47.48045570666667,8.240317963333332,"Gebenstorf, Cherne",Gebenstorf,bus,Gebenstorf,Gebenstorf · Regional bus,112.0,2.0,122.0,True,Gebenstorf|bus
+Gelterkinden|bus,47.46611765,7.849409085555556,"Gelterkinden, Bahnhof",Gelterkinden,bus,Gelterkinden,Gelterkinden · Regional bus,42.0,5.0,67.0,True,Gelterkinden|bus
+Hägglingen|bus,47.38760805333334,8.256745160000001,"Hägglingen, Altersheim",Hägglingen,bus,Hägglingen,Hägglingen · Regional bus,0.0,1.0,5.0,True,Hägglingen|bus
+Jonen|bus,47.29343895333333,8.39800823,"Jonen, Weingasse",Jonen,bus,Jonen,Jonen · Regional bus,53.0,2.0,63.0,True,Jonen|bus
+Kaiseraugst|bus,47.53826813,7.72387202,"Kaiseraugst, Bahnhof",Kaiseraugst,bus,Kaiseraugst,Kaiseraugst · Regional bus,62.0,3.0,77.0,True,Kaiseraugst|bigrail
+Killwangen|bus,47.43305680666666,8.353984793333334,"Killwangen, Bahnhof",Killwangen,bus,Killwangen,Killwangen · Regional bus,74.0,2.0,84.0,True,Killwangen|bigrail
+Laufenburg|bus,47.55945828166667,8.060421346666667,"Laufenburg, Bahnhof",Laufenburg,bus,Laufenburg,Laufenburg · Regional bus,64.0,4.0,84.0,True,Laufenburg|bigrail
+Lenzburg|bus,47.39019917285714,8.171179772857142,"Lenzburg, Bahnhof",Lenzburg,bus,Lenzburg,Lenzburg · Regional bus,36.0,11.0,91.0,True,Lenzburg|bus
+Meisterschwanden|bus,47.29511647,8.229774740000002,"Meisterschwanden, Oberdorf",Meisterschwanden,bus,Meisterschwanden,Meisterschwanden · Regional bus,67.0,2.0,77.0,True,Meisterschwanden|bus
+Mellingen|bus,47.42831274666667,8.276295493333334,"Mellingen Heitersberg, Bahnhof",Mellingen,bus,Mellingen,Mellingen · Regional bus,145.0,7.0,180.0,True,Mellingen|bigrail
+Menziken|bus,47.240530335,8.189172384999999,"Menziken, Bahnhof",Menziken,bus,Menziken,Menziken · Regional bus,48.0,3.0,63.0,True,Menziken|bus
+Muri|bus,47.27634598,8.33977045,"Muri AG, Bahnhof",Muri,bus,Muri,Muri · Regional bus,31.0,3.0,46.0,True,Muri|bigrail
+Mägenwil|bus,47.41197871666666,8.23970412,"Mägenwil, Eckwil",Mägenwil,bus,Mägenwil,Mägenwil · Regional bus,35.0,4.0,55.0,True,Mägenwil|bus
+Möhlin|bus,47.56156682333333,7.833168543333334,"Möhlin, Bahnhof",Möhlin,bus,Möhlin,Möhlin · Regional bus,38.0,2.0,48.0,True,Möhlin|bigrail
+Mönthal|bus,47.51709874,8.14441383,"Mönthal, Unterdorf",Mönthal,bus,Mönthal,Mönthal · Regional bus,15.0,1.0,20.0,True,Mönthal|bus
+Möriken-Wildegg|bus,47.415874265,8.162110635000001,"Wildegg, Bahnhof/Talstrasse",Möriken-Wildegg,bus,Möriken-Wildegg,Möriken-Wildegg · Regional bus,13.0,3.0,28.0,True,Möriken-Wildegg|bus
+Niederweningen|bus,47.5111634025,8.3698797375,"Niederweningen, Bahnhof",Niederweningen,bus,Niederweningen,Niederweningen · Regional bus,51.0,3.0,66.0,True,Niederweningen|bus
+Oberwil-Lieli|bus,47.33716896666667,8.386399003333333,"Oberwil-Lieli, Dreispitz",Oberwil-Lieli,bus,Oberwil-Lieli,Oberwil-Lieli · Regional bus,82.0,1.0,87.0,True,Oberwil-Lieli|bus
+Pratteln|bus,47.52230089,7.6918605499999995,"Pratteln, Bahnhof Süd",Pratteln,bus,Pratteln,Pratteln · Regional bus,113.0,5.0,138.0,True,Pratteln|bigrail
+Regensdorf|bus,47.436737109999996,8.472846876666665,"Regensdorf-Watt, Bahnhof",Regensdorf,bus,Regensdorf,Regensdorf · Regional bus,37.0,4.0,57.0,True,Regensdorf|bus
+Reiden|bus,47.24149699,7.96908963,"Reiden, Bahnhof",Reiden,bus,Reiden,Reiden · Regional bus,17.0,2.0,27.0,True,Reiden|bus
+Remetschwil|bus,47.407258286,8.327844418000002,"Remetschwil, Dorf",Remetschwil,bus,Remetschwil,Remetschwil · Regional bus,160.0,3.0,175.0,True,Remetschwil|bus
+Rheinfelden|bus,47.551305195,7.791869995000001,"Rheinfelden, Bahnhof",Rheinfelden,bus,Rheinfelden,Rheinfelden · Regional bus,32.0,3.0,47.0,True,Rheinfelden|bigrail
+Root|bus,47.121407925,8.395106675000001,"Gisikon-Root, Bahnhof",Root,bus,Root,Root · Regional bus,0.0,5.0,25.0,True,Root|bus
+Rottenschwil|bus,47.31410463,8.36236308,"Rottenschwil, Kapelle",Rottenschwil,bus,Rottenschwil,Rottenschwil · Regional bus,45.0,2.0,55.0,True,Rottenschwil|bus
+Schinznach|bus,47.4459959775,8.13889817,"Schinznach Dorf, Oberdorf",Schinznach,bus,Schinznach,Schinznach · Regional bus,47.0,2.0,57.0,True,Schinznach|bus
+Schupfart|bus,47.51355551,7.96521789,"Schupfart, Dorf",Schupfart,bus,Schupfart,Schupfart · Regional bus,0.0,1.0,5.0,True,Schupfart|bus
+Schwaderloch|bus,47.586089183333335,8.144749196666666,"Schwaderloch, Bahnhof",Schwaderloch,bus,Schwaderloch,Schwaderloch · Regional bus,30.0,1.0,35.0,True,Schwaderloch|bus
+Schöftland|bus,47.305647449999995,8.050063775000002,"Schöftland, Bahnhof",Schöftland,bus,Schöftland,Schöftland · Regional bus,35.0,3.0,50.0,True,Schöftland|bus
+Schönenwerd|bus,47.371925545,8.00044308,"Schönenwerd SO, Bahnhof",Schönenwerd,bus,Schönenwerd,Schönenwerd · Regional bus,0.0,2.0,10.0,True,Schönenwerd|bus
+Sins|bus,47.18817321,8.39753212,"Sins, Bahnhof",Sins,bus,Sins,Sins · Regional bus,23.0,2.0,33.0,True,Sins|bus
+Spreitenbach|bus,47.422235185000005,8.37400974,"Spreitenbach, IKEA",Spreitenbach,bus,Spreitenbach,Spreitenbach · Regional bus,37.0,2.0,47.0,True,Spreitenbach|bus
+Stadel|bus,47.52816369333334,8.466522736666667,"Stadel b. N., Zentrum",Stadel,bus,Stadel,Stadel · Regional bus,19.0,3.0,34.0,True,Stadel|bus
+Stein|bus,47.541554989999995,7.9496411075,"Stein-Säckingen, Bahnhof",Stein,bus,Stein,Stein · Regional bus,18.0,2.0,28.0,True,Stein|bigrail
+Stetten|bus,47.40004091285715,8.309109667142858,"Stetten AG, Dorfplatz",Stetten,bus,Stetten,Stetten · Regional bus,102.0,2.0,112.0,True,Stetten|bus
+Suhr|bus,47.37158182,8.08189108,"Suhr, Bahnhof",Suhr,bus,Suhr,Suhr · Regional bus,0.0,3.0,15.0,True,Suhr|bigrail
+Teufenthal|bus,47.3294106,8.1152096,"Teufenthal AG, Bahnhof",Teufenthal,bus,Teufenthal,Teufenthal · Regional bus,13.0,1.0,18.0,True,Teufenthal|bus
+Triengen|bus,47.23327829,8.077592645,"Triengen, Dorf",Triengen,bus,Triengen,Triengen · Regional bus,18.0,1.0,23.0,True,Triengen|bus
+Untersiggenthal|bus,47.498126975,8.261751765,"Untersiggenthal, Spiracher",Untersiggenthal,bus,Untersiggenthal,Untersiggenthal · Regional bus,66.0,4.0,86.0,True,Untersiggenthal|bus
+Villigen|bus,47.538061935,8.221758775,"Villigen, PSI West",Villigen,bus,Villigen,Villigen · Regional bus,101.0,2.0,111.0,True,Villigen|bus
+Wallbach|bus,47.55808925,7.90419534,"Wallbach, Gemeindehaus",Wallbach,bus,Wallbach,Wallbach · Regional bus,0.0,1.0,5.0,True,Wallbach|bus
+Waltenschwil|bus,47.333985999999996,8.308221620000001,"Waltenschwil, Hessel",Waltenschwil,bus,Waltenschwil,Waltenschwil · Regional bus,31.0,1.0,36.0,True,Waltenschwil|bus
+Wegenstetten|bus,47.49694651000001,7.930806426666666,"Wegenstetten, Oberdorf",Wegenstetten,bus,Wegenstetten,Wegenstetten · Regional bus,46.0,2.0,56.0,True,Wegenstetten|bus
+Wohlen|bus,47.34946314857143,8.269443915714286,"Wohlen AG, Bahnhof",Wohlen,bus,Wohlen,Wohlen · Regional bus,71.0,5.0,96.0,True,Wohlen|bus
+Würenlingen|bus,47.51991676,8.240663815000001,"Siggenthal-W., Bahnhof",Würenlingen,bus,Würenlingen,Würenlingen · Regional bus,65.0,3.0,80.0,True,Würenlingen|bigrail
+Würenlos|bus,47.44675385333333,8.358832703333333,"Würenlos, Bahnhof",Würenlos,bus,Würenlos,Würenlos · Regional bus,36.0,1.0,41.0,True,Würenlos|bus
+Zofingen|bus,47.28694192142858,7.944819721428573,"Zofingen, Bahnhof",Zofingen,bus,Zofingen,Zofingen · Regional bus,35.0,7.0,70.0,True,Zofingen|bus
+Zurzach|bus,47.5663029,8.41831914,"Kaiserstuhl AG, Bahnhof",Zurzach,bus,Zurzach · Kaiserstuhl AG,Zurzach · Kaiserstuhl AG · Regional bus,32.0,2.0,42.0,True,Zurzach|bigrail|2
+Basel|bigrail|3,47.547264280769234,7.586870990769231,Basel SBB,Basel,bigrail,Basel · SBB,Basel · SBB · National railways,101.0,5.0,126.0,True,Basel|bigrail|3
+Dietikon|localrail|4,47.41295643,8.387475485,"Dietikon, Niderfeld",Dietikon,localrail,Dietikon · Niderfeld,Dietikon · Niderfeld · Local railways,147.0,1.0,152.0,True,Dietikon|localrail|4
+Wohlen|localrail|2,47.348327604999994,8.270546275000001,Wohlen AG,Wohlen,localrail,Wohlen,Wohlen · Local railways,39.0,1.0,44.0,True,Wohlen|bigrail
+Zurzach|bigrail|2,47.56656354,8.41885813,Kaiserstuhl AG,Zurzach,bigrail,Zurzach · Kaiserstuhl AG,Zurzach · Kaiserstuhl AG · National railways,35.0,1.0,40.0,True,Zurzach|bigrail|2
+Zurzach|bus|1,47.588237045,8.295344270000001,"Bad Zurzach, Bahnhof",Zurzach,bus,Zurzach · Bad,Zurzach · Bad · Regional bus,15.0,2.0,25.0,True,Zurzach|bigrail
+Zürich|bigrail|5,47.391656832,8.489282454000001,Zürich Altstetten,Zürich,bigrail,Zürich · Altstetten,Zürich · Altstetten · National railways,419.0,14.0,489.0,True,Zürich|bigrail|5
+Zürich|bus|4,47.364594159999996,8.53043787,"Zürich Enge, Bahnhof/Bederstr.",Zürich,bus,Zürich,Zürich · Regional bus,152.0,35.0,327.0,True,Zürich|bus|4

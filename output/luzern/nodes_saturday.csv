@@ -1,0 +1,77 @@
+,lat,lon,anchor,town,system,label,name,departures,routes,score,important,group
+Arth|bigrail,47.04904922833333,8.550260693333334,Arth-Goldau,Arth,bigrail,Arth,Arth · National railways,108.0,10,158.0,True,Arth|bigrail
+Dagmersellen|bigrail,47.21713909,7.978643215,Dagmersellen,Dagmersellen,bigrail,Dagmersellen,Dagmersellen · National railways,87.0,2,97.0,True,Dagmersellen|bigrail
+Ebikon|bigrail,47.08419081666667,8.341977309999999,Ebikon,Ebikon,bigrail,Ebikon,Ebikon · National railways,86.0,3,101.0,True,Ebikon|bigrail
+Giswil|localrail,46.836336384000006,8.186419052000002,Giswil,Giswil,localrail,Giswil,Giswil · Local railways,58.0,3,73.0,True,Giswil|localrail
+Hergiswil (NW)|localrail,46.98242792,8.30986254,Hergiswil NW,Hergiswil (NW),localrail,Hergiswil (NW),Hergiswil (NW) · Local railways,161.0,4,181.0,True,Hergiswil (NW)|localrail
+Hochdorf|bigrail,47.167339255,8.288238595,Hochdorf,Hochdorf,bigrail,Hochdorf,Hochdorf · National railways,71.0,1,76.0,True,Hochdorf|bigrail
+Horw|localrail,47.01808395333333,8.306745383333334,Horw,Horw,localrail,Horw,Horw · Local railways,159.0,3,174.0,True,Horw|localrail
+Langnau im Emmental|bigrail,46.938748542,7.78475893,Langnau i.E.,Langnau im Emmental,bigrail,Langnau im Emmental,Langnau im Emmental · National railways,36.0,4,56.0,True,Langnau im Emmental|bigrail
+Lenzburg|bigrail,47.391437677272734,8.169973346363635,Lenzburg,Lenzburg,bigrail,Lenzburg,Lenzburg · National railways,126.0,7,161.0,True,Lenzburg|bigrail
+Luzern|bigrail,47.0483481815,8.310413507999998,Luzern,Luzern,bigrail,Luzern,Luzern · National railways,331.0,18,421.0,True,Luzern|bigrail
+Luzern|localrail,47.04893735,8.311065283333333,Luzern,Luzern,localrail,Luzern,Luzern · Local railways,117.0,6,147.0,True,Luzern|bigrail
+Malters|bigrail,47.03858866,8.181343564999999,Malters,Malters,bigrail,Malters,Malters · National railways,74.0,2,84.0,True,Malters|bigrail
+Nebikon|bigrail,47.19343536,7.9771654850000004,Nebikon,Nebikon,bigrail,Nebikon,Nebikon · National railways,87.0,2,97.0,True,Nebikon|bigrail
+Neuenkirch|bigrail,47.115994979999996,8.195864835,Sempach-Neuenkirch,Neuenkirch,bigrail,Neuenkirch,Neuenkirch · National railways,126.0,2,136.0,True,Neuenkirch|bigrail
+Olten|bigrail,47.352380681111114,7.90785996388889,Olten,Olten,bigrail,Olten,Olten · National railways,122.0,27,257.0,True,Olten|bigrail
+Risch-Rotkreuz|bigrail,47.14204807000001,8.430808713333333,Rotkreuz,Risch-Rotkreuz,bigrail,Risch-Rotkreuz,Risch-Rotkreuz · National railways,172.0,6,202.0,True,Risch-Rotkreuz|bigrail
+Root|bigrail,47.104886164999996,8.373767189999999,Root D4,Root,bigrail,Root,Root · National railways,86.0,3,101.0,True,Root|bigrail
+Rothenburg|bigrail,47.088059575,8.249651459999999,Rothenburg Station,Rothenburg,bigrail,Rothenburg,Rothenburg · National railways,123.0,2,133.0,True,Rothenburg|bigrail
+Sachseln|localrail,46.871234295,8.2387549,Sachseln,Sachseln,localrail,Sachseln,Sachseln · Local railways,112.0,2,122.0,True,Sachseln|localrail
+Schüpfheim|bigrail,46.95057572,8.014849815,Schüpfheim,Schüpfheim,bigrail,Schüpfheim,Schüpfheim · National railways,73.0,2,83.0,True,Schüpfheim|bigrail
+Stansstad|localrail,46.976269435,8.33637482,Stansstad,Stansstad,localrail,Stansstad,Stansstad · Local railways,59.0,3,74.0,True,Stansstad|localrail
+Sursee|bigrail,47.170231582,8.09822605,Sursee,Sursee,bigrail,Sursee,Sursee · National railways,177.0,7,212.0,True,Sursee|bigrail
+Vitznau|localrail,47.00936002,8.48238699,Vitznau,Vitznau,localrail,Vitznau,Vitznau · Local railways,14.0,2,24.0,True,Vitznau|bus
+Willisau|bigrail,47.12276795333333,7.996814636666667,Willisau,Willisau,bigrail,Willisau,Willisau · National railways,67.0,2,77.0,True,Willisau|bigrail
+Wolhusen|bigrail,47.055400708571426,8.079520815714286,Wolhusen,Wolhusen,bigrail,Wolhusen,Wolhusen · National railways,111.0,3,126.0,True,Wolhusen|bigrail
+Zell (LU)|bigrail,47.136818515,7.92637025,Zell LU,Zell (LU),bigrail,Zell (LU),Zell (LU) · National railways,31.0,2,41.0,True,Zell (LU)|bigrail
+Zofingen|bigrail,47.28823851749999,7.942822895,Zofingen,Zofingen,bigrail,Zofingen,Zofingen · National railways,178.0,7,213.0,True,Zofingen|bigrail
+Zug|bigrail,47.174654663999995,8.51559411,Zug,Zug,bigrail,Zug,Zug · National railways,162.0,12,222.0,True,Zug|bigrail
+Adligenswil|bus,47.06587386333334,8.362692463333332,"Adligenswil, Rigiblick",Adligenswil,bus,Adligenswil,Adligenswil · Regional bus,213.0,3,228.0,True,Adligenswil|bus
+Beromünster|bus,47.204394465,8.200554045,"Beromünster, Mooskapelle",Beromünster,bus,Beromünster,Beromünster · Regional bus,184.0,9,229.0,True,Beromünster|bus
+Dagmersellen|bus,47.21779195,7.97927653,"Dagmersellen, Bahnhof",Dagmersellen,bus,Dagmersellen,Dagmersellen · Regional bus,40.0,2,50.0,True,Dagmersellen|bigrail
+Ebikon|bus,47.083910308571426,8.342804191428572,"Ebikon, Bahnhof",Ebikon,bus,Ebikon,Ebikon · Regional bus,263.0,7,298.0,True,Ebikon|bigrail
+Eich|bus,47.1506882,8.16805748,"Eich, Dorf",Eich,bus,Eich,Eich · Regional bus,64.0,3,79.0,True,Eich|bus
+Ettiswil|bus,47.14794509666667,8.01820951,"Ettiswil, Post",Ettiswil,bus,Ettiswil,Ettiswil · Regional bus,107.0,2,117.0,True,Ettiswil|bus
+Flühli|bus,46.82188207,8.03466665,"Sörenberg, Post",Flühli,bus,Flühli,Flühli · Regional bus,27.0,1,32.0,True,Flühli|bus
+Gersau|bus,46.99250633,8.523345675,"Gersau, Wehri",Gersau,bus,Gersau,Gersau · Regional bus,39.0,3,54.0,True,Gersau|bus
+Giswil|bus,46.81827372,8.08563706,"Glaubenbielen, Parkplatz",Giswil,bus,Giswil,Giswil · Regional bus,7.0,2,17.0,True,Giswil|bus
+Hasle (LU)|bus,46.9782093,8.04718916,"Hasle LU, Bahnhof",Hasle (LU),bus,Hasle (LU),Hasle (LU) · Regional bus,12.0,3,27.0,True,Hasle (LU)|bus
+Hochdorf|bus,47.1666196,8.289189311666666,"Hochdorf, Bahnhof",Hochdorf,bus,Hochdorf,Hochdorf · Regional bus,39.0,6,69.0,True,Hochdorf|bigrail
+Kriens|bus,47.031097782500005,8.2521038625,"Obernau, Dorf",Kriens,bus,Kriens · Obernau,Kriens · Obernau · Regional bus,199.0,4,219.0,True,Kriens|bus
+Küssnacht (SZ)|bus,47.08312648,8.43311439,"Küssnacht am Rigi, Bahnhof",Küssnacht (SZ),bus,Küssnacht (SZ),Küssnacht (SZ) · Regional bus,58.0,8,98.0,True,Küssnacht (SZ)|bus
+Langnau im Emmental|bus,46.939041722,7.785209884000001,"Langnau i.E., Bahnhof",Langnau im Emmental,bus,Langnau im Emmental,Langnau im Emmental · Regional bus,0.0,4,20.0,True,Langnau im Emmental|bigrail
+Luthern|bus,47.02713304,7.92504523,"Luthern Bad, Dreilindenplatz",Luthern,bus,Luthern,Luthern · Regional bus,8.0,2,18.0,True,Luthern|bus
+Luzern|bus,47.050877019090905,8.310420041818183,"Luzern, Bahnhof",Luzern,bus,Luzern,Luzern · Regional bus,647.0,36,827.0,True,Luzern|bus
+Malters|bus,47.03844785,8.18199934,"Malters, Bahnhof",Malters,bus,Malters,Malters · Regional bus,16.0,3,31.0,True,Malters|bigrail
+Menziken|bus,47.240530335,8.189172384999999,"Menziken, Bahnhof",Menziken,bus,Menziken,Menziken · Regional bus,38.0,6,68.0,True,Menziken|bus
+Nebikon|bus,47.1931911875,7.977585449999999,"Nebikon, Bahnhof West",Nebikon,bus,Nebikon,Nebikon · Regional bus,74.0,3,89.0,True,Nebikon|bigrail
+Neuenkirch|bus,47.11624256,8.195218045,Sempach Station,Neuenkirch,bus,Neuenkirch,Neuenkirch · Regional bus,135.0,9,180.0,True,Neuenkirch|bigrail
+Rain|bus,47.1299801,8.25760155,"Rain, Dorf",Rain,bus,Rain,Rain · Regional bus,114.0,5,139.0,True,Rain|bus
+Reiden|bus,47.24149699,7.96908963,"Reiden, Bahnhof",Reiden,bus,Reiden,Reiden · Regional bus,33.0,2,43.0,True,Reiden|bus
+Rickenbach|bus,47.21977286333333,8.15384913,"Rickenbach LU, Dorf",Rickenbach,bus,Rickenbach,Rickenbach · Regional bus,95.0,5,120.0,True,Rickenbach|bus
+Risch-Rotkreuz|bus,47.14224093799999,8.4300188,"Rotkreuz, Bahnhof Nord",Risch-Rotkreuz,bus,Risch-Rotkreuz · Bf Nord,Risch-Rotkreuz · Bf Nord · Regional bus,52.0,7,87.0,True,Risch-Rotkreuz|bigrail
+Roggwil (BE)|bus,47.23195464,7.835977274999999,"St. Urban, Bahnhof",Roggwil (BE),bus,Roggwil (BE),Roggwil (BE) · Regional bus,25.0,2,35.0,True,Roggwil (BE)|bus
+Romoos|bus,47.011456405,8.028407637499999,"Romoos, Flühboden",Romoos,bus,Romoos,Romoos · Regional bus,20.0,2,30.0,True,Romoos|bus
+Rothenburg|bus,47.08846631,8.24864535,"Rothenburg Station, Bhf. West",Rothenburg,bus,Rothenburg,Rothenburg · Regional bus,85.0,7,120.0,True,Rothenburg|bigrail
+Ruswil|bus,47.082496425,8.12758389,"Ruswil, Rottalcenter",Ruswil,bus,Ruswil,Ruswil · Regional bus,98.0,5,123.0,True,Ruswil|bus
+Schlierbach|bus,47.23289706,8.11405077,Etzelwil,Schlierbach,bus,Schlierbach,Schlierbach · Regional bus,10.0,1,15.0,True,Schlierbach|bus
+Schongau|bus,47.26765417,8.26096125,"Schongau, Landi",Schongau,bus,Schongau,Schongau · Regional bus,0.0,2,10.0,True,Schongau|bus
+Schwarzenberg|bus,47.0067199,8.21948604,"Eigenthal, Talboden",Schwarzenberg,bus,Schwarzenberg,Schwarzenberg · Regional bus,11.0,2,21.0,True,Schwarzenberg|bus
+Schöftland|bus,47.305647449999995,8.050063775000002,"Schöftland, Bahnhof",Schöftland,bus,Schöftland,Schöftland · Regional bus,36.0,4,56.0,True,Schöftland|bus
+Schüpfheim|bus,46.95011478333333,8.01464919,"Schüpfheim, Bahnhof",Schüpfheim,bus,Schüpfheim,Schüpfheim · Regional bus,26.0,4,46.0,True,Schüpfheim|bigrail
+Sursee|bus,47.170004404,8.098919548000001,"Sursee, Bahnhof",Sursee,bus,Sursee,Sursee · Regional bus,198.0,15,273.0,True,Sursee|bigrail
+Triengen|bus,47.23327829,8.077592645,"Triengen, Dorf",Triengen,bus,Triengen,Triengen · Regional bus,57.0,2,67.0,True,Triengen|bus
+Udligenswil|bus,47.08824816333333,8.399194006666667,"Udligenswil, Frohsinn",Udligenswil,bus,Udligenswil,Udligenswil · Regional bus,127.0,3,142.0,True,Udligenswil|bus
+Vitznau|bus,47.00936615,8.48342454,"Vitznau, Station",Vitznau,bus,Vitznau,Vitznau · Regional bus,82.0,3,97.0,True,Vitznau|bus
+Weggis|bus,47.0468773,8.425743715,"Weggis, Langenzihl",Weggis,bus,Weggis,Weggis · Regional bus,85.0,3,100.0,True,Weggis|bus
+Willisau|bus,47.122240755,7.9971125800000005,"Willisau, Bahnhof",Willisau,bus,Willisau,Willisau · Regional bus,66.0,3,81.0,True,Willisau|bigrail
+Wolhusen|bus,47.05550126,8.0801753,"Wolhusen, Bahnhof",Wolhusen,bus,Wolhusen,Wolhusen · Regional bus,21.0,4,41.0,True,Wolhusen|bigrail
+Zell (LU)|bus,47.13672481333334,7.926506493333332,"Zell LU, Bahnhof",Zell (LU),bus,Zell (LU),Zell (LU) · Regional bus,16.0,2,26.0,True,Zell (LU)|bigrail
+Zofingen|bus,47.28694192142858,7.944819721428573,"Zofingen, Bahnhof",Zofingen,bus,Zofingen,Zofingen · Regional bus,33.0,11,88.0,True,Zofingen|bus
+Arth|localrail|1,47.05516668999999,8.48453995,Rigi Kulm,Arth,localrail,Arth,Arth · Local railways,11.0,3,26.0,True,Arth|localrail|1
+Entlebuch|bus|1,46.99370605,8.063410942,"Entlebuch, Bahnhof",Entlebuch,bus,Entlebuch,Entlebuch · Regional bus,44.0,4,64.0,True,Entlebuch|bus|1
+Kriens|bus|1,47.026167974,8.298600662,"Kriens, Sternmatt",Kriens,bus,Kriens · Sternmatt,Kriens · Sternmatt · Regional bus,346.0,12,406.0,True,Kriens|bus|1
+Risch-Rotkreuz|bus|1,47.139927588,8.434142066,"Rotkreuz, Langmatt",Risch-Rotkreuz,bus,Risch-Rotkreuz · Langmatt,Risch-Rotkreuz · Langmatt · Regional bus,70.0,3,85.0,True,Risch-Rotkreuz|bus|1
+Root|bus|1,47.103656120000004,8.376219595000002,"Root D4, Oberfeld",Root,bus,Root,Root · Regional bus,51.0,6,81.0,True,Root|bus|1
+Weggis|localrail|1,47.04809539,8.46450153,Rigi Staffelhöhe,Weggis,localrail,Weggis,Weggis · Local railways,24.0,2,34.0,True,Weggis|localrail|1

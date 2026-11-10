@@ -1,0 +1,85 @@
+,lat,lon,anchor,town,system,label,name,departures,routes,score,important,group
+Bludenz|bigrail,47.155290263333335,9.814082505,Bludenz Bahnhof,Bludenz,bigrail,Bludenz,Bludenz · National railways,98.0,9.0,143.0,True,Bludenz|bigrail
+Bludenz|localrail,47.15500417166667,9.814495729999999,Bludenz Bahnhof,Bludenz,localrail,Bludenz,Bludenz · Local railways,34.0,1.0,39.0,True,Bludenz|bigrail
+Bregenz|bigrail,47.503360146,9.741039888,Bregenz Bahnhof,Bregenz,bigrail,Bregenz,Bregenz · National railways,158.0,8.0,198.0,True,Bregenz|bigrail
+Dornbirn|bigrail,47.41731793,9.737930819999999,Dornbirn Bahnhof,Dornbirn,bigrail,Dornbirn,Dornbirn · National railways,163.0,6.0,193.0,True,Dornbirn|bigrail
+Dornbirn|localrail,47.41723283,9.7378365,Dornbirn Bahnhof,Dornbirn,localrail,Dornbirn,Dornbirn · Local railways,0.0,0.0,0.0,True,Dornbirn|bigrail
+Feldkirch|bigrail,47.241603116,9.604928953999998,Feldkirch Bahnhof,Feldkirch,bigrail,Feldkirch,Feldkirch · National railways,166.0,10.0,216.0,True,Feldkirch|bigrail
+Feldkirch|localrail,47.24178364,9.60520923,Feldkirch Bahnhof,Feldkirch,localrail,Feldkirch,Feldkirch · Local railways,0.0,0.0,0.0,True,Feldkirch|bigrail
+Frastanz|bigrail,47.220107415,9.638963425,Frastanz Bahnhof,Frastanz,bigrail,Frastanz,Frastanz · National railways,126.0,4.0,146.0,True,Frastanz|bigrail
+Frastanz|localrail,47.22037282,9.63852774,Frastanz Bahnhof,Frastanz,localrail,Frastanz,Frastanz · Local railways,0.0,0.0,0.0,True,Frastanz|bigrail
+Götzis|bigrail,47.336813845,9.636852385000001,Götzis Bahnhof,Götzis,bigrail,Götzis,Götzis · National railways,144.0,6.0,174.0,True,Götzis|bigrail
+Götzis|localrail,47.33734957,9.6373779,Götzis Bahnhof,Götzis,localrail,Götzis,Götzis · Local railways,0.0,0.0,0.0,True,Götzis|bigrail
+Hard|bigrail,47.47984353,9.68818661,Hard-Fussach Bahnhof,Hard,bigrail,Hard,Hard · National railways,42.0,1.0,47.0,True,Hard|bigrail
+Hohenems|bigrail,47.36498052666666,9.681290546666666,Hohenems Bahnhof,Hohenems,bigrail,Hohenems,Hohenems · National railways,145.0,6.0,175.0,True,Hohenems|bigrail
+Hohenems|localrail,47.36494402,9.6813684,Hohenems Bahnhof,Hohenems,localrail,Hohenems,Hohenems · Local railways,0.0,0.0,0.0,True,Hohenems|bigrail
+Klaus|bigrail,47.308099175,9.62484191,Klaus Bahnhof,Klaus,bigrail,Klaus,Klaus · National railways,86.0,2.0,96.0,True,Klaus|bigrail
+Klaus|localrail,47.30837023,9.62466674,Klaus Bahnhof,Klaus,localrail,Klaus,Klaus · Local railways,0.0,0.0,0.0,True,Klaus|bigrail
+Lindau (Bodensee)|bigrail,47.54537727333334,9.680688673333334,Lindau-Insel,Lindau (Bodensee),bigrail,Lindau (Bodensee),Lindau (Bodensee) · National railways,45.0,4.0,65.0,True,Lindau (Bodensee)|bigrail
+Lochau|bigrail,47.529822635,9.742013660000001,Lochau-Hörbranz Bahnhof,Lochau,bigrail,Lochau,Lochau · National railways,81.0,3.0,96.0,True,Lochau|bigrail
+Ludesch|bigrail,47.18058125,9.770306099999999,Ludesch Bahnhof,Ludesch,bigrail,Ludesch,Ludesch · National railways,85.0,2.0,95.0,True,Ludesch|bigrail
+Ludesch|localrail,47.18062094,9.77033754,Ludesch Bahnhof,Ludesch,localrail,Ludesch,Ludesch · Local railways,0.0,0.0,0.0,True,Ludesch|bigrail
+Lustenau|bigrail,47.450860455,9.66738612,Lustenau Bahnhof,Lustenau,bigrail,Lustenau,Lustenau · National railways,42.0,1.0,47.0,True,Lustenau|bigrail
+Nenzing|bigrail,47.19184518,9.707446489999999,Nenzing Bahnhof,Nenzing,bigrail,Nenzing,Nenzing · National railways,122.0,3.0,137.0,True,Nenzing|bigrail
+Nenzing|localrail,47.19188486,9.70748242,Nenzing Bahnhof,Nenzing,localrail,Nenzing,Nenzing · Local railways,0.0,0.0,0.0,True,Nenzing|bigrail
+Rankweil|bigrail,47.272932825,9.63731052,Rankweil Bahnhof,Rankweil,bigrail,Rankweil,Rankweil · National railways,145.0,6.0,175.0,True,Rankweil|bigrail
+Rankweil|localrail,47.27293892,9.63736891,Rankweil Bahnhof,Rankweil,localrail,Rankweil,Rankweil · Local railways,0.0,0.0,0.0,True,Rankweil|bigrail
+Sankt Anton am Arlberg|bigrail,47.1273704,10.267272085,St. Anton a. A. Bahnhof,Sankt Anton am Arlberg,bigrail,Sankt Anton am Arlberg,Sankt Anton am Arlberg · National railways,16.0,5.0,41.0,True,Sankt Anton am Arlberg|bigrail
+Schruns|localrail,47.07958465,9.91759837,Schruns Bahnhof,Schruns,localrail,Schruns,Schruns · Local railways,35.0,1.0,40.0,True,Schruns|bus
+Schwarzach|bigrail,47.44693611,9.754131935,Schwarzach Bahnhof,Schwarzach,bigrail,Schwarzach,Schwarzach · National railways,87.0,2.0,97.0,True,Schwarzach|bigrail
+Schwarzach|localrail,47.44696041,9.7541499,Schwarzach Bahnhof,Schwarzach,localrail,Schwarzach,Schwarzach · Local railways,0.0,0.0,0.0,True,Schwarzach|bigrail
+St. Margrethen|bigrail,47.45337528,9.637764175000001,St.Margrethen Bahnhof,St. Margrethen,bigrail,St. Margrethen,St. Margrethen · National railways,28.0,3.0,43.0,True,St. Margrethen|bigrail
+Wolfurt|bigrail,47.4575421,9.740176609999999,Wolfurt Bahnhof,Wolfurt,bigrail,Wolfurt,Wolfurt · National railways,87.0,2.0,97.0,True,Wolfurt|bigrail
+Wolfurt|localrail,47.45757247,9.74017212,Wolfurt Bahnhof,Wolfurt,localrail,Wolfurt,Wolfurt · Local railways,0.0,0.0,0.0,True,Wolfurt|bigrail
+Alberschwende|bus,47.45032993666666,9.83116247,Alberschwende Dorfzentrum,Alberschwende,bus,Alberschwende,Alberschwende · Regional bus,79.0,5.0,104.0,True,Alberschwende|bus
+Andelsbuch|bus,47.398980515000005,9.853287975,Bersbuch Kreisverkehr,Andelsbuch,bus,Andelsbuch,Andelsbuch · Regional bus,63.0,4.0,83.0,True,Andelsbuch|bus
+Bartholomäberg|bus,47.098272975,9.86856383,Vandans Bahnhof,Bartholomäberg,bus,Bartholomäberg,Bartholomäberg · Regional bus,0.0,4.0,20.0,True,Bartholomäberg|bus
+Bezau|bus,47.381895825,9.89782196,Bezau Busbahnhof,Bezau,bus,Bezau,Bezau · Regional bus,59.0,6.0,89.0,True,Bezau|bus
+Bizau|bus,47.369181725000004,9.929006975,Bizau Kirchplatz,Bizau,bus,Bizau,Bizau · Regional bus,15.0,1.0,20.0,True,Bizau|bus
+Bludenz|bus,47.155440944999995,9.81607527,Bludenz Bahnhof,Bludenz,bus,Bludenz,Bludenz · Regional bus,59.0,7.0,94.0,True,Bludenz|bigrail
+Brand|bus,47.06687737,9.75498533,Brand Lünerseebahn,Brand,bus,Brand,Brand · Regional bus,20.0,1.0,25.0,True,Brand|bus
+Bregenz|bus,47.5016408925,9.739713975,Bregenz Bahnhof,Bregenz,bus,Bregenz,Bregenz · Regional bus,137.0,12.0,197.0,True,Bregenz|bigrail
+Damüls|bus,47.285560425,9.8882549,Damüls Uga-Lift,Damüls,bus,Damüls,Damüls · Regional bus,14.0,4.0,34.0,True,Damüls|bus
+Dornbirn|bus,47.41685421857143,9.73880411,Dornbirn Bahnhof,Dornbirn,bus,Dornbirn,Dornbirn · Regional bus,117.0,11.0,172.0,True,Dornbirn|bigrail
+Dünserberg|bus,47.232921465000004,9.722098015,Dünserberg Boden,Dünserberg,bus,Dünserberg,Dünserberg · Regional bus,10.0,1.0,15.0,True,Dünserberg|bus
+Egg|bus,47.432083524999996,9.89772314,Egg Zentrum,Egg,bus,Egg,Egg · Regional bus,87.0,6.0,117.0,True,Egg|bus
+Feldkirch|bus,47.24151122999999,9.603798873333334,Feldkirch Bahnhof,Feldkirch,bus,Feldkirch,Feldkirch · Regional bus,95.0,11.0,150.0,True,Feldkirch|bigrail
+Frastanz|bus,47.21980541,9.63830316,Frastanz Bahnhof,Frastanz,bus,Frastanz,Frastanz · Regional bus,38.0,5.0,63.0,True,Frastanz|bigrail
+Gaschurn|bus,46.96487708,10.07427054,Partenen Loch,Gaschurn,bus,Gaschurn,Gaschurn · Regional bus,32.0,1.0,37.0,True,Gaschurn|bus
+Göfis|bus,47.243899854999995,9.644348825000002,Göfis Agasella,Göfis,bus,Göfis,Göfis · Regional bus,27.0,2.0,37.0,True,Göfis|bus
+Götzis|bus,47.33709186000001,9.637452756666667,Götzis Bahnhof,Götzis,bus,Götzis,Götzis · Regional bus,67.0,7.0,102.0,True,Götzis|bigrail
+Hard|bus,47.48025941,9.68964188,Hard-Fussach Bahnhof,Hard,bus,Hard,Hard · Regional bus,101.0,4.0,121.0,True,Hard|bigrail
+Hohenems|bus,47.3645181,9.68108094,Hohenems Bahnhof,Hohenems,bus,Hohenems,Hohenems · Regional bus,85.0,4.0,105.0,True,Hohenems|bigrail
+Höchst|bus,47.46532818,9.62533598,Höchst Hecht,Höchst,bus,Höchst,Höchst · Regional bus,67.0,3.0,82.0,True,Höchst|bus
+Klaus|bus,47.309189465,9.62485538,Klaus Bahnhof,Klaus,bus,Klaus,Klaus · Regional bus,51.0,4.0,71.0,True,Klaus|bigrail
+Koblach|bus,47.33271054,9.605626945000001,Koblach Dorfplatz,Koblach,bus,Koblach,Koblach · Regional bus,32.0,3.0,47.0,True,Koblach|bus
+Laterns|bus,47.257695850000005,9.742301125000001,Innerlaterns Kirche,Laterns,bus,Laterns,Laterns · Regional bus,8.0,2.0,18.0,True,Laterns|bus
+Lech|bus,47.2121661,10.14506078,Lech Schlosskopf,Lech,bus,Lech,Lech · Regional bus,11.0,6.0,41.0,True,Lech|bus
+Lingenau|bus,47.449685606,9.920203482,Lingenau Dorfplatz,Lingenau,bus,Lingenau,Lingenau · Regional bus,32.0,3.0,47.0,True,Lingenau|bus
+Lochau|bus,47.52956485,9.7426335,Lochau-Hörbranz Bahnhof,Lochau,bus,Lochau,Lochau · Regional bus,40.0,6.0,70.0,True,Lochau|bigrail
+Ludesch|bus,47.18050493,9.77156823,Ludesch Bahnhof,Ludesch,bus,Ludesch,Ludesch · Regional bus,68.0,4.0,88.0,True,Ludesch|bigrail
+Lustenau|bus,47.450271210000004,9.66559398,Lustenau Bahnhof,Lustenau,bus,Lustenau,Lustenau · Regional bus,70.0,5.0,95.0,True,Lustenau|bigrail
+Mauren|bus,47.211269075000004,9.56209459,Schaanwald Zuschg,Mauren,bus,Mauren,Mauren · Regional bus,35.0,2.0,45.0,True,Mauren|bus
+Mäder|bus,47.34866236,9.615104169999999,Mäder Gasthaus Adler,Mäder,bus,Mäder,Mäder · Regional bus,32.0,1.0,37.0,True,Mäder|bus
+Möggers|bus,47.56862229666666,9.814462789999999,Möggers Kurlismühle,Möggers,bus,Möggers,Möggers · Regional bus,12.0,1.0,17.0,True,Möggers|bus
+Nenzing|bus,47.19088372,9.70966533,Nenzing Bahnhof,Nenzing,bus,Nenzing,Nenzing · Regional bus,59.0,5.0,84.0,True,Nenzing|bigrail
+Oberstaufen|bus,47.55364546,10.02496501,Oberstaufen Bahnhof,Oberstaufen,bus,Oberstaufen,Oberstaufen · Regional bus,6.0,1.0,11.0,True,Oberstaufen|bus
+Raggal|bus,47.2009492,9.86146265,Marul Kirche,Raggal,bus,Raggal,Raggal · Regional bus,14.0,1.0,19.0,True,Raggal|bus
+Rankweil|bus,47.27152178,9.637903415,Rankweil Bahnhof,Rankweil,bus,Rankweil,Rankweil · Regional bus,89.0,6.0,119.0,True,Rankweil|bigrail
+Riefensberg|bus,47.50469642,9.96383466,Riefensberg Dorf,Riefensberg,bus,Riefensberg,Riefensberg · Regional bus,6.0,2.0,16.0,True,Riefensberg|bus
+Ruggell|bus,47.24060657333334,9.52455549,Ruggell Rathaus,Ruggell,bus,Ruggell,Ruggell · Regional bus,0.0,3.0,15.0,True,Ruggell|bus
+Sankt Anton am Arlberg|bus,47.12746819,10.26663877,St. Anton a.A. Bahnhof,Sankt Anton am Arlberg,bus,Sankt Anton am Arlberg,Sankt Anton am Arlberg · Regional bus,12.0,1.0,17.0,True,Sankt Anton am Arlberg|bigrail
+Satteins|bus,47.22497901,9.66560296,Satteins Mittelschule,Satteins,bus,Satteins,Satteins · Regional bus,50.0,2.0,60.0,True,Satteins|bus
+Scheidegg|bus,47.58481376,9.85375061,Scheidegg Bahnhofstraße,Scheidegg,bus,Scheidegg,Scheidegg · Regional bus,12.0,1.0,17.0,True,Scheidegg|bus
+Schlins|bus,47.2062345,9.699083175,Schlins Postamt,Schlins,bus,Schlins,Schlins · Regional bus,70.0,3.0,85.0,True,Schlins|bus
+Schnifis|bus,47.215815045,9.719856714999999,Schnifis Tobel,Schnifis,bus,Schnifis,Schnifis · Regional bus,20.0,1.0,25.0,True,Schnifis|bus
+Schoppernau|bus,47.31225617,10.016565765,Schoppernau Gemeindeamt,Schoppernau,bus,Schoppernau,Schoppernau · Regional bus,24.0,3.0,39.0,True,Schoppernau|bus
+Schruns|bus,47.07960912,9.91778701,Schruns Bahnhof,Schruns,bus,Schruns,Schruns · Regional bus,44.0,8.0,84.0,True,Schruns|bus
+Schwarzach|bus,47.446273925,9.754882030000001,Schwarzach Bahnhof,Schwarzach,bus,Schwarzach,Schwarzach · Regional bus,107.0,5.0,132.0,True,Schwarzach|bigrail
+Sibratsgfäll|bus,47.42710641,10.037357270000001,Sibratsgfäll Dorfplatz,Sibratsgfäll,bus,Sibratsgfäll,Sibratsgfäll · Regional bus,0.0,1.0,5.0,True,Sibratsgfäll|bus
+Sigmarszell|bus,47.60139192,9.79573292,Niederstaufen Kindergarten,Sigmarszell,bus,Sigmarszell,Sigmarszell · Regional bus,27.0,2.0,37.0,True,Sigmarszell|bus
+St. Gallenkirch|bus,47.03012423,9.957519495,St. Gallenkirch Badmunt,St. Gallenkirch,bus,St. Gallenkirch,St. Gallenkirch · Regional bus,76.0,2.0,86.0,True,St. Gallenkirch|bus
+Thüringen|bus,47.197835147999996,9.765691458000001,Thüringen Mittelschule,Thüringen,bus,Thüringen,Thüringen · Regional bus,66.0,4.0,86.0,True,Thüringen|bus
+Warth|bus,47.26742863,10.14927388,Warth Jägeralpe,Warth,bus,Warth,Warth · Regional bus,15.0,2.0,25.0,True,Warth|bus
+Wolfurt|bus,47.45527347,9.741631875,Wolfurt Bahnhof,Wolfurt,bus,Wolfurt,Wolfurt · Regional bus,179.0,8.0,219.0,True,Wolfurt|bigrail
+Klösterle|bus|1,47.13368359,10.12597158,Langen a. A. Oberlangen,Klösterle,bus,Klösterle,Klösterle · Regional bus,31.0,3.0,46.0,True,Klösterle|bus|1

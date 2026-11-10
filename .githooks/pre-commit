@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Size check on staged files.
+#   > 10 MB : commit stopped, unless overridden with  ALLOW_LARGE_FILES=1 git commit ...
+#   > 50 MB : always refused
+WARN=$((10*1024*1024)); MAX=$((50*1024*1024))
+warn=(); block=()
+while IFS= read -r -d '' f; do
+  s=$(git cat-file -s ":$f" 2>/dev/null) || continue
+  if [ "$s" -gt "$MAX" ]; then block+=("$f ($((s/1024/1024)) MB)")
+  elif [ "$s" -gt "$WARN" ]; then warn+=("$f ($((s/1024/1024)) MB)"); fi
+done < <(git diff --cached --name-only --diff-filter=ACMR -z)
+if [ ${#block[@]} -gt 0 ]; then
+  echo "pre-commit: files above 50 MB are not allowed:" >&2; printf '  %s\n' "${block[@]}" >&2
+  echo "Unstage them (git restore --staged <file>) or add them to .gitignore." >&2; exit 1
+fi
+if [ ${#warn[@]} -gt 0 ]; then
+  echo "pre-commit: WARNING, files above 10 MB:" >&2; printf '  %s\n' "${warn[@]}" >&2
+  if [ "${ALLOW_LARGE_FILES:-0}" != "1" ]; then
+    echo "Commit stopped. To commit them anyway:  ALLOW_LARGE_FILES=1 git commit ..." >&2; exit 1
+  fi
+  echo "ALLOW_LARGE_FILES=1 set: continuing." >&2
+fi
+exit 0

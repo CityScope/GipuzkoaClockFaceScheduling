@@ -1,0 +1,229 @@
+node,band,n,minutes,interval,share_in_window
+Adligenswil|bus,peak,60,"4,17,34,49",0,0.6333333333333333
+Adligenswil|bus,day,77,"4,19,34,49",15,0.7272727272727273
+Adligenswil|bus,night,30,"9,18,22,39,48,53",0,0.9
+Arth|bigrail,peak,32,"15,19,33,46,55",0,0.90625
+Arth|bigrail,day,64,"15,20,33,45,49,55",0,1.0
+Arth|bigrail,night,16,"15,19,31",0,0.6875
+Arth|localrail|1,peak,4,"0,20,46",0,1.0
+Arth|localrail|1,day,16,"0,47",0,1.0
+Arth|localrail|1,night,0,,0,0.0
+Beromünster|bus,peak,45,"5,9,48,59",0,0.5777777777777777
+Beromünster|bus,day,78,"9,48,59",0,0.5128205128205128
+Beromünster|bus,night,28,"5,12,17,39,48,59",0,0.8571428571428571
+Dagmersellen|bigrail,peak,16,"3,19,39,53",0,1.0
+Dagmersellen|bigrail,day,32,"3,19,39,53",0,1.0
+Dagmersellen|bigrail,night,19,"4,20,39,53",0,0.8421052631578947
+Dagmersellen|bus,peak,15,"29,57",0,0.6
+Dagmersellen|bus,day,24,"29,57",0,0.7916666666666666
+Dagmersellen|bus,night,5,"29,44,57",0,1.0
+Ebikon|bigrail,peak,16,"26,31,58",0,1.0
+Ebikon|bigrail,day,32,"26,31,58",0,1.0
+Ebikon|bigrail,night,17,"28,58",30,0.8823529411764706
+Ebikon|bus,peak,80,"4,16,25,34,46,54",0,0.7625
+Ebikon|bus,day,147,"4,9,16,34,39,46",0,0.7210884353741497
+Ebikon|bus,night,47,"5,17,31,36,48",0,0.6595744680851063
+Eich|bus,peak,14,"0,28,53",0,0.9285714285714286
+Eich|bus,day,24,"0,29,55",0,1.0
+Eich|bus,night,13,"29,54,58",0,0.6923076923076923
+Entlebuch|bus|1,peak,2,26,0,1.0
+Entlebuch|bus|1,day,0,,0,0.0
+Entlebuch|bus|1,night,1,14,0,1.0
+Ettiswil|bus,peak,35,"29,59",30,0.6857142857142857
+Ettiswil|bus,day,55,"29,59",30,0.8727272727272727
+Ettiswil|bus,night,11,29,60,0.45454545454545453
+Flühli|bus,peak,6,56,60,0.8333333333333334
+Flühli|bus,day,14,56,60,0.8571428571428571
+Flühli|bus,night,1,56,0,1.0
+Gersau|bus,peak,24,"1,22,31,45",0,1.0
+Gersau|bus,day,38,"1,22,31,46",0,0.9473684210526315
+Gersau|bus,night,18,"10,39",30,0.6666666666666666
+Giswil|bus,peak,0,,0,0.0
+Giswil|bus,day,7,29,60,1.0
+Giswil|bus,night,0,,0,0.0
+Giswil|localrail,peak,17,"5,22,36",0,0.9411764705882353
+Giswil|localrail,day,35,"5,22,36",0,0.9142857142857143
+Giswil|localrail,night,9,"5,36",30,0.8888888888888888
+Hasle (LU)|bus,peak,5,"0,7,31,43",0,1.0
+Hasle (LU)|bus,day,6,15,60,0.3333333333333333
+Hasle (LU)|bus,night,1,3,0,1.0
+Hergiswil (NW)|localrail,peak,43,"3,10,18,25,34,48",0,0.813953488372093
+Hergiswil (NW)|localrail,day,65,"3,10,19,23,32,48",0,0.7538461538461538
+Hergiswil (NW)|localrail,night,34,"4,10,18,34,39,55",0,0.7352941176470589
+Hochdorf|bigrail,peak,18,"0,28",0,0.8888888888888888
+Hochdorf|bigrail,day,32,"0,28",0,1.0
+Hochdorf|bigrail,night,13,"0,29",30,0.8461538461538461
+Hochdorf|bus,peak,18,"0,15,31",0,0.8333333333333334
+Hochdorf|bus,day,29,31,60,0.5172413793103449
+Hochdorf|bus,night,7,"31,43",0,0.5714285714285714
+Horw|localrail,peak,40,"2,7,19,24,32,48",0,0.8
+Horw|localrail,day,66,"2,7,18,23,32,37",0,0.7575757575757576
+Horw|localrail,night,31,"3,9,19,23,39,47",0,0.7419354838709677
+Kriens|bus,peak,44,"3,10,16,24,32,39",0,0.8181818181818182
+Kriens|bus,day,81,"3,10,24,39,47,55",0,0.7407407407407407
+Kriens|bus,night,22,"10,25,41,55",15,0.7272727272727273
+Kriens|bus|1,peak,77,"5,10,21,30,36,51",0,0.6103896103896104
+Kriens|bus|1,day,153,"1,8,22,38,46,52",0,0.7843137254901961
+Kriens|bus|1,night,42,"0,5,15,35,44,51",0,0.7380952380952381
+Küssnacht (SZ)|bus,peak,34,"5,36",30,0.6470588235294118
+Küssnacht (SZ)|bus,day,60,"5,36",30,0.6833333333333333
+Küssnacht (SZ)|bus,night,14,"3,31,35,53",0,0.7142857142857143
+Langnau im Emmental|bigrail,peak,8,"6,37",30,1.0
+Langnau im Emmental|bigrail,day,16,"6,37",30,1.0
+Langnau im Emmental|bigrail,night,6,"7,36",30,1.0
+Langnau im Emmental|bus,peak,16,"7,28,55",0,1.0
+Langnau im Emmental|bus,day,29,"7,56",0,0.8275862068965517
+Langnau im Emmental|bus,night,14,8,60,0.5714285714285714
+Lenzburg|bigrail,peak,71,"1,5,30,36",0,0.7323943661971831
+Lenzburg|bigrail,day,130,"1,5,30,36",0,0.8
+Lenzburg|bigrail,night,55,"1,5,30,36",0,0.8181818181818182
+Luthern|bus,peak,3,57,60,1.0
+Luthern|bus,day,4,57,60,0.75
+Luthern|bus,night,1,57,0,1.0
+Luzern|bigrail,peak,74,"1,5,15,22,31,36",0,0.6216216216216216
+Luzern|bigrail,day,139,"1,5,15,22,31,36",0,0.5971223021582733
+Luzern|bigrail,night,55,"1,6,15,20,31,51",0,0.6363636363636364
+Luzern|bus,peak,156,"1,16,24,31,46",0,0.5705128205128205
+Luzern|bus,day,274,"0,6,14,30,36,44",0,0.7299270072992701
+Luzern|bus,night,80,"2,6,17,32,36,45",0,0.675
+Luzern|localrail,peak,35,"6,11,20,27,43,57",0,0.8
+Luzern|localrail,day,54,"6,11,28,41,58",0,0.8888888888888888
+Luzern|localrail,night,20,"11,28,41,57",0,0.75
+Malters|bigrail,peak,23,"6,30,53",0,1.0
+Malters|bigrail,day,35,"5,30,51",0,1.0
+Malters|bigrail,night,13,30,60,0.5384615384615384
+Malters|bus,peak,3,57,60,1.0
+Malters|bus,day,6,57,60,1.0
+Malters|bus,night,2,"3,59",0,1.0
+Menziken|bus,peak,12,"6,36",30,0.8333333333333334
+Menziken|bus,day,24,"6,17,36",0,1.0
+Menziken|bus,night,5,"6,35",30,1.0
+Nebikon|bigrail,peak,16,"0,22,34,56",0,1.0
+Nebikon|bigrail,day,32,"0,22,34,56",0,1.0
+Nebikon|bigrail,night,19,"0,6,23,34",0,0.9473684210526315
+Nebikon|bus,peak,35,"9,15,29,37,46",0,0.7714285714285715
+Nebikon|bus,day,38,"9,15,29,37,47",0,0.868421052631579
+Nebikon|bus,night,9,"15,37,46",0,0.7777777777777778
+Neuenkirch|bigrail,peak,24,"0,21,28,32,36,56",0,1.0
+Neuenkirch|bigrail,day,48,"0,21,28,32,36,56",0,1.0
+Neuenkirch|bigrail,night,25,"1,19,28,32,38,56",0,0.88
+Neuenkirch|bus,peak,57,"5,16,34",0,0.3508771929824561
+Neuenkirch|bus,day,71,"3,21,29,43,49,55",0,0.8309859154929577
+Neuenkirch|bus,night,17,"0,24,43,49",0,0.6470588235294118
+Olten|bigrail,peak,88,"5,36",30,0.4318181818181818
+Olten|bigrail,day,177,"5,36",30,0.423728813559322
+Olten|bigrail,night,68,"6,36",30,0.38235294117647056
+Rain|bus,peak,38,"1,14,24,31,44,54",0,0.8421052631578947
+Rain|bus,day,64,"1,14,24,31,44,54",0,1.0
+Rain|bus,night,19,"4,24,31,44,59",0,0.8947368421052632
+Reiden|bus,peak,12,"15,21,46",0,1.0
+Reiden|bus,day,18,"15,47",0,0.8333333333333334
+Reiden|bus,night,5,"15,21,31",0,1.0
+Rickenbach|bus,peak,20,"3,11,25,37,45,51",0,1.0
+Rickenbach|bus,day,40,"3,11,24,37,51",0,0.95
+Rickenbach|bus,night,13,"3,39,52",0,0.7692307692307693
+Risch-Rotkreuz|bigrail,peak,47,"10,23,48,52",0,0.723404255319149
+Risch-Rotkreuz|bigrail,day,80,"10,16,24,38,48,52",0,1.0
+Risch-Rotkreuz|bigrail,night,29,"10,18,49",0,0.6206896551724138
+Risch-Rotkreuz|bus,peak,65,"15,26,47,56",0,0.676923076923077
+Risch-Rotkreuz|bus,day,95,"15,46,56",0,0.5578947368421052
+Risch-Rotkreuz|bus,night,20,15,60,0.45
+Risch-Rotkreuz|bus|1,peak,54,"9,17,27,32,39,46",0,0.8148148148148148
+Risch-Rotkreuz|bus|1,day,96,"2,9,17,30,39,46",0,0.8333333333333334
+Risch-Rotkreuz|bus|1,night,19,"17,38",0,0.5789473684210527
+Roggwil (BE)|bus,peak,13,54,60,0.46153846153846156
+Roggwil (BE)|bus,day,18,"14,54",0,0.8333333333333334
+Roggwil (BE)|bus,night,4,"41,50,54",0,1.0
+Romoos|bus,peak,4,"20,50",30,1.0
+Romoos|bus,day,7,"20,51",30,1.0
+Romoos|bus,night,0,,0,0.0
+Root|bigrail,peak,17,"3,21,34,54",0,1.0
+Root|bigrail,day,32,"1,21,34,54",0,1.0
+Root|bigrail,night,15,"1,25,31,54",0,0.9333333333333333
+Root|bus|1,peak,52,"2,14,22,32,44,52",0,0.9615384615384616
+Root|bus|1,day,78,"0,14,29,44",15,0.8846153846153846
+Root|bus|1,night,23,"13,43",30,0.6521739130434783
+Rothenburg|bigrail,peak,24,"0,15,26,31,41,56",0,1.0
+Rothenburg|bigrail,day,48,"0,15,26,31,41,56",0,1.0
+Rothenburg|bigrail,night,25,"0,17,26,30,43,56",0,0.88
+Rothenburg|bus,peak,50,"6,21,36,51",15,0.84
+Rothenburg|bus,day,69,"21,51",30,0.4927536231884058
+Rothenburg|bus,night,19,"6,21,38,51",0,0.8947368421052632
+Ruswil|bus,peak,43,"1,10,21,30,40,47",0,0.7209302325581395
+Ruswil|bus,day,50,"0,16,21,31,46,51",0,0.9
+Ruswil|bus,night,10,"0,52",0,0.5
+Sachseln|localrail,peak,26,"14,28,43",0,0.9230769230769231
+Sachseln|localrail,day,48,"14,28,43",0,1.0
+Sachseln|localrail,night,16,"14,42",0,0.875
+Schlierbach|bus,peak,4,"6,56",0,1.0
+Schlierbach|bus,day,8,57,60,0.75
+Schlierbach|bus,night,1,57,0,1.0
+Schongau|bus,peak,0,,0,0.0
+Schongau|bus,day,0,,0,0.0
+Schongau|bus,night,2,26,0,1.0
+Schwarzenberg|bus,peak,1,17,0,1.0
+Schwarzenberg|bus,day,4,46,60,1.0
+Schwarzenberg|bus,night,0,,0,0.0
+Schöftland|bus,peak,15,34,60,0.7333333333333333
+Schöftland|bus,day,24,"5,34",30,1.0
+Schöftland|bus,night,4,"6,35",30,1.0
+Schüpfheim|bigrail,peak,16,"0,29",30,1.0
+Schüpfheim|bigrail,day,32,"0,29",30,1.0
+Schüpfheim|bigrail,night,13,"0,28",0,0.9230769230769231
+Schüpfheim|bus,peak,7,33,60,0.8571428571428571
+Schüpfheim|bus,day,15,33,60,0.8
+Schüpfheim|bus,night,1,56,0,1.0
+Stansstad|localrail,peak,16,"5,14,38,43",0,1.0
+Stansstad|localrail,day,24,"15,36,44",0,1.0
+Stansstad|localrail,night,11,"15,36,43",0,0.8181818181818182
+Sursee|bigrail,peak,36,"12,18,27,31,42,47",0,0.8888888888888888
+Sursee|bigrail,day,72,"12,18,27,31,42,47",0,0.8888888888888888
+Sursee|bigrail,night,29,"18,27,32,47,52,57",0,0.8620689655172413
+Sursee|bus,peak,69,"15,23,35,45,51",0,0.9420289855072463
+Sursee|bus,day,111,"15,23,34,45,53",0,0.9459459459459459
+Sursee|bus,night,23,"15,34,45",0,0.5652173913043478
+Triengen|bus,peak,26,"0,6,20,25,29,50",0,1.0
+Triengen|bus,day,40,"0,20,30,49",0,1.0
+Triengen|bus,night,10,"0,26,50",0,0.7
+Udligenswil|bus,peak,37,"3,9,16,27,31,42",0,0.7837837837837838
+Udligenswil|bus,day,53,"1,7,27,31,44,56",0,0.9056603773584906
+Udligenswil|bus,night,13,"1,27,31",0,0.8461538461538461
+Vitznau|bus,peak,18,"10,22,34,47,58",12,1.0
+Vitznau|bus,day,32,"10,21,36,49",0,0.96875
+Vitznau|bus,night,16,"1,23,31",0,0.6875
+Vitznau|localrail,peak,2,"15,39",0,1.0
+Vitznau|localrail,day,8,15,60,1.0
+Vitznau|localrail,night,1,5,0,1.0
+Weggis|bus,peak,24,"3,9,13,37,45",0,1.0
+Weggis|bus,day,36,"3,13,37,45",0,0.9444444444444444
+Weggis|bus,night,16,"5,15,37,46",0,0.875
+Weggis|localrail|1,peak,5,"0,10,29,36",0,1.0
+Weggis|localrail|1,day,16,"10,37",0,1.0
+Weggis|localrail|1,night,1,51,0,1.0
+Willisau|bigrail,peak,20,"29,59",30,0.8
+Willisau|bigrail,day,34,"29,59",30,0.9411764705882353
+Willisau|bigrail,night,9,"30,59",30,0.8888888888888888
+Willisau|bus,peak,41,"1,7,17,21,31,51",0,0.8048780487804879
+Willisau|bus,day,64,"21,51",30,0.46875
+Willisau|bus,night,10,"0,20,51",0,0.7
+Wolhusen|bigrail,peak,31,"15,45,59",0,0.8709677419354839
+Wolhusen|bigrail,day,51,"15,45",30,0.7843137254901961
+Wolhusen|bigrail,night,20,"15,45",30,0.7
+Wolhusen|bus,peak,4,"17,47",30,1.0
+Wolhusen|bus,day,6,"17,47",30,1.0
+Wolhusen|bus,night,0,,0,0.0
+Zell (LU)|bigrail,peak,17,"5,20,36,49",15,1.0
+Zell (LU)|bigrail,day,32,"5,19,34,49",15,1.0
+Zell (LU)|bigrail,night,7,"5,22",0,0.8571428571428571
+Zell (LU)|bus,peak,16,"6,37",30,0.75
+Zell (LU)|bus,day,19,37,60,0.5263157894736842
+Zell (LU)|bus,night,2,"7,44",0,1.0
+Zofingen|bigrail,peak,40,"2,14,19,29,39,44",0,0.8
+Zofingen|bigrail,day,80,"2,14,19,29,39,44",0,0.8
+Zofingen|bigrail,night,32,"13,17,40,45",0,0.75
+Zofingen|bus,peak,16,"0,11,20,36,55",0,1.0
+Zofingen|bus,day,35,"0,11,34,55",0,0.9142857142857143
+Zofingen|bus,night,5,"0,35,54",0,1.0
+Zug|bigrail,peak,101,"2,6,20,30,36,52",0,0.8712871287128713
+Zug|bigrail,day,193,"2,6,20,30,36,52",0,0.9119170984455959
+Zug|bigrail,night,53,"2,6,31,35,52",0,0.8301886792452831

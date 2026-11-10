@@ -1,0 +1,199 @@
+node,band,n,minutes,interval,share_in_window
+Abaltzisketa|bus,peak,1,56,0,1.0
+Abaltzisketa|bus,day,3,28,60,1.0
+Abaltzisketa|bus,night,4,"6,28,56",0,1.0
+Agurain / Salvatierra|bus,peak,2,45,0,1.0
+Agurain / Salvatierra|bus,day,3,43,60,1.0
+Agurain / Salvatierra|bus,night,1,44,0,1.0
+Aia|bus|1,peak,11,54,60,0.7272727272727273
+Aia|bus|1,day,29,54,60,0.6206896551724138
+Aia|bus|1,night,15,"23,49",0,0.8
+Aia|euskotren,peak,9,15,60,0.7777777777777778
+Aia|euskotren,day,18,15,60,0.8888888888888888
+Aia|euskotren,night,2,"15,46",30,1.0
+Albiztur|bus,peak,2,"30,35",0,1.0
+Albiztur|bus,day,1,27,0,1.0
+Albiztur|bus,night,0,,0,0.0
+Alegia|renfe,peak,12,"37,41,48",0,0.75
+Alegia|renfe,day,27,"37,45,58",0,0.5555555555555556
+Alegia|renfe,night,5,"15,26,39,46",0,1.0
+Altsasu / Alsasua|renfe,peak,3,"44,48",0,1.0
+Altsasu / Alsasua|renfe,day,8,"13,31,37",0,0.875
+Altsasu / Alsasua|renfe,night,1,3,0,1.0
+Andoain|bus,peak,25,"26,51",0,0.56
+Andoain|bus,day,50,"11,26,51",0,0.86
+Andoain|bus,night,22,"11,29,58",0,0.8636363636363636
+Aramaio|bus,peak,0,,0,0.0
+Aramaio|bus,day,2,29,0,1.0
+Aramaio|bus,night,0,,0,0.0
+Arrasate / Mondragón|bus,peak,23,"15,21,28",0,0.5652173913043478
+Arrasate / Mondragón|bus,day,61,"1,6,15,23,28",0,0.7213114754098361
+Arrasate / Mondragón|bus,night,28,"6,14,21,40",0,0.75
+Azpeitia|bus,peak,15,"0,10,48",0,0.7333333333333333
+Azpeitia|bus,day,27,"0,10,18,49",0,0.9629629629629629
+Azpeitia|bus,night,10,"10,32,56",0,1.0
+Beasain|bus,peak,21,"0,11,26,45",0,0.7142857142857143
+Beasain|bus,day,48,45,60,0.2708333333333333
+Beasain|bus,night,15,"9,29,33,55",0,0.6666666666666666
+Beasain|renfe,peak,11,"25,30",0,0.36363636363636365
+Beasain|renfe,day,35,54,60,0.34285714285714286
+Beasain|renfe,night,6,3,60,0.5
+Berastegi|bus,peak,2,"0,10",0,1.0
+Berastegi|bus,day,1,29,0,1.0
+Berastegi|bus,night,0,,0,0.0
+Bergara|bus,peak,22,"7,13,50",0,0.7272727272727273
+Bergara|bus,day,53,"7,13,39,50",0,0.8490566037735849
+Bergara|bus,night,27,27,60,0.37037037037037035
+Biarritz|bus,peak,0,,0,0.0
+Biarritz|bus,day,2,"26,39",0,1.0
+Biarritz|bus,night,0,,0,0.0
+Bilbao|bus,peak,36,"1,31",30,0.6666666666666666
+Bilbao|bus,day,77,"0,30,40",0,0.8181818181818182
+Bilbao|bus,night,8,"0,30",30,0.75
+Deba|bus,peak,13,"15,27,36,43",0,0.9230769230769231
+Deba|bus,day,30,"15,27,36",0,0.8666666666666667
+Deba|bus,night,6,"0,17",0,0.8333333333333334
+Deba|euskotren,peak,7,43,60,1.0
+Deba|euskotren,day,16,44,60,1.0
+Deba|euskotren,night,3,"32,38",0,1.0
+Donostia / San Sebastián|bus,peak,144,"6,15,24,31,45,59",0,0.6944444444444444
+Donostia / San Sebastián|bus,day,296,"1,16,31,44,53",0,0.6013513513513513
+Donostia / San Sebastián|bus,night,106,"0,16,29,35,49",0,0.6886792452830188
+Donostia / San Sebastián|euskotren,peak,26,"14,44,49",0,0.7692307692307693
+Donostia / San Sebastián|euskotren,day,46,"14,44,49",0,0.8695652173913043
+Donostia / San Sebastián|euskotren,night,10,"14,44",30,0.9
+Donostia / San Sebastián|renfe,peak,15,"3,34",30,0.6
+Donostia / San Sebastián|renfe,day,28,"0,29,33,37,51,56",0,0.75
+Donostia / San Sebastián|renfe,night,9,"20,30,46,54",0,0.8888888888888888
+Eibar|bus,peak,34,"20,31,42,58",0,0.7352941176470589
+Eibar|bus,day,71,"21,31,41,59",0,0.7464788732394366
+Eibar|bus,night,28,"1,15,29,34,49",0,0.7857142857142857
+Elgoibar|bus,peak,19,"8,12,24,42,47",0,0.7368421052631579
+Elgoibar|bus,day,42,"12,47",0,0.47619047619047616
+Elgoibar|bus,night,17,"1,17,47",0,0.8235294117647058
+Elgoibar|euskotren,peak,6,"0,20",0,1.0
+Elgoibar|euskotren,day,16,"0,21",0,1.0
+Elgoibar|euskotren,night,6,"10,55",0,0.6666666666666666
+Elorrio|bus,peak,5,"12,46,54",0,1.0
+Elorrio|bus,day,13,12,60,0.5384615384615384
+Elorrio|bus,night,0,,0,0.0
+Ermua|bus,peak,25,"24,31,49",0,0.72
+Ermua|bus,day,64,"0,24,31,51",0,0.6875
+Ermua|bus,night,13,40,60,0.38461538461538464
+Ermua|bus|1,peak,27,"6,15,25,30,46,50",0,0.9259259259259259
+Ermua|bus|1,day,69,"6,17,25,30,50",0,0.7536231884057971
+Ermua|bus|1,night,15,"6,17,32,43",0,0.8
+Ermua|euskotren,peak,3,0,60,1.0
+Ermua|euskotren,day,8,0,60,1.0
+Ermua|euskotren,night,2,51,0,1.0
+Errenteria|bus,peak,57,"12,18,23,28,47,59",0,0.631578947368421
+Errenteria|bus,day,117,"12,17,48,58",0,0.6666666666666666
+Errenteria|bus,night,58,"10,18,28,42,48",0,0.7758620689655172
+Errenteria|euskotren,peak,23,"0,9,17,24,31,54",0,0.8260869565217391
+Errenteria|euskotren,day,39,"0,24,30,53",0,0.8205128205128205
+Errenteria|euskotren,night,12,"2,24,31",0,0.8333333333333334
+Eskoriatza|bus,peak,12,"38,45,56",0,0.6666666666666666
+Eskoriatza|bus,day,32,"10,38,45,56",0,0.75
+Eskoriatza|bus,night,14,"54,59",0,0.6428571428571429
+Ezkio-Itsaso|bus,peak,10,"12,40,45",0,0.7
+Ezkio-Itsaso|bus,day,21,"11,45,54",0,0.6666666666666666
+Ezkio-Itsaso|bus,night,1,14,0,1.0
+Hernani|bus,peak,24,"15,27,41,55",0,0.7083333333333334
+Hernani|bus,day,46,"5,15,27,41,55",0,0.8478260869565217
+Hernani|bus,night,18,"11,48",0,0.6666666666666666
+Hondarribia|bus,peak,16,"11,31,53",0,0.9375
+Hondarribia|bus,day,34,"1,24,31,53",0,0.9411764705882353
+Hondarribia|bus,night,16,"0,16",0,0.6875
+Irun|bus|1,peak,17,"5,15,23,37,45,57",0,0.8823529411764706
+Irun|bus|1,day,37,"7,37",30,0.8378378378378378
+Irun|bus|1,night,19,"6,29",0,0.7894736842105263
+Irun|euskotren,peak,12,"6,23,37,51",15,1.0
+Irun|euskotren,day,20,"6,37",30,0.8
+Irun|euskotren,night,5,6,60,0.8
+Irun|renfe,peak,7,"12,17",0,0.5714285714285714
+Irun|renfe,day,15,"3,17",0,0.6
+Irun|renfe,night,3,"12,20,26",0,1.0
+Larraul|bus,peak,0,,0,0.0
+Larraul|bus,day,0,,0,0.0
+Larraul|bus,night,1,15,0,1.0
+Lasarte-Oria|bus,peak,29,"5,17,46",0,0.5517241379310345
+Lasarte-Oria|bus,day,52,"5,17,36,45",0,0.8076923076923077
+Lasarte-Oria|bus,night,24,"0,10,46",0,0.7083333333333334
+Lasarte-Oria|euskotren,peak,7,"0,29",30,1.0
+Lasarte-Oria|euskotren,day,16,"0,29",30,1.0
+Lasarte-Oria|euskotren,night,5,0,60,0.8
+Lazkao|bus,peak,6,"6,51",0,0.8333333333333334
+Lazkao|bus,day,14,"6,20,51",0,0.8571428571428571
+Lazkao|bus,night,5,"6,11,27,46,51",0,1.0
+Leintz-Gatzaga|bus,peak,5,"10,34,41,57",0,1.0
+Leintz-Gatzaga|bus,day,15,"10,34,59",0,0.8666666666666667
+Leintz-Gatzaga|bus,night,6,15,60,0.3333333333333333
+Loiu|bus,peak,11,"3,24,44",20,0.9090909090909091
+Loiu|bus,day,29,"3,22,44",20,0.8620689655172413
+Loiu|bus,night,4,"0,15,20,45",0,1.0
+Mutriku|bus,peak,12,"15,25,32,46",0,0.9166666666666666
+Mutriku|bus,day,27,"15,25,46",0,0.8888888888888888
+Mutriku|bus,night,7,"27,52",0,0.8571428571428571
+Oiartzun|bus,peak,25,"5,15,29,45,50,57",0,0.72
+Oiartzun|bus,day,50,"15,22,27,45,50,57",0,0.94
+Oiartzun|bus,night,32,"8,14,28,39",0,0.84375
+Ondarroa|bus,peak,14,"5,10,40",0,0.8571428571428571
+Ondarroa|bus,day,27,"6,10,40",0,0.9629629629629629
+Ondarroa|bus,night,3,44,60,1.0
+Ormaiztegi|bus,peak,9,"19,29",0,0.6666666666666666
+Ormaiztegi|bus,day,21,"20,30",0,0.47619047619047616
+Ormaiztegi|bus,night,4,"1,20,42",20,1.0
+Pamplona / Iruña|bus,peak,5,0,60,0.6
+Pamplona / Iruña|bus,day,10,29,60,0.8
+Pamplona / Iruña|bus,night,0,,0,0.0
+Pasaia|bus,peak,92,"5,14,27,34,47,54",0,0.75
+Pasaia|bus,day,192,"5,14,22,37,45,54",0,0.7864583333333334
+Pasaia|bus,night,89,"14,18,36,42,48,59",0,0.7865168539325843
+Pasaia|euskotren,peak,24,"11,28,42,58",0,1.0
+Pasaia|euskotren,day,39,"28,58",30,0.8205128205128205
+Pasaia|euskotren,night,11,28,60,0.7272727272727273
+Pasaia|renfe,peak,12,46,60,0.5
+Pasaia|renfe,day,24,"24,36,46,50,54",0,0.7083333333333334
+Pasaia|renfe,night,7,"33,43",0,0.5714285714285714
+Soraluze-Placencia de las Armas|bus,peak,14,"29,52",0,0.7142857142857143
+Soraluze-Placencia de las Armas|bus,day,30,"41,53",0,0.5333333333333333
+Soraluze-Placencia de las Armas|bus,night,19,"13,39",0,0.5789473684210527
+Tolosa|bus,peak,20,"0,10,26,30,39",0,0.85
+Tolosa|bus,day,40,"0,10,16,24,54",0,0.825
+Tolosa|bus,night,20,"0,30",30,0.7
+Villabona|bus,peak,25,"7,27,37,43,55",0,0.76
+Villabona|bus,day,53,"27,37",0,0.5094339622641509
+Villabona|bus,night,23,"23,37,47",0,0.8260869565217391
+Vitoria-Gasteiz|bus,peak,15,"15,29,44",0,0.8
+Vitoria-Gasteiz|bus,day,27,"15,30,44",0,0.8888888888888888
+Vitoria-Gasteiz|bus,night,6,29,60,0.5
+Vitoria-Gasteiz|renfe,peak,5,"1,15,45",0,1.0
+Vitoria-Gasteiz|renfe,day,4,"30,44,48",0,1.0
+Vitoria-Gasteiz|renfe,night,2,5,0,1.0
+Zaldibia|bus,peak,4,29,60,1.0
+Zaldibia|bus,day,8,29,60,0.875
+Zaldibia|bus,night,2,"15,35",0,1.0
+Zarautz|bus,peak,46,"17,33,41,48,59",0,0.8260869565217391
+Zarautz|bus,day,103,"18,32,40,48,59",0,0.8252427184466019
+Zarautz|bus,night,27,"17,41,54",0,0.7407407407407407
+Zegama|bus,peak,4,29,60,0.75
+Zegama|bus,day,8,"26,31",0,0.875
+Zegama|bus,night,3,"10,41,55",0,1.0
+Zestoa|bus|1,peak,15,"7,17,34,43,53",0,0.9333333333333333
+Zestoa|bus|1,day,42,"17,42",0,0.4523809523809524
+Zestoa|bus|1,night,14,"20,44,49",0,0.7142857142857143
+Zestoa|euskotren,peak,8,"34,53",0,1.0
+Zestoa|euskotren,day,16,"34,53",0,1.0
+Zestoa|euskotren,night,0,,0,0.0
+Zizurkil|renfe,peak,11,"0,34",0,0.45454545454545453
+Zizurkil|renfe,day,34,"7,18,23,27,56",0,0.6764705882352942
+Zizurkil|renfe,night,7,31,60,0.2857142857142857
+Zumaia|bus,peak,12,"31,47,56",0,0.75
+Zumaia|bus,day,31,"3,18,31,40,47",0,0.8387096774193549
+Zumaia|bus,night,11,"0,15",0,0.8181818181818182
+Zumarraga|bus,peak,12,"10,15,24",0,0.75
+Zumarraga|bus,day,27,"12,16,26",0,0.7407407407407407
+Zumarraga|bus,night,7,"15,25",0,0.8571428571428571
+Zumarraga|renfe,peak,7,15,60,0.2857142857142857
+Zumarraga|renfe,day,24,"4,11,18,39",0,0.7916666666666666
+Zumarraga|renfe,night,2,"0,12",0,1.0

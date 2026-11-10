@@ -1,0 +1,163 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Literature notes</title><meta name="description" content=""><style>
+:root{--ink:#1d2433;--mute:#5d6678;--line:#e2e6ee;--bg:#f6f7fa;--card:#fff;--acc:#c62828;--link:#1d4ed8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--acc:#ef5350;--link:#93b4ff}}
+:root[data-theme="dark"]{--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--acc:#ef5350;--link:#93b4ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--link)}main{max-width:1100px;margin:0 auto;padding:28px 16px 48px}
+h1{font-size:28px;margin:0 0 6px}h2{font-size:18px;margin:32px 0 12px}.lead{color:var(--mute);max-width:760px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:transform .12s,box-shadow .12s}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 20px #0002}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#fff;border-bottom:1px solid var(--line)}
+.card .b{padding:12px 14px}.card h3{margin:0;font-size:17px}.card .c{color:var(--mute);font-size:13px}
+.card .s{display:flex;gap:14px;margin-top:8px;font-size:13px}.card .s b{font-size:16px;display:block}
+.links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.links a{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-decoration:none;color:inherit}
+.links a b{color:var(--link)}.links a span{display:block;color:var(--mute);font-size:13px}
+.leg{display:flex;flex-wrap:wrap;gap:16px;color:var(--mute);font-size:13px;margin-top:12px}.leg i{display:inline-block;width:18px;height:4px;border-radius:2px;vertical-align:middle;margin-right:6px}
+footer{color:var(--mute);font-size:12.5px;margin-top:36px;border-top:1px solid var(--line);padding-top:14px}
+article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 28px 24px;max-width:900px;margin:0 auto}
+article table{border-collapse:collapse;font-size:13.5px;width:100%;display:block;overflow-x:auto}article td,article th{border:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
+article code{background:var(--bg);padding:1px 4px;border-radius:4px;font-size:90%}
+.back{display:inline-block;margin-bottom:14px}
+</style></head>
+<body><main><a class="back" href="../index.html">← all regions and explainers</a><article><h1>Clock-face scheduling / Taktfahrplan / ITF — literature notes</h1>
+<p>All PDFs listed under "Local copies" are in <code>literature/papers/</code>. Quotes below were taken from the PDF text (page = PDF page).
+Statements without a local source are marked <em>(web, not verified in full text)</em>.</p>
+<h2>Local copies</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Reference</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Fischer_2024_OeBB_Zielnetz_TUWien.pdf</code></td>
+<td>Fischer, U. (ÖBB-Infrastruktur AG): <em>Das Zielnetz – Basis für den langfristigen Bahnausbau in Österreich</em>. Ringvorlesung Öffentlicher Verkehr, TU Wien, 31.01.2024</td>
+<td>Slides (Austria presentation)</td>
+</tr>
+<tr>
+<td><code>BMK_Zielnetz2040_Fachentwurf.pdf</code></td>
+<td>BMK / ÖBB-Infrastruktur / SCHIG: <em>Zielnetz 2040 – Das Bahnnetz der Zukunft, Fachentwurf</em>. Wien, 2024, 144 p.</td>
+<td>Official plan</td>
+</tr>
+<tr>
+<td><code>Hesse_etal_2000_ITF.pdf</code></td>
+<td>Hesse, W., Guckert, M. (Univ. Marburg), Schneider, J., Schulz, A. (BEG): <em>Werkzeuggestützte Entwicklung eines Integralen Taktfahrplans mit OptiPlan</em> (c. 2000)</td>
+<td>Paper (Bavarian ITF case)</td>
+</tr>
+<tr>
+<td><code>Teichmann_2007_ITF_Planung.pdf</code></td>
+<td>Teichmann, C. (TU Darmstadt): <em>Der Integrale Taktfahrplan (ITF), Modell mit Zukunft?</em> Eisenbahntechnisches Kolloquium 2007</td>
+<td>Talk paper</td>
+</tr>
+<tr>
+<td><code>Kraft_Thalmann_2022_Anschlussoptimierung.pdf</code></td>
+<td>Kraft, C., Thalmann, D.: <em>Entwicklung einer Methode und Kalkulationstabelle zur Anschlussoptimierung des ÖSPV an Schweizer Bahnknoten</em>. BSc thesis, HSLU, 2022 (with Stadtbus Winterthur)</td>
+<td>Thesis (bus–rail connections)</td>
+</tr>
+<tr>
+<td><code>Riedmueller_Lindner_2025_Column_Generation_Periodic_Timetabling.pdf</code></td>
+<td>Riedmüller, S., Lindner, N.: <em>Column Generation for Periodic Timetabling</em>. arXiv:2510.12466, 2025</td>
+<td>PESP optimisation</td>
+</tr>
+<tr>
+<td><code>Paetzold_2019_Robust_Periodic_Timetables_Delay_Mgmt.pdf</code></td>
+<td>Pätzold, J.: <em>Finding Robust Periodic Timetables by Integrating Delay Management</em>. arXiv:1907.04554, 2019</td>
+<td>PESP + robustness</td>
+</tr>
+<tr>
+<td><code>Fuchs_etal_2025_Integrated_Periodic_Railway_Timetabling_SMT.pdf</code></td>
+<td>Fuchs, F., Martin-Iradi, B., Corman, F.: <em>Solving Integrated Periodic Railway Timetabling with SMT</em>. arXiv:2507.11489, 2025</td>
+<td>PESP + vehicle circulation</td>
+</tr>
+<tr>
+<td><code>Schiewe_Schoebel_2021_Integrated_Optimization_Public_Transport.pdf</code></td>
+<td>Schiewe, P., Schöbel, A.: <em>Integrated Optimization of Sequential Processes: General Analysis and Application to Public Transport</em>. arXiv:2109.10158, 2021</td>
+<td>Integrated planning</td>
+</tr>
+</tbody>
+</table>
+<h2>Core concepts (grounded)</h2>
+<p><strong>Taktfahrplan vs. ITF.</strong> "Ein Taktfahrplan bedeutet, dass die Kurse einer Linie in einem fixen Taktabstand fahren. Ein Integraler
+Taktfahrplan (ITF) unterscheidet sich … insofern, dass der ITF nicht für jede Linie einzeln geplant wird. Die einzelnen Taktfahrpläne
+der Bahn- und ÖSPV-Linien werden in den Knoten aufeinander abgestimmt." — Kraft &amp; Thalmann 2022, p. 10.
+For urban bus networks "wird der Bahnfahrplan zuerst erstellt und danach die ÖSPV-Anschlüsse möglichst optimal an die
+Bahnabfahrten und -ankünfte angepasst" (ibid.). → our tool treats rail as the backbone and checks whether buses meet it.</p>
+<p><strong>Austrian ITF goal.</strong> The ITF should give "optimale Anschlüsse in alle Richtungen – jeweils möglichst zur wiederkehrenden und dadurch
+leicht merkbaren Abfahrtsminute … Mit dem ITF sollen die Umsteigezeiten im gesamten Verkehrsnetz reduziert werden … Das Grundgerüst
+des österreichischen ITF bildet der hochrangige Eisenbahn-Fernverkehr, auf welchen der Regional- und Nahverkehr in den Knotenpunkten
+abgestimmt wird." — Zielnetz 2040, p. 45.</p>
+<p><strong>Symmetry minute.</strong> "Um in Europa eine grenzüberschreitende bzw. netzübergreifende Abstimmung von Fahrplänen zu ermöglichen, wird die
+sogenannte ‚Symmetrieminute 00' als wesentliche Planungsprämisse herangezogen." — Zielnetz 2040, p. 29 (fn. 9).</p>
+<p><strong>Node–edge model (Knoten-Kanten-Modell).</strong> "Das Knoten-Kanten-Modell für den Integralen Taktfahrplan (ITF) bildet eine wesentliche
+Grundlage für die Weiterentwicklung der Angebotskonzepte im Personenverkehr. Besonderes Augenmerk liegt dabei auf der Optimierung der
+Taktknoten" — Zielnetz 2040, p. 29. Edge times move node times: "Die Verkürzung der Kantenfahrzeiten zwischen Linz und Salzburg bewirkt
+eine Drehung des Taktknotens Salzburg auf die Minute 15 bzw. 45" — p. 46. (So a node can be a valid symmetry node at :15/:45, not only :00/:30.)</p>
+<p><strong>Edge-time rule.</strong> Ideal conditions in the Bavarian ITF study: "Die wichtigsten Umsteigebahnhöfe sind als Vollknoten ausgelegt, die
+Hauptknotenzeiten sind dort 00 oder 30. Die Kantenzeiten zwischen den wichtigen Umsteigebahnhöfen betragen n · T/2 − D Minuten
+(mit n = 1,2,…; T = 60 oder 120 und D ≈ 3–10 Minuten), also z. B. 27, 56 oder 85 Minuten." — Hesse et al., p. 6.
+Hourly service is the norm there; half-hourly on busy lines; two-hourly is the exception (ibid.).</p>
+<p><strong>Headway levels by segment (Austria).</strong> Table 1 of Zielnetz 2040 (p. 27): high-level long-distance links between Taktknoten every
+60 min nationally (120 min internationally). p. 48: at least 1 Systemtrasse per hour and direction, 2 per hour on strong corridors,
+"um in den Taktknoten ein Angebot im Halbstundentakt für Anschlussverbindungen zu ermöglichen".</p>
+<p><strong>Infrastructure cost of nodes.</strong> During the ITF "Systemzeit" many platform tracks are occupied at once, while the infrastructure is
+lightly used outside it — Teichmann 2007, p. 2.</p>
+<p><strong>Austrian presentation (Fischer 2024).</strong> Zielnetz 2040 Fachentwurf: 67 projects in 25 modules, five directions, among them
+"Weiterentwicklung des Taktfahrplans mit Verkürzung der Fahrzeiten", "Mehr öffentlicher Nahverkehr in den Ballungsräumen",
+"Bessere Anbindung des ländlichen Raums mit Regionalbahnen"; c. €26 bn (p. 16). Travel-time targets via Taktfahrplan + better
+transfers: Wien–Innsbruck −30 min, Graz–Linz −30 min, Villach–Salzburg −25 min (p. 9).</p>
+<p><strong>Connection quality / waiting time.</strong> Kraft &amp; Thalmann define the optimal connection as one with (almost) no waiting time
+(p. 23) and minimise the passenger-weighted sum of waiting times, using walking time (Wegzeit) to compute the effective
+wait (pp. 25–30). → our "wait = departure − arrival − walk (+2 min when the mode or station changes)".</p>
+<h2>Optimisation (PESP)</h2>
+<ul>
+<li>The Periodic Event Scheduling Problem (Serafini &amp; Ukovich 1989) is the standard model; "Solving instances of the benchmark library
+  PESPlib to optimality continues to pose a challenge" — Riedmüller &amp; Lindner 2025, abstract.</li>
+<li>Robustness / delays: Pätzold 2019 extends PESP with periodic delay management.</li>
+<li>Integration with vehicle circulation: Fuchs et al. 2025 (VCR-PESP, SMT); with line planning / vehicle scheduling: Schiewe &amp; Schöbel 2021.</li>
+<li><em>(web, not verified in full text)</em>: Liebchen &amp; Peeters, cycle-based formulations; Liebchen &amp; Möhring 2004; Peeters 2003 thesis
+  (Erasmus, "Cyclic Railway Timetable Optimization"); FU Berlin disc. paper 2020/20; ZIB report ZR-21-06; Pulse timetable for rural
+  networks, <em>Transport Policy</em> 52 (2016) 175–185 (doi:10.1016/j.tranpol.2016.07.012). Downloads failed (HTML landing pages / paywall).</li>
+</ul>
+<h2>How the tool's rules relate to the literature</h2>
+<table>
+<thead>
+<tr>
+<th>Tool rule</th>
+<th>Basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nodes = stations where lines branch, line ends, or important stops bypassed by faster services</td>
+<td>Knoten-Kanten-Modell (Zielnetz 2040 p. 29, 46); Hesse et al. Vollknoten</td>
+</tr>
+<tr>
+<td>Symmetry hands at the minute where arrivals precede and departures follow (60/30/15 patterns, not only :00)</td>
+<td>Symmetrieminute 00 (p. 29); rotated node at :15/:45 (p. 46)</td>
+</tr>
+<tr>
+<td>Wait = dep − arr − walk (+2 min change penalty)</td>
+<td>Effective wait with Wegzeit, Kraft &amp; Thalmann pp. 25–30</td>
+</tr>
+<tr>
+<td>Connection only if wait &lt; ¼ of the better line's headway, repeats &lt; 4 × that headway, regular (±5 min), better line ≥ 15 min</td>
+<td><strong>Project choice</strong> (user rule): coordination is only meaningful when random waiting would be long; not taken from a source</td>
+</tr>
+<tr>
+<td>Symmetry node if &gt; 50 % of its ≥ 15-min directions are connected &gt; 50 % of the time</td>
+<td><strong>Project choice</strong> (user rule)</td>
+</tr>
+<tr>
+<td>Rail first, buses fitted to it (bus arrivals may come up to 12 min early)</td>
+<td>Kraft &amp; Thalmann p. 10; Zielnetz 2040 p. 45</td>
+</tr>
+</tbody>
+</table>
+<h2>To read next</h2>
+<p>Peeters 2003 thesis; FGSV ITF Merkblatt; SBB Fahrplanfeld studies; Basque/Spanish ITF cases (Euskotren, Cercanías) — none found yet.</p></article></main></body></html>

@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>README</title><meta name="description" content=""><style>
+:root{--ink:#1d2433;--mute:#5d6678;--line:#e2e6ee;--bg:#f6f7fa;--card:#fff;--acc:#c62828;--link:#1d4ed8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--acc:#ef5350;--link:#93b4ff}}
+:root[data-theme="dark"]{--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--acc:#ef5350;--link:#93b4ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--link)}main{max-width:1100px;margin:0 auto;padding:28px 16px 48px}
+h1{font-size:28px;margin:0 0 6px}h2{font-size:18px;margin:32px 0 12px}.lead{color:var(--mute);max-width:760px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:transform .12s,box-shadow .12s}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 20px #0002}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#fff;border-bottom:1px solid var(--line)}
+.card .b{padding:12px 14px}.card h3{margin:0;font-size:17px}.card .c{color:var(--mute);font-size:13px}
+.card .s{display:flex;gap:14px;margin-top:8px;font-size:13px}.card .s b{font-size:16px;display:block}
+.links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.links a{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-decoration:none;color:inherit}
+.links a b{color:var(--link)}.links a span{display:block;color:var(--mute);font-size:13px}
+.leg{display:flex;flex-wrap:wrap;gap:16px;color:var(--mute);font-size:13px;margin-top:12px}.leg i{display:inline-block;width:18px;height:4px;border-radius:2px;vertical-align:middle;margin-right:6px}
+footer{color:var(--mute);font-size:12.5px;margin-top:36px;border-top:1px solid var(--line);padding-top:14px}
+article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 28px 24px;max-width:900px;margin:0 auto}
+article table{border-collapse:collapse;font-size:13.5px;width:100%;display:block;overflow-x:auto}article td,article th{border:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
+article code{background:var(--bg);padding:1px 4px;border-radius:4px;font-size:90%}
+.back{display:inline-block;margin-bottom:14px}
+</style></head>
+<body><main><a class="back" href="../index.html">← all regions and explainers</a><article><h1>Takt / timetable network maps</h1>
+<p>Interactive maps of the regional public-transport network (nodes, links, headways, timed connections and symmetry
+nodes / Taktknoten) for five regions: <code>gipuzkoa</code>, <code>vorarlberg</code>, <code>aargau</code>, <code>luzern</code>, <code>oberoesterreich</code>.</p>
+<p>Open <code>index.html</code> (or the GitHub Pages site of this repository) and choose a region.</p>
+<h2>Folders</h2>
+<ul>
+<li><code>index.html</code> — front page: choose a region map or an explainer (GitHub Pages site).</li>
+<li><code>maps/&lt;region&gt;/index.html</code> — the interactive map of each region (self-contained; internet needed only for the base map), one URL per region.</li>
+<li><code>explain/clock-phase/</code>, <code>explain/symmetry/</code> — animations: how a clock-phase hub works; why symmetry is needed and not just coordination.</li>
+<li><code>docs/</code> — HTML versions of the rules, literature notes and this README (built by <code>code/make_index.py</code>).</li>
+<li><code>output/&lt;region&gt;/</code> — <code>overview.png</code>, CSVs (<code>nodes</code>, <code>edges</code>, <code>walk_links</code>, <code>symmetry</code>, <code>transfers</code>, <code>vehicle_km</code>, <code>services_audit</code>; <code>_saturday</code> / <code>_sunday</code> variants).</li>
+<li><code>code/</code> — analysis and map generation (<code>towns.py</code> = generic rules, <code>regions/&lt;region&gt;.py</code> = region settings, <code>vendor/</code> = MapLibre).</li>
+<li><code>sources/</code> — <code>network_rules.md</code> (full rule list), OSM municipality / boundary / polygon GeoJSON, per-municipality population (WorldPop).</li>
+<li><code>literature/</code> — <code>taktfahrplan_review.md</code> (grounded notes with page numbers) and <code>papers/</code> (Austrian Zielnetz presentation and plan, ITF and PESP papers).</li>
+</ul>
+<h2>Data not in the repository</h2>
+<p>GTFS feeds, the parsed-feed cache, WorldPop rasters and <code>results.pkl</code> files are too large for git (see <code>.gitignore</code>). To rerun the analysis put the feeds in
+<code>sources/gtfs/</code> (Gipuzkoa), <code>sources/vorarlberg_gtfs/</code>, <code>sources/austria_gtfs/</code> and <code>sources/switzerland_gtfs/</code>
+(sources: Basque / Spanish open data and Transitland; Mobilitätsverbünde Österreich OG; opentransportdata.swiss).</p>
+<h2>Repository checks</h2>
+<p>After cloning run <code>git config core.hooksPath .githooks</code> to enable the pre-commit size check: files above 10 MB stop the commit
+(override with <code>ALLOW_LARGE_FILES=1 git commit ...</code>), files above 50 MB are always refused. The same check runs on GitHub
+(<code>.github/workflows/file-size.yml</code>: error above 50 MB, warning above 10 MB).</p>
+<h2>Run</h2>
+<pre><code>pip install -r code/requirements.txt
+python3 code/run_all.py                   # every region in parallel: analysis + map, overview, audit
+python3 code/run_analysis.py &lt;region&gt;     # one region: analysis + map
+python3 code/rebuild_map.py &lt;region&gt;      # map only, from results.pkl
+python3 code/make_overview.py &lt;region&gt;    # overview.png / .svg
+python3 code/audit_services.py &lt;region&gt;   # which routes are (not) on the map
+python3 code/make_region_geo.py &lt;region&gt;  # municipalities / boundary from OpenStreetMap
+python3 code/make_index.py                # index.html, docs/, explain/clock-phase/
+</code></pre>
+<p>GTFS files are read with polars and cached in <code>sources/cache/</code>; connection analysis runs on all CPU cores.
+Typical times: 20–70 s per region, all five regions about 2 min.</p>
+<h2>Rules in short (full list: <code>sources/network_rules.md</code>)</h2>
+<ul>
+<li><strong>Services</strong>: rail, local rail and regional buses (≥ 3 municipalities and ≥ 10 km; buses serving 2 municipalities only add links / trips between existing nodes; town buses dropped). Colours: red = national / mainline rail, green = local rail, blue = regional bus.</li>
+<li><strong>Nodes</strong>: stations where lines branch (≥ 3 directions), line ends, or stations needed so that every line can be drawn; redundant stations and stations on short links (&lt; 10 min) not needed for connections are removed.</li>
+<li><strong>Headways</strong>: pyGTFSHandler formula, all lines of a direction pooled, per time band (peak 07–09 + 17–19, day 09–17, night).</li>
+<li><strong>Connections</strong>: a change is timed when the wait is ≤ 6 min (≤ 12 min arriving by bus, walk ≤ 5 min + 2 min penalty) and it beats the direct services; directions with a headway &lt; 15 min are frequent and need no timing.</li>
+<li><strong>Symmetry nodes</strong>: timed directions grouped by their change minute; a group of ≥ 3 timed edges where most pairs work both ways (solid) or one way (dotted).</li>
+<li><strong>Map</strong>: day / band selectors, node popups with a symmetry diagram (minutes before / after the symmetry minute and headways per spoke), connections and timetable, "Connected only" filter, video mode.</li>
+</ul></article></main></body></html>

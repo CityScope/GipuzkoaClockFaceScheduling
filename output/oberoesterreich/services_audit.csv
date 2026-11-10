@@ -1,0 +1,119 @@
+route_key,trips,stops,munis,feed,regional,other,on_map
+Rail Austria:A11@10-A11-j26-1,11,6,2,Rail Austria,True,False,True
+Rail Austria:A13@10-A13-j26-1,4,5,2,Rail Austria,True,False,True
+Rail Austria:A13@13-A13-j26-1,32,8,2,Rail Austria,True,False,True
+Rail Austria:A17@13-A17-j26-1,2,7,4,Rail Austria,True,False,True
+Rail Austria:A1@10-A1-j26-1,12,5,2,Rail Austria,True,False,True
+Rail Austria:A21@10-A21-j26-1,3,2,2,Rail Austria,True,False,True
+Rail Austria:A3@10-A3-j26-1,14,4,2,Rail Austria,True,False,True
+Rail Austria:A3@12-A3-j26-1,7,6,2,Rail Austria,True,False,True
+Rail Austria:A62@10-A62-j26-1,8,3,2,Rail Austria,True,False,True
+Rail Austria:A6@13-A6-j26-1,16,9,4,Rail Austria,True,False,True
+Rail Austria:A91@12-A91-j26-1,2,3,2,Rail Austria,True,False,True
+Rail Austria:A94@12-A94-j26-1,2,3,2,Rail Austria,True,False,True
+Rail Austria:A98@13-A98-j26-1,8,7,2,Rail Austria,True,False,True
+Rail Austria:AD3@13-AD3-j26-1,5,5,2,Rail Austria,True,False,True
+Rail Austria:R1@3-R1-A-j26-1,10,15,6,Rail Austria,True,False,True
+Rail Austria:R2@3-R2-O-j26-1,38,16,9,Rail Austria,True,False,True
+Rail Austria:R50@3-R50-O-j26-1,32,20,8,Rail Austria,True,False,True
+Rail Austria:R51@3-R51-O-j26-1,39,17,9,Rail Austria,True,False,True
+Rail Austria:R53@3-R53-A-j26-1,68,12,4,Rail Austria,True,False,True
+Rail Austria:R58@3-R58-j26-1,30,8,2,Rail Austria,True,False,True
+Rail Austria:REX1@2-RX1-O-j26-1,24,23,9,Rail Austria,True,False,True
+Rail Austria:REX2@2-RX2-S-j26-1,8,22,9,Rail Austria,True,False,True
+Rail Austria:REX33@2-R33-O-j26-1,16,6,2,Rail Austria,True,False,True
+Rail Austria:REX4@2-RX4-O-j26-1,16,11,6,Rail Austria,True,False,True
+Rail Austria:REX50@2-R50-O-j26-1,35,24,9,Rail Austria,True,False,True
+Rail Austria:REX51@2-R51-O-j26-1,15,22,9,Rail Austria,True,False,True
+Rail Austria:REX70@2-R70-O-j26-1,1,8,7,Rail Austria,True,False,True
+Rail Austria:S1@1-S1-O-j26-1,62,24,4,Rail Austria,True,False,True
+Rail Austria:S2@1-S2-O-j26-1,39,24,7,Rail Austria,True,False,True
+Rail Austria:S4@1-S4-O-j26-1,53,26,8,Rail Austria,True,False,True
+Rail Austria:WB1-W@9-WB1-W-j26-1,59,9,2,Rail Austria,True,False,True
+Rail Austria:WBD-E@9-WBD-E-j26-1,5,2,2,Rail Austria,True,False,True
+OÖVV:143@at:oov:49143:,80,23,7,OÖVV,True,False,True
+OÖVV:160@at:oov:49160:,46,7,3,OÖVV,True,False,True
+OÖVV:200@at:oov:45200:,17,12,2,OÖVV,True,False,True
+OÖVV:201@at:oov:45201:,49,19,4,OÖVV,True,False,True
+OÖVV:204@at:oov:45204:,4,19,5,OÖVV,True,False,True
+OÖVV:208@at:oov:45208:,4,39,3,OÖVV,True,False,True
+OÖVV:209@at:oov:45209:,6,42,4,OÖVV,True,False,True
+OÖVV:400@at:oov:45400:,65,107,7,OÖVV,True,False,True
+OÖVV:402@at:oov:45402:,29,70,6,OÖVV,True,False,True
+OÖVV:403@at:oov:45403:,8,49,4,OÖVV,True,False,True
+OÖVV:407@at:oov:45407:,31,45,3,OÖVV,True,False,True
+OÖVV:409@at:oov:184091:,6,38,4,OÖVV,True,False,True
+OÖVV:410@at:oov:45410:,48,101,6,OÖVV,True,False,True
+OÖVV:411@at:oov:45411:,27,74,7,OÖVV,True,False,True
+OÖVV:412@at:oov:45412:,20,61,5,OÖVV,True,False,True
+OÖVV:413@at:oov:45413:,15,41,3,OÖVV,True,False,True
+OÖVV:420@at:oov:45420:,22,25,4,OÖVV,True,False,True
+OÖVV:425@at:oov:45425:,9,22,3,OÖVV,True,False,True
+OÖVV:433@at:oov:14433:,34,47,3,OÖVV,True,False,True
+OÖVV:440@at:oov:33440:,38,107,8,OÖVV,True,False,True
+OÖVV:441@at:oov:33441:,33,68,4,OÖVV,True,False,True
+OÖVV:442@at:oov:33442:,29,42,7,OÖVV,True,False,True
+OÖVV:444@at:oov:14444:,28,35,4,OÖVV,True,False,True
+OÖVV:450@at:oov:14450:,66,54,6,OÖVV,True,False,True
+OÖVV:452@at:oov:14452:,33,40,4,OÖVV,True,False,True
+OÖVV:453@at:oov:14453:,5,20,3,OÖVV,True,False,True
+OÖVV:454@at:oov:14454:,24,55,4,OÖVV,True,False,True
+OÖVV:455@at:oov:14455:,45,39,5,OÖVV,True,False,True
+OÖVV:457@at:oov:14457:,10,51,10,OÖVV,True,False,True
+OÖVV:468@at:oov:14468:,29,25,3,OÖVV,True,False,True
+OÖVV:485@at:oov:14485:,28,33,3,OÖVV,True,False,True
+OÖVV:487@at:oov:14487:,39,42,6,OÖVV,True,False,True
+OÖVV:488@at:oov:14488:,4,12,3,OÖVV,True,False,True
+OÖVV:501@at:oov:14501:,29,55,6,OÖVV,True,False,True
+OÖVV:503@at:oov:14503:,30,35,5,OÖVV,True,False,True
+OÖVV:504@at:oov:14504:,40,54,5,OÖVV,True,False,True
+OÖVV:505@at:oov:14505:,32,12,2,OÖVV,True,False,True
+OÖVV:506@at:oov:15506:,14,9,2,OÖVV,True,False,True
+OÖVV:508@at:oov:14508:,26,37,3,OÖVV,True,False,True
+OÖVV:600@at:oov:33600:,55,109,7,OÖVV,True,False,True
+OÖVV:601@at:oov:21601:,58,47,5,OÖVV,True,False,True
+OÖVV:609@at:oov:33609:,6,94,7,OÖVV,True,False,True
+OÖVV:610@at:oov:33610:,43,9,3,OÖVV,True,False,True
+OÖVV:611@at:oov:33611:,77,60,3,OÖVV,True,False,True
+OÖVV:615@at:oov:33615:,16,58,3,OÖVV,True,False,True
+OÖVV:616@at:oov:33616:,58,71,6,OÖVV,True,False,True
+OÖVV:617@at:oov:33617:,8,39,4,OÖVV,True,False,True
+OÖVV:618@at:oov:33618:,47,72,4,OÖVV,True,False,True
+OÖVV:619@at:oov:33619:,11,83,4,OÖVV,True,False,True
+OÖVV:640@at:oov:45640:,28,91,8,OÖVV,True,False,True
+OÖVV:641@at:oov:45641:,6,50,5,OÖVV,True,False,True
+OÖVV:642@at:oov:45642:,25,54,6,OÖVV,True,False,True
+OÖVV:643@at:oov:45643:,9,25,6,OÖVV,True,False,True
+OÖVV:645@at:oov:45645:,6,22,5,OÖVV,True,False,True
+OÖVV:646@at:oov:45646:,45,77,8,OÖVV,True,False,True
+OÖVV:647@at:oov:45647:,2,21,3,OÖVV,True,False,True
+OÖVV:650@at:oov:45650:,25,37,4,OÖVV,True,False,True
+OÖVV:651@at:oov:45651:,34,51,6,OÖVV,True,False,True
+OÖVV:653@at:oov:45653:,20,40,7,OÖVV,True,False,True
+OÖVV:654@at:oov:45654:,21,46,7,OÖVV,True,False,True
+OÖVV:660@at:oov:45660:,34,71,12,OÖVV,True,False,True
+OÖVV:661@at:oov:45661:,6,40,8,OÖVV,True,False,True
+OÖVV:662@at:oov:45662:,32,80,8,OÖVV,True,False,True
+OÖVV:663@at:oov:45663:,20,75,10,OÖVV,True,False,True
+OÖVV:664@at:oov:45664:,34,59,5,OÖVV,True,False,True
+OÖVV:665@at:oov:45665:,19,49,5,OÖVV,True,False,True
+OÖVV:670@at:oov:45670:,44,107,14,OÖVV,True,False,True
+OÖVV:671@at:oov:45671:,6,43,6,OÖVV,True,False,True
+OÖVV:676@at:oov:25676:,32,28,3,OÖVV,True,False,True
+OÖVV:682@at:oov:33682:,20,40,4,OÖVV,True,False,True
+OÖVV:690@at:oov:45690:,24,76,12,OÖVV,True,False,True
+OÖVV:692@at:oov:45692:,28,63,9,OÖVV,True,False,True
+OÖVV:693@at:oov:45693:,18,40,6,OÖVV,True,False,True
+OÖVV:696@at:oov:45696:,2,70,9,OÖVV,True,False,True
+OÖVV:697@at:oov:45697:,2,68,14,OÖVV,True,False,True
+OÖVV:698@at:oov:45698:,2,40,7,OÖVV,True,False,True
+OÖVV:699@at:oov:45699:,6,79,10,OÖVV,True,False,True
+OÖVV:820@at:oov:28820:,10,5,2,OÖVV,True,False,True
+OÖVV:853@at:oov:27853:,23,21,2,OÖVV,True,False,True
+OÖVV:S5@at:oov:49555:,82,21,8,OÖVV,True,False,True
+Linz AG:17@at:esg:17:,69,70,3,Linz AG,True,False,True
+Linz AG:3@at:esg:3:,127,73,4,Linz AG,True,False,True
+Linz AG:43@at:esg:43:,152,49,4,Linz AG,True,False,True
+Linz AG:4@at:esg:4:,146,52,4,Linz AG,True,False,True
+Linz AG:70@at:esg:70:,16,33,4,Linz AG,True,False,True
+Linz AG:72@at:esg:72:,40,39,4,Linz AG,True,False,True

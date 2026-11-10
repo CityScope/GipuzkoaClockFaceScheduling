@@ -1,0 +1,132 @@
+,lat,lon,anchor,town,system,label,name,departures,routes,score,important,group
+Amstetten|bigrail,48.121523226666675,14.879439845000002,Amstetten Bahnhof,Amstetten,bigrail,Amstetten,Amstetten · National railways,97.0,11.0,152.0,True,Amstetten|bigrail
+Attnang-Puchheim|bigrail,48.012327885999994,13.720398732000001,Attnang-Puchheim Bahnhof,Attnang-Puchheim,bigrail,Attnang-Puchheim,Attnang-Puchheim · National railways,81.0,13.0,146.0,True,Attnang-Puchheim|bigrail
+Bad Schallerbach|bigrail,48.22869072,13.92236875,Bad Schallerbach-Wallern Bahnhof,Bad Schallerbach,bigrail,Bad Schallerbach,Bad Schallerbach · National railways,44.0,4.0,64.0,True,Bad Schallerbach|bigrail
+Eferding|localrail,48.30279033,14.01563185,Eferding Bahnhof,Eferding,localrail,Eferding,Eferding · Local railways,38.0,2.0,48.0,True,Eferding|bus
+Enns|bigrail,48.221200935,14.46707121,Enns Bahnhof,Enns,bigrail,Enns,Enns · National railways,50.0,2.0,60.0,True,Enns|bigrail
+Garsten|bigrail,48.02341115,14.407252395,Garsten Bahnhof,Garsten,bigrail,Garsten,Garsten · National railways,30.0,3.0,45.0,True,Garsten|bigrail
+Grünau im Almtal|bigrail,47.85366295,13.95159993,Grünau im Almtal Bahnhof,Grünau im Almtal,bigrail,Grünau im Almtal,Grünau im Almtal · National railways,12.0,1.0,17.0,True,Grünau im Almtal|bigrail
+Gunskirchen|bigrail,48.13216432,13.945406049999999,Gunskirchen Bahnhof,Gunskirchen,bigrail,Gunskirchen,Gunskirchen · National railways,43.0,2.0,53.0,True,Gunskirchen|bigrail
+Gurten|bigrail,48.244109705,13.334354025,Gurten OÖ Bahnhst,Gurten,bigrail,Gurten,Gurten · National railways,15.0,2.0,25.0,True,Gurten|bigrail
+Hörsching|bigrail,48.245745865,14.186356665,Hörsching Bahnhst,Hörsching,bigrail,Hörsching,Hörsching · National railways,42.0,3.0,57.0,True,Hörsching|bigrail
+Kirchdorf an der Krems|bigrail,47.906121604999996,14.116288075,Kirchdorf/Krems Bahnhof,Kirchdorf an der Krems,bigrail,Kirchdorf an der Krems,Kirchdorf an der Krems · National railways,35.0,5.0,60.0,True,Kirchdorf an der Krems|bigrail
+Lambach|bigrail,48.094168859999996,13.888583115,Lambach OÖ Bahnhof,Lambach,bigrail,Lambach,Lambach · National railways,44.0,2.0,54.0,True,Lambach|bigrail
+Lambach|localrail,48.09424986,13.88896939,Lambach OÖ Bahnhof,Lambach,localrail,Lambach,Lambach · Local railways,12.0,1.0,17.0,True,Lambach|bigrail
+Leonding|bigrail,48.27403989,14.254062690000001,Leonding Westbahn Bahnhof,Leonding,bigrail,Leonding,Leonding · National railways,81.0,4.0,101.0,True,Leonding|bigrail
+Linz|bigrail,48.29055820928572,14.292129441428573,Linz/Donau Hauptbahnhof,Linz,bigrail,Linz · Donau Hbf,Linz · Donau Hbf · National railways,284.0,28.0,424.0,True,Linz|bigrail
+Linz|localrail,48.291142670000006,14.291962614,Linz/Donau Hauptbahnhof,Linz,localrail,Linz · Donau Hbf,Linz · Donau Hbf · Local railways,432.0,6.0,462.0,True,Linz|bigrail
+Losenstein|bigrail,47.92400336,14.43112063,Losenstein,Losenstein,bigrail,Losenstein,Losenstein · National railways,20.0,2.0,30.0,True,Losenstein|bigrail
+Neuhofen an der Krems|bigrail,48.13575549,14.238328695,Neuhofen/Krems Bahnhof,Neuhofen an der Krems,bigrail,Neuhofen an der Krems,Neuhofen an der Krems · National railways,72.0,4.0,92.0,True,Neuhofen an der Krems|bigrail
+Neumarkt im Hausruckkreis|bigrail,48.271448568,13.724838204,Neumarkt-Kallham Bahnhof,Neumarkt im Hausruckkreis,bigrail,Neumarkt im Hausruckkreis,Neumarkt im Hausruckkreis · National railways,58.0,4.0,78.0,True,Neumarkt im Hausruckkreis|bigrail
+Pregarten|bigrail,48.35601357,14.522569125,Pregarten Bahnhof,Pregarten,bigrail,Pregarten,Pregarten · National railways,22.0,3.0,37.0,True,Pregarten|bigrail
+Rohr im Kremstal|bigrail,48.06976139,14.19163876,Rohr-Bad Hall Bahnhof,Rohr im Kremstal,bigrail,Rohr im Kremstal,Rohr im Kremstal · National railways,72.0,4.0,92.0,True,Rohr im Kremstal|bigrail
+Sankt Gallen|bigrail,47.7144362,14.63538854,Weißenbach-St.Gallen Bahnhof,Sankt Gallen,bigrail,Sankt Gallen,Sankt Gallen · National railways,4.0,2.0,14.0,True,Sankt Gallen|bigrail
+Sankt Valentin|bigrail,48.17924892888889,14.52158796777778,St. Valentin Bahnhof,Sankt Valentin,bigrail,Sankt Valentin,Sankt Valentin · National railways,107.0,9.0,152.0,True,Sankt Valentin|bigrail
+Sattledt|bigrail,48.074101205,14.05801436,Sattledt Bahnhof,Sattledt,bigrail,Sattledt,Sattledt · National railways,24.0,1.0,29.0,True,Sattledt|bigrail
+Schlüßlberg|bigrail,48.223663740000006,13.869184,Schlüßlberg Bahnhof,Schlüßlberg,bigrail,Schlüßlberg,Schlüßlberg · National railways,41.0,3.0,56.0,True,Schlüßlberg|bigrail
+Schärding|bigrail,48.46424228666666,13.442228216666665,Schärding Bahnhof,Schärding,bigrail,Schärding,Schärding · National railways,26.0,3.0,41.0,True,Schärding|bigrail
+St. Nikola an der Donau|bigrail,48.23349282,14.90919504,St.Nikola-Struden Bahnhst,St. Nikola an der Donau,bigrail,St. Nikola an der Donau,St. Nikola an der Donau · National railways,0.0,0.0,0.0,True,St. Nikola an der Donau|bigrail
+Steyr|bigrail,48.03837434333334,14.42331427,Steyr,Steyr,bigrail,Steyr,Steyr · National railways,40.0,2.0,50.0,True,Steyr|bigrail
+Traun|bigrail,48.22620721,14.254435489999999,Traun OÖ Bahnhof,Traun,bigrail,Traun,Traun · National railways,72.0,4.0,92.0,True,Traun|bigrail
+Waidhofen an der Ybbs|bigrail,47.968145405,14.765338835,Waidhofen/Ybbs Bahnhof,Waidhofen an der Ybbs,bigrail,Waidhofen an der Ybbs,Waidhofen an der Ybbs · National railways,30.0,2.0,40.0,True,Waidhofen an der Ybbs|bigrail
+Waizenkirchen|localrail,48.330491385,13.852830165,Waizenkirchen Bahnhof,Waizenkirchen,localrail,Waizenkirchen,Waizenkirchen · Local railways,15.0,1.0,20.0,True,Waizenkirchen|bus
+Wels|bigrail,48.166039035,14.026780837,Wels Hauptbahnhof,Wels,bigrail,Wels,Wels · National railways,208.0,18.0,298.0,True,Wels|bigrail
+Weyer|bigrail,47.862116435,14.66773688,Weyer/Enns Bahnhof,Weyer,bigrail,Weyer,Weyer · National railways,24.0,3.0,39.0,True,Weyer|bigrail
+Wilhering|localrail,48.27153467,14.20169989,Dörnbach-Hitzing Bahnhst,Wilhering,localrail,Wilhering,Wilhering · Local railways,46.0,1.0,51.0,True,Wilhering|bus
+Alkoven|bus,48.28794493,14.111989635,Alkoven Eferdinger Straße,Alkoven,bus,Alkoven,Alkoven · Regional bus,19.0,2.0,29.0,True,Alkoven|bus
+Asten|bus,48.22534245,14.39954485,Asten b.Linz B1/Bahnhofstraße,Asten,bus,Asten,Asten · Regional bus,38.0,2.0,48.0,True,Asten|bus
+Bachmanning|bus,48.1302846925,13.7947989975,Bachmanning Feuerwehr,Bachmanning,bus,Bachmanning,Bachmanning · Regional bus,0.0,0.0,0.0,True,Bachmanning|bus
+Bad Hall|bus,48.03645897909091,14.20838662090909,Bad Hall Bahnhofstraße,Bad Hall,bus,Bad Hall,Bad Hall · Regional bus,56.0,3.0,71.0,True,Bad Hall|bus
+Bad Schallerbach|bus,48.22875954,13.923809053333335,Bad Schallerbach-Wallern Bahnhof,Bad Schallerbach,bus,Bad Schallerbach,Bad Schallerbach · Regional bus,12.0,1.0,17.0,True,Bad Schallerbach|bigrail
+Eferding|bus,48.30263496,14.01648525,Eferding Bahnhof,Eferding,bus,Eferding,Eferding · Regional bus,36.0,5.0,61.0,True,Eferding|bus
+Engerwitzdorf|bus,48.340640285,14.41272313,Schweinbach B125/Abzw Ort,Engerwitzdorf,bus,Engerwitzdorf,Engerwitzdorf · Regional bus,52.0,3.0,67.0,True,Engerwitzdorf|bus
+Enns|bus,48.220440825,14.46596179,Enns Bahnhof,Enns,bus,Enns,Enns · Regional bus,36.0,2.0,46.0,True,Enns|bigrail
+Feldkirchen an der Donau|bus,48.38547402,14.09106338,Lacken im Mühlkreis Bahnhst,Feldkirchen an der Donau,bus,Feldkirchen an der Donau,Feldkirchen an der Donau · Regional bus,73.0,5.0,98.0,True,Feldkirchen an der Donau|bus
+Freistadt|bus,48.49961721,14.486389475,Freistadt B38/Abzw Bahnhof,Freistadt,bus,Freistadt,Freistadt · Regional bus,21.0,4.0,41.0,True,Freistadt|bus
+Gallneukirchen|bus,48.35338601,14.416022946666667,Gallneukirchen Schulstraße,Gallneukirchen,bus,Gallneukirchen,Gallneukirchen · Regional bus,39.0,3.0,54.0,True,Gallneukirchen|bus
+Garsten|bus,48.02442351,14.407387139999999,Garsten Otakarstraße,Garsten,bus,Garsten,Garsten · Regional bus,16.0,5.0,41.0,True,Garsten|bigrail
+Gaspoltshofen|bus,48.138692995,13.73140489,Gaspoltshofen Jeding,Gaspoltshofen,bus,Gaspoltshofen,Gaspoltshofen · Regional bus,6.0,1.0,11.0,True,Gaspoltshofen|bus
+Geboltskirchen|bus,48.15186471,13.63299445,Geboltskirchen Teichweg,Geboltskirchen,bus,Geboltskirchen,Geboltskirchen · Regional bus,0.0,0.0,0.0,True,Geboltskirchen|bus
+Gramastetten|bus,48.337371,14.25324522,Großamberg Hansbergstraße,Gramastetten,bus,Gramastetten,Gramastetten · Regional bus,34.0,1.0,39.0,True,Gramastetten|bus
+Grieskirchen|bus,48.234827145,13.825993,Grieskirchen Busbahnhof (Postamt),Grieskirchen,bus,Grieskirchen,Grieskirchen · Regional bus,0.0,0.0,0.0,True,Grieskirchen|bus
+Großraming|bus,47.88645056,14.55288727,Großraming Schulen,Großraming,bus,Großraming,Großraming · Regional bus,6.0,2.0,16.0,True,Großraming|bus
+Gunskirchen|bus,48.132751875,13.945684525,Gunskirchen Bahnhof,Gunskirchen,bus,Gunskirchen,Gunskirchen · Regional bus,17.0,1.0,22.0,True,Gunskirchen|bigrail
+Haag am Hausruck|bus,48.18293896,13.647371985,Haag am Hausruck Bahnhofstraße,Haag am Hausruck,bus,Haag am Hausruck,Haag am Hausruck · Regional bus,4.0,1.0,9.0,True,Haag am Hausruck|bus
+Hagenberg im Mühlkreis|bus,48.367016795,14.517336440000001,Hagenberg im Mühlkreis Ortsmitte,Hagenberg im Mühlkreis,bus,Hagenberg im Mühlkreis,Hagenberg im Mühlkreis · Regional bus,20.0,2.0,30.0,True,Hagenberg im Mühlkreis|bus
+Haibach ob der Donau|bus,48.409858075,13.91637699,Haibach ob der Donau Ortsmitte,Haibach ob der Donau,bus,Haibach ob der Donau,Haibach ob der Donau · Regional bus,10.0,2.0,20.0,True,Haibach ob der Donau|bus
+Hargelsberg|bus,48.14974308,14.42512887,Hargelsberg Ortsmitte,Hargelsberg,bus,Hargelsberg,Hargelsberg · Regional bus,0.0,0.0,0.0,True,Hargelsberg|bus
+Hartkirchen|bus,48.36170299666667,14.003875893333332,Hartkirchen OÖ Ortsmitte,Hartkirchen,bus,Hartkirchen,Hartkirchen · Regional bus,19.0,3.0,34.0,True,Hartkirchen|bus
+Hellmonsödt|bus,48.430661689999994,14.2944487,Hellmonsödt Glasau (B126),Hellmonsödt,bus,Hellmonsödt,Hellmonsödt · Regional bus,58.0,5.0,83.0,True,Hellmonsödt|bus
+Herzogsdorf|bus,48.396991289999995,14.076651406666668,Gerling OÖ Bahnhst,Herzogsdorf,bus,Herzogsdorf,Herzogsdorf · Regional bus,68.0,5.0,93.0,True,Herzogsdorf|bus
+Hörsching|bus,48.245315145000006,14.186244375,Hörsching Bahnhst,Hörsching,bus,Hörsching,Hörsching · Regional bus,81.0,4.0,101.0,True,Hörsching|bigrail
+Kirchberg-Thening|bus,48.254736339999994,14.115075345000001,Axberg Abzw Schauersfreiling,Kirchberg-Thening,bus,Kirchberg-Thening,Kirchberg-Thening · Regional bus,0.0,0.0,0.0,True,Kirchberg-Thening|bus
+Kirchdorf an der Krems|bus,47.906026458,14.118875222,Kirchdorf/Krems Bahnhof,Kirchdorf an der Krems,bus,Kirchdorf an der Krems,Kirchdorf an der Krems · Regional bus,13.0,4.0,33.0,True,Kirchdorf an der Krems|bigrail
+Kremsmünster|bus,48.05341025,14.14079411,Kremsmünster Bahnhof,Kremsmünster,bus,Kremsmünster,Kremsmünster · Regional bus,10.0,2.0,20.0,True,Kremsmünster|bus
+Laakirchen|bus,47.983480395,13.823536104999999,Laakirchen Rathausplatz,Laakirchen,bus,Laakirchen,Laakirchen · Regional bus,4.0,3.0,19.0,True,Laakirchen|bus
+Lambach|bus,48.09381586333333,13.888798709999998,Lambach OÖ Bahnhof,Lambach,bus,Lambach,Lambach · Regional bus,21.0,2.0,31.0,True,Lambach|bigrail
+Laussa|bus,47.95171689,14.456911265,Laussa Ortsmitte,Laussa,bus,Laussa,Laussa · Regional bus,0.0,1.0,5.0,True,Laussa|bus
+Leonding|bus,48.27306233,14.254264809999999,Leonding Paschinger Straße,Leonding,bus,Leonding,Leonding · Regional bus,230.0,10.0,280.0,True,Leonding|bigrail
+Linz|bus,48.29246434000001,14.291857208666668,Linz/Donau Hauptbahnhof,Linz,bus,Linz,Linz · Regional bus,434.0,56.0,714.0,True,Linz|bigrail
+Losenstein|bus,47.92598683,14.432158185,Losenstein Kirche,Losenstein,bus,Losenstein,Losenstein · Regional bus,4.0,2.0,14.0,True,Losenstein|bus
+Marchtrenk|bus,48.200877535000004,14.099938735,Marchtrenk Bahnhof,Marchtrenk,bus,Marchtrenk,Marchtrenk · Regional bus,42.0,3.0,57.0,True,Marchtrenk|bus
+Mauthausen|bus,48.24231195666667,14.531878666666666,Mauthausen OÖ Bahnhof,Mauthausen,bus,Mauthausen,Mauthausen · Regional bus,29.0,5.0,54.0,True,Mauthausen|bus
+Meggenhofen|bus,48.18023161,13.795324515,Meggenhofen Ortsmitte,Meggenhofen,bus,Meggenhofen,Meggenhofen · Regional bus,8.0,1.0,13.0,True,Meggenhofen|bus
+Neufelden|bus,48.485251885,14.002139150000001,Neufelden Markt,Neufelden,bus,Neufelden,Neufelden · Regional bus,34.0,3.0,49.0,True,Neufelden|bus
+Neuhofen an der Krems|bus,48.137401106666665,14.237949906666666,Neuhofen/Krems Bahnhof,Neuhofen an der Krems,bus,Neuhofen an der Krems,Neuhofen an der Krems · Regional bus,4.0,1.0,9.0,True,Neuhofen an der Krems|bigrail
+Neumarkt im Mühlkreis|bus,48.39866728,14.48780882,Götschka Nord,Neumarkt im Mühlkreis,bus,Neumarkt im Mühlkreis,Neumarkt im Mühlkreis · Regional bus,49.0,5.0,74.0,True,Neumarkt im Mühlkreis|bus
+Niederwaldkirchen|bus,48.458364753333335,14.031253546666667,Kleinzell im Mühlkreis Bahnhst,Niederwaldkirchen,bus,Niederwaldkirchen,Niederwaldkirchen · Regional bus,47.0,4.0,67.0,True,Niederwaldkirchen|bus
+Oberndorf bei Schwanenstadt|bus,48.0691461,13.76470544,Niederholzham Ort,Oberndorf bei Schwanenstadt,bus,Oberndorf bei Schwanenstadt,Oberndorf bei Schwanenstadt · Regional bus,0.0,0.0,0.0,True,Oberndorf bei Schwanenstadt|bus
+Ottensheim|bus,48.3368574475,14.1758441325,Ottensheim Bahnhof,Ottensheim,bus,Ottensheim · Bf,Ottensheim · Bf · Regional bus,115.0,5.0,140.0,True,Ottensheim|bus
+Peuerbach|bus,48.33785469,13.7705355,Peuerbach Bahnhof,Peuerbach,bus,Peuerbach,Peuerbach · Regional bus,3.0,2.0,13.0,True,Peuerbach|bus
+Piberbach|bus,48.11575304666667,14.2270234,Piberbach Weberberg,Piberbach,bus,Piberbach,Piberbach · Regional bus,0.0,0.0,0.0,True,Piberbach|bus
+Pichl bei Wels|bus,48.18440339,13.90022528,Pichl b.Wels Ortsmitte,Pichl bei Wels,bus,Pichl bei Wels,Pichl bei Wels · Regional bus,10.0,1.0,15.0,True,Pichl bei Wels|bus
+Prambachkirchen|bus,48.315403135,13.901545805000001,Prambachkirchen-Bad Weinberg Bahnhof,Prambachkirchen,bus,Prambachkirchen,Prambachkirchen · Regional bus,6.0,1.0,11.0,True,Prambachkirchen|bus
+Pregarten|bus,48.35546737666667,14.523434503333334,Pregarten Bahnhof,Pregarten,bus,Pregarten,Pregarten · Regional bus,26.0,6.0,56.0,True,Pregarten|bigrail
+Raab|bus,48.35189757,13.64419644,Raab OÖ Kommuneplatz,Raab,bus,Raab,Raab · Regional bus,0.0,0.0,0.0,True,Raab|bus
+Ried im Innkreis|bus,48.20545414,13.488557928,Ried im Innkreis Landesgericht (Bahnhofstraße),Ried im Innkreis,bus,Ried im Innkreis,Ried im Innkreis · Regional bus,0.0,0.0,0.0,True,Ried im Innkreis|bus
+Rohr im Kremstal|bus,48.06917011,14.19085723,Rohr-Bad Hall Bahnhof,Rohr im Kremstal,bus,Rohr im Kremstal,Rohr im Kremstal · Regional bus,29.0,3.0,44.0,True,Rohr im Kremstal|bigrail
+Rohrbach-Berg|bus,48.55933876,14.031208634999999,Haslach/Mühl Abzw Bahnhof,Rohrbach-Berg,bus,Rohrbach-Berg,Rohrbach-Berg · Regional bus,26.0,7.0,61.0,True,Rohrbach-Berg|bus
+Sandl|bus,48.53773434,14.61494738,Weinviertl b.Sandl,Sandl,bus,Sandl,Sandl · Regional bus,3.0,1.0,8.0,True,Sandl|bus
+Sattledt|bus,48.07398416,14.05757419,Sattledt Bahnhof,Sattledt,bus,Sattledt,Sattledt · Regional bus,5.0,1.0,10.0,True,Sattledt|bigrail
+Schlatt|bus,48.07877376,13.80043144,Breitenschützing Bahnhof,Schlatt,bus,Schlatt,Schlatt · Regional bus,0.0,1.0,5.0,True,Schlatt|bus
+Schlierbach|bus,47.93628219,14.11125751,Schlierbach/Krems Bahnhof,Schlierbach,bus,Schlierbach · Krems Bf,Schlierbach · Krems Bf · Regional bus,19.0,3.0,34.0,True,Schlierbach|bus
+Schlüßlberg|bus,48.224103615000004,13.866749565,Schlüßlberg Ort,Schlüßlberg,bus,Schlüßlberg,Schlüßlberg · Regional bus,0.0,0.0,0.0,True,Schlüßlberg|bus
+Sierning|bus,48.04410216,14.31002773,Sierning Kirchenplatz,Sierning,bus,Sierning,Sierning · Regional bus,52.0,4.0,72.0,True,Sierning|bus
+St. Aegidi|bus,48.47864532,13.738082366666667,St.Aegidi OÖ Schulen,St. Aegidi,bus,St. Aegidi,St. Aegidi · Regional bus,0.0,0.0,0.0,True,St. Aegidi|bus
+St. Florian|bus,48.22535441,14.39906874,Asten b.Linz B1/Bahnhofstraße,St. Florian,bus,St. Florian,St. Florian · Regional bus,41.0,5.0,66.0,True,St. Florian|bus
+St. Marienkirchen am Hausruck|bus,48.18221123,13.57893384,St.Marienkirchen am Hausruck Ortsmitte,St. Marienkirchen am Hausruck,bus,St. Marienkirchen am Hausruck,St. Marienkirchen am Hausruck · Regional bus,0.0,0.0,0.0,True,St. Marienkirchen am Hausruck|bus
+St. Marienkirchen an der Polsenz|bus,48.25482606,13.95604659,St.Marienkirchen/Polsenz Polsenztal,St. Marienkirchen an der Polsenz,bus,St. Marienkirchen an der Polsenz,St. Marienkirchen an der Polsenz · Regional bus,12.0,1.0,17.0,True,St. Marienkirchen an der Polsenz|bus
+St. Marien|bus,48.12140429,14.32090633,Weichstetten Ortsmitte,St. Marien,bus,St. Marien,St. Marien · Regional bus,10.0,1.0,15.0,True,St. Marien|bus
+St. Oswald bei Freistadt|bus,48.501917785,14.58787665,St.Oswald b.Freistadt Schule,St. Oswald bei Freistadt,bus,St. Oswald bei Freistadt,St. Oswald bei Freistadt · Regional bus,3.0,1.0,8.0,True,St. Oswald bei Freistadt|bus
+Stadl-Paura|bus,48.07486049,13.84527534,Stadl-Paura Riesenberg,Stadl-Paura,bus,Stadl-Paura,Stadl-Paura · Regional bus,17.0,3.0,32.0,True,Stadl-Paura|bus
+Steinerkirchen an der Traun|bus,48.07912186,13.95656762,Steinerkirchen/Traun Ortsmitte,Steinerkirchen an der Traun,bus,Steinerkirchen an der Traun,Steinerkirchen an der Traun · Regional bus,6.0,1.0,11.0,True,Steinerkirchen an der Traun|bus
+Steyr|bus,48.038004943333334,14.422838165,Steyr Bahnhof (Busterminal/Parkdeck),Steyr,bus,Steyr,Steyr · Regional bus,54.0,13.0,119.0,True,Steyr|bigrail
+Stroheim|bus,48.357535725000005,13.912905,Reith b.Stroheim,Stroheim,bus,Stroheim,Stroheim · Regional bus,0.0,0.0,0.0,True,Stroheim|bus
+Traun|bus,48.22549405666667,14.251200056666667,Traun OÖ Bahnhof,Traun,bus,Traun,Traun · Regional bus,158.0,10.0,208.0,True,Traun|bigrail
+Unterweitersdorf|bus,48.362373469999994,14.446261735,Hattmannsdorf b.Gallneukirchen,Unterweitersdorf,bus,Unterweitersdorf,Unterweitersdorf · Regional bus,23.0,2.0,33.0,True,Unterweitersdorf|bus
+Vorchdorf|bus,47.998657545,13.921169505,Vorchdorf-Eggenberg Bahnhof,Vorchdorf,bus,Vorchdorf,Vorchdorf · Regional bus,5.0,3.0,20.0,True,Vorchdorf|bus
+Waizenkirchen|bus,48.33015992,13.85244389,Waizenkirchen Bahnhof,Waizenkirchen,bus,Waizenkirchen,Waizenkirchen · Regional bus,6.0,2.0,16.0,True,Waizenkirchen|bus
+Walding|bus,48.35992033,14.137349075,Rottenegg Bahnhof,Walding,bus,Walding,Walding · Regional bus,84.0,5.0,109.0,True,Walding|bigrail|1
+Waldkirchen am Wesen|bus,48.445632395,13.82622207,Wesenufer Nr.28/57,Waldkirchen am Wesen,bus,Waldkirchen am Wesen,Waldkirchen am Wesen · Regional bus,2.0,1.0,7.0,True,Waldkirchen am Wesen|bus
+Waldneukirchen|bus,47.975305305000006,14.267649705,Untergrünburg Museumsbahnhof,Waldneukirchen,bus,Waldneukirchen,Waldneukirchen · Regional bus,47.0,3.0,62.0,True,Waldneukirchen|bus
+Wallern an der Trattnach|bus,48.239069279999995,13.95880442,Grub b.Wallern B134,Wallern an der Trattnach,bus,Wallern an der Trattnach,Wallern an der Trattnach · Regional bus,12.0,1.0,17.0,True,Wallern an der Trattnach|bus
+Wels|bus,48.165083118571424,14.02697756714286,Wels Hbf (Busterminal),Wels,bus,Wels,Wels · Regional bus,56.0,12.0,116.0,True,Wels|bigrail
+Weyer|bus,47.8613058,14.66779976,Weyer/Enns Bahnhof,Weyer,bus,Weyer,Weyer · Regional bus,2.0,1.0,7.0,True,Weyer|bigrail
+Wilhering|bus,48.272013,14.200864455000001,Hitzing,Wilhering,bus,Wilhering,Wilhering · Regional bus,50.0,5.0,75.0,True,Wilhering|bus
+Wolfern|bus,48.115928973333325,14.35767737,Wolfern Losensteinleiten (Schloss),Wolfern,bus,Wolfern,Wolfern · Regional bus,12.0,1.0,17.0,True,Wolfern|bus
+Wolfsegg am Hausruck|bus,48.10738199,13.67470772,Wolfsegg am Hausruck Marktplatz,Wolfsegg am Hausruck,bus,Wolfsegg am Hausruck,Wolfsegg am Hausruck · Regional bus,6.0,1.0,11.0,True,Wolfsegg am Hausruck|bus
+Zwettl an der Rodl|bus,48.46456195333334,14.27072344,Zwettl/Rodl Linzer Straße,Zwettl an der Rodl,bus,Zwettl an der Rodl,Zwettl an der Rodl · Regional bus,22.0,3.0,37.0,True,Zwettl an der Rodl|bus
+Ansfelden|bus|1,48.206473995,14.258441975,Haid b.Ansfelden Schulzentrum,Ansfelden,bus,Ansfelden,Ansfelden · Regional bus,52.0,3.0,67.0,True,Ansfelden|bus|1
+Bad Wimsbach-Neydharting|bus|1,48.062419472500004,13.9008630875,Bad Wimsbach-Neydharting Markt,Bad Wimsbach-Neydharting,bus,Bad Wimsbach-Neydharting,Bad Wimsbach-Neydharting · Regional bus,0.0,1.0,5.0,True,Bad Wimsbach-Neydharting|bus|1
+Linz|bigrail|1,48.31190221,14.279260435000001,Linz/Donau Urfahr Bahnhof,Linz,bigrail,Linz · Donau Urfahr Bf,Linz · Donau Urfahr Bf · National railways,29.0,1.0,34.0,True,Linz|bigrail|1
+Linz|localrail|1,48.33303152,14.318720426666667,Linz/Donau JKU I Universität,Linz,localrail,Linz · Donau JKU I Uni…,Linz · Donau JKU I Uni… · Local railways,144.0,2.0,154.0,True,Linz|localrail|1
+Linz|localrail|2,48.31181856285714,14.282129907142858,Linz/Donau Rudolfstraße,Linz,localrail,Linz · Donau Rudolfstr…,Linz · Donau Rudolfstr… · Local railways,443.0,5.0,468.0,True,Linz|localrail|2
+Linz|localrail|16,48.257465669999995,14.361372439999998,Linz/Donau solarCity,Linz,localrail,Linz · Donau solarCity,Linz · Donau solarCity · Local railways,78.0,1.0,83.0,True,Linz|localrail|16
+Linz|localrail|30,48.249982582499996,14.310151247499999,Linz/Donau Auwiesen,Linz,localrail,Linz · Donau Auwiesen,Linz · Donau Auwiesen · Local railways,223.0,3.0,238.0,True,Linz|localrail|30
+Linz|localrail|34,48.32355109333333,14.258850709999999,Linz/Donau Pöstlingberg,Linz,localrail,Linz · Donau Pöstlingb…,Linz · Donau Pöstlingb… · Local railways,35.0,1.0,40.0,True,Linz|localrail|34
+Ottensheim|bus|1,48.3361483275,14.17824937,Ottensheim B127/Hambergstraße,Ottensheim,bus,Ottensheim · B127/Hambergstr…,Ottensheim · B127/Hambergstr… · Regional bus,71.0,3.0,86.0,True,Ottensheim|bus|1
+Perg|bus|1,48.250777854,14.632860683999999,Perg Raiffeisenplatz,Perg,bus,Perg,Perg · Regional bus,6.0,2.0,16.0,True,Perg|bus|1
+Schlierbach|bus|1,47.936592135,14.11721334,Schlierbach/Krems Abzw Bahnhof,Schlierbach,bus,Schlierbach · Krems Abzw Bf,Schlierbach · Krems Abzw Bf · Regional bus,12.0,1.0,17.0,True,Schlierbach|bus|1
+Vorchdorf|localrail|1,47.9987447,13.92088653,Vorchdorf-Eggenberg Bahnhof,Vorchdorf,localrail,Vorchdorf,Vorchdorf · Local railways,12.0,1.0,17.0,True,Vorchdorf|bus
+Walding|bigrail|1,48.35988054,14.13797041,Rottenegg Bahnhof,Walding,bigrail,Walding,Walding · National railways,31.0,1.0,36.0,True,Walding|bigrail|1
+Wartberg ob der Aist|bus|1,48.33075715,14.5043557825,Gaisbach-Wartberg Bahnhof,Wartberg ob der Aist,bus,Wartberg ob der Aist,Wartberg ob der Aist · Regional bus,26.0,4.0,46.0,True,Wartberg ob der Aist|bus|1
