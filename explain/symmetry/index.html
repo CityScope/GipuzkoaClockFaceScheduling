@@ -13,7 +13,8 @@
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 main{max-width:860px;margin:0 auto;padding:22px 16px 40px}
 a{color:var(--link)}
-h1{font-size:24px;margin:6px 0 12px}
+h1{font-size:24px;margin:6px 0 6px}
+.lead{color:var(--mute);margin:0 0 12px}
 .tabs{display:flex;gap:6px;margin-bottom:10px}
 .tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 14px;font:600 14px system-ui,sans-serif;cursor:pointer}
 .tabs button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
@@ -30,6 +31,7 @@ svg text{font-family:system-ui,sans-serif}
 <main>
 <a href="../../index.html">← all regions and explainers</a>
 <h1>Why symmetry, not just coordination</h1>
+<p class="lead">In a clock-face timetable every line repeats each hour at the same minutes, so passengers can remember it: "the train to B leaves A at :03, every hour". Symmetry means these minutes mirror each other around the hub minute: arriving 3′ before :00 and leaving 3′ after it, the same in both directions. Then the changes that work one way also work on the way back.</p>
 <div class="tabs"><button data-s="0" class="on">Coordination only</button><button data-s="1">Symmetric</button></div>
 <div class="stage">
 <svg id="sv" viewBox="0 0 700 540" role="img" aria-label="Four hubs in a square grid with trains running every hour"></svg>
@@ -47,7 +49,7 @@ const SC=[
  {tt:{AB:17,BC:23,CD:19,DA:26},h:{A:0,B:20,C:46,D:8},
   txt:'Each hub is timed for the train coming round clockwise, and every edge has its own travel time. Back at A the loop does not close, and in the other direction almost nothing connects.'},
  {tt:{AB:24,BC:24,CD:24,DA:24},h:{A:0,B:30,C:0,D:30},
-  txt:'Every edge takes 24′ (half an hour minus the change), so the hubs alternate :00 / :30. Arrivals mirror departures around each hub minute, so the loop closes and every change works in both directions.'}
+  txt:'Every edge takes 24′ (half an hour minus the change), so the hubs alternate :00 / :30. Every hour the same minutes: trains leave at :03 / :33 and arrive at :27 / :57, mirrored around each hub minute. The loop closes and every change works in both directions.'}
 ];
 let T=0,last=0,dyn=null;
 const edges=(sc)=>ORDER.map((a,i)=>{const b=ORDER[(i+1)%4];return {a,b,tt:sc.tt[a+b]};});
