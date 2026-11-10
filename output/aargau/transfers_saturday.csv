@@ -695,6 +695,6 @@ Würenlos|bus,day,Baden,Killwangen,1.0,0.0,direct None / with changes 30,False
 Zofingen|bus,night,Schöftland,Sursee (slow),5.8,5.7,direct None / with changes 299,False
 Zurzach|bigrail|2,peak,Stadel,Zurzach · Bad,4.1,2.9,direct None / with changes 60,False
 Zurzach|bigrail|2,day,Stadel,Zurzach · Bad,4.1,2.9,direct None / with changes 60,False
-Zürich|bus|4,peak,Affoltern am Albis,Birmensdorf (ZH) (slow),2.2,0.0,direct None / with changes 45,False
-Zürich|bus|4,day,Affoltern am Albis,Birmensdorf (ZH) (slow),2.0,0.0,direct None / with changes 30,False
-Zürich|bus|4,night,Affoltern am Albis,Birmensdorf (ZH) (slow),12.0,0.0,direct None / with changes 375,False
+Zürich|bus|4,peak,Affoltern am Albis,Birmensdorf (ZH),2.2,0.0,direct None / with changes 45,False
+Zürich|bus|4,day,Affoltern am Albis,Birmensdorf (ZH),2.0,0.0,direct None / with changes 30,False
+Zürich|bus|4,night,Affoltern am Albis,Birmensdorf (ZH),12.0,0.0,direct None / with changes 375,False

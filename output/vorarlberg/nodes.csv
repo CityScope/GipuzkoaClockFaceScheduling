@@ -44,7 +44,7 @@ Dornbirn|bus,47.41685421857143,9.73880411,Dornbirn Bahnhof,Dornbirn,bus,Dornbirn
 Dünserberg|bus,47.232921465000004,9.722098015,Dünserberg Boden,Dünserberg,bus,Dünserberg,Dünserberg · Regional bus,13.0,1,18.0,True,Dünserberg|bus
 Egg|bus,47.432083524999996,9.89772314,Egg Zentrum,Egg,bus,Egg,Egg · Regional bus,144.0,6,174.0,True,Egg|bus
 Feldkirch|bus,47.24151122999999,9.603798873333334,Feldkirch Bahnhof,Feldkirch,bus,Feldkirch,Feldkirch · Regional bus,303.0,22,413.0,True,Feldkirch|bigrail
-Frastanz|bus,47.21980541,9.63830316,Frastanz Bahnhof,Frastanz,bus,Frastanz,Frastanz · Regional bus,139.0,11,194.0,True,Frastanz|bigrail
+Frastanz|bus,47.21980541,9.63830316,Frastanz Bahnhof,Frastanz,bus,Frastanz,Frastanz · Regional bus,132.0,11,187.0,True,Frastanz|bigrail
 Gaschurn|bus,46.96487708,10.07427054,Partenen Loch,Gaschurn,bus,Gaschurn,Gaschurn · Regional bus,45.0,3,60.0,True,Gaschurn|bus
 Göfis|bus,47.243899854999995,9.644348825000002,Göfis Agasella,Göfis,bus,Göfis,Göfis · Regional bus,39.0,3,54.0,True,Göfis|bus
 Götzis|bus,47.33709186000001,9.637452756666667,Götzis Bahnhof,Götzis,bus,Götzis,Götzis · Regional bus,201.0,16,281.0,True,Götzis|bigrail
@@ -52,7 +52,7 @@ Hard|bus,47.48025941,9.68964188,Hard-Fussach Bahnhof,Hard,bus,Hard,Hard · Regio
 Hohenems|bus,47.3645181,9.68108094,Hohenems Bahnhof,Hohenems,bus,Hohenems,Hohenems · Regional bus,219.0,10,269.0,True,Hohenems|bigrail
 Höchst|bus,47.46532818,9.62533598,Höchst Hecht,Höchst,bus,Höchst,Höchst · Regional bus,238.0,10,288.0,True,Höchst|bus
 Klaus|bus,47.309189465,9.62485538,Klaus Bahnhof,Klaus,bus,Klaus,Klaus · Regional bus,214.0,10,264.0,True,Klaus|bigrail
-Koblach|bus,47.33271054,9.605626945000001,Koblach Dorfplatz,Koblach,bus,Koblach,Koblach · Regional bus,97.0,7,132.0,True,Koblach|bus
+Koblach|bus,47.33271054,9.605626945000001,Koblach Dorfplatz,Koblach,bus,Koblach,Koblach · Regional bus,82.0,7,117.0,True,Koblach|bus
 Laterns|bus,47.257695850000005,9.742301125000001,Innerlaterns Kirche,Laterns,bus,Laterns,Laterns · Regional bus,19.0,2,29.0,True,Laterns|bus
 Lech|bus,47.2121661,10.14506078,Lech Schlosskopf,Lech,bus,Lech,Lech · Regional bus,11.0,6,41.0,True,Lech|bus
 Lingenau|bus,47.449685606,9.920203482,Lingenau Dorfplatz,Lingenau,bus,Lingenau,Lingenau · Regional bus,97.0,3,112.0,True,Lingenau|bus
@@ -60,7 +60,6 @@ Lochau|bus,47.52956485,9.7426335,Lochau-Hörbranz Bahnhof,Lochau,bus,Lochau,Loch
 Ludesch|bus,47.18050493,9.77156823,Ludesch Bahnhof,Ludesch,bus,Ludesch,Ludesch · Regional bus,163.0,6,193.0,True,Ludesch|bigrail
 Lustenau|bus,47.450271210000004,9.66559398,Lustenau Bahnhof,Lustenau,bus,Lustenau,Lustenau · Regional bus,233.0,16,313.0,True,Lustenau|bigrail
 Mauren|bus,47.211269075000004,9.56209459,Schaanwald Zuschg,Mauren,bus,Mauren,Mauren · Regional bus,194.0,6,224.0,True,Mauren|bus
-Mäder|bus,47.34866236,9.615104169999999,Mäder Gasthaus Adler,Mäder,bus,Mäder,Mäder · Regional bus,82.0,7,117.0,True,Mäder|bus
 Möggers|bus,47.56862229666666,9.814462789999999,Möggers Kurlismühle,Möggers,bus,Möggers,Möggers · Regional bus,16.0,2,26.0,True,Möggers|bus
 Nenzing|bus,47.19088372,9.70966533,Nenzing Bahnhof,Nenzing,bus,Nenzing,Nenzing · Regional bus,154.0,12,214.0,True,Nenzing|bigrail
 Oberstaufen|bus,47.55364546,10.02496501,Oberstaufen Bahnhof,Oberstaufen,bus,Oberstaufen,Oberstaufen · Regional bus,7.0,1,12.0,True,Oberstaufen|bus
@@ -74,7 +73,7 @@ Scheidegg|bus,47.58481376,9.85375061,Scheidegg Bahnhofstraße,Scheidegg,bus,Sche
 Schlins|bus,47.2062345,9.699083175,Schlins Postamt,Schlins,bus,Schlins,Schlins · Regional bus,139.0,9,184.0,True,Schlins|bus
 Schnifis|bus,47.215815045,9.719856714999999,Schnifis Tobel,Schnifis,bus,Schnifis,Schnifis · Regional bus,39.0,2,49.0,True,Schnifis|bus
 Schoppernau|bus,47.31225617,10.016565765,Schoppernau Gemeindeamt,Schoppernau,bus,Schoppernau,Schoppernau · Regional bus,49.0,4,69.0,True,Schoppernau|bus
-Schruns|bus,47.07960912,9.91778701,Schruns Bahnhof,Schruns,bus,Schruns,Schruns · Regional bus,70.0,11,125.0,True,Schruns|bus
+Schruns|bus,47.07960912,9.91778701,Schruns Bahnhof,Schruns,bus,Schruns,Schruns · Regional bus,69.0,11,124.0,True,Schruns|bus
 Schwarzach|bus,47.446273925,9.754882030000001,Schwarzach Bahnhof,Schwarzach,bus,Schwarzach,Schwarzach · Regional bus,211.0,7,246.0,True,Schwarzach|bigrail
 Sibratsgfäll|bus,47.42710641,10.037357270000001,Sibratsgfäll Dorfplatz,Sibratsgfäll,bus,Sibratsgfäll,Sibratsgfäll · Regional bus,15.0,1,20.0,True,Sibratsgfäll|bus
 Sigmarszell|bus,47.60139192,9.79573292,Niederstaufen Kindergarten,Sigmarszell,bus,Sigmarszell,Sigmarszell · Regional bus,30.0,2,40.0,True,Sigmarszell|bus

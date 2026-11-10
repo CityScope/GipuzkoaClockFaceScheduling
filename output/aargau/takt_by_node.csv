@@ -50,9 +50,9 @@ Beromünster|bus,night,15,"17,40,46,59",0,1.0
 Bettwil|bus,peak,4,9,60,0.75
 Bettwil|bus,day,8,9,60,0.875
 Bettwil|bus,night,0,,0,0.0
-Birmensdorf (ZH)|bus,peak,107,"0,9,19,31,39,49",0,0.8598130841121495
-Birmensdorf (ZH)|bus,day,120,"0,9,20,31,39,49",10,0.9166666666666666
-Birmensdorf (ZH)|bus,night,33,"31,59",0,0.5757575757575758
+Birmensdorf (ZH)|bus,peak,84,"0,9,19,30,39,49",10,0.8690476190476191
+Birmensdorf (ZH)|bus,day,102,"0,10,20,30,39,50",10,0.9705882352941176
+Birmensdorf (ZH)|bus,night,27,"29,59",30,0.7037037037037037
 Birmenstorf|bus,peak,32,"5,10,18,34,39,48",0,1.0
 Birmenstorf|bus,day,64,"5,10,18,34,39,48",0,1.0
 Birmenstorf|bus,night,19,"0,17,30,39,48",0,0.8421052631578947

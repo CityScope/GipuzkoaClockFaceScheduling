@@ -20,7 +20,3 @@ Traun|bigrail,day,20,60,0.0,1.0,2,National railways + Regional bus,dotted
 Bad Hall|bus,peak,40,60,0.0,0.75,4,Regional bus,dotted
 Ottensheim|bus,peak,35,60,1.0,1.0,2,Regional bus,solid
 Ottensheim|bus,day,"8,38",30,0.0,1.0,3,Regional bus,dotted
-Linz|bigrail|1,peak,"27,55",30,0.5,1.0,2,National railways + Local railways,dotted
-Linz|bigrail|1,day,"27,57",30,0.5,1.0,2,National railways + Local railways,dotted
-Linz|localrail|2,peak,"27,55",30,0.5,1.0,2,National railways + Local railways,dotted
-Linz|localrail|2,day,"27,57",30,0.5,1.0,2,National railways + Local railways,dotted

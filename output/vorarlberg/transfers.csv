@@ -177,40 +177,24 @@ Frastanz|bigrail,day,Göfis,Satteins,2.0,0.0,direct None / with changes 60,False
 Frastanz|bigrail,night,Feldkirch,Satteins,2.9,3.1,direct None / with changes 375,False
 Götzis|bigrail,peak,Hohenems,Klaus,3.5,3.0,direct None / with changes 23,False
 Götzis|bigrail,peak,Hohenems,Rankweil,5.2,3.0,direct None / with changes 23,False
-Götzis|bigrail,peak,Hohenems,Koblach,3.2,3.0,direct None / with changes 29,False
-Götzis|bigrail,peak,Klaus,Koblach,5.0,3.0,direct None / with changes 30,False
 Götzis|bigrail,peak,Hohenems,Klaus,5.2,3.0,direct None / with changes 30,False
-Götzis|bigrail,peak,Klaus,Mäder (slow),3.0,3.0,direct None / with changes 46,False
+Götzis|bigrail,peak,Hohenems,Koblach (slow),3.5,3.0,direct None / with changes 30,False
+Götzis|bigrail,peak,Klaus,Koblach (slow),5.0,3.0,direct None / with changes 30,False
 Götzis|bigrail,peak,Hohenems,Rankweil,8.0,3.0,direct None / with changes 120,False
 Götzis|bigrail,peak,Hohenems,Rankweil,0.7,0.0,direct None / with changes 23,False
-Götzis|bigrail,peak,Hohenems,Koblach,1.0,0.0,direct None / with changes 30,False
 Götzis|bigrail,peak,Koblach,Rankweil,11.4,0.0,direct None / with changes 30,False
-Götzis|bigrail,peak,Hohenems,Mäder (fast),5.0,0.0,direct None / with changes 32,False
-Götzis|bigrail,peak,Koblach,Mäder (fast),11.4,0.0,direct None / with changes 32,False
-Götzis|bigrail,peak,Mäder (fast),Rankweil,10.4,0.0,direct None / with changes 30,False
-Götzis|bigrail,peak,Hohenems,Mäder (slow),2.5,0.0,direct None / with changes 32,False
-Götzis|bigrail,peak,Koblach,Mäder (slow),7.4,0.0,direct None / with changes 32,False
-Götzis|bigrail,peak,Mäder (slow),Rankweil,6.5,0.0,direct None / with changes 30,False
+Götzis|bigrail,peak,Hohenems,Koblach (slow),1.0,0.0,direct None / with changes 30,False
 Götzis|bigrail,day,Hohenems,Rankweil,2.7,3.0,direct None / with changes 27,False
 Götzis|bigrail,day,Hohenems,Klaus,4.2,3.0,direct None / with changes 27,False
-Götzis|bigrail,day,Hohenems,Koblach,4.2,3.0,direct None / with changes 30,False
-Götzis|bigrail,day,Klaus,Koblach,5.0,3.0,direct None / with changes 30,False
-Götzis|bigrail,day,Hohenems,Mäder (slow),3.7,3.0,direct None / with changes 50,False
-Götzis|bigrail,day,Klaus,Mäder (slow),2.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,day,Hohenems,Koblach (slow),4.2,3.0,direct None / with changes 30,False
+Götzis|bigrail,day,Klaus,Koblach (slow),5.0,3.0,direct None / with changes 30,False
 Götzis|bigrail,day,Hohenems,Rankweil,8.0,3.0,direct None / with changes 68,False
 Götzis|bigrail,day,Hohenems,Rankweil,0.7,0.0,direct None / with changes 23,False
-Götzis|bigrail,day,Hohenems,Koblach,1.0,0.0,direct None / with changes 30,False
+Götzis|bigrail,day,Hohenems,Koblach (slow),1.0,0.0,direct None / with changes 30,False
 Götzis|bigrail,day,Koblach,Rankweil,12.0,0.0,direct None / with changes 30,False
-Götzis|bigrail,day,Hohenems,Mäder (fast),5.0,0.0,direct None / with changes 32,False
-Götzis|bigrail,day,Hohenems,Mäder (slow),2.5,0.0,direct None / with changes 32,False
-Götzis|bigrail,day,Koblach,Mäder (fast),12.0,0.0,direct None / with changes 32,False
-Götzis|bigrail,day,Koblach,Mäder (slow),8.0,0.0,direct None / with changes 32,False
-Götzis|bigrail,day,Mäder (fast),Rankweil,12.0,0.0,direct None / with changes 30,False
-Götzis|bigrail,day,Mäder (slow),Rankweil,6.5,0.0,direct None / with changes 30,False
-Götzis|bigrail,night,Hohenems,Koblach,4.0,3.0,direct None / with changes 375,False
-Götzis|bigrail,night,Klaus,Koblach,4.0,3.0,direct None / with changes 375,False
 Götzis|bigrail,night,Hohenems,Rankweil,2.5,3.0,direct None / with changes 374,False
-Götzis|bigrail,night,Hohenems,Mäder (slow),2.5,3.0,direct None / with changes 438,False
+Götzis|bigrail,night,Hohenems,Koblach (slow),4.0,3.0,direct None / with changes 375,False
+Götzis|bigrail,night,Klaus,Koblach (slow),4.0,3.0,direct None / with changes 375,False
 Hard|bigrail,peak,Bregenz (slow),Lustenau,4.6,4.2,direct None / with changes 32,False
 Hard|bigrail,peak,Höchst,Lustenau,5.8,4.2,direct None / with changes 38,False
 Hard|bigrail,peak,Bregenz (slow),Wolfurt,2.8,4.2,direct None / with changes 120,False
@@ -225,22 +209,21 @@ Hard|bigrail,night,Bregenz (slow),Lustenau,11.4,4.2,direct None / with changes 2
 Hohenems|bigrail,peak,Dornbirn,Götzis,4.9,2.9,direct None / with changes 23,False
 Hohenems|bigrail,peak,Dornbirn,Götzis,6.0,2.9,direct None / with changes 16,False
 Hohenems|bigrail,peak,Götzis,Lustenau,1.3,2.9,direct None / with changes 19,False
-Hohenems|bigrail,peak,Dornbirn,Mäder,3.1,2.9,direct None / with changes 30,False
+Hohenems|bigrail,peak,Dornbirn,Koblach,3.1,2.9,direct None / with changes 30,False
 Hohenems|bigrail,peak,Dornbirn,Rankweil,6.1,2.9,direct None / with changes 90,False
 Hohenems|bigrail,peak,Lustenau,Rankweil,6.1,2.9,direct None / with changes 90,False
-Hohenems|bigrail,peak,Mäder,Rankweil,12.1,2.9,direct None / with changes 90,False
-Hohenems|bigrail,peak,Dornbirn,Mäder,4.0,0.0,direct None / with changes 30,False
-Hohenems|bigrail,peak,Lustenau,Mäder,10.0,0.0,direct None / with changes 30,False
+Hohenems|bigrail,peak,Dornbirn,Koblach,4.0,0.0,direct None / with changes 30,False
+Hohenems|bigrail,peak,Koblach,Lustenau,9.0,0.0,direct None / with changes 30,False
 Hohenems|bigrail,day,Dornbirn,Götzis,6.1,2.9,direct None / with changes 22,False
 Hohenems|bigrail,day,Dornbirn,Götzis,5.8,2.9,direct None / with changes 20,False
 Hohenems|bigrail,day,Götzis,Lustenau,1.1,2.9,direct None / with changes 20,False
-Hohenems|bigrail,day,Dornbirn,Mäder,3.1,2.9,direct None / with changes 30,False
-Hohenems|bigrail,day,Dornbirn,Mäder,4.0,0.0,direct None / with changes 30,False
-Hohenems|bigrail,day,Lustenau,Mäder,10.0,0.0,direct None / with changes 30,False
+Hohenems|bigrail,day,Dornbirn,Koblach,3.1,2.9,direct None / with changes 30,False
+Hohenems|bigrail,day,Dornbirn,Koblach,4.0,0.0,direct None / with changes 30,False
+Hohenems|bigrail,day,Koblach,Lustenau,9.0,0.0,direct None / with changes 30,False
 Hohenems|bigrail,night,Götzis,Lustenau,1.1,2.9,direct None / with changes 281,False
-Hohenems|bigrail,night,Dornbirn,Mäder,3.1,2.9,direct None / with changes 375,False
-Hohenems|bigrail,night,Dornbirn,Mäder,4.0,0.0,direct None / with changes 375,False
-Hohenems|bigrail,night,Lustenau,Mäder,9.5,0.0,direct None / with changes 375,False
+Hohenems|bigrail,night,Dornbirn,Koblach,3.1,2.9,direct None / with changes 375,False
+Hohenems|bigrail,night,Dornbirn,Koblach,4.0,0.0,direct None / with changes 375,False
+Hohenems|bigrail,night,Koblach,Lustenau,11.0,0.0,direct None / with changes 375,False
 Klaus|bigrail,peak,Götzis,Rankweil,2.4,4.1,direct None / with changes 25,False
 Klaus|bigrail,peak,Koblach (slow),Rankweil,12.3,4.1,direct None / with changes 46,False
 Klaus|bigrail,peak,Götzis,Rankweil,0.9,4.1,direct None / with changes 30,False
@@ -391,19 +374,11 @@ Höchst|bus,peak,Hard,Lustenau,5.0,0.0,direct None / with changes 30,False
 Höchst|bus,day,Hard,Lustenau,4.8,0.0,direct None / with changes 30,False
 Höchst|bus,night,Hard,Lustenau,12.5,0.0,direct None / with changes 262,False
 Koblach|bus,peak,Feldkirch,Götzis,1.5,0.0,direct None / with changes 83,False
-Koblach|bus,peak,Feldkirch,Mäder,1.0,0.0,direct None / with changes 90,False
 Koblach|bus,day,Feldkirch,Götzis,0.9,0.0,direct None / with changes 109,False
+Koblach|bus,night,Hohenems,Klaus (slow),0.0,0.0,direct None / with changes 375,False
 Lingenau|bus,peak,Alberschwende,Egg,11.0,0.0,direct None / with changes 90,False
 Lingenau|bus,day,Egg,Riefensberg,1.0,0.0,direct 255 / with changes 60,False
 Lingenau|bus,day,Alberschwende,Egg,10.6,0.0,direct None / with changes 60,False
-Mäder|bus,peak,Götzis (slow),Koblach,10.7,0.0,direct None / with changes 96,False
-Mäder|bus,peak,Götzis (fast),Koblach,5.7,0.0,direct None / with changes 45,False
-Mäder|bus,peak,Götzis (fast),Hohenems,5.0,0.0,direct None / with changes 60,False
-Mäder|bus,peak,Götzis (slow),Hohenems,4.0,0.0,direct None / with changes 52,False
-Mäder|bus,day,Götzis (fast),Hohenems,5.0,0.0,direct None / with changes 60,False
-Mäder|bus,day,Götzis (fast),Koblach,5.1,0.0,direct None / with changes 34,False
-Mäder|bus,day,Götzis (slow),Hohenems,1.0,0.0,direct None / with changes 60,False
-Mäder|bus,day,Götzis (slow),Koblach,7.0,0.0,direct None / with changes 75,False
 Satteins|bus,day,Frastanz,Schnifis,3.0,0.0,direct None / with changes 168,False
 Schlins|bus,peak,Nenzing,Thüringen,7.0,0.0,direct None / with changes 57,False
 Schlins|bus,peak,Satteins,Schnifis,0.5,0.0,direct None / with changes 83,False

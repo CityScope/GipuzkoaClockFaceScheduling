@@ -92,7 +92,7 @@ Klaus|bus,night,5,"23,33,53,57",0,1.0
 Klösterle|bus|1,peak,7,"0,7",0,0.8571428571428571
 Klösterle|bus|1,day,20,"1,7",0,0.8
 Klösterle|bus|1,night,0,,0,0.0
-Koblach|bus,peak,7,"3,53",0,1.0
+Koblach|bus,peak,7,"3,56",0,1.0
 Koblach|bus,day,16,"3,55",0,1.0
 Koblach|bus,night,3,"3,55",0,1.0
 Laterns|bus,peak,4,"10,27,40",0,1.0
@@ -128,9 +128,6 @@ Lustenau|bus,night,10,"3,59",0,0.8
 Mauren|bus,peak,8,"22,50",0,1.0
 Mauren|bus,day,16,"22,50",0,1.0
 Mauren|bus,night,4,"22,50",0,1.0
-Mäder|bus,peak,7,"0,56",0,1.0
-Mäder|bus,day,16,"0,56",0,1.0
-Mäder|bus,night,3,"0,56",0,1.0
 Möggers|bus,peak,3,0,60,1.0
 Möggers|bus,day,8,0,60,1.0
 Möggers|bus,night,0,,0,0.0

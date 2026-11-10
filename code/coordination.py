@@ -429,8 +429,12 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             one = sum(wpair(p) for p in pairs if timed(p) or timed(p[::-1])) / W
             ghw = float(np.median([st_[d]["Hc"] for d in dirs if st_[d]["Hc"] is not None] or [999]))
             regular = ghw <= SYM_GROUP_HW + 0.5               # the group's timed connections run every <= 60 min
-            nbs = {str(node.label.get(e.split("¦")[0], e.split("¦")[0])) for e in GE}   # distinct neighbouring places (fast / slow, walk sides and modes of one place count once)
-            if len(nbs) < 3 or (one <= SYM_ONE_MIN and not regular):
+            # changes to / from a frequent edge (< 15 min) need no timing: they do not make a symmetry. Count only timed
+            # directions between two non-frequent edges: >= 2 of them, towards >= 3 distinct neighbouring places
+            nfe = lambda e: min(hA.get(e, 999.0), hD.get(e, 999.0)) >= FREQ_CUT
+            dnf = [d for d in dirs if nfe(d[0]) and nfe(d[1])]
+            nbs = {str(node.label.get(e.split("¦")[0], e.split("¦")[0])) for d in dnf for e in d}   # distinct neighbouring places (fast / slow, walk sides and modes of one place count once)
+            if len(dnf) < 2 or len(nbs) < 3 or (one <= SYM_ONE_MIN and not regular):
                 continue                                       # >= 3 edges; more than half one way, or a regular (<= 60 min) group
             modes = sorted({e.split("¦")[1] for e in GE}, key=lambda s_: rank[s_])
             idx = len(sym)

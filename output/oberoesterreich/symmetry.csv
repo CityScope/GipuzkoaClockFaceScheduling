@@ -28,8 +28,6 @@ Steyr|bigrail,peak,15,60,0.42,0.69,26,National railways + Regional bus,dotted
 Steyr|bigrail,peak,"30,58",30,0.0,1.0,2,Regional bus,dotted
 Steyr|bigrail,day,"17,48",30,0.17,0.55,26,National railways + Regional bus,dotted
 Steyr|bigrail,day,"0,30",30,0.07,0.67,5,Regional bus,dotted
-Traun|bigrail,peak,23,60,0.65,0.71,6,National railways + Regional bus,solid
-Traun|bigrail,peak,"10,40",30,0.5,0.75,3,National railways + Regional bus,dotted
 Traun|bigrail,day,"25,53",30,1.0,1.0,3,Regional bus,solid
 Traun|bigrail,day,"15,43",30,0.27,0.73,3,National railways + Regional bus,dotted
 Wels|bigrail,night,40,60,0.0,0.55,3,National railways + Regional bus,dotted
@@ -57,9 +55,7 @@ Steinerkirchen an der Traun|bus,peak,55,60,0.0,1.0,2,Regional bus,dotted
 Steinerkirchen an der Traun|bus,day,58,60,0.39,1.0,2,Regional bus,dotted
 Walding|bigrail|1,peak,"20,50",30,0.28,1.0,2,National railways + Regional bus,dotted
 Walding|bigrail|1,day,"17,50",30,0.0,1.0,2,National railways + Regional bus,dotted
-Linz|bigrail|1,day,"25,55",30,1.0,1.0,2,National railways + Local railways,solid
 Linz|bigrail|1,night,"22,50",30,1.0,1.0,2,National railways + Local railways,solid
-Linz|localrail|2,day,"25,55",30,1.0,1.0,2,National railways + Local railways,solid
 Linz|localrail|2,night,"22,50",30,1.0,1.0,2,National railways + Local railways,solid
 Ottensheim|bus|1,day,"0,30",30,0.81,1.0,3,Regional bus,solid
 Ottensheim|bus|1,day,"13,45",30,0.95,1.0,3,Regional bus,solid

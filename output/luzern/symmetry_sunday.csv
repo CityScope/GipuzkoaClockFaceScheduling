@@ -1,8 +1,6 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Dagmersellen|bigrail,peak,"28,58",30,0.66,1.0,3,National railways + Regional bus,solid
 Dagmersellen|bigrail,day,"28,58",30,0.83,1.0,3,National railways + Regional bus,solid
-Ebikon|bigrail,peak,"25,55",30,0.44,0.58,7,National railways + Regional bus,dotted
-Ebikon|bigrail,day,"25,55",30,0.58,0.58,7,National railways + Regional bus,solid
 Ebikon|bigrail,night,"18,50",30,0.45,0.73,7,National railways + Regional bus,dotted
 Hochdorf|bigrail,peak,"25,50",30,0.25,0.75,4,National railways + Regional bus,dotted
 Hochdorf|bigrail,day,"25,50",30,0.27,0.74,7,National railways + Regional bus,dotted
@@ -47,7 +45,6 @@ Küssnacht (SZ)|bus,peak,20,60,0.72,0.72,3,Regional bus,solid
 Küssnacht (SZ)|bus,day,20,60,0.75,0.75,3,Regional bus,solid
 Küssnacht (SZ)|bus,day,"2,33",30,0.75,0.75,3,Regional bus,solid
 Luzern|bus,peak,"0,30",30,0.69,0.82,66,National railways + Local railways + Regional bus,solid
-Luzern|bus,peak,"10,45",30,0.9,0.9,7,National railways + Regional bus,solid
 Luzern|bus,day,"0,30",30,0.8,0.96,56,National railways + Local railways + Regional bus,solid
 Luzern|bus,day,"12,45",30,0.75,0.59,12,National railways + Local railways + Regional bus,solid
 Luzern|bus,night,"2,30",30,0.42,0.72,48,National railways + Local railways + Regional bus,dotted

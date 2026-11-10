@@ -51,7 +51,7 @@ Beinwil am See|bus,47.26740729,8.20221592,"Beinwil am See, Bahnhof",Beinwil am S
 Berikon|bus,47.362062306,8.36694449,"Berikon-Widen, Bahnhof",Berikon,bus,Berikon,Berikon · Regional bus,88.0,3.0,103.0,True,Berikon|bus
 Beromünster|bus,47.204394465,8.200554045,"Beromünster, Mooskapelle",Beromünster,bus,Beromünster,Beromünster · Regional bus,33.0,7.0,68.0,True,Beromünster|bus
 Bettwil|bus,47.29034983,8.26954915,"Bettwil, Oberdorf",Bettwil,bus,Bettwil,Bettwil · Regional bus,14.0,1.0,19.0,True,Bettwil|bus
-Birmensdorf (ZH)|bus,47.35698891333334,8.438466855,"Birmensdorf ZH, Bahnhof",Birmensdorf (ZH),bus,Birmensdorf (ZH),Birmensdorf (ZH) · Regional bus,136.0,7.0,171.0,True,Birmensdorf (ZH)|bus
+Birmensdorf (ZH)|bus,47.35698891333334,8.438466855,"Birmensdorf ZH, Bahnhof",Birmensdorf (ZH),bus,Birmensdorf (ZH),Birmensdorf (ZH) · Regional bus,136.0,4.0,156.0,True,Birmensdorf (ZH)|bus
 Birmenstorf|bus,47.461058726666664,8.245677913333333,"Birmenstorf AG, Strählgass",Birmenstorf,bus,Birmenstorf,Birmenstorf · Regional bus,75.0,2.0,85.0,True,Birmenstorf|bus
 Bottenwil|bus,47.28535933,8.00596548,"Bottenwil, Dorf",Bottenwil,bus,Bottenwil,Bottenwil · Regional bus,30.0,1.0,35.0,True,Bottenwil|bus
 Bremgarten|bus,47.35134091599999,8.345169328,"Bremgarten AG, Bahnhof",Bremgarten,bus,Bremgarten,Bremgarten · Regional bus,75.0,3.0,90.0,True,Bremgarten|bus
@@ -114,4 +114,4 @@ Wohlen|localrail|2,47.348327604999994,8.270546275000001,Wohlen AG,Wohlen,localra
 Zurzach|bigrail|2,47.56656354,8.41885813,Kaiserstuhl AG,Zurzach,bigrail,Zurzach · Kaiserstuhl AG,Zurzach · Kaiserstuhl AG · National railways,35.0,1.0,40.0,True,Zurzach|bigrail|2
 Zurzach|bus|1,47.588237045,8.295344270000001,"Bad Zurzach, Bahnhof",Zurzach,bus,Zurzach · Bad,Zurzach · Bad · Regional bus,15.0,2.0,25.0,True,Zurzach|bigrail
 Zürich|bigrail|5,47.391656832,8.489282454000001,Zürich Altstetten,Zürich,bigrail,Zürich · Altstetten,Zürich · Altstetten · National railways,419.0,14.0,489.0,True,Zürich|bigrail|5
-Zürich|bus|4,47.364594159999996,8.53043787,"Zürich Enge, Bahnhof/Bederstr.",Zürich,bus,Zürich,Zürich · Regional bus,152.0,35.0,327.0,True,Zürich|bus|4
+Zürich|bus|4,47.364594159999996,8.53043787,"Zürich Enge, Bahnhof/Bederstr.",Zürich,bus,Zürich,Zürich · Regional bus,120.0,35.0,295.0,True,Zürich|bus|4

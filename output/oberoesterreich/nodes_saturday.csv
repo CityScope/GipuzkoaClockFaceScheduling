@@ -66,7 +66,7 @@ Laakirchen|bus,47.983480395,13.823536104999999,Laakirchen Rathausplatz,Laakirche
 Lambach|bus,48.09381586333333,13.888798709999998,Lambach OÖ Bahnhof,Lambach,bus,Lambach,Lambach · Regional bus,21.0,2.0,31.0,True,Lambach|bigrail
 Laussa|bus,47.95171689,14.456911265,Laussa Ortsmitte,Laussa,bus,Laussa,Laussa · Regional bus,0.0,1.0,5.0,True,Laussa|bus
 Leonding|bus,48.27306233,14.254264809999999,Leonding Paschinger Straße,Leonding,bus,Leonding,Leonding · Regional bus,230.0,10.0,280.0,True,Leonding|bigrail
-Linz|bus,48.29246434000001,14.291857208666668,Linz/Donau Hauptbahnhof,Linz,bus,Linz,Linz · Regional bus,434.0,56.0,714.0,True,Linz|bigrail
+Linz|bus,48.29246434000001,14.291857208666668,Linz/Donau Hauptbahnhof,Linz,bus,Linz,Linz · Regional bus,434.0,55.0,709.0,True,Linz|bigrail
 Losenstein|bus,47.92598683,14.432158185,Losenstein Kirche,Losenstein,bus,Losenstein,Losenstein · Regional bus,4.0,2.0,14.0,True,Losenstein|bus
 Marchtrenk|bus,48.200877535000004,14.099938735,Marchtrenk Bahnhof,Marchtrenk,bus,Marchtrenk,Marchtrenk · Regional bus,42.0,3.0,57.0,True,Marchtrenk|bus
 Mauthausen|bus,48.24231195666667,14.531878666666666,Mauthausen OÖ Bahnhof,Mauthausen,bus,Mauthausen,Mauthausen · Regional bus,29.0,5.0,54.0,True,Mauthausen|bus
@@ -83,7 +83,7 @@ Pichl bei Wels|bus,48.18440339,13.90022528,Pichl b.Wels Ortsmitte,Pichl bei Wels
 Prambachkirchen|bus,48.315403135,13.901545805000001,Prambachkirchen-Bad Weinberg Bahnhof,Prambachkirchen,bus,Prambachkirchen,Prambachkirchen · Regional bus,6.0,1.0,11.0,True,Prambachkirchen|bus
 Pregarten|bus,48.35546737666667,14.523434503333334,Pregarten Bahnhof,Pregarten,bus,Pregarten,Pregarten · Regional bus,26.0,6.0,56.0,True,Pregarten|bigrail
 Raab|bus,48.35189757,13.64419644,Raab OÖ Kommuneplatz,Raab,bus,Raab,Raab · Regional bus,0.0,0.0,0.0,True,Raab|bus
-Ried im Innkreis|bus,48.20545414,13.488557928,Ried im Innkreis Landesgericht (Bahnhofstraße),Ried im Innkreis,bus,Ried im Innkreis,Ried im Innkreis · Regional bus,0.0,0.0,0.0,True,Ried im Innkreis|bus
+Ried im Innkreis|bus,48.20545414,13.488557928,Ried im Innkreis Landesgericht (Bahnhofstraße),Ried im Innkreis,bus,Ried im Innkreis,Ried im Innkreis · Regional bus,0.0,1.0,5.0,True,Ried im Innkreis|bus
 Rohr im Kremstal|bus,48.06917011,14.19085723,Rohr-Bad Hall Bahnhof,Rohr im Kremstal,bus,Rohr im Kremstal,Rohr im Kremstal · Regional bus,29.0,3.0,44.0,True,Rohr im Kremstal|bigrail
 Rohrbach-Berg|bus,48.55933876,14.031208634999999,Haslach/Mühl Abzw Bahnhof,Rohrbach-Berg,bus,Rohrbach-Berg,Rohrbach-Berg · Regional bus,26.0,7.0,61.0,True,Rohrbach-Berg|bus
 Sandl|bus,48.53773434,14.61494738,Weinviertl b.Sandl,Sandl,bus,Sandl,Sandl · Regional bus,3.0,1.0,8.0,True,Sandl|bus
