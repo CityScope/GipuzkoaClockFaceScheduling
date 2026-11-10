@@ -7,7 +7,7 @@ Statements without a local source are marked *(web, not verified in full text)*.
 
 | File | Reference | Type |
 |---|---|---|
-| `Fischer_2024_OeBB_Zielnetz_TUWien.pdf` | Fischer, U. (ÖBB-Infrastruktur AG): *Das Zielnetz – Basis für den langfristigen Bahnausbau in Österreich*. Ringvorlesung Öffentlicher Verkehr, TU Wien, 31.01.2024 | Slides (Austria presentation) |
+| *(not included, not public)* | Fischer, U. (ÖBB-Infrastruktur AG): *Das Zielnetz – Basis für den langfristigen Bahnausbau in Österreich*. Ringvorlesung Öffentlicher Verkehr, TU Wien, 31.01.2024 | Slides (Austria presentation) |
 | `BMK_Zielnetz2040_Fachentwurf.pdf` | BMK / ÖBB-Infrastruktur / SCHIG: *Zielnetz 2040 – Das Bahnnetz der Zukunft, Fachentwurf*. Wien, 2024, 144 p. | Official plan |
 | `Hesse_etal_2000_ITF.pdf` | Hesse, W., Guckert, M. (Univ. Marburg), Schneider, J., Schulz, A. (BEG): *Werkzeuggestützte Entwicklung eines Integralen Taktfahrplans mit OptiPlan* (c. 2000) | Paper (Bavarian ITF case) |
 | `Teichmann_2007_ITF_Planung.pdf` | Teichmann, C. (TU Darmstadt): *Der Integrale Taktfahrplan (ITF), Modell mit Zukunft?* Eisenbahntechnisches Kolloquium 2007 | Talk paper |

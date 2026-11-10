@@ -25,3 +25,7 @@ sources/population/*.tif
 sources/2024-01-31_fischer_ohne-Video.pdf
 output/*/results.pkl
 .claude/
+
+# not public
+literature/papers/Fischer_2024_OeBB_Zielnetz_TUWien.pdf
+sources/2024-01-31_fischer_ohne-Video.pdf

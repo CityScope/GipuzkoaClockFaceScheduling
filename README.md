@@ -13,7 +13,7 @@ Open `index.html` (or the GitHub Pages site of this repository) and choose a reg
 - `output/<region>/` — `overview.png`, CSVs (`nodes`, `edges`, `walk_links`, `symmetry`, `transfers`, `vehicle_km`, `services_audit`; `_saturday` / `_sunday` variants).
 - `code/` — analysis and map generation (`towns.py` = generic rules, `regions/<region>.py` = region settings, `vendor/` = MapLibre).
 - `sources/` — `network_rules.md` (full rule list), OSM municipality / boundary / polygon GeoJSON, per-municipality population (WorldPop).
-- `literature/` — `taktfahrplan_review.md` (grounded notes with page numbers) and `papers/` (Austrian Zielnetz presentation and plan, ITF and PESP papers).
+- `literature/` — `taktfahrplan_review.md` (grounded notes with page numbers) and `papers/` (Austrian Zielnetz plan, ITF and PESP papers).
 
 ## Data not in the repository
 GTFS feeds, the parsed-feed cache, WorldPop rasters and `results.pkl` files are too large for git (see `.gitignore`). To rerun the analysis put the feeds in
