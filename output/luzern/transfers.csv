@@ -14,8 +14,6 @@ Ebikon|bigrail,peak,Adligenswil,Luzern (slow),1.1,0.0,direct None / with changes
 Ebikon|bigrail,day,Luzern,Root,2.1,3.3,direct None / with changes 34,False
 Ebikon|bigrail,day,Luzern (slow),Root,2.2,3.3,direct None / with changes 30,False
 Ebikon|bigrail,night,Luzern,Root,3.0,3.3,direct None / with changes 144,False
-Ebikon|bigrail,night,Luzern (slow),Root,9.2,3.3,direct None / with changes 199,False
-Ebikon|bigrail,night,Luzern (slow),Root,5.6,0.0,direct None / with changes 179,False
 Ebikon|bigrail,night,Adligenswil,Luzern (slow),6.2,0.0,direct None / with changes 238,False
 Hochdorf|bigrail,peak,Beromünster,Luzern,1.1,3.9,direct None / with changes 30,False
 Hochdorf|bigrail,peak,Lenzburg,Rain,3.1,3.9,direct None / with changes 60,False
@@ -23,15 +21,9 @@ Hochdorf|bigrail,peak,Beromünster,Rain,8.5,0.0,direct None / with changes 60,Fa
 Hochdorf|bigrail,day,Lenzburg,Rain,3.1,3.9,direct None / with changes 60,False
 Hochdorf|bigrail,day,Beromünster,Luzern,0.6,3.9,direct None / with changes 116,False
 Hochdorf|bigrail,day,Beromünster,Rain,8.4,0.0,direct None / with changes 120,False
-Lenzburg|bigrail,peak,Olten,Risch-Rotkreuz,4.2,0.0,direct 120 / with changes 61,False
-Lenzburg|bigrail,day,Olten,Risch-Rotkreuz,3.6,0.0,direct 75 / with changes 60,False
-Luzern|bigrail,peak,Arth,Rothenburg,6.0,0.0,direct None / with changes 60,False
 Luzern|bigrail,peak,Malters,Rothenburg,1.5,0.0,direct None / with changes 33,False
-Luzern|bigrail,peak,Arth,Ebikon,5.0,0.0,direct None / with changes 60,False
-Luzern|bigrail,peak,Hochdorf,Risch-Rotkreuz,3.5,0.0,direct None / with changes 90,False
 Luzern|bigrail,peak,Malters,Zug,6.0,0.0,direct None / with changes 60,False
 Luzern|bigrail,peak,Olten,Zug,4.0,0.0,direct None / with changes 60,False
-Luzern|bigrail,peak,Horw,Malters,5.0,3.5,direct None / with changes 40,False
 Luzern|bigrail,peak,Arth,Horw,2.1,3.5,direct None / with changes 27,False
 Luzern|bigrail,peak,Horw,Rothenburg,1.8,3.5,direct None / with changes 24,False
 Luzern|bigrail,peak,Ebikon,Horw,1.0,3.5,direct None / with changes 30,False
@@ -47,18 +39,14 @@ Luzern|bigrail,peak,Adligenswil,Malters,4.4,6.8,direct None / with changes 24,Fa
 Luzern|bigrail,peak,Ebikon (slow),Malters,2.5,6.8,direct None / with changes 24,False
 Luzern|bigrail,peak,Kriens · Sternmatt (fast),Malters,4.4,6.8,direct None / with changes 24,False
 Luzern|bigrail,peak,Arth,Kriens · Sternmatt (fast),1.9,6.8,direct None / with changes 28,False
-Luzern|bigrail,peak,Arth,Rain,5.5,6.8,direct None / with changes 108,False
-Luzern|bigrail,peak,Adligenswil,Rothenburg,6.2,6.8,direct None / with changes 42,False
 Luzern|bigrail,peak,Ebikon (slow),Rothenburg,5.4,6.8,direct None / with changes 27,False
 Luzern|bigrail,peak,Kriens · Sternmatt (fast),Rothenburg,3.8,6.8,direct None / with changes 27,False
-Luzern|bigrail,day,Arth,Ebikon,5.0,0.0,direct None / with changes 60,False
-Luzern|bigrail,day,Arth,Malters,6.4,0.0,direct None / with changes 60,False
+Luzern|bigrail,peak,Adligenswil,Hochdorf,2.7,6.8,direct None / with changes 40,False
 Luzern|bigrail,day,Malters,Rothenburg,1.5,0.0,direct None / with changes 33,False
 Luzern|bigrail,day,Malters,Zug,6.0,0.0,direct None / with changes 60,False
 Luzern|bigrail,day,Olten,Zug,4.0,0.0,direct None / with changes 60,False
 Luzern|bigrail,day,Risch-Rotkreuz,Sursee,5.0,0.0,direct None / with changes 60,False
 Luzern|bigrail,day,Arth,Horw,1.8,3.5,direct None / with changes 29,False
-Luzern|bigrail,day,Horw,Rothenburg,4.4,3.5,direct None / with changes 55,False
 Luzern|bigrail,day,Ebikon,Horw,1.0,3.5,direct None / with changes 30,False
 Luzern|bigrail,day,Hochdorf,Sachseln,4.5,3.5,direct None / with changes 75,False
 Luzern|bigrail,day,Horw,Olten,4.5,3.5,direct None / with changes 60,False
@@ -67,35 +55,26 @@ Luzern|bigrail,day,Horw,Zug,4.5,3.5,direct None / with changes 60,False
 Luzern|bigrail,day,Malters,Stansstad,3.5,3.5,direct None / with changes 60,False
 Luzern|bigrail,day,Olten,Stansstad,1.5,3.5,direct None / with changes 60,False
 Luzern|bigrail,day,Sachseln,Sursee,1.5,3.5,direct None / with changes 75,False
-Luzern|bigrail,day,Arth,Kriens · Sternmatt (fast),2.6,6.8,direct None / with changes 25,False
 Luzern|bigrail,day,Ebikon (slow),Rothenburg,0.8,6.8,direct None / with changes 24,False
 Luzern|bigrail,day,Kriens · Sternmatt (fast),Rothenburg,5.0,6.8,direct None / with changes 24,False
-Luzern|bigrail,day,Adligenswil,Rothenburg,8.5,6.8,direct None / with changes 62,False
-Luzern|bigrail,day,Arth,Rain,5.9,6.8,direct None / with changes 61,False
 Luzern|bigrail,day,Adligenswil,Hochdorf,1.6,6.8,direct None / with changes 33,False
 Luzern|bigrail,day,Hochdorf,Kriens · Sternmatt (fast),2.3,6.8,direct None / with changes 34,False
-Luzern|bigrail,day,Arth,Kriens · Sternmatt (slow),5.4,6.8,direct None / with changes 86,False
-Luzern|bigrail,night,Malters,Rothenburg,4.5,0.0,direct None / with changes 278,False
+Luzern|bigrail,day,Arth,Ruswil,2.3,6.8,direct None / with changes 34,False
 Luzern|bigrail,night,Arth,Olten,1.0,0.0,direct 375 / with changes 285,False
 Luzern|bigrail,night,Malters,Zug,6.0,0.0,direct None / with changes 375,False
 Luzern|bigrail,night,Olten,Zug,4.0,0.0,direct None / with changes 375,False
 Luzern|bigrail,night,Ebikon,Horw,0.9,3.5,direct None / with changes 199,False
 Luzern|bigrail,night,Arth,Horw,1.0,3.5,direct None / with changes 281,False
 Luzern|bigrail,night,Horw,Olten,4.5,3.5,direct None / with changes 285,False
-Luzern|bigrail,night,Horw,Risch-Rotkreuz,3.5,3.5,direct None / with changes 375,False
 Luzern|bigrail,night,Horw,Zug,4.5,3.5,direct None / with changes 375,False
 Luzern|bigrail,night,Kriens · Sternmatt (fast),Rothenburg,5.5,6.8,direct None / with changes 161,False
-Luzern|bigrail,night,Ebikon,Kriens · Sternmatt (fast),6.1,6.8,direct None / with changes 276,False
 Luzern|bigrail,night,Ebikon (slow),Rothenburg,4.2,6.8,direct None / with changes 214,False
 Luzern|bigrail,night,Ebikon (slow),Malters,3.5,6.8,direct None / with changes 201,False
-Luzern|bigrail,night,Kriens · Sternmatt (fast),Malters,6.5,6.8,direct None / with changes 242,False
 Luzern|bigrail,night,Adligenswil,Hochdorf,3.5,6.8,direct None / with changes 309,False
 Luzern|bigrail,night,Ebikon (slow),Sursee,2.2,6.8,direct None / with changes 334,False
 Luzern|bigrail,night,Kriens · Sternmatt (fast),Sursee,7.2,6.8,direct None / with changes 334,False
 Luzern|bigrail,night,Arth,Ebikon (slow),1.9,6.8,direct None / with changes 326,False
-Luzern|bigrail,night,Arth,Kriens · Sternmatt (fast),4.2,6.8,direct None / with changes 375,False
 Luzern|bigrail,night,Kriens · Sternmatt (fast),Olten,2.2,6.8,direct None / with changes 210,False
-Luzern|bigrail,night,Arth,Rain,5.9,6.8,direct None / with changes 375,False
 Luzern|bigrail,night,Kriens · Sternmatt (fast),Risch-Rotkreuz,3.9,6.8,direct None / with changes 285,False
 Luzern|bigrail,night,Rain,Risch-Rotkreuz,1.2,6.8,direct None / with changes 375,False
 Luzern|bigrail,night,Kriens · Sternmatt (fast),Zug,2.2,6.8,direct None / with changes 375,False
@@ -108,30 +87,21 @@ Malters|bigrail,day,Luzern,Schwarzenberg (slow),2.0,3.0,direct None / with chang
 Malters|bigrail,day,Schwarzenberg,Wolhusen,1.0,3.0,direct None / with changes 105,False
 Malters|bigrail,day,Luzern,Wolhusen,1.0,3.0,direct None / with changes 375,False
 Malters|bigrail,night,Schwarzenberg,Wolhusen,1.0,3.0,direct None / with changes 375,False
-Nebikon|bigrail,peak,Dagmersellen,Willisau,5.9,2.8,direct None / with changes 90,False
-Nebikon|bigrail,peak,Dagmersellen,Sursee,7.7,2.8,direct None / with changes 60,False
 Nebikon|bigrail,peak,Sursee,Willisau,2.2,2.8,direct None / with changes 30,False
 Nebikon|bigrail,peak,Dagmersellen,Ettiswil,2.2,2.8,direct None / with changes 120,False
 Nebikon|bigrail,peak,Dagmersellen,Sursee,10.0,0.0,direct None / with changes 60,False
 Nebikon|bigrail,peak,Dagmersellen,Ettiswil,5.7,0.0,direct 120 / with changes 91,False
-Nebikon|bigrail,day,Sursee,Willisau,3.0,2.8,direct None / with changes 45,False
 Nebikon|bigrail,day,Dagmersellen,Sursee,10.0,0.0,direct None / with changes 151,False
-Nebikon|bigrail,day,Sursee,Willisau,11.2,0.0,direct None / with changes 285,False
 Neuenkirch|bigrail,peak,Luzern,Sursee,4.0,3.0,direct None / with changes 45,False
 Neuenkirch|bigrail,peak,Eich,Rothenburg,1.2,3.0,direct None / with changes 60,False
 Neuenkirch|bigrail,peak,Rain,Rothenburg,0.0,3.0,direct None / with changes 60,False
 Neuenkirch|bigrail,peak,Rain,Sursee,4.0,3.0,direct None / with changes 120,False
 Neuenkirch|bigrail,peak,Eich,Luzern,3.2,0.0,direct None / with changes 60,False
-Neuenkirch|bigrail,peak,Eich,Rothenburg,12.2,0.0,direct None / with changes 60,False
 Neuenkirch|bigrail,peak,Luzern,Rain,10.0,0.0,direct None / with changes 120,False
-Neuenkirch|bigrail,day,Eich,Rothenburg,8.1,3.0,direct None / with changes 195,False
 Neuenkirch|bigrail,day,Luzern,Sursee,4.0,3.0,direct None / with changes 56,False
 Neuenkirch|bigrail,day,Rain,Rothenburg,0.0,3.0,direct None / with changes 60,False
 Neuenkirch|bigrail,day,Rain,Sursee,4.0,3.0,direct None / with changes 75,False
-Neuenkirch|bigrail,day,Eich,Rothenburg,7.6,0.0,direct None / with changes 60,False
 Neuenkirch|bigrail,day,Luzern,Rain,10.0,0.0,direct None / with changes 75,False
-Neuenkirch|bigrail,night,Eich,Rothenburg,5.8,3.0,direct None / with changes 268,False
-Neuenkirch|bigrail,night,Eich,Rothenburg,9.8,0.0,direct None / with changes 285,False
 Risch-Rotkreuz|bigrail,peak,Lenzburg,Zug,3.0,0.0,direct None / with changes 30,False
 Risch-Rotkreuz|bigrail,peak,Lenzburg,Luzern,5.0,0.0,direct None / with changes 60,False
 Risch-Rotkreuz|bigrail,peak,Risch-Rotkreuz · Langmatt,Zug,5.6,3.2,direct None / with changes 21,False
@@ -150,10 +120,8 @@ Risch-Rotkreuz|bigrail,day,Hochdorf,Zug,6.9,3.2,direct None / with changes 53,Fa
 Risch-Rotkreuz|bigrail,day,Hochdorf,Risch-Rotkreuz · Langmatt,4.6,0.0,direct None / with changes 52,False
 Risch-Rotkreuz|bigrail,day,Hochdorf,Root,8.0,0.0,direct None / with changes 424,False
 Risch-Rotkreuz|bigrail,day,Risch-Rotkreuz · Langmatt,Root,6.0,0.0,direct None / with changes 424,False
-Risch-Rotkreuz|bigrail,night,Lenzburg,Zug,4.8,0.0,direct None / with changes 276,False
 Risch-Rotkreuz|bigrail,night,Lenzburg,Luzern,4.7,0.0,direct None / with changes 285,False
 Risch-Rotkreuz|bigrail,night,Risch-Rotkreuz · Langmatt,Root,4.3,3.2,direct None / with changes 236,False
-Risch-Rotkreuz|bigrail,night,Risch-Rotkreuz · Langmatt,Zug,8.8,3.2,direct None / with changes 185,False
 Risch-Rotkreuz|bigrail,night,Hochdorf,Root,5.8,3.2,direct None / with changes 326,False
 Risch-Rotkreuz|bigrail,night,Hochdorf,Risch-Rotkreuz · Langmatt,5.0,0.0,direct None / with changes 326,False
 Root|bigrail,peak,Ebikon,Risch-Rotkreuz,2.5,6.2,direct None / with changes 45,False
@@ -168,18 +136,15 @@ Schüpfheim|bigrail,peak,Hasle (LU),Langnau im Emmental,3.1,2.9,direct None / wi
 Schüpfheim|bigrail,day,Flühli,Langnau im Emmental,4.1,2.9,direct None / with changes 64,False
 Schüpfheim|bigrail,day,Flühli,Wolhusen,4.1,2.9,direct None / with changes 64,False
 Schüpfheim|bigrail,day,Hasle (LU),Langnau im Emmental,2.1,2.9,direct None / with changes 195,False
-Sursee|bigrail,peak,Neuenkirch,Triengen,5.2,3.1,direct None / with changes 33,False
 Sursee|bigrail,peak,Ettiswil,Neuenkirch,3.9,3.1,direct None / with changes 30,False
 Sursee|bigrail,peak,Eich,Zofingen,3.4,3.1,direct None / with changes 30,False
 Sursee|bigrail,peak,Ettiswil,Zofingen,3.9,3.1,direct None / with changes 30,False
 Sursee|bigrail,peak,Luzern,Triengen,1.9,3.1,direct None / with changes 30,False
 Sursee|bigrail,peak,Ruswil,Zofingen,3.9,3.1,direct None / with changes 30,False
-Sursee|bigrail,peak,Eich,Nebikon,9.4,3.1,direct None / with changes 60,False
 Sursee|bigrail,peak,Nebikon,Triengen,2.4,3.1,direct None / with changes 33,False
 Sursee|bigrail,peak,Beromünster,Luzern,2.9,3.1,direct None / with changes 60,False
 Sursee|bigrail,peak,Beromünster,Neuenkirch,8.9,3.1,direct None / with changes 60,False
 Sursee|bigrail,peak,Beromünster,Zofingen,8.9,3.1,direct None / with changes 60,False
-Sursee|bigrail,peak,Dagmersellen,Luzern,11.4,3.1,direct None / with changes 90,False
 Sursee|bigrail,peak,Dagmersellen,Neuenkirch,8.9,3.1,direct None / with changes 60,False
 Sursee|bigrail,peak,Ettiswil,Triengen,5.8,0.0,direct None / with changes 26,False
 Sursee|bigrail,peak,Eich,Ettiswil,3.5,0.0,direct None / with changes 30,False
@@ -187,8 +152,6 @@ Sursee|bigrail,peak,Eich,Triengen,6.5,0.0,direct None / with changes 32,False
 Sursee|bigrail,peak,Eich,Ruswil,3.5,0.0,direct None / with changes 30,False
 Sursee|bigrail,peak,Ettiswil,Ruswil,4.0,0.0,direct None / with changes 30,False
 Sursee|bigrail,peak,Ruswil,Triengen,7.0,0.0,direct None / with changes 32,False
-Sursee|bigrail,peak,Rickenbach,Ruswil,10.7,0.0,direct None / with changes 60,False
-Sursee|bigrail,peak,Beromünster,Dagmersellen,9.0,0.0,direct None / with changes 90,False
 Sursee|bigrail,peak,Beromünster,Eich,6.2,0.0,direct None / with changes 60,False
 Sursee|bigrail,peak,Beromünster,Ettiswil,9.0,0.0,direct None / with changes 60,False
 Sursee|bigrail,peak,Beromünster,Ruswil,9.0,0.0,direct None / with changes 60,False
@@ -196,14 +159,11 @@ Sursee|bigrail,peak,Dagmersellen,Ettiswil,6.0,0.0,direct None / with changes 60,
 Sursee|bigrail,peak,Dagmersellen,Schlierbach,1.5,0.0,direct None / with changes 60,False
 Sursee|bigrail,peak,Dagmersellen,Triengen,1.0,0.0,direct None / with changes 60,False
 Sursee|bigrail,peak,Eich,Nebikon,4.5,0.0,direct None / with changes 60,False
-Sursee|bigrail,peak,Ettiswil,Schlierbach,6.5,0.0,direct None / with changes 90,False
 Sursee|bigrail,peak,Nebikon,Triengen,5.0,0.0,direct None / with changes 60,False
 Sursee|bigrail,day,Ettiswil,Neuenkirch,3.9,3.1,direct None / with changes 30,False
 Sursee|bigrail,day,Eich,Zofingen,3.4,3.1,direct None / with changes 30,False
 Sursee|bigrail,day,Ettiswil,Zofingen,3.9,3.1,direct None / with changes 30,False
 Sursee|bigrail,day,Luzern,Triengen,1.9,3.1,direct None / with changes 30,False
-Sursee|bigrail,day,Eich,Nebikon,9.4,3.1,direct None / with changes 60,False
-Sursee|bigrail,day,Nebikon,Triengen,6.4,3.1,direct None / with changes 60,False
 Sursee|bigrail,day,Ruswil,Zofingen,3.9,3.1,direct None / with changes 41,False
 Sursee|bigrail,day,Dagmersellen,Neuenkirch,8.4,3.1,direct None / with changes 61,False
 Sursee|bigrail,day,Beromünster,Luzern,2.9,3.1,direct None / with changes 71,False
@@ -213,25 +173,18 @@ Sursee|bigrail,day,Nebikon,Neuenkirch,7.9,3.1,direct None / with changes 150,Fal
 Sursee|bigrail,day,Luzern,Schlierbach,3.9,3.1,direct None / with changes 120,False
 Sursee|bigrail,day,Ettiswil,Triengen,11.0,0.0,direct None / with changes 30,False
 Sursee|bigrail,day,Eich,Ettiswil,3.5,0.0,direct None / with changes 30,False
-Sursee|bigrail,day,Eich,Triengen,10.5,0.0,direct None / with changes 60,False
-Sursee|bigrail,day,Rickenbach,Triengen,11.1,0.0,direct None / with changes 42,False
 Sursee|bigrail,day,Eich,Ruswil,2.9,0.0,direct None / with changes 41,False
 Sursee|bigrail,day,Ettiswil,Ruswil,4.0,0.0,direct None / with changes 41,False
-Sursee|bigrail,day,Rickenbach,Ruswil,6.0,0.0,direct None / with changes 86,False
 Sursee|bigrail,day,Ruswil,Triengen,11.0,0.0,direct None / with changes 41,False
 Sursee|bigrail,day,Dagmersellen,Triengen,1.0,0.0,direct None / with changes 61,False
 Sursee|bigrail,day,Beromünster,Eich,8.0,0.0,direct None / with changes 71,False
 Sursee|bigrail,day,Beromünster,Ettiswil,9.0,0.0,direct None / with changes 71,False
 Sursee|bigrail,day,Eich,Nebikon,3.8,0.0,direct None / with changes 117,False
 Sursee|bigrail,day,Nebikon,Ruswil,8.0,0.0,direct None / with changes 150,False
-Sursee|bigrail,day,Dagmersellen,Schlierbach,12.4,0.0,direct None / with changes 210,False
-Sursee|bigrail,night,Nebikon,Neuenkirch,3.3,0.0,direct 208 / with changes 145,False
-Sursee|bigrail,night,Eich,Nebikon,11.0,3.1,direct None / with changes 248,False
 Sursee|bigrail,night,Eich,Zofingen,5.9,3.1,direct None / with changes 334,False
 Sursee|bigrail,night,Nebikon,Triengen,2.6,3.1,direct None / with changes 307,False
 Sursee|bigrail,night,Ettiswil,Luzern,7.9,3.1,direct None / with changes 375,False
 Sursee|bigrail,night,Neuenkirch,Rickenbach,4.2,3.1,direct None / with changes 283,False
-Sursee|bigrail,night,Eich,Ruswil,11.0,0.0,direct None / with changes 371,False
 Sursee|bigrail,night,Eich,Ettiswil,8.5,0.0,direct None / with changes 368,False
 Sursee|bigrail,night,Ettiswil,Ruswil,6.7,0.0,direct None / with changes 269,False
 Sursee|bigrail,night,Rickenbach,Triengen,12.0,0.0,direct None / with changes 375,False
@@ -246,8 +199,6 @@ Wolhusen|bigrail,peak,Malters,Ruswil,2.6,2.9,direct None / with changes 30,False
 Wolhusen|bigrail,peak,Ruswil,Schüpfheim,2.6,2.9,direct None / with changes 30,False
 Wolhusen|bigrail,peak,Ruswil,Willisau,4.1,2.9,direct None / with changes 30,False
 Wolhusen|bigrail,peak,Malters,Romoos,2.6,2.9,direct None / with changes 60,False
-Wolhusen|bigrail,peak,Malters,Schüpfheim,9.6,2.9,direct None / with changes 90,False
-Wolhusen|bigrail,peak,Malters,Willisau,11.1,2.9,direct None / with changes 90,False
 Wolhusen|bigrail,peak,Romoos,Willisau,3.1,2.9,direct None / with changes 60,False
 Wolhusen|bigrail,peak,Entlebuch,Malters,4.8,2.9,direct None / with changes 90,False
 Wolhusen|bigrail,peak,Entlebuch,Willisau,4.1,2.9,direct None / with changes 120,False
@@ -264,22 +215,17 @@ Wolhusen|bigrail,day,Romoos,Ruswil,7.0,0.0,direct None / with changes 86,False
 Wolhusen|bigrail,night,Malters,Willisau,1.0,0.0,direct 214 / with changes 207,False
 Wolhusen|bigrail,night,Schüpfheim,Willisau,2.0,0.0,direct None / with changes 278,False
 Wolhusen|bigrail,night,Malters,Ruswil,1.1,2.9,direct None / with changes 375,False
-Wolhusen|bigrail,night,Ruswil,Schüpfheim,10.1,2.9,direct None / with changes 375,False
 Wolhusen|bigrail,night,Ruswil,Willisau,4.1,2.9,direct None / with changes 375,False
 Zell (LU)|bigrail,peak,Roggwil (BE),Willisau,4.1,2.3,direct None / with changes 54,False
 Zell (LU)|bigrail,peak,Luthern,Willisau,0.7,2.3,direct None / with changes 60,False
 Zell (LU)|bigrail,day,Roggwil (BE),Willisau,3.7,2.3,direct None / with changes 60,False
-Zell (LU)|bigrail,day,Luthern,Willisau,5.7,2.3,direct None / with changes 240,False
 Zofingen|bigrail,peak,Lenzburg,Olten,3.0,0.0,direct None / with changes 31,False
 Zofingen|bigrail,peak,Dagmersellen,Lenzburg,5.0,0.0,direct None / with changes 30,False
 Zofingen|bigrail,peak,Dagmersellen,Schöftland,4.3,5.7,direct None / with changes 60,False
 Zofingen|bigrail,peak,Olten,Schöftland,4.3,5.7,direct None / with changes 60,False
 Zofingen|bigrail,day,Lenzburg,Olten,3.0,0.0,direct None / with changes 31,False
 Zofingen|bigrail,day,Dagmersellen,Lenzburg,5.0,0.0,direct None / with changes 30,False
-Zofingen|bigrail,day,Dagmersellen,Schöftland,4.5,5.7,direct None / with changes 75,False
-Zofingen|bigrail,day,Olten,Schöftland,4.5,5.7,direct None / with changes 75,False
 Zofingen|bigrail,night,Dagmersellen,Lenzburg,5.3,0.0,direct None / with changes 235,False
-Zofingen|bigrail,night,Lenzburg,Olten,4.2,0.0,direct None / with changes 278,False
 Zug|bigrail,peak,Arth,Risch-Rotkreuz,4.5,0.0,direct None / with changes 30,False
 Zug|bigrail,peak,Arth,Luzern,2.0,0.0,direct None / with changes 60,False
 Zug|bigrail,day,Arth,Risch-Rotkreuz,4.5,0.0,direct None / with changes 30,False
@@ -288,14 +234,11 @@ Zug|bigrail,night,Arth,Luzern,2.0,0.0,direct None / with changes 375,False
 Adligenswil|bus,peak,Ebikon,Luzern,4.1,0.0,direct None / with changes 30,False
 Beromünster|bus,peak,Menziken,Rickenbach,6.0,0.0,direct None / with changes 60,False
 Beromünster|bus,peak,Rain,Sursee,8.0,0.0,direct None / with changes 60,False
-Beromünster|bus,peak,Rickenbach,Sursee,6.3,0.0,direct None / with changes 90,False
 Beromünster|bus,day,Menziken,Rickenbach,6.0,0.0,direct None / with changes 60,False
 Beromünster|bus,day,Rain,Sursee,8.0,0.0,direct None / with changes 64,False
 Beromünster|bus,day,Rickenbach,Sursee,0.0,0.0,direct None / with changes 75,False
-Beromünster|bus,night,Menziken,Rickenbach,12.0,0.0,direct None / with changes 300,False
 Ettiswil|bus,peak,Ruswil,Sursee,3.0,0.0,direct None / with changes 30,False
 Ettiswil|bus,peak,Ruswil,Willisau,3.5,0.0,direct None / with changes 30,False
-Ettiswil|bus,peak,Nebikon,Sursee,8.0,0.0,direct None / with changes 88,False
 Ettiswil|bus,day,Ruswil,Sursee,3.0,0.0,direct None / with changes 30,False
 Ettiswil|bus,day,Ruswil,Willisau,4.0,0.0,direct None / with changes 30,False
 Ettiswil|bus,night,Ruswil,Sursee,5.0,0.0,direct None / with changes 235,False
@@ -304,26 +247,20 @@ Kriens|bus,peak,Kriens · Sternmatt,Malters,4.0,0.0,direct None / with changes 6
 Kriens|bus,day,Kriens · Sternmatt,Malters,4.6,0.0,direct None / with changes 150,False
 Küssnacht (SZ)|bus,peak,Risch-Rotkreuz · Langmatt,Weggis,2.7,0.0,direct 60 / with changes 33,False
 Küssnacht (SZ)|bus,peak,Risch-Rotkreuz · Langmatt,Udligenswil,3.0,0.0,direct None / with changes 60,False
-Küssnacht (SZ)|bus,day,Risch-Rotkreuz · Langmatt,Weggis,3.4,0.0,direct 210 / with changes 34,False
 Küssnacht (SZ)|bus,day,Risch-Rotkreuz · Langmatt,Udligenswil,4.5,0.0,direct None / with changes 60,False
 Küssnacht (SZ)|bus,night,Risch-Rotkreuz · Langmatt,Weggis,2.8,0.0,direct 480 / with changes 209,False
 Luzern|bus,peak,Adligenswil,Malters,4.4,6.8,direct None / with changes 24,False
 Luzern|bus,peak,Ebikon (slow),Malters,2.5,6.8,direct None / with changes 24,False
 Luzern|bus,peak,Kriens · Sternmatt (fast),Malters,4.4,6.8,direct None / with changes 24,False
 Luzern|bus,peak,Arth,Kriens · Sternmatt (fast),1.9,6.8,direct None / with changes 28,False
-Luzern|bus,peak,Arth,Rain,5.5,6.8,direct None / with changes 108,False
-Luzern|bus,peak,Adligenswil,Rothenburg,6.2,6.8,direct None / with changes 42,False
 Luzern|bus,peak,Ebikon (slow),Rothenburg,5.4,6.8,direct None / with changes 27,False
 Luzern|bus,peak,Kriens · Sternmatt (fast),Rothenburg,3.8,6.8,direct None / with changes 27,False
 Luzern|bus,peak,Adligenswil,Hochdorf,2.7,6.8,direct None / with changes 40,False
-Luzern|bus,peak,Adligenswil,Sursee,8.9,6.8,direct None / with changes 75,False
 Luzern|bus,peak,Arth,Neuenkirch,1.5,6.8,direct None / with changes 45,False
 Luzern|bus,peak,Arth,Ruswil,2.5,6.8,direct None / with changes 45,False
 Luzern|bus,peak,Ebikon,Kriens · Sternmatt (fast),1.7,6.8,direct None / with changes 30,False
 Luzern|bus,peak,Ebikon (slow),Sursee,1.7,6.8,direct None / with changes 45,False
 Luzern|bus,peak,Kriens · Sternmatt (fast),Sursee,1.7,6.8,direct None / with changes 45,False
-Luzern|bus,peak,Kriens · Sternmatt (slow),Malters,10.0,6.8,direct None / with changes 83,False
-Luzern|bus,peak,Kriens · Sternmatt (slow),Rothenburg,7.7,6.8,direct None / with changes 83,False
 Luzern|bus,peak,Kriens · Sternmatt (fast),Risch-Rotkreuz,3.4,6.8,direct None / with changes 54,False
 Luzern|bus,peak,Kriens · Sternmatt (slow),Risch-Rotkreuz,1.7,6.8,direct None / with changes 60,False
 Luzern|bus,peak,Neuenkirch,Risch-Rotkreuz,7.2,6.8,direct None / with changes 60,False
@@ -358,15 +295,10 @@ Luzern|bus,peak,Ebikon (slow),Ruswil,1.1,0.0,direct None / with changes 30,False
 Luzern|bus,peak,Kriens · Sternmatt (fast),Neuenkirch,4.3,0.0,direct None / with changes 45,False
 Luzern|bus,peak,Kriens · Sternmatt (fast),Ruswil,5.0,0.0,direct None / with changes 45,False
 Luzern|bus,peak,Kriens · Sternmatt (slow),Neuenkirch,3.5,0.0,direct None / with changes 45,False
-Luzern|bus,day,Arth,Kriens · Sternmatt (fast),2.6,6.8,direct None / with changes 25,False
 Luzern|bus,day,Ebikon (slow),Rothenburg,0.8,6.8,direct None / with changes 24,False
 Luzern|bus,day,Kriens · Sternmatt (fast),Rothenburg,5.0,6.8,direct None / with changes 24,False
-Luzern|bus,day,Adligenswil,Rothenburg,8.5,6.8,direct None / with changes 62,False
-Luzern|bus,day,Arth,Rain,5.9,6.8,direct None / with changes 61,False
 Luzern|bus,day,Adligenswil,Hochdorf,1.6,6.8,direct None / with changes 33,False
 Luzern|bus,day,Hochdorf,Kriens · Sternmatt (fast),2.3,6.8,direct None / with changes 34,False
-Luzern|bus,day,Arth,Kriens · Sternmatt (slow),5.4,6.8,direct None / with changes 86,False
-Luzern|bus,day,Kriens · Sternmatt (slow),Rothenburg,7.2,6.8,direct None / with changes 58,False
 Luzern|bus,day,Arth,Ruswil,2.3,6.8,direct None / with changes 34,False
 Luzern|bus,day,Ebikon,Kriens · Sternmatt (fast),1.1,6.8,direct None / with changes 30,False
 Luzern|bus,day,Ebikon (slow),Sursee,2.1,6.8,direct None / with changes 34,False
@@ -405,22 +337,16 @@ Luzern|bus,day,Kriens · Sternmatt (fast),Ruswil,1.4,0.0,direct None / with chan
 Luzern|bus,day,Kriens · Sternmatt (slow),Ruswil,5.2,0.0,direct None / with changes 34,False
 Luzern|bus,day,Rain,Ruswil,4.0,0.0,direct None / with changes 34,False
 Luzern|bus,night,Kriens · Sternmatt (fast),Rothenburg,5.5,6.8,direct None / with changes 161,False
-Luzern|bus,night,Ebikon,Kriens · Sternmatt (fast),6.1,6.8,direct None / with changes 276,False
 Luzern|bus,night,Ebikon (slow),Rothenburg,4.2,6.8,direct None / with changes 214,False
 Luzern|bus,night,Ebikon (slow),Malters,3.5,6.8,direct None / with changes 201,False
-Luzern|bus,night,Kriens · Sternmatt (fast),Malters,6.5,6.8,direct None / with changes 242,False
 Luzern|bus,night,Adligenswil,Hochdorf,3.5,6.8,direct None / with changes 309,False
 Luzern|bus,night,Ebikon (slow),Sursee,2.2,6.8,direct None / with changes 334,False
 Luzern|bus,night,Kriens · Sternmatt (fast),Sursee,7.2,6.8,direct None / with changes 334,False
 Luzern|bus,night,Arth,Ebikon (slow),1.9,6.8,direct None / with changes 326,False
-Luzern|bus,night,Arth,Kriens · Sternmatt (fast),4.2,6.8,direct None / with changes 375,False
 Luzern|bus,night,Kriens · Sternmatt (fast),Olten,2.2,6.8,direct None / with changes 210,False
-Luzern|bus,night,Arth,Rain,5.9,6.8,direct None / with changes 375,False
 Luzern|bus,night,Kriens · Sternmatt (fast),Risch-Rotkreuz,3.9,6.8,direct None / with changes 285,False
 Luzern|bus,night,Rain,Risch-Rotkreuz,1.2,6.8,direct None / with changes 375,False
 Luzern|bus,night,Kriens · Sternmatt (fast),Zug,2.2,6.8,direct None / with changes 375,False
-Luzern|bus,night,Ebikon (slow),Horw,3.2,5.8,direct None / with changes 170,False
-Luzern|bus,night,Adligenswil,Horw,7.9,5.8,direct None / with changes 233,False
 Luzern|bus,night,Adligenswil,Kriens · Sternmatt (fast),6.9,0.0,direct None / with changes 162,False
 Luzern|bus,night,Adligenswil,Rain,11.0,0.0,direct None / with changes 322,False
 Luzern|bus,night,Ebikon (slow),Rain,0.8,0.0,direct None / with changes 240,False
@@ -449,15 +375,11 @@ Ruswil|bus,day,Rothenburg,Sursee,5.0,0.0,direct None / with changes 424,False
 Schöftland|bus,peak,Triengen,Zofingen,12.0,0.0,direct None / with changes 60,False
 Schöftland|bus,day,Triengen,Zofingen,12.0,0.0,direct None / with changes 60,False
 Udligenswil|bus,peak,Adligenswil,Küssnacht (SZ),11.0,0.0,direct None / with changes 120,False
-Udligenswil|bus,peak,Adligenswil,Root,4.8,0.0,direct None / with changes 90,False
 Udligenswil|bus,peak,Risch-Rotkreuz · Langmatt,Root,6.0,0.0,direct None / with changes 60,False
 Udligenswil|bus,day,Adligenswil,Küssnacht (SZ),11.0,0.0,direct None / with changes 75,False
-Udligenswil|bus,day,Adligenswil,Root,10.4,0.0,direct None / with changes 195,False
 Udligenswil|bus,day,Risch-Rotkreuz · Langmatt,Root,11.0,0.0,direct None / with changes 60,False
 Zofingen|bus,peak,Dagmersellen,Schöftland,4.3,5.7,direct None / with changes 60,False
 Zofingen|bus,peak,Olten,Schöftland,4.3,5.7,direct None / with changes 60,False
-Zofingen|bus,day,Dagmersellen,Schöftland,4.5,5.7,direct None / with changes 75,False
-Zofingen|bus,day,Olten,Schöftland,4.5,5.7,direct None / with changes 75,False
 Kriens|bus|1,peak,Kriens · Obernau,Luzern (slow),0.8,0.0,direct None / with changes 30,False
 Kriens|bus|1,day,Kriens · Obernau,Luzern (slow),0.4,0.0,direct None / with changes 30,False
 Root|bus|1,peak,Ebikon,Risch-Rotkreuz,2.5,6.2,direct None / with changes 45,False

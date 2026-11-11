@@ -1,58 +1,38 @@
 node,band,from_line,to_line,wait_min,transfer_min,frequency,reversing
-Beasain|bus,peak,Zaldibia,Zumarraga,8.9,2.6,direct None / with changes 120,False
-Beasain|bus,day,Zaldibia,Zumarraga,7.9,2.6,direct None / with changes 150,False
-Beasain|bus,day,Tolosa,Zumarraga,10.2,2.6,direct None / with changes 240,False
 Beasain|bus,day,Zaldibia,Zizurkil,4.3,2.6,direct None / with changes 300,False
-Beasain|bus,day,Lazkao,Tolosa,11.7,0.0,direct None / with changes 165,False
 Beasain|bus,day,Tolosa,Zegama,0.7,0.0,direct None / with changes 120,False
 Beasain|bus,day,Ormaiztegi,Tolosa,3.0,0.0,direct 480 / with changes 113,False
 Deba|bus,peak,Elgoibar,Zestoa,3.6,2.7,direct None / with changes 90,False
-Deba|bus,peak,Mutriku,Zestoa,9.9,2.7,direct None / with changes 120,False
 Deba|bus,peak,Elgoibar,Zarautz,0.8,2.7,direct None / with changes 120,False
 Deba|bus,peak,Elgoibar,Zarautz,6.8,0.0,direct None / with changes 120,False
 Deba|bus,day,Elgoibar,Zestoa,3.6,2.7,direct None / with changes 60,False
-Deba|bus,day,Mutriku,Zestoa,9.7,2.7,direct None / with changes 120,False
-Donostia / San Sebastián|renfe,peak,Lasarte-Oria (slow),Pasaia,12.1,4.3,direct None / with changes 120,False
 Donostia / San Sebastián|renfe,peak,Pasaia,Zizurkil,3.8,4.3,direct None / with changes 54,False
-Donostia / San Sebastián|renfe,peak,Zarautz,Zizurkil,4.3,4.3,direct None / with changes 60,False
-Donostia / San Sebastián|renfe,peak,Zestoa,Zizurkil,9.1,4.3,direct None / with changes 120,False
 Donostia / San Sebastián|renfe,day,Pasaia,Zizurkil,3.5,4.3,direct None / with changes 62,False
-Donostia / San Sebastián|renfe,day,Hernani (slow),Pasaia,9.1,4.3,direct None / with changes 118,False
 Donostia / San Sebastián|renfe,night,Hernani (slow),Pasaia,4.4,4.3,direct None / with changes 382,False
 Elgoibar|euskotren,peak,Azpeitia,Deba,4.7,6.4,direct None / with changes 120,False
 Elgoibar|euskotren,day,Deba,Ermua,8.5,6.4,direct None / with changes 75,False
 Elgoibar|euskotren,day,Azpeitia,Deba,3.7,6.4,direct None / with changes 120,False
 Ermua|euskotren,peak,Elgoibar,Ermua · Baldespina Mark…,1.7,6.2,direct None / with changes 90,False
 Ermua|euskotren,day,Elgoibar,Ermua · Baldespina Mark…,1.9,6.2,direct None / with changes 60,False
-Errenteria|euskotren,peak,Oiartzun,Pasaia,7.8,6.2,direct None / with changes 38,False
 Errenteria|euskotren,peak,Donostia,Irun,2.4,6.2,direct None / with changes 60,False
-Errenteria|euskotren,day,Oiartzun,Pasaia,8.6,6.2,direct None / with changes 48,False
-Errenteria|euskotren,day,Irun,Pasaia,3.0,6.2,direct None / with changes 32,False
 Errenteria|euskotren,day,Donostia,Irun,2.6,6.2,direct None / with changes 34,False
 Errenteria|euskotren,day,Errenteria,Irun,2.7,6.2,direct None / with changes 150,False
-Errenteria|euskotren,night,Oiartzun,Pasaia,10.0,6.2,direct None / with changes 424,False
 Errenteria|euskotren,night,Irun,Pasaia,1.9,6.2,direct None / with changes 375,False
-Lasarte-Oria|euskotren,peak,Andoain,Donostia,8.7,5.6,direct None / with changes 82,False
-Lasarte-Oria|euskotren,day,Donostia,Hernani,3.4,5.6,direct None / with changes 75,False
 Pasaia|bus,peak,Donostia,Irun,1.6,3.2,direct None / with changes 53,False
 Pasaia|bus,peak,Donostia,Errenteria,5.7,4.0,direct None / with changes 22,False
 Pasaia|bus,peak,Donostia,Errenteria,2.1,4.0,direct None / with changes 32,False
 Pasaia|bus,day,Donostia,Irun,2.4,3.2,direct None / with changes 56,False
 Pasaia|bus,day,Donostia,Errenteria,6.2,4.0,direct None / with changes 27,False
-Pasaia|bus,day,Donostia,Errenteria,2.4,4.0,direct None / with changes 30,False
-Pasaia|bus,night,Donostia,Errenteria,4.2,3.2,direct None / with changes 383,False
 Pasaia|bus,night,Donostia,Irun,3.0,3.2,direct None / with changes 384,False
 Pasaia|bus,night,Donostia,Errenteria,4.6,4.0,direct None / with changes 424,False
 Pasaia|bus,night,Donostia,Oiartzun,1.0,0.0,direct 480 / with changes 285,False
 Zestoa|euskotren,peak,Azpeitia,Deba,11.1,4.9,direct None / with changes 60,False
 Zestoa|euskotren,day,Aia,Azpeitia,5.1,4.9,direct None / with changes 60,False
 Zestoa|euskotren,day,Azpeitia,Deba,11.1,4.9,direct None / with changes 60,False
-Zizurkil|renfe,day,Donostia,Tolosa,5.0,5.8,direct None / with changes 90,False
 Zizurkil|renfe,day,Beasain,Donostia (slow),1.6,5.8,direct None / with changes 300,False
 Zumarraga|bus,peak,Arrasate,Beasain,3.8,2.3,direct None / with changes 90,False
 Zumarraga|bus,peak,Arrasate,Azpeitia,2.5,0.0,direct None / with changes 120,False
 Zumarraga|bus,peak,Azpeitia,Bergara,9.6,0.0,direct None / with changes 120,False
-Zumarraga|bus,day,Arrasate,Beasain,12.0,2.3,direct None / with changes 150,False
 Zumarraga|bus,day,Arrasate,Azpeitia,0.9,0.0,direct None / with changes 91,False
 Zumarraga|bus,day,Azpeitia,Bergara,9.6,0.0,direct None / with changes 105,False
 Zumarraga|bus,day,Arrasate,Beasain,4.2,0.0,direct None / with changes 120,False
@@ -63,7 +43,6 @@ Andoain|bus,night,Hernani,Villabona,8.7,0.0,direct None / with changes 375,False
 Arrasate / Mondragón|bus,peak,Eskoriatza,Zumarraga,5.2,0.0,direct None / with changes 60,False
 Arrasate / Mondragón|bus,day,Eskoriatza,Zumarraga,4.4,0.0,direct None / with changes 60,False
 Arrasate / Mondragón|bus,night,Eskoriatza,Zumarraga,3.6,0.0,direct None / with changes 375,False
-Azpeitia|bus,day,Beizama,Zestoa,11.5,0.0,direct None / with changes 255,False
 Azpeitia|bus,day,Errezil,Zestoa,5.7,0.0,direct None / with changes 165,False
 Bergara|bus,day,Bilbao,Soraluze,5.2,0.0,direct None / with changes 180,False
 Bergara|bus,day,Zarautz,Zumarraga,7.3,0.0,direct None / with changes 165,False
@@ -81,24 +60,17 @@ Bilbao|bus,day,Loiu (fast),Pamplona,6.9,0.0,direct None / with changes 169,False
 Bilbao|bus,day,Elorrio (fast),Loiu (fast),3.0,0.0,direct None / with changes 200,False
 Bilbao|bus,day,Ermua · Baldespina Mark… (fast),Vitoria-Gasteiz,0.3,0.0,direct None / with changes 240,False
 Bilbao|bus,day,Loiu (fast),Vitoria-Gasteiz,4.1,0.0,direct None / with changes 203,False
-Donostia / San Sebastián|bus,peak,Lasarte-Oria (slow),Pasaia,12.1,4.3,direct None / with changes 120,False
 Donostia / San Sebastián|bus,peak,Pasaia,Zizurkil,3.8,4.3,direct None / with changes 54,False
-Donostia / San Sebastián|bus,peak,Zarautz,Zizurkil,4.3,4.3,direct None / with changes 60,False
-Donostia / San Sebastián|bus,peak,Zestoa,Zizurkil,9.1,4.3,direct None / with changes 120,False
 Donostia / San Sebastián|bus,peak,Pasaia,Zarautz,3.2,0.0,direct None / with changes 22,False
-Donostia / San Sebastián|bus,peak,Hernani (fast),Zarautz,5.7,0.0,direct None / with changes 53,False
 Donostia / San Sebastián|bus,peak,Lasarte-Oria (slow),Pasaia,2.0,0.0,direct None / with changes 21,False
 Donostia / San Sebastián|bus,peak,Hernani (slow),Pasaia,1.9,0.0,direct None / with changes 23,False
-Donostia / San Sebastián|bus,peak,Hernani (slow),Zarautz,6.1,0.0,direct None / with changes 37,False
 Donostia / San Sebastián|bus,peak,Errenteria,Zarautz,5.0,0.0,direct None / with changes 45,False
 Donostia / San Sebastián|bus,peak,Errenteria,Zestoa,9.7,0.0,direct None / with changes 82,False
 Donostia / San Sebastián|bus,peak,Hernani (slow),Zestoa,1.2,0.0,direct None / with changes 75,False
-Donostia / San Sebastián|bus,peak,Lasarte-Oria (slow),Zestoa,9.4,0.0,direct None / with changes 90,False
 Donostia / San Sebastián|bus,peak,Pasaia,Zestoa,3.8,0.0,direct None / with changes 75,False
 Donostia / San Sebastián|bus,peak,Errenteria,Lasarte-Oria (fast),5.4,0.0,direct None / with changes 60,False
 Donostia / San Sebastián|bus,peak,Hernani (slow),Hondarribia,0.4,0.0,direct None / with changes 90,False
 Donostia / San Sebastián|bus,peak,Hondarribia,Lasarte-Oria (slow),11.7,0.0,direct None / with changes 60,False
-Donostia / San Sebastián|bus,peak,Hondarribia,Zestoa,11.7,0.0,direct None / with changes 90,False
 Donostia / San Sebastián|bus,peak,Errenteria,Usurbil,3.9,0.0,direct None / with changes 120,False
 Donostia / San Sebastián|bus,peak,Pasaia,Usurbil,4.1,0.0,direct None / with changes 120,False
 Donostia / San Sebastián|bus,peak,Hondarribia,Tolosa,11.6,0.0,direct None / with changes 120,False
@@ -106,17 +78,13 @@ Donostia / San Sebastián|bus,peak,Pasaia,Tolosa,3.8,0.0,direct None / with chan
 Donostia / San Sebastián|bus,peak,Errenteria,Vitoria-Gasteiz,5.4,0.0,direct None / with changes 120,False
 Donostia / San Sebastián|bus,peak,Pasaia,Vitoria-Gasteiz,1.5,0.0,direct None / with changes 120,False
 Donostia / San Sebastián|bus,day,Pasaia,Zizurkil,3.5,4.3,direct None / with changes 62,False
-Donostia / San Sebastián|bus,day,Hernani (slow),Pasaia,9.1,4.3,direct None / with changes 118,False
 Donostia / San Sebastián|bus,day,Hernani (slow),Pasaia,2.4,0.0,direct None / with changes 22,False
 Donostia / San Sebastián|bus,day,Hernani (fast),Pasaia,2.7,0.0,direct None / with changes 29,False
 Donostia / San Sebastián|bus,day,Lasarte-Oria (slow),Pasaia,2.7,0.0,direct None / with changes 22,False
-Donostia / San Sebastián|bus,day,Hernani (fast),Zarautz,7.5,0.0,direct None / with changes 56,False
-Donostia / San Sebastián|bus,day,Hernani (slow),Zarautz,9.9,0.0,direct None / with changes 57,False
 Donostia / San Sebastián|bus,day,Pasaia,Zarautz,2.8,0.0,direct None / with changes 21,False
 Donostia / San Sebastián|bus,day,Errenteria,Zarautz,4.7,0.0,direct None / with changes 34,False
 Donostia / San Sebastián|bus,day,Errenteria,Zestoa,9.7,0.0,direct None / with changes 41,False
 Donostia / San Sebastián|bus,day,Hernani (slow),Zestoa,1.5,0.0,direct None / with changes 34,False
-Donostia / San Sebastián|bus,day,Lasarte-Oria (slow),Zestoa,10.9,0.0,direct None / with changes 60,False
 Donostia / San Sebastián|bus,day,Pasaia,Zestoa,3.6,0.0,direct None / with changes 41,False
 Donostia / San Sebastián|bus,day,Errenteria,Lasarte-Oria (fast),2.8,0.0,direct None / with changes 60,False
 Donostia / San Sebastián|bus,day,Lasarte-Oria (fast),Pasaia,1.1,0.0,direct None / with changes 290,False
@@ -124,66 +92,47 @@ Donostia / San Sebastián|bus,day,Errenteria,Usurbil,3.9,0.0,direct None / with 
 Donostia / San Sebastián|bus,day,Errenteria,Villabona (slow),3.9,0.0,direct None / with changes 75,False
 Donostia / San Sebastián|bus,day,Hernani (slow),Hondarribia,4.2,0.0,direct None / with changes 60,False
 Donostia / San Sebastián|bus,day,Hondarribia,Lasarte-Oria (slow),11.7,0.0,direct None / with changes 60,False
-Donostia / San Sebastián|bus,day,Hondarribia,Zestoa,5.4,0.0,direct None / with changes 75,False
 Donostia / San Sebastián|bus,day,Pasaia,Usurbil,4.1,0.0,direct None / with changes 75,False
 Donostia / San Sebastián|bus,day,Pasaia,Villabona (slow),4.1,0.0,direct None / with changes 75,False
 Donostia / San Sebastián|bus,day,Villabona (slow),Zarautz,3.4,0.0,direct None / with changes 75,False
+Donostia / San Sebastián|bus,day,Villabona (slow),Zestoa,8.4,0.0,direct None / with changes 75,False
+Donostia / San Sebastián|bus,day,Hondarribia,Tolosa,11.7,0.0,direct None / with changes 120,False
+Donostia / San Sebastián|bus,day,Pasaia,Tolosa,3.9,0.0,direct None / with changes 120,False
+Donostia / San Sebastián|bus,day,Tolosa,Zarautz,3.9,0.0,direct None / with changes 95,False
+Donostia / San Sebastián|bus,day,Tolosa,Zestoa,5.3,0.0,direct None / with changes 112,False
 Donostia / San Sebastián|bus,night,Hernani (slow),Pasaia,4.4,4.3,direct None / with changes 382,False
 Donostia / San Sebastián|bus,night,Lasarte-Oria (slow),Pasaia,2.6,0.0,direct None / with changes 229,False
-Donostia / San Sebastián|bus,night,Pasaia,Usurbil,9.4,0.0,direct None / with changes 267,False
 Donostia / San Sebastián|bus,night,Pasaia,Zarautz,3.7,0.0,direct None / with changes 442,False
-Donostia / San Sebastián|bus,night,Hernani (slow),Pasaia,3.2,0.0,direct None / with changes 245,False
 Donostia / San Sebastián|bus,night,Hernani (slow),Zarautz,7.1,0.0,direct None / with changes 442,False
 Donostia / San Sebastián|bus,night,Hernani (slow),Zestoa,0.7,0.0,direct None / with changes 375,False
 Donostia / San Sebastián|bus,night,Pasaia,Zestoa,3.6,0.0,direct None / with changes 375,False
-Eibar|bus,peak,Elgoibar,Soraluze,12.3,0.0,direct None / with changes 107,False
 Eibar|bus,day,Elgoibar,Ermua · Gipuzkoa Hiribi…,6.5,0.0,direct 55 / with changes 33,False
-Eibar|bus,day,Elgoibar,Soraluze,10.5,0.0,direct None / with changes 100,False
 Eibar|bus,day,Loiu,Soraluze,9.0,0.0,direct None / with changes 165,False
 Eibar|bus,day,Ermua · Gipuzkoa Hiribi… (slow),Soraluze,10.6,0.0,direct None / with changes 195,False
-Eibar|bus,night,Elgoibar,Soraluze,10.0,0.0,direct None / with changes 350,False
 Elgoibar|bus,peak,Azpeitia,Deba,4.7,6.4,direct None / with changes 120,False
 Elgoibar|bus,peak,Azpeitia,Deba,3.1,0.0,direct None / with changes 120,False
 Elgoibar|bus,day,Deba,Ermua,8.5,6.4,direct None / with changes 75,False
 Elgoibar|bus,day,Azpeitia,Deba,3.7,6.4,direct None / with changes 120,False
-Elgoibar|bus,day,Eibar,Soraluze,9.6,0.0,direct None / with changes 180,False
 Elgoibar|bus,day,Azpeitia,Deba,2.1,0.0,direct None / with changes 120,False
 Elgoibar|bus,day,Azpeitia,Soraluze,5.3,0.0,direct None / with changes 180,False
-Errenteria|bus,peak,Oiartzun,Pasaia,7.8,6.2,direct None / with changes 38,False
 Errenteria|bus,peak,Donostia,Irun,2.4,6.2,direct None / with changes 60,False
-Errenteria|bus,peak,Donostia,Oiartzun,6.4,0.0,direct None / with changes 45,False
-Errenteria|bus,day,Oiartzun,Pasaia,8.6,6.2,direct None / with changes 48,False
-Errenteria|bus,day,Irun,Pasaia,3.0,6.2,direct None / with changes 32,False
 Errenteria|bus,day,Donostia,Irun,2.6,6.2,direct None / with changes 34,False
-Errenteria|bus,night,Oiartzun,Pasaia,10.0,6.2,direct None / with changes 424,False
 Errenteria|bus,night,Irun,Pasaia,1.9,6.2,direct None / with changes 375,False
 Errenteria|bus,night,Donostia,Oiartzun,3.6,0.0,direct None / with changes 407,False
-Hernani|bus,peak,Andoain,Donostia (fast),11.9,0.0,direct None / with changes 120,False
-Hernani|bus,day,Andoain,Donostia (fast),11.2,0.0,direct 480 / with changes 84,False
 Hondarribia|bus,peak,Donostia,Irun,0.8,0.0,direct None / with changes 90,False
 Hondarribia|bus,day,Donostia,Irun,2.6,0.0,direct None / with changes 61,False
-Lasarte-Oria|bus,peak,Andoain,Donostia,8.7,5.6,direct None / with changes 82,False
 Lasarte-Oria|bus,peak,Andoain,Hernani,6.0,0.0,direct None / with changes 60,False
 Lasarte-Oria|bus,peak,Andoain,Usurbil,6.2,0.0,direct None / with changes 75,False
-Lasarte-Oria|bus,day,Donostia,Hernani,3.4,5.6,direct None / with changes 75,False
-Lasarte-Oria|bus,day,Andoain,Usurbil,10.8,0.0,direct None / with changes 60,False
-Lasarte-Oria|bus,day,Donostia (slow),Usurbil,12.2,0.0,direct None / with changes 82,False
-Lasarte-Oria|bus,day,Donostia (fast),Usurbil,7.2,0.0,direct None / with changes 75,False
 Lasarte-Oria|bus,day,Andoain,Hernani,3.5,0.0,direct None / with changes 60,False
 Lasarte-Oria|bus,night,Andoain,Usurbil,6.8,0.0,direct None / with changes 375,False
 Loiu|bus,peak,Bilbao (fast),Zarautz,3.3,0.0,direct None / with changes 60,False
-Loiu|bus,day,Bilbao (fast),Zarautz,4.1,0.0,direct None / with changes 75,False
-Loiu|bus,day,Bilbao (fast),Eibar,7.1,0.0,direct None / with changes 255,False
 Ondarroa|bus,peak,Ermua · Baldespina Mark…,Mutriku,10.1,0.0,direct None / with changes 90,False
 Ondarroa|bus,day,Ermua · Baldespina Mark…,Mutriku,10.1,0.0,direct None / with changes 60,False
 Soraluze-Placencia de las Armas|bus,day,Eibar,Elgoibar,6.9,0.0,direct None / with changes 141,False
-Tolosa|bus,day,Beasain,Villabona,11.4,0.0,direct 480 / with changes 219,False
-Tolosa|bus,day,Abaltzisketa,Villabona,7.7,0.0,direct None / with changes 141,False
 Tolosa|bus,day,Albiztur,Villabona,2.9,0.0,direct None / with changes 260,False
 Usurbil|bus,peak,Aia,Lasarte-Oria (slow),2.3,0.0,direct None / with changes 60,False
 Usurbil|bus,day,Aia,Lasarte-Oria (slow),2.3,0.0,direct None / with changes 60,False
 Villabona|bus,peak,Larraul,Tolosa,3.3,0.0,direct None / with changes 120,False
-Villabona|bus,day,Donostia,Tolosa,5.0,5.8,direct None / with changes 90,False
 Villabona|bus,day,Beasain,Donostia (slow),1.6,5.8,direct None / with changes 300,False
 Zarautz|bus,peak,Donostia,Zumaia,6.4,0.0,direct 90 / with changes 60,False
 Zarautz|bus,day,Donostia,Zumaia,8.2,0.0,direct None / with changes 42,False

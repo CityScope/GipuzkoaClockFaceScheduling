@@ -323,6 +323,8 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
         if not best:
             return None, None, tr
         waits.alldirect = all(v[2] for v in best.values())        # every trip is the same vehicle continuing
+        waits.nall = len(best)                                   # departures reached (one per departure)
+        waits.ndir = sum(1 for v in best.values() if v[2])      # of which direct (same vehicle / same line, wait 0)
         waits.opts = [v[3] for v in best.values() if v[3] is not None]   # the changes among them (for the change minutes)
         return float(np.mean([v[1] for v in best.values()])), _hw(np.array(sorted(best)), wins), tr
     st_ = {}
@@ -360,7 +362,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                 st_[(x, y)] = dict(k="d", w=wgt, Hd=Hd, Hc=None, C=[], share=None, wait=None, walk=None)
                 continue
             ok = round(_wall) <= limw and len(C) >= 2 and _wall < hD[y] / 2
-            st_[(x, y)] = dict(k="c" if ok else "n", w=wgt, Hd=Hd, Hc=Hc if C else _hall, C=C if ok else [], share=len(C) / nA[x],
+            st_[(x, y)] = dict(k="c" if ok else "n", w=wgt, Hd=Hd, Hc=Hc if C else _hall, C=C if ok else [], share=len(C) / nA[x], nall=waits.nall, ndir=waits.ndir,
                                wait=_wall, walk=float(np.median([c[3] for c in C])) if C else _tr)
     # ---- symmetries: hands inside the timed changes of the coordinated directions
     need = {d: v for d, v in st_.items() if v["k"] not in ("f", "d")}     # directions that need coordination
@@ -377,11 +379,28 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
         IV = {d: [(int(round(c[0])), int(round(c[1]))) for c in v["C"]] for d, v in cd_.items()}
         fits = lambda iv, h: [((h - a) % 60) <= (b - a) for a, b in iv]       # arrival <= h <= departure (mod 60)
 
+        BAND = float(sum(b - a for a, b in wins))
+
+        def pays(d, f):
+            """Are the timed changes of any use? Timed = direct trips (wait 0) + the timed changes f; normal = every
+            departure reached (direct trips + all changes). Keeping only the timed ones loses headway, which must be paid
+            back by the wait saved: (band / N_timed - band / N_all) / 2 <= wait_all - wait_timed (headways counted:
+            band minutes / departures)."""
+            v = cd_[d]
+            nt = v["ndir"] + int(np.sum(f))
+            if nt == 0:
+                return False
+            wt = sum(c[2] for c, ok in zip(v["C"], f) if ok) / nt
+            na = max(nt, v["nall"])
+            return (BAND / nt - BAND / na) / 2 <= v["wait"] - wt + 1e-9
+
         def rel_fit(d, hs):
+            """Changes of relation d that fit the hands (arrival <= hand <= departure; >= 2 of them), or None when d is
+            not coordinated in this symmetry (the fitting changes are of no use, see pays())."""
             f = np.zeros(len(IV[d]), bool)
             for h in hs:
                 f |= np.array(fits(IV[d], h), bool)
-            return f if (f.sum() >= 2 and f.mean() >= 0.5) else None
+            return f if (f.sum() >= 2 and pays(d, f)) else None
 
         def slack(d, hs, f):                                      # how central the hands lie in the fitting changes
             s_ = 0
@@ -430,6 +449,9 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             _, hs, got = max(pick, key=lambda z: z[0])
             groups_.append([list(hs), sum(cd_[d]["w"] for d in got), list(got), got])
             pool -= set(got)
+        for d in pool:                                                # left over (in no symmetry): its timed changes must be of use
+            if len(cd_[d]["C"]) < 2 or not pays(d, np.ones(len(cd_[d]["C"]), bool)):
+                st_[d].update(k="n", C=[])
         for d in cd_:                                                 # the timed changes of a relation in a symmetry: those that fit it
             for g in groups_:
                 if d in g[3]:

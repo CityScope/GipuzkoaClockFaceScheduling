@@ -8,7 +8,6 @@ Garsten|bigrail,48.02341115,14.407252395,Garsten Bahnhof,Garsten,bigrail,Garsten
 Grünau im Almtal|bigrail,47.85366295,13.95159993,Grünau im Almtal Bahnhof,Grünau im Almtal,bigrail,Grünau im Almtal,Grünau im Almtal · National railways,10.0,1.0,15.0,True,Grünau im Almtal|bigrail
 Gunskirchen|bigrail,48.13216432,13.945406049999999,Gunskirchen Bahnhof,Gunskirchen,bigrail,Gunskirchen,Gunskirchen · National railways,37.0,1.0,42.0,True,Gunskirchen|bigrail
 Gurten|bigrail,48.244109705,13.334354025,Gurten OÖ Bahnhst,Gurten,bigrail,Gurten,Gurten · National railways,12.0,2.0,22.0,True,Gurten|bigrail
-Hörsching|bigrail,48.245745865,14.186356665,Hörsching Bahnhst,Hörsching,bigrail,Hörsching,Hörsching · National railways,39.0,2.0,49.0,True,Hörsching|bigrail
 Kirchdorf an der Krems|bigrail,47.906121604999996,14.116288075,Kirchdorf/Krems Bahnhof,Kirchdorf an der Krems,bigrail,Kirchdorf an der Krems,Kirchdorf an der Krems · National railways,33.0,4.0,53.0,True,Kirchdorf an der Krems|bigrail
 Lambach|bigrail,48.094168859999996,13.888583115,Lambach OÖ Bahnhof,Lambach,bigrail,Lambach,Lambach · National railways,37.0,1.0,42.0,True,Lambach|bigrail
 Lambach|localrail,48.09424986,13.88896939,Lambach OÖ Bahnhof,Lambach,localrail,Lambach,Lambach · Local railways,10.0,1.0,15.0,True,Lambach|bigrail
@@ -58,7 +57,7 @@ Haibach ob der Donau|bus,48.409858075,13.91637699,Haibach ob der Donau Ortsmitte
 Hargelsberg|bus,48.14974308,14.42512887,Hargelsberg Ortsmitte,Hargelsberg,bus,Hargelsberg,Hargelsberg · Regional bus,0.0,0.0,0.0,True,Hargelsberg|bus
 Hellmonsödt|bus,48.430661689999994,14.2944487,Hellmonsödt Glasau (B126),Hellmonsödt,bus,Hellmonsödt,Hellmonsödt · Regional bus,49.0,7.0,84.0,True,Hellmonsödt|bus
 Herzogsdorf|bus,48.396991289999995,14.076651406666668,Gerling OÖ Bahnhst,Herzogsdorf,bus,Herzogsdorf,Herzogsdorf · Regional bus,40.0,6.0,70.0,True,Herzogsdorf|bus
-Hörsching|bus,48.245315145000006,14.186244375,Hörsching Bahnhst,Hörsching,bus,Hörsching,Hörsching · Regional bus,34.0,4.0,54.0,True,Hörsching|bigrail
+Hörsching|bus,48.245315145000006,14.186244375,Hörsching Bahnhst,Hörsching,bus,Hörsching,Hörsching · Regional bus,34.0,4.0,54.0,True,Hörsching|bus
 Kirchberg-Thening|bus,48.254736339999994,14.115075345000001,Axberg Abzw Schauersfreiling,Kirchberg-Thening,bus,Kirchberg-Thening,Kirchberg-Thening · Regional bus,0.0,0.0,0.0,True,Kirchberg-Thening|bus
 Kirchdorf an der Krems|bus,47.906026458,14.118875222,Kirchdorf/Krems Bahnhof,Kirchdorf an der Krems,bus,Kirchdorf an der Krems,Kirchdorf an der Krems · Regional bus,5.0,2.0,15.0,True,Kirchdorf an der Krems|bigrail
 Kremsmünster|bus,48.05341025,14.14079411,Kremsmünster Bahnhof,Kremsmünster,bus,Kremsmünster,Kremsmünster · Regional bus,3.0,1.0,8.0,True,Kremsmünster|bus
