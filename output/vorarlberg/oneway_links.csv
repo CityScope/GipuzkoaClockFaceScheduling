@@ -1,38 +1,8 @@
 a,b,mode,trips_day,action
-Bludenz|localrail,Ludesch|localrail,localrail,1,kept one-way (only service of its line)
 Bregenz|bigrail,Schwarzach|bigrail,bigrail,2,via Wolfurt|bigrail
 Dornbirn|bigrail,Wolfurt|bigrail,bigrail,3,via Schwarzach|bigrail
-Dornbirn|localrail,Schwarzach|localrail,localrail,1,kept one-way (only service of its line)
 Feldkirch|bigrail,Nenzing|bigrail,bigrail,1,via Frastanz|bigrail
-Feldkirch|localrail,Rankweil|localrail,localrail,1,kept one-way (only service of its line)
-Frastanz|localrail,Feldkirch|localrail,localrail,1,kept one-way (only service of its line)
-Götzis|localrail,Hohenems|localrail,localrail,1,kept one-way (only service of its line)
-Hohenems|localrail,Dornbirn|localrail,localrail,1,kept one-way (only service of its line)
-Klaus|localrail,Götzis|localrail,localrail,1,kept one-way (only service of its line)
 Ludesch|bigrail,Feldkirch|bigrail,bigrail,1,via Nenzing|bigrail
 Lustenau|bigrail,Feldkirch|bigrail,bigrail,1,via St. Margrethen|bigrail - Dornbirn|bigrail
-Nenzing|localrail,Frastanz|localrail,localrail,1,kept one-way (only service of its line)
-Rankweil|localrail,Klaus|localrail,localrail,1,kept one-way (only service of its line)
 Schoppernau|bus,Andelsbuch|bus,bus,2,via Bezau|bus
-Schwarzach|localrail,Wolfurt|localrail,localrail,1,kept one-way (only service of its line)
-Bludenz|localrail,Ludesch|localrail,localrail,1,kept one-way (only service of its line)
-Dornbirn|localrail,Schwarzach|localrail,localrail,1,kept one-way (only service of its line)
-Feldkirch|localrail,Rankweil|localrail,localrail,1,kept one-way (only service of its line)
-Frastanz|localrail,Feldkirch|localrail,localrail,1,kept one-way (only service of its line)
-Götzis|localrail,Hohenems|localrail,localrail,1,kept one-way (only service of its line)
-Hohenems|localrail,Dornbirn|localrail,localrail,1,kept one-way (only service of its line)
-Klaus|localrail,Götzis|localrail,localrail,1,kept one-way (only service of its line)
 Nenzing|bigrail,Feldkirch|bigrail,bigrail,1,via Frastanz|bigrail
-Nenzing|localrail,Frastanz|localrail,localrail,1,kept one-way (only service of its line)
-Rankweil|localrail,Klaus|localrail,localrail,1,kept one-way (only service of its line)
-Schwarzach|localrail,Wolfurt|localrail,localrail,1,kept one-way (only service of its line)
-Bludenz|localrail,Ludesch|localrail,localrail,1,kept one-way (only service of its line)
-Dornbirn|localrail,Schwarzach|localrail,localrail,1,kept one-way (only service of its line)
-Feldkirch|localrail,Rankweil|localrail,localrail,1,kept one-way (only service of its line)
-Frastanz|localrail,Feldkirch|localrail,localrail,1,kept one-way (only service of its line)
-Götzis|localrail,Hohenems|localrail,localrail,1,kept one-way (only service of its line)
-Hohenems|localrail,Dornbirn|localrail,localrail,1,kept one-way (only service of its line)
-Klaus|localrail,Götzis|localrail,localrail,1,kept one-way (only service of its line)
-Nenzing|localrail,Frastanz|localrail,localrail,1,kept one-way (only service of its line)
-Rankweil|localrail,Klaus|localrail,localrail,1,kept one-way (only service of its line)
-Schwarzach|localrail,Wolfurt|localrail,localrail,1,kept one-way (only service of its line)

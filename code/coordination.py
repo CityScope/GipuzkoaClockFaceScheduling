@@ -523,7 +523,16 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                 top.append(int(m_))
             if len(top) == 2:
                 break
-        return [sorted(top), None, rh(_hw(sorted(ts), wins))]
+        # headway of the symmetry services: services of one direction in the same pulse (e.g. an S-Bahn and an IR arriving
+        # a few minutes apart before :00) are one service of that pulse -> never better than the pulse period
+        # measured in pulses: each service belongs to the nearest pulse of the symmetry (hand + k x period); a pulse counts
+        # once -> the headway of the symmetry services is never better than the symmetry period
+        per_ = 30 if len(set(hands)) > 1 else 60
+        h0 = min(hands) % per_
+        first_ = {}
+        for t_ in sorted(ts):                         # real time of the first service of each pulse (band edges stay right)
+            first_.setdefault(round((t_ - h0) / per_), t_)
+        return [sorted(top), None, rh(max(per_, _hw(sorted(first_.values()), wins)))]
     sym_dirs = defaultdict(list)
     for d, gi in gof.items():
         sym_dirs[gi].append(d)
@@ -558,7 +567,9 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             if not ins and not outs:
                 continue
             ti = timing([v[0] for v in ins.values()], hands, True); to = timing([v[0] for v in outs.values()], hands, False)
-            rec["g"][gi] = [ti, to, sorted({v[1] for v in ins.values()} | {v[1] for v in outs.values()})]
+            wks = [c[3] or 0 for d in dirs_ if d[0] in ks or d[1] in ks for c in st_[d]["C"]]   # walk of its timed changes (median: most of them)
+            rec["g"][gi] = [ti, to, sorted({v[1] for v in ins.values()} | {v[1] for v in outs.values()}),
+                            round(float(np.median(wks))) if wks else 0]
     net = dict(st=stl, wk=wkl, ed=[[r_["i"], r_["nb"], r_["sy"], r_["la"], r_["lo"], sorted(([l_, h_] for l_, h_ in r_["ln"].items()), key=lambda z: z[1]),
                                     {str(k_): v_ for k_, v_ in r_["g"].items()}, rh(r_.get("hi", 999.0)), rh(r_.get("ho", 999.0)), r_["wk"], r_["via"]]
                                    for r_ in edl.values() if r_["la"] is not None and (r_["wk"] is None or r_["g"])])

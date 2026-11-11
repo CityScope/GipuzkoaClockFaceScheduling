@@ -499,11 +499,15 @@ let map;
    const W=520,cx=W/2,cy=0,la0=net.st.reduce((s,x)=>s+x[3],0)/net.st.length,lo0=net.st.reduce((s,x)=>s+x[4],0)/net.st.length,kx=Math.cos(la0*Math.PI/180);
    const gk=String(G),hs=ys.length?ys[G].h:[];
    // one spoke per neighbour (modes / stations of the same neighbour together)
+   // walk from a station of this node to its main station (the one of the popup): a spoke leaving from another station
+   // (bus station, local-rail station) needs that walk for its changes
+   const mainI=Math.max(0,net.st.findIndex(x=>x[0]===id)),wkTo=(i)=>i===mainI||i<0?0:((net.wk.find(w=>(w[0]===i&&w[1]===mainI)||(w[1]===i&&w[0]===mainI))||[0,0,0])[2]);
    const spk={};for(const e of net.ed){if(e[9]!=null&&!(ys.length&&e[6][gk]))continue;   // walk directions: only when used in the selected symmetry
     const k=e[9]!=null?e[1]+'¦w':e[1];const s=spk[k]||(spk[k]={nb:e[1],wk:e[9],via:e[10],sy:e[2],la:e[3],lo:e[4],ln:{},in:[],out:[],hwi:null,hwo:null,used:new Set(),fh:999});
     s.fh=Math.min(s.fh,e[7]??999,e[8]??999);
     for(const [l,h_] of e[5])spk[k].ln[l]=Math.min(spk[k].ln[l]??999,h_);
-    const g=ys.length?e[6][gk]:null;if(g){if(g[0]){s.in.push(...g[0][0]);s.hwi=g[0][2];}if(g[1]){s.out.push(...g[1][0]);s.hwo=g[1][2];}g[2].forEach(x=>s.used.add(x));}}
+    const g=ys.length?e[6][gk]:null;if(g){if(g[0]){s.in.push(...g[0][0]);s.hwi=g[0][2];}if(g[1]){s.out.push(...g[1][0]);s.hwo=g[1][2];}g[2].forEach(x=>s.used.add(x));s.wch=Math.max(s.wch||0,g[3]||0);}s.wkc=Math.min(s.wkc??99,wkTo(e[0]));}
+   for(const s of Object.values(spk))if(s.wkc===99)s.wkc=0;
    let E=Object.values(spk).map(s=>({s,a:Math.atan2((s.lo-lo0)*kx,(s.la-la0))})).sort((p,q)=>p.a-q.a);
    const minA=Math.min(0.62,2*Math.PI/Math.max(1,E.length)*0.92);
    for(let it=0;it<60;it++)for(let k=0;k<E.length;k++){const p=E[k],q=E[(k+1)%E.length];let d=q.a-p.a;if(k===E.length-1)d+=2*Math.PI;if(d<minA&&E.length>1){const f=(minA-d)/2;p.a-=f;q.a+=f;}}
@@ -512,7 +516,7 @@ let map;
    const med=(a,arr)=>{const o=off(a,arr);return o.length?o[Math.floor((o.length-1)/2)]:null;};   // median offset (min) from the symmetry minute
    const tw_=(t)=>[...t].reduce((w,c)=>w+(/[0-9]/.test(c)?5.2:c==='′'?2.4:c===' '?2.6:c==='/'||c==='·'?3:5.6),0);   // approx. text width at 9px
    let sv='';const LB=[],SL=[],SEG=[];
-   for(const [ki,p] of E.entries()){const s=p.s,sx=Math.sin(p.a),sy_=-Math.cos(p.a),lim=s.sy==='bus'?12:6;
+   for(const [ki,p] of E.entries()){const s=p.s,sx=Math.sin(p.a),sy_=-Math.cos(p.a),lim=(s.sy==='bus'?12:6)+Math.max(s.wch||0,s.wkc?s.wkc+2:0);   // + walk and change penalty when its timed changes need a walk
     // a direction works in the symmetry only if it arrives / leaves within the window around the symmetry minute
     const vi0=hs.length?med(s.in,true):null,vo0=hs.length?med(s.out,false):null,vi=vi0!=null&&vi0<=lim?vi0:null,vo=vo0!=null&&vo0<=lim?vo0:null;
     const both=vi!=null&&vo!=null,one=vi!=null||vo!=null,fq=s.fh<CFG.freq&&!one;   // frequent: no timing needed
@@ -547,7 +551,7 @@ let map;
     const wH=(mn,h_)=>mn==null?0:7+String(mn).length*6.3+3+(h_?3+8+String(h_).length*5.2+2.5:0);
     const Lh=flip?half(ao,hO,true):half(ai,hI,true),Rh=flip?half(ai,hI,false):half(ao,hO,false);
     const wL=flip?wH(ao,hO):wH(ai,hI),wR=flip?wH(ai,hI):wH(ao,hO);
-    if(Lh||Rh)SL.push({sx,sy_,ang,cls:'nmin'+cls,t:[Lh,Rh].filter(Boolean).join(' <tspan class="nsep">│</tspan> '),col:lc,fs:11,w:wL+wR+(Lh&&Rh?12:0)+8,pri,r0:70});
+    if(Lh||Rh)SL.push({sx,sy_,ang,cls:'nmin'+cls,t:[Lh,Rh].filter(Boolean).join(' <tspan class="nsep">│</tspan> ')+(one&&s.wkc?` <tspan class="nrep">🚶${s.wkc}′</tspan>`:''),col:lc,fs:11,w:(one&&s.wkc?24:0)+wL+wR+(Lh&&Rh?12:0)+8,pri,r0:70});
     SEG.push([sx,sy_]);
     const L=Object.entries(s.ln).map(([l,h_])=>[l.split(' ')[0].slice(0,8),h_,s.used.has(l)]).sort((u,v)=>(v[2]-u[2])||u[1]-v[1]);
     const Ls=[];for(const x of L)if(!Ls.some(y=>y[0]===x[0]))Ls.push(x);
@@ -565,7 +569,7 @@ let map;
     const tW=(t,fs)=>[...t.replace(/<[^>]+>/g,'')].reduce((w,c)=>w+(/[0-9]/.test(c)?0.6:c==='′'?0.28:c===' '?0.28:c==='\u2002'?0.5:c==='·'?0.3:0.75),0)*fs+8;
     SL.sort((u,v)=>u.pri-v.pri);
     for(const L_ of SL){let best=null;
-     for(let r=L_.r0;r<=R1-L_.w/2;r+=3){const ccx=cx+L_.sx*r,ccy=cy+L_.sy_*r,n=Math.max(2,Math.round(L_.w/7));
+     for(let r=Math.min(L_.r0,Math.max(R0+L_.w/2,R1-L_.w/2));r<=Math.max(L_.r0,R1-L_.w/2);r+=3){const ccx=cx+L_.sx*r,ccy=cy+L_.sy_*r,n=Math.max(2,Math.round(L_.w/7));
       const pts=[];for(let k=0;k<n;k++){const f=(k/(n-1)-0.5)*(L_.w-6);pts.push([ccx+L_.sx*f,ccy+L_.sy_*f]);}
       const c=pts.reduce((a,[x,y])=>a+near(x,y,[L_.sx,L_.sy_]),0);
       if(!best||c<best.c-0.01)best={c,x:ccx,y:ccy,pts};if(c===0)break;}
@@ -585,7 +589,7 @@ let map;
    sv+=`<circle cx="${cx}" cy="${cy}" r="${R0}" fill="var(--bg)" stroke="var(--ink)" stroke-width="2"/>`;
    for(const h_ of hs){const t=h_/60*2*Math.PI;sv+=`<line x1="${cx}" y1="${cy}" x2="${(cx+Math.sin(t)*(R0-3)).toFixed(1)}" y2="${(cy-Math.cos(t)*(R0-3)).toFixed(1)}" stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round" ${ys[G].st==='dotted'?'stroke-dasharray="2.5 2"':''}/>`;}
    sv=`<svg class="netsvg" viewBox="0 ${y0.toFixed(0)} ${W} ${(y1-y0).toFixed(0)}" width="100%">`+sv+`</svg>`;
-   const stc=net.st.length>1?`<div class="netst">${net.st.map(s=>`${dotk(s[2])} ${s[1]}`).join(' · ')}${net.wk.length?' · '+net.wk.map(w=>w[2]+'′ walk').join(', '):''}</div>`:'';
+   const stc=net.st.length>1?`<div class="netst">${dotk(net.st[mainI][2])} ${net.st[mainI][1]}${net.st.map((s,i)=>i===mainI?'':` · ${dotk(s[2])} 🚶${wkTo(i)}′`).join('')}</div>`:'';
    h+=`<div class="netbox">${sv}</div>${stc}`;}
   // one block per relation: station A (lines below) | → with timing / without timing, ← the same | station B (lines below)
   const f1=(v)=>v==null?'–':Math.round(v)+'′';

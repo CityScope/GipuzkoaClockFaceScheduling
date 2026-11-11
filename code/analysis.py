@@ -597,6 +597,22 @@ def build(feeds: list[dict], ref=None, exclude=None, merge=None):
               f"{len(minor)} other (only between existing nodes), {len(bad)} town buses dropped")
     if "minor" not in st:
         st["minor"] = False
+    # a rail trip takes the mode of its LINE (feed + line name): one S1 trip run under another route entry (other operator)
+    # must not create a parallel set of local-rail stations with a single trip
+    rail_ = st["mode"].isin(RAIL_SYSTEMS)
+    if rail_.any():
+        ln_ = st.route_key.astype(str).str.split("@").str[0]
+        tm_ = st[rail_].assign(ln=ln_[rail_]).groupby(["ln", "mode"]).trip_key.nunique()
+        maj_ = {}
+        for (l_, mo_), n_ in tm_.items():
+            tot_ = tm_[l_].sum()
+            if n_ >= 0.8 * tot_ and n_ > maj_.get(l_, ("", 0))[1]:
+                maj_[l_] = (mo_, n_)
+        newm_ = ln_[rail_].map(lambda l_: maj_.get(l_, (None,))[0])
+        chg_ = newm_.notna() & (newm_ != st.loc[rail_, "mode"])
+        if chg_.any():
+            st.loc[chg_[chg_].index, "mode"] = newm_[chg_]
+            print(f"   rail trips moved to the mode of their line: {st.loc[chg_[chg_].index].trip_key.nunique()}")
     # a stop belongs to a node per SYSTEM of the trips that call there (one feed can mix trains and buses)
     st = st.merge(stops[["stop_key", "town", "stop_lat", "stop_lon"]], on="stop_key")
     st["node"] = st.town + "|" + st["mode"]
