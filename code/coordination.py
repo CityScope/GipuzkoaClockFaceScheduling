@@ -188,6 +188,7 @@ def _hw(t, wins):
 COORD_WAIT_RAIL = 6           # a change is coordinated with a wait <= 6 min ...
 WEIGHT_MODE = "freq"          # "freq" (60/worse headway), "headway" (worse headway) or "equal" (1; 0 if rarer than THIN_MAX)
 THIN_MAX = 120
+SYM_EDGE_HW = 1.25            # an edge running more often than the symmetry period: its symmetry services every <= 1.25 x period
 SYM_GROUP_HW = 60             # a group of timed connections running every <= 60 min always makes a symmetry
 SYM_ONE_MIN = 0.5             # a (half) symmetry needs more than this share connected at least one way
 WAIT_SHARE_H = 0.0            # test switch: wait limit up to this share of the worse headway (0 = fixed limits)
@@ -420,6 +421,25 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                     r5 = int(round(h / 5) * 5) % 60
                     hands.append(r5 if min((h - r5) % 60, (r5 - h) % 60) <= SNAP_MIN else h)
             if not hands:
+                continue
+            # an edge that runs more often than the symmetry repeats must be timed in (nearly) every pulse: the headway of its
+            # symmetry services (pulses with a timed change, each pulse once) at most 1.25 x the symmetry period
+            per_ = 30 if len(set(hands)) > 1 else 60
+            h0_ = min(hands) % per_
+            def _phw(ts_):
+                first_ = {}
+                for t_ in sorted(ts_):
+                    first_.setdefault(round((t_ - h0_) / per_), t_)
+                return max(per_, _hw(sorted(first_.values()), wins))
+            bad_in, bad_out = set(), set()
+            for e_ in {d[0] for d in dirs}:
+                if hA[e_] < per_ and _phw([c[0] for d in dirs if d[0] == e_ for c in st_[d]["C"]]) > SYM_EDGE_HW * per_:
+                    bad_in.add(e_)
+            for e_ in {d[1] for d in dirs}:
+                if hD[e_] < per_ and _phw([c[1] for d in dirs if d[1] == e_ for c in st_[d]["C"]]) > SYM_EDGE_HW * per_:
+                    bad_out.add(e_)
+            dirs = [d for d in dirs if d[0] not in bad_in and d[1] not in bad_out]
+            if len(dirs) < 2:
                 continue
             GE = {e for d in dirs for e in d}
             pairs = {tuple(sorted(d)) for d in need if d[0] in GE and d[1] in GE}

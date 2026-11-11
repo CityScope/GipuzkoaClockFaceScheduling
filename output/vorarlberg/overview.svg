@@ -172,8 +172,6 @@
 <circle cx='1471.4' cy='1404.8' r='2.5' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <circle cx='792.6' cy='1541.7' r='7.2' fill='#2ca02c' stroke='#fff' stroke-width='1.2'/>
 <circle cx='792.6' cy='1541.7' r='3.6' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
-<line x1='792.6' y1='1541.7' x2='794.7' y2='1531.7' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='792.6' y1='1541.7' x2='792.6' y2='1551.8' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='475.5' cy='491.5' r='8.4' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='475.5' cy='491.5' r='4.2' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <line x1='475.5' y1='491.5' x2='485.4' y2='497.2' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
@@ -186,8 +184,6 @@
 <line x1='624.5' y1='480.9' x2='624.5' y2='470.7' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <line x1='624.5' y1='480.9' x2='619.4' y2='489.6' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='667.5' cy='627.8' r='6.8' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
-<line x1='667.5' y1='627.8' x2='677.1' y2='625.8' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='667.5' y1='627.8' x2='657.8' y2='629.8' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='697.2' cy='1488.2' r='4.6' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='754.0' cy='676.7' r='6.4' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='814.6' cy='713.1' r='4.7' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
@@ -195,8 +191,6 @@
 <circle cx='735.4' cy='952.3' r='4.7' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='412.5' cy='1103.0' r='4.5' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='753.8' cy='533.1' r='6.9' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
-<line x1='753.8' y1='533.1' x2='753.8' y2='523.2' stroke='#000' stroke-width='2' stroke-linecap='round'/>
-<line x1='753.8' y1='533.1' x2='753.8' y2='542.9' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <circle cx='1096.9' cy='1869.9' r='5.4' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='261.4' cy='1071.5' r='5.2' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='224.5' cy='437.9' r='7.8' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
@@ -215,7 +209,6 @@
 <circle cx='302.7' cy='1125.7' r='6.7' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='668.4' cy='96.1' r='4.8' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='367.8' cy='1179.3' r='6.8' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
-<line x1='367.8' y1='1179.3' x2='372.7' y2='1170.8' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='408.2' cy='1151.9' r='5.2' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='984.8' cy='876.0' r='5.5' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1025.2' cy='547.3' r='4.6' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
@@ -254,4 +247,4 @@
 <text x='803.5' y='476.7' font-size='11' fill='#222' stroke='#fff' stroke-width='3' paint-order='stroke'>Lingenau</text>
 <text x='192.2' y='811.4' font-size='11' fill='#222' stroke='#fff' stroke-width='3' paint-order='stroke'>Koblach</text>
 <text x='34.6' y='1075.0' font-size='11' fill='#222' stroke='#fff' stroke-width='3' paint-order='stroke'>Ruggell</text>
-<text x='14' y='20' font-size='15' font-weight='bold'>Vorarlberg public transport - weekday: 72 nodes, 108 connections, 20 symmetry nodes (peak)</text></svg>
+<text x='14' y='20' font-size='15' font-weight='bold'>Vorarlberg public transport - weekday: 72 nodes, 108 connections, 16 symmetry nodes (peak)</text></svg>
