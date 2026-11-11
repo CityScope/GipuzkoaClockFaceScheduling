@@ -6,22 +6,24 @@ Eferding|bus,peak,40,60,0.0,0.6,3,Regional bus,dotted
 Eferding|bus,day,29,60,0.36,0.54,4,Regional bus,dotted
 Eferding|bus,night,"28,58",30,0.0,1.0,2,Local railways + Regional bus,dotted
 Enns|bigrail,peak,"14,44",30,0.15,0.77,6,National railways + Regional bus,dotted
-Lambach|bigrail,peak,35,60,0.0,0.72,3,National railways + Local railways + Regional bus,dotted
+Lambach|bigrail,peak,35,60,0.28,0.72,3,National railways + Local railways + Regional bus,dotted
+Lambach|bigrail,peak,25,60,0.29,0.71,3,National railways + Regional bus,dotted
 Lambach|bigrail,day,25,60,0.16,0.5,16,National railways + Regional bus,dotted
 Lambach|bigrail,day,35,60,0.33,0.67,3,National railways + Local railways + Regional bus,dotted
 Leonding|bigrail,peak,"20,50",30,0.0,1.0,2,National railways + Regional bus,dotted
-Pregarten|bigrail,peak,40,60,1.0,1.0,2,National railways + Regional bus,solid
+Pregarten|bigrail,peak,40,60,0.41,0.61,5,National railways + Regional bus,dotted
 Sankt Valentin|bigrail,peak,"19,49",30,0.0,0.66,5,National railways,dotted
 Sankt Valentin|bigrail,day,"20,50",30,0.34,0.42,8,National railways,dotted
 Sankt Valentin|bigrail,day,"10,40",30,0.71,0.71,3,National railways,solid
-Steyr|bigrail,peak,"14,44",30,0.0,0.54,5,National railways + Regional bus,dotted
+Steyr|bigrail,peak,18,60,0.48,0.44,5,National railways + Regional bus,dotted
 Traun|bigrail,day,"23,53",30,0.0,1.0,2,National railways + Regional bus,dotted
+Wels|bigrail,peak,22,60,0.12,0.56,13,National railways + Regional bus,dotted
 Wels|bigrail,day,37,60,0.5,1.0,2,National railways + Regional bus,dotted
 Bad Hall|bus,peak,20,60,0.43,0.72,3,Regional bus,dotted
 Freistadt|bus,peak,"9,39",30,0.0,0.62,5,Regional bus,dotted
 Gaspoltshofen|bus,peak,5,60,0.42,0.62,5,Regional bus,dotted
 Haag am Hausruck|bus,day,35,60,0.0,0.59,3,Regional bus,dotted
 Ottensheim|bus,peak,"12,42",30,0.5,0.72,4,Regional bus,dotted
-Sierning|bus,peak,25,60,0.42,1.0,2,Regional bus,dotted
+Sierning|bus,peak,25,60,1.0,1.0,2,Regional bus,solid
 Steinerkirchen an der Traun|bus,day,56,60,0.39,1.0,2,Regional bus,dotted
 Wallern an der Trattnach|bus,peak,52,60,0.67,1.0,2,Regional bus,solid

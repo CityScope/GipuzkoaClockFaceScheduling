@@ -81,12 +81,14 @@ Götzis|bigrail,peak,Hohenems,Rankweil,5.0,3.0,direct None / with changes 75,Fal
 Götzis|bigrail,peak,Klaus,Koblach,2.0,3.0,direct None / with changes 60,False
 Götzis|bigrail,peak,Hohenems,Klaus,1.0,3.0,direct None / with changes 60,False
 Götzis|bigrail,peak,Hohenems,Rankweil,3.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,peak,Hohenems,Koblach,0.0,0.0,direct None / with changes 60,False
 Götzis|bigrail,peak,Koblach,Rankweil,10.0,0.0,direct None / with changes 60,False
 Götzis|bigrail,day,Hohenems,Koblach,2.0,3.0,direct None / with changes 60,False
 Götzis|bigrail,day,Klaus,Koblach,2.0,3.0,direct None / with changes 60,False
 Götzis|bigrail,day,Hohenems,Rankweil,5.8,3.0,direct None / with changes 52,False
 Götzis|bigrail,day,Hohenems,Klaus,1.0,3.0,direct None / with changes 60,False
 Götzis|bigrail,day,Hohenems,Rankweil,3.0,3.0,direct None / with changes 60,False
+Götzis|bigrail,day,Hohenems,Koblach,0.0,0.0,direct None / with changes 60,False
 Götzis|bigrail,day,Koblach,Rankweil,10.0,0.0,direct None / with changes 60,False
 Götzis|bigrail,night,Hohenems,Koblach,3.0,3.0,direct None / with changes 427,False
 Götzis|bigrail,night,Klaus,Koblach,3.0,3.0,direct None / with changes 427,False
@@ -148,6 +150,7 @@ Rankweil|bigrail,peak,Feldkirch,Laterns,2.2,4.8,direct None / with changes 90,Fa
 Rankweil|bigrail,peak,Götzis,Laterns,1.2,4.8,direct None / with changes 90,False
 Rankweil|bigrail,peak,Göfis,Klaus,1.2,4.8,direct None / with changes 90,False
 Rankweil|bigrail,peak,Feldkirch,Laterns,0.0,0.0,direct None / with changes 90,False
+Rankweil|bigrail,day,Feldkirch,Götzis,3.5,4.8,direct None / with changes 45,False
 Rankweil|bigrail,day,Feldkirch,Götzis,3.2,4.8,direct None / with changes 60,False
 Rankweil|bigrail,day,Feldkirch,Klaus,4.2,4.8,direct None / with changes 60,False
 Rankweil|bigrail,day,Göfis,Klaus,1.2,4.8,direct None / with changes 60,False

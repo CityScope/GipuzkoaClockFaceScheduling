@@ -20,12 +20,11 @@ Errenteria|euskotren,day,Donostia,Irun,2.1,6.2,direct None / with changes 75,Fal
 Errenteria|euskotren,day,Errenteria,Irun,2.7,6.2,direct None / with changes 210,False
 Lasarte-Oria|euskotren,peak,Donostia,Hernani,0.1,5.6,direct None / with changes 90,False
 Lasarte-Oria|euskotren,day,Donostia,Hernani,0.1,5.6,direct None / with changes 375,False
-Pasaia|bus,peak,Donostia,Errenteria,8.7,4.0,direct None / with changes 68,False
-Pasaia|bus,peak,Donostia,Errenteria,0.7,0.0,direct 45 / with changes 27,False
 Pasaia|bus,day,Donostia,Irun,4.0,3.2,direct None / with changes 56,False
 Pasaia|bus,day,Donostia,Errenteria,6.2,4.0,direct None / with changes 27,False
+Pasaia|bus,night,Donostia,Irun,1.0,3.2,direct None / with changes 310,False
 Pasaia|bus,night,Donostia,Errenteria,7.3,4.0,direct None / with changes 102,False
-Pasaia|bus,night,Donostia,Oiartzun,0.6,0.0,direct 480 / with changes 120,False
+Pasaia|bus,night,Donostia,Oiartzun,0.6,0.0,direct 480 / with changes 75,False
 Zestoa|euskotren,peak,Azpeitia,Deba,11.1,4.9,direct None / with changes 90,False
 Zestoa|euskotren,day,Aia,Azpeitia,5.1,4.9,direct None / with changes 60,False
 Zestoa|euskotren,day,Azpeitia,Deba,11.1,4.9,direct None / with changes 60,False
@@ -108,6 +107,7 @@ Errenteria|bus,night,Donostia,Oiartzun,7.4,0.0,direct None / with changes 442,Fa
 Hondarribia|bus,peak,Donostia,Irun,1.6,0.0,direct None / with changes 90,False
 Hondarribia|bus,day,Donostia,Irun,2.6,0.0,direct None / with changes 61,False
 Lasarte-Oria|bus,peak,Donostia,Hernani,0.1,5.6,direct None / with changes 90,False
+Lasarte-Oria|bus,peak,Andoain,Usurbil,6.8,0.0,direct None / with changes 90,False
 Lasarte-Oria|bus,peak,Andoain,Hernani,3.5,0.0,direct None / with changes 90,False
 Lasarte-Oria|bus,day,Donostia,Hernani,0.1,5.6,direct None / with changes 375,False
 Loiu|bus,peak,Bilbao (fast),Zarautz,3.3,0.0,direct None / with changes 60,False

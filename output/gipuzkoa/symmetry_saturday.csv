@@ -13,7 +13,7 @@ Zumarraga|bus,day,11,60,0.0,0.7,3,Bus,dotted
 Zumarraga|bus,day,0,60,0.0,0.7,3,Bus,dotted
 Bilbao|bus,day,59,60,0.3,0.8,6,Bus,dotted
 Donostia / San Sebastián|bus,day,"27,57",30,0.38,0.78,22,Bus,dotted
-Donostia / San Sebastián|bus,night,5,60,0.0,0.56,3,Bus,dotted
+Donostia / San Sebastián|bus,night,5,60,0.44,0.56,3,Bus,dotted
 Elgoibar|bus,peak,"13,43",30,0.46,1.0,4,Euskotren + Bus,dotted
 Elgoibar|bus,day,13,60,0.25,0.75,7,Euskotren + Bus,dotted
 Hernani|bus,peak,45,60,0.0,0.55,3,Bus,dotted

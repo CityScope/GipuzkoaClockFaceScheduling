@@ -1,7 +1,7 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Dagmersellen|bigrail,peak,"26,56",30,0.66,0.83,3,National railways + Regional bus,solid
 Dagmersellen|bigrail,day,"26,56",30,0.66,0.83,3,National railways + Regional bus,solid
-Ebikon|bigrail,peak,"15,45",30,0.63,0.87,4,Regional bus,solid
+Ebikon|bigrail,peak,"15,45",30,0.63,1.0,4,Regional bus,solid
 Hochdorf|bigrail,day,25,60,0.84,1.0,3,National railways + Regional bus,solid
 Luzern|bigrail,peak,"1,31",30,0.31,0.41,71,National railways + Local railways + Regional bus,dotted
 Luzern|bigrail,peak,"21,51",30,0.38,0.27,42,National railways + Local railways + Regional bus,dotted

@@ -1,5 +1,6 @@
 node,band,from_line,to_line,wait_min,transfer_min,frequency,reversing
 Arth|bigrail,peak,Luzern,Zug,2.8,0.0,direct None / with changes 45,False
+Arth|bigrail,day,Luzern,Zug,2.0,0.0,direct None / with changes 30,False
 Arth|bigrail,night,Luzern,Zug,2.0,0.0,direct None / with changes 424,False
 Dagmersellen|bigrail,peak,Nebikon,Zofingen,7.2,3.5,direct None / with changes 45,False
 Dagmersellen|bigrail,peak,Sursee,Zofingen,3.0,3.5,direct None / with changes 120,False
@@ -149,6 +150,8 @@ Sursee|bigrail,peak,Rickenbach,Triengen,10.3,0.0,direct None / with changes 48,F
 Sursee|bigrail,peak,Eich,Ruswil,1.0,0.0,direct None / with changes 60,False
 Sursee|bigrail,peak,Ettiswil,Ruswil,4.0,0.0,direct None / with changes 60,False
 Sursee|bigrail,peak,Eich,Nebikon,3.3,0.0,direct None / with changes 90,False
+Sursee|bigrail,peak,Nebikon,Rickenbach,3.0,0.0,direct None / with changes 90,False
+Sursee|bigrail,peak,Nebikon,Triengen,3.0,0.0,direct None / with changes 90,False
 Sursee|bigrail,peak,Dagmersellen,Schlierbach,1.5,0.0,direct None / with changes 120,False
 Sursee|bigrail,day,Eich,Zofingen,3.4,3.1,direct None / with changes 30,False
 Sursee|bigrail,day,Ettiswil,Neuenkirch,3.9,3.1,direct None / with changes 30,False
@@ -331,9 +334,7 @@ Rain|bus,day,Beromünster,Hochdorf,11.0,0.0,direct None / with changes 60,False
 Rain|bus,day,Beromünster,Neuenkirch,12.0,0.0,direct None / with changes 60,False
 Reiden|bus,peak,Roggwil (BE),Zofingen,0.0,0.0,direct 90 / with changes 60,False
 Reiden|bus,day,Roggwil (BE),Zofingen,3.0,0.0,direct 375 / with changes 64,False
-Rickenbach|bus,peak,Beromünster,Sursee,7.5,0.0,direct 60 / with changes 46,False
 Rickenbach|bus,peak,Beromünster,Menziken,5.5,0.0,direct None / with changes 60,False
-Rickenbach|bus,day,Beromünster,Sursee,5.0,0.0,direct 60 / with changes 39,False
 Rickenbach|bus,day,Beromünster,Menziken,5.9,0.0,direct None / with changes 61,False
 Ruswil|bus,peak,Ettiswil,Wolhusen,11.0,0.0,direct None / with changes 52,False
 Ruswil|bus,peak,Luzern,Wolhusen,3.0,0.0,direct None / with changes 52,False

@@ -16,10 +16,12 @@ Lambach|bigrail,peak,Gunskirchen,Laakirchen,1.0,0.0,direct None / with changes 1
 Lambach|bigrail,day,Gunskirchen,Vorchdorf,5.4,2.6,direct None / with changes 120,False
 Lambach|bigrail,day,Gunskirchen,Laakirchen,1.0,0.0,direct None / with changes 240,False
 Lambach|bigrail,night,Gunskirchen,Vorchdorf,0.4,2.6,direct None / with changes 375,False
+Leonding|bigrail,peak,Hörsching,Linz,1.6,3.9,direct None / with changes 81,False
 Leonding|bigrail,peak,Linz,Traun,1.0,0.0,direct None / with changes 60,False
 Leonding|bigrail,peak,Traun,Wilhering,5.0,0.0,direct None / with changes 60,False
 Leonding|bigrail,day,Traun,Wilhering,5.0,0.0,direct None / with changes 60,False
 Linz|bigrail,peak,Pregarten,Wels,2.6,0.0,direct None / with changes 52,False
+Linz|bigrail,peak,Enns,Traun,0.8,0.0,direct None / with changes 60,False
 Linz|bigrail,peak,Amstetten,Leonding,6.0,0.0,direct None / with changes 120,False
 Linz|bigrail,peak,Linz · Donau Rudolfstr…,Wels,2.7,3.1,direct None / with changes 21,False
 Linz|bigrail,peak,Linz · Donau Rudolfstr…,Traun,1.6,3.1,direct None / with changes 30,False
@@ -52,7 +54,7 @@ Linz|bigrail,day,Pregarten,Wels,2.0,0.0,direct None / with changes 75,False
 Linz|bigrail,day,Linz · Donau Rudolfstr…,Wels,3.3,3.1,direct None / with changes 22,False
 Linz|bigrail,day,Linz · Donau Rudolfstr…,Traun,0.9,3.1,direct None / with changes 30,False
 Linz|bigrail,day,Enns,Linz · Donau Rudolfstr…,1.7,3.1,direct None / with changes 53,False
-Linz|bigrail,day,Leonding,Linz · Donau Rudolfstr…,2.2,3.1,direct None / with changes 60,False
+Linz|bigrail,day,Leonding,Linz · Donau Rudolfstr…,2.1,3.1,direct None / with changes 60,False
 Linz|bigrail,day,Linz · Donau Rudolfstr…,Sankt Valentin,3.9,3.1,direct None / with changes 60,False
 Linz|bigrail,day,Linz · Donau Rudolfstr…,Wilhering,0.0,0.0,direct None / with changes 60,False
 Linz|bigrail,day,Linz · Donau Auwiesen,Wilhering,1.0,0.0,direct None / with changes 60,False
@@ -79,7 +81,6 @@ Linz|bigrail,day,Reichenau im Mühlkreis,Traun,9.3,5.7,direct None / with change
 Linz|bigrail,day,Reichenau im Mühlkreis,Wels,1.3,5.7,direct None / with changes 135,False
 Linz|bigrail,day,Amstetten,St. Marien,0.3,5.7,direct None / with changes 180,False
 Linz|bigrail,day,St. Marien,Wels,0.3,5.7,direct None / with changes 180,False
-Linz|bigrail,day,Amstetten,Traun,1.3,5.7,direct None / with changes 300,False
 Neuhofen an der Krems|bigrail,day,Rohr im Kremstal,Wels,1.8,5.2,direct None / with changes 300,False
 Neuhofen an der Krems|bigrail,day,Traun,Wels,1.8,5.2,direct None / with changes 300,False
 Neumarkt im Hausruckkreis|bigrail,day,Schlüßlberg,Schärding,1.0,0.0,direct 90 / with changes 60,False
@@ -97,19 +98,19 @@ Steyr|bigrail,day,Enns,Waldneukirchen,5.0,0.0,direct None / with changes 240,Fal
 Steyr|bigrail,day,Garsten,Großraming,12.0,0.0,direct None / with changes 255,False
 Traun|bigrail,day,Ansfelden,Leonding,2.0,0.0,direct None / with changes 60,False
 Traun|bigrail,day,Ansfelden,Linz,12.0,0.0,direct None / with changes 255,False
-Wels|bigrail,peak,Gunskirchen,Leonding,1.0,0.0,direct None / with changes 60,False
+Wels|bigrail,peak,Gunskirchen,Hörsching,1.0,0.0,direct None / with changes 60,False
 Wels|bigrail,peak,Attnang-Puchheim,Sattledt,1.0,0.0,direct None / with changes 90,False
 Wels|bigrail,peak,Linz · Donau Hbf,Sattledt,2.7,0.0,direct None / with changes 90,False
 Wels|bigrail,peak,Gunskirchen,Marchtrenk,0.6,3.9,direct None / with changes 60,False
 Wels|bigrail,peak,Bad Schallerbach,Gunskirchen,9.1,3.9,direct None / with changes 120,False
 Wels|bigrail,peak,Bad Schallerbach,Linz · Donau Hbf,2.1,3.9,direct None / with changes 120,False
+Wels|bigrail,peak,Hörsching,Sattledt,4.1,3.9,direct None / with changes 120,False
 Wels|bigrail,peak,Kremsmünster,Linz · Donau Hbf,1.1,3.9,direct None / with changes 120,False
-Wels|bigrail,peak,Leonding,Sattledt,4.1,3.9,direct None / with changes 120,False
 Wels|bigrail,peak,Bad Schallerbach,Gunskirchen,4.0,0.0,direct None / with changes 120,False
 Wels|bigrail,peak,Bad Schallerbach,Neuhofen an der Krems,0.0,0.0,direct None / with changes 120,False
 Wels|bigrail,peak,Marchtrenk,Sattledt,10.0,0.0,direct None / with changes 120,False
 Wels|bigrail,day,Bad Schallerbach,Linz · Donau Hbf,0.3,0.0,direct 180 / with changes 57,False
-Wels|bigrail,day,Gunskirchen,Leonding,1.0,0.0,direct None / with changes 60,False
+Wels|bigrail,day,Gunskirchen,Hörsching,1.0,0.0,direct None / with changes 60,False
 Wels|bigrail,day,Attnang-Puchheim,Sattledt,1.0,0.0,direct None / with changes 90,False
 Wels|bigrail,day,Bad Schallerbach,Sattledt,0.0,0.0,direct None / with changes 90,False
 Wels|bigrail,day,Linz · Donau Hbf,Sattledt,5.2,0.0,direct None / with changes 90,False
@@ -127,11 +128,14 @@ Marchtrenk|bus,day,Ansfelden,Wels,11.0,0.0,direct None / with changes 120,False
 Sierning|bus,day,St. Marien,Steyr,4.0,0.0,direct None / with changes 180,False
 Stadl-Paura|bus,peak,Bad Wimsbach-Neydharting,Lambach,0.0,0.0,direct None / with changes 91,False
 Stadl-Paura|bus,day,Bad Wimsbach-Neydharting,Lambach,0.0,0.0,direct None / with changes 165,False
+Linz|bigrail|1,peak,Linz · Donau JKU I Uni…,Walding,1.2,6.0,direct None / with changes 60,False
 Linz|bigrail|1,peak,Linz · Donau Hbf,Walding,0.8,6.0,direct None / with changes 58,False
 Linz|bigrail|1,day,Linz · Donau JKU I Uni…,Walding,0.0,6.0,direct None / with changes 38,False
 Linz|bigrail|1,day,Linz · Donau Hbf,Walding,1.0,6.0,direct None / with changes 38,False
 Linz|bigrail|1,night,Linz · Donau JKU I Uni…,Walding,1.7,6.0,direct None / with changes 314,False
+Linz|localrail|2,peak,Linz · Donau JKU I Uni…,Walding,1.2,6.0,direct None / with changes 60,False
 Linz|localrail|2,peak,Linz · Donau Hbf,Walding,0.8,6.0,direct None / with changes 58,False
 Linz|localrail|2,day,Linz · Donau JKU I Uni…,Walding,0.0,6.0,direct None / with changes 38,False
 Linz|localrail|2,day,Linz · Donau Hbf,Walding,1.0,6.0,direct None / with changes 38,False
 Linz|localrail|2,night,Linz · Donau JKU I Uni…,Walding,1.7,6.0,direct None / with changes 314,False
+Ottensheim|bus|1,day,Linz,Ottensheim · Bf,1.7,5.6,direct None / with changes 60,False

@@ -5,10 +5,11 @@ Bregenz|bigrail,peak,"14,44",30,0.55,0.44,23,National railways + Regional bus,so
 Dornbirn|bigrail,peak,"26,56",30,0.62,0.38,22,National railways + Regional bus,solid
 Dornbirn|bigrail,peak,"6,36",30,0.82,0.36,8,National railways + Regional bus,solid
 Dornbirn|bigrail,day,"27,57",30,0.38,0.5,24,National railways + Regional bus,dotted
-Feldkirch|bigrail,peak,30,60,0.45,0.36,7,National railways + Regional bus,dotted
+Feldkirch|bigrail,peak,27,60,0.6,0.27,12,National railways + Regional bus,solid
+Feldkirch|bigrail,peak,37,60,0.5,0.36,8,National railways + Regional bus,dotted
 Feldkirch|bigrail,day,"0,30",30,0.43,0.37,22,National railways + Regional bus,dotted
 Feldkirch|bigrail,day,"10,40",30,0.0,1.0,2,National railways + Regional bus,dotted
-Feldkirch|bigrail,night,30,60,0.27,0.55,7,National railways + Regional bus,dotted
+Feldkirch|bigrail,night,30,60,0.39,0.55,7,National railways + Regional bus,dotted
 Frastanz|bigrail,night,25,60,0.5,1.0,2,National railways + Regional bus,dotted
 Götzis|bigrail,peak,"14,44",30,0.72,0.72,7,National railways + Regional bus,solid
 Götzis|bigrail,peak,"1,31",30,0.4,0.7,3,National railways + Regional bus,dotted
@@ -29,7 +30,7 @@ Lustenau|bigrail,peak,"28,58",30,0.6,0.38,20,National railways + Regional bus,so
 Lustenau|bigrail,peak,"11,41",30,0.56,0.56,6,Regional bus,solid
 Lustenau|bigrail,day,"28,58",30,0.63,0.39,16,National railways + Regional bus,solid
 Lustenau|bigrail,day,"11,41",30,0.56,0.56,6,Regional bus,solid
-Lustenau|bigrail,night,55,60,0.0,0.81,5,Regional bus,dotted
+Lustenau|bigrail,night,55,60,0.0,0.74,7,National railways + Regional bus,dotted
 Nenzing|bigrail,day,"18,48",30,0.68,0.68,3,National railways + Regional bus,solid
 Rankweil|bigrail,peak,"10,40",30,0.36,0.54,9,National railways + Regional bus,dotted
 Rankweil|bigrail,day,"23,53",30,0.32,0.68,5,National railways + Regional bus,dotted

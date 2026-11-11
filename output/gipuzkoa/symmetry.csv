@@ -1,5 +1,5 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
-Beasain|bus,peak,30,60,0.0,1.0,2,Renfe + Bus,dotted
+Beasain|bus,peak,25,60,0.0,1.0,2,Renfe + Bus,dotted
 Elgoibar|euskotren,peak,"20,50",30,0.0,1.0,2,Euskotren + Bus,dotted
 Elgoibar|euskotren,day,"21,51",30,0.23,1.0,4,Euskotren + Bus,dotted
 Elgoibar|euskotren,day,"1,31",30,0.39,0.7,3,Euskotren + Bus,dotted
@@ -20,11 +20,11 @@ Lasarte-Oria|bus,day,"1,31",30,0.17,0.5,4,Bus,dotted
 Lasarte-Oria|bus,night,12,60,0.0,1.0,2,Bus,dotted
 Ondarroa|bus,peak,5,60,0.0,0.59,3,Bus,dotted
 Ondarroa|bus,day,5,60,0.0,0.67,3,Bus,dotted
-Tolosa|bus,peak,55,60,0.0,0.54,3,Bus,dotted
-Villabona|bus,peak,"25,55",30,0.0,0.72,3,Renfe + Bus,dotted
+Tolosa|bus,peak,55,60,0.16,0.53,5,Bus,dotted
+Tolosa|bus,peak,"10,40",30,0.68,0.68,3,Bus,solid
+Villabona|bus,peak,"21,51",30,0.43,0.78,4,Renfe + Bus,dotted
 Vitoria-Gasteiz|bus,day,30,60,0.0,0.51,3,Bus,dotted
-Zarautz|bus,peak,"1,31",30,0.18,0.54,5,Bus,dotted
-Zarautz|bus,peak,46,60,0.3,0.7,3,Bus,dotted
+Zarautz|bus,peak,"16,46",30,0.19,0.41,10,Bus,dotted
 Zarautz|bus,day,"16,46",30,0.24,0.65,5,Bus,dotted
 Zestoa|bus|1,peak,"17,47",30,0.0,0.8,4,Euskotren + Bus,dotted
-Zestoa|bus|1,day,33,60,0.5,1.0,2,Euskotren + Bus,dotted
+Zestoa|bus|1,day,"20,50",30,0.2,0.61,5,Euskotren + Bus,dotted

@@ -13,6 +13,7 @@ Dornbirn|bigrail,day,"28,58",30,0.73,0.82,7,National railways + Regional bus,sol
 Dornbirn|bigrail,day,"15,45",30,0.44,1.0,3,National railways + Regional bus,dotted
 Dornbirn|bigrail,night,"2,32",30,0.33,0.67,6,National railways + Regional bus,dotted
 Feldkirch|bigrail,peak,30,60,0.42,0.37,17,National railways + Regional bus,dotted
+Feldkirch|bigrail,peak,"10,40",30,0.0,1.0,2,National railways + Regional bus,dotted
 Feldkirch|bigrail,day,30,60,0.47,0.39,17,National railways + Regional bus,dotted
 Feldkirch|bigrail,day,"10,40",30,0.0,1.0,2,National railways + Regional bus,dotted
 Frastanz|bigrail,day,"29,59",30,0.71,0.71,3,National railways + Regional bus,solid

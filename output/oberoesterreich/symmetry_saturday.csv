@@ -8,10 +8,10 @@ Lambach|bigrail,peak,20,60,0.57,1.0,2,National railways + Local railways + Regio
 Lambach|bigrail,day,25,60,0.26,0.74,4,National railways + Local railways + Regional bus,dotted
 Leonding|bigrail,peak,35,60,0.33,1.0,3,Regional bus,dotted
 Leonding|bigrail,day,35,60,0.0,1.0,2,Regional bus,dotted
-Linz|bigrail,day,"10,40",30,0.34,0.25,40,National railways + Local railways + Regional bus,dotted
+Linz|bigrail,day,"10,40",30,0.34,0.27,40,National railways + Local railways + Regional bus,dotted
 Neuhofen an der Krems|bigrail,day,0,60,1.0,1.0,2,National railways + Regional bus,solid
 Steyr|bigrail,peak,55,60,0.0,1.0,3,Regional bus,dotted
-Steyr|bigrail,day,55,60,0.0,1.0,4,Regional bus,dotted
+Steyr|bigrail,day,55,60,0.32,1.0,4,Regional bus,dotted
 Traun|bigrail,day,22,60,0.0,0.9,4,National railways + Regional bus,dotted
 Wels|bigrail,peak,30,60,0.0,0.67,3,National railways + Regional bus,dotted
 Bad Hall|bus,peak,45,60,0.0,1.0,2,Regional bus,dotted

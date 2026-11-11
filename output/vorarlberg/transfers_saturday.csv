@@ -81,12 +81,12 @@ Dornbirn|bigrail,day,Alberschwende,Lustenau (fast),4.0,0.0,direct None / with ch
 Dornbirn|bigrail,night,Bezau,Hohenems,6.5,3.5,direct None / with changes 210,False
 Dornbirn|bigrail,night,Bezau,Schwarzach,5.5,3.5,direct None / with changes 210,False
 Dornbirn|bigrail,night,Bezau,Lustenau (slow),11.0,0.0,direct None / with changes 206,False
-Feldkirch|bigrail,peak,Frastanz,Mauren,5.8,3.6,direct None / with changes 29,False
+Feldkirch|bigrail,peak,Frastanz,Mauren,4.2,3.6,direct None / with changes 29,False
 Feldkirch|bigrail,peak,Mauren,Rankweil,4.9,3.6,direct None / with changes 26,False
 Feldkirch|bigrail,peak,Göfis (slow),Rankweil,8.0,3.6,direct None / with changes 68,False
 Feldkirch|bigrail,peak,Rankweil,Ruggell,5.4,3.6,direct None / with changes 60,False
 Feldkirch|bigrail,peak,Mauren,Rankweil,5.2,0.0,direct None / with changes 35,False
-Feldkirch|bigrail,peak,Frastanz,Mauren,8.7,0.0,direct None / with changes 47,False
+Feldkirch|bigrail,peak,Frastanz,Mauren,5.7,0.0,direct None / with changes 47,False
 Feldkirch|bigrail,peak,Frastanz,Rankweil,5.5,0.0,direct None / with changes 45,False
 Feldkirch|bigrail,peak,Frastanz,Göfis,8.2,0.0,direct None / with changes 58,False
 Feldkirch|bigrail,peak,Göfis (slow),Rankweil,4.8,0.0,direct None / with changes 74,False
@@ -109,6 +109,7 @@ Feldkirch|bigrail,night,Mauren,Ruggell,3.0,0.0,direct None / with changes 375,Fa
 Feldkirch|bigrail,night,Rankweil,Ruggell,10.0,0.0,direct None / with changes 375,False
 Feldkirch|bigrail,night,Frastanz,Rankweil,3.0,0.0,direct None / with changes 324,False
 Feldkirch|bigrail,night,Frastanz,Ruggell,9.0,0.0,direct None / with changes 375,False
+Frastanz|bigrail,peak,Feldkirch,Nenzing,0.9,3.1,direct None / with changes 90,False
 Frastanz|bigrail,day,Göfis,Nenzing,8.9,3.1,direct None / with changes 75,False
 Frastanz|bigrail,night,Feldkirch,Satteins,2.9,3.1,direct None / with changes 375,False
 Götzis|bigrail,peak,Hohenems,Koblach,2.0,3.0,direct None / with changes 30,False
@@ -128,6 +129,7 @@ Götzis|bigrail,day,Hohenems,Rankweil,2.4,3.0,direct None / with changes 60,Fals
 Götzis|bigrail,day,Hohenems,Koblach,8.0,0.0,direct None / with changes 28,False
 Götzis|bigrail,day,Koblach,Rankweil,9.4,0.0,direct None / with changes 60,False
 Götzis|bigrail,night,Hohenems,Koblach,3.5,3.0,direct None / with changes 208,False
+Götzis|bigrail,night,Hohenems,Koblach,0.0,0.0,direct None / with changes 210,False
 Hard|bigrail,peak,Bregenz,Lustenau,11.8,4.2,direct None / with changes 38,False
 Hard|bigrail,peak,Höchst,Lustenau,5.8,4.2,direct None / with changes 38,False
 Hard|bigrail,day,Bregenz,Lustenau,11.8,4.2,direct None / with changes 34,False
@@ -208,7 +210,7 @@ Rankweil|bigrail,day,Göfis,Klaus,1.2,4.8,direct None / with changes 60,False
 Rankweil|bigrail,day,Feldkirch,Götzis,1.7,4.8,direct None / with changes 60,False
 Rankweil|bigrail,day,Feldkirch,Laterns,2.2,4.8,direct None / with changes 75,False
 Rankweil|bigrail,day,Götzis,Laterns,1.2,4.8,direct None / with changes 75,False
-Rankweil|bigrail,day,Feldkirch,Hohenems,5.4,4.8,direct None / with changes 165,False
+Rankweil|bigrail,day,Feldkirch,Hohenems,5.5,4.8,direct None / with changes 165,False
 Rankweil|bigrail,day,Feldkirch,Götzis,6.0,0.0,direct 375 / with changes 60,False
 Rankweil|bigrail,day,Feldkirch,Laterns,7.7,0.0,direct None / with changes 75,False
 Rankweil|bigrail,night,Feldkirch,Klaus,4.2,4.8,direct None / with changes 285,False
@@ -246,7 +248,6 @@ Koblach|bus,peak,Hohenems,Klaus,0.0,0.0,direct None / with changes 60,False
 Koblach|bus,day,Hohenems,Klaus,0.0,0.0,direct None / with changes 60,False
 Koblach|bus,night,Hohenems,Klaus,0.0,0.0,direct None / with changes 375,False
 Laterns|bus,peak,Damüls,Rankweil,7.0,0.0,direct None / with changes 90,False
-Schlins|bus,day,Nenzing,Satteins,2.1,0.0,direct 43 / with changes 37,False
 Schoppernau|bus,peak,Bezau,Warth,1.0,0.0,direct None / with changes 120,False
 Schoppernau|bus,day,Bezau,Warth,1.0,0.0,direct None / with changes 90,False
 Thüringen|bus,peak,Nenzing,Raggal,3.0,0.0,direct None / with changes 120,False

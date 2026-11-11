@@ -17,7 +17,7 @@ Zumarraga|bus,day,0,60,0.0,0.7,3,Bus,dotted
 Bilbao|bus,day,58,60,0.32,1.0,6,Bus,dotted
 Elgoibar|bus,peak,"13,43",30,0.0,1.0,4,Euskotren + Bus,dotted
 Elgoibar|bus,day,"16,46",30,0.14,0.65,7,Euskotren + Bus,dotted
-Lasarte-Oria|bus,peak,15,60,0.5,1.0,2,Bus,dotted
+Lasarte-Oria|bus,peak,12,60,0.5,0.74,4,Bus,dotted
 Lasarte-Oria|bus,day,25,60,0.79,0.9,3,Euskotren + Bus,solid
 Loiu|bus,day,45,60,0.0,1.0,2,Bus,dotted
 Ondarroa|bus,peak,5,60,0.0,0.65,3,Bus,dotted
