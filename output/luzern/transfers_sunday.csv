@@ -12,11 +12,9 @@ Dagmersellen|bigrail,night,Nebikon,Zofingen,6.5,3.5,direct None / with changes 3
 Ebikon|bigrail,peak,Luzern,Root,3.0,3.3,direct None / with changes 45,False
 Ebikon|bigrail,peak,Luzern,Root,4.7,3.3,direct None / with changes 30,False
 Ebikon|bigrail,peak,Luzern,Root,6.0,0.0,direct None / with changes 45,False
-Ebikon|bigrail,peak,Adligenswil,Luzern,5.4,0.0,direct None / with changes 30,False
 Ebikon|bigrail,day,Luzern,Root,3.2,3.3,direct None / with changes 34,False
 Ebikon|bigrail,day,Luzern,Root,4.3,3.3,direct None / with changes 30,False
 Ebikon|bigrail,day,Luzern,Root,5.2,0.0,direct None / with changes 34,False
-Ebikon|bigrail,day,Adligenswil,Luzern,5.8,0.0,direct None / with changes 30,False
 Ebikon|bigrail,night,Luzern,Root,4.8,3.3,direct None / with changes 157,False
 Ebikon|bigrail,night,Luzern,Root,9.2,3.3,direct None / with changes 166,False
 Ebikon|bigrail,night,Luzern,Root,4.1,0.0,direct None / with changes 182,False
@@ -191,7 +189,6 @@ Zug|bigrail,night,Arth (fast),Luzern,2.0,0.0,direct None / with changes 375,Fals
 Adligenswil|bus,peak,Ebikon,Luzern (slow),11.1,0.0,direct None / with changes 38,False
 Adligenswil|bus,peak,Ebikon,Udligenswil,5.5,0.0,direct None / with changes 38,False
 Adligenswil|bus,day,Ebikon,Luzern (slow),7.0,0.0,direct None / with changes 31,False
-Adligenswil|bus,day,Ebikon,Udligenswil,12.3,0.0,direct None / with changes 35,False
 Beromünster|bus,peak,Menziken,Rickenbach (fast),6.0,0.0,direct None / with changes 60,False
 Beromünster|bus,day,Menziken,Rickenbach (fast),6.0,0.0,direct None / with changes 60,False
 Beromünster|bus,day,Hochdorf,Menziken,10.0,0.0,direct None / with changes 255,False
@@ -214,7 +211,6 @@ Luzern|bus,peak,Kriens · Sternmatt,Rothenburg,4.6,6.8,direct None / with change
 Luzern|bus,peak,Adligenswil (slow),Hochdorf,1.2,6.8,direct None / with changes 45,False
 Luzern|bus,peak,Ebikon,Kriens · Sternmatt,2.2,6.8,direct None / with changes 30,False
 Luzern|bus,peak,Ebikon,Sursee,3.7,6.8,direct None / with changes 45,False
-Luzern|bus,peak,Hochdorf,Kriens · Sternmatt,5.5,6.8,direct None / with changes 48,False
 Luzern|bus,peak,Kriens · Sternmatt,Sursee,3.7,6.8,direct None / with changes 45,False
 Luzern|bus,peak,Arth (slow),Ebikon,3.7,6.8,direct None / with changes 46,False
 Luzern|bus,peak,Arth (slow),Kriens · Sternmatt,1.5,6.8,direct None / with changes 45,False
@@ -231,7 +227,6 @@ Luzern|bus,peak,Neuenkirch,Zug,11.2,6.8,direct None / with changes 120,False
 Luzern|bus,peak,Rain,Risch-Rotkreuz,1.2,6.8,direct None / with changes 60,False
 Luzern|bus,peak,Rain,Zug,5.2,6.8,direct None / with changes 120,False
 Luzern|bus,peak,Ebikon,Horw,4.1,5.8,direct None / with changes 15,False
-Luzern|bus,peak,Adligenswil (slow),Horw,12.2,5.8,direct None / with changes 32,False
 Luzern|bus,peak,Adligenswil (slow),Sachseln,6.2,5.8,direct None / with changes 120,False
 Luzern|bus,peak,Adligenswil (slow),Stansstad,10.2,5.8,direct None / with changes 120,False
 Luzern|bus,peak,Ebikon,Sachseln,7.2,5.8,direct None / with changes 120,False
@@ -239,7 +234,6 @@ Luzern|bus,peak,Ebikon,Stansstad,1.2,5.8,direct None / with changes 60,False
 Luzern|bus,peak,Neuenkirch,Sachseln,9.2,5.8,direct None / with changes 120,False
 Luzern|bus,peak,Rain,Sachseln,3.2,5.8,direct None / with changes 120,False
 Luzern|bus,peak,Rain,Stansstad,7.2,5.8,direct None / with changes 120,False
-Luzern|bus,peak,Adligenswil (slow),Kriens · Sternmatt,4.9,0.0,direct None / with changes 25,False
 Luzern|bus,peak,Adligenswil (slow),Rain,11.0,0.0,direct None / with changes 45,False
 Luzern|bus,peak,Ebikon,Rain,1.6,0.0,direct None / with changes 30,False
 Luzern|bus,peak,Kriens · Sternmatt,Rain,4.7,0.0,direct None / with changes 38,False
@@ -277,7 +271,6 @@ Luzern|bus,day,Rain,Risch-Rotkreuz,1.2,6.8,direct None / with changes 60,False
 Luzern|bus,day,Rain,Zug,5.2,6.8,direct None / with changes 75,False
 Luzern|bus,day,Ruswil,Zug,10.2,6.8,direct None / with changes 75,False
 Luzern|bus,day,Ebikon,Horw,3.9,5.8,direct None / with changes 15,False
-Luzern|bus,day,Adligenswil (slow),Horw,12.2,5.8,direct None / with changes 22,False
 Luzern|bus,day,Adligenswil (slow),Sachseln,6.2,5.8,direct None / with changes 75,False
 Luzern|bus,day,Adligenswil (slow),Stansstad,10.2,5.8,direct None / with changes 75,False
 Luzern|bus,day,Ebikon,Sachseln,1.5,5.8,direct None / with changes 75,False
@@ -288,7 +281,6 @@ Luzern|bus,day,Rain,Stansstad,7.2,5.8,direct None / with changes 75,False
 Luzern|bus,day,Ruswil,Sachseln,8.2,5.8,direct None / with changes 75,False
 Luzern|bus,day,Ruswil,Stansstad,12.2,5.8,direct None / with changes 75,False
 Luzern|bus,day,Ebikon,Giswil,10.2,5.8,direct None / with changes 375,False
-Luzern|bus,day,Adligenswil (slow),Kriens · Sternmatt,4.6,0.0,direct None / with changes 23,False
 Luzern|bus,day,Adligenswil (slow),Rain,11.0,0.0,direct None / with changes 34,False
 Luzern|bus,day,Adligenswil (slow),Ruswil,7.0,0.0,direct None / with changes 34,False
 Luzern|bus,day,Ebikon,Rain,1.2,0.0,direct None / with changes 30,False

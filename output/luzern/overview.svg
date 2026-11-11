@@ -121,9 +121,8 @@
 <line x1='776.7' y1='1025.8' x2='773.8' y2='1016.9' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <circle cx='391.2' cy='596.8' r='7.3' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='391.2' cy='596.8' r='3.6' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
-<line x1='391.2' y1='596.8' x2='393.3' y2='586.7' stroke='#000' stroke-width='2' stroke-linecap='round'/>
-<line x1='391.2' y1='596.8' x2='389.1' y2='606.8' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <line x1='391.2' y1='596.8' x2='400.1' y2='601.9' stroke='#000' stroke-width='2' stroke-linecap='round'/>
+<line x1='391.2' y1='596.8' x2='393.3' y2='586.7' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <circle cx='802.9' cy='810.7' r='8.3' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='802.9' cy='810.7' r='4.2' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <line x1='802.9' y1='810.7' x2='802.9' y2='822.0' stroke='#000' stroke-width='2' stroke-linecap='round'/>
@@ -148,7 +147,7 @@
 <circle cx='619.9' cy='661.1' r='4.6' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <line x1='619.9' y1='661.1' x2='631.6' y2='657.3' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <line x1='619.9' y1='661.1' x2='607.6' y2='661.1' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='619.9' y1='661.1' x2='623.7' y2='672.7' stroke='#000' stroke-width='2' stroke-linecap='round'/>
+<line x1='619.9' y1='661.1' x2='623.7' y2='672.7' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='1345.2' cy='1106.6' r='6.2' fill='#2ca02c' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1345.2' cy='1106.6' r='3.1' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <circle cx='428.2' cy='793.0' r='7.7' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
@@ -208,8 +207,8 @@
 <circle cx='528.4' cy='285.5' r='5.6' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='580.3' cy='486.0' r='6.2' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1187.2' cy='888.0' r='6.6' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
-<line x1='1187.2' y1='888.0' x2='1195.5' y2='883.1' stroke='#000' stroke-width='2' stroke-linecap='round'/>
-<line x1='1187.2' y1='888.0' x2='1177.8' y2='890.0' stroke='#000' stroke-width='2' stroke-linecap='round'/>
+<line x1='1187.2' y1='888.0' x2='1193.6' y2='880.8' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='1187.2' y1='888.0' x2='1178.9' y2='892.8' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='238.8' cy='808.5' r='5.0' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1237.3' cy='1002.6' r='6.3' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='329.8' cy='337.3' r='5.8' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>

@@ -4,10 +4,10 @@ Dagmersellen|bigrail,day,"28,58",30,0.83,1.0,3,National railways + Regional bus,
 Ebikon|bigrail,night,"18,50",30,0.45,0.73,7,National railways + Regional bus,dotted
 Hochdorf|bigrail,peak,"25,50",30,0.25,0.75,4,National railways + Regional bus,dotted
 Hochdorf|bigrail,day,"25,50",30,0.27,0.74,7,National railways + Regional bus,dotted
-Luzern|bigrail,peak,"5,35",30,0.43,0.52,128,National railways + Local railways + Regional bus,dotted
-Luzern|bigrail,peak,"25,55",30,0.52,0.3,105,National railways + Local railways + Regional bus,solid
-Luzern|bigrail,day,"0,30",30,0.51,0.56,128,National railways + Local railways + Regional bus,solid
-Luzern|bigrail,day,"12,45",30,0.69,0.33,31,National railways + Local railways + Regional bus,solid
+Luzern|bigrail,peak,"5,35",30,0.36,0.49,128,National railways + Local railways + Regional bus,dotted
+Luzern|bigrail,peak,"25,55",30,0.43,0.28,105,National railways + Local railways + Regional bus,dotted
+Luzern|bigrail,day,0,60,0.45,0.55,128,National railways + Local railways + Regional bus,dotted
+Luzern|bigrail,day,"12,45",30,0.56,0.33,31,National railways + Local railways + Regional bus,solid
 Malters|bigrail,peak,30,60,1.0,1.0,2,National railways + Regional bus,solid
 Malters|bigrail,day,30,60,1.0,1.0,2,National railways + Regional bus,solid
 Neuenkirch|bigrail,peak,38,60,0.78,0.67,7,National railways + Regional bus,solid
@@ -35,7 +35,6 @@ Zug|bigrail,peak,30,60,0.33,1.0,2,National railways,dotted
 Zug|bigrail,day,"0,30",30,1.0,1.0,2,National railways,solid
 Zug|bigrail,night,"2,30",30,0.46,1.0,2,National railways,dotted
 Adligenswil|bus,peak,"27,57",30,0.5,1.0,2,Regional bus,dotted
-Adligenswil|bus,day,28,60,0.5,1.0,2,Regional bus,dotted
 Beromünster|bus,day,57,60,1.0,1.0,5,Regional bus,solid
 Ettiswil|bus,peak,"28,58",30,1.0,1.0,2,Regional bus,solid
 Ettiswil|bus,day,"28,58",30,1.0,1.0,2,Regional bus,solid
@@ -44,9 +43,9 @@ Küssnacht (SZ)|bus,peak,"2,33",30,0.72,0.72,3,Regional bus,solid
 Küssnacht (SZ)|bus,peak,20,60,0.72,0.72,3,Regional bus,solid
 Küssnacht (SZ)|bus,day,20,60,0.75,0.75,3,Regional bus,solid
 Küssnacht (SZ)|bus,day,"2,33",30,0.75,0.75,3,Regional bus,solid
-Luzern|bus,peak,"0,30",30,0.69,0.82,66,National railways + Local railways + Regional bus,solid
-Luzern|bus,day,"0,30",30,0.8,0.96,56,National railways + Local railways + Regional bus,solid
-Luzern|bus,day,"12,45",30,0.75,0.59,12,National railways + Local railways + Regional bus,solid
+Luzern|bus,peak,"0,30",30,0.51,0.8,66,National railways + Local railways + Regional bus,solid
+Luzern|bus,day,"0,30",30,0.62,0.94,56,National railways + Local railways + Regional bus,solid
+Luzern|bus,day,"12,45",30,0.37,0.59,12,National railways + Local railways + Regional bus,dotted
 Luzern|bus,night,"2,30",30,0.42,0.72,48,National railways + Local railways + Regional bus,dotted
 Luzern|bus,night,"12,45",30,0.58,0.72,12,National railways + Regional bus,solid
 Rain|bus,peak,"8,38",30,1.0,1.0,2,Regional bus,solid

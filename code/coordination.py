@@ -376,6 +376,10 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             if not ok and _wall is not None and round(_wall) <= limw and len(waits.opts) >= 2 and (not dr or _hall <= Hd / 2):
                 # the real timetable (all services) already gives a wait within the limit on average: timed
                 ok, C, Hc, mw = True, list(waits.opts), _hall, _wall
+            if ok and mw is not None and mw >= hD[y] / 2:
+                # a wait of half the departing headway or more is what random arrival gives: not a coordination
+                # (even within the 6 / 12 min limit) -> not timed
+                ok = False
             st_[(x, y)] = dict(k="c" if ok else "n", w=wgt, Hd=Hd, Hc=Hc, C=C, share=len(C) / nA[x],
                                wait=mw, walk=float(np.median([c[3] for c in C])) if C else None)
     # ---- symmetries: group coordinated directions by their change minute (mod 30)

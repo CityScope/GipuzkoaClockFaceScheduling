@@ -30,7 +30,6 @@ Bregenz|bigrail,peak,St. Margrethen,Wolfurt,1.2,5.8,direct None / with changes 1
 Bregenz|bigrail,peak,Hard,Wolfurt,4.0,0.0,direct None / with changes 50,False
 Bregenz|bigrail,peak,Lochau,Wolfurt,7.4,0.0,direct None / with changes 38,False
 Bregenz|bigrail,peak,Lingenau,Wolfurt,3.0,0.0,direct None / with changes 120,False
-Bregenz|bigrail,peak,Scheidegg (slow),Wolfurt,9.0,0.0,direct None / with changes 120,False
 Bregenz|bigrail,day,Lochau,Wolfurt,4.6,0.0,direct 105 / with changes 38,False
 Bregenz|bigrail,day,Hard,Wolfurt,4.0,0.0,direct None / with changes 60,False
 Bregenz|bigrail,day,Hard,Wolfurt,2.2,5.8,direct None / with changes 30,False
@@ -45,8 +44,6 @@ Bregenz|bigrail,day,Scheidegg (slow),Wolfurt,4.2,5.8,direct None / with changes 
 Bregenz|bigrail,day,St. Margrethen,Wolfurt,1.2,5.8,direct None / with changes 120,False
 Bregenz|bigrail,day,Hard,Wolfurt,4.0,0.0,direct None / with changes 31,False
 Bregenz|bigrail,day,Lochau,Wolfurt,7.0,0.0,direct None / with changes 31,False
-Bregenz|bigrail,day,Lingenau,Wolfurt,7.8,0.0,direct None / with changes 117,False
-Bregenz|bigrail,day,Scheidegg (slow),Wolfurt,9.0,0.0,direct None / with changes 120,False
 Bregenz|bigrail,night,Hard,Wolfurt,4.0,0.0,direct None / with changes 285,False
 Bregenz|bigrail,night,Hard,Wolfurt,6.2,5.8,direct None / with changes 375,False
 Bregenz|bigrail,night,Lochau,Wolfurt,4.2,5.8,direct None / with changes 322,False
@@ -82,7 +79,6 @@ Dornbirn|bigrail,night,Lustenau,Wolfurt,11.0,0.0,direct None / with changes 371,
 Feldkirch|bigrail,peak,Mauren,Rankweil,7.4,3.6,direct None / with changes 38,False
 Feldkirch|bigrail,peak,Frastanz,Ruggell,6.4,3.6,direct None / with changes 60,False
 Feldkirch|bigrail,peak,Rankweil,Ruggell,5.4,3.6,direct None / with changes 60,False
-Feldkirch|bigrail,peak,Göfis,Rankweil,9.4,3.6,direct None / with changes 90,False
 Feldkirch|bigrail,peak,Frastanz,Göfis (fast),3.4,3.6,direct None / with changes 90,False
 Feldkirch|bigrail,peak,Frastanz,Rankweil,5.0,0.0,direct None / with changes 90,False
 Feldkirch|bigrail,peak,Frastanz,Ruggell,12.0,0.0,direct None / with changes 90,False
@@ -91,8 +87,6 @@ Feldkirch|bigrail,peak,Rankweil,Ruggell,10.0,0.0,direct None / with changes 60,F
 Feldkirch|bigrail,peak,Göfis,Mauren,7.0,0.0,direct None / with changes 90,False
 Feldkirch|bigrail,peak,Göfis,Rankweil,10.7,0.0,direct None / with changes 83,False
 Feldkirch|bigrail,peak,Frastanz,Göfis (fast),9.0,0.0,direct None / with changes 90,False
-Feldkirch|bigrail,day,Mauren,Rankweil,9.8,3.6,direct None / with changes 32,False
-Feldkirch|bigrail,day,Göfis,Rankweil,9.5,3.6,direct None / with changes 46,False
 Feldkirch|bigrail,day,Frastanz,Göfis (fast),3.4,3.6,direct None / with changes 60,False
 Feldkirch|bigrail,day,Frastanz,Ruggell,6.4,3.6,direct None / with changes 60,False
 Feldkirch|bigrail,day,Rankweil,Ruggell,5.4,3.6,direct None / with changes 60,False

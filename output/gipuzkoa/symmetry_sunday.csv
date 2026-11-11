@@ -3,7 +3,7 @@ Beasain|bus,peak,27,60,0.0,0.54,9,Renfe + Bus,dotted
 Deba|bus,peak,38,60,0.0,1.0,5,Euskotren + Bus,dotted
 Deba|bus,day,38,60,0.0,1.0,3,Euskotren + Bus,dotted
 Donostia / San Sebastián|renfe,peak,25,60,0.25,1.0,4,Renfe + Bus,dotted
-Donostia / San Sebastián|renfe,day,40,60,0.26,0.72,9,Renfe + Bus,dotted
+Donostia / San Sebastián|renfe,day,"20,47",30,0.0,0.95,6,Renfe + Bus,dotted
 Donostia / San Sebastián|renfe,night,"10,40",30,0.0,1.0,3,Renfe + Bus,dotted
 Elgoibar|euskotren,peak,15,60,0.0,1.0,2,Euskotren + Bus,dotted
 Elgoibar|euskotren,day,15,60,0.0,0.76,6,Euskotren + Bus,dotted
@@ -11,17 +11,20 @@ Ermua|euskotren,peak,"25,55",30,0.5,1.0,2,Euskotren + Bus,dotted
 Ermua|euskotren,day,"25,55",30,0.5,1.0,2,Euskotren + Bus,dotted
 Ermua|euskotren,night,45,60,0.0,1.0,2,Euskotren + Bus,dotted
 Errenteria|euskotren,peak,"28,57",30,0.0,1.0,2,Euskotren + Bus,dotted
-Errenteria|euskotren,day,"27,57",30,0.44,1.0,4,Euskotren + Bus,dotted
+Errenteria|euskotren,day,"25,55",30,0.08,1.0,3,Euskotren + Bus,dotted
 Lasarte-Oria|euskotren,peak,25,60,1.0,1.0,2,Euskotren + Bus,solid
 Lasarte-Oria|euskotren,day,25,60,0.86,1.0,2,Euskotren + Bus,solid
 Lasarte-Oria|euskotren,night,55,60,0.5,1.0,2,Euskotren + Bus,dotted
-Pasaia|bus,peak,40,60,0.83,0.83,11,Renfe + Euskotren + Bus,solid
+Pasaia|bus,peak,"12,40",30,0.77,0.83,11,Renfe + Euskotren + Bus,solid
 Zizurkil|renfe,day,28,60,0.16,1.0,2,Renfe + Bus,dotted
 Zumarraga|bus,peak,55,60,0.0,0.68,3,Bus,dotted
 Zumarraga|bus,day,13,60,0.0,0.65,5,Renfe + Bus,dotted
 Zumarraga|bus,day,58,60,0.0,0.56,8,Renfe + Bus,dotted
 Bergara|bus,night,18,60,0.0,0.74,3,Bus,dotted
-Eibar|bus,day,"10,38",30,0.82,0.82,3,Bus,solid
+Donostia / San Sebastián|bus,peak,"0,30",30,0.22,0.55,54,Renfe + Bus,dotted
+Donostia / San Sebastián|bus,peak,"13,45",30,0.6,0.64,10,Renfe + Bus,solid
+Donostia / San Sebastián|bus,day,"12,42",30,0.12,0.55,47,Renfe + Bus,dotted
+Eibar|bus,day,23,60,0.0,0.85,4,Bus,dotted
 Elgoibar|bus,peak,15,60,0.0,1.0,3,Euskotren + Bus,dotted
 Elgoibar|bus,day,15,60,0.0,0.62,10,Euskotren + Bus,dotted
 Errenteria|bus,peak,"12,42",30,0.44,0.73,7,Euskotren + Bus,dotted

@@ -310,7 +310,7 @@ html,body,#map{margin:0;height:100%;font:13px/1.4 system-ui,-apple-system,"Segoe
 #ttpanel{position:fixed;right:12px;top:60px;z-index:15;width:340px;max-width:calc(100vw - 24px);max-height:calc(100vh - 90px);overflow-y:auto;overflow-x:hidden;background:var(--bg);color:var(--ink);border-radius:12px;box-shadow:0 8px 30px #0005}#ttpanel[hidden]{display:none}
 #ttpanel .hd{position:relative;padding-right:48px}#ttpanel .pp{width:100%;box-sizing:border-box}.ttx{position:absolute;right:8px;top:8px;width:30px;height:30px;border-radius:50%;border:0;background:rgba(255,255,255,.18);color:#fff;font-size:16px;font-weight:700;cursor:pointer}.ttx:hover{background:rgba(255,255,255,.35)}
 .ttb{max-height:260px;overflow-y:auto;border:1px solid var(--line);border-radius:8px}#ttpanel .ttb{max-height:none}.ttt{width:100%;border-collapse:collapse;table-layout:fixed}.ttt td:nth-child(1){width:38px}.ttt td:nth-child(2){width:40px}.ttt td:nth-child(3){width:50px}.ttt td{padding:2px 6px;font-size:11px;border-top:1px solid var(--line);overflow-wrap:anywhere}.ttt td:nth-child(3){white-space:nowrap}.ttt small{display:inline}.ttt tr:first-child td{border-top:0}.ttt td.tm2{font-variant-numeric:tabular-nums;width:38px;white-space:nowrap}.ttt tr.th td{font-size:9.5px;text-transform:uppercase;color:var(--mute);letter-spacing:.04em}.ttt small{color:var(--mute)}
-.netbox{border:1px solid var(--line);border-radius:10px;background:var(--soft);margin-bottom:4px}.netsvg{display:block}.netsvg .nlab{font-size:10px;fill:var(--ink)}.netsvg .nnm{font-weight:700;font-size:11.5px}.netsvg .nsu{font-weight:700;fill:var(--ink)}.netsvg .nsn{fill:var(--mute)}.netsvg .nmin,.netsvg .nmout{font-size:11px;font-weight:700;fill:var(--ink);text-anchor:middle}.netsvg .narr{font-size:9px;fill:var(--ink)}.netsvg .nfq{opacity:.6;font-weight:600}.netsvg .ngr{fill:var(--hw2)}.netsvg .ngr .narr{fill:var(--hw2)}.netsvg .nwkl{font-size:9.5px;fill:var(--mute)}.netsvg .onl{paint-order:stroke;stroke:var(--soft);stroke-width:4px;stroke-linejoin:round}.netsvg .nrep{font-size:9px;font-weight:600;fill:var(--hw2)}.netsvg .nsep{fill:var(--mute);font-weight:400}.netsvg .nhwg{fill:var(--hw2);font-size:9px}.netsvg .nhw{font-size:9px;fill:var(--mute)}.netsvg .nhwd{font-size:9px;font-weight:700;fill:var(--hw1)}.netsvg .nleg{font-size:9.5px;fill:var(--mute)}.netsvg .nleg .nmin,.netsvg .nleg .nmout{font-size:9.5px;text-anchor:start}.netst{font-size:10.5px;color:var(--mute);margin:2px 0 4px}.netsvg .nwk{font-size:9px;fill:var(--mute);text-anchor:middle}
+.netbox{border:1px solid var(--line);border-radius:10px;background:var(--soft);margin-bottom:4px}.netsvg{display:block}.netsvg .nlab{font-size:10px;fill:var(--ink)}.netsvg .nnm{font-weight:700;font-size:11.5px}.netsvg .nsu{font-weight:700;fill:var(--ink)}.netsvg .nsn{fill:var(--mute)}.netsvg .nmin,.netsvg .nmout{font-size:11px;font-weight:700;fill:var(--ink);text-anchor:middle}.netsvg .narr{font-size:9px;fill:var(--ink)}.netsvg .nfq{opacity:.6;font-weight:600}.netsvg .ngr{fill:var(--hw2)}.netsvg .ngr .narr{fill:var(--hw2)}.netsvg .nwkl{font-size:9.5px;fill:var(--mute)}.netsvg .onl{paint-order:stroke;stroke:var(--soft);stroke-width:4px;stroke-linejoin:round}.netsvg .nrep{font-size:9px;font-weight:600;fill:var(--hw2)}.netsvg .nmut{fill:var(--hw2);font-weight:500;font-style:italic}.netsvg .nmut .narr{fill:var(--hw2)}.netsvg .nsep{fill:var(--mute);font-weight:400}.netsvg .nhwg{fill:var(--hw2);font-size:9px}.netsvg .nhw{font-size:9px;fill:var(--mute)}.netsvg .nhwd{font-size:9px;font-weight:700;fill:var(--hw1)}.netsvg .nleg{font-size:9.5px;fill:var(--mute)}.netsvg .nleg .nmin,.netsvg .nleg .nmout{font-size:9.5px;text-anchor:start}.netst{font-size:10.5px;color:var(--mute);margin:2px 0 4px}.netsvg .nwk{font-size:9px;fill:var(--mute);text-anchor:middle}
 .mc.ig{opacity:.38}.mins{display:flex;flex-wrap:wrap;align-items:baseline}.mins .mc{font-size:11px;padding:0 5px;margin:1px 2px 1px 0}
 .trs{max-height:230px;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin}.tt td{font-size:11.5px;padding:4px 4px 4px 0;vertical-align:top}.tt td.r{white-space:nowrap}
 .tt tr.rev td{color:var(--mute)}
@@ -522,7 +522,7 @@ let map;
     const both=vi!=null&&vo!=null,one=vi!=null||vo!=null,fq=s.fh<CFG.freq&&!one;   // frequent: no timing needed
     // not in the symmetry (frequent or not): mean minutes from the last arrival to each symmetry minute and from it to the next departure (all services, node timetable)
     let fvi=null,fvo=null;
-    if(!one&&hs.length){const T_=D[DAY],TT=(T_.tt||{})[id]||[];
+    if(hs.length){const T_=D[DAY],TT=(T_.tt||{})[id]||[];
      const am=TT.filter(r=>r[5]===1&&T_.ttn[r[2]]===s.nb).map(r=>r[0]).sort((u,v)=>u-v),dm=TT.filter(r=>r[5]===0&&T_.ttn[r[2]]===s.nb).map(r=>r[0]).sort((u,v)=>u-v);
      const occ=[];for(const [a0,b0] of CFG.periods[PER])for(let t=Math.floor(a0/Pp)*Pp;t<b0+Pp;t+=Pp)for(const h_ of hs){const T0=t+(h_%Pp);if(T0>=a0&&T0<b0)occ.push(T0);}
      const mean=(v)=>v.length?Math.round(v.reduce((x,y)=>x+y,0)/v.length):null;
@@ -539,19 +539,24 @@ let map;
     let ang=Math.atan2(sy_,sx)*180/Math.PI;const flip=ang>90||ang<-90;if(flip)ang+=180;
     const outA=`<tspan class="narr">${flip?'◀':'▶'}</tspan>`,inA=`<tspan class="narr">${flip?'▶':'◀'}</tspan>`;
     const px=-sy_,py=sx;
-    const ai=vi!=null?vi:fvi,ao=vo!=null?vo:fvo,cls=one?'':(fq?' nfq':' ngr');
+    const ai=vi!=null?vi:fvi,ao=vo!=null?vo:fvo;
     // labels along the spoke (placed later without overlaps): arrival on one side, departure on the other; ↻ = headway of the symmetry services
     const pri=one?0:2;
     // one label on the line: "◀ min′ ↻headway │ ↻headway min′ ▶" (each arrow in its real direction: arrival towards the node, departure away);
     // ↻ = headway of the symmetry services of that direction (only on symmetry spokes)
-    const hI=vi!=null?s.hwi:null,hO=vo!=null?s.hwo:null,lc=one?COL[s.sy]:'#9ca3af';
+    // each side: coordinated in the symmetry (or frequent) -> normal style; otherwise the mean of all services, muted
+    const hI=vi!=null?s.hwi:null,hO=vo!=null?s.hwo:null,lc=one||fq?COL[s.sy]:'#9ca3af';
+    const mI=vi==null&&!fq,mO=vo==null&&!fq;
     const rep=(h_)=>h_?`<tspan class="nrep">↻${h_}′</tspan>`:'';
     // left part = the one whose arrow points to the left (arrival if the spoke points right, else departure)
-    const half=(mn,h_,arrowLeft)=>mn==null?null:(arrowLeft?`<tspan class="narr">◀</tspan> ${mn}′${h_?' '+rep(h_):''}`:`${h_?rep(h_)+' ':''}${mn}′ <tspan class="narr">▶</tspan>`);
+    const half=(mn,h_,arrowLeft,mut)=>{if(mn==null)return null;const t=arrowLeft?`<tspan class="narr">◀</tspan> ${mn}′${h_?' '+rep(h_):''}`:`${h_?rep(h_)+' ':''}${mn}′ <tspan class="narr">▶</tspan>`;return mut?`<tspan class="nmut">${t}</tspan>`:t;};
     const wH=(mn,h_)=>mn==null?0:7+String(mn).length*6.3+3+(h_?3+8+String(h_).length*5.2+2.5:0);
-    const Lh=flip?half(ao,hO,true):half(ai,hI,true),Rh=flip?half(ai,hI,false):half(ao,hO,false);
-    const wL=flip?wH(ao,hO):wH(ai,hI),wR=flip?wH(ai,hI):wH(ao,hO);
-    if(Lh||Rh)SL.push({sx,sy_,ang,cls:'nmin'+cls,t:[Lh,Rh].filter(Boolean).join(' <tspan class="nsep">│</tspan> ')+(one&&s.wkc?` <tspan class="nrep">🚶${s.wkc}′</tspan>`:''),col:lc,fs:11,w:(one&&s.wkc?24:0)+wL+wR+(Lh&&Rh?12:0)+8,pri,r0:70});
+    const same=hI&&hO&&Math.abs(hI-hO)<5;    // (nearly) the same symmetry headway both ways (< 5 min apart): shown once, in the middle
+    const hI_=same?null:hI,hO_=same?null:hO;
+    const Lh=flip?half(ao,hO_,true,mO):half(ai,hI_,true,mI),Rh=flip?half(ai,hI_,false,mI):half(ao,hO_,false,mO);
+    const wL=flip?wH(ao,hO_):wH(ai,hI_),wR=flip?wH(ai,hI_):wH(ao,hO_);
+    const sep=' <tspan class="nsep">│</tspan> ',mid=same?sep+rep(Math.round((hI+hO)/2))+sep:sep;
+    if(Lh||Rh)SL.push({sx,sy_,ang,cls:'nmin',t:[Lh,Rh].filter(Boolean).join(mid),col:lc,fs:11,w:wL+wR+(Lh&&Rh?12:0)+(same?30:0)+8,pri:one||fq?0:2,r0:70});
     SEG.push([sx,sy_]);
     const L=Object.entries(s.ln).map(([l,h_])=>[l.split(' ')[0].slice(0,8),h_,s.used.has(l)]).sort((u,v)=>(v[2]-u[2])||u[1]-v[1]);
     const Ls=[];for(const x of L)if(!Ls.some(y=>y[0]===x[0]))Ls.push(x);
