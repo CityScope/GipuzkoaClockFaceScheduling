@@ -2,16 +2,15 @@ gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Amstetten|bigrail,peak,5,60,0.47,1.0,2,National railways,dotted
 Amstetten|bigrail,day,5,60,1.0,1.0,2,National railways,solid
 Amstetten|bigrail,day,55,60,1.0,1.0,2,National railways,solid
-Eferding|bus,peak,29,60,0.29,0.43,5,Local railways + Regional bus,dotted
-Eferding|bus,day,30,60,0.67,1.0,2,Local railways + Regional bus,solid
-Lambach|bigrail,peak,20,60,0.57,1.0,2,National railways + Local railways + Regional bus,solid
-Lambach|bigrail,day,25,60,0.26,0.74,4,National railways + Local railways + Regional bus,dotted
+Eferding|bus,peak,29,60,0.15,0.62,11,Local railways + Regional bus,dotted
+Eferding|bus,day,30,60,0.18,0.71,11,Local railways + Regional bus,dotted
+Lambach|bigrail,day,25,60,0.0,1.0,2,National railways + Regional bus,dotted
 Leonding|bigrail,peak,35,60,0.33,1.0,3,Regional bus,dotted
 Leonding|bigrail,day,35,60,0.0,1.0,2,Regional bus,dotted
-Linz|bigrail,day,"10,40",30,0.34,0.27,40,National railways + Local railways + Regional bus,dotted
+Linz|bigrail,day,"10,40",30,0.3,0.34,33,National railways + Local railways + Regional bus,dotted
+Linz|bigrail,night,"5,35",30,0.39,0.69,3,National railways + Local railways + Regional bus,dotted
 Neuhofen an der Krems|bigrail,day,0,60,1.0,1.0,2,National railways + Regional bus,solid
 Steyr|bigrail,peak,55,60,0.0,1.0,3,Regional bus,dotted
 Steyr|bigrail,day,55,60,0.32,1.0,4,Regional bus,dotted
-Traun|bigrail,day,22,60,0.0,0.9,4,National railways + Regional bus,dotted
-Wels|bigrail,peak,30,60,0.0,0.67,3,National railways + Regional bus,dotted
+Traun|bigrail,day,22,60,0.0,1.0,2,Regional bus,dotted
 Bad Hall|bus,peak,45,60,0.0,1.0,2,Regional bus,dotted

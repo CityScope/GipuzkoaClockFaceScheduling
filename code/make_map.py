@@ -516,7 +516,7 @@ let map;
    const med=(a,arr)=>{const o=off(a,arr);return o.length?o[0]:null;};   // the timed service closest to the symmetry minute: last arrival before it / first departure after it (min)
    const tw_=(t)=>[...t].reduce((w,c)=>w+(/[0-9]/.test(c)?5.2:c==='′'?2.4:c===' '?2.6:c==='/'||c==='·'?3:5.6),0);   // approx. text width at 9px
    let sv='';const LB=[],SL=[],SEG=[];
-   for(const [ki,p] of E.entries()){const s=p.s,sx=Math.sin(p.a),sy_=-Math.cos(p.a),lim=(s.sy==='bus'?12:6)+Math.max(s.wch||0,s.wkc?s.wkc+2:0);   // + walk and change penalty when its timed changes need a walk
+   for(const [ki,p] of E.entries()){const s=p.s,sx=Math.sin(p.a),sy_=-Math.cos(p.a),lim=(s.sy==='bus'?12:6)+Math.max(s.wch||0,s.wkc||0);   // + the real walk when its timed changes need one
     // numbers: the REAL timetable (all services, no arrival left out): mean over every symmetry minute in the band of the minutes
     // from the last arrival before it and to the next departure after it
     let fvi=null,fvo=null;

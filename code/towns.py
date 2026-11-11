@@ -94,7 +94,7 @@ SYM_MIN_EVENTS_BAND = 6        # arrivals and departures needed inside a band to
 SNAP_MIN = 1                   # symmetry minute snaps to a multiple of 5 only if one lies within 1 min of the exact minute and the pattern stays valid; otherwise the exact minute is kept
 TRANSFER_MAX_WAIT = 30         # transfers shown with a wait under 30 min ...
 REVERSAL_MAX_WAIT = 60         # ... and vehicles that reverse (same line back) up to 60 min
-CHANGE_PENALTY_MIN = 2         # +2 min whenever the mode or the station changes
+CHANGE_PENALTY_MIN = 0         # no penalty: a change between stations needs only the real walk time
 COORD_WAIT_SHARE = 0.25        # a connection is coordinated only if its wait <= 25% of how often it repeats
 COORD_BEST_HEADWAY_MIN = 15    # a connection is only shown if even the BETTER of the two lines runs every 15 min or less often (otherwise no coordination is needed)
 SHORT_LINK_MIN = 10              # links shorter than this are kept only if both stations take part in timed connections

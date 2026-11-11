@@ -1,5 +1,5 @@
 ,lat,lon,anchor,town,system,label,name,departures,routes,score,important,group
-Aia|euskotren,43.274211,-2.126171,Aia-Orio,Aia,euskotren,Aia,Aia · Euskotren,38.0,1,43.0,True,Aia|bus|1
+Aia|euskotren,43.274211,-2.126171,Aia-Orio,Aia,euskotren,Aia,Aia · Euskotren,38.0,1,43.0,True,Aia|euskotren
 Alegia|renfe,43.1017599,-2.09714,Alegia,Alegia,renfe,Alegia,Alegia · Renfe,59.0,2,69.0,True,Alegia|renfe
 Altsasu / Alsasua|renfe,42.894847,-2.181237,Altsasu/Alsasua-Estación,Altsasu / Alsasua,renfe,Altsasu,Altsasu · Renfe,15.0,3,30.0,True,Altsasu / Alsasua|renfe
 Beasain|renfe,43.0462687,-2.2022994,Beasain,Beasain,renfe,Beasain,Beasain · Renfe,69.0,4,89.0,True,Beasain|bus
@@ -44,7 +44,7 @@ Ezkio-Itsaso|bus,43.08090466914755,-2.2753202798525787,Ezkio-itsaso - Ezkio Herr
 Hernani|bus,43.265107947273535,-1.9787981884606187,Hernani - Txantxilla Auzoa 7,Hernani,bus,Hernani,Hernani · Bus,111.0,8,151.0,True,Hernani|bus
 Hondarribia|bus,43.361797816993885,-1.7899864310126476,Hondarribia - Sabin Arana Goiri Kalea 3 Parean,Hondarribia,bus,Hondarribia,Hondarribia · Bus,85.0,4,105.0,True,Hondarribia|bus
 Larraul|bus,43.188013088724084,-2.1020630983633515,Larraul - Herrigunea,Larraul,bus,Larraul,Larraul · Bus,2.0,2,12.0,True,Larraul|bus
-Lasarte-Oria|bus,43.27224518939014,-2.0183505673782283,"Lasarte-oria - Donostia Etorbidea, Sasoeta Atsobakar",Lasarte-Oria,bus,Lasarte-Oria,Lasarte-Oria · Bus,142.0,11,197.0,True,Lasarte-Oria|bus
+Lasarte-Oria|bus,43.27224518939014,-2.0183505673782283,"Lasarte-oria - Donostia Etorbidea, Sasoeta Atsobakar",Lasarte-Oria,bus,Lasarte-Oria,Lasarte-Oria · Bus,135.0,11,190.0,True,Lasarte-Oria|bus
 Lazkao|bus,43.044177386642005,-2.1912228193035794,Lazkao - Senpere 4,Lazkao,bus,Lazkao,Lazkao · Bus,31.0,4,51.0,True,Lazkao|bus
 Leintz-Gatzaga|bus,42.97446237856015,-2.575023488134083,"Leintz-gatzaga - Barreiatuak 3, Marisa",Leintz-Gatzaga,bus,Leintz-Gatzaga,Leintz-Gatzaga · Bus,33.0,3,48.0,True,Leintz-Gatzaga|bus
 Loiu|bus,43.29556601587585,-2.9061056311526796,LARRABARRI (OLARRA) (844),Loiu,bus,Loiu,Loiu · Bus,58.0,9,103.0,True,Loiu|bus
@@ -52,12 +52,12 @@ Mutriku|bus,43.30808788117716,-2.397123563269007,"Mutriku - Mijoa Industrialdea 
 Oiartzun|bus,43.31080650783253,-1.8848488221677788,Errenteria - Lartzabal Auzoa 1 Parean,Oiartzun,bus,Oiartzun,Oiartzun · Bus,134.0,3,149.0,True,Oiartzun|bus
 Ondarroa|bus,43.32287908009384,-2.421736994358941,ITXASAURRE (PORTUA/PUERTO) (3432),Ondarroa,bus,Ondarroa,Ondarroa · Bus,56.0,6,86.0,True,Ondarroa|bus
 Orexa|bus,43.09384114067655,-2.011420806292211,Orexa - Errebote Plaza,Orexa,bus,Orexa,Orexa · Bus,0.0,1,5.0,True,Orexa|bus
+Orio|bus,43.2774030483125,-2.11661704960709,"Orio - Anibarko Portua Donostirantz, Anibarko Portua",Orio,bus,Orio,Orio · Bus,66.0,3,81.0,True,Orio|bus
 Ormaiztegi|bus,43.043782281829685,-2.2564451518181015,Ormaiztegi - Zumarralde  14,Ormaiztegi,bus,Ormaiztegi,Ormaiztegi · Bus,41.0,4,61.0,True,Ormaiztegi|bus
 Pamplona / Iruña|bus,42.81171251,-1.645344915,PAMPLONA/IRUÑA (Estación bus geltokia),Pamplona / Iruña,bus,Pamplona,Pamplona · Bus,21.0,5,46.0,True,Pamplona / Iruña|bus
 Pasaia|bus,43.31910316965765,-1.918025821113583,Pasaia - Nafarroa Hiribidea 5,Pasaia,bus,Pasaia,Pasaia · Bus,471.0,8,511.0,True,Pasaia|bus
 Soraluze-Placencia de las Armas|bus,43.174494194485,-2.41317645583504,Soraluze - Estaziño Kalea 2,Soraluze-Placencia de las Armas,bus,Soraluze,Soraluze · Bus,76.0,6,106.0,True,Soraluze-Placencia de las Armas|bus
 Tolosa|bus,43.13322735106909,-2.0767536718459865,"Tolosa - Oria Kalea, Zezen Plaza",Tolosa,bus,Tolosa,Tolosa · Bus,108.0,22,218.0,True,Tolosa|bus
-Usurbil|bus,43.271684995957386,-2.0530144189838557,"Usurbil - Zelaiaundi Kalea, Biribilgunea",Usurbil,bus,Usurbil,Usurbil · Bus,53.0,3,68.0,True,Usurbil|bus
 Villabona|bus,43.189930405097115,-2.052845703973096,Villabona - Kale Berria 10,Villabona,bus,Villabona,Villabona · Bus,131.0,10,181.0,True,Villabona|bus
 Vitoria-Gasteiz|bus,42.85898154051944,-2.684649533278899,VITORIA-GASTEIZ (Estación Bus Geltokia),Vitoria-Gasteiz,bus,Vitoria-Gasteiz,Vitoria-Gasteiz · Bus,62.0,23,177.0,True,Vitoria-Gasteiz|bus
 Zaldibia|bus,43.03737594285745,-2.1504575189623787,Zaldibia - Santa Fe  47,Zaldibia,bus,Zaldibia,Zaldibia · Bus,17.0,3,32.0,True,Zaldibia|bus
@@ -65,7 +65,6 @@ Zarautz|bus,43.28292772886843,-2.1609143479606923,Zarautz - Zubiaurrezahar Kalea
 Zegama|bus,42.97225759326767,-2.29230627565755,Zegama - Ugarte Zelai,Zegama,bus,Zegama,Zegama · Bus,18.0,2,28.0,True,Zegama|bus
 Zumaia|bus,43.294602599863516,-2.2563771113443765,Zumaia - Patxita Etxezarreta Kalea 13 Parean,Zumaia,bus,Zumaia,Zumaia · Bus,70.0,8,110.0,True,Zumaia|bus
 Zumarraga|bus,43.087063420478394,-2.3204232255809982,Zumarraga - Renfe Geltokia,Zumarraga,bus,Zumarraga,Zumarraga · Bus,56.0,9,101.0,True,Zumarraga|bus
-Aia|bus|1,43.273906344019494,-2.1250229471154274,Aia - Tren Geltokia,Aia,bus,Aia,Aia · Bus,66.0,3,81.0,True,Aia|bus|1
 Ermua|bus|1,43.18290648895594,-2.4994306709792125,Ermua - Gipuzkoa Hiribidea 16,Ermua,bus,Ermua · Gipuzkoa Hiribi…,Ermua · Gipuzkoa Hiribi… · Bus,140.0,6,170.0,True,Ermua|bus|1
 Irun|bus|1,43.342293510464025,-1.7988536467961023,"Irun - Hondarribia Kalea 25, Gurutze Gorria",Irun,bus,Irun,Irun · Bus,94.0,10,144.0,True,Irun|bus|1
 Zestoa|bus|1,43.27698279487781,-2.2716912094617614,Zestoa - Arroabea,Zestoa,bus,Zestoa,Zestoa · Bus,90.0,8,130.0,True,Zestoa|bus|1

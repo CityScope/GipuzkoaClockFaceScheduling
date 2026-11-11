@@ -1,30 +1,22 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Beasain|bus,peak,25,60,0.0,1.0,2,Renfe + Bus,dotted
-Elgoibar|euskotren,peak,"20,50",30,0.0,1.0,2,Euskotren + Bus,dotted
-Elgoibar|euskotren,day,"21,51",30,0.23,1.0,4,Euskotren + Bus,dotted
-Elgoibar|euskotren,day,"1,31",30,0.39,0.7,3,Euskotren + Bus,dotted
-Zestoa|euskotren,peak,"20,50",30,0.0,1.0,2,Euskotren + Bus,dotted
-Zestoa|euskotren,day,33,60,0.5,1.0,2,Euskotren + Bus,dotted
-Zizurkil|renfe,peak,"25,55",30,0.0,1.0,2,Renfe + Bus,dotted
+Deba|bus,peak,42,60,0.0,0.65,5,Euskotren + Bus,dotted
+Elgoibar|euskotren,day,"20,50",30,0.23,0.77,4,Euskotren + Bus,dotted
 Zumarraga|bus,peak,15,60,0.22,1.0,4,Renfe + Bus,dotted
 Zumarraga|bus,day,15,60,0.5,1.0,2,Bus,dotted
 Bergara|bus,day,"19,49",30,0.26,0.87,4,Bus,dotted
-Donostia / San Sebastián|bus,peak,45,60,0.52,0.26,12,Bus,solid
-Donostia / San Sebastián|bus,day,45,60,0.57,0.25,12,Bus,solid
+Donostia / San Sebastián|bus,peak,45,60,0.5,0.25,13,Bus,dotted
+Donostia / San Sebastián|bus,day,45,60,0.55,0.24,13,Bus,solid
 Eibar|bus,peak,"28,58",30,0.43,0.59,6,Bus,dotted
-Elgoibar|bus,peak,"20,50",30,0.0,0.64,3,Euskotren + Bus,dotted
 Elgoibar|bus,day,"17,47",30,0.35,0.7,6,Euskotren + Bus,dotted
-Elgoibar|bus,day,"1,31",30,0.54,0.54,4,Euskotren + Bus,solid
+Errenteria|bus,peak,"13,43",30,0.5,1.0,2,Euskotren + Bus,dotted
+Errenteria|bus,day,"13,43",30,0.5,1.0,2,Euskotren + Bus,dotted
 Hernani|bus,peak,"20,50",30,0.0,0.47,3,Bus,dotted
-Lasarte-Oria|bus,day,"1,31",30,0.17,0.5,4,Bus,dotted
-Lasarte-Oria|bus,night,12,60,0.0,1.0,2,Bus,dotted
 Ondarroa|bus,peak,5,60,0.0,0.59,3,Bus,dotted
 Ondarroa|bus,day,5,60,0.0,0.67,3,Bus,dotted
 Tolosa|bus,peak,55,60,0.16,0.53,5,Bus,dotted
 Tolosa|bus,peak,"10,40",30,0.68,0.68,3,Bus,solid
-Villabona|bus,peak,"21,51",30,0.43,0.78,4,Renfe + Bus,dotted
 Vitoria-Gasteiz|bus,day,30,60,0.0,0.51,3,Bus,dotted
-Zarautz|bus,peak,"16,46",30,0.19,0.41,10,Bus,dotted
-Zarautz|bus,day,"16,46",30,0.24,0.65,5,Bus,dotted
-Zestoa|bus|1,peak,"17,47",30,0.0,0.8,4,Euskotren + Bus,dotted
-Zestoa|bus|1,day,"20,50",30,0.2,0.61,5,Euskotren + Bus,dotted
+Zarautz|bus,peak,"1,31",30,0.14,0.55,7,Bus,dotted
+Zestoa|bus|1,peak,"17,47",30,0.0,0.71,3,Euskotren + Bus,dotted
+Zestoa|bus|1,day,50,60,0.0,0.68,3,Euskotren + Bus,dotted

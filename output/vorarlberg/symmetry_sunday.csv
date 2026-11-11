@@ -1,50 +1,46 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
-Bludenz|bigrail,peak,"0,30",30,0.0,0.84,5,National railways + Local railways + Regional bus,dotted
-Bludenz|bigrail,day,"0,30",30,0.47,0.65,8,National railways + Local railways + Regional bus,dotted
-Bregenz|bigrail,peak,"14,44",30,0.44,0.59,23,National railways + Regional bus,dotted
-Bregenz|bigrail,peak,"4,34",30,0.29,0.54,18,National railways + Regional bus,dotted
+Bludenz|bigrail,peak,30,60,0.0,0.74,3,National railways + Local railways + Regional bus,dotted
+Bludenz|bigrail,day,35,60,0.38,0.53,5,National railways + Local railways + Regional bus,dotted
+Bludenz|bigrail,day,25,60,1.0,1.0,2,National railways + Regional bus,solid
+Bregenz|bigrail,peak,"14,44",30,0.4,0.51,23,National railways + Regional bus,dotted
+Bregenz|bigrail,peak,"4,34",30,0.46,0.54,18,National railways + Regional bus,dotted
 Bregenz|bigrail,peak,54,60,1.0,1.0,2,National railways + Regional bus,solid
-Bregenz|bigrail,day,"14,44",30,0.5,0.55,16,National railways + Regional bus,solid
-Bregenz|bigrail,day,"4,34",30,0.33,0.61,12,National railways + Regional bus,dotted
-Bregenz|bigrail,day,54,60,1.0,1.0,2,National railways + Regional bus,solid
-Dornbirn|bigrail,peak,"28,58",30,0.72,0.81,7,National railways + Regional bus,solid
-Dornbirn|bigrail,peak,"15,45",30,0.39,1.0,3,National railways + Regional bus,dotted
-Dornbirn|bigrail,day,"28,58",30,0.73,0.82,7,National railways + Regional bus,solid
-Dornbirn|bigrail,day,"15,45",30,0.44,1.0,3,National railways + Regional bus,dotted
-Dornbirn|bigrail,night,"2,32",30,0.33,0.67,6,National railways + Regional bus,dotted
-Feldkirch|bigrail,peak,30,60,0.42,0.37,17,National railways + Regional bus,dotted
-Feldkirch|bigrail,peak,"10,40",30,0.0,1.0,2,National railways + Regional bus,dotted
-Feldkirch|bigrail,day,30,60,0.47,0.39,17,National railways + Regional bus,dotted
-Feldkirch|bigrail,day,"10,40",30,0.0,1.0,2,National railways + Regional bus,dotted
-Frastanz|bigrail,day,"29,59",30,0.71,0.71,3,National railways + Regional bus,solid
+Bregenz|bigrail,day,"7,37",30,0.4,0.51,35,National railways + Regional bus,dotted
+Bregenz|bigrail,day,"20,50",30,0.53,0.56,22,National railways + Regional bus,solid
+Bregenz|bigrail,night,"14,44",30,0.34,0.55,8,National railways + Regional bus,dotted
+Dornbirn|bigrail,peak,"2,32",30,0.37,0.61,10,National railways + Regional bus,dotted
+Dornbirn|bigrail,peak,"15,45",30,0.76,1.0,2,National railways + Regional bus,solid
+Dornbirn|bigrail,day,"2,32",30,0.38,0.62,10,National railways + Regional bus,dotted
+Dornbirn|bigrail,day,"15,45",30,0.8,1.0,2,National railways + Regional bus,solid
+Dornbirn|bigrail,night,"2,32",30,0.28,0.72,7,National railways + Regional bus,dotted
+Feldkirch|bigrail,day,"0,30",30,0.72,0.86,17,National railways + Regional bus,solid
+Frastanz|bigrail,day,"29,59",30,0.42,0.71,3,National railways + Regional bus,dotted
 Götzis|bigrail,peak,44,60,1.0,1.0,4,National railways + Regional bus,solid
-Götzis|bigrail,peak,"27,57",30,0.62,1.0,2,National railways + Regional bus,solid
+Götzis|bigrail,peak,"27,57",30,0.0,1.0,2,National railways + Regional bus,dotted
 Götzis|bigrail,day,"14,44",30,1.0,1.0,4,National railways + Regional bus,solid
-Götzis|bigrail,day,"27,57",30,0.58,1.0,2,National railways + Regional bus,solid
+Götzis|bigrail,day,"27,57",30,0.0,1.0,2,National railways + Regional bus,dotted
 Götzis|bigrail,night,"14,44",30,0.52,0.77,4,National railways + Regional bus,solid
 Hard|bigrail,peak,50,60,0.5,1.0,2,National railways + Regional bus,dotted
 Hard|bigrail,day,50,60,0.5,1.0,2,National railways + Regional bus,dotted
 Hohenems|bigrail,peak,"12,42",30,1.0,1.0,3,National railways + Regional bus,solid
 Hohenems|bigrail,day,"12,42",30,1.0,1.0,3,National railways + Regional bus,solid
 Hohenems|bigrail,night,15,60,0.0,1.0,3,National railways + Regional bus,dotted
-Klaus|bigrail,peak,15,60,0.6,1.0,5,National railways + Regional bus,solid
-Klaus|bigrail,day,15,60,0.6,1.0,5,National railways + Regional bus,solid
+Klaus|bigrail,peak,15,60,0.8,1.0,5,National railways + Regional bus,solid
+Klaus|bigrail,day,15,60,0.8,1.0,5,National railways + Regional bus,solid
 Lochau|bigrail,peak,"28,58",30,1.0,1.0,2,National railways + Regional bus,solid
 Lochau|bigrail,day,"28,58",30,0.33,1.0,2,National railways + Regional bus,dotted
-Ludesch|bigrail,peak,"15,45",30,1.0,1.0,2,National railways + Regional bus,solid
+Ludesch|bigrail,peak,15,60,0.5,1.0,2,National railways + Regional bus,dotted
 Lustenau|bigrail,peak,58,60,0.41,0.72,11,National railways + Regional bus,dotted
 Lustenau|bigrail,day,58,60,0.36,0.73,11,National railways + Regional bus,dotted
 Lustenau|bigrail,night,58,60,0.53,0.67,7,National railways + Regional bus,solid
 Nenzing|bigrail,day,"18,48",30,0.68,0.68,3,National railways + Regional bus,solid
-Rankweil|bigrail,peak,"20,50",30,0.38,0.61,8,National railways + Regional bus,dotted
-Rankweil|bigrail,peak,"10,40",30,0.56,0.71,6,National railways + Regional bus,solid
-Rankweil|bigrail,day,"12,42",30,0.51,0.68,8,National railways + Regional bus,solid
-Rankweil|bigrail,day,"23,53",30,0.6,0.6,5,National railways + Regional bus,solid
+Rankweil|bigrail,peak,"20,50",30,0.24,0.61,8,National railways + Regional bus,dotted
+Rankweil|bigrail,peak,"10,40",30,0.55,0.77,4,National railways + Regional bus,solid
+Rankweil|bigrail,day,"12,42",30,0.34,0.51,8,National railways + Regional bus,dotted
+Rankweil|bigrail,day,"23,53",30,0.4,0.6,5,National railways + Regional bus,dotted
 Schruns|bus,peak,"3,33",30,0.25,1.0,2,Local railways + Regional bus,dotted
 Schruns|bus,day,"3,33",30,0.33,1.0,2,Local railways + Regional bus,dotted
-Schwarzach|bigrail,peak,"10,40",30,0.71,0.71,3,National railways + Regional bus,solid
-Schwarzach|bigrail,peak,"25,55",30,0.71,0.71,3,National railways + Regional bus,solid
-Schwarzach|bigrail,day,"25,55",30,0.46,0.73,3,National railways + Regional bus,dotted
+Schwarzach|bigrail,day,"25,55",30,0.0,0.73,3,National railways + Regional bus,dotted
 Egg|bus,day,55,60,1.0,1.0,2,Regional bus,solid
 Thüringen|bus,peak,"13,43",30,0.44,1.0,2,Regional bus,dotted
 Thüringen|bus,day,"13,43",30,1.0,1.0,2,Regional bus,solid

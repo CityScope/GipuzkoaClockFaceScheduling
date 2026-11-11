@@ -207,7 +207,7 @@ def _circ(vals, period, w=None):
 def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
     """Connections between the edges of one node group in one band (see README, "Connections").
     Edge = (neighbour town, mode, station side, fast/slow class). For every direction X -> Y:
-      direct options (same vehicle) and change options (wait <= 6 min, <= 12 min arriving by bus; walk + 2 min penalty).
+      direct options (same vehicle) and change options (wait <= 6 min, <= 12 min arriving by bus; plus the real walk).
       A change counts only if no other option arrives later and leaves earlier, and it gains >= min(30, 25 % Hd) over the
       next direct service. Hd = headway of direct options, Hc = direct + counted changes (pyGTFSHandler formula).
       Coordinated ('c') when >= 2 counted changes, Hc <= Hd / 2 (or no direct service) and 1.5 x mean wait <= headway(Y) / 2.
