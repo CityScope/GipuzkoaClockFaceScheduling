@@ -528,8 +528,11 @@ let map;
      fvo=mean(occ.map(T0=>{const x=dm.find(y=>y>=T0);return x==null||x-T0>180?null:x-T0;}).filter(x=>x!=null));
     }
     // style: a side is coordinated in this symmetry when it has timed changes in it and its timetable mean is within the window
-    const vi=hs.length&&s.in.length&&fvi!=null&&fvi<=lim?fvi:null,vo=hs.length&&s.out.length&&fvo!=null&&fvo<=lim?fvo:null;
-    const both=vi!=null&&vo!=null,one=vi!=null||vo!=null,fq=s.fh<CFG.freq&&!one;   // frequent: no timing needed
+    // (arriving / leaving at the symmetry minute itself, mean 0 min, is part of the symmetry)
+    const vi=hs.length&&fvi!=null&&fvi<=lim&&(s.in.length||fvi===0)?fvi:null,vo=hs.length&&fvo!=null&&fvo<=lim&&(s.out.length||fvo===0)?fvo:null;
+    // frequent (< 15 min): needs no timing, works in the symmetry and is highlighted as frequent (per direction for the style)
+    let fI_=false,fO_=false;for(const e of net.ed)if(e[1]===s.nb&&(e[9]??null)===(s.wk??null)){if((e[7]??999)<CFG.freq)fI_=true;if((e[8]??999)<CFG.freq)fO_=true;}
+    const wI=vi!=null||fI_,wO=vo!=null||fO_,both=wI&&wO,one=wI||wO,fq=s.fh<CFG.freq;
     // edge headways, all services (arr / dep)
     s.ahi=null;s.aho=null;for(const e of net.ed)if(e[1]===s.nb&&(e[9]??null)===(s.wk??null)){if(e[7]!=null&&e[7]<999)s.ahi=Math.min(s.ahi??999,e[7]);if(e[8]!=null&&e[8]<999)s.aho=Math.min(s.aho??999,e[8]);}
     if(fq)sv+=`<line x1="${(cx+sx*R0).toFixed(1)}" y1="${(cy+sy_*R0).toFixed(1)}" x2="${(cx+sx*R1).toFixed(1)}" y2="${(cy+sy_*R1).toFixed(1)}" stroke="${COL[s.sy]}" stroke-width="9" stroke-linecap="round" opacity=".28"/>`;
@@ -547,7 +550,7 @@ let map;
     // each side: coordinated in the symmetry (or frequent) -> normal style; otherwise the mean of all services, muted
     const hI=vi!=null?s.hwi:null,hO=vo!=null?s.hwo:null,lc=one||fq?COL[s.sy]:'#9ca3af';
     // a side counts (normal style) when it is timed in the symmetry or its own direction is frequent (e.g. a train every 10 min leaving at :00)
-    const fI=fq||(s.ahi??999)<CFG.freq,fO=fq||(s.aho??999)<CFG.freq,mI=vi==null&&!fI,mO=vo==null&&!fO;
+    const mI=vi==null&&!fI_,mO=vo==null&&!fO_;
     const rep=(h_)=>h_?`<tspan class="nrep">↻${h_}′</tspan>`:'';
     // left part = the one whose arrow points to the left (arrival if the spoke points right, else departure)
     const half=(mn,h_,arrowLeft,mut)=>{if(mn==null)return null;const t=arrowLeft?`<tspan class="narr">◀</tspan> ${mn}′${h_?' '+rep(h_):''}`:`${h_?rep(h_)+' ':''}${mn}′ <tspan class="narr">▶</tspan>`;return mut?`<tspan class="nmut">${t}</tspan>`:t;};
