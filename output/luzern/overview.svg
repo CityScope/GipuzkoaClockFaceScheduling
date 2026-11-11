@@ -113,8 +113,8 @@
 <circle cx='1020.3' cy='997.7' r='4.8' fill='#2ca02c' stroke='#fff' stroke-width='1'/>
 <line x1='1020.3' y1='997.7' x2='1026.6' y2='986.8' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <line x1='1020.3' y1='997.7' x2='1016.4' y2='1009.7' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='1020.3' y1='997.7' x2='1031.2' y2='1004.0' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='1020.3' y1='997.7' x2='1009.4' y2='991.4' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='1020.3' y1='997.7' x2='1031.2' y2='1004.0' stroke='#000' stroke-width='2' stroke-linecap='round'/>
+<line x1='1020.3' y1='997.7' x2='1009.4' y2='991.4' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <circle cx='776.7' cy='1025.8' r='6.3' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='776.7' cy='1025.8' r='3.2' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <circle cx='391.2' cy='596.8' r='7.3' fill='#d62728' stroke='#fff' stroke-width='1.2'/>

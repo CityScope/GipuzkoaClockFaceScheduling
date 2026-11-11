@@ -298,8 +298,8 @@ def vehicle_km(st, stops):
 
 def fast_slow(e):
     """Per leg: 'fast' / 'slow' when a directed link has two clear service patterns, else ''.
-    Two groups only if the slow one makes >= FS_MIN_STOPS more intermediate stops AND takes >= FS_MIN_MIN more minutes,
-    and their headways are similar (the less frequent group runs at least every 2x the better group's headway).
+    Two groups (never more) only if the slow one makes >= FS_MIN_STOPS more intermediate stops AND takes more than
+    FS_MIN_MIN minutes longer (median). No condition on their headways.
     A few exceptional fast services do not form a group (each group needs >= FS_MIN_TRIPS trips a day)."""
     out = pd.Series("", index=e.index)
     if not len(e):
@@ -314,17 +314,13 @@ def fast_slow(e):
             if tt[i] - tt[i - 1] <= 0:
                 continue
             f, s = x.iloc[:i], x.iloc[i:]
-            if np.median(s.tt) - np.median(f.tt) < FS_MIN_MIN or np.median(s.ns) - np.median(f.ns) < FS_MIN_STOPS:
+            if np.median(s.tt) - np.median(f.tt) <= FS_MIN_MIN or np.median(s.ns) - np.median(f.ns) < FS_MIN_STOPS:
                 continue
             gap = tt[i] - tt[i - 1]
             if best is None or gap > best[0]:
                 best = (gap, f.index, s.index)
         if best is None:
             continue
-        hf = headway_window(np.sort(e.loc[best[1], "dep"].values), [(DAY_START_MIN, 22 * 60)])[0]
-        hs = headway_window(np.sort(e.loc[best[2], "dep"].values), [(DAY_START_MIN, 22 * 60)])[0]
-        if not (np.isfinite(hf) and np.isfinite(hs)) or max(hf, hs) > 2 * min(hf, hs):
-            continue                                                      # headways too different: one group
         out.loc[best[1]] = "fast"; out.loc[best[2]] = "slow"
     return out
 

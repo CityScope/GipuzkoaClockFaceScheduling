@@ -53,7 +53,7 @@ Linz|bigrail,peak,Asten,Wels,0.3,5.7,direct None / with changes 60,False
 Linz|bigrail,peak,Engerwitzdorf,Leonding,9.3,5.7,direct None / with changes 120,False
 Linz|bigrail,peak,Gramastetten,Leonding,8.3,5.7,direct None / with changes 120,False
 Linz|bigrail,peak,Leonding,Ottensheim · Bf,0.3,5.7,direct None / with changes 90,False
-Linz|bigrail,peak,Mauthausen,Wels,3.5,5.7,direct None / with changes 75,False
+Linz|bigrail,peak,Mauthausen (slow),Wels,3.5,5.7,direct None / with changes 75,False
 Linz|bigrail,peak,Enns,Ottensheim · B127/Hambergstr…,3.3,5.7,direct None / with changes 90,False
 Linz|bigrail,peak,Hellmonsödt (slow),Wels,0.3,5.7,direct None / with changes 90,False
 Linz|bigrail,peak,Amstetten,Traun,1.3,5.7,direct None / with changes 120,False
@@ -84,8 +84,8 @@ Linz|bigrail,day,Engerwitzdorf,Sankt Valentin,8.3,5.7,direct None / with changes
 Linz|bigrail,day,Gramastetten,Leonding,8.3,5.7,direct None / with changes 75,False
 Linz|bigrail,day,Leonding,Ottensheim · Bf,0.3,5.7,direct None / with changes 60,False
 Linz|bigrail,day,Leonding,Sankt Valentin,0.3,5.7,direct None / with changes 60,False
-Linz|bigrail,day,Mauthausen,Traun,11.3,5.7,direct None / with changes 75,False
-Linz|bigrail,day,Mauthausen,Wels,3.3,5.7,direct None / with changes 60,False
+Linz|bigrail,day,Mauthausen (slow),Traun,11.3,5.7,direct None / with changes 75,False
+Linz|bigrail,day,Mauthausen (slow),Wels,3.3,5.7,direct None / with changes 60,False
 Linz|bigrail,day,Asten,Pregarten,9.3,5.7,direct None / with changes 75,False
 Linz|bigrail,day,Hellmonsödt (fast),Pregarten,1.3,5.7,direct None / with changes 75,False
 Linz|bigrail,day,Leonding,Pregarten,3.6,5.7,direct None / with changes 72,False

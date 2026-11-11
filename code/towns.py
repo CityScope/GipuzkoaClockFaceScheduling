@@ -99,8 +99,8 @@ COORD_WAIT_SHARE = 0.25        # a connection is coordinated only if its wait <=
 COORD_BEST_HEADWAY_MIN = 15    # a connection is only shown if even the BETTER of the two lines runs every 15 min or less often (otherwise no coordination is needed)
 SHORT_LINK_MIN = 10              # links shorter than this are kept only if both stations take part in timed connections
 DROP_REDUNDANT = True           # remove branching stations whose every line pair also meets at another node
-FS_MIN_STOPS = 2                # fast / slow split of a link: the slow group makes >= 2 more stops ...
-FS_MIN_MIN = 6.0                # ... and takes >= 6 min more; headways within a factor 2; each group >= FS_MIN_TRIPS trips a day
+FS_MIN_STOPS = 2                # fast / slow split of a link (max 2 edges): the slow group makes >= 2 more stops ...
+FS_MIN_MIN = 10.0               # ... and takes MORE than 10 min longer (no headway condition); each group >= FS_MIN_TRIPS trips a day
 FS_MIN_TRIPS = 6
 FAR_VISIT_M = 8000              # a trip through a municipality counts as serving it if a stop is within this of the node (drawn only)
 REGIONAL_BUS_MIN_TOWNS = 3      # a bus line is regional (may create nodes) if it serves >= 3 municipalities ...

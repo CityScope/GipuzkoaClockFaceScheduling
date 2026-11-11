@@ -513,14 +513,12 @@ let map;
    for(let it=0;it<60;it++)for(let k=0;k<E.length;k++){const p=E[k],q=E[(k+1)%E.length];let d=q.a-p.a;if(k===E.length-1)d+=2*Math.PI;if(d<minA&&E.length>1){const f=(minA-d)/2;p.a-=f;q.a+=f;}}
    const R0=17,R1=138,Pp=ys.length?(ys[G].p||60):60;
    const off=(a,arr)=>[...new Set(a.map(x=>Math.min(...hs.map(h_=>arr?((h_-x)%Pp+Pp)%Pp:((x-h_)%Pp+Pp)%Pp))))].sort((u,v)=>u-v);
-   const med=(a,arr)=>{const o=off(a,arr);return o.length?o[Math.floor((o.length-1)/2)]:null;};   // median offset (min) from the symmetry minute
+   const med=(a,arr)=>{const o=off(a,arr);return o.length?o[0]:null;};   // the timed service closest to the symmetry minute: last arrival before it / first departure after it (min)
    const tw_=(t)=>[...t].reduce((w,c)=>w+(/[0-9]/.test(c)?5.2:c==='′'?2.4:c===' '?2.6:c==='/'||c==='·'?3:5.6),0);   // approx. text width at 9px
    let sv='';const LB=[],SL=[],SEG=[];
    for(const [ki,p] of E.entries()){const s=p.s,sx=Math.sin(p.a),sy_=-Math.cos(p.a),lim=(s.sy==='bus'?12:6)+Math.max(s.wch||0,s.wkc?s.wkc+2:0);   // + walk and change penalty when its timed changes need a walk
-    // a direction works in the symmetry only if it arrives / leaves within the window around the symmetry minute
-    const vi0=hs.length?med(s.in,true):null,vo0=hs.length?med(s.out,false):null,vi=vi0!=null&&vi0<=lim?vi0:null,vo=vo0!=null&&vo0<=lim?vo0:null;
-    const both=vi!=null&&vo!=null,one=vi!=null||vo!=null,fq=s.fh<CFG.freq&&!one;   // frequent: no timing needed
-    // not in the symmetry (frequent or not): mean minutes from the last arrival to each symmetry minute and from it to the next departure (all services, node timetable)
+    // numbers: the REAL timetable (all services, no arrival left out): mean over every symmetry minute in the band of the minutes
+    // from the last arrival before it and to the next departure after it
     let fvi=null,fvo=null;
     if(hs.length){const T_=D[DAY],TT=(T_.tt||{})[id]||[];
      const am=TT.filter(r=>r[5]===1&&T_.ttn[r[2]]===s.nb).map(r=>r[0]).sort((u,v)=>u-v),dm=TT.filter(r=>r[5]===0&&T_.ttn[r[2]]===s.nb).map(r=>r[0]).sort((u,v)=>u-v);
@@ -528,8 +526,10 @@ let map;
      const mean=(v)=>v.length?Math.round(v.reduce((x,y)=>x+y,0)/v.length):null;
      fvi=mean(occ.map(T0=>{let b_=null;for(const x of am){if(x<=T0)b_=x;else break;}return b_==null||T0-b_>180?null:T0-b_;}).filter(x=>x!=null));
      fvo=mean(occ.map(T0=>{const x=dm.find(y=>y>=T0);return x==null||x-T0>180?null:x-T0;}).filter(x=>x!=null));
-     const cap=Math.min(Pp,30);if(fvi>cap)fvi=null;if(fvo>cap)fvo=null;   // longer gaps say nothing about the symmetry
     }
+    // style: a side is coordinated in this symmetry when it has timed changes in it and its timetable mean is within the window
+    const vi=hs.length&&s.in.length&&fvi!=null&&fvi<=lim?fvi:null,vo=hs.length&&s.out.length&&fvo!=null&&fvo<=lim?fvo:null;
+    const both=vi!=null&&vo!=null,one=vi!=null||vo!=null,fq=s.fh<CFG.freq&&!one;   // frequent: no timing needed
     // edge headways, all services (arr / dep)
     s.ahi=null;s.aho=null;for(const e of net.ed)if(e[1]===s.nb&&(e[9]??null)===(s.wk??null)){if(e[7]!=null&&e[7]<999)s.ahi=Math.min(s.ahi??999,e[7]);if(e[8]!=null&&e[8]<999)s.aho=Math.min(s.aho??999,e[8]);}
     if(fq)sv+=`<line x1="${(cx+sx*R0).toFixed(1)}" y1="${(cy+sy_*R0).toFixed(1)}" x2="${(cx+sx*R1).toFixed(1)}" y2="${(cy+sy_*R1).toFixed(1)}" stroke="${COL[s.sy]}" stroke-width="9" stroke-linecap="round" opacity=".28"/>`;
@@ -556,8 +556,9 @@ let map;
     const hI_=same?null:hI,hO_=same?null:hO;
     const Lh=flip?half(ao,hO_,true,mO):half(ai,hI_,true,mI),Rh=flip?half(ai,hI_,false,mI):half(ao,hO_,false,mO);
     const wL=flip?wH(ao,hO_):wH(ai,hI_),wR=flip?wH(ai,hI_):wH(ao,hO_);
-    const sep=' <tspan class="nsep">│</tspan> ',mid=same?sep+rep(Math.round((hI+hO)/2))+sep:sep;
-    if(Lh||Rh)SL.push({sx,sy_,ang,cls:'nmin',t:[Lh,Rh].filter(Boolean).join(mid),col:lc,fs:11,w:wL+wR+(Lh&&Rh?12:0)+(same?30:0)+8,pri:one||fq?0:2,r0:70});
+    // a divider only between a coordinated (normal) and a non-coordinated (grey) side
+    const mL=flip?mO:mI,mR=flip?mI:mO,sep=(mL!==mR)?' <tspan class="nsep">│</tspan> ':'\u2002',mid=same?'\u2002'+rep(Math.round((hI+hO)/2))+'\u2002':sep;
+    if(Lh||Rh)SL.push({sx,sy_,ang,cls:'nmin',t:[Lh,Rh].filter(Boolean).join(mid),col:lc,fs:11,w:wL+wR+(Lh&&Rh?10:0)+(same?30:0)+8,pri:one||fq?0:2,r0:70});
     SEG.push([sx,sy_]);
     const L=Object.entries(s.ln).map(([l,h_])=>[l.split(' ')[0].slice(0,8),h_,s.used.has(l)]).sort((u,v)=>(v[2]-u[2])||u[1]-v[1]);
     const Ls=[];for(const x of L)if(!Ls.some(y=>y[0]===x[0]))Ls.push(x);
@@ -579,7 +580,6 @@ let map;
       const pts=[];for(let k=0;k<n;k++){const f=(k/(n-1)-0.5)*(L_.w-6);pts.push([ccx+L_.sx*f,ccy+L_.sy_*f]);}
       const c=pts.reduce((a,[x,y])=>a+near(x,y,[L_.sx,L_.sy_]),0);
       if(!best||c<best.c-0.01)best={c,x:ccx,y:ccy,pts};if(c===0)break;}
-     if(L_.pri===2&&best.c>4)continue;   // grey labels that cannot be placed cleanly are left out
      P.push(best);const hh=L_.fs+3;
      sv+=`<g transform="translate(${best.x.toFixed(1)},${best.y.toFixed(1)}) rotate(${L_.ang.toFixed(1)})"><rect x="${(-L_.w/2).toFixed(1)}" y="${(-hh/2).toFixed(1)}" width="${L_.w.toFixed(1)}" height="${hh}" rx="${hh/2}" fill="var(--bg)" stroke="${L_.col}" stroke-width="1.2"/><text dy="${(L_.fs*0.35).toFixed(1)}" class="${L_.cls}">${L_.t}</text></g>`;}}
    // labels: one column per side, stacked without overlap (leader line when moved away from the spoke tip)

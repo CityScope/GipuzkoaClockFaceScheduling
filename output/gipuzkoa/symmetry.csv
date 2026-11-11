@@ -1,14 +1,14 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
-Beasain|bus,day,27,60,0.0,0.57,14,Renfe + Bus,dotted
+Beasain|bus,day,28,60,0.0,0.45,15,Renfe + Bus,dotted
+Beasain|bus,day,43,60,0.0,0.65,3,Bus,dotted
 Deba|bus,peak,37,60,0.0,1.0,3,Euskotren + Bus,dotted
 Deba|bus,day,38,60,0.0,1.0,3,Euskotren + Bus,dotted
-Donostia / San Sebastián|renfe,peak,30,60,0.5,0.84,6,Renfe + Bus,dotted
-Donostia / San Sebastián|renfe,day,55,60,0.48,0.74,4,Renfe + Bus,dotted
+Donostia / San Sebastián|renfe,peak,30,60,0.16,0.84,6,Renfe + Bus,dotted
+Donostia / San Sebastián|renfe,day,"25,53",30,0.62,1.0,3,Renfe + Bus,solid
 Elgoibar|euskotren,day,"20,55",30,0.0,0.84,5,Euskotren + Bus,dotted
 Errenteria|euskotren,day,"25,57",30,0.0,1.0,2,Euskotren + Bus,dotted
-Pasaia|bus,day,52,60,0.27,0.54,11,Renfe + Euskotren + Bus,dotted
-Pasaia|bus,night,"25,52",30,0.37,0.63,8,Renfe + Euskotren + Bus,dotted
-Pasaia|bus,night,40,60,0.18,0.52,5,Renfe + Euskotren + Bus,dotted
+Pasaia|bus,night,25,60,0.33,0.67,6,Renfe + Euskotren + Bus,dotted
+Pasaia|bus,night,40,60,0.5,0.77,4,Renfe + Euskotren + Bus,solid
 Zestoa|euskotren,peak,"25,50",30,0.0,1.0,2,Euskotren + Bus,dotted
 Zestoa|euskotren,day,"25,50",30,0.5,1.0,2,Euskotren + Bus,dotted
 Zumarraga|bus,peak,15,60,0.23,0.77,9,Renfe + Bus,dotted
@@ -18,26 +18,25 @@ Arrasate / Mondragón|bus,peak,45,60,0.0,0.75,5,Bus,dotted
 Arrasate / Mondragón|bus,day,"20,48",30,0.0,0.92,5,Bus,dotted
 Bergara|bus,peak,"20,50",30,0.56,0.66,13,Bus,solid
 Bergara|bus,day,"20,50",30,0.38,0.87,10,Bus,dotted
-Donostia / San Sebastián|bus,peak,"0,30",30,0.47,0.49,73,Renfe + Bus,dotted
-Donostia / San Sebastián|bus,peak,"15,45",30,0.61,0.53,36,Bus,solid
-Donostia / San Sebastián|bus,day,"0,30",30,0.46,0.53,122,Renfe + Bus,dotted
-Donostia / San Sebastián|bus,day,"12,43",30,0.47,0.4,60,Renfe + Bus,dotted
+Donostia / San Sebastián|bus,peak,"0,30",30,0.43,0.53,102,Renfe + Bus,dotted
+Donostia / San Sebastián|bus,peak,"15,45",30,0.65,0.59,29,Bus,solid
+Donostia / San Sebastián|bus,day,"13,43",30,0.37,0.47,68,Renfe + Bus,dotted
+Donostia / San Sebastián|bus,night,"5,33",30,0.27,0.53,14,Renfe + Bus,dotted
 Eibar|bus,peak,"12,43",30,0.35,1.0,5,Bus,dotted
 Eibar|bus,peak,28,60,0.41,0.77,5,Bus,dotted
 Eibar|bus,day,13,60,0.25,0.47,8,Bus,dotted
 Eibar|bus,day,28,60,0.27,0.52,8,Bus,dotted
 Eibar|bus,night,10,60,0.0,1.0,2,Bus,dotted
 Elgoibar|bus,day,18,60,0.17,0.53,11,Euskotren + Bus,dotted
-Errenteria|bus,night,"0,30",30,0.25,0.63,8,Euskotren + Bus,dotted
-Lasarte-Oria|bus,peak,"8,38",30,0.26,0.74,3,Euskotren + Bus,dotted
+Lasarte-Oria|bus,peak,"10,38",30,0.26,0.74,3,Euskotren + Bus,dotted
 Lasarte-Oria|bus,night,10,60,0.0,1.0,2,Bus,dotted
 Ondarroa|bus,peak,"5,35",30,0.24,0.59,3,Bus,dotted
 Ondarroa|bus,day,"2,35",30,0.33,1.0,3,Bus,dotted
 Tolosa|bus,peak,"5,37",30,0.29,0.53,4,Bus,dotted
 Tolosa|bus,peak,55,60,0.47,0.58,8,Bus,dotted
 Vitoria-Gasteiz|bus,day,30,60,0.0,0.51,3,Bus,dotted
-Zarautz|bus,peak,45,60,0.15,0.85,6,Bus,dotted
-Zarautz|bus,day,48,60,0.22,0.78,12,Bus,dotted
-Zarautz|bus,day,"5,30",30,0.0,1.0,2,Bus,dotted
+Zarautz|bus,peak,45,60,0.1,0.55,23,Bus,dotted
+Zarautz|bus,day,48,60,0.17,0.78,12,Bus,dotted
+Zarautz|bus,day,"5,33",30,0.0,0.58,11,Bus,dotted
 Zestoa|bus|1,peak,"22,50",30,0.0,0.67,6,Euskotren + Bus,dotted
 Zestoa|bus|1,day,"23,50",30,0.23,0.67,6,Euskotren + Bus,dotted
