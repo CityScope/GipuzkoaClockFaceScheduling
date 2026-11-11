@@ -208,9 +208,9 @@
 <circle cx='532.2' cy='685.4' r='2.4' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <circle cx='873.7' cy='434.1' r='9.2' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='873.7' cy='434.1' r='4.6' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
-<line x1='873.7' y1='434.1' x2='877.5' y2='422.6' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='873.7' y1='434.1' x2='879.8' y2='423.6' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <line x1='873.7' y1='434.1' x2='867.7' y2='444.7' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='873.7' y1='434.1' x2='885.9' y2='434.1' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='873.7' y1='434.1' x2='885.3' y2='437.9' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <line x1='873.7' y1='434.1' x2='862.2' y2='430.4' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='909.1' cy='409.2' r='15.8' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='909.1' cy='409.2' r='10.5' fill='#2ca02c' stroke='#fff' stroke-width='1'/>
@@ -230,8 +230,8 @@
 <line x1='814.9' y1='719.9' x2='824.7' y2='717.8' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <circle cx='1230.1' cy='1217.0' r='4.2' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1123.7' cy='566.2' r='6.8' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
-<line x1='1123.7' y1='566.2' x2='1132.2' y2='571.1' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='1123.7' y1='566.2' x2='1115.2' y2='561.2' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='1123.7' y1='566.2' x2='1133.3' y2='568.2' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='1123.7' y1='566.2' x2='1114.1' y2='564.1' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='690.2' cy='713.5' r='5.9' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='690.2' cy='713.5' r='3.0' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <circle cx='513.9' cy='504.0' r='5.4' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
@@ -242,6 +242,7 @@
 <line x1='1031.6' y1='763.7' x2='1042.3' y2='763.7' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='872.5' cy='500.9' r='9.1' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='872.5' cy='500.9' r='4.6' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
+<line x1='872.5' y1='500.9' x2='880.6' y2='509.9' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='1351.5' cy='861.7' r='5.2' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='498.4' cy='354.6' r='6.0' fill='#2ca02c' stroke='#fff' stroke-width='1.2'/>
 <circle cx='498.4' cy='354.6' r='3.0' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
@@ -333,7 +334,7 @@
 <circle cx='926.1' cy='467.1' r='6.5' fill='#2ca02c' stroke='#fff' stroke-width='1.2'/>
 <circle cx='878.1' cy='364.1' r='5.2' fill='#2ca02c' stroke='#fff' stroke-width='1.2'/>
 <circle cx='802.8' cy='346.5' r='6.5' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
-<line x1='802.8' y1='346.5' x2='812.1' y2='344.5' stroke='#000' stroke-width='2' stroke-linecap='round'/>
+<line x1='802.8' y1='346.5' x2='812.3' y2='346.5' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <line x1='802.8' y1='346.5' x2='793.3' y2='346.5' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <circle cx='1227.7' cy='466.0' r='7.1' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='745.7' cy='905.9' r='5.2' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
@@ -368,4 +369,4 @@
 <text x='1096.8' y='111.6' font-size='11' fill='#222' stroke='#fff' stroke-width='3' paint-order='stroke'>Freistadt</text>
 <text x='1129.7' y='560.2' font-size='11' fill='#222' stroke='#fff' stroke-width='3' paint-order='stroke'>Sankt Valentin</text>
 <text x='932.0' y='749.4' font-size='11' fill='#222' stroke='#fff' stroke-width='3' paint-order='stroke'>Sierning</text>
-<text x='14' y='20' font-size='15' font-weight='bold'>Upper Austria (Linz–Wels–Steyr) public transport - weekday: 131 nodes, 183 connections, 16 symmetry nodes (peak)</text></svg>
+<text x='14' y='20' font-size='15' font-weight='bold'>Upper Austria (Linz–Wels–Steyr) public transport - weekday: 131 nodes, 183 connections, 17 symmetry nodes (peak)</text></svg>

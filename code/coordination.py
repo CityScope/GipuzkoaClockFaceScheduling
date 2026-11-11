@@ -422,6 +422,11 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                     hands.append(r5 if min((h - r5) % 60, (r5 - h) % 60) <= SNAP_MIN else h)
             if not hands:
                 continue
+            if len(set(hands)) > 1:                   # every 30 min: the two hands are exactly 30 min apart (one common phase)
+                h_ = int(round(c30)) % 30
+                r5 = int(round(h_ / 5) * 5) % 30
+                h_ = r5 if min((h_ - r5) % 30, (r5 - h_) % 30) <= SNAP_MIN else h_
+                hands = [h_, h_ + 30]
             # an edge that runs more often than the symmetry repeats must be timed in (nearly) every pulse: the headway of its
             # symmetry services (pulses with a timed change, each pulse once) at most 1.25 x the symmetry period
             per_ = 30 if len(set(hands)) > 1 else 60
@@ -453,12 +458,13 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             one = sum(wpair(p) for p in pairs if timed(p) or timed(p[::-1])) / W
             ghw = float(np.median([st_[d]["Hc"] for d in dirs if st_[d]["Hc"] is not None] or [999]))
             regular = ghw <= SYM_GROUP_HW + 0.5               # the group's timed connections run every <= 60 min
-            # changes to / from a frequent edge (< 15 min) need no timing: they do not make a symmetry. Count only timed
-            # directions between two non-frequent edges: >= 2 of them, towards >= 3 distinct neighbouring places
+            # a symmetry needs at least one timed change between two NON-frequent edges (a node whose only timed changes
+            # involve a frequent line, < 15 min, is not symmetric); its >= 2 directions and >= 3 distinct neighbouring
+            # places count all its timed changes
             nfe = lambda e: min(hA.get(e, 999.0), hD.get(e, 999.0)) >= FREQ_CUT
             dnf = [d for d in dirs if nfe(d[0]) and nfe(d[1])]
-            nbs = {str(node.label.get(e.split("¦")[0], e.split("¦")[0])) for d in dnf for e in d}   # distinct neighbouring places (fast / slow, walk sides and modes of one place count once)
-            if len(dnf) < 2 or len(nbs) < 3 or (one <= SYM_ONE_MIN and not regular):
+            nbs = {str(node.label.get(e.split("¦")[0], e.split("¦")[0])) for d in dirs for e in d}   # distinct neighbouring places (fast / slow, walk sides and modes of one place count once)
+            if not dnf or len(dirs) < 2 or len(nbs) < 3 or (one <= SYM_ONE_MIN and not regular):
                 continue                                       # >= 3 edges; more than half one way, or a regular (<= 60 min) group
             modes = sorted({e.split("¦")[1] for e in GE}, key=lambda s_: rank[s_])
             idx = len(sym)
@@ -527,7 +533,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
         rl = lambda q: [q[0] + " · " + lab(q[1])[0], q[1].split("¦")[1]]
         rp.append((cat(lo[1], hi[1]), -(len(f_ or []) + len(b_ or [])), rl(lo) + rl(hi) + [rcell(f_, (lo[1], hi[1])), rcell(b_, (hi[1], lo[1]))]))
     rp = [r for *_, r in sorted(rp, key=lambda z: z[:2])][:40]
-    # "connected only": edges (own station) and trips that belong to a symmetry group
+    # "coordinated only": edges (own station) and trips that belong to a symmetry group
     sdirs = [d for d, gi in gof.items() if gi < len(sym)]
     ce = sorted({e.rsplit("¦", 2)[0] for d in sdirs for e in d if e.split("¦")[2] == "h"})
     strips = sorted({t_ for d in sdirs for c in st_[d]["C"] for t_ in (c[6], c[7])})

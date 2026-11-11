@@ -9,7 +9,7 @@ Lambach|bigrail,night,30,60,0.5,1.0,2,National railways + Local railways,dotted
 Leonding|bigrail,peak,37,60,0.42,0.81,5,National railways + Regional bus,dotted
 Leonding|bigrail,day,37,60,0.4,0.8,5,National railways + Regional bus,dotted
 Rohr im Kremstal|bigrail,peak,13,60,0.6,0.8,3,National railways + Regional bus,solid
-Rohr im Kremstal|bigrail,peak,"22,45",30,0.6,0.8,3,National railways + Regional bus,solid
+Rohr im Kremstal|bigrail,peak,"20,50",30,0.6,0.8,3,National railways + Regional bus,solid
 Traun|bigrail,day,20,60,0.0,0.9,4,National railways + Regional bus,dotted
-Wels|bigrail,day,"10,38",30,0.32,0.76,5,National railways + Regional bus,dotted
+Wels|bigrail,day,"10,40",30,0.32,0.76,5,National railways + Regional bus,dotted
 Ottensheim|bus,day,"8,38",30,0.0,1.0,3,Regional bus,dotted

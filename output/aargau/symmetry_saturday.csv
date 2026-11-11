@@ -1,17 +1,17 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Aarau|bigrail,peak,30,60,0.55,0.65,37,National railways + Local railways + Regional bus,solid
-Aarau|bigrail,peak,"13,47",30,0.51,0.42,8,National railways + Local railways + Regional bus,solid
+Aarau|bigrail,peak,"15,45",30,0.51,0.42,8,National railways + Local railways + Regional bus,solid
 Aarau|bigrail,day,30,60,0.5,0.65,37,National railways + Local railways + Regional bus,solid
-Aarau|bigrail,day,"13,47",30,0.51,0.42,8,National railways + Local railways + Regional bus,solid
+Aarau|bigrail,day,"15,45",30,0.51,0.42,8,National railways + Local railways + Regional bus,solid
 Aarau|bigrail,night,35,60,0.13,0.56,21,National railways + Local railways + Regional bus,dotted
-Aarau|bigrail,night,"23,50",30,0.47,0.59,15,National railways + Local railways + Regional bus,dotted
-Baden|bigrail,peak,"22,50",30,0.65,0.71,60,National railways + Regional bus,solid
+Aarau|bigrail,night,"22,52",30,0.47,0.59,15,National railways + Local railways + Regional bus,dotted
+Baden|bigrail,peak,"20,50",30,0.65,0.71,60,National railways + Regional bus,solid
 Baden|bigrail,peak,"5,35",30,0.62,0.28,55,National railways + Regional bus,solid
-Baden|bigrail,day,"5,35",30,0.66,0.66,59,National railways + Regional bus,solid
+Baden|bigrail,day,"7,37",30,0.66,0.66,59,National railways + Regional bus,solid
 Baden|bigrail,day,"23,53",30,0.67,0.46,37,National railways + Regional bus,solid
 Baden|bigrail,night,"7,37",30,0.44,0.54,68,National railways + Regional bus,dotted
 Beinwil am See|bigrail,peak,25,60,1.0,1.0,2,National railways + Regional bus,solid
-Beinwil am See|bigrail,day,"25,57",30,1.0,1.0,2,National railways + Regional bus,solid
+Beinwil am See|bigrail,day,"27,57",30,1.0,1.0,2,National railways + Regional bus,solid
 Beinwil am See|bigrail,night,0,60,0.0,1.0,2,National railways + Regional bus,dotted
 Berikon|bus,peak,"0,30",30,1.0,1.0,5,Local railways + Regional bus,solid
 Berikon|bus,peak,"10,40",30,1.0,1.0,2,Local railways + Regional bus,solid
@@ -27,14 +27,17 @@ Dietikon|bigrail,peak,"15,45",30,0.0,1.0,5,National railways + Local railways,do
 Dietikon|bigrail,day,"15,45",30,0.0,1.0,5,National railways + Local railways,dotted
 Dietikon|bigrail,night,"15,45",30,0.0,0.79,5,National railways + Local railways,dotted
 Döttingen|bigrail,peak,10,60,1.0,1.0,4,National railways + Regional bus,solid
-Döttingen|bigrail,day,"10,45",30,0.79,0.79,4,National railways + Regional bus,solid
+Döttingen|bigrail,day,"13,43",30,0.79,0.79,4,National railways + Regional bus,solid
 Döttingen|bigrail,night,8,60,0.5,0.73,4,National railways + Regional bus,dotted
 Frick|bigrail,peak,17,60,0.57,0.64,12,National railways + Regional bus,solid
-Frick|bigrail,day,"15,40",30,0.45,0.72,12,National railways + Regional bus,dotted
-Frick|bigrail,night,"17,43",30,0.3,0.7,11,National railways + Regional bus,dotted
+Frick|bigrail,day,"15,45",30,0.45,0.72,12,National railways + Regional bus,dotted
+Frick|bigrail,night,"15,45",30,0.3,0.7,11,National railways + Regional bus,dotted
 Gelterkinden|bigrail,peak,53,60,0.39,0.89,6,National railways + Regional bus,dotted
 Gelterkinden|bigrail,day,55,60,0.4,0.8,8,National railways + Regional bus,dotted
 Gelterkinden|bigrail,day,5,60,0.57,0.57,6,National railways + Regional bus,solid
+Kaiseraugst|bigrail,day,"0,30",30,1.0,1.0,2,National railways + Regional bus,solid
+Killwangen|bigrail,peak,"13,43",30,0.55,0.82,10,National railways + Local railways + Regional bus,solid
+Killwangen|bigrail,day,"13,43",30,0.67,0.78,8,National railways + Local railways + Regional bus,solid
 Laufenburg|bigrail,peak,28,60,0.44,0.55,9,National railways + Regional bus,dotted
 Laufenburg|bigrail,day,28,60,0.44,0.55,9,National railways + Regional bus,dotted
 Lenzburg|bigrail,peak,"0,30",30,0.48,0.62,17,National railways + Regional bus,dotted
@@ -45,67 +48,72 @@ Mellingen|bigrail,night,28,60,0.25,0.57,25,National railways + Regional bus,dott
 Menziken|bus,peak,"5,35",30,0.49,1.0,2,Local railways + Regional bus,dotted
 Menziken|bus,day,"5,35",30,0.49,1.0,2,Local railways + Regional bus,dotted
 Muri|bigrail,peak,"5,35",30,0.25,0.48,11,National railways + Regional bus,dotted
-Muri|bigrail,peak,"22,53",30,0.67,0.67,3,National railways + Regional bus,solid
+Muri|bigrail,peak,"22,52",30,0.67,0.67,3,National railways + Regional bus,solid
 Muri|bigrail,day,"5,35",30,0.26,0.48,11,National railways + Regional bus,dotted
-Muri|bigrail,day,"22,53",30,0.67,0.67,3,National railways + Regional bus,solid
-Möhlin|bigrail,night,"13,45",30,0.82,1.0,3,National railways + Regional bus,solid
+Muri|bigrail,day,"22,52",30,0.67,0.67,3,National railways + Regional bus,solid
+Möhlin|bigrail,night,"15,45",30,0.82,1.0,3,National railways + Regional bus,solid
 Möriken-Wildegg|bigrail,peak,47,60,0.39,0.5,8,National railways + Regional bus,dotted
-Möriken-Wildegg|bigrail,peak,"3,32",30,1.0,1.0,2,National railways + Regional bus,solid
+Möriken-Wildegg|bigrail,peak,"2,32",30,1.0,1.0,2,National railways + Regional bus,solid
 Möriken-Wildegg|bigrail,day,47,60,0.36,0.51,6,National railways + Regional bus,dotted
-Möriken-Wildegg|bigrail,day,"3,32",30,1.0,1.0,2,National railways + Regional bus,solid
+Möriken-Wildegg|bigrail,day,"2,32",30,1.0,1.0,2,National railways + Regional bus,solid
 Olten|bigrail,day,"0,30",30,1.0,1.0,2,National railways,solid
 Olten|bigrail,night,"0,30",30,0.7,1.0,2,National railways,solid
+Pratteln|bigrail,peak,"15,45",30,1.0,1.0,2,National railways + Regional bus,solid
+Pratteln|bigrail,day,"15,45",30,1.0,1.0,2,National railways + Regional bus,solid
 Rheinfelden|bigrail,peak,"15,45",30,1.0,1.0,3,National railways + Regional bus,solid
 Rheinfelden|bigrail,day,"15,45",30,1.0,1.0,4,National railways + Regional bus,solid
 Schöftland|bus,peak,28,60,0.33,0.67,3,Local railways + Regional bus,dotted
 Schöftland|bus,day,28,60,0.33,0.67,3,Local railways + Regional bus,dotted
 Sins|bigrail,peak,25,60,0.36,0.55,11,National railways + Regional bus,dotted
 Sins|bigrail,day,25,60,0.28,0.59,7,National railways + Regional bus,dotted
-Stein|bigrail,peak,"23,55",30,0.5,0.83,4,National railways + Regional bus,dotted
+Stein|bigrail,peak,"25,55",30,0.5,0.83,4,National railways + Regional bus,dotted
 Stein|bigrail,peak,37,60,0.75,1.0,3,National railways + Regional bus,solid
-Stein|bigrail,day,"0,28",30,0.83,1.0,4,National railways + Regional bus,solid
+Stein|bigrail,day,"0,30",30,0.83,1.0,4,National railways + Regional bus,solid
 Stein|bigrail,night,37,60,0.71,0.59,3,National railways + Regional bus,solid
 Stein|bigrail,night,22,60,0.71,0.71,3,National railways + Regional bus,solid
-Suhr|bigrail,peak,"13,43",30,0.67,1.0,5,National railways + Local railways + Regional bus,solid
+Suhr|bigrail,peak,"12,42",30,0.67,1.0,5,National railways + Local railways + Regional bus,solid
+Suhr|bigrail,day,"10,40",30,0.17,0.83,5,National railways + Local railways + Regional bus,dotted
 Suhr|bigrail,night,"10,40",30,0.0,0.69,7,National railways + Local railways + Regional bus,dotted
 Teufenthal|bus,peak,30,60,0.5,1.0,2,Local railways + Regional bus,dotted
 Teufenthal|bus,day,30,60,0.5,1.0,2,Local railways + Regional bus,dotted
-Wohlen|bigrail,peak,"15,45",30,0.67,1.0,13,National railways + Local railways + Regional bus,solid
+Wohlen|bigrail,peak,"13,43",30,0.67,1.0,13,National railways + Local railways + Regional bus,solid
 Wohlen|bigrail,day,"15,45",30,0.67,1.0,13,National railways + Local railways + Regional bus,solid
-Wohlen|bigrail,night,"13,45",30,0.57,0.84,11,National railways + Local railways + Regional bus,solid
-Würenlingen|bigrail,peak,"20,47",30,0.5,0.79,4,National railways + Regional bus,dotted
+Wohlen|bigrail,night,"15,45",30,0.57,0.84,11,National railways + Local railways + Regional bus,solid
+Würenlingen|bigrail,peak,"18,48",30,0.5,0.79,4,National railways + Regional bus,dotted
 Würenlingen|bigrail,peak,"5,35",30,1.0,1.0,2,National railways + Regional bus,solid
-Würenlingen|bigrail,day,"20,47",30,0.5,0.79,4,National railways + Regional bus,dotted
+Würenlingen|bigrail,day,"18,48",30,0.5,0.79,4,National railways + Regional bus,dotted
 Würenlingen|bigrail,day,35,60,1.0,1.0,2,National railways + Regional bus,solid
-Zofingen|bigrail,peak,"15,45",30,0.56,0.78,5,National railways + Regional bus,solid
-Zofingen|bigrail,day,"15,45",30,0.56,0.78,5,National railways + Regional bus,solid
+Zofingen|bigrail,peak,"12,42",30,0.56,0.78,5,National railways + Regional bus,solid
+Zofingen|bigrail,day,"12,42",30,0.56,0.78,5,National railways + Regional bus,solid
 Zofingen|bigrail,night,"13,43",30,0.36,0.64,11,National railways + Regional bus,dotted
-Birmenstorf|bus,peak,"15,42",30,0.5,1.0,2,Regional bus,dotted
-Birmenstorf|bus,day,"15,42",30,0.5,1.0,2,Regional bus,dotted
+Zürich|bigrail,peak,"0,30",30,0.51,0.68,5,National railways,solid
+Zürich|bigrail,day,"0,30",30,0.51,0.67,5,National railways,solid
+Birmenstorf|bus,peak,"13,43",30,0.5,1.0,2,Regional bus,dotted
+Birmenstorf|bus,day,"13,43",30,0.5,1.0,2,Regional bus,dotted
 Endingen|bus,peak,"27,57",30,0.57,0.79,4,Regional bus,solid
 Endingen|bus,day,"27,57",30,0.57,0.79,4,Regional bus,solid
 Gebenstorf|bus,peak,"13,43",30,0.5,1.0,2,Regional bus,dotted
-Gebenstorf|bus,day,"12,43",30,0.5,1.0,2,Regional bus,dotted
-Gebenstorf|bus,night,"12,45",30,1.0,1.0,2,Regional bus,solid
+Gebenstorf|bus,day,"13,43",30,0.5,1.0,2,Regional bus,dotted
+Gebenstorf|bus,night,"13,43",30,1.0,1.0,2,Regional bus,solid
 Gelterkinden|bus,peak,53,60,0.13,0.73,5,National railways + Regional bus,dotted
 Gelterkinden|bus,day,53,60,0.38,0.88,7,National railways + Regional bus,dotted
 Gelterkinden|bus,day,5,60,1.0,1.0,3,National railways + Regional bus,solid
-Jonen|bus,peak,"28,55",30,1.0,1.0,2,Regional bus,solid
+Jonen|bus,peak,"28,58",30,1.0,1.0,2,Regional bus,solid
 Lenzburg|bus,peak,"0,30",30,0.7,0.81,26,National railways + Regional bus,solid
 Lenzburg|bus,day,"0,30",30,0.76,0.85,32,National railways + Regional bus,solid
 Lenzburg|bus,night,"0,30",30,0.5,0.62,17,National railways + Regional bus,dotted
-Meisterschwanden|bus,peak,"15,40",30,0.5,1.0,2,Regional bus,dotted
-Meisterschwanden|bus,day,"15,42",30,0.5,1.0,2,Regional bus,dotted
-Möriken-Wildegg|bus,peak,"12,45",30,0.38,0.5,8,National railways + Regional bus,dotted
-Möriken-Wildegg|bus,peak,"5,32",30,0.66,0.66,5,National railways + Regional bus,solid
-Möriken-Wildegg|bus,day,"12,45",30,0.38,0.5,8,National railways + Regional bus,dotted
-Möriken-Wildegg|bus,day,"5,32",30,0.66,0.66,5,National railways + Regional bus,solid
-Stetten|bus,peak,"10,40",30,0.0,0.75,4,Regional bus,dotted
-Stetten|bus,day,"10,40",30,0.0,0.75,4,Regional bus,dotted
+Meisterschwanden|bus,peak,"15,45",30,0.5,1.0,2,Regional bus,dotted
+Meisterschwanden|bus,day,"15,45",30,0.5,1.0,2,Regional bus,dotted
+Möriken-Wildegg|bus,peak,"15,45",30,0.38,0.5,8,National railways + Regional bus,dotted
+Möriken-Wildegg|bus,peak,"3,33",30,0.66,0.66,5,National railways + Regional bus,solid
+Möriken-Wildegg|bus,day,"15,45",30,0.38,0.5,8,National railways + Regional bus,dotted
+Möriken-Wildegg|bus,day,"3,33",30,0.66,0.66,5,National railways + Regional bus,solid
+Stetten|bus,peak,"12,42",30,0.0,0.75,4,Regional bus,dotted
+Stetten|bus,day,"12,42",30,0.0,0.75,4,Regional bus,dotted
 Stetten|bus,night,40,60,0.0,0.75,4,Regional bus,dotted
-Wohlen|bus,peak,"15,43",30,0.41,0.93,18,National railways + Local railways + Regional bus,dotted
-Wohlen|bus,day,"15,43",30,0.48,0.92,18,National railways + Local railways + Regional bus,dotted
-Wohlen|bus,night,"13,45",30,0.36,0.66,14,National railways + Local railways + Regional bus,dotted
+Wohlen|bus,peak,"13,43",30,0.41,0.93,18,National railways + Local railways + Regional bus,dotted
+Wohlen|bus,day,"15,45",30,0.48,0.92,18,National railways + Local railways + Regional bus,dotted
+Wohlen|bus,night,"13,43",30,0.36,0.66,14,National railways + Local railways + Regional bus,dotted
 Zofingen|bus,night,"10,40",30,0.2,0.57,9,National railways + Regional bus,dotted
 Zurzach|bigrail|2,peak,40,60,0.25,0.5,4,National railways + Regional bus,dotted
 Zurzach|bigrail|2,day,40,60,0.25,0.5,4,National railways + Regional bus,dotted

@@ -45,4 +45,4 @@ Typical times: 20–70 s per region, all five regions about 2 min.
 - **Headways**: pyGTFSHandler formula, all lines of a direction pooled, per time band (peak 07–09 + 17–19, day 09–17, night).
 - **Connections**: a change is timed when the wait is ≤ 6 min (≤ 12 min arriving by bus, walk ≤ 5 min + 2 min penalty) and it beats the direct services; directions with a headway < 15 min are frequent and need no timing.
 - **Symmetry nodes**: timed directions grouped by their change minute; a group of ≥ 3 timed edges where most pairs work both ways (solid) or one way (dotted).
-- **Map**: day / band selectors, node popups with a symmetry diagram (minutes before / after the symmetry minute and headways per spoke), connections and timetable, "Connected only" filter, video mode.
+- **Map**: day / band selectors, node popups with a symmetry diagram (minutes before / after the symmetry minute and headways per spoke), connections and timetable, "Coordinated only" filter, video mode.

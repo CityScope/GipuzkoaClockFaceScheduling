@@ -334,7 +334,7 @@ html,body,#map{margin:0;height:100%;font:13px/1.4 system-ui,-apple-system,"Segoe
 <div class="t">Connections &amp; nodes</div>
 __ROWS__
 <label><input type="checkbox" data-l="walk" checked><span class="sw dot"></span>Walk between stations</label>
-<label class="conn" title="Only lines that belong to a symmetry group (selected day and time); nodes left without lines are hidden"><input type="checkbox" id="connonly"> Connected only</label>
+<label class="conn" title="Only lines that belong to a symmetry group (selected day and time); nodes left without lines are hidden"><input type="checkbox" id="connonly"> Coordinated only</label>
 <div class="foot"><span><i class="dotn mix"></i>Merged</span><span><svg width="14" height="14" viewBox="-8 -8 16 16"><circle r="6" fill="#bbb" stroke="#fff" stroke-width="1.5"/><line x1="0" y1="0" x2="0" y2="-8" stroke="#000" stroke-width="2"/><line x1="0" y1="0" x2="0" y2="8" stroke="#000" stroke-width="2"/></svg><b id="symcount">0</b>&nbsp;symmetry nodes</span><button id="infobtn" title="How connections and symmetry are defined">i</button></div>
 </div>
 <div id="supplybox"><div class="t">Service supply per day</div><table id="supply"></table><button id="vbtn">Open video</button></div>
@@ -344,7 +344,7 @@ __ROWS__
 <div><div class="time" id="ctime">06:30</div><div class="day" id="cday">weekday</div></div></div>
 <input type="range" id="cslider" min="0" max="1830" step="1" value="390">
 <label id="hidefl"><input type="checkbox" id="hidef"> Hide frequent lines (headway under 15 min)</label>
-<label id="connfl" title="Only vehicles on lines and trips that belong to a symmetry group"><input type="checkbox" id="connv"> Connected only</label>
+<label id="connfl" title="Only vehicles on lines and trips that belong to a symmetry group"><input type="checkbox" id="connv"> Coordinated only</label>
 <div class="ctl"><button id="cplay">▶ Play</button><button data-sp="1">1×</button><button data-sp="2">2×</button><button data-sp="3" class="on">3×</button><button data-sp="10">10×</button></div></div>
 </div>
 <div id="ttpanel" hidden></div>
