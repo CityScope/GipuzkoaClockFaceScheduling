@@ -3,9 +3,7 @@ Bad Schallerbach|bigrail,peak,Schlüßlberg,Wallern an der Trattnach,4.5,4.0,dir
 Bad Schallerbach|bigrail,day,Schlüßlberg,Wallern an der Trattnach,5.0,4.0,direct None / with changes 180,False
 Eferding|bus,peak,Waizenkirchen,Wilhering,4.0,0.0,direct None / with changes 120,False
 Eferding|bus,day,Waizenkirchen,Wilhering,4.0,0.0,direct None / with changes 120,False
-Eferding|bus,day,Aschach an der Donau,Wilhering,8.8,3.2,direct None / with changes 120,False
 Eferding|bus,day,Aschach an der Donau,Waizenkirchen,8.8,3.2,direct None / with changes 120,False
-Eferding|bus,day,Aschach an der Donau,St. Marienkirchen an der Polsenz,11.2,0.0,direct 480 / with changes 135,False
 Enns|bigrail,day,Linz · Donau Hbf,Steyr,2.9,4.1,direct None / with changes 165,False
 Garsten|bigrail,peak,Losenstein,Steyr,1.0,0.0,direct None / with changes 120,False
 Garsten|bigrail,day,Losenstein,Steyr,2.0,0.0,direct None / with changes 120,False
@@ -16,71 +14,61 @@ Leonding|bigrail,day,Hörsching,Linz,4.5,3.9,direct None / with changes 75,False
 Leonding|bigrail,day,Hörsching,Linz · Donau Hbf,8.1,3.9,direct None / with changes 120,False
 Leonding|bigrail,day,Traun,Wilhering,10.0,0.0,direct None / with changes 165,False
 Linz|bigrail,peak,Pregarten,Wels,2.0,0.0,direct None / with changes 60,False
-Linz|bigrail,peak,Enns,Traun,0.8,0.0,direct None / with changes 60,False
+Linz|bigrail,peak,Enns,Traun,6.0,0.0,direct None / with changes 60,False
 Linz|bigrail,peak,Amstetten,Leonding,6.0,0.0,direct None / with changes 120,False
 Linz|bigrail,peak,Linz · Donau Rudolfstr…,Wels,2.5,3.1,direct None / with changes 22,False
 Linz|bigrail,peak,Amstetten,Linz · Donau Rudolfstr…,2.8,3.1,direct None / with changes 38,False
-Linz|bigrail,peak,Amstetten,Linz · Donau Auwiesen,4.6,3.1,direct None / with changes 39,False
-Linz|bigrail,peak,Linz · Donau Rudolfstr…,Traun,2.6,3.1,direct None / with changes 38,False
+Linz|bigrail,peak,Amstetten,Linz · Donau Auwiesen,4.6,3.1,direct None / with changes 52,False
+Linz|bigrail,peak,Linz · Donau Rudolfstr…,Traun,2.5,3.1,direct None / with changes 38,False
 Linz|bigrail,peak,Linz · Donau Rudolfstr…,Pregarten,3.4,3.1,direct None / with changes 60,False
 Linz|bigrail,peak,Enns,Linz · Donau Rudolfstr…,2.3,3.1,direct None / with changes 57,False
-Linz|bigrail,peak,Linz · Donau Rudolfstr…,Sankt Valentin,5.4,3.1,direct None / with changes 60,False
+Linz|bigrail,peak,Linz · Donau Rudolfstr…,Sankt Valentin,5.4,3.1,direct None / with changes 90,False
 Linz|bigrail,peak,Linz · Donau Rudolfstr…,Wilhering,2.0,0.0,direct None / with changes 60,False
 Linz|bigrail,peak,Engerwitzdorf,Wels,3.3,5.7,direct None / with changes 98,False
 Linz|bigrail,peak,Engerwitzdorf,Sankt Valentin,8.3,5.7,direct None / with changes 120,False
 Linz|bigrail,peak,Leonding,Sankt Valentin,10.3,5.7,direct None / with changes 60,False
-Linz|bigrail,peak,Amstetten,Ottensheim · Bf,6.3,5.7,direct None / with changes 120,False
 Linz|bigrail,peak,Amstetten,Wolfern,0.3,5.7,direct None / with changes 90,False
 Linz|bigrail,peak,Enns,Gramastetten,2.3,5.7,direct None / with changes 90,False
 Linz|bigrail,peak,Enns,Ottensheim · B127/Hambergstr…,3.3,5.7,direct None / with changes 90,False
-Linz|bigrail,peak,Gramastetten,Leonding,8.3,5.7,direct None / with changes 120,False
-Linz|bigrail,peak,Gramastetten,Traun,12.3,5.7,direct None / with changes 120,False
 Linz|bigrail,peak,Gramastetten,Wels,4.3,5.7,direct None / with changes 120,False
 Linz|bigrail,peak,Hellmonsödt (fast),Pregarten,1.3,5.7,direct None / with changes 90,False
 Linz|bigrail,peak,Hellmonsödt (fast),Traun,3.3,5.7,direct None / with changes 90,False
-Linz|bigrail,peak,Hellmonsödt (fast),Wels,5.6,5.7,direct None / with changes 92,False
+Linz|bigrail,peak,Hellmonsödt (fast),Wels,5.6,5.7,direct None / with changes 120,False
 Linz|bigrail,peak,Leonding,Ottensheim · Bf,0.3,5.7,direct None / with changes 90,False
 Linz|bigrail,peak,Mauthausen (slow),Wels,3.6,5.7,direct None / with changes 90,False
-Linz|bigrail,peak,Ottensheim · B127/Hambergstr…,Pregarten,11.3,5.7,direct None / with changes 120,False
 Linz|bigrail,peak,Ottensheim · Bf,Wels,5.3,5.7,direct None / with changes 120,False
 Linz|bigrail,peak,Pregarten,Wolfern,0.3,5.7,direct None / with changes 90,False
-Linz|bigrail,peak,Amstetten,Hellmonsödt (slow),3.3,5.7,direct None / with changes 120,False
 Linz|bigrail,peak,Asten,Pregarten,9.3,5.7,direct None / with changes 120,False
 Linz|bigrail,peak,Asten,Traun,11.3,5.7,direct None / with changes 120,False
 Linz|bigrail,peak,Asten,Wels,0.3,5.7,direct None / with changes 120,False
 Linz|bigrail,peak,Hellmonsödt (slow),Wels,0.3,5.7,direct None / with changes 120,False
-Linz|bigrail,day,Enns,Traun,4.1,0.0,direct None / with changes 65,False
+Linz|bigrail,day,Enns,Traun,4.1,0.0,direct None / with changes 75,False
 Linz|bigrail,day,Amstetten,Leonding,6.0,0.0,direct None / with changes 75,False
 Linz|bigrail,day,Pregarten,Wels,2.0,0.0,direct None / with changes 75,False
 Linz|bigrail,day,Linz · Donau Rudolfstr…,Wels,1.8,3.1,direct None / with changes 25,False
 Linz|bigrail,day,Amstetten,Linz · Donau Rudolfstr…,2.7,3.1,direct None / with changes 30,False
-Linz|bigrail,day,Amstetten,Linz · Donau Auwiesen,4.7,3.1,direct None / with changes 32,False
-Linz|bigrail,day,Linz · Donau Rudolfstr…,Traun,2.8,3.1,direct None / with changes 34,False
-Linz|bigrail,day,Enns,Linz · Donau Rudolfstr…,2.0,3.1,direct None / with changes 57,False
-Linz|bigrail,day,Linz · Donau Rudolfstr…,Sankt Valentin,3.8,3.1,direct None / with changes 60,False
+Linz|bigrail,day,Amstetten,Linz · Donau Auwiesen,4.7,3.1,direct None / with changes 49,False
+Linz|bigrail,day,Linz · Donau Rudolfstr…,Traun,2.7,3.1,direct None / with changes 34,False
+Linz|bigrail,day,Enns,Linz · Donau Rudolfstr…,2.5,3.1,direct None / with changes 57,False
+Linz|bigrail,day,Linz · Donau Rudolfstr…,Sankt Valentin,3.8,3.1,direct None / with changes 150,False
 Linz|bigrail,day,Linz · Donau Rudolfstr…,Pregarten,4.2,3.1,direct None / with changes 69,False
 Linz|bigrail,day,Linz · Donau Rudolfstr…,Wilhering,1.8,0.0,direct None / with changes 60,False
 Linz|bigrail,day,Leonding,Sankt Valentin,9.8,5.7,direct None / with changes 60,False
 Linz|bigrail,day,Engerwitzdorf,Sankt Valentin,8.3,5.7,direct None / with changes 120,False
-Linz|bigrail,day,Engerwitzdorf,Traun,12.1,5.7,direct None / with changes 96,False
 Linz|bigrail,day,Engerwitzdorf,Wels,3.8,5.7,direct None / with changes 75,False
 Linz|bigrail,day,Hellmonsödt (fast),Pregarten,1.3,5.7,direct None / with changes 105,False
 Linz|bigrail,day,Hellmonsödt (fast),Traun,3.3,5.7,direct None / with changes 75,False
-Linz|bigrail,day,Amstetten,Ottensheim · Bf,6.3,5.7,direct None / with changes 120,False
 Linz|bigrail,day,Leonding,Ottensheim · Bf,0.3,5.7,direct None / with changes 120,False
 Linz|bigrail,day,Ottensheim · Bf,Wels,5.0,5.7,direct None / with changes 90,False
 Linz|bigrail,day,Enns,Gramastetten,2.3,5.7,direct None / with changes 105,False
 Linz|bigrail,day,Gramastetten,Leonding,8.3,5.7,direct None / with changes 225,False
-Linz|bigrail,day,Gramastetten,Traun,12.3,5.7,direct None / with changes 225,False
 Linz|bigrail,day,Gramastetten,Wels,4.3,5.7,direct None / with changes 135,False
-Linz|bigrail,day,Mauthausen (slow),Traun,11.3,5.7,direct None / with changes 120,False
 Linz|bigrail,day,Mauthausen (slow),Wels,3.3,5.7,direct None / with changes 105,False
 Linz|bigrail,day,Amstetten,Hellmonsödt (slow),3.8,5.7,direct None / with changes 168,False
-Linz|bigrail,day,Hellmonsödt (slow),Wels,0.3,5.7,direct None / with changes 180,False
-Linz|bigrail,day,Amstetten,Pregarten,6.1,5.7,direct None / with changes 156,False
-Linz|bigrail,day,Enns,Ottensheim · B127/Hambergstr…,3.3,5.7,direct None / with changes 135,False
-Linz|bigrail,day,Ottensheim · B127/Hambergstr…,Traun,3.3,5.7,direct None / with changes 120,False
-Linz|bigrail,day,Ottensheim · B127/Hambergstr…,Wels,9.3,5.7,direct None / with changes 121,False
+Linz|bigrail,day,Hellmonsödt (slow),Wels,4.3,5.7,direct None / with changes 180,False
+Linz|bigrail,day,Amstetten,Pregarten,6.1,5.7,direct None / with changes 180,False
+Linz|bigrail,day,Ottensheim · B127/Hambergstr…,Traun,6.3,5.7,direct None / with changes 120,False
+Linz|bigrail,day,Ottensheim · B127/Hambergstr…,Wels,9.3,5.7,direct None / with changes 285,False
 Linz|bigrail,day,Amstetten,Wolfern,0.3,5.7,direct None / with changes 120,False
 Linz|bigrail,day,Pregarten,Wolfern,0.3,5.7,direct None / with changes 120,False
 Linz|bigrail,day,Reichenau im Mühlkreis,Traun,9.3,5.7,direct None / with changes 300,False
@@ -88,23 +76,21 @@ Linz|bigrail,day,Reichenau im Mühlkreis,Wels,1.3,5.7,direct None / with changes
 Linz|bigrail,day,Asten,Pregarten,9.3,5.7,direct None / with changes 165,False
 Linz|bigrail,day,Asten,Traun,11.3,5.7,direct None / with changes 165,False
 Linz|bigrail,day,Asten,Wels,0.3,5.7,direct None / with changes 165,False
-Linz|bigrail,night,Leonding,Linz · Donau Auwiesen,5.9,3.1,direct None / with changes 289,False
-Linz|bigrail,night,Linz · Donau Rudolfstr…,Wilhering,5.3,0.0,direct None / with changes 263,False
-Linz|bigrail,night,Linz · Donau Auwiesen,Wilhering,6.0,0.0,direct None / with changes 390,False
-Neumarkt im Hausruckkreis|bigrail,day,Gurten,Schlüßlberg,5.0,0.0,direct 240 / with changes 105,False
-Pregarten|bigrail,peak,Hagenberg im Mühlkreis,Linz · Donau Hbf,10.9,3.6,direct None / with changes 120,False
-Pregarten|bigrail,day,Hagenberg im Mühlkreis,Linz · Donau Hbf,9.9,3.6,direct None / with changes 120,False
+Linz|bigrail,night,Linz · Donau Rudolfstr…,Wilhering,5.3,0.0,direct None / with changes 390,False
+Neumarkt im Hausruckkreis|bigrail,day,Schlüßlberg,Schärding,1.0,0.0,direct 90 / with changes 60,False
+Neumarkt im Hausruckkreis|bigrail,day,Gurten,Schlüßlberg,3.0,0.0,direct 240 / with changes 105,False
+Pregarten|bigrail,day,Hagenberg im Mühlkreis,Linz · Donau Hbf,9.9,3.6,direct None / with changes 240,False
 Rohr im Kremstal|bigrail,peak,Bad Hall,Neuhofen an der Krems,4.9,3.6,direct None / with changes 84,False
-Rohr im Kremstal|bigrail,day,Bad Hall,Neuhofen an der Krems,2.8,3.6,direct None / with changes 68,False
-Sankt Valentin|bigrail,peak,Enns,St. Nikola an der Donau,5.5,0.0,direct None / with changes 120,False
+Rohr im Kremstal|bigrail,day,Bad Hall,Neuhofen an der Krems,5.3,3.6,direct None / with changes 68,False
 Sankt Valentin|bigrail,day,Linz · Donau Hbf,St. Nikola an der Donau,6.0,0.0,direct None / with changes 120,False
-Traun|bigrail,peak,Ansfelden,Linz · Donau Hbf,11.7,6.8,direct None / with changes 83,False
+Traun|bigrail,peak,Ansfelden,Linz · Donau Hbf,11.7,6.8,direct None / with changes 120,False
+Wels|bigrail,peak,Bad Schallerbach,Linz · Donau Hbf,0.5,0.0,direct 120 / with changes 62,False
 Wels|bigrail,peak,Gunskirchen,Hörsching,1.0,0.0,direct None / with changes 60,False
 Wels|bigrail,peak,Attnang-Puchheim,Sattledt,1.0,0.0,direct None / with changes 90,False
 Wels|bigrail,peak,Bad Schallerbach,Sattledt,0.0,0.0,direct None / with changes 120,False
 Wels|bigrail,peak,Linz · Donau Hbf,Sattledt,2.7,0.0,direct None / with changes 90,False
 Wels|bigrail,peak,Gunskirchen,Marchtrenk,0.1,3.9,direct None / with changes 120,False
-Wels|bigrail,day,Bad Schallerbach,Linz · Donau Hbf,0.5,0.0,direct 180 / with changes 57,False
+Wels|bigrail,day,Bad Schallerbach,Linz · Donau Hbf,0.3,0.0,direct 180 / with changes 57,False
 Wels|bigrail,day,Gunskirchen,Hörsching,1.0,0.0,direct None / with changes 60,False
 Wels|bigrail,day,Attnang-Puchheim,Sattledt,1.0,0.0,direct None / with changes 120,False
 Wels|bigrail,day,Bad Schallerbach,Sattledt,0.0,0.0,direct None / with changes 120,False

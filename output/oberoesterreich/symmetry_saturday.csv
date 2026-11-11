@@ -1,15 +1,20 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Amstetten|bigrail,peak,5,60,0.47,1.0,2,National railways,dotted
-Amstetten|bigrail,day,0,60,1.0,1.0,2,National railways,solid
+Amstetten|bigrail,day,2,60,1.0,1.0,2,National railways,solid
 Eferding|bus,peak,30,60,0.29,0.43,5,Local railways + Regional bus,dotted
-Eferding|bus,day,28,60,0.2,0.62,9,Local railways + Regional bus,dotted
-Lambach|bigrail,peak,20,60,0.18,0.64,6,National railways + Local railways + Regional bus,dotted
+Eferding|bus,day,30,60,0.67,1.0,2,Local railways + Regional bus,solid
+Lambach|bigrail,peak,22,60,0.18,0.64,6,National railways + Local railways + Regional bus,dotted
 Lambach|bigrail,day,23,60,0.19,0.62,6,National railways + Local railways + Regional bus,dotted
-Lambach|bigrail,night,30,60,0.5,1.0,2,National railways + Local railways,dotted
-Leonding|bigrail,peak,37,60,0.42,0.81,5,National railways + Regional bus,dotted
+Leonding|bigrail,peak,37,60,0.19,0.81,5,National railways + Regional bus,dotted
 Leonding|bigrail,day,37,60,0.4,0.8,5,National railways + Regional bus,dotted
-Rohr im Kremstal|bigrail,peak,13,60,0.6,0.8,3,National railways + Regional bus,solid
-Rohr im Kremstal|bigrail,peak,"20,50",30,0.6,0.8,3,National railways + Regional bus,solid
-Traun|bigrail,day,20,60,0.0,0.9,4,National railways + Regional bus,dotted
-Wels|bigrail,day,"10,40",30,0.32,0.76,5,National railways + Regional bus,dotted
-Ottensheim|bus,day,"8,38",30,0.0,1.0,3,Regional bus,dotted
+Linz|bigrail,night,45,60,0.11,0.66,6,National railways + Local railways + Regional bus,dotted
+Neuhofen an der Krems|bigrail,day,0,60,1.0,1.0,2,National railways + Regional bus,solid
+Neumarkt im Hausruckkreis|bigrail,day,22,60,0.69,0.69,3,National railways,solid
+Neumarkt im Hausruckkreis|bigrail,day,38,60,0.69,0.69,3,National railways,solid
+Rohr im Kremstal|bigrail,peak,"15,45",30,0.6,0.8,3,National railways + Regional bus,solid
+Steyr|bigrail,peak,55,60,0.0,0.56,11,National railways + Regional bus,dotted
+Traun|bigrail,peak,"15,45",30,0.0,1.0,3,National railways + Regional bus,dotted
+Traun|bigrail,day,18,60,0.0,1.0,3,National railways + Regional bus,dotted
+Wels|bigrail,day,25,60,0.0,1.0,2,National railways + Regional bus,dotted
+Bad Hall|bus,peak,40,60,0.0,0.75,4,Regional bus,dotted
+Ottensheim|bus,day,"8,38",30,0.56,0.84,5,Regional bus,solid

@@ -1,5 +1,5 @@
 a,b,mode,trips_day,action
-Aarau|bigrail,Dietikon|bigrail,bigrail,1,via Brugg|bigrail - Baden|bigrail
+Aarau|bigrail,Dietikon|bigrail,bigrail,1,via Lenzburg|bigrail - Mellingen|bigrail
 Dietikon|bigrail,Mellingen|bigrail,bigrail,18,via Killwangen|bigrail
 Döttingen|bus,Zurzach|bus|1,bus,3,dropped
 Fislisbach|bus,Birmenstorf|bus,bus,1,dropped
@@ -10,4 +10,5 @@ Sins|bus,Beinwil (Freiamt)|bus,bus,2,dropped
 Wallbach|bus,Möhlin|bus,bus,2,dropped
 Wegenstetten|bus,Schupfart|bus,bus,2,dropped
 Lenzburg|bus,Wohlen|bus,bus,3,kept one-way (only service of its line)
+Mellingen|bigrail,Dietikon|bigrail,bigrail,1,via Killwangen|bigrail
 Lenzburg|bus,Wohlen|bus,bus,3,kept one-way (only service of its line)

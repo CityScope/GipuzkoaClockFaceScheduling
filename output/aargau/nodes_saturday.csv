@@ -6,7 +6,7 @@ Basel|bigrail,47.546720882399995,7.589800078000001,Basel SBB,Basel,bigrail,Basel
 Beinwil am See|bigrail,47.26776694,8.202305755000001,Beinwil am See,Beinwil am See,bigrail,Beinwil am See,Beinwil am See · National railways,70.0,1,75.0,True,Beinwil am See|bigrail
 Berikon|localrail,47.362059875,8.366369565,Berikon-Widen,Berikon,localrail,Berikon,Berikon · Local railways,151.0,1,156.0,True,Berikon|bus
 Bremgarten|localrail,47.35116279666667,8.345579556666666,Bremgarten,Bremgarten,localrail,Bremgarten,Bremgarten · Local railways,114.0,1,119.0,True,Bremgarten|bus
-Brugg|bigrail,47.481210147999995,8.209439276000001,Brugg AG,Brugg,bigrail,Brugg,Brugg · National railways,274.0,10,324.0,True,Brugg|bigrail
+Brugg|bigrail,47.481210147999995,8.209439276000001,Brugg AG,Brugg,bigrail,Brugg,Brugg · National railways,255.0,10,305.0,True,Brugg|bigrail
 Bülach|bigrail,47.524120158,8.536034376,Bülach,Bülach,bigrail,Bülach,Bülach · National railways,76.0,6,106.0,True,Bülach|bigrail
 Dietikon|bigrail,47.4046306,8.40581459,Dietikon,Dietikon,bigrail,Dietikon,Dietikon · National railways,205.0,8,245.0,True,Dietikon|bigrail
 Dietikon|localrail,47.4047826,8.40473302,Dietikon,Dietikon,localrail,Dietikon · main station,Dietikon · main station · Local railways,151.0,2,161.0,True,Dietikon|bigrail
@@ -19,13 +19,12 @@ Killwangen|bigrail,47.43351762,8.354421975000001,Killwangen-Spreitenbach,Killwan
 Killwangen|localrail,47.43336267,8.35357756,"Killwangen, Bahnhof",Killwangen,localrail,Killwangen,Killwangen · Local railways,72.0,1,77.0,True,Killwangen|bigrail
 Laufenburg|bigrail,47.55981695,8.06150831,Laufenburg,Laufenburg,bigrail,Laufenburg,Laufenburg · National railways,19.0,1,24.0,True,Laufenburg|bigrail
 Lenzburg|bigrail,47.391437677272734,8.169973346363635,Lenzburg,Lenzburg,bigrail,Lenzburg,Lenzburg · National railways,170.0,7,205.0,True,Lenzburg|bigrail
-Mellingen|bigrail,47.428121315,8.27626405,Mellingen Heitersberg,Mellingen,bigrail,Mellingen,Mellingen · National railways,79.0,2,89.0,True,Mellingen|bigrail
+Mellingen|bigrail,47.428121315,8.27626405,Mellingen Heitersberg,Mellingen,bigrail,Mellingen,Mellingen · National railways,40.0,2,50.0,True,Mellingen|bigrail
 Menziken|localrail,47.24081088,8.18929366,Menziken,Menziken,localrail,Menziken,Menziken · Local railways,69.0,1,74.0,True,Menziken|bus
 Muri|bigrail,47.27678683,8.33989322,Muri AG,Muri,bigrail,Muri,Muri · National railways,76.0,2,86.0,True,Muri|bigrail
 Möhlin|bigrail,47.561817379999994,7.833111645000001,Möhlin,Möhlin,bigrail,Möhlin,Möhlin · National railways,160.0,3,175.0,True,Möhlin|bigrail
 Möriken-Wildegg|bigrail,47.41643957,8.16393422,Wildegg,Möriken-Wildegg,bigrail,Möriken-Wildegg,Möriken-Wildegg · National railways,87.0,3,102.0,True,Möriken-Wildegg|bigrail
 Olten|bigrail,47.352380681111114,7.90785996388889,Olten,Olten,bigrail,Olten,Olten · National railways,354.0,30,504.0,True,Olten|bigrail
-Othmarsingen|bigrail,47.407339150000006,8.21424212,Othmarsingen,Othmarsingen,bigrail,Othmarsingen,Othmarsingen · National railways,93.0,4,113.0,True,Othmarsingen|bigrail
 Pratteln|bigrail,47.5227877125,7.691251945,Pratteln,Pratteln,bigrail,Pratteln,Pratteln · National railways,197.0,4,217.0,True,Pratteln|bigrail
 Regensdorf|bigrail,47.437142195,8.471364659999999,Regensdorf-Watt,Regensdorf,bigrail,Regensdorf,Regensdorf · National railways,44.0,2,54.0,True,Regensdorf|bigrail
 Rheinfelden|bigrail,47.55088988,7.791730755,Rheinfelden,Rheinfelden,bigrail,Rheinfelden,Rheinfelden · National railways,160.0,3,175.0,True,Rheinfelden|bigrail

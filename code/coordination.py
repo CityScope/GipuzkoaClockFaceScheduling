@@ -188,13 +188,11 @@ def _hw(t, wins):
 COORD_WAIT_RAIL = 6           # a change is coordinated with a wait <= 6 min ...
 WEIGHT_MODE = "freq"          # "freq" (60/worse headway), "headway" (worse headway) or "equal" (1; 0 if rarer than THIN_MAX)
 THIN_MAX = 120
-SYM_EDGE_HW = 1.25            # an edge running more often than the symmetry period: its symmetry services every <= 1.25 x period
 SYM_GROUP_HW = 60             # a group of timed connections running every <= 60 min always makes a symmetry
 SYM_ONE_MIN = 0.5             # a (half) symmetry needs more than this share connected at least one way
 WAIT_SHARE_H = 0.0            # test switch: wait limit up to this share of the worse headway (0 = fixed limits)
 WAIT_MAX_HUB = 15
 COORD_WAIT_BUS = 12           # ... or <= 12 min when arriving by bus (bus -> bus, bus -> train)
-GAIN_MIN, GAIN_SHARE = 30, 0.25   # a change must gain >= min(30 min, 25 % of the direct headway) over the next direct service
 SYM_NO_NEED = 0.75            # >= 75 % (weighted) of the relations have a frequent edge: no symmetry needed
 GROUP_TOL, GROUP_SEP = 5, 10
 BACK_DEG = 45                 # two edges less than 45 degrees apart lead the same way (a change between them goes back)  # coordinated relations within 5 min (mod 30) form one symmetry; symmetries >= 10 min apart
@@ -245,7 +243,6 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
     for x, y, ta, td, tk in zip(dd.e, dd.e_d, dd.t, dd.t_d, dd.trip_key):
         if town(x) != town(y) and td >= ta:
             direct[(x, y)].append((ta, td)); ownd[(x, y, tk)] = td
-    chg = defaultdict(list)                                          # (X, Y) -> [(ta, td, wait, walk, rk_in, rk_out)]
     line_ = lambda rk: str(rk).split("@")[0]                       # feed + line number: S6 to S6 is the same line
     Dg = {y: g.sort_values("t") for y, g in Dall.groupby("e")}
     for x, ga in A.groupby("e"):
@@ -280,9 +277,6 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                 if line_(rki[j]) == line_(Rk[kj]):
                     direct[(x, y)].append((float(ta[j]), float(T[kj])))   # same line continuing (trip split at the station): direct
                     continue
-                if VMAX.get((tri[j], ty), -1) > ta[j] + 0.5 or VMIN.get((Tr[kj], tx), 1e9) < T[kj] - 0.5:
-                    continue                                         # the same vehicle gets there anyway / came from there
-                chg[(x, y)].append((float(ta[j]), float(T[kj]), float(w[j]), tr, rki[j], Rk[kj], tri[j], Tr[kj]))
     nA = A.e.value_counts().to_dict(); hasD = set(Dall.e)
     # bearing of each edge (from its station towards the neighbouring station): two edges less than BACK_DEG apart point the
     # same way, so a "connection" between them means going back -- no coordination is needed for such pairs
@@ -351,38 +345,23 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             if _hall is not None and waits.alldirect:    # only direct services (same vehicle): nothing to time
                 st_[(x, y)] = dict(k="d", w=wgt, Hd=_hall, Hc=None, C=[], share=None, wait=None, walk=None, alld=True)
                 continue
-            Hw0 = max(hA[x], hD[y])
-            if dr and Hd <= 1.25 * Hw0:                   # served directly about as often as possible: no coordination needed
+            # ---- the relation, measured on the real timetable (all services): every arrival from x takes the first
+            # departure towards y it can reach (same vehicle = wait 0); when several arrivals catch the same departure
+            # only the latest counts. Coordinated when the AVERAGE wait is within the limit (6 min, 12 min arriving by
+            # bus), it repeats (>= 2 changes within the limit), it is shorter than half the departing headway (else it is
+            # chance) and the changes make the relation run more often than the direct trips alone.
+            limw = COORD_WAIT_RAIL if sysof[enode[x]] in RAIL_SYSTEMS else COORD_WAIT_BUS
+            if _wall is None:
+                st_[(x, y)] = dict(k="n", w=wgt, Hd=Hd, Hc=None, C=[], share=None, wait=None, walk=None)
+                continue
+            C = [c for c in waits.opts if c[2] <= limw]                  # the changes within the limit
+            Hc = _hw([b for _, b in dr] + [c[1] for c in C], wins) if (dr or C) else 999.0
+            if dr and not Hc < Hd:                                      # the changes add nothing to the direct trips
                 st_[(x, y)] = dict(k="d", w=wgt, Hd=Hd, Hc=None, C=[], share=None, wait=None, walk=None)
                 continue
-            ch = chg.get((x, y), [])
-            opts = [(a_, b_, "d", None) for a_, b_ in dr] + [(c[0], c[1], "c", c) for c in ch]
-            C = []
-            for a_, b_, kd, c in opts:
-                if kd != "c":
-                    continue
-                if any((a2 >= a_ and b2 <= b_) and (a2, b2) != (a_, b_) for a2, b2, _, _ in opts):
-                    continue                                         # overtaken by a later, better option
-                nxt = [b2 for a2, b2 in dr if a2 >= a_]
-                if nxt and (min(nxt) - b_) < min(GAIN_MIN, GAIN_SHARE * Hd):
-                    continue                                         # gains too little over the next direct service
-                C.append(c)
-            Hc = _hw([b for _, b in dr] + [c[1] for c in C], wins) if (dr or C) else 999.0
-            mw = float(np.mean([c[2] for c in C])) if C else None
-            Hw = max(hA[x], hD[y])                                     # worse of the two edges (Hc can never be better)
-            # connected: repeats, at least twice the direct headway, most services of the worse edge connect,
-            # and the wait is clearly shorter than without coordination (random: half the departing headway)
-            ok = len(C) >= 2 and Hc <= Hd / 2 and Hc <= 1.25 * Hw     # (the 6 / 12 min wait limits replace a 'better than random' test)
-            limw = COORD_WAIT_RAIL if sysof[enode[x]] in RAIL_SYSTEMS else COORD_WAIT_BUS
-            if not ok and _wall is not None and round(_wall) <= limw and len(waits.opts) >= 2 and (not dr or _hall <= Hd / 2):
-                # the real timetable (all services) already gives a wait within the limit on average: timed
-                ok, C, Hc, mw = True, list(waits.opts), _hall, _wall
-            if ok and mw is not None and mw >= hD[y] / 2:
-                # a wait of half the departing headway or more is what random arrival gives: not a coordination
-                # (even within the 6 / 12 min limit) -> not timed
-                ok = False
-            st_[(x, y)] = dict(k="c" if ok else "n", w=wgt, Hd=Hd, Hc=Hc, C=C, share=len(C) / nA[x],
-                               wait=mw, walk=float(np.median([c[3] for c in C])) if C else None)
+            ok = round(_wall) <= limw and len(C) >= 2 and _wall < hD[y] / 2
+            st_[(x, y)] = dict(k="c" if ok else "n", w=wgt, Hd=Hd, Hc=Hc if C else _hall, C=C if ok else [], share=len(C) / nA[x],
+                               wait=_wall, walk=float(np.median([c[3] for c in C])) if C else _tr)
     # ---- symmetries: group coordinated directions by their change minute (mod 30)
     need = {d: v for d, v in st_.items() if v["k"] not in ("f", "d")}     # directions that need coordination
     tot = sum(v["w"] for v in st_.values()) or 1.0
@@ -427,25 +406,6 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                 r5 = int(round(h_ / 5) * 5) % 30
                 h_ = r5 if min((h_ - r5) % 30, (r5 - h_) % 30) <= SNAP_MIN else h_
                 hands = [h_, h_ + 30]
-            # an edge that runs more often than the symmetry repeats must be timed in (nearly) every pulse: the headway of its
-            # symmetry services (pulses with a timed change, each pulse once) at most 1.25 x the symmetry period
-            per_ = 30 if len(set(hands)) > 1 else 60
-            h0_ = min(hands) % per_
-            def _phw(ts_):
-                first_ = {}
-                for t_ in sorted(ts_):
-                    first_.setdefault(round((t_ - h0_) / per_), t_)
-                return max(per_, _hw(sorted(first_.values()), wins))
-            bad_in, bad_out = set(), set()
-            for e_ in {d[0] for d in dirs}:
-                if hA[e_] < per_ and _phw([c[0] for d in dirs if d[0] == e_ for c in st_[d]["C"]]) > SYM_EDGE_HW * per_:
-                    bad_in.add(e_)
-            for e_ in {d[1] for d in dirs}:
-                if hD[e_] < per_ and _phw([c[1] for d in dirs if d[1] == e_ for c in st_[d]["C"]]) > SYM_EDGE_HW * per_:
-                    bad_out.add(e_)
-            dirs = [d for d in dirs if d[0] not in bad_in and d[1] not in bad_out]
-            if len(dirs) < 2:
-                continue
             GE = {e for d in dirs for e in d}
             pairs = {tuple(sorted(d)) for d in need if d[0] in GE and d[1] in GE}
             wpair = lambda p: max(st_.get(p, {}).get("w", 0), st_.get(p[::-1], {}).get("w", 0))

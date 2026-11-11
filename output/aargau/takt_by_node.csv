@@ -191,9 +191,6 @@ Oberwil-Lieli|bus,night,15,"6,19,23,37,49,53",0,1.0
 Olten|bigrail,peak,112,"5,12,30,36,49",0,0.6964285714285714
 Olten|bigrail,day,225,"5,12,29,36,49",0,0.6933333333333334
 Olten|bigrail,night,84,"6,36,48",0,0.5
-Othmarsingen|bigrail,peak,40,"0,5,15,24,29,41",0,0.8
-Othmarsingen|bigrail,day,66,"0,17,24,29,34,41",0,0.9696969696969697
-Othmarsingen|bigrail,night,24,"0,24,30",0,0.6666666666666666
 Pratteln|bigrail,peak,55,"3,27,33,48,57",0,0.7454545454545455
 Pratteln|bigrail,day,97,"3,11,27,33,48,57",0,0.8350515463917526
 Pratteln|bigrail,night,34,"1,18,27,31,41,57",0,0.7647058823529411

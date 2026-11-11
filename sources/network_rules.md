@@ -57,35 +57,26 @@ Rules used to build the maps (all regions). Values in **bold** are the parameter
 6.1 Walking transfer only up to **5 min** (75 m/min, straight line × 1.3), between any two stations (any mode, any municipality).
 6.2 Changing mode or station adds **2 min** to the walk.
 
-## 7. Travel options between two edges (direction A → B at a node)
-7.1 **Direct option**: the same vehicle arrives from A and continues to B.
-7.2 **Change option**: arrival from A, then the first departure to B on another vehicle, with
-   - wait = departure − arrival − walk (walk incl. the 2-min penalty),
-   - wait **≤ 6 min**, or **≤ 12 min** when arriving by bus (bus → bus, bus → train).
-   Longer waits are not coordinated changes.
-7.2a Pairs of edges that lead the same way (directions less than **45°** apart, e.g. IC to Basel and regional train to Gelterkinden at Olten) are not relations: changing between them means going back. They are left out everywhere.
-7.3 Not a change: two trips of the **same line** (e.g. S6 arriving and S6 leaving onwards at Wolhusen, where the timetable splits the trip) — that is a direct service. Also not a change: the arriving vehicle reaches B's town anyway later, or the departing vehicle has already come from A's town (same vehicle / going back).
-7.4 A change option counts only if
-   - no other option (direct or change) arrives from A at the same time or later and leaves towards B at the same time or earlier (not overtaken), and
-   - it gains at least **min(30 min, 25 % of the direct headway)** over the next direct service available after the same arrival (if there is any direct service).
-7.5 **Hd** = headway of the direct options; **Hc** = headway of direct + counted change options (formula 4.1, departure times towards B).
+## 7. Measuring a relation (direction A → B at a node) — real timetable, all services
+7.1 Every arrival from A in the band takes the **first departure towards B it can reach** (walk + 2-min penalty when changing station or mode). The **same vehicle** continuing to B — or the same line continuing under a new trip number (e.g. S6 → S6 at Wolhusen) — is a direct trip: **wait 0**.
+7.2 **Intelligently**: when several arrivals catch the same departure, only the **latest** counts (nobody arrives earlier just to wait longer).
+7.3 From these pairs: the **average wait** of the relation, and its headway (formula 4.1 on the departures reached). The changes with a wait **≤ 6 min** (**≤ 12 min** arriving by bus) are its timed changes; **Hd** = headway of the direct trips, **Hc** = headway of direct trips + timed changes.
+7.4 Pairs of edges that lead the same way (directions less than **45°** apart) are not relations: changing between them means going back. They are left out everywhere.
 
 ## 8. Connection (one direction A → B)
-8.1 If the **relation itself** is frequent — its real headway with all services (direct ones included, 10.2 line 2) is under 15 min — **no coordination needed** (a frequent feeder towards a line every 30 min is NOT frequent: the relation still runs every 30 min). Shown as "frequent"; left out of all symmetry shares.
-8.2 Otherwise the direction is **connected (coordinated)** when all of
-   - there are **≥ 2** counted change options in the band (it repeats),
-   - **Hc ≤ Hd / 2** (with the changes the headway is at least twice as good as with direct services only; any Hc if there is no direct service),
-   - **Hc ≤ 1.25 × H_worst**: most services of the worse edge connect (note Hc can never be better than H_worst, the headway of the worse of the two edges — every option uses one arrival from A and one departure to B),
-   (No separate 'better than random' test: the wait limits of 7.2 — 6 min, 12 min arriving by bus — are the criterion.)
-8.2a Also connected: if with **all services** (real timetable, 10.2 line 2) the **mean wait** is within the limit (≤ 6 min, ≤ 12 min arriving by bus; rounded to the minute) and there are ≥ 2 such changes (and, if there is a direct service, the headway is at least twice as good).
-8.2b Not connected, even within the 6 / 12 min limit: when the mean wait is **at least half the headway of the departing edge** — that is what arriving at random gives (e.g. a bus every 20 min with an 11-min wait). Labelled "not timed", not frequent.
-8.3 Otherwise: "not timed" (services exist but coordination adds nothing).
-8.4 Weight of a direction, used for **every** percentage (75 % rule, both-ways / one-way shares, group size): the **frequency** of the worse of its two edges (60 / its headway = connection opportunities per hour). An hourly relation counts 1, a half-hourly one 2, one every 8 hours 0.125, so rare relations barely count.
+8.1 **Frequent**: the relation itself runs more often than every 15 min (all services) — no coordination needed. Shown as "frequent"; left out of all symmetry shares.
+8.2 **Direct**: only direct trips, or the changes do not make the relation run more often than the direct trips alone (Hc not better than Hd) — no coordination needed.
+8.3 **Coordinated** when all of
+   - the **average wait** (7.3, direct trips counting 0) is within the limit: ≤ 6 min, ≤ 12 min arriving by bus (rounded to the minute),
+   - it repeats: **≥ 2** timed changes in the band,
+   - the average wait is **less than half the headway of the departing edge** (otherwise it is what arriving at random gives, e.g. a bus every 20 min with an 11-min wait).
+8.4 Otherwise: "not timed".
+8.5 Weight of a direction, used for **every** percentage (75 % rule, both-ways / one-way shares, group size): the **frequency** of the worse of its two edges (60 / its headway = connection opportunities per hour). An hourly relation counts 1, a half-hourly one 2, one every 8 hours 0.125, so rare relations barely count.
 
 ## 9. Symmetry
 9.1 Relations needing no coordination (8.1) are ignored. If they make up **≥ 75 %** of a node's relations (weighted by the worse edge's headway, 8.4), the node has no symmetry (not needed).
 9.2 Every connected direction has a **change minute**: the middle between arrival and departure of its counted changes.
-9.3 Connected directions are grouped by change minute (modulo 30 min, tolerance **± 5 min**). Groups closer than **10 min** are merged. Each group with **≥ 2** connected directions whose timed changes involve **≥ 3 different neighbouring stations** (fast / slow edges and stations reached on foot count once) is a candidate symmetry. A symmetry needs **at least one timed change between two non-frequent edges** (edge headway ≥ 15 min): a node whose only timed changes involve a frequent line is not a symmetry node. The ≥ 2 directions and ≥ 3 places count all its timed changes. An edge that runs more often than the symmetry repeats (its headway < the symmetry period, e.g. a line every 15 min at a 30-min symmetry) must be timed in nearly every pulse: the headway of its symmetry services (each pulse once) must be at most **1.25 × the symmetry period**, otherwise its directions are left out of that symmetry. A symmetry every 30 min has its two hands exactly 30 min apart (one common phase of all its changes).
+9.3 Connected directions are grouped by change minute (modulo 30 min, tolerance **± 5 min**). Groups closer than **10 min** are merged. Each group with **≥ 2** connected directions whose timed changes involve **≥ 3 different neighbouring stations** (fast / slow edges and stations reached on foot count once) is a candidate symmetry. A symmetry needs **at least one timed change between two non-frequent edges** (edge headway ≥ 15 min): a node whose only timed changes involve a frequent line is not a symmetry node. The ≥ 2 directions and ≥ 3 places count all its timed changes. A symmetry every 30 min has its two hands exactly 30 min apart (one common phase of all its changes).
 9.4 Symmetry minute(s) of a group: its change minutes around the group centre and/or centre + 30 min (each hand needs **≥ 20 %** of the changes); rounded to a multiple of 5 only when within 1 min.
 9.5 Completeness, over the pairs of the group's edges in which at least one direction needs coordination (each pair weighted by the headway of its worse edge, 8.4). A direction **works** when it is connected in this symmetry **or in another symmetry of the same node** (e.g. Olten → Zug at :05, Zug → Olten at :53 at Luzern), or needs no coordination (frequent, 8.1, or served directly, 8.1a), or has no service at all (one-way relation).
    - **Complete** (solid hand): more than **50 %** of the pairs work in **both** directions.
