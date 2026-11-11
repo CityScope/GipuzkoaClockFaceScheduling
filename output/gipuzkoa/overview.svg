@@ -115,12 +115,15 @@
 <circle cx='815.6' cy='850.2' r='4.7' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='793.5' cy='633.6' r='7.9' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='793.5' cy='633.6' r='4.0' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
-<line x1='793.5' y1='633.6' x2='799.0' y2='643.1' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='793.5' y1='633.6' x2='804.4' y2='634.8' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='793.5' y1='633.6' x2='782.6' y2='632.5' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='634.0' cy='279.7' r='6.4' fill='#2ca02c' stroke='#fff' stroke-width='1.2'/>
 <circle cx='634.0' cy='279.7' r='3.2' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <line x1='634.0' y1='279.7' x2='625.1' y2='282.6' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='1023.7' cy='253.4' r='7.1' fill='#2ca02c' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1028.8' cy='246.1' r='6.6' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
+<line x1='1028.8' y1='246.1' x2='1031.8' y2='236.9' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='1028.8' y1='246.1' x2='1025.8' y2='255.2' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='570.9' cy='395.0' r='5.3' fill='#2ca02c' stroke='#fff' stroke-width='1.2'/>
 <circle cx='482.0' cy='436.1' r='6.2' fill='#2ca02c' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1109.8' cy='255.5' r='6.8' fill='#2ca02c' stroke='#fff' stroke-width='1.2'/>
@@ -136,16 +139,21 @@
 <circle cx='670.6' cy='575.5' r='7.3' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='670.6' cy='575.5' r='3.7' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <line x1='670.6' y1='575.5' x2='680.9' y2='575.5' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='670.6' y1='575.5' x2='670.6' y2='565.2' stroke='#000' stroke-width='2' stroke-linecap='round'/>
+<line x1='670.6' y1='575.5' x2='670.6' y2='585.9' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <circle cx='894.7' cy='632.3' r='4.7' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='600.3' cy='915.0' r='7.2' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='845.5' cy='526.0' r='4.8' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='981.3' cy='386.8' r='6.9' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='345.4' cy='632.9' r='4.7' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='502.6' cy='609.9' r='8.0' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
+<line x1='502.6' y1='609.9' x2='491.8' y2='612.1' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='725.5' cy='440.7' r='7.1' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='796.3' cy='508.4' r='4.4' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1026.5' cy='522.4' r='5.6' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='570.7' cy='538.0' r='7.6' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
+<line x1='570.7' y1='538.0' x2='579.9' y2='543.3' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='570.7' y1='538.0' x2='561.6' y2='532.7' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='1485.7' cy='34.3' r='4.1' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='14.3' cy='327.0' r='9.9' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1027.9' cy='247.5' r='12.3' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
@@ -227,4 +235,4 @@
 <text x='1034.8' y='240.1' font-size='11' fill='#222' stroke='#fff' stroke-width='3' paint-order='stroke'>Donostia / San Sebastián</text>
 <text x='1229.5' y='177.1' font-size='11' fill='#222' stroke='#fff' stroke-width='3' paint-order='stroke'>Hondarribia</text>
 <text x='640.0' y='273.7' font-size='11' fill='#222' stroke='#fff' stroke-width='3' paint-order='stroke'>Deba</text>
-<text x='14' y='20' font-size='15' font-weight='bold'>Gipuzkoa public transport - weekday: 69 nodes, 110 connections, 11 symmetry nodes (peak)</text></svg>
+<text x='14' y='20' font-size='15' font-weight='bold'>Gipuzkoa public transport - weekday: 69 nodes, 110 connections, 14 symmetry nodes (peak)</text></svg>

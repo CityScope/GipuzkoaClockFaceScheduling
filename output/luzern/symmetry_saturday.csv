@@ -4,11 +4,11 @@ Dagmersellen|bigrail,day,"0,30",30,0.0,0.83,3,National railways + Regional bus,d
 Ebikon|bigrail,peak,"15,45",30,0.63,1.0,4,Regional bus,solid
 Hochdorf|bigrail,day,28,60,1.0,1.0,3,National railways + Regional bus,solid
 Luzern|bigrail,peak,"27,57",30,0.24,0.45,81,National railways + Local railways + Regional bus,dotted
-Luzern|bigrail,peak,7,60,0.25,0.32,26,National railways + Local railways + Regional bus,dotted
-Luzern|bigrail,peak,"17,47",30,0.18,0.35,9,National railways + Local railways + Regional bus,dotted
+Luzern|bigrail,peak,"9,39",30,0.27,0.27,39,National railways + Local railways + Regional bus,dotted
 Luzern|bigrail,day,"27,57",30,0.25,0.46,75,National railways + Local railways + Regional bus,dotted
 Luzern|bigrail,day,7,60,0.27,0.31,21,National railways + Local railways + Regional bus,dotted
 Luzern|bigrail,day,"17,47",30,0.19,0.36,13,National railways + Local railways + Regional bus,dotted
+Luzern|bigrail,night,"21,51",30,0.11,0.51,8,National railways + Local railways,dotted
 Malters|bigrail,peak,"28,58",30,1.0,1.0,3,National railways + Regional bus,solid
 Malters|bigrail,day,"28,58",30,1.0,1.0,3,National railways + Regional bus,solid
 Malters|bigrail,night,25,60,0.0,1.0,2,National railways + Regional bus,dotted
@@ -16,13 +16,15 @@ Neuenkirch|bigrail,peak,"25,55",30,0.6,0.73,7,National railways + Regional bus,s
 Neuenkirch|bigrail,day,55,60,0.75,1.0,4,National railways + Regional bus,solid
 Risch-Rotkreuz|bigrail,peak,"15,45",30,0.5,0.83,5,National railways + Regional bus,dotted
 Risch-Rotkreuz|bigrail,day,"15,45",30,0.5,0.82,5,National railways + Regional bus,dotted
+Risch-Rotkreuz|bigrail,night,11,60,0.11,0.75,5,National railways + Regional bus,dotted
 Root|bigrail,peak,"28,58",30,1.0,1.0,2,National railways + Regional bus,solid
 Root|bigrail,day,"28,58",30,1.0,1.0,2,National railways + Regional bus,solid
 Schüpfheim|bigrail,peak,28,60,1.0,1.0,2,National railways + Regional bus,solid
+Schüpfheim|bigrail,day,29,60,1.0,1.0,4,National railways + Regional bus,solid
 Schüpfheim|bigrail,night,28,60,1.0,1.0,2,National railways + Regional bus,solid
 Sursee|bigrail,peak,"14,44",30,0.58,0.81,12,National railways + Regional bus,solid
 Sursee|bigrail,peak,30,60,0.36,0.68,3,National railways + Regional bus,dotted
-Sursee|bigrail,day,"14,44",30,0.58,0.81,12,National railways + Regional bus,solid
+Sursee|bigrail,day,"14,44",30,0.53,0.73,16,National railways + Regional bus,solid
 Sursee|bigrail,day,30,60,0.36,0.68,3,National railways + Regional bus,dotted
 Willisau|bigrail,peak,"28,58",30,1.0,1.0,2,National railways + Regional bus,solid
 Willisau|bigrail,day,"28,58",30,1.0,1.0,2,National railways + Regional bus,solid
@@ -47,9 +49,10 @@ Ettiswil|bus,night,25,60,0.0,1.0,2,Regional bus,dotted
 Küssnacht (SZ)|bus,peak,"3,33",30,0.75,0.75,3,Regional bus,solid
 Küssnacht (SZ)|bus,day,"3,33",30,0.75,0.75,3,Regional bus,solid
 Luzern|bus,peak,"0,30",30,0.5,0.67,59,National railways + Local railways + Regional bus,dotted
-Luzern|bus,peak,50,60,0.67,0.44,6,National railways + Local railways + Regional bus,solid
-Luzern|bus,day,"0,30",30,0.5,0.71,50,National railways + Local railways + Regional bus,solid
+Luzern|bus,peak,"20,50",30,0.6,0.6,10,National railways + Local railways + Regional bus,solid
+Luzern|bus,day,"0,30",30,0.5,0.74,50,National railways + Local railways + Regional bus,solid
 Luzern|bus,day,"20,50",30,0.56,0.56,9,National railways + Local railways + Regional bus,solid
+Luzern|bus,night,"15,45",30,0.0,1.0,2,National railways + Regional bus,dotted
 Rain|bus,peak,"13,43",30,1.0,1.0,2,Regional bus,solid
 Rain|bus,day,"13,43",30,1.0,1.0,2,Regional bus,solid
 Ruswil|bus,peak,"0,30",30,0.5,1.0,2,Regional bus,dotted
@@ -62,4 +65,4 @@ Zofingen|bus,peak,10,60,1.0,1.0,2,National railways + Regional bus,solid
 Zofingen|bus,day,10,60,1.0,1.0,2,National railways + Regional bus,solid
 Zofingen|bus,night,40,60,0.0,1.0,2,National railways + Regional bus,dotted
 Root|bus|1,peak,"28,58",30,0.75,0.75,3,National railways + Regional bus,solid
-Root|bus|1,day,"28,58",30,0.75,0.75,3,National railways + Regional bus,solid
+Root|bus|1,day,"28,58",30,0.75,1.0,3,National railways + Regional bus,solid

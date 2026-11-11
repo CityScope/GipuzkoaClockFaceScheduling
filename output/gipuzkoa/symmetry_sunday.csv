@@ -7,20 +7,21 @@ Elgoibar|euskotren,day,"20,50",30,0.0,0.83,4,Euskotren + Bus,dotted
 Ermua|euskotren,peak,55,60,0.5,1.0,2,Euskotren + Bus,dotted
 Ermua|euskotren,day,"25,55",30,0.33,1.0,3,Euskotren + Bus,dotted
 Ermua|euskotren,night,45,60,0.0,1.0,2,Euskotren + Bus,dotted
-Errenteria|euskotren,day,55,60,0.0,1.0,2,Euskotren + Bus,dotted
+Errenteria|euskotren,day,"23,53",30,0.44,0.94,4,Euskotren + Bus,dotted
 Lasarte-Oria|euskotren,peak,25,60,0.6,1.0,2,Euskotren + Bus,solid
 Lasarte-Oria|euskotren,day,25,60,0.86,1.0,2,Euskotren + Bus,solid
 Zumarraga|bus,day,11,60,0.0,0.7,3,Bus,dotted
 Zumarraga|bus,day,0,60,0.0,0.7,3,Bus,dotted
-Bilbao|bus,day,58,60,0.32,1.0,6,Bus,dotted
+Bilbao|bus,day,59,60,0.32,1.0,6,Bus,dotted
 Elgoibar|bus,peak,"13,43",30,0.0,1.0,4,Euskotren + Bus,dotted
 Elgoibar|bus,day,"16,46",30,0.14,0.65,7,Euskotren + Bus,dotted
+Errenteria|bus,day,"23,53",30,0.49,1.0,2,Euskotren + Bus,dotted
 Lasarte-Oria|bus,peak,15,60,0.5,1.0,2,Bus,dotted
 Lasarte-Oria|bus,day,25,60,0.76,0.88,3,Euskotren + Bus,solid
-Loiu|bus,day,45,60,0.0,1.0,2,Bus,dotted
+Loiu|bus,day,45,60,0.0,0.86,4,Bus,dotted
 Ondarroa|bus,peak,5,60,0.0,0.65,3,Bus,dotted
 Tolosa|bus,day,"0,30",30,0.0,0.68,3,Bus,dotted
-Zarautz|bus,peak,45,60,0.0,0.61,5,Bus,dotted
+Zarautz|bus,peak,47,60,0.0,0.53,8,Bus,dotted
 Zarautz|bus,day,45,60,0.0,0.59,7,Bus,dotted
 Ermua|bus|1,peak,"25,55",30,0.29,0.71,3,Euskotren + Bus,dotted
 Ermua|bus|1,day,"25,55",30,0.5,1.0,2,Euskotren + Bus,dotted

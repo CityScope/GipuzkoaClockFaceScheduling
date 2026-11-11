@@ -195,6 +195,7 @@ WAIT_MAX_HUB = 15
 COORD_WAIT_BUS = 12           # ... or <= 12 min when arriving by bus (bus -> bus, bus -> train)
 SYM_NO_NEED = 0.75            # >= 75 % (weighted) of the relations have a frequent edge: no symmetry needed
 GROUP_TOL, GROUP_SEP = 5, 10
+TIMED_MOST = 0.8              # timed services >= 80 % of the departures reached: coordinated without the timed-vs-any comparison
 BACK_DEG = 45                 # two edges less than 45 degrees apart lead the same way (a change between them goes back)  # coordinated relations within 5 min (mod 30) form one symmetry; symmetries >= 10 min apart
 
 
@@ -388,6 +389,8 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             dep = v["ddir"] + [c[1] for c, ok in zip(v["C"], f) if ok]
             if not dep:
                 return False
+            if len(dep) >= TIMED_MOST * v["nall"]:                    # (almost) every service is timed: nothing to compare
+                return True
             wt = sum(c[2] for c, ok in zip(v["C"], f) if ok) / len(dep)
             ht = _hw(sorted(dep), wins)
             return (ht - min(ht, v["hall"])) / 2 <= v["wait"] - wt + 1e-9
