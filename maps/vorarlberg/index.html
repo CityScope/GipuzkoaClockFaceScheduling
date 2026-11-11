@@ -397,7 +397,8 @@ let map;
     // ↻ = headway of the symmetry services of that direction (only on symmetry spokes)
     // each side: coordinated in the symmetry (or frequent) -> normal style; otherwise the mean of all services, muted
     const hI=vi!=null?s.hwi:null,hO=vo!=null?s.hwo:null,lc=one||fq?COL[s.sy]:'#9ca3af';
-    const mI=vi==null&&!fq,mO=vo==null&&!fq;
+    // a side counts (normal style) when it is timed in the symmetry or its own direction is frequent (e.g. a train every 10 min leaving at :00)
+    const fI=fq||(s.ahi??999)<CFG.freq,fO=fq||(s.aho??999)<CFG.freq,mI=vi==null&&!fI,mO=vo==null&&!fO;
     const rep=(h_)=>h_?`<tspan class="nrep">↻${h_}′</tspan>`:'';
     // left part = the one whose arrow points to the left (arrival if the spoke points right, else departure)
     const half=(mn,h_,arrowLeft,mut)=>{if(mn==null)return null;const t=arrowLeft?`<tspan class="narr">◀</tspan> ${mn}′${h_?' '+rep(h_):''}`:`${h_?rep(h_)+' ':''}${mn}′ <tspan class="narr">▶</tspan>`;return mut?`<tspan class="nmut">${t}</tspan>`:t;};
