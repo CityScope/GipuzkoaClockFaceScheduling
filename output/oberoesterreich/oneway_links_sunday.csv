@@ -1,0 +1,7 @@
+a,b,mode,trips_day,action
+Asten|bus,Linz|bus,bus,8,via St. Florian|bus
+Herzogsdorf|bus,Linz|bus,bus,3,via Feldkirchen an der Donau|bus
+Niederwaldkirchen|bus,Rohrbach-Berg|bus,bus,3,via Neufelden|bus
+Traun|bus,Linz|bus,bus,99,via Leonding|bus
+Weyer|bigrail,Amstetten|bigrail,bigrail,1,via Waidhofen an der Ybbs|bigrail
+Zwettl an der Rodl|bus,Rohrbach-Berg|bus,bus,1,dropped

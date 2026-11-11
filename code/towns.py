@@ -51,6 +51,8 @@ MIN_EDGE_MIN = globals().get("MIN_EDGE_MIN", 9)   # no transit edge shorter than
 MIN_TRIPS_DAY = globals().get("MIN_TRIPS_DAY", 3)   # ignore ghost links with fewer trips/day
 WALK_M_PER_MIN = 75   # walking links between nodes of the same town
 WALK_MAX_MIN = 5      # walking transfer only up to 5 min (about 375 m); more is too much for a connection
+ONEWAY_DETOUR = (1.4, 4.0)   # a one-way link is routed along the return corridor if that path takes <= 1.4 x its time + 4 min
+ONEWAY_DROP_MAX = 3          # one-way legs with at most this many trips/day and no return corridor are exceptional: dropped
 
 # Time bands (minutes after midnight of the service day). Limits are WHOLE HOURS on purpose: the headway formula
 # (g0^2 + sum gaps^2)/window is distorted by the window edges unless the window length is a multiple of the

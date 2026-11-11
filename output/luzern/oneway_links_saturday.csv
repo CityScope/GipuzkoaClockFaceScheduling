@@ -1,0 +1,10 @@
+a,b,mode,trips_day,action
+Arth|bigrail,Risch-Rotkreuz|bigrail,bigrail,1,dropped
+Beromünster|bus,Sursee|bus,bus,2,via Eich|bus
+Hochdorf|bus,Schongau|bus,bus,3,kept one-way (only service of its line)
+Luzern|bus,Malters|bus,bus,3,dropped
+Malters|bus,Ruswil|bus,bus,3,dropped
+Neuenkirch|bigrail,Luzern|bigrail,bigrail,3,via Rothenburg|bigrail
+Ruswil|bus,Luzern|bus,bus,3,via Neuenkirch|bus
+Hochdorf|bus,Schongau|bus,bus,3,kept one-way (only service of its line)
+Hochdorf|bus,Schongau|bus,bus,3,kept one-way (only service of its line)

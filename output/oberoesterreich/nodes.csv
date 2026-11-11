@@ -34,6 +34,7 @@ Wels|bigrail,48.166039035,14.026780837,Wels Hauptbahnhof,Wels,bigrail,Wels,Wels 
 Weyer|bigrail,47.862116435,14.66773688,Weyer/Enns Bahnhof,Weyer,bigrail,Weyer,Weyer · National railways,26.0,1,31.0,True,Weyer|bigrail
 Wilhering|localrail,48.27153467,14.20169989,Dörnbach-Hitzing Bahnhst,Wilhering,localrail,Wilhering,Wilhering · Local railways,82.0,1,87.0,True,Wilhering|bus
 Alkoven|bus,48.28794493,14.111989635,Alkoven Eferdinger Straße,Alkoven,bus,Alkoven,Alkoven · Regional bus,60.0,6,90.0,True,Alkoven|bus
+Aschach an der Donau|bus,48.363471675,14.0129369,Aschach/Donau Bahnhof,Aschach an der Donau,bus,Aschach an der Donau,Aschach an der Donau · Regional bus,64.0,11,119.0,True,Aschach an der Donau|bus
 Asten|bus,48.22534245,14.39954485,Asten b.Linz B1/Bahnhofstraße,Asten,bus,Asten,Asten · Regional bus,83.0,5,108.0,True,Asten|bus
 Bachmanning|bus,48.1302846925,13.7947989975,Bachmanning Feuerwehr,Bachmanning,bus,Bachmanning,Bachmanning · Regional bus,31.0,4,51.0,True,Bachmanning|bus
 Bad Hall|bus,48.03645897909091,14.20838662090909,Bad Hall Bahnhofstraße,Bad Hall,bus,Bad Hall,Bad Hall · Regional bus,111.0,5,136.0,True,Bad Hall|bus
@@ -43,10 +44,10 @@ Engerwitzdorf|bus,48.340640285,14.41272313,Schweinbach B125/Abzw Ort,Engerwitzdo
 Enns|bus,48.220440825,14.46596179,Enns Bahnhof,Enns,bus,Enns,Enns · Regional bus,306.0,5,331.0,True,Enns|bigrail
 Feldkirchen an der Donau|bus,48.38547402,14.09106338,Lacken im Mühlkreis Bahnhst,Feldkirchen an der Donau,bus,Feldkirchen an der Donau,Feldkirchen an der Donau · Regional bus,158.0,10,208.0,True,Feldkirchen an der Donau|bus
 Freistadt|bus,48.49961721,14.486389475,Freistadt B38/Abzw Bahnhof,Freistadt,bus,Freistadt,Freistadt · Regional bus,143.0,19,238.0,True,Freistadt|bus
-Gallneukirchen|bus,48.35338601,14.416022946666667,Gallneukirchen Schulstraße,Gallneukirchen,bus,Gallneukirchen,Gallneukirchen · Regional bus,157.0,8,197.0,True,Gallneukirchen|bus
 Garsten|bus,48.02442351,14.407387139999999,Garsten Otakarstraße,Garsten,bus,Garsten,Garsten · Regional bus,45.0,6,75.0,True,Garsten|bigrail
 Gaspoltshofen|bus,48.138692995,13.73140489,Gaspoltshofen Jeding,Gaspoltshofen,bus,Gaspoltshofen,Gaspoltshofen · Regional bus,51.0,5,76.0,True,Gaspoltshofen|bus
 Geboltskirchen|bus,48.15186471,13.63299445,Geboltskirchen Teichweg,Geboltskirchen,bus,Geboltskirchen,Geboltskirchen · Regional bus,39.0,3,54.0,True,Geboltskirchen|bus
+Goldwörth|bus,48.326904895,14.10091341,Goldwörth Gemeindeamt,Goldwörth,bus,Goldwörth,Goldwörth · Regional bus,40.0,3,55.0,True,Goldwörth|bus
 Gramastetten|bus,48.337371,14.25324522,Großamberg Hansbergstraße,Gramastetten,bus,Gramastetten,Gramastetten · Regional bus,126.0,4,146.0,True,Gramastetten|bus
 Grieskirchen|bus,48.234827145,13.825993,Grieskirchen Busbahnhof (Postamt),Grieskirchen,bus,Grieskirchen,Grieskirchen · Regional bus,129.0,10,179.0,True,Grieskirchen|bus
 Großraming|bus,47.88645056,14.55288727,Großraming Schulen,Großraming,bus,Großraming,Großraming · Regional bus,64.0,3,79.0,True,Großraming|bus
@@ -55,7 +56,6 @@ Haag am Hausruck|bus,48.18293896,13.647371985,Haag am Hausruck Bahnhofstraße,Ha
 Hagenberg im Mühlkreis|bus,48.367016795,14.517336440000001,Hagenberg im Mühlkreis Ortsmitte,Hagenberg im Mühlkreis,bus,Hagenberg im Mühlkreis,Hagenberg im Mühlkreis · Regional bus,83.0,7,118.0,True,Hagenberg im Mühlkreis|bus
 Haibach ob der Donau|bus,48.409858075,13.91637699,Haibach ob der Donau Ortsmitte,Haibach ob der Donau,bus,Haibach ob der Donau,Haibach ob der Donau · Regional bus,28.0,4,48.0,True,Haibach ob der Donau|bus
 Hargelsberg|bus,48.14974308,14.42512887,Hargelsberg Ortsmitte,Hargelsberg,bus,Hargelsberg,Hargelsberg · Regional bus,35.0,2,45.0,True,Hargelsberg|bus
-Hartkirchen|bus,48.36170299666667,14.003875893333332,Hartkirchen OÖ Ortsmitte,Hartkirchen,bus,Hartkirchen,Hartkirchen · Regional bus,63.0,7,98.0,True,Hartkirchen|bus
 Hellmonsödt|bus,48.430661689999994,14.2944487,Hellmonsödt Glasau (B126),Hellmonsödt,bus,Hellmonsödt,Hellmonsödt · Regional bus,197.0,8,237.0,True,Hellmonsödt|bus
 Herzogsdorf|bus,48.396991289999995,14.076651406666668,Gerling OÖ Bahnhst,Herzogsdorf,bus,Herzogsdorf,Herzogsdorf · Regional bus,216.0,14,286.0,True,Herzogsdorf|bus
 Hörsching|bus,48.245315145000006,14.186244375,Hörsching Bahnhst,Hörsching,bus,Hörsching,Hörsching · Regional bus,159.0,9,204.0,True,Hörsching|bigrail
@@ -83,6 +83,7 @@ Pichl bei Wels|bus,48.18440339,13.90022528,Pichl b.Wels Ortsmitte,Pichl bei Wels
 Prambachkirchen|bus,48.315403135,13.901545805000001,Prambachkirchen-Bad Weinberg Bahnhof,Prambachkirchen,bus,Prambachkirchen,Prambachkirchen · Regional bus,71.0,4,91.0,True,Prambachkirchen|bus
 Pregarten|bus,48.35546737666667,14.523434503333334,Pregarten Bahnhof,Pregarten,bus,Pregarten,Pregarten · Regional bus,161.0,14,231.0,True,Pregarten|bigrail
 Raab|bus,48.35189757,13.64419644,Raab OÖ Kommuneplatz,Raab,bus,Raab,Raab · Regional bus,41.0,3,56.0,True,Raab|bus
+Reichenau im Mühlkreis|bus,48.456330295,14.348902325000001,Reichenau im Mühlkreis Marktplatz,Reichenau im Mühlkreis,bus,Reichenau im Mühlkreis,Reichenau im Mühlkreis · Regional bus,112.0,6,142.0,True,Reichenau im Mühlkreis|bus
 Ried im Innkreis|bus,48.20545414,13.488557928,Ried im Innkreis Landesgericht (Bahnhofstraße),Ried im Innkreis,bus,Ried im Innkreis,Ried im Innkreis · Regional bus,319.0,17,404.0,True,Ried im Innkreis|bus
 Rohr im Kremstal|bus,48.06917011,14.19085723,Rohr-Bad Hall Bahnhof,Rohr im Kremstal,bus,Rohr im Kremstal,Rohr im Kremstal · Regional bus,68.0,5,93.0,True,Rohr im Kremstal|bigrail
 Rohrbach-Berg|bus,48.55933876,14.031208634999999,Haslach/Mühl Abzw Bahnhof,Rohrbach-Berg,bus,Rohrbach-Berg,Rohrbach-Berg · Regional bus,144.0,20,244.0,True,Rohrbach-Berg|bus
@@ -103,7 +104,6 @@ Steinerkirchen an der Traun|bus,48.07912186,13.95656762,Steinerkirchen/Traun Ort
 Steyr|bus,48.038004943333334,14.422838165,Steyr Bahnhof (Busterminal/Parkdeck),Steyr,bus,Steyr,Steyr · Regional bus,158.0,17,243.0,True,Steyr|bigrail
 Stroheim|bus,48.357535725000005,13.912905,Reith b.Stroheim,Stroheim,bus,Stroheim,Stroheim · Regional bus,11.0,1,16.0,True,Stroheim|bus
 Traun|bus,48.22549405666667,14.251200056666667,Traun OÖ Bahnhof,Traun,bus,Traun,Traun · Regional bus,319.0,17,404.0,True,Traun|bigrail
-Unterweitersdorf|bus,48.362373469999994,14.446261735,Hattmannsdorf b.Gallneukirchen,Unterweitersdorf,bus,Unterweitersdorf,Unterweitersdorf · Regional bus,74.0,4,94.0,True,Unterweitersdorf|bus
 Vorchdorf|bus,47.998657545,13.921169505,Vorchdorf-Eggenberg Bahnhof,Vorchdorf,bus,Vorchdorf,Vorchdorf · Regional bus,74.0,4,94.0,True,Vorchdorf|bus
 Waizenkirchen|bus,48.33015992,13.85244389,Waizenkirchen Bahnhof,Waizenkirchen,bus,Waizenkirchen,Waizenkirchen · Regional bus,57.0,10,107.0,True,Waizenkirchen|bus
 Walding|bus,48.35992033,14.137349075,Rottenegg Bahnhof,Walding,bus,Walding,Walding · Regional bus,186.0,11,241.0,True,Walding|bigrail|1

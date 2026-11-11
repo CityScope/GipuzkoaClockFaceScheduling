@@ -182,6 +182,9 @@ Triengen|bus,night,6,0,60,0.5
 Udligenswil|bus,peak,27,"1,7,28,32,44,57",0,0.8518518518518519
 Udligenswil|bus,day,60,"1,7,27,31,44,56",0,0.8
 Udligenswil|bus,night,8,"1,27,31",0,1.0
+Ufhusen|bus,peak,6,"0,13,40",0,1.0
+Ufhusen|bus,day,12,"0,13,40",0,1.0
+Ufhusen|bus,night,0,,0,0.0
 Vitznau|bus,peak,16,"10,22,34,47",0,1.0
 Vitznau|bus,day,32,"10,21,36,49",0,0.96875
 Vitznau|bus,night,13,"1,24,31,53",0,0.9230769230769231
@@ -209,8 +212,8 @@ Wolhusen|bus,night,4,"20,47",0,1.0
 Zell (LU)|bigrail,peak,6,"20,51",30,1.0
 Zell (LU)|bigrail,day,8,51,60,1.0
 Zell (LU)|bigrail,night,3,"23,50",0,1.0
-Zell (LU)|bus,peak,4,7,60,1.0
-Zell (LU)|bus,day,8,7,60,1.0
+Zell (LU)|bus,peak,6,"7,47",0,1.0
+Zell (LU)|bus,day,12,"7,47",0,1.0
 Zell (LU)|bus,night,0,,0,0.0
 Zofingen|bigrail,peak,28,"2,14,29,44,58",0,1.0
 Zofingen|bigrail,day,56,"2,14,29,44,58",0,1.0

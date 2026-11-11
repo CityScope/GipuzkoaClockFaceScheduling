@@ -1,0 +1,54 @@
+a,b,mode,trips_day,action
+Auggen|bus,Schliengen|bus,bus,2,dropped
+Basel|bigrail,Grellingen|bigrail,bigrail,2,dropped
+Basel|bigrail|3,Rheinfelden|bigrail,bigrail,1,via Muttenz|bigrail - Pratteln|bigrail
+Basel|bigrail|3,Zürich|bigrail,bigrail,1,via Liestal|bigrail - Olten|bigrail
+Basel|localrail|17,Basel|localrail|1,localrail,135,via Basel|localrail
+Basel|localrail|19,Basel|localrail,localrail,138,via Basel|localrail|9
+Basel|localrail|19,Basel|localrail|1,localrail,140,via Basel|localrail|9
+Binzen|bus,Kandern|bus|1,bus,2,via Schallbach|bus
+Döttingen|bus,Zurzach|bus|1,bus,1,dropped
+Dübendorf|localrail|2,Dübendorf|localrail,localrail,77,moved to Dübendorf|localrail - Dübendorf|localrail|2
+Efringen-Kirchen|bus,Fischingen|bus,bus,6,via Efringen-Kirchen|bus|1
+Efringen-Kirchen|bus,Schliengen|bus,bus,1,via Bad Bellingen|bus
+Egerkingen|bus,Neuendorf|bus,bus,2,via Egerkingen|bus|2
+Fischingen|bus,Weil am Rhein|bus,bus,2,via Weil am Rhein|bus|1
+Fislisbach|bus,Birmenstorf|bus,bus,1,dropped
+Freienstein-Teufen|bus,Bülach|bus,bus,1,dropped
+Hochdorf|bus,Hitzkirch|bus,bus,2,dropped
+Horw|localrail,Hergiswil (NW)|localrail,localrail,1,via Hergiswil (NW)|localrail|1
+Jonen|bus,Rottenschwil|bus,bus,1,dropped
+Kandern|bus|1,Bad Bellingen|bus,bus,1,dropped
+Kandern|bus|1,Efringen-Kirchen|bus|1,bus,1,via Fischingen|bus
+Kandern|bus|1,Lörrach|bus|3,bus,1,via Schallbach|bus
+Küsnacht (ZH)|localrail,Zürich|localrail|16,localrail,84,via Zürich|localrail|60
+Lenzburg|bigrail,Zürich|bigrail|5,bigrail,3,via Dietikon|bigrail
+Lenzburg|bus,Suhr|bus,bus,1,kept one-way (only service of its line)
+Liestal|bigrail,Basel|bigrail|3,bigrail,2,via Pratteln|bigrail - Muttenz|bigrail
+Liestal|bigrail,Muttenz|bigrail,bigrail,1,via Pratteln|bigrail
+Luzern|localrail,Kriens|localrail,localrail,1,via Luzern|localrail|1
+Lörrach|bus|2,Weil am Rhein|bus|1,bus,1,via Riehen|bus
+Muttenz|bus,Binningen|bus|2,bus,99,via Bottmingen|bus
+Neuenburg am Rhein|bus,Bad Bellingen|bus,bus,2,via Schliengen|bus
+Neuendorf|bus,Oberbuchsiten|bus,bus,2,via Egerkingen|bus|2
+Opfikon|bus,Kloten|bus,bus,34,via Kloten|bus|1
+Regensdorf|bus,Würenlos|bus,bus,1,dropped
+Rheinfelden|bigrail,Pratteln|bigrail,bigrail,1,via Kaiseraugst|bigrail
+Suhr|bus,Zofingen|bus,bus,1,kept one-way (only service of its line)
+Thayngen|bus,Schaffhausen|bus,bus,3,via Büttenhardt|bus
+Zürich|localrail,Zürich|localrail|7,localrail,1,via Zürich|localrail|6
+Zürich|localrail|60,Küsnacht (ZH)|localrail,localrail,84,via Zürich|localrail|16
+Basel|bigrail|3,Liestal|bigrail,bigrail,1,via Muttenz|bigrail - Pratteln|bigrail
+Dübendorf|localrail,Dübendorf|localrail|2,localrail,77,moved to Dübendorf|localrail|2 - Dübendorf|localrail
+Küsnacht (ZH)|localrail,Zürich|localrail|60,localrail,84,via Zürich|localrail|16
+Lenzburg|bus,Suhr|bus,bus,1,kept one-way (only service of its line)
+Pratteln|bigrail,Rheinfelden|bigrail,bigrail,1,via Kaiseraugst|bigrail
+Suhr|bus,Zofingen|bus,bus,1,kept one-way (only service of its line)
+Zürich|localrail|16,Küsnacht (ZH)|localrail,localrail,84,via Zürich|localrail|60
+Dübendorf|localrail,Zürich|localrail|63,localrail,77,kept one-way
+Dübendorf|localrail|2,Dübendorf|localrail,localrail,77,moved to Dübendorf|localrail - Dübendorf|localrail|2
+Küsnacht (ZH)|localrail,Zürich|localrail|16,localrail,84,via Zürich|localrail|60
+Lenzburg|bus,Suhr|bus,bus,1,kept one-way (only service of its line)
+Lützelflüh|bus,Hasle bei Burgdorf|bus,bus,9,kept one-way
+Suhr|bus,Zofingen|bus,bus,1,kept one-way (only service of its line)
+Zürich|localrail|60,Küsnacht (ZH)|localrail,localrail,84,via Zürich|localrail|16

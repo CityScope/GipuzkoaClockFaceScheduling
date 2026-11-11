@@ -1,0 +1,20 @@
+a,b,mode,trips_day,action
+Aarau|bigrail,Dietikon|bigrail,bigrail,1,via Lenzburg|bigrail
+Aarau|bigrail,Zürich|bigrail|4,bigrail,1,via Lenzburg|bigrail
+Egerkingen|bus,Neuendorf|bus,bus,2,via Egerkingen|bus|2
+Hochdorf|bus,Schongau|bus,bus,2,kept one-way (only service of its line)
+Iseltwald|bus,Interlaken|bus,bus,9,via Bönigen|bus
+Langnau im Emmental|bus,Schüpfheim|bus,bus,1,dropped
+Lenzburg|bus,Oberentfelden|bus,bus,1,dropped
+Neuendorf|bus,Oberbuchsiten|bus,bus,2,via Egerkingen|bus|2
+Zollikon|localrail|1,Zürich|localrail|16,localrail,66,via Zürich|localrail|52
+Zürich|localrail|1,Zürich|localrail|2,localrail,332,via Zürich|localrail|6
+Zürich|localrail|52,Zollikon|localrail|1,localrail,66,via Zürich|localrail|16
+Zürich|localrail|7,Zürich|localrail|1,localrail,337,via Zürich|localrail|2
+Hochdorf|bus,Schongau|bus,bus,2,kept one-way (only service of its line)
+Zollikon|localrail|1,Zürich|localrail|52,localrail,66,via Zürich|localrail|16
+Zürich|localrail|16,Zollikon|localrail|1,localrail,66,via Zürich|localrail|52
+Zürich|localrail|2,Zürich|localrail|1,localrail,337,via Zürich|localrail|6
+Hochdorf|bus,Schongau|bus,bus,2,kept one-way (only service of its line)
+Zollikon|localrail|1,Zürich|localrail|16,localrail,66,via Zürich|localrail|52
+Zürich|localrail|52,Zollikon|localrail|1,localrail,66,via Zürich|localrail|16

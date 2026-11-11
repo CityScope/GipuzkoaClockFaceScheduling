@@ -8,6 +8,9 @@ Amstetten|bigrail,night,16,"0,5,9,28,40,52",0,0.9375
 Ansfelden|bus|1,peak,12,"18,29,39",0,0.75
 Ansfelden|bus|1,day,24,"19,29,38,46",0,1.0
 Ansfelden|bus|1,night,4,29,60,0.75
+Aschach an der Donau|bus,peak,5,"7,12,16,34",0,1.0
+Aschach an der Donau|bus,day,16,"7,34",0,0.8125
+Aschach an der Donau|bus,night,3,"7,14,31",0,1.0
 Asten|bus,peak,8,"6,55",0,1.0
 Asten|bus,day,18,"5,55",0,0.9444444444444444
 Asten|bus,night,4,"5,36,54",0,1.0
@@ -29,8 +32,8 @@ Eferding|bus,night,2,"6,31",0,1.0
 Eferding|localrail,peak,10,31,60,0.8
 Eferding|localrail,day,16,31,60,1.0
 Eferding|localrail,night,5,31,60,0.8
-Engerwitzdorf|bus,peak,14,"4,18,37,47",0,1.0
-Engerwitzdorf|bus,day,27,"5,18,37,47",0,0.9259259259259259
+Engerwitzdorf|bus,peak,10,"18,36,49",0,1.0
+Engerwitzdorf|bus,day,18,"18,37,48",0,0.9444444444444444
 Engerwitzdorf|bus,night,3,"24,34",0,1.0
 Enns|bigrail,peak,9,"10,48",0,0.7777777777777778
 Enns|bigrail,day,20,"10,47",0,0.8
@@ -38,15 +41,12 @@ Enns|bigrail,night,9,"10,41",30,0.6666666666666666
 Enns|bus,peak,8,"17,42",0,1.0
 Enns|bus,day,17,"17,42",0,0.9411764705882353
 Enns|bus,night,3,"18,27,43",0,1.0
-Feldkirchen an der Donau|bus,peak,14,"12,43",30,0.6428571428571429
-Feldkirchen an der Donau|bus,day,40,"12,43",30,0.55
+Feldkirchen an der Donau|bus,peak,17,"1,12,43",0,0.7058823529411765
+Feldkirchen an der Donau|bus,day,44,"0,12,43",0,0.7272727272727273
 Feldkirchen an der Donau|bus,night,6,"17,23",0,0.8333333333333334
 Freistadt|bus,peak,5,"17,48,59",0,1.0
 Freistadt|bus,day,10,"48,59",0,0.8
 Freistadt|bus,night,2,"15,47",0,1.0
-Gallneukirchen|bus,peak,10,"15,41,46",0,1.0
-Gallneukirchen|bus,day,19,"15,40,44",0,0.9473684210526315
-Gallneukirchen|bus,night,3,"22,36",0,1.0
 Garsten|bigrail,peak,7,"9,50",0,0.8571428571428571
 Garsten|bigrail,day,12,"9,50",0,1.0
 Garsten|bigrail,night,4,"9,32,36,51",0,1.0
@@ -56,6 +56,9 @@ Garsten|bus,night,0,,0,0.0
 Gaspoltshofen|bus,peak,2,1,0,1.0
 Gaspoltshofen|bus,day,4,1,60,1.0
 Gaspoltshofen|bus,night,0,,0,0.0
+Goldwörth|bus,peak,2,"49,55",0,1.0
+Goldwörth|bus,day,8,"49,55",0,1.0
+Goldwörth|bus,night,2,"35,46",0,1.0
 Gramastetten|bus,peak,8,"26,36",0,0.875
 Gramastetten|bus,day,19,"26,35",0,0.8421052631578947
 Gramastetten|bus,night,2,"26,35",0,1.0
@@ -83,12 +86,9 @@ Hagenberg im Mühlkreis|bus,night,2,"12,23",0,1.0
 Haibach ob der Donau|bus,peak,2,"3,59",0,1.0
 Haibach ob der Donau|bus,day,6,"49,57",0,0.8333333333333334
 Haibach ob der Donau|bus,night,1,56,0,1.0
-Hartkirchen|bus,peak,5,15,60,0.8
-Hartkirchen|bus,day,10,"15,34",0,0.8
-Hartkirchen|bus,night,2,"6,33",0,1.0
-Hellmonsödt|bus,peak,14,"0,6,12",0,0.8571428571428571
-Hellmonsödt|bus,day,29,"0,6",0,0.6896551724137931
-Hellmonsödt|bus,night,4,"6,12,22",0,1.0
+Hellmonsödt|bus,peak,17,"0,6,12,37",0,0.8823529411764706
+Hellmonsödt|bus,day,34,"0,6,12",0,0.7647058823529411
+Hellmonsödt|bus,night,5,"6,12,22",0,1.0
 Herzogsdorf|bus,peak,13,"0,10,45",0,0.7692307692307693
 Herzogsdorf|bus,day,37,"0,9,20,29,45",0,0.8918918918918919
 Herzogsdorf|bus,night,6,18,60,0.3333333333333333
@@ -209,6 +209,9 @@ Pregarten|bigrail,night,2,43,0,1.0
 Pregarten|bus,peak,6,"25,36",0,1.0
 Pregarten|bus,day,11,"20,27,35",0,1.0
 Pregarten|bus,night,4,"1,20,30",0,1.0
+Reichenau im Mühlkreis|bus,peak,9,"3,48,55",0,0.8888888888888888
+Reichenau im Mühlkreis|bus,day,14,48,60,0.5714285714285714
+Reichenau im Mühlkreis|bus,night,2,"15,59",0,1.0
 Rohr im Kremstal|bigrail,peak,16,"10,30,50",20,1.0
 Rohr im Kremstal|bigrail,day,31,"10,30,49",20,1.0
 Rohr im Kremstal|bigrail,night,8,"10,31,48",0,1.0
@@ -278,9 +281,6 @@ Traun|bigrail,night,8,"13,48",0,1.0
 Traun|bus,peak,36,46,60,0.4444444444444444
 Traun|bus,day,74,46,60,0.4189189189189189
 Traun|bus,night,20,"16,47",30,0.6
-Unterweitersdorf|bus,peak,6,"10,46",0,1.0
-Unterweitersdorf|bus,day,10,"10,46",0,0.9
-Unterweitersdorf|bus,night,3,"15,40",0,1.0
 Vorchdorf|bus,peak,2,33,0,1.0
 Vorchdorf|bus,day,2,33,0,1.0
 Vorchdorf|bus,night,0,,0,0.0
@@ -338,6 +338,6 @@ Wolfern|bus,night,0,,0,0.0
 Wolfsegg am Hausruck|bus,peak,2,48,0,1.0
 Wolfsegg am Hausruck|bus,day,4,48,60,1.0
 Wolfsegg am Hausruck|bus,night,0,,0,0.0
-Zwettl an der Rodl|bus,peak,5,53,60,0.8
-Zwettl an der Rodl|bus,day,10,53,60,0.8
-Zwettl an der Rodl|bus,night,1,17,0,1.0
+Zwettl an der Rodl|bus,peak,10,"14,52",0,0.8
+Zwettl an der Rodl|bus,day,19,"14,52",0,0.8421052631578947
+Zwettl an der Rodl|bus,night,2,"14,18",0,1.0

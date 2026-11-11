@@ -119,9 +119,9 @@ Irun|renfe,night,4,"12,18,44",0,1.0
 Larraul|bus,peak,0,,0,0.0
 Larraul|bus,day,0,,0,0.0
 Larraul|bus,night,1,15,0,1.0
-Lasarte-Oria|bus,peak,37,"5,17,45",0,0.5405405405405406
-Lasarte-Oria|bus,day,68,"5,17,28,40,46",0,0.75
-Lasarte-Oria|bus,night,12,"5,17,36",0,0.6666666666666666
+Lasarte-Oria|bus,peak,40,"5,17,22,45",0,0.6
+Lasarte-Oria|bus,day,76,"5,17,28,40,47",0,0.75
+Lasarte-Oria|bus,night,13,"5,17,36",0,0.6153846153846154
 Lasarte-Oria|euskotren,peak,7,"0,29",30,1.0
 Lasarte-Oria|euskotren,day,16,"0,29",30,1.0
 Lasarte-Oria|euskotren,night,2,"0,29",30,1.0
@@ -164,6 +164,9 @@ Soraluze-Placencia de las Armas|bus,night,12,"29,54",0,0.4166666666666667
 Tolosa|bus,peak,22,"3,10,26,50,55,59",0,0.8636363636363636
 Tolosa|bus,day,44,"0,10,15,25",0,0.6363636363636364
 Tolosa|bus,night,8,"15,25,31",0,0.75
+Usurbil|bus,peak,11,"14,39,44",0,0.9090909090909091
+Usurbil|bus,day,24,"14,39,45",0,0.9583333333333334
+Usurbil|bus,night,8,"14,36,41",0,0.75
 Villabona|bus,peak,22,"27,37,43",0,0.7272727272727273
 Villabona|bus,day,46,"27,37",0,0.5869565217391305
 Villabona|bus,night,9,"29,37",0,0.5555555555555556

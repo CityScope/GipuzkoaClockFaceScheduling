@@ -44,7 +44,7 @@ Ezkio-Itsaso|bus,43.08090466914755,-2.2753202798525787,Ezkio-itsaso - Ezkio Herr
 Hernani|bus,43.265107947273535,-1.9787981884606187,Hernani - Txantxilla Auzoa 7,Hernani,bus,Hernani,Hernani · Bus,141.0,10,191.0,True,Hernani|bus
 Hondarribia|bus,43.361797816993885,-1.7899864310126476,Hondarribia - Sabin Arana Goiri Kalea 3 Parean,Hondarribia,bus,Hondarribia,Hondarribia · Bus,85.0,5,110.0,True,Hondarribia|bus
 Larraul|bus,43.188013088724084,-2.1020630983633515,Larraul - Herrigunea,Larraul,bus,Larraul,Larraul · Bus,2.0,2,12.0,True,Larraul|bus
-Lasarte-Oria|bus,43.27224518939014,-2.0183505673782283,"Lasarte-oria - Donostia Etorbidea, Sasoeta Atsobakar",Lasarte-Oria,bus,Lasarte-Oria,Lasarte-Oria · Bus,147.0,12,207.0,True,Lasarte-Oria|bus
+Lasarte-Oria|bus,43.27224518939014,-2.0183505673782283,"Lasarte-oria - Donostia Etorbidea, Sasoeta Atsobakar",Lasarte-Oria,bus,Lasarte-Oria,Lasarte-Oria · Bus,162.0,12,222.0,True,Lasarte-Oria|bus
 Lazkao|bus,43.044177386642005,-2.1912228193035794,Lazkao - Senpere 4,Lazkao,bus,Lazkao,Lazkao · Bus,30.0,4,50.0,True,Lazkao|bus
 Leintz-Gatzaga|bus,42.97446237856015,-2.575023488134083,"Leintz-gatzaga - Barreiatuak 3, Marisa",Leintz-Gatzaga,bus,Leintz-Gatzaga,Leintz-Gatzaga · Bus,29.0,3,44.0,True,Leintz-Gatzaga|bus
 Loiu|bus,43.29556601587585,-2.9061056311526796,LARRABARRI (OLARRA) (844),Loiu,bus,Loiu,Loiu · Bus,78.0,9,123.0,True,Loiu|bus
@@ -57,6 +57,7 @@ Pamplona / Iruña|bus,42.81171251,-1.645344915,PAMPLONA/IRUÑA (Estación bus ge
 Pasaia|bus,43.31910316965765,-1.918025821113583,Pasaia - Nafarroa Hiribidea 5,Pasaia,bus,Pasaia,Pasaia · Bus,560.0,8,600.0,True,Pasaia|bus
 Soraluze-Placencia de las Armas|bus,43.174494194485,-2.41317645583504,Soraluze - Estaziño Kalea 2,Soraluze-Placencia de las Armas,bus,Soraluze,Soraluze · Bus,70.0,6,100.0,True,Soraluze-Placencia de las Armas|bus
 Tolosa|bus,43.13322735106909,-2.0767536718459865,"Tolosa - Oria Kalea, Zezen Plaza",Tolosa,bus,Tolosa,Tolosa · Bus,101.0,24,221.0,True,Tolosa|bus
+Usurbil|bus,43.271684995957386,-2.0530144189838557,"Usurbil - Zelaiaundi Kalea, Biribilgunea",Usurbil,bus,Usurbil,Usurbil · Bus,52.0,3,67.0,True,Usurbil|bus
 Villabona|bus,43.189930405097115,-2.052845703973096,Villabona - Kale Berria 10,Villabona,bus,Villabona,Villabona · Bus,100.0,11,155.0,True,Villabona|bus
 Vitoria-Gasteiz|bus,42.85898154051944,-2.684649533278899,VITORIA-GASTEIZ (Estación Bus Geltokia),Vitoria-Gasteiz,bus,Vitoria-Gasteiz,Vitoria-Gasteiz · Bus,67.0,22,177.0,True,Vitoria-Gasteiz|bus
 Zaldibia|bus,43.03737594285745,-2.1504575189623787,Zaldibia - Santa Fe  47,Zaldibia,bus,Zaldibia,Zaldibia · Bus,16.0,3,31.0,True,Zaldibia|bus

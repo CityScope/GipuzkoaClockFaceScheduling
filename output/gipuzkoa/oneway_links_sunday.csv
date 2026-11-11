@@ -1,0 +1,9 @@
+a,b,mode,trips_day,action
+Andoain|bus,Pamplona / Iruña|bus,bus,1,via Berastegi|bus
+Beasain|bus,Donostia / San Sebastián|bus,bus,1,dropped
+Berastegi|bus,Andoain|bus,bus,1,dropped
+Lazkao|bus,Zaldibia|bus,bus,1,via Beasain|bus
+Ormaiztegi|bus,Lazkao|bus,bus,2,dropped
+Pasaia|bus,Oiartzun|bus,bus,7,via Errenteria|bus
+Andoain|bus,Berastegi|bus,bus,1,dropped
+Donostia / San Sebastián|bus,Usurbil|bus,bus,23,kept one-way

@@ -1,0 +1,6 @@
+a,b,mode,trips_day,action
+Asten|bus,Linz|bus,bus,19,via St. Florian|bus
+Freistadt|bus,Linz|bus,bus,2,via Neumarkt im Mühlkreis|bus
+Goldwörth|bus,Feldkirchen an der Donau|bus,bus,2,dropped
+Niederwaldkirchen|bus,Rohrbach-Berg|bus,bus,10,via Neufelden|bus
+Wels|bigrail,Lambach|bigrail,bigrail,1,via Gunskirchen|bigrail

@@ -1,0 +1,13 @@
+a,b,mode,trips_day,action
+Agurain / Salvatierra|bus,Vitoria-Gasteiz|bus|3,bus,1,via Alegría-Dulantzi|bus
+Andoain|bus,Pamplona / Iruña|bus,bus,1,via Berastegi|bus
+Azpeitia|bus,Zarautz|bus,bus,2,via Zestoa|bus|1 - Zumaia|bus
+Barakaldo|bus|1,Alonsotegi|bus,bus,1,dropped
+Basauri|bus,Bilbao|bus|2,bus,61,via Basauri|bus|1 - Etxebarri|bus
+Beasain|bus,Donostia / San Sebastián|bus,bus,1,dropped
+Bergara|bus,Vitoria-Gasteiz|bus,bus,1,via Arrasate / Mondragón|bus
+Lazkao|bus,Ormaiztegi|bus,bus,1,via Beasain|bus
+Leioa|bus,Bilbao|bus|1,bus,50,via Bilbao|bus|3
+Ondarroa|bus,Bilbao|bus|3,bus,2,via Mallabia|bus - Ermua|bus
+Pasaia|bus,Oiartzun|bus,bus,2,via Errenteria|bus
+Vitoria-Gasteiz|bus,Asparrena|bus,bus,1,via Agurain / Salvatierra|bus

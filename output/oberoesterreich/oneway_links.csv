@@ -1,0 +1,70 @@
+a,b,mode,trips_day,action
+Aschach an der Donau|bus,Neufelden|bus,bus,1,via Feldkirchen an der Donau|bus - Herzogsdorf|bus
+Asten|bus,Linz|bus,bus,35,via St. Florian|bus
+Attnang-Puchheim|bus,Regau|bus,bus,1,dropped
+Bad Hall|bus,Kremsmünster|bus,bus,1,via Rohr im Kremstal|bus
+Baumgartenberg|bus,Saxen|bus,bus,1,dropped
+Berg im Attergau|bus,Timelkam|bus,bus,1,via Gampern|bus - Vöcklabruck|bus|5
+Engerwitzdorf|bus,Hagenberg im Mühlkreis|bus,bus,2,via Wartberg ob der Aist|bus|1
+Feldkirchen an der Donau|bus,Rohrbach-Berg|bus,bus,2,via Herzogsdorf|bus
+Freistadt|bus,Bad Leonfelden|bus,bus,1,via Hirschbach im Mühlkreis|bus - Schenkenfelden|bus
+Freistadt|bus,Hagenberg im Mühlkreis|bus,bus,1,via Neumarkt im Mühlkreis|bus
+Gallneukirchen|bus,Freistadt|bus,bus,1,via Unterweitersdorf|bus
+Gallneukirchen|bus,Linz|bus,bus,1,via Engerwitzdorf|bus
+Gampern|bus,Vöcklabruck|bus|2,bus,1,via Vöcklabruck|bus|5
+Gmunden|bus|1,Gschwandt|bus,bus,1,via Gmunden|bus|3
+Gmunden|bus|2,Laakirchen|bus,bus,1,via Gschwandt|bus
+Gmunden|bus|3,Gmunden|bus|1,bus,15,via Gmunden|bus|2
+Gosau|bus,Bad Goisern am Hallstättersee|bus,bus,2,via Hallstatt|bus
+Gschwandt|bus,Gmunden|bus|2,bus,1,via Gmunden|bus|3
+Hirschbach im Mühlkreis|bus,Reichenau im Mühlkreis|bus,bus,1,via Schenkenfelden|bus
+Hofkirchen im Mühlkreis|bus,Lembach im Mühlkreis|bus,bus,2,via Putzleinsdorf|bus
+Hörsching|bigrail,Linz|bigrail,bigrail,2,via Leonding|bigrail
+Hörsching|bus,Linz|bus,bus,15,via Leonding|bus
+Kleinzell im Mühlkreis|bus,Altenfelden|bus,bus,8,via Neufelden|bus
+Laakirchen|bus,Gmunden|bus|3,bus,1,via Gschwandt|bus
+Laakirchen|bus,Lambach|bus,bus,1,via Stadl-Paura|bus
+Leonding|bus,Alkoven|bus,bus,1,via Wilhering|bus
+Manning|bus,Attnang-Puchheim|bus,bus,1,dropped
+Manning|bus,Ungenach|bus,bus,1,dropped
+Meggenhofen|bus,Grieskirchen|bus,bus,1,dropped
+Neufelden|bus,Herzogsdorf|bus,bus,2,via Niederwaldkirchen|bus
+Neufelden|bus,Ottensheim|bus,bus,1,via Walding|bus
+Neukirchen an der Vöckla|bus,Gampern|bus,bus,4,via Timelkam|bus|1
+Neumarkt im Hausruckkreis|bigrail,Wels|bigrail,bigrail,2,via Bad Schallerbach|bigrail
+Perg|bus,Baumgartenberg|bus|1,bus,2,via Arbing|bus - Baumgartenberg|bus
+Perg|bus,Ried in der Riedmark|bus,bus,1,via Perg|bus|1 - Schwertberg|bus
+Putzleinsdorf|bus,Rohrbach-Berg|bus,bus,1,via Lembach im Mühlkreis|bus - Altenfelden|bus
+Redlham|bus,Vöcklabruck|bus,bus,1,via Attnang-Puchheim|bus
+Ried im Innkreis|bus,Grieskirchen|bus,bus,1,via Haag am Hausruck|bus
+Sankt Gallen|bigrail,Weyer|bigrail,bigrail,1,dropped
+Schenkenfelden|bus,Freistadt|bus,bus,1,via Hirschbach im Mühlkreis|bus
+Schlüßlberg|bus,Wallern an der Trattnach|bus,bus,1,via Bad Schallerbach|bus
+Seewalchen am Attersee|bus,Timelkam|bus,bus,2,via Lenzing an der Ager|bus
+St. Oswald bei Freistadt|bus,St. Leonhard bei Freistadt|bus,bus,1,via Weitersfelden|bus
+St. Peter am Wimberg|bus,Neufelden|bus,bus,1,via Niederwaldkirchen|bus
+Timelkam|bus,Schörfling am Attersee|bus,bus,1,via Seewalchen am Attersee|bus
+Unterweitersdorf|bus,Hagenberg im Mühlkreis|bus,bus,1,via Pregarten|bus
+Unterweitersdorf|bus,Linz|bus,bus,1,via Pregarten|bus
+Vöcklabruck|bus|3,Vöcklabruck|bus,bus,1,via Vöcklabruck|bus|1
+Vöcklabruck|bus|3,Vöcklabruck|bus|5,bus,1,moved to Vöcklabruck|bus - Vöcklabruck|bus|3
+Vöcklabruck|bus|5,Gampern|bus,bus,2,via Vöcklabruck|bus|2
+Vöcklabruck|bus|5,Vöcklabruck|bus|4,bus,1,via Vöcklabruck|bus|1
+Walding|bus,Neufelden|bus,bus,1,via Feldkirchen an der Donau|bus - Herzogsdorf|bus
+Wels|bigrail,Lambach|bigrail,bigrail,1,via Gunskirchen|bigrail
+Wolfsegg am Hausruck|bus,Ungenach|bus,bus,1,via Ottnang am Hausruck|bus
+Gampern|bus,Vöcklabruck|bus|5,bus,2,via Vöcklabruck|bus|2
+Gmunden|bus|1,Gmunden|bus|3,bus,1,via Gmunden|bus|2
+Gmunden|bus|2,Gschwandt|bus,bus,1,via Gmunden|bus|3
+Herzogsdorf|bus,Neufelden|bus,bus,2,via Niederwaldkirchen|bus
+Neufelden|bus,Walding|bus,bus,1,via Herzogsdorf|bus - Feldkirchen an der Donau|bus
+Timelkam|bus,Seewalchen am Attersee|bus,bus,1,via Lenzing an der Ager|bus
+Vöcklabruck|bus,Vöcklabruck|bus|3,bus,1,via Vöcklabruck|bus|1
+Vöcklabruck|bus|2,Gampern|bus,bus,2,via Vöcklabruck|bus|5
+Baumgartenberg|bus|1,Saxen|bus,bus,9,kept one-way
+Gampern|bus,Vöcklabruck|bus|2,bus,2,via Vöcklabruck|bus|5
+Münzbach|bus,Perg|bus|1,bus,17,kept one-way
+Neufelden|bus,Herzogsdorf|bus,bus,1,via Niederwaldkirchen|bus
+St. Georgen bei Obernberg am Inn|bus,Antiesenhofen|bus,bus,8,kept one-way
+Straßwalchen|bus,Pöndorf|bus,bus,16,kept one-way
+Vöcklabruck|bus|5,Gampern|bus,bus,2,via Vöcklabruck|bus|2

@@ -71,9 +71,6 @@ Küssnacht (SZ)|bus,night,14,"3,31,35,53",0,0.7142857142857143
 Langnau im Emmental|bigrail,peak,8,"6,37",30,1.0
 Langnau im Emmental|bigrail,day,16,"6,37",30,1.0
 Langnau im Emmental|bigrail,night,6,"7,36",30,1.0
-Langnau im Emmental|bus,peak,16,"7,28,55",0,1.0
-Langnau im Emmental|bus,day,29,"7,56",0,0.8275862068965517
-Langnau im Emmental|bus,night,14,8,60,0.5714285714285714
 Lenzburg|bigrail,peak,71,"1,5,30,36",0,0.7323943661971831
 Lenzburg|bigrail,day,130,"1,5,30,36",0,0.8
 Lenzburg|bigrail,night,55,"1,5,30,36",0,0.8181818181818182
@@ -188,6 +185,9 @@ Triengen|bus,night,10,"0,26,50",0,0.7
 Udligenswil|bus,peak,37,"3,9,16,27,31,42",0,0.7837837837837838
 Udligenswil|bus,day,53,"1,7,27,31,44,56",0,0.9056603773584906
 Udligenswil|bus,night,13,"1,27,31",0,0.8461538461538461
+Ufhusen|bus,peak,11,"9,24,44",0,1.0
+Ufhusen|bus,day,10,"9,24,45,54",0,0.9
+Ufhusen|bus,night,1,53,0,1.0
 Vitznau|bus,peak,18,"10,22,34,47,58",12,1.0
 Vitznau|bus,day,32,"10,21,36,49",0,0.96875
 Vitznau|bus,night,16,"1,23,31",0,0.6875

@@ -23,12 +23,9 @@ Baden|bigrail,night,55,"7,12,23,29,47,53",0,0.6727272727272727
 Baden|bus,peak,206,"3,12,27,34,42,57",0,0.8252427184466019
 Baden|bus,day,415,"3,12,27,34,42,57",0,0.8265060240963855
 Baden|bus,night,120,"26,34,42,57",0,0.6666666666666666
-Basel|bigrail,peak,48,"6,15,20,30,44,48",0,0.8333333333333334
-Basel|bigrail,day,95,"5,15,20,30,44,48",0,0.8315789473684211
-Basel|bigrail,night,42,"6,15,20,44",0,0.7380952380952381
-Basel|bigrail|3,peak,23,"0,7,16,30,39,45",0,1.0
-Basel|bigrail|3,day,48,"0,7,15,30,37,46",0,1.0
-Basel|bigrail|3,night,15,"1,9,29,39",0,0.9333333333333333
+Basel|bigrail,peak,55,"6,16,20,31,44,59",0,0.8545454545454545
+Basel|bigrail,day,111,"6,15,20,31,44,59",0,0.8558558558558559
+Basel|bigrail,night,42,"6,20,29,44,50,59",0,0.8571428571428571
 Beinwil (Freiamt)|bus,peak,0,,0,0.0
 Beinwil (Freiamt)|bus,day,0,,0,0.0
 Beinwil (Freiamt)|bus,night,2,38,0,1.0
@@ -206,9 +203,6 @@ Pratteln|bus,night,31,"21,27,33,51,56",0,1.0
 Regensdorf|bigrail,peak,8,"10,41",30,1.0
 Regensdorf|bigrail,day,16,"10,41",30,1.0
 Regensdorf|bigrail,night,12,"10,15,42",0,0.75
-Regensdorf|bus,peak,15,"9,23,39,54",15,1.0
-Regensdorf|bus,day,32,"9,23,39,54",15,1.0
-Regensdorf|bus,night,8,"5,35",30,0.75
 Reiden|bus,peak,4,15,60,1.0
 Reiden|bus,day,8,15,60,1.0
 Reiden|bus,night,2,15,0,1.0
@@ -242,6 +236,9 @@ Schöftland|bus,night,7,"6,35",30,0.5714285714285714
 Schöftland|localrail,peak,16,"12,26,43,57",15,1.0
 Schöftland|localrail,day,32,"12,26,43,57",15,1.0
 Schöftland|localrail,night,11,"11,28,42,57",15,1.0
+Sins|bigrail,peak,8,28,60,1.0
+Sins|bigrail,day,16,28,60,1.0
+Sins|bigrail,night,8,28,60,0.75
 Sins|bus,peak,15,"4,9,31,41",0,1.0
 Sins|bus,day,30,"4,9,32,42",0,1.0
 Sins|bus,night,7,"9,26,43",0,1.0
@@ -332,12 +329,9 @@ Zurzach|bus,night,3,"15,31",0,1.0
 Zurzach|bus|1,peak,6,"15,44",30,1.0
 Zurzach|bus|1,day,12,"15,44",30,1.0
 Zurzach|bus|1,night,0,,0,0.0
-Zürich|bigrail,peak,98,"0,6,20,30,36,45",0,0.7040816326530612
-Zürich|bigrail,day,193,"0,6,20,30,36,45",0,0.7098445595854922
-Zürich|bigrail,night,100,"0,8,31,36,45",0,0.67
-Zürich|bigrail|5,peak,84,"4,15,36,45",0,0.6666666666666666
-Zürich|bigrail|5,day,168,"4,15,36,45",0,0.6666666666666666
-Zürich|bigrail|5,night,88,"6,10,17,36,45,55",0,0.75
-Zürich|bus|4,peak,42,"18,48",30,0.6190476190476191
-Zürich|bus|4,day,89,"18,48",30,0.6404494382022472
-Zürich|bus|4,night,21,"0,10,15,19,40,45",0,0.8571428571428571
+Zürich|bigrail,peak,70,"0,6,30,36,45",0,0.8142857142857143
+Zürich|bigrail,day,137,"0,6,30,36,45",0,0.8248175182481752
+Zürich|bigrail,night,73,"0,7,31,36,45",0,0.8493150684931506
+Zürich|bus|4,peak,26,"18,48",30,1.0
+Zürich|bus|4,day,57,"18,48",30,1.0
+Zürich|bus|4,night,14,"0,8,18,40,47",0,1.0

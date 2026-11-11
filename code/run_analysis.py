@@ -56,7 +56,24 @@ if __name__ == "__main__":
             for rk_, ns_ in rn.items():
                 for k_ in ns_:
                     rof.setdefault(k_, set()).add(rk_)
-            safe = lambda k_: all(len(rn[r_] - drop - {k_}) >= 2 for r_ in rof.get(k_, ()))
+            # the network must stay ONE connected graph (links + walking links): never drop a station that would split it
+            adj_ = {}
+            for a_, b_ in list(zip(und.a, und.b)) + list(zip(walk.a, walk.b)):
+                adj_.setdefault(a_, set()).add(b_); adj_.setdefault(b_, set()).add(a_)
+            def pieces(gone):
+                left = set(adj_) - gone; seen_, n_ = set(), 0
+                for s_ in left:
+                    if s_ in seen_:
+                        continue
+                    n_ += 1; todo = [s_]; seen_.add(s_)
+                    while todo:
+                        x_ = todo.pop()
+                        for y_ in adj_.get(x_, ()):
+                            if y_ in left and y_ not in seen_:
+                                seen_.add(y_); todo.append(y_)
+                return n_
+            base_pieces = pieces(set())
+            safe = lambda k_: all(len(rn[r_] - drop - {k_}) >= 2 for r_ in rof.get(k_, ())) and pieces(drop | {k_}) <= base_pieces
             for a_, b_, tt_ in zip(und.a, und.b, und.tt_med):
                 if tt_ >= towns.SHORT_LINK_MIN or a_ in drop or b_ in drop:
                     continue
@@ -102,6 +119,10 @@ if __name__ == "__main__":
         sym.to_csv(OUT / f"symmetry{sfx}.csv", index=False)
         pd_.DataFrame([dict(node=g, band=b, from_line=x[0], to_line=x[1], wait_min=x[2], transfer_min=x[3], frequency=x[4], reversing=x[5])
                        for g, bb in tr.items() for b, rows in bb.items() for x in rows]).to_csv(OUT / f"transfers{sfx}.csv", index=False)
+        if _an.DBG_CONN:
+            print(f"{d}: pieces that could not be reconnected: " + "; ".join(", ".join(c) for c, _ in _an.DBG_CONN))
+        pd_.DataFrame(list(_an.ONEWAY_LOG), columns=["a", "b", "mode", "trips_day", "action"]).to_csv(OUT / f"oneway_links{sfx}.csv", index=False)
+        print(f"{d}: one-way links: " + ", ".join(f"{k} {v}" for k, v in pd_.Series([x[4].split(' ')[0] for x in _an.ONEWAY_LOG]).value_counts().items()))
         print(f"{d}: {len(und)} edges, {sym.gid.nunique()} symmetry nodes; veh-km " +
               ", ".join(f"{k} {v:,.0f}" for k, v in vehkm.items()) + (f" (pop {towns.POPULATION:,})" if towns.POPULATION else ""))
         pd_.DataFrame([dict(system=k, veh_km=v, veh_km_per_1000_pop=(v / towns.POPULATION * 1000 if towns.POPULATION else None))

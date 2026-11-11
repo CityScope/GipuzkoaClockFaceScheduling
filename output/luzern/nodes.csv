@@ -40,7 +40,6 @@ Hasle (LU)|bus,46.9782093,8.04718916,"Hasle LU, Bahnhof",Hasle (LU),bus,Hasle (L
 Hochdorf|bus,47.1666196,8.289189311666666,"Hochdorf, Bahnhof",Hochdorf,bus,Hochdorf,Hochdorf · Regional bus,66.0,5,91.0,True,Hochdorf|bigrail
 Kriens|bus,47.031097782500005,8.2521038625,"Obernau, Dorf",Kriens,bus,Kriens · Obernau,Kriens · Obernau · Regional bus,180.0,3,195.0,True,Kriens|bus
 Küssnacht (SZ)|bus,47.08312648,8.43311439,"Küssnacht am Rigi, Bahnhof",Küssnacht (SZ),bus,Küssnacht (SZ),Küssnacht (SZ) · Regional bus,129.0,5,154.0,True,Küssnacht (SZ)|bus
-Langnau im Emmental|bus,46.939041722,7.785209884000001,"Langnau i.E., Bahnhof",Langnau im Emmental,bus,Langnau im Emmental,Langnau im Emmental · Regional bus,71.0,3,86.0,True,Langnau im Emmental|bigrail
 Luthern|bus,47.02713304,7.92504523,"Luthern Bad, Dreilindenplatz",Luthern,bus,Luthern,Luthern · Regional bus,9.0,1,14.0,True,Luthern|bus
 Luzern|bus,47.050877019090905,8.310420041818183,"Luzern, Bahnhof",Luzern,bus,Luzern,Luzern · Regional bus,629.0,18,719.0,True,Luzern|bus
 Malters|bus,47.03844785,8.18199934,"Malters, Bahnhof",Malters,bus,Malters,Malters · Regional bus,12.0,3,27.0,True,Malters|bigrail
@@ -63,6 +62,7 @@ Schüpfheim|bus,46.95011478333333,8.01464919,"Schüpfheim, Bahnhof",Schüpfheim,
 Sursee|bus,47.170004404,8.098919548000001,"Sursee, Bahnhof",Sursee,bus,Sursee,Sursee · Regional bus,253.0,13,318.0,True,Sursee|bigrail
 Triengen|bus,47.23327829,8.077592645,"Triengen, Dorf",Triengen,bus,Triengen,Triengen · Regional bus,92.0,1,97.0,True,Triengen|bus
 Udligenswil|bus,47.08824816333333,8.399194006666667,"Udligenswil, Frohsinn",Udligenswil,bus,Udligenswil,Udligenswil · Regional bus,124.0,2,134.0,True,Udligenswil|bus
+Ufhusen|bus,47.11691195,7.89660457,"Ufhusen, Käserei Dorf",Ufhusen,bus,Ufhusen,Ufhusen · Regional bus,29.0,2,39.0,True,Ufhusen|bus
 Vitznau|bus,47.00936615,8.48342454,"Vitznau, Station",Vitznau,bus,Vitznau,Vitznau · Regional bus,83.0,2,93.0,True,Vitznau|bus
 Weggis|bus,47.0468773,8.425743715,"Weggis, Langenzihl",Weggis,bus,Weggis,Weggis · Regional bus,97.0,3,112.0,True,Weggis|bus
 Willisau|bus,47.122240755,7.9971125800000005,"Willisau, Bahnhof",Willisau,bus,Willisau,Willisau · Regional bus,140.0,5,165.0,True,Willisau|bigrail

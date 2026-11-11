@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import shapely
 from shapely.geometry import shape
-from towns import WALK_MAX_MIN, PASSTHROUGH, MUNI_FILE, EXTERNAL_MIN_DEPS, STATION_RADIUS_M, POLYGON_FILE, TOWNS, BUS_STATION_RE, RAIL_SYSTEMS, PREFIX_FEED, MERGE_WALK_MIN, WALK_M_PER_MIN, SYM_WINDOW_MIN, SYM_MIN_SHARE, SYM_MIN_LINES, SYM_BUS_MIN_SHARE, SYM_BUS_MIN_LINES, SYM_MIN_EVENTS, SYM_PERIOD30_RATIO, SYS_NAME, MIN_EDGE_MIN, MIN_TRIPS_DAY, WALK_M_PER_MIN, PRIORITY, ANCHOR_HINT, EXTERNAL, MUNI_ALIAS, PREFIX_MAX_M, EXEMPT_SHORT, GEOM_FIRST, DISPLAY, PERIODS, DAY_START_MIN, MAX_ANCHOR_M, VMAX_KMH, LEG_OUTLIER, TERMINUS_SHARE, KEEP_ALWAYS, REGIONAL_BUS_MIN_TOWNS, REGIONAL_BUS_MIN_KM, MINOR_BUS_MIN_TOWNS, SAME_ROUTE_JACCARD, FAR_VISIT_M, FS_MIN_STOPS, FS_MIN_MIN, FS_MIN_TRIPS, DROP_REDUNDANT, MUNI_POP
+from towns import WALK_MAX_MIN, PASSTHROUGH, MUNI_FILE, EXTERNAL_MIN_DEPS, STATION_RADIUS_M, POLYGON_FILE, TOWNS, BUS_STATION_RE, RAIL_SYSTEMS, PREFIX_FEED, MERGE_WALK_MIN, WALK_M_PER_MIN, SYM_WINDOW_MIN, SYM_MIN_SHARE, SYM_MIN_LINES, SYM_BUS_MIN_SHARE, SYM_BUS_MIN_LINES, SYM_MIN_EVENTS, SYM_PERIOD30_RATIO, SYS_NAME, MIN_EDGE_MIN, MIN_TRIPS_DAY, WALK_M_PER_MIN, PRIORITY, ANCHOR_HINT, EXTERNAL, MUNI_ALIAS, PREFIX_MAX_M, EXEMPT_SHORT, GEOM_FIRST, DISPLAY, PERIODS, DAY_START_MIN, MAX_ANCHOR_M, VMAX_KMH, LEG_OUTLIER, TERMINUS_SHARE, KEEP_ALWAYS, REGIONAL_BUS_MIN_TOWNS, REGIONAL_BUS_MIN_KM, MINOR_BUS_MIN_TOWNS, SAME_ROUTE_JACCARD, FAR_VISIT_M, FS_MIN_STOPS, FS_MIN_MIN, FS_MIN_TRIPS, DROP_REDUNDANT, MUNI_POP, ONEWAY_DETOUR, ONEWAY_DROP_MAX
 
 LAT0 = np.radians(43.2)
 
@@ -27,7 +27,8 @@ def _edges(st, keep, block_towns=None, pos=None, clean=False):
     else:
         s = st[st.node.str.split("|").str[0].isin(block_towns)]
     nxt = s.groupby("trip_key")
-    e = s.assign(b=nxt.node.shift(-1), b_arr=nxt.arr.shift(-1), **({"b_k": nxt.k.shift(-1)} if "k" in s else {})).dropna(subset=["b"])
+    e = s.assign(b=nxt.node.shift(-1), b_arr=nxt.arr.shift(-1), **({"b_k": nxt.k.shift(-1)} if "k" in s else {}),
+                 **({"b_far": nxt.far.shift(-1)} if "far" in s else {})).dropna(subset=["b"])
     if block_towns is not None:
         e = e[e.node.isin(keep) & e.b.isin(keep)]
     e = e[e.node != e.b].copy()
@@ -37,7 +38,10 @@ def _edges(st, keep, block_towns=None, pos=None, clean=False):
         km = _m(pos.lat.reindex(e.a).values, pos.lon.reindex(e.a).values,
                 pos.lat.reindex(e.b).values, pos.lon.reindex(e.b).values) / 1000
         vmax = e["mode"].map(VMAX_KMH).fillna(100).values
-        e = e[(km / (e.tt.values / 60)) <= vmax]
+        # a far visit (stop far from the station, e.g. at the other end of the municipality) has no station position:
+        # its speed cannot be checked against the station positions
+        farv = (e["far"].fillna(False).astype(bool).values | e["b_far"].fillna(False).astype(bool).values) if "far" in e and "b_far" in e else np.zeros(len(e), bool)
+        e = e[((km / (e.tt.values / 60)) <= vmax) | farv]
     if clean and len(e):                # loops / detours: much slower than the usual time of that route on that pair
         med = e.groupby(["route_key", "a", "b"]).tt.transform("median")
         e = e[e.tt <= LEG_OUTLIER[0] * med + LEG_OUTLIER[1]]
@@ -414,6 +418,116 @@ def _merge_same_routes(st, stops, jac=SAME_ROUTE_JACCARD):
     return st
 
 
+
+def _two_way(e, pos=None):
+    """Make links two-way where possible. For every directed pair a -> b (one mode) without any service b -> a:
+    if the return trips run b -> x (-> y) -> a and that path is not much longer, the a -> b legs are routed along it
+    (they pass x, y without stopping; travel time split in proportion); otherwise, if there are at most
+    ONEWAY_DROP_MAX such legs a day, they are exceptional trips and dropped. Returns the new legs and a log."""
+    if not len(e):
+        return e, []
+    cnt = e.groupby(["a", "b", "mode"]).size()
+    med = e.groupby(["a", "b", "mode"]).tt.median()
+    out_ = defaultdict(list)
+    for (a, b, mo), t in med.items():
+        out_[(a, mo)].append((b, float(t)))
+    log, new, drop = [], [], np.zeros(len(e), bool)
+    idx = {k: v for k, v in e.groupby(["a", "b", "mode"]).indices.items()}
+    for (a, b, mo), n in cnt.items():
+        if (b, a, mo) in cnt:
+            continue
+        tt0 = float(med[(a, b, mo)])
+        best = None                                   # shortest return path b -> ... -> a with 1 or 2 stations in between
+        for x, t1 in out_.get((b, mo), []):
+            if x in (a, b):
+                continue
+            for y, t2 in out_.get((x, mo), []):
+                if y == a:
+                    c = (t1 + t2, [b, x, a], [t1, t2])
+                    best = c if best is None or c[0] < best[0] else best
+                elif y not in (a, b, x):
+                    for z, t3 in out_.get((y, mo), []):
+                        if z == a:
+                            c = (t1 + t2 + t3, [b, x, y, a], [t1, t2, t3])
+                            best = c if best is None or c[0] < best[0] else best
+        rows = idx[(a, b, mo)]
+        if best is not None and pos is not None:      # the corridor must also be geographically on the way
+            P_ = [(float(pos.lat[k_]), float(pos.lon[k_])) for k_ in best[1]]
+            dpath = sum(float(_m(*P_[k_], *P_[k_ + 1])) for k_ in range(len(P_) - 1))
+            if dpath > 1.8 * float(_m(*P_[0], *P_[-1])) + 1000:
+                best = None
+        sis = None                                    # same town, same mode: the return trips use a sister station
+        if best is None:
+            ta, tb = a.split("|")[:2], b.split("|")[:2]
+            for (x, y, mo2) in cnt.index:
+                if mo2 == mo and (x, y) != (b, a) and x.split("|")[:2] == tb and y.split("|")[:2] == ta and (y, x, mo) not in cnt:
+                    sis = (y, x); break
+        if sis is not None:                           # draw the one-way trips between the stations the return trips use
+            sub = e.iloc[rows]
+            new.append(sub.assign(a=sis[0], b=sis[1]))
+            drop[rows] = True
+            log.append((a, b, mo, int(n), f"moved to {sis[0]} - {sis[1]}"))
+        elif best is not None and best[0] <= ONEWAY_DETOUR[0] * tt0 + ONEWAY_DETOUR[1]:
+            path, segs = best[1][::-1], best[2][::-1]          # forward: a -> ... -> b
+            tot = sum(segs)
+            sub = e.iloc[rows]
+            for k in range(len(segs)):
+                f0, f1 = sum(segs[:k]) / tot, sum(segs[:k + 1]) / tot
+                new.append(sub.assign(a=path[k], b=path[k + 1], dep=sub.dep + sub.tt * f0, tt=sub.tt * (f1 - f0), ns=0))
+            drop[rows] = True
+            log.append((a, b, mo, int(n), "via " + " - ".join(path[1:-1])))
+        elif n <= ONEWAY_DROP_MAX:
+            drop[rows] = True
+            log.append((a, b, mo, int(n), "dropped"))
+        else:
+            log.append((a, b, mo, int(n), "kept one-way"))
+    # never drop the last legs of a route: a line must stay on the map (then it stays one-way)
+    if drop.any():
+        rk_ = e.route_key.values
+        kept_r = set(rk_[~drop]) | {r_ for df_ in new for r_ in df_.route_key.unique()}
+        lost = set(rk_[drop]) - kept_r
+        if lost:
+            back = drop & np.isin(rk_, list(lost))
+            for k_, (a_, b_, mo_, n_, act_) in enumerate(log):
+                if act_ == "dropped" and e.iloc[idx[(a_, b_, mo_)]].route_key.isin(lost).any():
+                    log[k_] = (a_, b_, mo_, n_, "kept one-way (only service of its line)")
+            drop &= ~back
+    e2 = pd.concat([e[~drop]] + new, ignore_index=True) if new or drop.any() else e
+    return e2, log
+
+
+def _components(nodes, e, node, walk_min=WALK_MAX_MIN):
+    """Connected pieces of the network: links of the legs plus walking links (<= walk_min) between the nodes."""
+    par = {}
+    def f(x):
+        while par[x] != x:
+            par[x] = par[par[x]]; x = par[x]
+        return x
+    if len(e):                                        # only links that will be on the map (>= MIN_TRIPS_DAY trips, touching the region)
+        u_ = pd.Series([tuple(sorted(x)) for x in zip(e.a, e.b)])
+        cnt_ = u_.groupby([u_, e["mode"].values]).size()
+        ins_ = lambda k: k.split('|')[0] not in EXTERNAL
+        for (uu, _m_), c_ in cnt_.items():
+            a, b = uu
+            if c_ >= MIN_TRIPS_DAY and (ins_(a) or ins_(b)) and a in nodes and b in nodes:   # stations without links are not on the map
+                par.setdefault(a, a); par.setdefault(b, b)
+                par[f(a)] = f(b)
+    ids = list(par)
+    la, lo = node.lat.reindex(ids).values, node.lon.reindex(ids).values
+    for i in range(len(ids)):
+        d = _m(la[i], lo[i], la, lo) * 1.3 / WALK_M_PER_MIN
+        for j in np.where(d <= walk_min)[0]:
+            if j > i:
+                par[f(ids[i])] = f(ids[j])
+    comp = defaultdict(set)
+    for k in ids:
+        comp[f(k)].add(k)
+    return sorted(comp.values(), key=len, reverse=True)
+
+DBG_CONN = []
+ONEWAY_LOG = []                                     # (a, b, mode, trips, what was done) of the last build
+
+
 def build(feeds: list[dict], ref=None, exclude=None, merge=None):
     """`ref` = (node, keep) of a previous build: reuse the same node set/positions (no pruning)."""
     stops, sts = [], []
@@ -647,15 +761,73 @@ def build(feeds: list[dict], ref=None, exclude=None, merge=None):
             if inside_ and not (inside_ & keep):       # the route serves the region but no node inside it is left
                 ends_in = set(g_.loc[g_["first"] | g_["last"], "node"]) & inside_
                 keep |= (ends_in or inside_)
+    node_all = node.copy()                           # (all candidate stations: used to reconnect cut-off pieces)
     if exclude:                                      # (the drawable safeguard above may have given some back)
         if ref is not None:
             keep = keep - set(exclude)
         node = node[~node.index.isin(set(exclude) - keep)]
     keep_towns = {k.split('|')[0] for k in keep}
-    e = _edges(st, keep, None, node, clean=True)   # same-system consecutive nodes only (a bus stop is not a train stop)
-    e["ns"] = (e.b_k - e.k - 1).clip(lower=0) if "b_k" in e else 0          # intermediate stops on the link
-    e["cls"] = fast_slow(e)
-    e = e[e.a.isin(keep) & e.b.isin(keep)].copy()
+    # links: a far visit in the middle of a trip that is off the way (passing it is > 1.3 x the direct distance between the
+    # stations before and after) is no link stop (e.g. a town bus loop touching the border of the next municipality)
+    def _st_links(keep):
+        s_ = st[st.node.isin(keep)].copy()
+        g_ = s_.groupby("trip_key").node
+        s_["p_"], s_["n_"] = g_.shift(1), g_.shift(-1)
+        c_ = s_[s_["far"] & s_.p_.notna() & s_.n_.notna() & (s_.p_ != s_.node) & (s_.n_ != s_.node)]
+        if not len(c_):
+            return st
+        P_ = node_all[["lat", "lon"]]
+        la = lambda k_: P_.lat.reindex(k_).values; lo = lambda k_: P_.lon.reindex(k_).values
+        dpn = _m(la(c_.p_), lo(c_.p_), la(c_.n_), lo(c_.n_))
+        dvia = _m(la(c_.p_), lo(c_.p_), la(c_.node), lo(c_.node)) + _m(la(c_.node), lo(c_.node), la(c_.n_), lo(c_.n_))
+        off = c_.index[dvia > 1.3 * dpn + 500]
+        return st.drop(index=off)
+    def _legs(keep):
+        e = _edges(_st_links(keep), keep, None, node_all, clean=True)   # same-system consecutive nodes only (a bus stop is not a train stop)
+        e["ns"] = (e.b_k - e.k - 1).clip(lower=0) if "b_k" in e else 0          # intermediate stops on the link
+        e["cls"] = fast_slow(e)
+        e = e[e.a.isin(keep) & e.b.isin(keep)].copy()
+        log = []
+        for _ in range(3):                                  # links as two-way as possible (a reroute can leave a new one-way pair)
+            e, lg = _two_way(e, node_all)
+            log += [x for x in lg if x[4] != "kept one-way"] if _ < 2 else lg
+            if not any(x[4] != "kept one-way" for x in lg):
+                log += [x for x in lg if x[4] == "kept one-way" and x not in log]
+                break
+        return e, log
+    e, ow_log = _legs(keep)
+    DBG_CONN[:] = []
+    # the network must be ONE connected graph: a piece cut off gets back the station that links it to the rest
+    # (a station of one of its towns, or within walking distance of it, served by trips that also reach the main network)
+    for _ in range(6):
+        comps = _components(keep & set(node_all.index), e, node_all)
+        if len(comps) <= 1:
+            break
+        main_ = comps[0]
+        added = False
+        for cp in comps[1:]:
+            towns_ = {k_.split("|")[0] for k_ in cp}
+            near_ = set()
+            for k_ in node_all.index:
+                if k_ in keep:
+                    continue
+                if k_.split("|")[0] in towns_ or min(float(_m(node_all.lat[k_], node_all.lon[k_], node_all.lat[c_], node_all.lon[c_])) for c_ in cp) * 1.3 / WALK_M_PER_MIN <= WALK_MAX_MIN:
+                    near_.add(k_)
+            mtrips = set(st.trip_key[st.node.isin(main_)])
+            cand_ = [(int(((st.node == k_) & st.trip_key.isin(mtrips)).sum()), k_) for k_ in near_]
+            cand_ = [c_ for c_ in cand_ if c_[0] > 0]
+            if cand_:
+                keep.add(max(cand_)[1]); added = True
+        if not added:
+            DBG_CONN[:] = [(sorted(cp), sorted(near_)) for cp in comps[1:]]   # (reported by run_analysis)
+            break
+        e, ow_log = _legs(keep)
+    ONEWAY_LOG[:] = ow_log
+    if len(_components(keep & set(node_all.index), e, node_all)) <= 1:
+        DBG_CONN[:] = []
+    back_ = [k_ for k_ in keep if k_ in node_all.index and k_ not in node.index]
+    if back_:
+        node = pd.concat([node, node_all.loc[back_]])
     e["hour"] = (e.dep // 60).astype(int)
     e["dep_min"] = (e.dep % 60).round().astype(int) % 60
     e["u"] = [tuple(sorted(x)) for x in zip(e.a, e.b)]

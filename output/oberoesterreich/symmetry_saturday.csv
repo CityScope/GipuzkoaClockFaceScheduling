@@ -1,13 +1,13 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Amstetten|bigrail,peak,5,60,0.47,1.0,2,National railways,dotted
 Amstetten|bigrail,day,0,60,1.0,1.0,2,National railways,solid
-Eferding|bus,day,30,60,0.5,1.0,3,Local railways + Regional bus,solid
+Eferding|bus,peak,30,60,0.29,0.43,5,Local railways + Regional bus,dotted
+Eferding|bus,day,28,60,0.2,0.62,9,Local railways + Regional bus,dotted
 Lambach|bigrail,peak,20,60,0.18,0.64,6,National railways + Local railways + Regional bus,dotted
 Lambach|bigrail,day,23,60,0.19,0.62,6,National railways + Local railways + Regional bus,dotted
 Lambach|bigrail,night,30,60,0.5,1.0,2,National railways + Local railways,dotted
 Leonding|bigrail,peak,37,60,0.42,0.81,5,National railways + Regional bus,dotted
 Leonding|bigrail,day,37,60,0.4,0.8,5,National railways + Regional bus,dotted
-Linz|bigrail,day,"20,50",30,0.42,0.46,92,National railways + Local railways + Regional bus,dotted
 Linz|bigrail,night,50,60,0.17,0.56,10,National railways + Local railways + Regional bus,dotted
 Neuhofen an der Krems|bigrail,peak,55,60,0.0,1.0,2,National railways + Regional bus,dotted
 Neuhofen an der Krems|bigrail,day,0,60,1.0,1.0,2,National railways + Regional bus,solid
@@ -18,5 +18,4 @@ Traun|bigrail,peak,"17,43",30,0.0,1.0,3,National railways + Regional bus,dotted
 Traun|bigrail,day,"10,35",30,0.11,1.0,2,National railways + Regional bus,dotted
 Traun|bigrail,day,20,60,0.0,1.0,2,National railways + Regional bus,dotted
 Bad Hall|bus,peak,40,60,0.0,0.75,4,Regional bus,dotted
-Ottensheim|bus,peak,35,60,1.0,1.0,2,Regional bus,solid
-Ottensheim|bus,day,"8,38",30,0.0,1.0,3,Regional bus,dotted
+Ottensheim|bus,day,"8,38",30,0.0,1.0,4,Regional bus,dotted

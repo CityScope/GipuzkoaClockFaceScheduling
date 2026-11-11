@@ -1,5 +1,5 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
-Eferding|bus,day,30,60,0.5,1.0,2,Local railways + Regional bus,dotted
+Eferding|bus,day,28,60,0.16,0.68,6,Local railways + Regional bus,dotted
 Linz|bigrail,night,"15,50",30,0.25,0.61,7,National railways + Local railways + Regional bus,dotted
 Traun|bigrail,day,"18,50",30,0.0,1.0,2,National railways + Regional bus,dotted
 Wels|bigrail,peak,37,60,0.33,0.67,4,National railways + Regional bus,dotted
