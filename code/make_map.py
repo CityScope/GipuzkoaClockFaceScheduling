@@ -524,17 +524,17 @@ let map;
      const am=TT.filter(r=>r[5]===1&&T_.ttn[r[2]]===s.nb).map(r=>r[0]).sort((u,v)=>u-v),dm=TT.filter(r=>r[5]===0&&T_.ttn[r[2]]===s.nb).map(r=>r[0]).sort((u,v)=>u-v);
      const occ=[];for(const [a0,b0] of CFG.periods[PER])for(let t=Math.floor(a0/Pp)*Pp;t<b0+Pp;t+=Pp)for(const h_ of hs){const T0=t+(h_%Pp);if(T0>=a0&&T0<b0)occ.push(T0);}
      const mean=(v)=>v.length?Math.round(v.reduce((x,y)=>x+y,0)/v.length):null;
-     // to the NEAREST pulse, signed: arrivals before the symmetry minute > 0, just after it < 0 (departures the other way);
-     // the symmetry minute is a computed centre, so trains a few minutes either side of it are in the same pulse
-     const near=(ts,T0)=>{let b_=null;for(const x of ts){if(b_==null||Math.abs(x-T0)<Math.abs(b_-T0))b_=x;}return b_==null||Math.abs(b_-T0)>Pp/2?null:b_;};
-     const occA=occ.map(T0=>{const x=near(am,T0);return x==null?null:T0-x;}).filter(x=>x!=null),occD=occ.map(T0=>{const x=near(dm,T0);return x==null?null:x-T0;}).filter(x=>x!=null);
-     // no service within half a period of a pulse: fall back to the last arrival before / next departure after (longer gaps)
-     fvi=occA.length?mean(occA):mean(occ.map(T0=>{let b_=null;for(const x of am){if(x<=T0)b_=x;else break;}return b_==null||T0-b_>180?null:T0-b_;}).filter(x=>x!=null));
-     fvo=occD.length?mean(occD):mean(occ.map(T0=>{const x=dm.find(y=>y>=T0);return x==null||x-T0>180?null:x-T0;}).filter(x=>x!=null));
+     // per pulse: minutes from the LAST arrival at or before the symmetry minute, and to the FIRST departure at or after it
+     // (always >= 0; minutes rounded as in the analysis); pulses without a service within one period are left out
+     const lastA=(T0,mx)=>{let b_=null;for(const x of am){if(Math.round(x)<=T0)b_=Math.round(x);else break;}return b_==null||T0-b_>=mx?null:T0-b_;};
+     const nextD=(T0,mx)=>{const x=dm.find(y=>Math.round(y)>=T0);return x==null||Math.round(x)-T0>=mx?null:Math.round(x)-T0;};
+     const occA=occ.map(T0=>lastA(T0,Pp)).filter(x=>x!=null),occD=occ.map(T0=>nextD(T0,Pp)).filter(x=>x!=null);
+     fvi=occA.length?mean(occA):mean(occ.map(T0=>lastA(T0,180)).filter(x=>x!=null));
+     fvo=occD.length?mean(occD):mean(occ.map(T0=>nextD(T0,180)).filter(x=>x!=null));
     }
     // style: a side is coordinated in this symmetry when it has timed changes in it and its timetable mean is within the window
     // (arriving / leaving at the symmetry minute itself, mean 0 min, is part of the symmetry)
-    const vi=hs.length&&fvi!=null&&Math.abs(fvi)<=lim&&(s.in.length||fvi<=0)?fvi:null,vo=hs.length&&fvo!=null&&Math.abs(fvo)<=lim&&(s.out.length||fvo<=0)?fvo:null;
+    const vi=hs.length&&fvi!=null&&fvi<=lim&&(s.in.length||fvi===0)?fvi:null,vo=hs.length&&fvo!=null&&fvo<=lim&&(s.out.length||fvo===0)?fvo:null;
     // frequent (< 15 min): needs no timing, works in the symmetry and is highlighted as frequent (per direction for the style)
     let fI_=false,fO_=false;for(const e of net.ed)if(e[1]===s.nb&&(e[9]??null)===(s.wk??null)){if((e[7]??999)<CFG.freq)fI_=true;if((e[8]??999)<CFG.freq)fO_=true;}
     const wI=vi!=null||fI_,wO=vo!=null||fO_,both=wI&&wO,one=wI||wO,fq=s.fh<CFG.freq;
@@ -558,7 +558,7 @@ let map;
     const mI=vi==null&&!fI_,mO=vo==null&&!fO_;
     const rep=(h_)=>h_?`<tspan class="nrep">↻${h_}′</tspan>`:'';
     // left part = the one whose arrow points to the left (arrival if the spoke points right, else departure)
-    const half=(mn,h_,arrowLeft,mut)=>{if(mn==null)return null;const mn_=String(mn).replace('-','−'),t=arrowLeft?`<tspan class="narr">◀</tspan> ${mn_}′${h_?' '+rep(h_):''}`:`${h_?rep(h_)+' ':''}${mn_}′ <tspan class="narr">▶</tspan>`;return mut?`<tspan class="nmut">${t}</tspan>`:t;};
+    const half=(mn,h_,arrowLeft,mut)=>{if(mn==null)return null;const mn_=String(mn),t=arrowLeft?`<tspan class="narr">◀</tspan> ${mn_}′${h_?' '+rep(h_):''}`:`${h_?rep(h_)+' ':''}${mn_}′ <tspan class="narr">▶</tspan>`;return mut?`<tspan class="nmut">${t}</tspan>`:t;};
     const wH=(mn,h_)=>mn==null?0:7+String(mn).length*6.3+3+(h_?3+8+String(h_).length*5.2+2.5:0);
     const same=hI&&hO&&Math.abs(hI-hO)<5;    // (nearly) the same symmetry headway both ways (< 5 min apart): shown once, in the middle
     const hI_=same?null:hI,hO_=same?null:hO;

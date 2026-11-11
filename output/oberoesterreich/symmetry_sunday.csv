@@ -1,6 +1,10 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Eferding|bus,day,30,60,0.32,0.63,3,Local railways + Regional bus,dotted
-Linz|bigrail,night,50,60,0.18,0.63,5,National railways + Local railways + Regional bus,dotted
-Neumarkt im Hausruckkreis|bigrail,day,22,60,0.73,0.73,3,National railways,solid
-Neumarkt im Hausruckkreis|bigrail,day,38,60,0.73,0.73,3,National railways,solid
-Wels|bigrail,peak,"7,37",30,0.34,0.42,7,National railways + Regional bus,dotted
+Leonding|bigrail,day,55,60,0.67,1.0,2,National railways + Regional bus,solid
+Linz|bigrail,day,"14,44",30,0.0,1.0,2,Local railways + Regional bus,dotted
+Linz|bigrail,night,"20,50",30,0.32,0.68,3,National railways + Local railways + Regional bus,dotted
+Neumarkt im Hausruckkreis|bigrail,day,20,60,0.73,0.73,3,National railways,solid
+Neumarkt im Hausruckkreis|bigrail,day,40,60,0.73,0.73,3,National railways,solid
+Wels|bigrail,peak,50,60,0.25,0.75,5,National railways,dotted
+Wels|bigrail,peak,37,60,0.67,1.0,2,National railways + Regional bus,solid
+Wels|bigrail,day,50,60,0.42,0.73,5,National railways,dotted

@@ -212,7 +212,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
       next direct service. Hd = headway of direct options, Hc = direct + counted changes (pyGTFSHandler formula).
       Coordinated ('c') when >= 2 counted changes, Hc <= Hd / 2 (or no direct service) and 1.5 x mean wait <= headway(Y) / 2.
       'f' = one edge every <= 14 min (no coordination needed), 'n' = services but no coordination.
-    Symmetries: coordinated directions grouped by their change minute (mod 30); one symmetry per group."""
+    Symmetries: hands (h, h + 30) lying inside the timed changes (arrival <= h <= departure), found greedily."""
     tw = node["town"]; sysof = node["system"]
     tlab = node.groupby("town").label.first()
     rank = {k: i for i, k in enumerate(SYS_NAME)}
@@ -362,50 +362,82 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             ok = round(_wall) <= limw and len(C) >= 2 and _wall < hD[y] / 2
             st_[(x, y)] = dict(k="c" if ok else "n", w=wgt, Hd=Hd, Hc=Hc if C else _hall, C=C if ok else [], share=len(C) / nA[x],
                                wait=_wall, walk=float(np.median([c[3] for c in C])) if C else _tr)
-    # ---- symmetries: group coordinated directions by their change minute (mod 30)
+    # ---- symmetries: hands inside the timed changes of the coordinated directions
     need = {d: v for d, v in st_.items() if v["k"] not in ("f", "d")}     # directions that need coordination
     tot = sum(v["w"] for v in st_.values()) or 1.0
     sym, gof = [], {}
     if st_ and sum(v["w"] for v in st_.values() if v["k"] == "f") / tot < SYM_NO_NEED:
-        cd_ = sorted([(d, v) for d, v in need.items() if v["k"] == "c"], key=lambda kv: -kv[1]["w"])
-        groups_ = []                                                  # [centre mod 30, weight, [directions], [mids]]
-        for d, v in cd_:
-            mids = [((c[0] + c[1]) / 2) % 60 for c in v["C"]]
-            m30 = _circ(mids, 30)
-            gsel = next((g for g in groups_ if _cd30(g[0], m30) <= GROUP_TOL), None)
-            if gsel is None:
-                groups_.append([m30, v["w"], [d], list(mids)])
-            else:
-                gsel[2].append(d); gsel[3].extend(mids); gsel[1] += v["w"]; gsel[0] = _circ([m % 30 for m in gsel[3]], 30)
-        merged = True
-        while merged:                                                 # symmetries closer than 10 min become one
-            merged = False
-            for a_ in range(len(groups_)):
-                for b_ in range(a_ + 1, len(groups_)):
-                    if _cd30(groups_[a_][0], groups_[b_][0]) < GROUP_SEP:
-                        g1, g2 = groups_[a_], groups_[b_]
-                        g1[2] += g2[2]; g1[3] += g2[3]; g1[1] += g2[1]; g1[0] = _circ([m % 30 for m in g1[3]], 30)
-                        groups_.pop(b_); merged = True; break
-                if merged:
-                    break
+        # A symmetry minute (hand) h is a minute of the hour at which the timed changes take place: every timed change of
+        # the symmetry ARRIVES AT OR BEFORE h and LEAVES AT OR AFTER h (minutes rounded). A coordinated relation belongs to
+        # the symmetry when this holds for >= 2 of its changes and for at least half of them (it repeats). Symmetries are
+        # searched greedily: the hand pair (h, h + 30) that fits the most relations (weighted), then the most changes, then
+        # a multiple of 5, then the hand in the middle of the changes; its relations are taken out and the next
+        # symmetry (hands >= GROUP_SEP min from the previous ones) is searched among the rest.
+        cd_ = {d: v for d, v in need.items() if v["k"] == "c"}
+        IV = {d: [(int(round(c[0])), int(round(c[1]))) for c in v["C"]] for d, v in cd_.items()}
+        fits = lambda iv, h: [((h - a) % 60) <= (b - a) for a, b in iv]       # arrival <= h <= departure (mod 60)
+
+        def rel_fit(d, hs):
+            f = np.zeros(len(IV[d]), bool)
+            for h in hs:
+                f |= np.array(fits(IV[d], h), bool)
+            return f if (f.sum() >= 2 and f.mean() >= 0.5) else None
+
+        def slack(d, hs, f):                                      # how central the hands lie in the fitting changes
+            s_ = 0
+            for (a, b), ok in zip(IV[d], f):
+                if ok:
+                    s_ += max(min((h - a) % 60, (b - h) % 60) if ((h - a) % 60) <= (b - a) else -99 for h in hs)
+            return s_
+
+        def best_for(hs, pool):
+            got = {d: rel_fit(d, hs) for d in pool}
+            got = {d: f for d, f in got.items() if f is not None}
+            return got, (round(sum(cd_[d]["w"] for d in got), 6), sum(int(f.sum()) for f in got.values()))
+
+        groups_ = []                                                  # [hands, weight, [directions], {direction: fit mask}]
+        pool = set(cd_)
+        while len(pool) >= 2:
+            cands = []
+            for h0 in range(30):
+                if any(min((h0 - x) % 30, (x - h0) % 30) < GROUP_SEP for g in groups_ for x in g[0]):
+                    continue
+                got, sc = best_for((h0, h0 + 30), pool)
+                if len(got) < 2:
+                    continue
+                cands.append((sc, h0, got))
+            if not cands:
+                break
+            top = max(c[0] for c in cands)
+            cands = [c for c in cands if c[0] == top]
+            # period: both hands (every 30 min) when each of them carries >= 20 % of the fitting changes, else the busier one
+            sc, h0, got = cands[0]
+            nh = [sum(int(np.sum(fits([iv for iv, ok in zip(IV[d], f) if ok], h))) for d, f in got.items()) for h in (h0, h0 + 30)]
+            two = min(nh) >= 0.2 * sum(nh)
+            pick = []
+            for sc, h0, got in cands:
+                if two:
+                    hs = (h0, h0 + 30)
+                else:
+                    nh_ = [sum(int(np.sum(fits(IV[d], h))) for d in got) for h in (h0, h0 + 30)]
+                    hs = (h0,) if nh_[0] >= nh_[1] else (h0 + 30,)
+                g2, sc2 = best_for(hs, pool)
+                if len(g2) < 2:
+                    continue
+                pick.append(((sc2, 1 if h0 % 5 == 0 else 0, sum(slack(d, hs, f) for d, f in g2.items())), hs, g2))
+            if not pick:
+                break
+            _, hs, got = max(pick, key=lambda z: z[0])
+            groups_.append([list(hs), sum(cd_[d]["w"] for d in got), list(got), got])
+            pool -= set(got)
+        for d in cd_:                                                 # the timed changes of a relation in a symmetry: those that fit it
+            for g in groups_:
+                if d in g[3]:
+                    cd_[d]["C"] = [c for c, ok in zip(cd_[d]["C"], g[3][d]) if ok]
         groups_.sort(key=lambda g: -g[1])
-        for gi, (c30, wsum, dirs, mids) in enumerate(groups_):
+        for gi, (hands, wsum, dirs, _fm) in enumerate(groups_):
             if len(dirs) < 2:
                 continue
-            hands = []
-            for base in (c30, (c30 + 30) % 60):
-                near = [m for m in mids if min((m - base) % 60, (base - m) % 60) <= GROUP_TOL]
-                if len(near) >= 0.2 * len(mids):
-                    h = int(round(_circ(near, 60))) % 60
-                    r5 = int(round(h / 5) * 5) % 60
-                    hands.append(r5 if min((h - r5) % 60, (r5 - h) % 60) <= SNAP_MIN else h)
-            if not hands:
-                continue
-            if len(set(hands)) > 1:                   # every 30 min: the two hands are exactly 30 min apart (one common phase)
-                h_ = int(round(c30)) % 30
-                r5 = int(round(h_ / 5) * 5) % 30
-                h_ = r5 if min((h_ - r5) % 30, (r5 - h_) % 30) <= SNAP_MIN else h_
-                hands = [h_, h_ + 30]
             GE = {e for d in dirs for e in d}
             pairs = {tuple(sorted(d)) for d in need if d[0] in GE and d[1] in GE}
             wpair = lambda p: max(st_.get(p, {}).get("w", 0), st_.get(p[::-1], {}).get("w", 0))
