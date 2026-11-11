@@ -66,8 +66,8 @@ def md_page(src, out, title):
         page(title, f'<a class="back" href="../index.html">← back</a><article>{body}</article>'))
 
 
-def clock_phase_page():
-    """explain/clock-phase/index.html: the hub animation of the map's info panel (code taken from make_map.py)."""
+def clock_face_page():
+    """explain/clock-face/index.html: the hub animation of the map's info panel (code taken from make_map.py)."""
     src = open(os.path.join(ROOT, "code", "make_map.py"), encoding="utf-8").read()
     a = src.index(" const ANIM=(()=>{"); b = src.index(" window.__ANIM=ANIM;")
     js = src[a:b]
@@ -81,10 +81,10 @@ ul{color:var(--ink);font-size:14.5px;line-height:1.55;padding-left:20px}main{max
 const SK=['bigrail','localrail','bus'],COL={bigrail:'#d32f2f',localrail:'#2e7d32',bus:'#1e6fd9'};
 """ + js + """ANIM.start();
 </script>"""
-    out = os.path.join(ROOT, "explain", "clock-phase", "index.html")
+    out = os.path.join(ROOT, "explain", "clock-face", "index.html")
     os.makedirs(os.path.dirname(out), exist_ok=True)
     open(out, "w", encoding="utf-8").write(f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Clock-Phase Scheduling</title><meta name="description" content="Animation of a clock-face timetable hub (Taktknoten)."><style>{css}</style></head>
+<title>Clock-Face Scheduling</title><meta name="description" content="Animation of a clock-face timetable hub (Taktknoten)."><style>{css}</style></head>
 <body><main>{body}</main>{script}</body></html>""")
 
 
@@ -106,14 +106,14 @@ def main():
     md_page("sources/network_rules.md", "docs/rules.html", "Network rules")
     md_page("literature/taktfahrplan_review.md", "docs/literature.html", "Literature notes")
     md_page("README.md", "docs/readme.html", "README")
-    clock_phase_page()
+    clock_face_page()
     papers = sorted(os.listdir(os.path.join(ROOT, "literature", "papers")))
     plinks = "".join(f'<a href="literature/papers/{p}"><b>{html.escape(p.rsplit(".", 1)[0].replace("_", " "))}</b></a>' for p in papers)
     body = f"""<h1>Clock-face timetable maps</h1>
 <div class="leg"><span><i style="background:#d32f2f"></i>rail</span><span><i style="background:#2e7d32"></i>local rail</span><span><i style="background:#1e6fd9"></i>bus</span></div>
 <h2>Regions</h2><div class="grid">{''.join(cards)}</div>
 <h2>Explainers</h2><div class="links">
-<a href="explain/clock-phase/"><b>Clock-face hub</b></a>
+<a href="explain/clock-face/"><b>Clock-face hub</b></a>
 <a href="explain/symmetry/"><b>Why symmetry</b></a></div>
 <h2>Method</h2><div class="links">
 <a href="docs/rules.html"><b>Rules</b></a>

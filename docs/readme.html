@@ -30,7 +30,7 @@ nodes / Taktknoten) for five regions: <code>gipuzkoa</code>, <code>vorarlberg</c
 <ul>
 <li><code>index.html</code> — front page: choose a region map or an explainer (GitHub Pages site).</li>
 <li><code>maps/&lt;region&gt;/index.html</code> — the interactive map of each region (self-contained; internet needed only for the base map), one URL per region.</li>
-<li><code>explain/clock-phase/</code>, <code>explain/symmetry/</code> — animations: how a clock-phase hub works; why symmetry is needed and not just coordination.</li>
+<li><code>explain/clock-face/</code>, <code>explain/symmetry/</code> — animations: how a clock-face hub works; why symmetry is needed and not just coordination.</li>
 <li><code>docs/</code> — HTML versions of the rules, literature notes and this README (built by <code>code/make_index.py</code>).</li>
 <li><code>output/&lt;region&gt;/</code> — <code>overview.png</code>, CSVs (<code>nodes</code>, <code>edges</code>, <code>walk_links</code>, <code>symmetry</code>, <code>transfers</code>, <code>vehicle_km</code>, <code>services_audit</code>; <code>_saturday</code> / <code>_sunday</code> variants).</li>
 <li><code>code/</code> — analysis and map generation (<code>towns.py</code> = generic rules, <code>regions/&lt;region&gt;.py</code> = region settings, <code>vendor/</code> = MapLibre).</li>
@@ -53,7 +53,7 @@ python3 code/rebuild_map.py &lt;region&gt;      # map only, from results.pkl
 python3 code/make_overview.py &lt;region&gt;    # overview.png / .svg
 python3 code/audit_services.py &lt;region&gt;   # which routes are (not) on the map
 python3 code/make_region_geo.py &lt;region&gt;  # municipalities / boundary from OpenStreetMap
-python3 code/make_index.py                # index.html, docs/, explain/clock-phase/
+python3 code/make_index.py                # index.html, docs/, explain/clock-face/
 </code></pre>
 <p>GTFS files are read with polars and cached in <code>sources/cache/</code>; connection analysis runs on all CPU cores.
 Typical times: 20–70 s per region, all five regions about 2 min.</p>

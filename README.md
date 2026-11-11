@@ -8,7 +8,7 @@ Open `index.html` (or the GitHub Pages site of this repository) and choose a reg
 ## Folders
 - `index.html` — front page: choose a region map or an explainer (GitHub Pages site).
 - `maps/<region>/index.html` — the interactive map of each region (self-contained; internet needed only for the base map), one URL per region.
-- `explain/clock-phase/`, `explain/symmetry/` — animations: how a clock-phase hub works; why symmetry is needed and not just coordination.
+- `explain/clock-face/`, `explain/symmetry/` — animations: how a clock-face hub works; why symmetry is needed and not just coordination.
 - `docs/` — HTML versions of the rules, literature notes and this README (built by `code/make_index.py`).
 - `output/<region>/` — `overview.png`, CSVs (`nodes`, `edges`, `walk_links`, `symmetry`, `transfers`, `vehicle_km`, `services_audit`; `_saturday` / `_sunday` variants).
 - `code/` — analysis and map generation (`towns.py` = generic rules, `regions/<region>.py` = region settings, `vendor/` = MapLibre).
@@ -34,7 +34,7 @@ python3 code/rebuild_map.py <region>      # map only, from results.pkl
 python3 code/make_overview.py <region>    # overview.png / .svg
 python3 code/audit_services.py <region>   # which routes are (not) on the map
 python3 code/make_region_geo.py <region>  # municipalities / boundary from OpenStreetMap
-python3 code/make_index.py                # index.html, docs/, explain/clock-phase/
+python3 code/make_index.py                # index.html, docs/, explain/clock-face/
 ```
 GTFS files are read with polars and cached in `sources/cache/`; connection analysis runs on all CPU cores.
 Typical times: 20–70 s per region, all five regions about 2 min.
