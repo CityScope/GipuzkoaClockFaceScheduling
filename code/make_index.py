@@ -88,6 +88,25 @@ const SK=['bigrail','localrail','bus'],COL={bigrail:'#d32f2f',localrail:'#2e7d32
 <body><main>{body}</main>{script}</body></html>""")
 
 
+REDIRECTS = {   # old published path -> new path (relative to the site root); kept so old links keep working
+    "explain/clock-phase/index.html": "explain/clock-face/",
+    **{f"output/{r}/{r}_network_map.html": f"maps/{r}/" for r in REGIONS},
+}
+
+
+def redirect_pages():
+    """Small pages at old addresses that forward to the new ones (keeping the #... part of the link)."""
+    for old, new in REDIRECTS.items():
+        depth = old.count("/")
+        target = "../" * depth + new
+        out = os.path.join(ROOT, old)
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        open(out, "w", encoding="utf-8").write(f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>Moved</title><meta http-equiv="refresh" content="0; url={target}"><link rel="canonical" href="{target}">
+<script>location.replace("{target}" + location.search + location.hash);</script></head>
+<body><a href="{target}">Moved here</a></body></html>""")
+
+
 def main():
     cards = []
     for r in REGIONS:
@@ -107,6 +126,7 @@ def main():
     md_page("literature/taktfahrplan_review.md", "docs/literature.html", "Literature notes")
     md_page("README.md", "docs/readme.html", "README")
     clock_face_page()
+    redirect_pages()
     papers = sorted(os.listdir(os.path.join(ROOT, "literature", "papers")))
     plinks = "".join(f'<a href="literature/papers/{p}"><b>{html.escape(p.rsplit(".", 1)[0].replace("_", " "))}</b></a>' for p in papers)
     body = f"""<h1>Clock-face timetable maps</h1>
