@@ -21,9 +21,7 @@ Gelterkinden|bigrail,day,58,60,0.41,0.69,6,National railways + Regional bus,dott
 Gelterkinden|bigrail,day,8,60,1.0,1.0,3,National railways + Regional bus,solid
 Kaiseraugst|bigrail,peak,"27,57",30,0.5,1.0,2,National railways + Regional bus,dotted
 Kaiseraugst|bigrail,day,"27,57",30,0.5,1.0,2,National railways + Regional bus,dotted
-Killwangen|bigrail,peak,"2,32",30,0.0,1.0,2,National railways + Local railways + Regional bus,dotted
 Killwangen|bigrail,peak,16,60,0.0,0.63,4,National railways + Local railways + Regional bus,dotted
-Killwangen|bigrail,day,"2,32",30,0.0,1.0,2,National railways + Local railways + Regional bus,dotted
 Killwangen|bigrail,day,16,60,0.0,0.6,4,National railways + Local railways + Regional bus,dotted
 Laufenburg|bigrail,peak,30,60,1.0,1.0,3,National railways + Regional bus,solid
 Laufenburg|bigrail,day,30,60,1.0,1.0,3,National railways + Regional bus,solid
@@ -35,8 +33,6 @@ Muri|bigrail,peak,"5,35",30,0.67,0.67,3,National railways + Regional bus,solid
 Muri|bigrail,peak,"21,51",30,0.67,0.67,3,National railways + Regional bus,solid
 Muri|bigrail,day,"5,35",30,0.67,0.67,3,National railways + Regional bus,solid
 Muri|bigrail,day,"21,51",30,0.67,0.67,3,National railways + Regional bus,solid
-Möhlin|bigrail,peak,55,60,0.0,1.0,2,National railways + Regional bus,dotted
-Möhlin|bigrail,day,55,60,0.0,1.0,2,National railways + Regional bus,dotted
 Möriken-Wildegg|bigrail,peak,"7,37",30,0.71,0.71,6,National railways + Regional bus,solid
 Möriken-Wildegg|bigrail,peak,"17,47",30,0.5,0.5,6,National railways + Regional bus,dotted
 Möriken-Wildegg|bigrail,day,"7,37",30,0.71,0.71,6,National railways + Regional bus,solid

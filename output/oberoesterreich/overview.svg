@@ -211,8 +211,6 @@
 <circle cx='873.7' cy='434.1' r='4.6' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <line x1='873.7' y1='434.1' x2='884.3' y2='428.0' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <line x1='873.7' y1='434.1' x2='863.2' y2='440.2' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='873.7' y1='434.1' x2='884.3' y2='440.2' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='873.7' y1='434.1' x2='863.2' y2='428.0' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='909.1' cy='409.2' r='15.8' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='909.1' cy='409.2' r='10.5' fill='#2ca02c' stroke='#fff' stroke-width='1'/>
 <circle cx='909.1' cy='409.2' r='5.3' fill='#1f77b4' stroke='#fff' stroke-width='1'/>

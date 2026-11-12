@@ -2,7 +2,6 @@ gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Arth|bigrail,peak,"15,45",30,0.18,1.0,2,National railways,dotted
 Dagmersellen|bigrail,peak,"2,32",30,0.0,0.83,3,National railways + Regional bus,dotted
 Dagmersellen|bigrail,day,"2,32",30,0.0,0.83,3,National railways + Regional bus,dotted
-Ebikon|bigrail,peak,"11,41",30,0.63,1.0,4,Regional bus,solid
 Hochdorf|bigrail,peak,"26,56",30,0.25,0.75,4,National railways + Regional bus,dotted
 Hochdorf|bigrail,day,"27,57",30,0.32,0.74,7,National railways + Regional bus,dotted
 Lenzburg|bigrail,peak,"26,56",30,0.2,0.6,3,National railways,dotted
@@ -11,7 +10,6 @@ Luzern|bigrail,peak,"26,56",30,0.24,0.45,86,National railways + Local railways +
 Luzern|bigrail,peak,"16,46",30,0.0,0.42,6,National railways + Local railways + Regional bus,dotted
 Luzern|bigrail,day,"26,56",30,0.25,0.47,79,National railways + Local railways + Regional bus,dotted
 Luzern|bigrail,day,6,60,0.27,0.26,66,National railways + Local railways + Regional bus,dotted
-Luzern|bigrail,day,"16,46",30,0.0,1.0,2,National railways + Local railways + Regional bus,dotted
 Malters|bigrail,peak,"28,58",30,1.0,1.0,3,National railways + Regional bus,solid
 Malters|bigrail,day,"28,58",30,1.0,1.0,3,National railways + Regional bus,solid
 Neuenkirch|bigrail,peak,"1,31",30,0.6,0.73,7,National railways + Regional bus,solid

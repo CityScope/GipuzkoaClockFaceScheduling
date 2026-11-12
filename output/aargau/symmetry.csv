@@ -21,12 +21,9 @@ Frick|bigrail,day,"9,39",30,0.0,0.33,9,National railways + Regional bus,dotted
 Gelterkinden|bigrail,peak,"4,34",30,0.82,0.91,7,National railways + Regional bus,solid
 Gelterkinden|bigrail,peak,"22,52",30,1.0,1.0,4,National railways + Regional bus,solid
 Gelterkinden|bigrail,day,58,60,0.14,0.73,6,National railways + Regional bus,dotted
-Kaiseraugst|bigrail,peak,"29,59",30,0.25,0.7,3,National railways + Regional bus,dotted
 Kaiseraugst|bigrail,day,"27,57",30,0.34,0.65,4,National railways + Regional bus,dotted
 Killwangen|bigrail,peak,"13,43",30,0.81,1.0,5,National railways + Regional bus,solid
-Killwangen|bigrail,peak,"2,32",30,0.0,1.0,2,National railways + Local railways + Regional bus,dotted
 Killwangen|bigrail,day,"13,43",30,0.8,1.0,5,National railways + Regional bus,solid
-Killwangen|bigrail,day,"2,32",30,0.0,1.0,2,National railways + Local railways + Regional bus,dotted
 Laufenburg|bigrail,peak,29,60,0.27,0.6,9,National railways + Regional bus,dotted
 Laufenburg|bigrail,peak,39,60,0.52,0.52,3,Regional bus,solid
 Laufenburg|bigrail,day,28,60,0.61,0.71,9,National railways + Regional bus,solid
@@ -41,9 +38,6 @@ Muri|bigrail,peak,"21,51",30,0.67,0.67,3,National railways + Regional bus,solid
 Muri|bigrail,peak,"6,36",30,0.67,0.67,3,National railways + Regional bus,solid
 Muri|bigrail,day,"6,36",30,0.67,0.67,3,National railways + Regional bus,solid
 Muri|bigrail,day,"22,52",30,0.67,0.67,3,National railways + Regional bus,solid
-Möhlin|bigrail,peak,"25,55",30,0.0,1.0,2,National railways + Regional bus,dotted
-Möhlin|bigrail,day,"15,45",30,0.89,1.0,2,National railways + Regional bus,solid
-Möhlin|bigrail,day,25,60,0.0,1.0,2,National railways + Regional bus,dotted
 Möriken-Wildegg|bigrail,peak,"17,47",30,0.64,0.86,6,National railways + Regional bus,solid
 Möriken-Wildegg|bigrail,peak,7,60,0.69,0.69,4,National railways + Regional bus,solid
 Möriken-Wildegg|bigrail,day,"17,47",30,0.84,0.84,6,National railways + Regional bus,solid
@@ -55,8 +49,6 @@ Olten|bigrail,day,"12,42",30,0.3,0.6,3,National railways,dotted
 Othmarsingen|bigrail,day,36,60,0.5,1.0,2,National railways,dotted
 Pratteln|bigrail,peak,"4,34",30,0.0,0.72,4,National railways + Regional bus,dotted
 Pratteln|bigrail,day,"4,34",30,0.5,1.0,2,National railways,dotted
-Rheinfelden|bigrail,peak,"15,45",30,0.32,0.7,7,National railways + Regional bus,dotted
-Rheinfelden|bigrail,day,"15,45",30,0.33,1.0,4,National railways + Regional bus,dotted
 Schöftland|bus,peak,"4,34",30,1.0,1.0,3,Local railways + Regional bus,solid
 Schöftland|bus,peak,"24,54",30,1.0,0.75,3,Local railways + Regional bus,solid
 Schöftland|bus,day,"4,34",30,1.0,1.0,3,Local railways + Regional bus,solid

@@ -337,6 +337,9 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
         waits.optsets = [sorted(alts[k_]) for k_, v in best.items() if v[3] is not None]   # all arrivals catching each of them
         return float(np.mean([v[1] for v in best.values()])), _hw(np.array(sorted(best)), wins), tr
     nDb = {y: int(in_band(g.t.values, wins).sum()) for y, g in Dg.items()}   # departures towards y in the band
+    _tA = A.e.map(town); _tD = Dall.e.map(town)
+    hAt = {t: _hw(A.t[_tA == t].values, wins) for t in set(_tA)}     # headway from / to each neighbouring municipality,
+    hDt = {t: _hw(Dall.t[_tD == t].values, wins) for t in set(_tD)}  # all its stops, modes and lines together
     st_ = {}
     for x in E:
         for y in E:
@@ -527,9 +530,9 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             # a symmetry needs at least one timed change between two NON-frequent edges (a node whose only timed changes
             # involve a frequent line, < 15 min, is not symmetric); its >= 2 directions and >= 3 distinct neighbouring
             # places count all its timed changes
-            nfe = lambda e: min(hA.get(e, 999.0), hD.get(e, 999.0)) >= FREQ_CUT
+            nfe = lambda e: min(hAt.get(town(e), 999.0), hDt.get(town(e), 999.0)) >= FREQ_CUT   # by PLACE: all its stops together
             dnf = [d for d in dirs if nfe(d[0]) and nfe(d[1])]
-            nbs = {str(node.label.get(e.split("¦")[0], e.split("¦")[0])) for d in dirs for e in d}   # distinct neighbouring places (fast / slow, walk sides and modes of one place count once)
+            nbs = {town(e) for d in dirs for e in d}   # distinct neighbouring places (municipalities: fast / slow, walk sides, modes and stops of one place count once)
             if not dnf or len(dirs) < 2 or len(nbs) < 3 or (one <= SYM_ONE_MIN and not regular):
                 continue                                       # >= 3 edges; more than half one way, or a regular (<= 60 min) group
             modes = sorted({e.split("¦")[1] for e in GE}, key=lambda s_: rank[s_])
