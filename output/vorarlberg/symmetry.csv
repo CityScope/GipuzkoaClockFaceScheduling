@@ -46,6 +46,5 @@ Egg|bus,day,57,60,1.0,1.0,2,Regional bus,solid
 Lingenau|bus,peak,"16,46",30,0.73,0.73,3,Regional bus,solid
 Lingenau|bus,day,45,60,0.67,0.67,3,Regional bus,solid
 Schoppernau|bus,peak,5,60,0.5,0.75,3,Regional bus,dotted
-Thüringen|bus,peak,"13,43",30,0.0,1.0,3,Regional bus,dotted
 Thüringen|bus,peak,"24,54",30,0.68,1.0,2,Regional bus,solid
 Thüringen|bus,day,"10,40",30,0.5,0.77,5,Regional bus,solid

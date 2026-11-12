@@ -179,7 +179,6 @@
 <circle cx='468.3' cy='722.5' r='6.6' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <line x1='468.3' y1='722.5' x2='470.3' y2='731.9' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <line x1='468.3' y1='722.5' x2='466.3' y2='713.1' stroke='#000' stroke-width='2' stroke-linecap='round'/>
-<line x1='468.3' y1='722.5' x2='459.9' y2='727.3' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='499.3' cy='1626.1' r='4.9' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1421.5' cy='1153.3' r='6.3' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='595.5' cy='1636.1' r='4.2' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>

@@ -49,10 +49,8 @@ Rain|bus,peak,"20,50",30,1.0,1.0,2,Regional bus,solid
 Rain|bus,peak,"10,40",30,1.0,1.0,2,Regional bus,solid
 Rain|bus,day,"20,50",30,1.0,1.0,2,Regional bus,solid
 Rain|bus,day,"10,40",30,1.0,1.0,2,Regional bus,solid
-Ruswil|bus,peak,30,60,0.0,1.0,2,Regional bus,dotted
 Ruswil|bus,day,30,60,0.5,1.0,2,Regional bus,dotted
 Udligenswil|bus,peak,"7,37",30,0.75,1.0,4,Regional bus,solid
-Udligenswil|bus,peak,"17,47",30,1.0,1.0,2,Regional bus,solid
 Udligenswil|bus,day,"7,37",30,0.25,1.0,4,Regional bus,dotted
 Zofingen|bus,peak,45,60,1.0,1.0,2,National railways + Regional bus,solid
 Zofingen|bus,day,45,60,1.0,1.0,2,National railways + Regional bus,solid

@@ -544,8 +544,8 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                     if hh:
                         a_ = int(round(c[0])); Ts.add(a_ + min((h - a_) % 60 for h in hh))
                 if Ts:
-                    hrel.append(_hw(sorted(Ts), wins))
-            ph = max(P_, round(min(hrel))) if hrel else 999
+                    hrel.append(_clock_hw(Ts, hands, wins) or 999)
+            ph = min(hrel) if hrel else 999                  # clock-face headway met by >= 75 % of the pulses (999: none)
             if ph > SYM_PULSE_MAX:                             # timed connections rarer than every 2 h: not a symmetry
                 continue
             idx = len(sym)
@@ -653,12 +653,14 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
         # a few minutes apart before :00) are one service of that pulse -> never better than the pulse period
         # measured in pulses: each service belongs to the nearest pulse of the symmetry (hand + k x period); a pulse counts
         # once -> the headway of the symmetry services is never better than the symmetry period
-        per_ = 30 if len(set(hands)) > 1 else 60
-        h0 = min(hands) % per_
-        first_ = {}
-        for t_ in sorted(ts):                         # real time of the first service of each pulse (band edges stay right)
-            first_.setdefault(round((t_ - h0) / per_), t_)
-        return [sorted(top), None, rh(max(per_, floor or 0, _hw(sorted(first_.values()), wins)))]   # never better than the symmetry's pulses
+        # the pulse of each service: arrivals -> the next hand, departures -> the previous hand; the headway is the
+        # clock-face one met by >= 75 % of the pulses (None: too irregular), never better than the symmetry's
+        pul = set()
+        for t_ in ts:
+            t0 = int(round(t_))
+            pul.add(t0 + min((h - t0) % 60 for h in hands) if before else t0 - min((t0 - h) % 60 for h in hands))
+        H = _clock_hw(pul, hands, wins)
+        return [sorted(top), None, max(H, floor or 0) if H else None]
     sym_dirs = defaultdict(list)
     for d, gi in gof.items():
         sym_dirs[gi].append(d)
@@ -701,6 +703,30 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                                     {str(k_): v_ for k_, v_ in r_["g"].items()}, rh(r_.get("hi", 999.0)), rh(r_.get("ho", 999.0)), r_["wk"], r_["via"]]
                                    for r_ in edl.values() if r_["la"] is not None and (r_["wk"] is None or r_["g"])])
     return dict(ep=ep, rp=rp, sym=sym, ce=ce, trips=strips, net=net)
+
+
+CLOCK_HW = (15, 20, 30, 60, 120)   # valid symmetry headways (clock-face: they divide 1 or 2 hours)
+PULSE_MET = 0.75                   # a symmetry headway must be met by >= 75 % of its pulses
+
+
+def _clock_hw(Ts, hands, wins):
+    """Clock-face headway of a set of served pulse times (minutes, at the hands): the most frequent H in CLOCK_HW (not
+    more frequent than the hands allow) whose pulse grid in the band -- best phase -- is met by >= 75 %; None if none."""
+    hs = sorted(set(int(h) % 60 for h in hands))
+    P = 30 if len(hs) > 1 else 60
+    base = hs[0] % P
+    Ts = set(int(round(t)) for t in Ts)
+    for H in CLOCK_HW:
+        if H < P or H % P:
+            continue
+        best = 0.0
+        for o in range(0, H, P):                      # phase: which hand / which hour
+            grid = [t for a, b in wins for t in range(int(np.ceil(a)), int(b)) if (t - base - o) % H == 0]
+            if grid:
+                best = max(best, sum(1 for t in grid if t in Ts) / len(grid))
+        if best >= PULSE_MET:
+            return H
+    return None
 
 
 def _cd30(x, y):

@@ -17,8 +17,6 @@ Steyr|bigrail,day,55,60,0.92,1.0,4,Regional bus,solid
 Traun|bigrail,peak,17,60,0.0,1.0,2,National railways + Regional bus,dotted
 Traun|bigrail,day,21,60,0.0,1.0,2,National railways + Regional bus,dotted
 Wels|bigrail,peak,30,60,0.18,0.59,17,National railways + Regional bus,dotted
-Bad Hall|bus,peak,41,60,0.75,0.75,4,Regional bus,solid
-Bad Hall|bus,peak,21,60,0.67,0.67,3,Regional bus,solid
 Hellmonsödt|bus,peak,"10,40",30,0.0,0.67,3,Regional bus,dotted
 Ottensheim|bus,peak,36,60,0.5,1.0,2,Regional bus,dotted
 Ottensheim|bus,day,40,60,0.53,1.0,2,Regional bus,solid

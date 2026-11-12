@@ -1,8 +1,6 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Beasain|bus,peak,30,60,0.0,1.0,2,Renfe + Bus,dotted
-Beasain|bus,peak,50,60,0.67,0.67,3,Bus,solid
 Deba|bus,peak,42,60,0.29,0.58,8,Euskotren + Bus,dotted
-Deba|bus,peak,52,60,0.5,1.0,2,Bus,dotted
 Deba|bus,day,39,60,0.0,1.0,3,Euskotren + Bus,dotted
 Donostia / San Sebastián|renfe,peak,"29,59",30,0.14,1.0,4,Renfe + Bus,dotted
 Elgoibar|euskotren,peak,15,60,0.0,1.0,2,Euskotren + Bus,dotted
@@ -20,12 +18,10 @@ Zumarraga|bus,peak,11,60,0.22,0.64,5,Bus,dotted
 Zumarraga|bus,day,11,60,0.0,0.7,3,Bus,dotted
 Zumarraga|bus,day,0,60,0.0,0.7,3,Bus,dotted
 Arrasate / Mondragón|bus,peak,20,60,0.0,1.0,3,Bus,dotted
-Bergara|bus,peak,8,60,0.75,0.75,4,Bus,solid
-Bergara|bus,peak,18,60,1.0,1.0,2,Bus,solid
+Bergara|bus,day,12,60,0.35,0.53,7,Bus,dotted
 Bilbao|bus,peak,"10,40",30,0.2,0.7,6,Bus,dotted
 Bilbao|bus,day,58,60,0.3,1.0,6,Bus,dotted
 Bilbao|bus,day,"9,39",30,0.28,0.72,6,Bus,dotted
-Eibar|bus,peak,25,60,0.5,1.0,2,Bus,dotted
 Eibar|bus,day,20,60,0.48,0.52,10,Bus,dotted
 Elgoibar|bus,peak,15,60,0.0,1.0,2,Euskotren + Bus,dotted
 Elgoibar|bus,day,15,60,0.17,0.66,5,Euskotren + Bus,dotted
@@ -47,7 +43,6 @@ Zarautz|bus,day,59,60,0.18,0.54,9,Bus,dotted
 Ermua|bus|1,peak,25,60,0.78,1.0,4,Euskotren + Bus,solid
 Ermua|bus|1,day,"25,55",30,0.5,1.0,2,Euskotren + Bus,dotted
 Zestoa|bus|1,peak,27,60,0.0,1.0,2,Euskotren + Bus,dotted
-Zestoa|bus|1,peak,15,60,0.0,1.0,2,Bus,dotted
 Zestoa|bus|1,day,"17,47",30,0.6,0.8,4,Euskotren + Bus,solid
 Zestoa|bus|1,day,27,60,0.0,1.0,2,Euskotren + Bus,dotted
 Zestoa|bus|1,day,"7,37",30,0.75,0.75,3,Euskotren + Bus,solid
