@@ -555,7 +555,7 @@ let map;
     // each side: coordinated in the symmetry (or frequent) -> normal style; otherwise the mean of all services, muted
     const hI=vi!=null?s.hwi:null,hO=vo!=null?s.hwo:null,lc=one||fq?COL[s.sy]:'#9ca3af';
     // a side counts (normal style) when it is timed in the symmetry or its own direction is frequent (e.g. a train every 10 min leaving at :00)
-    const mI=vi==null&&!fI_,mO=vo==null&&!fO_;
+    const mI=vi==null&&!(fI_&&fvi!=null&&fvi<=lim),mO=vo==null&&!(fO_&&fvo!=null&&fvo<=limO);   // frequent: normal style only inside the connection window
     const rep=(h_)=>h_?`<tspan class="nrep">↻${h_}′</tspan>`:'';
     // left part = the one whose arrow points to the left (arrival if the spoke points right, else departure)
     const half=(mn,h_,arrowLeft,mut)=>{if(mn==null)return null;const mn_=String(mn),t=arrowLeft?`<tspan class="narr">◀</tspan> ${mn_}′${h_?' '+rep(h_):''}`:`${h_?rep(h_)+' ':''}${mn_}′ <tspan class="narr">▶</tspan>`;return mut?`<tspan class="nmut">${t}</tspan>`:t;};
