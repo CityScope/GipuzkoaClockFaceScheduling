@@ -307,7 +307,9 @@ Rain|bus,peak,Beromünster,Hochdorf,11.0,0.0,direct None / with changes 60,False
 Rain|bus,peak,Beromünster,Neuenkirch,12.0,0.0,direct None / with changes 60,False
 Rain|bus,day,Beromünster,Hochdorf,11.0,0.0,direct None / with changes 60,False
 Rain|bus,day,Beromünster,Neuenkirch,12.0,0.0,direct None / with changes 60,False
+Reiden|bus,peak,Roggwil (BE),Zofingen,0.0,0.0,direct 90 / with changes 60,False
 Reiden|bus,day,Roggwil (BE),Zofingen,3.0,0.0,direct 375 / with changes 64,False
+Rickenbach|bus,day,Beromünster,Sursee,2.1,0.0,direct 60 / with changes 39,False
 Ruswil|bus,peak,Luzern,Wolhusen,3.0,0.0,direct None / with changes 90,False
 Ruswil|bus,day,Ettiswil,Wolhusen,11.0,0.0,direct None / with changes 60,False
 Ruswil|bus,day,Luzern,Wolhusen,3.0,0.0,direct None / with changes 60,False

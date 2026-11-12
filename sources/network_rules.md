@@ -69,7 +69,7 @@ Rules used to build the maps (all regions). Values in **bold** are the parameter
 8.3 **Coordinated** when, at a symmetry minute (9.2), all of
    - it repeats: **≥ 2** connections in the band (**1** when one of its two edges has a single service in the band, e.g. one ALSA bus),
    - the connections wait on average **less than half the headway of the departing edge** (else it is what arriving at random gives),
-   - when the relation has direct trips, the connections at least **halve the headway of the direct trips** (H_t ≤ H_direct / 2),
+   - when the relation has direct trips, the connections must improve on them: **H_t + 2 × W_t ≤ 0.75 × H_direct** (headway of connections + direct trips, plus twice their mean wait, against the headway of the direct trips alone; e.g. Malters → Willisau at Wolhusen: 29 + 2 × 1 = 31 ≤ 0.75 × 57),
    - **they are of use** against taking any service of the relation (timed or not). Both sides include the direct trips (wait 0). Normal: every departure reached (headway H_all, mean wait W_all, 7.1–7.2). Coordinated: direct trips + connections (headway H_t, mean wait W_t). Headways with the formula 4.1. When the connections (with the direct trips) are **≥ 80 %** of the departures reached there is nothing to compare (e.g. Wolhusen → Nebikon at Willisau, 12 of 13); otherwise only if **(H_t − H_all) / 2 ≤ W_all − W_t** (e.g. Arrasate → Zumarraga at Bergara: timed every 39 min instead of 28, no wait saved: not timed).
    No test on the average wait of all services: the relation is judged on its connections. A relation in no symmetry is coordinated only if some minute h would make it pass these tests. The relation table shows H_t and W_t on the first line and H_all and W_all on the second.
 8.4 Otherwise: "not timed".

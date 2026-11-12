@@ -82,9 +82,9 @@ Baden|bigrail,night,Dietikon,Gebenstorf,11.5,1.5,direct None / with changes 375,
 Baden|bigrail,night,Dietikon,Untersiggenthal,11.5,1.5,direct None / with changes 375,False
 Baden|bigrail,night,Niederweningen,Untersiggenthal,8.0,0.0,direct None / with changes 480,False
 Baden|bigrail,night,Niederweningen,Würenlos,1.0,0.0,direct None / with changes 480,False
+Baden|bigrail,night,Birmenstorf,Fislisbach,5.6,0.0,direct 480 / with changes 278,False
 Baden|bigrail,night,Birmenstorf,Untersiggenthal,7.0,0.0,direct None / with changes 278,False
 Baden|bigrail,night,Birmenstorf,Endingen,8.0,0.0,direct None / with changes 322,False
-Baden|bigrail,night,Endingen,Fislisbach,10.4,0.0,direct None / with changes 278,False
 Beinwil am See|bigrail,peak,Hochdorf,Menziken,7.3,0.7,direct None / with changes 45,False
 Beinwil am See|bigrail,day,Hochdorf,Menziken,8.1,0.7,direct None / with changes 34,False
 Beinwil am See|bigrail,night,Hochdorf,Menziken,11.3,0.7,direct None / with changes 375,False
@@ -332,6 +332,7 @@ Mellingen|bigrail,day,Brugg,Killwangen,8.6,0.4,direct None / with changes 60,Fal
 Mellingen|bigrail,day,Fislisbach (slow),Othmarsingen,4.6,0.4,direct None / with changes 60,False
 Mellingen|bigrail,day,Dietikon,Fislisbach (fast),5.6,0.4,direct None / with changes 75,False
 Mellingen|bigrail,day,Dietikon,Mägenwil,5.6,0.4,direct None / with changes 75,False
+Mellingen|bigrail,day,Bremgarten,Fislisbach (fast),0.6,0.0,direct 43 / with changes 26,False
 Mellingen|bigrail,day,Bremgarten,Mägenwil,2.0,0.0,direct None / with changes 34,False
 Mellingen|bigrail,day,Fislisbach (fast),Mägenwil,1.6,0.0,direct 75 / with changes 34,False
 Mellingen|bigrail,day,Birmenstorf,Bremgarten,1.0,0.0,direct None / with changes 49,False

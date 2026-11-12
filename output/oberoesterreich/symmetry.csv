@@ -1,10 +1,9 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Amstetten|bigrail,day,5,60,1.0,1.0,2,National railways,solid
 Amstetten|bigrail,day,55,60,1.0,1.0,2,National railways,solid
-Eferding|bus,peak,32,60,0.0,0.67,12,Local railways + Regional bus,dotted
+Eferding|bus,peak,32,60,0.0,0.77,12,Local railways + Regional bus,dotted
 Eferding|bus,peak,52,60,0.3,0.7,3,Regional bus,dotted
 Eferding|bus,day,32,60,0.09,1.0,8,Local railways + Regional bus,dotted
-Eferding|bus,day,"15,45",30,0.55,0.78,3,Regional bus,solid
 Enns|bigrail,peak,"14,44",30,0.61,0.69,10,National railways + Regional bus,solid
 Enns|bigrail,day,"16,46",30,0.48,0.78,14,National railways + Regional bus,dotted
 Hörsching|bigrail,peak,"29,59",30,0.78,0.78,3,National railways + Regional bus,solid
@@ -15,13 +14,16 @@ Leonding|bigrail,peak,"20,50",30,0.5,1.0,2,National railways + Regional bus,dott
 Leonding|bigrail,day,"5,35",30,0.16,0.62,7,National railways + Regional bus,dotted
 Neuhofen an der Krems|bigrail,peak,"4,34",30,0.0,1.0,3,National railways + Regional bus,dotted
 Neuhofen an der Krems|bigrail,day,"0,30",30,0.29,0.71,3,National railways + Regional bus,dotted
+Neumarkt im Hausruckkreis|bigrail,peak,"6,36",30,0.0,1.0,2,National railways,dotted
+Neumarkt im Hausruckkreis|bigrail,day,36,60,0.67,0.67,3,National railways,solid
+Neumarkt im Hausruckkreis|bigrail,day,22,60,0.67,0.67,3,National railways,solid
 Pregarten|bigrail,peak,21,60,0.52,0.68,6,National railways + Regional bus,solid
 Pregarten|bigrail,peak,40,60,0.39,0.61,5,National railways + Regional bus,dotted
 Pregarten|bigrail,day,42,60,0.35,0.54,5,National railways + Regional bus,dotted
 Rohr im Kremstal|bigrail,day,"13,43",30,0.0,0.55,3,National railways + Regional bus,dotted
-Sankt Valentin|bigrail,peak,"19,49",30,0.39,1.0,3,National railways,dotted
+Sankt Valentin|bigrail,peak,"19,49",30,0.15,0.61,7,National railways,dotted
 Sankt Valentin|bigrail,peak,"9,39",30,0.33,0.52,4,National railways,dotted
-Sankt Valentin|bigrail,day,"15,45",30,0.18,0.82,4,National railways,dotted
+Sankt Valentin|bigrail,day,"20,50",30,0.22,0.56,8,National railways,dotted
 Sattledt|bigrail,peak,10,60,0.3,0.61,3,National railways + Regional bus,dotted
 Steyr|bigrail,peak,"12,42",30,0.23,0.63,7,National railways + Regional bus,dotted
 Steyr|bigrail,peak,"26,56",30,0.07,0.58,8,Regional bus,dotted
@@ -41,6 +43,7 @@ Grieskirchen|bus,peak,"0,30",30,0.0,0.56,5,Regional bus,dotted
 Grieskirchen|bus,peak,50,60,0.0,0.67,3,Regional bus,dotted
 Haag am Hausruck|bus,peak,40,60,0.0,1.0,2,Regional bus,dotted
 Mauthausen|bus,day,4,60,0.85,1.0,2,Regional bus,solid
+Neumarkt im Mühlkreis|bus,day,0,60,1.0,1.0,2,Regional bus,solid
 Ottensheim|bus,peak,"12,42",30,0.3,1.0,3,Regional bus,dotted
 Peuerbach|bus,peak,40,60,0.19,0.56,5,Regional bus,dotted
 Prambachkirchen|bus,peak,10,60,1.0,1.0,3,Regional bus,solid

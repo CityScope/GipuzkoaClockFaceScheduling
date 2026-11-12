@@ -30,7 +30,7 @@ Biarritz|bus,43.46593854,-1.53840944,Biarritz,Biarritz,bus,Biarritz,Biarritz · 
 Bilbao|bus,43.261033937625214,-2.949901810779977,Bilbao - Bilboko Autobus Geltokia 2,Bilbao,bus,Bilbao,Bilbao · Bus,174.0,48,414.0,True,Bilbao|bus
 Deba|bus,43.29432299463734,-2.3552628948136025,Deba - N-634- Trenbide-pasabidea,Deba,bus,Deba,Deba · Bus,72.0,5,97.0,True,Deba|bus
 Donostia / San Sebastián|bus,43.3166616037071,-1.9776124891800617,Donostia - Donostiako Autobus Geltokia,Donostia / San Sebastián,bus,Donostia,Donostia · Bus,803.0,56,1083.0,True,Donostia / San Sebastián|bus
-Eibar|bus,43.183862274724575,-2.4751506827626835,Eibar - Autobus Geltokia,Eibar,bus,Eibar,Eibar · Bus,167.0,17,252.0,True,Eibar|bus
+Eibar|bus,43.183862274724575,-2.4751506827626835,Eibar - Autobus Geltokia,Eibar,bus,Eibar,Eibar · Bus,174.0,17,259.0,True,Eibar|bus
 Elgoibar|bus,43.215589092978455,-2.4170331888711263,Elgoibar - Txankakoa,Elgoibar,bus,Elgoibar,Elgoibar · Bus,114.0,8,154.0,True,Elgoibar|bus
 Elorrio|bus,43.12785418972485,-2.5396890143126702,GURUTZIAGA (2854),Elorrio,bus,Elorrio,Elorrio · Bus,24.0,3,39.0,True,Elorrio|bus
 Ermua|bus,43.18594160859442,-2.503620040912383,Ermua - Baldespina Markesa 14,Ermua,bus,Ermua · Baldespina Mark…,Ermua · Baldespina Mark… · Bus,142.0,9,187.0,True,Ermua|bus
@@ -52,6 +52,7 @@ Orexa|bus,43.09384114067655,-2.011420806292211,Orexa - Errebote Plaza,Orexa,bus,
 Ormaiztegi|bus,43.043782281829685,-2.2564451518181015,Ormaiztegi - Zumarralde  14,Ormaiztegi,bus,Ormaiztegi,Ormaiztegi · Bus,24.0,4,44.0,True,Ormaiztegi|bus
 Pamplona / Iruña|bus,42.81171251,-1.645344915,PAMPLONA/IRUÑA (Estación bus geltokia),Pamplona / Iruña,bus,Pamplona,Pamplona · Bus,19.0,8,59.0,True,Pamplona / Iruña|bus
 Pasaia|bus,43.31910316965765,-1.918025821113583,Pasaia - Nafarroa Hiribidea 5,Pasaia,bus,Pasaia,Pasaia · Bus,560.0,8,600.0,True,Pasaia|bus
+Soraluze-Placencia de las Armas|bus,43.174494194485,-2.41317645583504,Soraluze - Estaziño Kalea 2,Soraluze-Placencia de las Armas,bus,Soraluze,Soraluze · Bus,70.0,6,100.0,True,Soraluze-Placencia de las Armas|bus
 Tolosa|bus,43.13322735106909,-2.0767536718459865,"Tolosa - Oria Kalea, Zezen Plaza",Tolosa,bus,Tolosa,Tolosa · Bus,101.0,24,221.0,True,Tolosa|bus
 Usurbil|bus,43.271684995957386,-2.0530144189838557,"Usurbil - Zelaiaundi Kalea, Biribilgunea",Usurbil,bus,Usurbil,Usurbil · Bus,52.0,3,67.0,True,Usurbil|bus
 Villabona|bus,43.189930405097115,-2.052845703973096,Villabona - Kale Berria 10,Villabona,bus,Villabona,Villabona · Bus,100.0,11,155.0,True,Villabona|bus

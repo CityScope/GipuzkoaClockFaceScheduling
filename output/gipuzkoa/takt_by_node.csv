@@ -158,6 +158,9 @@ Pamplona / Iruña|bus,night,0,,0,0.0
 Pasaia|bus,peak,134,"7,14,24,34,54",0,0.6940298507462687
 Pasaia|bus,day,301,"7,14,27,34,38,54",0,0.7574750830564784
 Pasaia|bus,night,39,"7,19,29,37,42,59",0,0.717948717948718
+Soraluze-Placencia de las Armas|bus,peak,23,"0,20,32,43",0,0.6956521739130435
+Soraluze-Placencia de las Armas|bus,day,45,"0,7,18,32,43",0,0.8666666666666667
+Soraluze-Placencia de las Armas|bus,night,9,"0,20,28",0,0.6666666666666666
 Tolosa|bus,peak,43,"1,10,39,55",0,0.5813953488372093
 Tolosa|bus,day,81,"10,15,25,30,41,55",0,0.7283950617283951
 Tolosa|bus,night,16,"0,16",0,0.6875

@@ -120,6 +120,7 @@ Linz|bigrail,night,Niederwaldkirchen,Sankt Valentin,5.3,3.7,direct None / with c
 Linz|bigrail,night,Pregarten,Wels,5.3,3.7,direct None / with changes 480,False
 Neuhofen an der Krems|bigrail,day,Rohr im Kremstal,Wels,3.8,3.2,direct None / with changes 300,False
 Neuhofen an der Krems|bigrail,day,Traun,Wels,3.8,3.2,direct None / with changes 300,False
+Neumarkt im Hausruckkreis|bigrail,day,Schlüßlberg,Schärding,1.0,0.0,direct 90 / with changes 60,False
 Neumarkt im Hausruckkreis|bigrail,day,Gurten,Schlüßlberg,4.4,0.0,direct 240 / with changes 75,False
 Neumarkt im Hausruckkreis|bigrail,night,Gurten,Schlüßlberg,5.0,0.0,direct None / with changes 480,False
 Pregarten|bigrail,day,Hagenberg im Mühlkreis,Linz · Donau Hbf,11.9,1.6,direct None / with changes 120,False

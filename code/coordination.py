@@ -197,6 +197,7 @@ SYM_NO_NEED = 0.75            # >= 75 % (weighted) of the relations have a frequ
 GROUP_TOL, GROUP_SEP = 5, 10
 DEP_AFTER_MAX = 6             # a connection leaves at most 6 min after the symmetry minute (it arrives at most 6 / 12 min before it)
 SYM_PULSE_MAX = 120           # a symmetry's pulses (with a timed connection) must run at least every 120 min
+DIRECT_GAIN = 0.75            # with direct trips: headway (timed + direct) + 2 x mean wait <= 0.75 x direct headway
 TIMED_MOST = 0.8              # timed services >= 80 % of the departures reached: coordinated without the timed-vs-any comparison
 BACK_DEG = 45                 # two edges less than 45 degrees apart lead the same way (a change between them goes back)  # coordinated relations within 5 min (mod 30) form one symmetry; symmetries >= 10 min apart
 
@@ -410,18 +411,18 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
         def pays(d, ch):
             """Are the timed changes ch of any use? Timed = direct trips (wait 0) + ch; normal = every departure reached
             (direct trips + all changes). The timed changes must wait less than half the departing headway, at least halve
-            the headway of the direct trips (if any); then either they are >= 80 % of the departures, or the wait they
+            the headway of the direct trips (if any; now: H_t + 2 W_t <= 0.75 H_direct); then either they are >= 80 % of the departures, or the wait they
             save pays for the headway they lose: (H_timed - H_all) / 2 <= wait_all - wait_timed (formula headways)."""
             v = cd_[d]
             if not ch or float(np.mean([c[8] for c in ch])) >= v["hDy"] / 2:
                 return False
             dep = sorted(set(v["ddir"]) | set(v["dirdep"]) | {c[1] for c in ch})
             ht = _hw(dep, wins)
-            if v["dirdep"] and ht > _hw(sorted(v["dirdep"]), wins) / 2:
-                return False
+            wt = sum(c[8] for c in ch) / len(dep)                    # mean wait, direct trips counting 0
+            if v["dirdep"] and ht + 2 * wt > DIRECT_GAIN * _hw(sorted(v["dirdep"]), wins):   # direct trips exist: headway
+                return False                                          # + 2 x wait must be <= 0.75 x the direct headway
             if len(dep) >= TIMED_MOST * v["nall"]:
                 return True
-            wt = sum(c[8] for c in ch) / len(dep)
             return (ht - min(ht, v["hall"])) / 2 <= v["wait"] - wt + 1e-9
 
         def rel_fit(d, hs):

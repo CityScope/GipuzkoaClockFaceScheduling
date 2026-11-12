@@ -4,7 +4,7 @@ Deba|bus,peak,42,60,0.31,0.56,8,Euskotren + Bus,dotted
 Deba|bus,peak,52,60,0.5,1.0,2,Bus,dotted
 Deba|bus,day,39,60,0.0,1.0,3,Euskotren + Bus,dotted
 Donostia / San Sebastián|renfe,peak,"0,30",30,0.5,1.0,4,Renfe + Bus,dotted
-Elgoibar|euskotren,peak,15,60,0.0,1.0,3,Euskotren + Bus,dotted
+Elgoibar|euskotren,peak,15,60,0.0,1.0,2,Euskotren + Bus,dotted
 Elgoibar|euskotren,day,15,60,0.0,1.0,3,Euskotren + Bus,dotted
 Ermua|euskotren,peak,"25,55",30,0.0,1.0,3,Euskotren + Bus,dotted
 Ermua|euskotren,day,"25,55",30,0.33,1.0,3,Euskotren + Bus,dotted
@@ -16,14 +16,15 @@ Zumarraga|bus,peak,"0,30",30,0.0,0.67,3,Renfe + Bus,dotted
 Zumarraga|bus,day,11,60,0.0,0.7,3,Bus,dotted
 Zumarraga|bus,day,0,60,0.0,0.7,3,Bus,dotted
 Arrasate / Mondragón|bus,peak,20,60,0.0,1.0,3,Bus,dotted
+Bergara|bus,peak,8,60,0.13,0.51,7,Bus,dotted
 Bilbao|bus,peak,"0,30",30,0.44,1.0,5,Bus,dotted
 Bilbao|bus,peak,"10,40",30,0.12,0.76,7,Bus,dotted
 Bilbao|bus,day,58,60,0.42,1.0,6,Bus,dotted
 Bilbao|bus,day,"9,39",30,0.2,0.82,6,Bus,dotted
 Donostia / San Sebastián|bus,peak,"20,50",30,0.04,0.55,11,Bus,dotted
 Donostia / San Sebastián|bus,day,44,60,0.0,0.37,9,Bus,dotted
-Elgoibar|bus,peak,15,60,0.0,0.62,5,Euskotren + Bus,dotted
-Elgoibar|bus,day,15,60,0.0,0.73,5,Euskotren + Bus,dotted
+Elgoibar|bus,peak,15,60,0.0,1.0,2,Euskotren + Bus,dotted
+Elgoibar|bus,day,15,60,0.0,0.71,5,Euskotren + Bus,dotted
 Errenteria|bus,peak,"26,56",30,0.5,1.0,2,Euskotren + Bus,dotted
 Errenteria|bus,day,"25,55",30,0.69,1.0,2,Euskotren + Bus,solid
 Lasarte-Oria|bus,peak,12,60,0.74,0.74,4,Bus,solid

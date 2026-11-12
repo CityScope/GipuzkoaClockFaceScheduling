@@ -29,6 +29,7 @@ Bregenz|bigrail,peak,St. Margrethen,Wolfurt,3.2,3.8,direct None / with changes 1
 Bregenz|bigrail,peak,Hard,Lingenau,13.0,0.0,direct None / with changes 101,False
 Bregenz|bigrail,peak,Lingenau,Wolfurt,3.0,0.0,direct None / with changes 120,False
 Bregenz|bigrail,peak,Hard,Scheidegg,15.0,0.0,direct None / with changes 120,False
+Bregenz|bigrail,day,Dornbirn,Lochau,0.7,0.0,direct 48 / with changes 34,False
 Bregenz|bigrail,day,Lochau,Wolfurt,2.9,0.0,direct 105 / with changes 38,False
 Bregenz|bigrail,day,Hard,Lochau,9.5,0.0,direct None / with changes 60,False
 Bregenz|bigrail,day,Hard,Wolfurt,4.0,0.0,direct None / with changes 60,False

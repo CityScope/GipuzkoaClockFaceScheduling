@@ -44,6 +44,7 @@ Baden|bigrail,peak,Gebenstorf,Killwangen,11.5,1.5,direct None / with changes 31,
 Baden|bigrail,peak,Birmenstorf,Dietikon,9.5,1.5,direct None / with changes 60,False
 Baden|bigrail,peak,Brugg,Niederweningen,3.5,1.5,direct None / with changes 60,False
 Baden|bigrail,peak,Niederweningen,Würenlingen,3.8,1.5,direct None / with changes 60,False
+Baden|bigrail,peak,Killwangen,Untersiggenthal (slow),1.3,0.0,direct 30 / with changes 19,False
 Baden|bigrail,peak,Birmenstorf,Endingen,8.0,0.0,direct None / with changes 30,False
 Baden|bigrail,peak,Birmenstorf,Fislisbach,7.0,0.0,direct None / with changes 30,False
 Baden|bigrail,peak,Birmenstorf,Untersiggenthal (slow),7.0,0.0,direct None / with changes 30,False
@@ -78,11 +79,11 @@ Baden|bigrail,night,Niederweningen,Würenlingen,0.5,1.5,direct None / with chang
 Baden|bigrail,night,Niederweningen,Zürich,14.5,1.5,direct None / with changes 480,False
 Baden|bigrail,night,Dietikon,Gebenstorf,11.5,1.5,direct None / with changes 375,False
 Baden|bigrail,night,Dietikon,Untersiggenthal (slow),11.5,1.5,direct None / with changes 375,False
+Baden|bigrail,night,Birmenstorf,Fislisbach,6.2,0.0,direct 480 / with changes 276,False
 Baden|bigrail,night,Birmenstorf,Untersiggenthal (slow),7.0,0.0,direct None / with changes 322,False
 Baden|bigrail,night,Birmenstorf,Endingen,8.0,0.0,direct None / with changes 322,False
 Baden|bigrail,night,Endingen,Fislisbach,10.4,0.0,direct None / with changes 278,False
 Baden|bigrail,night,Endingen,Gebenstorf,9.4,0.0,direct None / with changes 278,False
-Baden|bigrail,night,Endingen,Niederweningen,7.3,0.0,direct None / with changes 305,False
 Beinwil am See|bigrail,peak,Hochdorf,Menziken,7.3,0.7,direct None / with changes 45,False
 Beinwil am See|bigrail,day,Hochdorf,Menziken,8.1,0.7,direct None / with changes 34,False
 Beinwil am See|bigrail,night,Hochdorf,Menziken,11.3,0.7,direct None / with changes 375,False
@@ -289,6 +290,7 @@ Mellingen|bigrail,peak,Dietikon,Mägenwil,5.6,0.4,direct None / with changes 120
 Mellingen|bigrail,peak,Fislisbach (slow),Othmarsingen,4.6,0.4,direct None / with changes 60,False
 Mellingen|bigrail,peak,Othmarsingen,Stetten,3.6,0.4,direct None / with changes 60,False
 Mellingen|bigrail,peak,Bremgarten,Mägenwil,2.0,0.0,direct None / with changes 90,False
+Mellingen|bigrail,peak,Fislisbach (fast),Mägenwil,1.5,0.0,direct 120 / with changes 82,False
 Mellingen|bigrail,peak,Birmenstorf,Bremgarten,1.0,0.0,direct None / with changes 60,False
 Mellingen|bigrail,peak,Birmenstorf,Fislisbach (fast),1.0,0.0,direct None / with changes 60,False
 Mellingen|bigrail,peak,Birmenstorf,Fislisbach (slow),7.0,0.0,direct None / with changes 60,False
@@ -309,6 +311,7 @@ Mellingen|bigrail,day,Fislisbach (slow),Othmarsingen,4.6,0.4,direct None / with 
 Mellingen|bigrail,day,Othmarsingen,Stetten,3.6,0.4,direct None / with changes 60,False
 Mellingen|bigrail,day,Dietikon,Fislisbach (fast),5.6,0.4,direct None / with changes 75,False
 Mellingen|bigrail,day,Dietikon,Mägenwil,5.6,0.4,direct None / with changes 75,False
+Mellingen|bigrail,day,Fislisbach (fast),Mägenwil,1.1,0.0,direct 75 / with changes 52,False
 Mellingen|bigrail,day,Birmenstorf,Bremgarten,1.0,0.0,direct None / with changes 60,False
 Mellingen|bigrail,day,Birmenstorf,Fislisbach (fast),1.0,0.0,direct None / with changes 60,False
 Mellingen|bigrail,day,Birmenstorf,Fislisbach (slow),7.0,0.0,direct None / with changes 60,False
@@ -324,6 +327,7 @@ Mellingen|bigrail,night,Birmenstorf,Killwangen,4.6,0.4,direct None / with change
 Mellingen|bigrail,night,Bremgarten,Killwangen,5.6,0.4,direct None / with changes 375,False
 Mellingen|bigrail,night,Dietikon,Mägenwil,5.6,0.4,direct None / with changes 375,False
 Mellingen|bigrail,night,Othmarsingen,Stetten,3.6,0.4,direct None / with changes 375,False
+Mellingen|bigrail,night,Fislisbach (fast),Mägenwil,1.8,0.0,direct 375 / with changes 278,False
 Mellingen|bigrail,night,Birmenstorf,Bremgarten,1.0,0.0,direct None / with changes 285,False
 Mellingen|bigrail,night,Birmenstorf,Fislisbach (fast),1.0,0.0,direct None / with changes 375,False
 Mellingen|bigrail,night,Birmenstorf,Mägenwil,1.0,0.0,direct None / with changes 285,False

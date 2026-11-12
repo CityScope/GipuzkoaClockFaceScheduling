@@ -39,7 +39,7 @@ Laufenburg|bigrail,day,30,60,1.0,1.0,5,National railways + Regional bus,solid
 Lenzburg|bigrail,peak,"29,59",30,0.58,0.63,25,National railways + Regional bus,solid
 Lenzburg|bigrail,day,"29,59",30,0.58,0.62,25,National railways + Regional bus,solid
 Mellingen|bigrail,peak,29,60,0.38,0.62,23,National railways + Regional bus,dotted
-Mellingen|bigrail,day,"29,59",30,0.65,0.8,28,National railways + Regional bus,solid
+Mellingen|bigrail,day,"29,59",30,0.71,0.85,28,National railways + Regional bus,solid
 Menziken|bus,peak,"6,36",30,0.0,1.0,2,Local railways + Regional bus,dotted
 Menziken|bus,day,"6,36",30,0.0,1.0,2,Local railways + Regional bus,dotted
 Muri|bigrail,peak,"6,36",30,0.58,0.58,6,National railways + Regional bus,solid

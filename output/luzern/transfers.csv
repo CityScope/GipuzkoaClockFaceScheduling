@@ -24,6 +24,7 @@ Hochdorf|bigrail,day,Beromünster,Rain,8.4,0.0,direct None / with changes 120,Fa
 Lenzburg|bigrail,peak,Olten,Risch-Rotkreuz,4.2,0.0,direct 120 / with changes 45,False
 Lenzburg|bigrail,day,Olten,Risch-Rotkreuz,3.6,0.0,direct 75 / with changes 34,False
 Lenzburg|bigrail,day,Risch-Rotkreuz,Zofingen,9.2,0.0,direct None / with changes 34,False
+Lenzburg|bigrail,night,Olten,Risch-Rotkreuz,4.2,0.0,direct 375 / with changes 244,False
 Lenzburg|bigrail,night,Hochdorf,Olten,11.0,0.0,direct None / with changes 375,False
 Luzern|bigrail,peak,Arth,Sursee,8.3,0.0,direct None / with changes 45,False
 Luzern|bigrail,peak,Hochdorf,Risch-Rotkreuz,3.5,0.0,direct None / with changes 60,False
@@ -219,6 +220,7 @@ Sursee|bigrail,night,Ruswil,Schlierbach,13.0,0.0,direct None / with changes 480,
 Willisau|bigrail,day,Nebikon,Wolhusen,7.5,1.1,direct None / with changes 45,False
 Willisau|bigrail,day,Nebikon,Zell (LU),5.4,1.1,direct None / with changes 41,False
 Willisau|bigrail,night,Nebikon,Zell (LU),4.9,1.1,direct None / with changes 375,False
+Wolhusen|bigrail,peak,Malters,Willisau,1.2,0.0,direct 49 / with changes 26,False
 Wolhusen|bigrail,peak,Schüpfheim,Willisau,2.0,0.0,direct None / with changes 30,False
 Wolhusen|bigrail,peak,Malters,Ruswil,4.6,0.9,direct None / with changes 30,False
 Wolhusen|bigrail,peak,Ruswil,Schüpfheim,4.6,0.9,direct None / with changes 30,False
@@ -227,6 +229,7 @@ Wolhusen|bigrail,peak,Malters,Romoos,4.6,0.9,direct None / with changes 60,False
 Wolhusen|bigrail,peak,Romoos,Willisau,5.1,0.9,direct None / with changes 60,False
 Wolhusen|bigrail,peak,Entlebuch,Malters,6.1,0.9,direct None / with changes 90,False
 Wolhusen|bigrail,peak,Romoos,Ruswil,7.0,0.0,direct None / with changes 60,False
+Wolhusen|bigrail,day,Malters,Willisau,1.4,0.0,direct 57 / with changes 29,False
 Wolhusen|bigrail,day,Schüpfheim,Willisau,2.0,0.0,direct None / with changes 30,False
 Wolhusen|bigrail,day,Malters,Ruswil,4.6,0.9,direct None / with changes 30,False
 Wolhusen|bigrail,day,Ruswil,Schüpfheim,4.6,0.9,direct None / with changes 30,False
@@ -246,9 +249,11 @@ Zell (LU)|bigrail,peak,Roggwil (BE),Willisau,5.7,0.3,direct None / with changes 
 Zell (LU)|bigrail,peak,Luthern,Willisau,2.7,0.3,direct None / with changes 60,False
 Zell (LU)|bigrail,day,Roggwil (BE),Willisau,5.7,0.3,direct None / with changes 60,False
 Zofingen|bigrail,peak,Lenzburg,Olten,3.0,0.0,direct None / with changes 31,False
+Zofingen|bigrail,peak,Olten,Sursee,4.0,0.0,direct 60 / with changes 30,False
 Zofingen|bigrail,peak,Dagmersellen,Schöftland,6.3,3.7,direct None / with changes 60,False
 Zofingen|bigrail,peak,Olten,Schöftland,6.3,3.7,direct None / with changes 60,False
 Zofingen|bigrail,day,Lenzburg,Olten,3.0,0.0,direct None / with changes 31,False
+Zofingen|bigrail,day,Olten,Sursee,4.0,0.0,direct 60 / with changes 30,False
 Zofingen|bigrail,day,Dagmersellen,Schöftland,6.5,3.7,direct None / with changes 60,False
 Zofingen|bigrail,day,Olten,Schöftland,6.5,3.7,direct None / with changes 60,False
 Zofingen|bigrail,night,Lenzburg,Olten,3.4,0.0,direct None / with changes 278,False
@@ -362,6 +367,7 @@ Rain|bus,night,Beromünster,Neuenkirch,12.0,0.0,direct None / with changes 480,F
 Rain|bus,night,Hochdorf,Luzern,14.0,0.0,direct None / with changes 480,False
 Reiden|bus,peak,Roggwil (BE),Zofingen,4.0,0.0,direct 60 / with changes 30,False
 Reiden|bus,day,Roggwil (BE),Zofingen,5.6,0.0,direct 195 / with changes 56,False
+Rickenbach|bus,day,Beromünster,Sursee,2.1,0.0,direct 60 / with changes 39,False
 Roggwil (BE)|bus,peak,Reiden,Zell (LU),8.5,0.0,direct None / with changes 60,False
 Ruswil|bus,peak,Ettiswil,Wolhusen,11.0,0.0,direct None / with changes 45,False
 Ruswil|bus,peak,Luzern,Wolhusen,3.0,0.0,direct None / with changes 45,False
