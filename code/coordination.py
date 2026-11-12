@@ -196,6 +196,7 @@ COORD_WAIT_BUS = 12           # ... or <= 12 min when arriving by bus (bus -> bu
 SYM_NO_NEED = 0.75            # >= 75 % (weighted) of the relations have a frequent edge: no symmetry needed
 GROUP_TOL, GROUP_SEP = 5, 10
 DEP_AFTER_MAX = 6             # a connection leaves at most 6 min after the symmetry minute (it arrives at most 6 / 12 min before it)
+SYM_PULSE_MAX = 120           # a symmetry's pulses (with a timed connection) must run at least every 120 min
 TIMED_MOST = 0.8              # timed services >= 80 % of the departures reached: coordinated without the timed-vs-any comparison
 BACK_DEG = 45                 # two edges less than 45 degrees apart lead the same way (a change between them goes back)  # coordinated relations within 5 min (mod 30) form one symmetry; symmetries >= 10 min apart
 
@@ -531,9 +532,6 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             if not dnf or len(dirs) < 2 or len(nbs) < 3 or (one <= SYM_ONE_MIN and not regular):
                 continue                                       # >= 3 edges; more than half one way, or a regular (<= 60 min) group
             modes = sorted({e.split("¦")[1] for e in GE}, key=lambda s_: rank[s_])
-            idx = len(sym)
-            for d in dirs:
-                gof[d] = idx
             # how often the pulse really runs: headway of the pulses (hand times) with at least one timed connection
             P_ = 30 if len(set(hands)) > 1 else 60
             Ts = set()
@@ -543,6 +541,11 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                     if hh:
                         a_ = int(round(c[0])); Ts.add(a_ + min((h - a_) % 60 for h in hh))
             ph = max(P_, round(_hw(sorted(Ts), wins))) if Ts else P_
+            if ph > SYM_PULSE_MAX:                             # timed connections rarer than every 2 h: not a symmetry
+                continue
+            idx = len(sym)
+            for d in dirs:
+                gof[d] = idx
             sym.append(dict(h=sorted(set(hands)), p=P_, ph=ph if ph < 999 else None, st="solid" if both > 0.5 else "dotted",
                             lv=" + ".join(SYS_NAME[m] for m in modes), both=round(both, 2), one=round(one, 2), n=len(pairs),
                             w=round(wsum / tot, 2)))
@@ -630,7 +633,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
     stl = [[k_, str(node.label.get(k_, k_)), sysof[k_], round(float(node.lat[k_]), 5), round(float(node.lon[k_]), 5)] for k_ in mem_l]
     wkl = [[i, j, round(wk[(mem_l[i], mem_l[j])])] for i in range(len(mem_l)) for j in range(i + 1, len(mem_l)) if (mem_l[i], mem_l[j]) in wk]
     circ = lambda ts: _circ([t % 60 for t in ts], 60)
-    def timing(ts, hands, before):
+    def timing(ts, hands, before, floor=None):
         """Most common minutes past the hour (up to 2: e.g. 57 and 27 for a 30-min line) and the headway."""
         if not ts:
             return None
@@ -650,7 +653,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
         first_ = {}
         for t_ in sorted(ts):                         # real time of the first service of each pulse (band edges stay right)
             first_.setdefault(round((t_ - h0) / per_), t_)
-        return [sorted(top), None, rh(max(per_, _hw(sorted(first_.values()), wins)))]
+        return [sorted(top), None, rh(max(per_, floor or 0, _hw(sorted(first_.values()), wins)))]   # never better than the symmetry's pulses
     sym_dirs = defaultdict(list)
     for d, gi in gof.items():
         sym_dirs[gi].append(d)
@@ -684,7 +687,8 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             outs = {c[7]: (c[1], short_(c[5])) for d in dirs_ if d[1] in ks for c in st_[d]["C"]}
             if not ins and not outs:
                 continue
-            ti = timing([v[0] for v in ins.values()], hands, True); to = timing([v[0] for v in outs.values()], hands, False)
+            fl_ = sym[gi].get("ph") if gi < len(sym) else None
+            ti = timing([v[0] for v in ins.values()], hands, True, fl_); to = timing([v[0] for v in outs.values()], hands, False, fl_)
             wks = [c[3] or 0 for d in dirs_ if d[0] in ks or d[1] in ks for c in st_[d]["C"]]   # walk of its timed changes (median: most of them)
             rec["g"][gi] = [ti, to, sorted({v[1] for v in ins.values()} | {v[1] for v in outs.values()}),
                             round(float(np.median(wks))) if wks else 0]

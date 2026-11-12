@@ -1,10 +1,6 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Dagmersellen|bigrail,peak,"2,32",30,0.0,0.83,3,National railways + Regional bus,dotted
 Dagmersellen|bigrail,day,"2,32",30,0.0,0.83,3,National railways + Regional bus,dotted
-Dagmersellen|bigrail,night,"3,33",30,0.39,0.7,3,National railways + Regional bus,dotted
-Ebikon|bigrail,night,"13,43",30,0.0,0.63,3,Regional bus,dotted
-Hergiswil (NW)|localrail,night,"20,50",30,1.0,1.0,2,Local railways,solid
-Hergiswil (NW)|localrail,night,"9,39",30,1.0,1.0,2,Local railways,solid
 Hochdorf|bigrail,peak,"26,56",30,0.25,0.75,4,National railways + Regional bus,dotted
 Hochdorf|bigrail,day,"27,57",30,0.32,0.74,7,National railways + Regional bus,dotted
 Luzern|bigrail,peak,"26,56",30,0.26,0.45,79,National railways + Local railways + Regional bus,dotted
@@ -21,7 +17,6 @@ Risch-Rotkreuz|bigrail,peak,"13,43",30,0.46,0.62,8,National railways + Regional 
 Risch-Rotkreuz|bigrail,peak,"23,53",30,0.37,0.62,5,National railways + Regional bus,dotted
 Risch-Rotkreuz|bigrail,day,"13,43",30,0.45,0.62,8,National railways + Regional bus,dotted
 Risch-Rotkreuz|bigrail,day,"23,53",30,0.37,0.61,5,National railways + Regional bus,dotted
-Risch-Rotkreuz|bigrail,night,15,60,0.0,1.0,2,National railways + Regional bus,dotted
 Root|bigrail,peak,"0,30",30,0.33,1.0,2,National railways + Regional bus,dotted
 Root|bigrail,day,"1,31",30,1.0,1.0,2,National railways + Regional bus,solid
 Schüpfheim|bigrail,peak,28,60,1.0,1.0,4,National railways + Regional bus,solid
@@ -30,20 +25,16 @@ Sursee|bigrail,peak,"14,44",30,0.68,0.91,12,National railways + Regional bus,sol
 Sursee|bigrail,peak,30,60,0.0,0.68,3,National railways + Regional bus,dotted
 Sursee|bigrail,day,"14,44",30,0.68,0.91,12,National railways + Regional bus,solid
 Sursee|bigrail,day,30,60,0.0,0.68,3,National railways + Regional bus,dotted
-Sursee|bigrail,night,21,60,0.23,0.62,17,National railways + Regional bus,dotted
-Sursee|bigrail,night,"11,41",30,0.48,0.67,6,National railways + Regional bus,dotted
 Willisau|bigrail,peak,"28,58",30,0.6,1.0,2,National railways + Regional bus,solid
 Willisau|bigrail,day,"28,58",30,1.0,1.0,2,National railways + Regional bus,solid
 Wolhusen|bigrail,peak,"14,44",30,0.93,1.0,8,National railways + Regional bus,solid
 Wolhusen|bigrail,day,"14,44",30,0.9,0.9,8,National railways + Regional bus,solid
-Wolhusen|bigrail,night,"14,44",30,0.32,0.86,8,National railways + Regional bus,dotted
 Zell (LU)|bigrail,peak,8,60,0.4,0.6,5,National railways + Regional bus,dotted
 Zell (LU)|bigrail,peak,50,60,0.67,0.67,3,National railways + Regional bus,solid
 Zell (LU)|bigrail,day,8,60,0.4,0.6,5,National railways + Regional bus,dotted
 Zell (LU)|bigrail,day,50,60,0.67,0.67,3,National railways + Regional bus,solid
 Zofingen|bigrail,peak,45,60,1.0,1.0,2,National railways + Regional bus,solid
 Zofingen|bigrail,day,45,60,1.0,1.0,2,National railways + Regional bus,solid
-Zofingen|bigrail,night,45,60,0.0,1.0,2,National railways + Regional bus,dotted
 Zug|bigrail,day,"0,30",30,0.3,1.0,2,National railways,dotted
 Beromünster|bus,day,56,60,1.0,1.0,3,Regional bus,solid
 Ettiswil|bus,peak,"28,58",30,1.0,1.0,2,Regional bus,solid
@@ -54,8 +45,6 @@ Küssnacht (SZ)|bus,day,"3,33",30,0.75,1.0,3,Regional bus,solid
 Küssnacht (SZ)|bus,day,22,60,0.75,0.75,3,Regional bus,solid
 Luzern|bus,peak,"29,59",30,0.3,0.76,50,National railways + Local railways + Regional bus,dotted
 Luzern|bus,day,"0,30",30,0.34,0.85,45,National railways + Local railways + Regional bus,dotted
-Luzern|bus,night,"1,31",30,0.27,0.53,44,National railways + Local railways + Regional bus,dotted
-Luzern|bus,night,"21,51",30,0.45,0.75,6,National railways + Regional bus,dotted
 Rain|bus,peak,"20,50",30,1.0,1.0,2,Regional bus,solid
 Rain|bus,peak,"10,40",30,1.0,1.0,2,Regional bus,solid
 Rain|bus,day,"20,50",30,1.0,1.0,2,Regional bus,solid
@@ -67,6 +56,5 @@ Udligenswil|bus,peak,"17,47",30,1.0,1.0,2,Regional bus,solid
 Udligenswil|bus,day,"7,37",30,0.25,1.0,4,Regional bus,dotted
 Zofingen|bus,peak,45,60,1.0,1.0,2,National railways + Regional bus,solid
 Zofingen|bus,day,45,60,1.0,1.0,2,National railways + Regional bus,solid
-Zofingen|bus,night,45,60,0.0,1.0,2,National railways + Regional bus,dotted
 Root|bus|1,peak,"26,56",30,0.25,1.0,3,National railways + Regional bus,dotted
 Root|bus|1,day,"1,31",30,0.75,0.75,3,National railways + Regional bus,solid

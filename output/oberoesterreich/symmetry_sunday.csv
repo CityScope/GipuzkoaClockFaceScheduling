@@ -3,14 +3,10 @@ Amstetten|bigrail,peak,5,60,0.0,1.0,2,National railways,dotted
 Eferding|bus,peak,32,60,0.24,0.76,8,Local railways + Regional bus,dotted
 Eferding|bus,day,32,60,0.25,0.76,8,Local railways + Regional bus,dotted
 Linz|bigrail,peak,50,60,0.2,0.51,26,National railways + Local railways + Regional bus,dotted
-Linz|bigrail,night,44,60,0.0,0.59,8,National railways + Local railways + Regional bus,dotted
 Steyr|bigrail,peak,"21,51",30,0.0,0.67,6,National railways + Regional bus,dotted
 Steyr|bigrail,peak,10,60,0.0,0.67,3,National railways + Regional bus,dotted
 Steyr|bigrail,day,51,60,0.0,1.0,3,National railways + Regional bus,dotted
 Wels|bigrail,peak,30,60,0.0,0.67,3,National railways + Regional bus,dotted
 Wels|bigrail,day,50,60,0.42,0.73,5,National railways,dotted
-Wels|bigrail,night,50,60,0.54,0.54,3,National railways,solid
 Bad Hall|bus,peak,"15,45",30,1.0,1.0,2,Regional bus,solid
-Bad Hall|bus,day,45,60,0.5,1.0,2,Regional bus,dotted
 Ottensheim|bus,peak,36,60,0.5,1.0,2,Regional bus,dotted
-Ottensheim|bus,day,20,60,0.0,1.0,2,Regional bus,dotted

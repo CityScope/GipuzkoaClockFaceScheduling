@@ -9,9 +9,7 @@ Lambach|bigrail,day,23,60,0.74,0.74,4,National railways + Local railways + Regio
 Lambach|bigrail,day,38,60,0.74,0.74,4,National railways + Local railways + Regional bus,solid
 Leonding|bigrail,day,35,60,0.9,0.9,3,Regional bus,solid
 Linz|bigrail,peak,"4,34",30,0.22,0.35,152,National railways + Local railways + Regional bus,dotted
-Neuhofen an der Krems|bigrail,day,0,60,1.0,1.0,2,National railways + Regional bus,solid
 Rohr im Kremstal|bigrail,peak,25,60,0.0,1.0,2,National railways + Regional bus,dotted
-Sattledt|bigrail,day,10,60,0.0,1.0,2,National railways + Regional bus,dotted
 Steyr|bigrail,peak,56,60,0.45,0.91,8,Regional bus,dotted
 Steyr|bigrail,day,55,60,0.92,1.0,4,Regional bus,solid
 Traun|bigrail,peak,17,60,0.0,1.0,2,National railways + Regional bus,dotted

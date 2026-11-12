@@ -5,43 +5,32 @@ Eferding|bus,peak,32,60,0.0,0.67,12,Local railways + Regional bus,dotted
 Eferding|bus,peak,52,60,0.3,0.7,3,Regional bus,dotted
 Eferding|bus,day,32,60,0.09,1.0,8,Local railways + Regional bus,dotted
 Eferding|bus,day,"15,45",30,0.55,0.78,3,Regional bus,solid
-Eferding|bus,night,"28,58",30,0.31,1.0,3,Local railways + Regional bus,dotted
 Enns|bigrail,peak,"14,44",30,0.61,0.69,10,National railways + Regional bus,solid
 Enns|bigrail,day,"16,46",30,0.48,0.78,14,National railways + Regional bus,dotted
-Enns|bigrail,night,30,60,1.0,1.0,2,National railways + Regional bus,solid
 Hörsching|bigrail,peak,"29,59",30,0.78,0.78,3,National railways + Regional bus,solid
 Lambach|bigrail,peak,37,60,0.28,0.72,3,National railways + Local railways + Regional bus,dotted
 Lambach|bigrail,day,37,60,0.34,0.52,6,National railways + Local railways + Regional bus,dotted
-Lambach|bigrail,night,34,60,0.0,1.0,4,National railways + Regional bus,dotted
 Leonding|bigrail,peak,"10,40",30,0.27,0.73,3,National railways + Regional bus,dotted
 Leonding|bigrail,peak,"20,50",30,0.5,1.0,2,National railways + Regional bus,dotted
 Leonding|bigrail,day,"5,35",30,0.16,0.62,7,National railways + Regional bus,dotted
-Leonding|bigrail,night,49,60,0.35,1.0,2,National railways + Regional bus,dotted
 Neuhofen an der Krems|bigrail,peak,"4,34",30,0.0,1.0,3,National railways + Regional bus,dotted
 Neuhofen an der Krems|bigrail,day,"0,30",30,0.29,0.71,3,National railways + Regional bus,dotted
-Neuhofen an der Krems|bigrail,night,30,60,1.0,1.0,2,National railways + Regional bus,solid
-Neumarkt im Hausruckkreis|bigrail,night,"7,37",30,0.66,1.0,2,National railways,solid
 Pregarten|bigrail,peak,21,60,0.52,0.68,6,National railways + Regional bus,solid
 Pregarten|bigrail,peak,40,60,0.39,0.61,5,National railways + Regional bus,dotted
 Pregarten|bigrail,day,42,60,0.35,0.54,5,National railways + Regional bus,dotted
 Rohr im Kremstal|bigrail,day,"13,43",30,0.0,0.55,3,National railways + Regional bus,dotted
-Rohr im Kremstal|bigrail,night,23,60,1.0,1.0,2,National railways + Regional bus,solid
 Sankt Valentin|bigrail,peak,"19,49",30,0.39,1.0,3,National railways,dotted
 Sankt Valentin|bigrail,peak,"9,39",30,0.33,0.52,4,National railways,dotted
 Sankt Valentin|bigrail,day,"15,45",30,0.18,0.82,4,National railways,dotted
-Sankt Valentin|bigrail,night,4,60,0.27,0.54,3,National railways,dotted
 Sattledt|bigrail,peak,10,60,0.3,0.61,3,National railways + Regional bus,dotted
-Sattledt|bigrail,night,43,60,0.33,0.67,3,National railways + Regional bus,dotted
 Schlüßlberg|bigrail,day,20,60,0.0,1.0,2,National railways + Regional bus,dotted
 Schlüßlberg|bigrail,day,31,60,0.0,1.0,2,National railways + Regional bus,dotted
 Steyr|bigrail,peak,"12,42",30,0.23,0.63,7,National railways + Regional bus,dotted
 Steyr|bigrail,peak,"26,56",30,0.07,0.58,8,Regional bus,dotted
 Steyr|bigrail,day,"26,56",30,0.0,0.63,5,Regional bus,dotted
-Steyr|bigrail,night,50,60,0.33,0.66,3,Regional bus,dotted
 Traun|bigrail,peak,"12,42",30,0.0,0.75,3,National railways + Regional bus,dotted
 Traun|bigrail,peak,"23,53",30,0.0,1.0,2,National railways + Regional bus,dotted
 Traun|bigrail,day,"23,53",30,0.0,1.0,2,National railways + Regional bus,dotted
-Traun|bigrail,night,"12,42",30,0.0,0.76,3,National railways + Regional bus,dotted
 Waizenkirchen|bus,day,"0,30",30,0.67,0.83,3,Local railways + Regional bus,solid
 Wels|bigrail,day,30,60,0.06,0.81,13,National railways + Regional bus,dotted
 Weyer|bigrail,peak,"5,35",30,0.43,1.0,2,National railways + Regional bus,dotted
@@ -49,22 +38,17 @@ Wilhering|bus,day,31,60,0.41,0.61,4,Local railways + Regional bus,dotted
 Aschach an der Donau|bus,peak,23,60,0.67,0.67,3,Regional bus,solid
 Bad Hall|bus,peak,20,60,0.43,0.72,3,Regional bus,dotted
 Bad Hall|bus,day,41,60,0.27,0.73,3,Regional bus,dotted
-Freistadt|bus,night,18,60,0.5,1.0,2,Regional bus,dotted
 Gaspoltshofen|bus,peak,5,60,0.35,0.58,9,Regional bus,dotted
 Grieskirchen|bus,peak,"0,30",30,0.0,0.56,5,Regional bus,dotted
 Grieskirchen|bus,peak,50,60,0.0,0.67,3,Regional bus,dotted
-Grieskirchen|bus,night,50,60,0.2,0.6,5,Regional bus,dotted
 Haag am Hausruck|bus,peak,40,60,0.0,1.0,2,Regional bus,dotted
-Hofkirchen im Traunkreis|bus,day,19,60,0.51,0.51,4,Regional bus,solid
 Mauthausen|bus,day,4,60,0.85,1.0,2,Regional bus,solid
 Ottensheim|bus,peak,"12,42",30,0.3,1.0,3,Regional bus,dotted
 Peuerbach|bus,peak,40,60,0.19,0.56,5,Regional bus,dotted
-Pichl bei Wels|bus,day,"29,59",30,0.0,0.67,3,Regional bus,dotted
 Prambachkirchen|bus,peak,10,60,1.0,1.0,3,Regional bus,solid
 Schlüßlberg|bus,day,20,60,0.0,1.0,2,National railways + Regional bus,dotted
 Sierning|bus,peak,24,60,0.5,1.0,2,Regional bus,dotted
 St. Marienkirchen an der Polsenz|bus,peak,"20,50",30,0.0,0.7,3,Regional bus,dotted
 Steinerkirchen an der Traun|bus,day,56,60,0.39,1.0,2,Regional bus,dotted
 Vorchdorf|bus,peak,31,60,0.4,0.7,3,Regional bus,dotted
-Wolfern|bus,night,30,60,0.5,1.0,2,Regional bus,dotted
 Ottensheim|bus|1,day,"3,33",30,0.0,1.0,2,Regional bus,dotted
