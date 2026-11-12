@@ -92,6 +92,7 @@ Endingen|bus,peak,23,60,0.75,0.75,4,Regional bus,solid
 Endingen|bus,peak,33,60,1.0,1.0,2,Regional bus,solid
 Endingen|bus,day,23,60,0.75,0.75,4,Regional bus,solid
 Endingen|bus,day,33,60,1.0,1.0,2,Regional bus,solid
+Fislisbach|bus,night,16,60,0.27,0.73,3,Regional bus,dotted
 Gebenstorf|bus,peak,"15,45",30,1.0,1.0,2,Regional bus,solid
 Gebenstorf|bus,day,"15,45",30,1.0,1.0,2,Regional bus,solid
 Gebenstorf|bus,night,12,60,0.5,1.0,2,Regional bus,dotted

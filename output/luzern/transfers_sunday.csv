@@ -8,7 +8,7 @@ Dagmersellen|bigrail,night,Sursee,Zofingen,7.5,1.5,direct None / with changes 48
 Ebikon|bigrail,peak,Luzern,Root,5.0,1.3,direct None / with changes 45,False
 Ebikon|bigrail,peak,Luzern (slow),Root,6.0,0.0,direct None / with changes 45,False
 Ebikon|bigrail,day,Luzern,Root,5.2,1.3,direct None / with changes 34,False
-Ebikon|bigrail,day,Luzern (slow),Root,6.4,0.0,direct None / with changes 34,False
+Ebikon|bigrail,day,Luzern (slow),Root,5.2,0.0,direct None / with changes 34,False
 Ebikon|bigrail,night,Luzern (slow),Root,11.2,1.3,direct None / with changes 166,False
 Ebikon|bigrail,night,Adligenswil,Root,16.3,1.3,direct None / with changes 278,False
 Ebikon|bigrail,night,Adligenswil,Luzern (slow),6.2,0.0,direct None / with changes 238,False
@@ -103,13 +103,13 @@ Neuenkirch|bigrail,peak,Eich,Rothenburg,2.0,1.0,direct None / with changes 60,Fa
 Neuenkirch|bigrail,peak,Luzern,Sursee,6.0,1.0,direct None / with changes 60,False
 Neuenkirch|bigrail,peak,Rain,Rothenburg,2.0,1.0,direct None / with changes 60,False
 Neuenkirch|bigrail,peak,Rain,Sursee,6.0,1.0,direct None / with changes 120,False
-Neuenkirch|bigrail,peak,Eich,Luzern,15.0,0.0,direct None / with changes 60,False
+Neuenkirch|bigrail,peak,Eich,Luzern,2.0,0.0,direct None / with changes 60,False
 Neuenkirch|bigrail,day,Eich,Rothenburg,2.0,1.0,direct None / with changes 60,False
 Neuenkirch|bigrail,day,Luzern,Sursee,6.0,1.0,direct None / with changes 60,False
 Neuenkirch|bigrail,day,Rain,Rothenburg,2.0,1.0,direct None / with changes 60,False
 Neuenkirch|bigrail,day,Rain,Sursee,6.0,1.0,direct None / with changes 75,False
-Neuenkirch|bigrail,day,Eich,Luzern,15.0,0.0,direct None / with changes 60,False
-Neuenkirch|bigrail,night,Eich,Rothenburg,15.0,1.0,direct None / with changes 285,False
+Neuenkirch|bigrail,day,Eich,Luzern,2.0,0.0,direct None / with changes 60,False
+Neuenkirch|bigrail,night,Eich,Rothenburg,6.3,1.0,direct None / with changes 285,False
 Neuenkirch|bigrail,night,Eich,Rothenburg,1.0,0.0,direct None / with changes 285,False
 Olten|bigrail,peak,Lenzburg,Luzern,9.0,0.0,direct None / with changes 60,False
 Olten|bigrail,day,Lenzburg,Luzern,9.0,0.0,direct None / with changes 60,False
@@ -302,7 +302,7 @@ Luzern|bus,night,Horw,Rain,0.2,3.8,direct None / with changes 278,False
 Luzern|bus,night,Ebikon (slow),Stansstad,0.2,3.8,direct None / with changes 480,False
 Luzern|bus,night,Horw,Ruswil,11.2,3.8,direct None / with changes 375,False
 Luzern|bus,night,Adligenswil,Hergiswil (NW),12.2,3.8,direct None / with changes 480,False
-Luzern|bus,night,Ebikon (slow),Hergiswil (NW),16.2,3.8,direct None / with changes 480,False
+Luzern|bus,night,Ebikon (slow),Hergiswil (NW),1.2,3.8,direct None / with changes 480,False
 Rain|bus,peak,Beromünster,Hochdorf,11.0,0.0,direct None / with changes 60,False
 Rain|bus,peak,Beromünster,Neuenkirch,12.0,0.0,direct None / with changes 60,False
 Rain|bus,day,Beromünster,Hochdorf,11.0,0.0,direct None / with changes 60,False
@@ -314,11 +314,11 @@ Ruswil|bus,day,Luzern,Wolhusen,3.0,0.0,direct None / with changes 60,False
 Schöftland|bus,peak,Triengen,Zofingen,9.0,0.0,direct None / with changes 60,False
 Schöftland|bus,day,Triengen,Zofingen,9.0,0.0,direct None / with changes 60,False
 Udligenswil|bus,peak,Adligenswil,Küssnacht (SZ),11.0,0.0,direct None / with changes 120,False
-Udligenswil|bus,peak,Adligenswil,Root,16.0,0.0,direct None / with changes 60,False
+Udligenswil|bus,peak,Adligenswil,Root,8.5,0.0,direct None / with changes 60,False
 Udligenswil|bus,peak,Küssnacht (SZ),Risch-Rotkreuz · Langmatt,14.0,0.0,direct None / with changes 60,False
 Udligenswil|bus,peak,Risch-Rotkreuz · Langmatt,Root,11.0,0.0,direct None / with changes 60,False
 Udligenswil|bus,day,Adligenswil,Küssnacht (SZ),11.0,0.0,direct None / with changes 75,False
-Udligenswil|bus,day,Adligenswil,Root,16.0,0.0,direct None / with changes 60,False
+Udligenswil|bus,day,Adligenswil,Root,4.8,0.0,direct None / with changes 60,False
 Udligenswil|bus,day,Küssnacht (SZ),Risch-Rotkreuz · Langmatt,14.0,0.0,direct None / with changes 60,False
 Udligenswil|bus,day,Risch-Rotkreuz · Langmatt,Root,11.0,0.0,direct None / with changes 60,False
 Zofingen|bus,peak,Dagmersellen,Schöftland,1.3,3.7,direct None / with changes 60,False

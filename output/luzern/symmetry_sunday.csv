@@ -14,7 +14,9 @@ Luzern|bigrail,day,"16,46",30,0.0,1.0,2,National railways + Local railways + Reg
 Malters|bigrail,peak,30,60,1.0,1.0,2,National railways + Regional bus,solid
 Malters|bigrail,day,30,60,1.0,1.0,2,National railways + Regional bus,solid
 Neuenkirch|bigrail,peak,"1,31",30,0.6,0.73,7,National railways + Regional bus,solid
+Neuenkirch|bigrail,peak,21,60,1.0,1.0,2,National railways + Regional bus,solid
 Neuenkirch|bigrail,day,"1,31",30,0.6,0.73,7,National railways + Regional bus,solid
+Neuenkirch|bigrail,day,21,60,1.0,1.0,2,National railways + Regional bus,solid
 Risch-Rotkreuz|bigrail,peak,"13,43",30,0.46,0.62,8,National railways + Regional bus,dotted
 Risch-Rotkreuz|bigrail,peak,"23,53",30,0.37,0.62,5,National railways + Regional bus,dotted
 Risch-Rotkreuz|bigrail,day,"13,43",30,0.45,0.62,8,National railways + Regional bus,dotted

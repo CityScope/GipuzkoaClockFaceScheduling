@@ -43,6 +43,7 @@ Ermua|bus,peak,34,60,0.0,0.56,3,Bus,dotted
 Ermua|bus,day,35,60,0.0,0.55,3,Bus,dotted
 Errenteria|bus,day,"0,30",30,0.0,1.0,2,Euskotren + Bus,dotted
 Hernani|bus,peak,54,60,0.27,0.55,3,Bus,dotted
+Hernani|bus,day,"24,54",30,0.25,0.75,3,Bus,dotted
 Hernani|bus,night,50,60,0.29,0.59,3,Bus,dotted
 Lasarte-Oria|bus,peak,27,60,0.62,0.62,7,Euskotren + Bus,solid
 Lasarte-Oria|bus,peak,12,60,1.0,1.0,2,Bus,solid

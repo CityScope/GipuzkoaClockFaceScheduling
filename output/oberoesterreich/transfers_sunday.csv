@@ -37,10 +37,10 @@ Linz|bigrail,peak,Enns,Traun,0.8,0.0,direct None / with changes 60,False
 Linz|bigrail,peak,Amstetten,Leonding,6.0,0.0,direct None / with changes 120,False
 Linz|bigrail,peak,Pregarten,Sankt Valentin,8.0,0.0,direct None / with changes 60,False
 Linz|bigrail,peak,Sankt Valentin,Traun,9.0,0.0,direct None / with changes 60,False
-Linz|bigrail,peak,Linz · Donau Rudolfstr…,Traun,3.4,1.1,direct None / with changes 30,False
+Linz|bigrail,peak,Linz · Donau Rudolfstr…,Traun,2.1,1.1,direct None / with changes 30,False
 Linz|bigrail,peak,Linz · Donau Rudolfstr…,Pregarten,2.9,1.1,direct None / with changes 60,False
 Linz|bigrail,peak,Linz · Donau Rudolfstr…,Sankt Valentin,2.4,1.1,direct None / with changes 60,False
-Linz|bigrail,peak,Linz · Donau Rudolfstr…,Wilhering,4.5,0.0,direct None / with changes 60,False
+Linz|bigrail,peak,Linz · Donau Rudolfstr…,Wilhering,2.0,0.0,direct None / with changes 60,False
 Linz|bigrail,peak,Amstetten,Leonding (slow),4.8,3.7,direct None / with changes 60,False
 Linz|bigrail,peak,Leonding,Pregarten,0.3,3.7,direct None / with changes 60,False
 Linz|bigrail,peak,Engerwitzdorf,Sankt Valentin,10.3,3.7,direct None / with changes 120,False
@@ -65,13 +65,15 @@ Linz|bigrail,day,Amstetten,Leonding,6.0,0.0,direct None / with changes 75,False
 Linz|bigrail,day,Sankt Valentin,Traun,9.0,0.0,direct None / with changes 60,False
 Linz|bigrail,day,Pregarten,Sankt Valentin,8.0,0.0,direct None / with changes 75,False
 Linz|bigrail,day,Pregarten,Wels,2.0,0.0,direct None / with changes 75,False
+Linz|bigrail,day,Linz · Donau Rudolfstr…,Traun,3.0,1.1,direct None / with changes 34,False
 Linz|bigrail,day,Leonding,Linz · Donau Rudolfstr…,2.4,1.1,direct None / with changes 60,False
 Linz|bigrail,day,Linz · Donau Rudolfstr…,Sankt Valentin,2.8,1.1,direct None / with changes 60,False
-Linz|bigrail,day,Linz · Donau Rudolfstr…,Wilhering,7.2,0.0,direct None / with changes 60,False
+Linz|bigrail,day,Linz · Donau Rudolfstr…,Wilhering,1.8,0.0,direct None / with changes 60,False
 Linz|bigrail,day,Amstetten,Leonding (slow),5.3,3.7,direct None / with changes 60,False
 Linz|bigrail,day,Leonding,Sankt Valentin,11.8,3.7,direct None / with changes 60,False
-Linz|bigrail,day,Leonding,Pregarten,14.6,3.7,direct None / with changes 75,False
+Linz|bigrail,day,Leonding,Pregarten,0.3,3.7,direct None / with changes 75,False
 Linz|bigrail,day,Engerwitzdorf,Sankt Valentin,10.3,3.7,direct None / with changes 120,False
+Linz|bigrail,day,Engerwitzdorf,Traun,13.9,3.7,direct None / with changes 108,False
 Linz|bigrail,day,Amstetten,Hellmonsödt (fast),10.3,3.7,direct None / with changes 120,False
 Linz|bigrail,day,Hellmonsödt (fast),Pregarten,3.3,3.7,direct None / with changes 105,False
 Linz|bigrail,day,Hellmonsödt (fast),Sankt Valentin,0.3,3.7,direct None / with changes 75,False

@@ -490,7 +490,7 @@ let map;
   if(ys.length){
    if(ys.length>1)h+=`<div class="tabs">${ys.map((y,gi)=>`<button class="${gi===G?'on':''}" onclick="window.selSym('${q}',${gi})">${symSvg(y.h,y.st==='dotted',18)} ${mn(y.h)}</button>`).join('')}</div>`;
    const y=ys[G];
-   h+=`<div class="symcard${y.st==='dotted'?' dot':''}"><div class="symclock">${symSvg(y.h,y.st==='dotted')}</div><div><b>${y.st==='solid'?'Symmetry':'Half symmetry'} ${mn(y.h)}${y.p==30?' · every 30 min':''}</b>`+
+   h+=`<div class="symcard${y.st==='dotted'?' dot':''}"><div class="symclock">${symSvg(y.h,y.st==='dotted')}</div><div><b>${y.st==='solid'?'Symmetry':'Half symmetry'} ${mn(y.h)}${(y.ph||y.p)<60||(y.ph&&y.ph>60)?` · every ${y.ph||y.p} min`:''}</b>`+
       `<small>${y.lv} · ${Math.round(y.both*100)}% both ways</small></div></div>`;}
   // ---- node diagram (Knotenspinne): one spoke per direction at its real bearing, arrival / departure minutes of the
   //      symmetry lines next to the node, symmetry hand(s) in the centre

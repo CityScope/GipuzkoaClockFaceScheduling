@@ -403,7 +403,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             out = []
             for cs in cd_[d]["CS"]:
                 ok_ = [o for o in cs if any(fit1(d, o, h) for h in hs)]
-                out.append(ok_[-1] if ok_ else None)
+                out.append(ok_[-1] + (cs[-1][2],) if ok_ else None)   # [8] = real wait: passengers take the latest arrival
             return out
 
         def pays(d, ch):
@@ -412,7 +412,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             the headway of the direct trips (if any); then either they are >= 80 % of the departures, or the wait they
             save pays for the headway they lose: (H_timed - H_all) / 2 <= wait_all - wait_timed (formula headways)."""
             v = cd_[d]
-            if not ch or float(np.mean([c[2] for c in ch])) >= v["hDy"] / 2:
+            if not ch or float(np.mean([c[8] for c in ch])) >= v["hDy"] / 2:
                 return False
             dep = sorted(set(v["ddir"]) | set(v["dirdep"]) | {c[1] for c in ch})
             ht = _hw(dep, wins)
@@ -420,7 +420,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                 return False
             if len(dep) >= TIMED_MOST * v["nall"]:
                 return True
-            wt = sum(c[2] for c in ch) / len(dep)
+            wt = sum(c[8] for c in ch) / len(dep)
             return (ht - min(ht, v["hall"])) / 2 <= v["wait"] - wt + 1e-9
 
         def rel_fit(d, hs):
@@ -505,7 +505,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             v = cd_[d]                                                # shown: headway (formula) and mean wait of direct + timed
             if v["k"] == "c" and v["C"]:
                 dep = sorted(set(v["ddir"]) | set(v["dirdep"]) | {c[1] for c in v["C"]})
-                v["Hc"] = _hw(dep, wins); v["wt"] = sum(c[2] for c in v["C"]) / len(dep)
+                v["Hc"] = _hw(dep, wins); v["wt"] = sum(c[8] if len(c) > 8 else c[2] for c in v["C"]) / len(dep)
         groups_.sort(key=lambda g: -g[1])
         for gi, (hands, wsum, dirs, _fm) in enumerate(groups_):
             if len(dirs) < 2:
@@ -534,7 +534,16 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             idx = len(sym)
             for d in dirs:
                 gof[d] = idx
-            sym.append(dict(h=sorted(set(hands)), p=30 if len(set(hands)) > 1 else 60, st="solid" if both > 0.5 else "dotted",
+            # how often the pulse really runs: headway of the pulses (hand times) with at least one timed connection
+            P_ = 30 if len(set(hands)) > 1 else 60
+            Ts = set()
+            for d in dirs:
+                for c in st_[d]["C"]:
+                    hh = [h for h in hands if fit1(d, c, h)]
+                    if hh:
+                        a_ = int(round(c[0])); Ts.add(a_ + min((h - a_) % 60 for h in hh))
+            ph = max(P_, round(_hw(sorted(Ts), wins))) if Ts else P_
+            sym.append(dict(h=sorted(set(hands)), p=P_, ph=ph if ph < 999 else None, st="solid" if both > 0.5 else "dotted",
                             lv=" + ".join(SYS_NAME[m] for m in modes), both=round(both, 2), one=round(one, 2), n=len(pairs),
                             w=round(wsum / tot, 2)))
     # ---- display rows

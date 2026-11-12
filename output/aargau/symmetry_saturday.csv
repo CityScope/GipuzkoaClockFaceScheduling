@@ -3,10 +3,10 @@ Aarau|bigrail,peak,30,60,0.23,0.35,16,National railways + Regional bus,dotted
 Aarau|bigrail,peak,"15,45",30,0.24,0.52,4,National railways + Regional bus,dotted
 Aarau|bigrail,day,30,60,0.2,0.35,16,National railways + Regional bus,dotted
 Aarau|bigrail,day,"15,45",30,0.24,0.52,4,National railways + Regional bus,dotted
-Baden|bigrail,peak,"24,54",30,0.26,0.3,47,National railways + Regional bus,dotted
-Baden|bigrail,peak,"6,36",30,0.26,0.29,43,National railways + Regional bus,dotted
-Baden|bigrail,day,"24,54",30,0.27,0.32,47,National railways + Regional bus,dotted
-Baden|bigrail,day,"6,36",30,0.27,0.31,42,National railways + Regional bus,dotted
+Baden|bigrail,peak,"21,51",30,0.28,0.36,39,National railways + Regional bus,dotted
+Baden|bigrail,peak,"6,36",30,0.28,0.29,43,National railways + Regional bus,dotted
+Baden|bigrail,day,"21,51",30,0.28,0.36,39,National railways + Regional bus,dotted
+Baden|bigrail,day,"6,36",30,0.29,0.31,42,National railways + Regional bus,dotted
 Beinwil am See|bigrail,night,2,60,1.0,1.0,2,National railways + Regional bus,solid
 Berikon|bus,peak,"29,59",30,0.49,0.49,5,Local railways + Regional bus,dotted
 Berikon|bus,day,"29,59",30,0.54,0.54,5,Local railways + Regional bus,solid

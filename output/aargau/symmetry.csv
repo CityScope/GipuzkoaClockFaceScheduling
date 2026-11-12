@@ -6,8 +6,8 @@ Aarau|bigrail,day,30,60,0.12,0.24,16,National railways + Regional bus,dotted
 Aarau|bigrail,night,"22,52",30,0.44,0.58,8,National railways + Local railways,dotted
 Baden|bigrail,peak,"4,34",30,0.11,0.35,39,National railways + Regional bus,dotted
 Baden|bigrail,peak,"21,51",30,0.19,0.41,37,National railways + Regional bus,dotted
-Baden|bigrail,day,"21,51",30,0.18,0.43,52,National railways + Regional bus,dotted
-Baden|bigrail,day,"1,31",30,0.23,0.38,11,National railways + Regional bus,dotted
+Baden|bigrail,day,"21,51",30,0.23,0.48,52,National railways + Regional bus,dotted
+Baden|bigrail,day,"1,31",30,0.38,0.38,11,National railways + Regional bus,dotted
 Baden|bigrail,night,"21,51",30,0.25,0.54,48,National railways + Regional bus,dotted
 Beinwil am See|bigrail,night,2,60,1.0,1.0,2,National railways + Regional bus,solid
 Berikon|bus,night,"27,57",30,0.39,0.8,5,Local railways + Regional bus,dotted

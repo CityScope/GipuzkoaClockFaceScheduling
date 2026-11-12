@@ -50,7 +50,7 @@ Baden|bigrail,peak,Birmenstorf,Untersiggenthal (slow),7.0,0.0,direct None / with
 Baden|bigrail,peak,Endingen,Niederweningen,10.2,0.0,direct None / with changes 60,False
 Baden|bigrail,peak,Fislisbach (slow),Niederweningen,8.0,0.0,direct None / with changes 60,False
 Baden|bigrail,peak,Gebenstorf,Niederweningen,10.0,0.0,direct None / with changes 60,False
-Baden|bigrail,peak,Killwangen,Niederweningen,18.0,0.0,direct None / with changes 60,False
+Baden|bigrail,peak,Killwangen,Niederweningen,7.5,0.0,direct None / with changes 60,False
 Baden|bigrail,peak,Niederweningen,Untersiggenthal (slow),7.2,0.0,direct None / with changes 60,False
 Baden|bigrail,day,Birmenstorf,Würenlingen,3.5,1.5,direct None / with changes 30,False
 Baden|bigrail,day,Endingen,Killwangen,12.5,1.5,direct None / with changes 31,False
@@ -209,7 +209,7 @@ Döttingen|bigrail,day,Schwaderloch,Würenlingen,11.4,1.6,direct None / with cha
 Döttingen|bigrail,day,Endingen,Schwaderloch,2.0,0.0,direct None / with changes 60,False
 Döttingen|bigrail,day,Endingen,Villigen,2.0,0.0,direct None / with changes 60,False
 Döttingen|bigrail,night,Endingen,Villigen,2.0,0.0,direct None / with changes 375,False
-Frick|bigrail,peak,Aarau,Stein,9.3,0.6,direct None / with changes 38,False
+Frick|bigrail,peak,Aarau,Stein,4.5,0.6,direct None / with changes 38,False
 Frick|bigrail,peak,Brugg,Laufenburg,2.4,0.6,direct None / with changes 60,False
 Frick|bigrail,peak,Brugg,Stein,2.4,0.6,direct None / with changes 60,False
 Frick|bigrail,peak,Brugg,Stein,12.4,0.6,direct None / with changes 90,False
@@ -217,11 +217,11 @@ Frick|bigrail,peak,Aarau,Brugg,3.0,0.0,direct None / with changes 60,False
 Frick|bigrail,peak,Aarau,Stein,8.0,0.0,direct None / with changes 60,False
 Frick|bigrail,peak,Brugg,Laufenburg,15.0,0.0,direct None / with changes 90,False
 Frick|bigrail,peak,Brugg,Stein,15.0,0.0,direct None / with changes 90,False
-Frick|bigrail,day,Aarau,Stein,9.9,0.6,direct None / with changes 31,False
+Frick|bigrail,day,Aarau,Stein,4.4,0.6,direct None / with changes 31,False
 Frick|bigrail,day,Brugg,Laufenburg,2.4,0.6,direct None / with changes 60,False
 Frick|bigrail,day,Brugg,Stein,2.4,0.6,direct None / with changes 60,False
 Frick|bigrail,day,Brugg,Stein,12.4,0.6,direct None / with changes 75,False
-Frick|bigrail,day,Aarau,Brugg,14.0,0.0,direct None / with changes 60,False
+Frick|bigrail,day,Aarau,Brugg,3.0,0.0,direct None / with changes 60,False
 Frick|bigrail,day,Aarau,Stein,8.0,0.0,direct None / with changes 60,False
 Frick|bigrail,day,Brugg,Laufenburg,15.0,0.0,direct None / with changes 60,False
 Frick|bigrail,day,Brugg,Stein,15.0,0.0,direct None / with changes 60,False
@@ -237,8 +237,8 @@ Gelterkinden|bigrail,day,Basel,Wegenstetten,2.2,3.8,direct None / with changes 7
 Gelterkinden|bigrail,day,Olten,Wegenstetten,8.2,3.8,direct None / with changes 75,False
 Gelterkinden|bigrail,day,Pratteln,Wegenstetten,8.2,3.8,direct None / with changes 75,False
 Gelterkinden|bigrail,night,Aarau,Pratteln,5.0,0.0,direct None / with changes 285,False
-Kaiseraugst|bigrail,peak,Augst,Rheinfelden,11.2,0.8,direct None / with changes 52,False
-Kaiseraugst|bigrail,day,Augst,Rheinfelden,11.2,0.8,direct None / with changes 38,False
+Kaiseraugst|bigrail,peak,Augst,Rheinfelden,2.2,0.8,direct None / with changes 52,False
+Kaiseraugst|bigrail,day,Augst,Rheinfelden,2.2,0.8,direct None / with changes 38,False
 Kaiseraugst|bigrail,night,Augst,Rheinfelden,3.7,0.8,direct None / with changes 202,False
 Killwangen|bigrail,peak,Dietikon · Niderfeld,Mellingen,1.8,1.2,direct None / with changes 60,False
 Killwangen|bigrail,peak,Baden,Mellingen,11.9,1.1,direct None / with changes 90,False
@@ -404,10 +404,10 @@ Stein|bigrail,night,Frick,Laufenburg,1.0,0.0,direct None / with changes 375,Fals
 Suhr|bigrail,peak,Aarau,Zofingen,0.8,0.2,direct None / with changes 30,False
 Suhr|bigrail,peak,Teufenthal,Zofingen,5.8,0.2,direct None / with changes 30,False
 Suhr|bigrail,peak,Aarau,Zofingen,5.1,0.9,direct None / with changes 30,False
-Suhr|bigrail,peak,Aarau,Teufenthal,6.0,1.0,direct None / with changes 30,False
+Suhr|bigrail,peak,Aarau,Teufenthal,0.0,1.0,direct None / with changes 30,False
 Suhr|bigrail,day,Teufenthal,Zofingen,5.8,0.2,direct None / with changes 30,False
 Suhr|bigrail,day,Aarau,Zofingen,11.8,0.9,direct None / with changes 30,False
-Suhr|bigrail,day,Aarau,Teufenthal,12.8,1.0,direct None / with changes 30,False
+Suhr|bigrail,day,Aarau,Teufenthal,0.0,1.0,direct None / with changes 30,False
 Suhr|bigrail,night,Teufenthal,Zofingen,5.8,0.2,direct None / with changes 322,False
 Suhr|bigrail,night,Aarau,Zofingen,14.1,0.9,direct None / with changes 322,False
 Suhr|bigrail,night,Aarau,Lenzburg,1.0,0.0,direct None / with changes 285,False

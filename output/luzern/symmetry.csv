@@ -9,7 +9,7 @@ Hergiswil (NW)|localrail,night,"9,39",30,0.0,0.74,3,Local railways,dotted
 Hochdorf|bigrail,peak,"26,56",30,0.19,0.75,7,National railways + Regional bus,dotted
 Hochdorf|bigrail,day,27,60,0.72,1.0,3,National railways + Regional bus,solid
 Lenzburg|bigrail,day,"1,31",30,0.5,1.0,2,National railways,solid
-Luzern|bigrail,peak,"4,34",30,0.28,0.38,96,National railways + Local railways + Regional bus,dotted
+Luzern|bigrail,peak,"4,34",30,0.28,0.39,96,National railways + Local railways + Regional bus,dotted
 Luzern|bigrail,peak,"24,54",30,0.25,0.37,65,National railways + Local railways + Regional bus,dotted
 Luzern|bigrail,day,"4,34",30,0.33,0.47,85,National railways + Local railways + Regional bus,dotted
 Luzern|bigrail,day,"24,54",30,0.25,0.34,65,National railways + Local railways + Regional bus,dotted
@@ -52,7 +52,7 @@ Zug|bigrail,peak,"0,30",30,0.29,1.0,2,National railways,dotted
 Zug|bigrail,day,"0,30",30,0.29,1.0,2,National railways,dotted
 Beromünster|bus,peak,"26,56",30,0.3,1.0,3,Regional bus,dotted
 Beromünster|bus,day,56,60,0.54,1.0,3,Regional bus,solid
-Beromünster|bus,night,"26,56",30,0.0,1.0,3,Regional bus,dotted
+Beromünster|bus,night,"24,54",30,0.14,0.73,6,Regional bus,dotted
 Ettiswil|bus,peak,"28,58",30,0.79,0.79,5,Regional bus,solid
 Ettiswil|bus,peak,40,60,0.0,1.0,2,Regional bus,dotted
 Ettiswil|bus,day,"28,58",30,1.0,1.0,2,Regional bus,solid
