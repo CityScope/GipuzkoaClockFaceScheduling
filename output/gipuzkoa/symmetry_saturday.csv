@@ -25,7 +25,6 @@ Bilbao|bus,peak,"10,40",30,0.2,0.7,6,Bus,dotted
 Bilbao|bus,day,58,60,0.3,1.0,6,Bus,dotted
 Bilbao|bus,day,"9,39",30,0.28,0.72,6,Bus,dotted
 Eibar|bus,peak,25,60,0.5,1.0,2,Bus,dotted
-Eibar|bus,day,25,60,0.33,0.86,4,Bus,dotted
 Elgoibar|bus,day,15,60,0.0,0.72,5,Euskotren + Bus,dotted
 Ermua|bus,peak,34,60,0.0,0.56,3,Bus,dotted
 Ermua|bus,day,35,60,0.0,0.55,3,Bus,dotted

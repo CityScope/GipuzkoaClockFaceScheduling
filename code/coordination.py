@@ -532,15 +532,19 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             if not dnf or len(dirs) < 2 or len(nbs) < 3 or (one <= SYM_ONE_MIN and not regular):
                 continue                                       # >= 3 edges; more than half one way, or a regular (<= 60 min) group
             modes = sorted({e.split("¦")[1] for e in GE}, key=lambda s_: rank[s_])
-            # how often the pulse really runs: headway of the pulses (hand times) with at least one timed connection
+            # how often the symmetry really works: the headway of its best-served connection (each relation counted in
+            # pulses: the hand times at which it has a timed connection), never better than the period
             P_ = 30 if len(set(hands)) > 1 else 60
-            Ts = set()
+            hrel = []
             for d in dirs:
+                Ts = set()
                 for c in st_[d]["C"]:
                     hh = [h for h in hands if fit1(d, c, h)]
                     if hh:
                         a_ = int(round(c[0])); Ts.add(a_ + min((h - a_) % 60 for h in hh))
-            ph = max(P_, round(_hw(sorted(Ts), wins))) if Ts else P_
+                if Ts:
+                    hrel.append(_hw(sorted(Ts), wins))
+            ph = max(P_, round(min(hrel))) if hrel else 999
             if ph > SYM_PULSE_MAX:                             # timed connections rarer than every 2 h: not a symmetry
                 continue
             idx = len(sym)

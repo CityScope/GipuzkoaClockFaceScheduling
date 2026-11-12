@@ -39,10 +39,8 @@ Ondarroa|bus,peak,"5,35",30,0.24,0.59,3,Bus,dotted
 Ondarroa|bus,day,4,60,0.33,1.0,3,Bus,dotted
 Tolosa|bus,peak,54,60,0.28,0.72,3,Bus,dotted
 Tolosa|bus,peak,"6,36",30,0.33,0.67,3,Bus,dotted
-Tolosa|bus,day,"0,30",30,0.05,0.52,5,Bus,dotted
 Villabona|bus,peak,"24,54",30,0.0,0.72,3,Renfe + Bus,dotted
 Vitoria-Gasteiz|bus,peak,"29,59",30,0.19,1.0,3,Bus,dotted
-Vitoria-Gasteiz|bus,day,30,60,0.0,1.0,3,Bus,dotted
 Zarautz|bus,peak,"2,32",30,0.19,0.51,9,Bus,dotted
 Zarautz|bus,day,51,60,0.0,0.68,6,Bus,dotted
 Ermua|bus|1,peak,"26,56",30,0.0,1.0,2,Euskotren + Bus,dotted
