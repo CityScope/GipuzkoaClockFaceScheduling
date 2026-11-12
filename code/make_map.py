@@ -516,7 +516,7 @@ let map;
    const med=(a,arr)=>{const o=off(a,arr);return o.length?o[0]:null;};   // the timed service closest to the symmetry minute: last arrival before it / first departure after it (min)
    const tw_=(t)=>[...t].reduce((w,c)=>w+(/[0-9]/.test(c)?5.2:c==='′'?2.4:c===' '?2.6:c==='/'||c==='·'?3:5.6),0);   // approx. text width at 9px
    let sv='';const LB=[],SL=[],SEG=[];
-   for(const [ki,p] of E.entries()){const s=p.s,sx=Math.sin(p.a),sy_=-Math.cos(p.a),lim=(s.sy==='bus'?12:6)+Math.max(s.wch||0,s.wkc||0);   // + the real walk when its timed changes need one
+   for(const [ki,p] of E.entries()){const s=p.s,sx=Math.sin(p.a),sy_=-Math.cos(p.a),lim=(s.sy==='bus'?12:6)+Math.max(s.wch||0,s.wkc||0),limO=6;   // arrival: <= 6 / 12 min (+ walk) before the symmetry minute; departure: <= 6 min after
     // numbers: the REAL timetable (all services, no arrival left out): mean over every symmetry minute in the band of the minutes
     // from the last arrival before it and to the next departure after it
     let fvi=null,fvo=null;
@@ -534,7 +534,7 @@ let map;
     }
     // style: a side is coordinated in this symmetry when it has timed changes in it and its timetable mean is within the window
     // (arriving / leaving at the symmetry minute itself, mean 0 min, is part of the symmetry)
-    const vi=hs.length&&fvi!=null&&fvi<=lim&&(s.in.length||fvi===0)?fvi:null,vo=hs.length&&fvo!=null&&fvo<=lim&&(s.out.length||fvo===0)?fvo:null;
+    const vi=hs.length&&fvi!=null&&fvi<=lim&&(s.in.length||fvi===0)?fvi:null,vo=hs.length&&fvo!=null&&fvo<=limO&&(s.out.length||fvo===0)?fvo:null;
     // frequent (< 15 min): needs no timing, works in the symmetry and is highlighted as frequent (per direction for the style)
     let fI_=false,fO_=false;for(const e of net.ed)if(e[1]===s.nb&&(e[9]??null)===(s.wk??null)){if((e[7]??999)<CFG.freq)fI_=true;if((e[8]??999)<CFG.freq)fO_=true;}
     const wI=vi!=null||fI_,wO=vo!=null||fO_,both=wI&&wO,one=wI||wO,fq=s.fh<CFG.freq;
@@ -611,7 +611,7 @@ let map;
   // two lines per direction: timed -> values with timing / values without timing (muted); otherwise the status / the values
   const dir=(d,arrow)=>{if(!d)return `<div class="dv"><span class="da">${arrow}</span><span class="l1 mu">no service</span></div>`;
    const nt=d[9]!=null?val(d[9],d[13],d[10]):'';
-   const l1=d[0]==='c'?`<span class="l1 tm">${val(d[4],d[5],d[3])}</span>`:d[0]==='f'?`<span class="l1 fr">frequent${d[2]!=null&&d[9]!=null&&Math.round(d[9])===0&&d[10]===d[2]?' · direct · every '+f1(d[2]):''}</span>`:d[0]==='d'?`<span class="l1 fr">direct · every ${f1(d[2])}</span>`:`<span class="l1 mu">not timed</span>`;
+   const l1=d[0]==='c'?`<span class="l1 tm">${val(d[4],d[5],d[3])}</span>`:d[0]==='f'?`<span class="l1 fr">frequent${d[2]!=null&&d[9]!=null&&Math.round(d[9])===0&&d[10]===d[2]?' · direct · every '+f1(d[2]):''}</span>`:d[0]==='d'?`<span class="l1 fr">direct · every ${f1(d[2])}</span>`:d[0]==='b'?`<span class="l1 mu">goes back</span>`:`<span class="l1 mu">not timed</span>`;
    const same=(d[0]==='c'&&nt&&nt===val(d[4],d[5],d[3]))||d[14]===1||(d[0]==='f'&&d[2]!=null&&d[9]!=null&&Math.round(d[9])===0&&d[10]===d[2]);   // one line is enough
    const l2=nt&&!same?`<span class="l2" title="all services, real timetable (direct services with wait 0): mean wait and headway">${nt}</span>`:'';
    const allDirect=d[2]!=null&&d[9]!=null&&Math.round(d[9])===0&&d[10]===d[2];      // all services = the direct ones

@@ -59,9 +59,9 @@ Bremgarten|bus,night,6,"3,36,58",0,1.0
 Bremgarten|localrail,peak,20,"3,18,25,34,48,54",0,1.0
 Bremgarten|localrail,day,43,"3,19,25,34,50,54",0,1.0
 Bremgarten|localrail,night,13,"3,26,34,54",0,1.0
-Brugg|bigrail,peak,52,"1,7,31",0,0.7692307692307693
-Brugg|bigrail,day,104,"1,7,31",0,0.7692307692307693
-Brugg|bigrail,night,47,"1,6,21,31,38",0,0.9148936170212766
+Brugg|bigrail,peak,56,"1,7,31",0,0.7142857142857143
+Brugg|bigrail,day,112,"1,7,31",0,0.7142857142857143
+Brugg|bigrail,night,50,"1,6,21,31,38",0,0.86
 Brugg|bus,peak,36,"5,35",30,1.0
 Brugg|bus,day,72,"5,35",30,1.0
 Brugg|bus,night,9,"5,35",30,1.0
@@ -140,9 +140,9 @@ Lenzburg|bus,night,7,"5,23",0,0.7142857142857143
 Meisterschwanden|bus,peak,16,"17,37,46",0,1.0
 Meisterschwanden|bus,day,32,"17,36,47",0,1.0
 Meisterschwanden|bus,night,5,"17,46",30,1.0
-Mellingen|bigrail,peak,8,"1,33",0,1.0
-Mellingen|bigrail,day,16,"1,33",0,1.0
-Mellingen|bigrail,night,7,"1,34",0,1.0
+Mellingen|bigrail,peak,16,"1,23,34,54",0,1.0
+Mellingen|bigrail,day,32,"1,23,34,54",0,1.0
+Mellingen|bigrail,night,14,"3,24,33,54",0,1.0
 Mellingen|bus,peak,32,"0,30",30,0.75
 Mellingen|bus,day,63,"0,30",30,0.746031746031746
 Mellingen|bus,night,21,30,60,0.5238095238095238
@@ -185,6 +185,9 @@ Oberwil-Lieli|bus,night,10,"6,23,37,53",0,1.0
 Olten|bigrail,peak,73,"5,29,36,49",0,0.6301369863013698
 Olten|bigrail,day,144,"5,29,36,49",0,0.6319444444444444
 Olten|bigrail,night,59,36,60,0.2711864406779661
+Othmarsingen|bigrail,peak,20,"15,30,38,43,57",0,1.0
+Othmarsingen|bigrail,day,40,"15,30,38,43,57",0,1.0
+Othmarsingen|bigrail,night,12,"28,36,56",0,0.8333333333333334
 Pratteln|bigrail,peak,37,"3,10,17,27,33,39",0,0.7567567567567568
 Pratteln|bigrail,day,77,"3,10,17,27,33,39",0,0.7922077922077922
 Pratteln|bigrail,night,41,"17,27,31",0,0.4878048780487805

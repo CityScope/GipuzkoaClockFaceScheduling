@@ -61,10 +61,10 @@ Donostia / San Sebastián|euskotren,day,46,"14,44,49",0,0.8695652173913043
 Donostia / San Sebastián|euskotren,night,10,"14,44",30,0.9
 Donostia / San Sebastián|renfe,peak,15,"3,34",30,0.6
 Donostia / San Sebastián|renfe,day,28,"0,29,33,37,51,56",0,0.75
-Donostia / San Sebastián|renfe,night,9,"20,30,46,54",0,0.8888888888888888
-Eibar|bus,peak,34,"20,31,42,58",0,0.7352941176470589
-Eibar|bus,day,71,"21,31,41,59",0,0.7464788732394366
-Eibar|bus,night,28,"1,15,29,34,49",0,0.7857142857142857
+Donostia / San Sebastián|renfe,night,8,"20,30,54",0,0.75
+Eibar|bus,peak,33,"20,31,42,58",0,0.7272727272727273
+Eibar|bus,day,69,"21,29,41,58",0,0.7391304347826086
+Eibar|bus,night,27,"1,15,29,34,49",0,0.8148148148148148
 Elgoibar|bus,peak,19,"8,12,24,42,47",0,0.7368421052631579
 Elgoibar|bus,day,42,"12,47",0,0.47619047619047616
 Elgoibar|bus,night,17,"1,17,47",0,0.8235294117647058
@@ -149,15 +149,6 @@ Pamplona / Iruña|bus,night,0,,0,0.0
 Pasaia|bus,peak,92,"5,14,27,34,47,54",0,0.75
 Pasaia|bus,day,192,"5,14,22,37,45,54",0,0.7864583333333334
 Pasaia|bus,night,89,"14,18,36,42,48,59",0,0.7865168539325843
-Pasaia|euskotren,peak,24,"11,28,42,58",0,1.0
-Pasaia|euskotren,day,39,"28,58",30,0.8205128205128205
-Pasaia|euskotren,night,11,28,60,0.7272727272727273
-Pasaia|renfe,peak,12,46,60,0.5
-Pasaia|renfe,day,24,"24,36,46,50,54",0,0.7083333333333334
-Pasaia|renfe,night,7,"33,43",0,0.5714285714285714
-Soraluze-Placencia de las Armas|bus,peak,14,"29,52",0,0.7142857142857143
-Soraluze-Placencia de las Armas|bus,day,30,"41,53",0,0.5333333333333333
-Soraluze-Placencia de las Armas|bus,night,19,"13,39",0,0.5789473684210527
 Tolosa|bus,peak,20,"0,10,26,30,39",0,0.85
 Tolosa|bus,day,40,"0,10,16,24,54",0,0.825
 Tolosa|bus,night,20,"0,30",30,0.7

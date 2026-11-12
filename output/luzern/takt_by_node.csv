@@ -116,9 +116,6 @@ Rain|bus,night,19,"4,24,31,44,59",0,0.8947368421052632
 Reiden|bus,peak,12,"15,21,46",0,1.0
 Reiden|bus,day,18,"15,47",0,0.8333333333333334
 Reiden|bus,night,5,"15,21,31",0,1.0
-Rickenbach|bus,peak,20,"3,11,25,37,45,51",0,1.0
-Rickenbach|bus,day,40,"3,11,24,37,51",0,0.95
-Rickenbach|bus,night,13,"3,39,52",0,0.7692307692307693
 Risch-Rotkreuz|bigrail,peak,47,"10,23,48,52",0,0.723404255319149
 Risch-Rotkreuz|bigrail,day,80,"10,16,24,38,48,52",0,1.0
 Risch-Rotkreuz|bigrail,night,29,"10,18,49",0,0.6206896551724138

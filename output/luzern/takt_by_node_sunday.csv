@@ -8,9 +8,9 @@ Arth|bigrail,night,13,"15,19,31,45",0,0.9230769230769231
 Arth|localrail|1,peak,2,"0,20",0,1.0
 Arth|localrail|1,day,8,0,60,1.0
 Arth|localrail|1,night,0,,0,0.0
-Beromünster|bus,peak,35,"9,48",0,0.45714285714285713
-Beromünster|bus,day,74,"9,48",0,0.4189189189189189
-Beromünster|bus,night,25,"5,13,18,39,48,59",0,0.88
+Beromünster|bus,peak,23,"17,38,46,59",0,0.782608695652174
+Beromünster|bus,day,50,"7,17,28,38,46,59",0,0.9
+Beromünster|bus,night,13,"17,39,47,59",0,1.0
 Dagmersellen|bigrail,peak,16,"3,19,39,53",0,1.0
 Dagmersellen|bigrail,day,32,"3,19,39,53",0,1.0
 Dagmersellen|bigrail,night,23,"5,9,20,39,54",0,0.8260869565217391
@@ -116,9 +116,6 @@ Rain|bus,night,14,"0,4,26,31",0,0.9285714285714286
 Reiden|bus,peak,7,"15,21",0,0.8571428571428571
 Reiden|bus,day,16,"15,47",0,0.9375
 Reiden|bus,night,5,"15,21,31",0,1.0
-Rickenbach|bus,peak,20,"3,11,25,37,45,51",0,1.0
-Rickenbach|bus,day,40,"3,11,24,37,51",0,0.95
-Rickenbach|bus,night,10,"3,39,52",0,1.0
 Risch-Rotkreuz|bigrail,peak,32,"10,18,22,39,49,53",0,1.0
 Risch-Rotkreuz|bigrail,day,64,"10,18,22,39,49,53",0,1.0
 Risch-Rotkreuz|bigrail,night,32,"10,39,49",0,0.6875

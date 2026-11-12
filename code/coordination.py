@@ -195,6 +195,7 @@ WAIT_MAX_HUB = 15
 COORD_WAIT_BUS = 12           # ... or <= 12 min when arriving by bus (bus -> bus, bus -> train)
 SYM_NO_NEED = 0.75            # >= 75 % (weighted) of the relations have a frequent edge: no symmetry needed
 GROUP_TOL, GROUP_SEP = 5, 10
+DEP_AFTER_MAX = 6             # a connection leaves at most 6 min after the symmetry minute (it arrives at most 6 / 12 min before it)
 TIMED_MOST = 0.8              # timed services >= 80 % of the departures reached: coordinated without the timed-vs-any comparison
 BACK_DEG = 45                 # two edges less than 45 degrees apart lead the same way (a change between them goes back)  # coordinated relations within 5 min (mod 30) form one symmetry; symmetries >= 10 min apart
 
@@ -358,13 +359,15 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             if _wall is None:
                 st_[(x, y)] = dict(k="n", w=wgt, Hd=Hd, Hc=None, C=[], share=None, wait=None, walk=None)
                 continue
-            C = [c for c in waits.opts if c[2] <= limw]                  # the changes within the limit
+            # a connection arrives at most limw (6, 12 by bus) + walk before the symmetry minute and leaves at most 6 min
+            # after it: its wait (walk not included) is at most limw + 6
+            C = [c for c in waits.opts if c[2] <= limw + DEP_AFTER_MAX]
             Hc = _hw([b for _, b in dr] + [c[1] for c in C], wins) if (dr or C) else 999.0
             if dr and not Hc < Hd:                                      # the changes add nothing to the direct trips
                 st_[(x, y)] = dict(k="d", w=wgt, Hd=Hd, Hc=None, C=[], share=None, wait=None, walk=None)
                 continue
-            ok = round(_wall) <= limw and len(C) >= 2 and _wall < hD[y] / 2
-            st_[(x, y)] = dict(k="c" if ok else "n", w=wgt, Hd=Hd, Hc=Hc if C else _hall, C=C if ok else [], share=len(C) / nA[x], nall=waits.nall, ndir=waits.ndir, ddir=waits.ddir, hall=_hall,
+            ok = round(_wall) <= limw + DEP_AFTER_MAX and len(C) >= 2 and _wall < hD[y] / 2
+            st_[(x, y)] = dict(k="c" if ok else "n", w=wgt, Hd=Hd, Hc=Hc if C else _hall, C=C if ok else [], share=len(C) / nA[x], lim=limw, nall=waits.nall, ndir=waits.ndir, ddir=waits.ddir, hall=_hall,
                                dirdep=[float(b) for _, b in dr if in_band(np.array([b]), wins)[0]],
                                wait=_wall, walk=float(np.median([c[3] for c in C])) if C else _tr)
     # ---- symmetries: hands inside the timed changes of the coordinated directions
@@ -379,8 +382,11 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
         # a multiple of 5, then the hand in the middle of the changes; its relations are taken out and the next
         # symmetry (hands >= GROUP_SEP min from the previous ones) is searched among the rest.
         cd_ = {d: v for d, v in need.items() if v["k"] == "c"}
-        IV = {d: [(int(round(c[0])), int(round(c[1]))) for c in v["C"]] for d, v in cd_.items()}
-        fits = lambda iv, h: [((h - a) % 60) <= (b - a) for a, b in iv]       # arrival <= h <= departure (mod 60)
+        # change -> (arrival, departure, longest arrival offset before the hand = limit + walk), minutes rounded
+        IV = {d: [(int(round(c[0])), int(round(c[1])), v["lim"] + (c[3] or 0.0)) for c in v["C"]] for d, v in cd_.items()}
+        # fits hand h: arrives at or before h (at most limit + walk before) and leaves at or after h (at most 6 min after)
+        fits = lambda iv, h: [((h - a) % 60) <= (b - a) and ((h - a) % 60) <= am + 0.5 and (b - a) - ((h - a) % 60) <= DEP_AFTER_MAX
+                              for a, b, am in iv]
 
         def pays(d, f):
             """Are the timed changes of any use? Timed = direct trips (wait 0) + the timed changes f; normal = every
@@ -408,7 +414,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
 
         def slack(d, hs, f):                                      # how central the hands lie in the fitting changes
             s_ = 0
-            for (a, b), ok in zip(IV[d], f):
+            for (a, b, _am), ok in zip(IV[d], f):
                 if ok:
                     s_ += max(min((h - a) % 60, (b - h) % 60) if ((h - a) % 60) <= (b - a) else -99 for h in hs)
             return s_
@@ -453,9 +459,16 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             _, hs, got = max(pick, key=lambda z: z[0])
             groups_.append([list(hs), sum(cd_[d]["w"] for d in got), list(got), got])
             pool -= set(got)
-        for d in pool:                                                # left over (in no symmetry): its timed changes must be of use
-            if len(cd_[d]["C"]) < 2 or not pays(d, np.ones(len(cd_[d]["C"]), bool)):
+        for d in pool:                                                # left over (in no symmetry): coordinated only if some symmetry
+            fbest = None                                              # minute would make it a connection that is of use
+            for h in range(60):
+                fb = rel_fit(d, (h,))
+                if fb is not None and (fbest is None or fb.sum() > fbest.sum()):
+                    fbest = fb
+            if fbest is None:
                 st_[d].update(k="n", C=[])
+            else:
+                st_[d]["C"] = [c for c, ok in zip(st_[d]["C"], fbest) if ok]
         for d in cd_:                                                 # the timed changes of a relation in a symmetry: those that fit it
             for g in groups_:
                 if d in g[3]:
@@ -535,6 +548,21 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
         wmin = min([d[4] for d in (ab, ba) if d and d[4] is not None] or [99])
         hwp = max(hA[p[0]], hD[p[0]], hA[p[1]], hD[p[1]]) if False else max(min(hA[p[0]], hD[p[0]]), min(hA[p[1]], hD[p[1]]))
         ep.append((cat(*p), score, hwp, lab(p[0]) + lab(p[1]) + [ab, ba, lines_of.get(p[0], []), lines_of.get(p[1], [])]))
+    # pairs of edges leading the same way (< BACK_DEG apart): a change between them goes back; listed, not counted
+    BK = ["b", None, None, None, None, None, -1, 0, None, None, None, [], [], None, 0]
+    for x in E:
+        for y in E:
+            if not (x < y) or town(x) == town(y) or not sameway(x, y) or (x.split("¦")[2] != "h" and y.split("¦")[2] != "h"):
+                continue
+            p = (x, y)
+            if p in seen:
+                continue
+            seen.add(p)
+            ab = BK if (nA.get(x) and y in hasD) else None; ba = BK if (nA.get(y) and x in hasD) else None
+            if ab is None and ba is None:
+                continue
+            hwp = max(min(hA[x], hD[x]), min(hA[y], hD[y]))
+            ep.append((cat(x, y), 3, hwp, lab(x) + lab(y) + [ab, ba, lines_of.get(x, []), lines_of.get(y, [])]))
     ep = [r for *_, r in sorted(ep, key=lambda z: z[:3])][:80]
     rp_d = defaultdict(list)
     for d, v in st_.items():

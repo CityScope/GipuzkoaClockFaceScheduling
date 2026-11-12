@@ -28,7 +28,7 @@ Zell (LU)|bigrail,47.136818515,7.92637025,Zell LU,Zell (LU),bigrail,Zell (LU),Ze
 Zofingen|bigrail,47.28823851749999,7.942822895,Zofingen,Zofingen,bigrail,Zofingen,Zofingen · National railways,178.0,7,213.0,True,Zofingen|bigrail
 Zug|bigrail,47.174654663999995,8.51559411,Zug,Zug,bigrail,Zug,Zug · National railways,162.0,12,222.0,True,Zug|bigrail
 Adligenswil|bus,47.06587386333334,8.362692463333332,"Adligenswil, Rigiblick",Adligenswil,bus,Adligenswil,Adligenswil · Regional bus,213.0,3,228.0,True,Adligenswil|bus
-Beromünster|bus,47.204394465,8.200554045,"Beromünster, Mooskapelle",Beromünster,bus,Beromünster,Beromünster · Regional bus,184.0,9,229.0,True,Beromünster|bus
+Beromünster|bus,47.204394465,8.200554045,"Beromünster, Mooskapelle",Beromünster,bus,Beromünster,Beromünster · Regional bus,121.0,9,166.0,True,Beromünster|bus
 Dagmersellen|bus,47.21779195,7.97927653,"Dagmersellen, Bahnhof",Dagmersellen,bus,Dagmersellen,Dagmersellen · Regional bus,40.0,2,50.0,True,Dagmersellen|bigrail
 Ebikon|bus,47.083910308571426,8.342804191428572,"Ebikon, Bahnhof",Ebikon,bus,Ebikon,Ebikon · Regional bus,263.0,7,298.0,True,Ebikon|bigrail
 Eich|bus,47.1506882,8.16805748,"Eich, Dorf",Eich,bus,Eich,Eich · Regional bus,64.0,3,79.0,True,Eich|bus
@@ -48,7 +48,6 @@ Nebikon|bus,47.1931911875,7.977585449999999,"Nebikon, Bahnhof West",Nebikon,bus,
 Neuenkirch|bus,47.11624256,8.195218045,Sempach Station,Neuenkirch,bus,Neuenkirch,Neuenkirch · Regional bus,135.0,9,180.0,True,Neuenkirch|bigrail
 Rain|bus,47.1299801,8.25760155,"Rain, Dorf",Rain,bus,Rain,Rain · Regional bus,114.0,5,139.0,True,Rain|bus
 Reiden|bus,47.24149699,7.96908963,"Reiden, Bahnhof",Reiden,bus,Reiden,Reiden · Regional bus,33.0,2,43.0,True,Reiden|bus
-Rickenbach|bus,47.21977286333333,8.15384913,"Rickenbach LU, Dorf",Rickenbach,bus,Rickenbach,Rickenbach · Regional bus,95.0,5,120.0,True,Rickenbach|bus
 Risch-Rotkreuz|bus,47.14224093799999,8.4300188,"Rotkreuz, Bahnhof Nord",Risch-Rotkreuz,bus,Risch-Rotkreuz · Bf Nord,Risch-Rotkreuz · Bf Nord · Regional bus,52.0,7,87.0,True,Risch-Rotkreuz|bigrail
 Roggwil (BE)|bus,47.23195464,7.835977274999999,"St. Urban, Bahnhof",Roggwil (BE),bus,Roggwil (BE),Roggwil (BE) · Regional bus,25.0,2,35.0,True,Roggwil (BE)|bus
 Romoos|bus,47.011456405,8.028407637499999,"Romoos, Flühboden",Romoos,bus,Romoos,Romoos · Regional bus,20.0,2,30.0,True,Romoos|bus

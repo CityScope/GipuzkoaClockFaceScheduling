@@ -12,8 +12,6 @@ Errenteria|euskotren,43.3111205,-1.8990179999999999,Errenteria,Errenteria,euskot
 Irun|euskotren,43.341393,-1.7959315,Irun,Irun,euskotren,Irun,Irun · Euskotren,100,1,105,True,Irun|euskotren
 Irun|renfe,43.3395365,-1.8012519,Irun,Irun,renfe,Irun,Irun · Renfe,34,4,54,True,Irun|renfe
 Lasarte-Oria|euskotren,43.271043,-2.020272,Lasarte-Oria,Lasarte-Oria,euskotren,Lasarte-Oria,Lasarte-Oria · Euskotren,64,1,69,True,Lasarte-Oria|euskotren
-Pasaia|euskotren,43.318092,-1.9175905,Pasaia,Pasaia,euskotren,Pasaia,Pasaia · Euskotren,137,1,142,True,Pasaia|bus
-Pasaia|renfe,43.3189428,-1.9171727,Pasaia,Pasaia,renfe,Pasaia,Pasaia · Renfe,63,3,78,True,Pasaia|bus
 Vitoria-Gasteiz|renfe,42.841517,-2.672601,Vitoria/Gasteiz,Vitoria-Gasteiz,renfe,Vitoria-Gasteiz,Vitoria-Gasteiz · Renfe,17,4,37,True,Vitoria-Gasteiz|renfe
 Zestoa|euskotren,43.278328,-2.270813,Arroa-Zestoa,Zestoa,euskotren,Zestoa,Zestoa · Euskotren,32,1,37,True,Zestoa|euskotren
 Zizurkil|renfe,43.1891906,-2.0553722,Billabona-Zizurkil,Zizurkil,renfe,Zizurkil,Zizurkil · Renfe,60,5,85,True,Zizurkil|renfe
@@ -56,7 +54,6 @@ Orio|bus,43.2774030483125,-2.11661704960709,"Orio - Anibarko Portua Donostirantz
 Ormaiztegi|bus,43.043782281829685,-2.2564451518181015,Ormaiztegi - Zumarralde  14,Ormaiztegi,bus,Ormaiztegi,Ormaiztegi · Bus,58,3,73,True,Ormaiztegi|bus
 Pamplona / Iruña|bus,42.81171251,-1.645344915,PAMPLONA/IRUÑA (Estación bus geltokia),Pamplona / Iruña,bus,Pamplona,Pamplona · Bus,38,8,78,True,Pamplona / Iruña|bus
 Pasaia|bus,43.31910316965765,-1.918025821113583,Pasaia - Nafarroa Hiribidea 5,Pasaia,bus,Pasaia,Pasaia · Bus,582,11,637,True,Pasaia|bus
-Soraluze-Placencia de las Armas|bus,43.174494194485,-2.41317645583504,Soraluze - Estaziño Kalea 2,Soraluze-Placencia de las Armas,bus,Soraluze,Soraluze · Bus,99,6,129,True,Soraluze-Placencia de las Armas|bus
 Tolosa|bus,43.13322735106909,-2.0767536718459865,"Tolosa - Oria Kalea, Zezen Plaza",Tolosa,bus,Tolosa,Tolosa · Bus,181,24,301,True,Tolosa|bus
 Villabona|bus,43.189930405097115,-2.052845703973096,Villabona - Kale Berria 10,Villabona,bus,Villabona,Villabona · Bus,173,11,228,True,Villabona|bus
 Vitoria-Gasteiz|bus,42.85898154051944,-2.684649533278899,VITORIA-GASTEIZ (Estación Bus Geltokia),Vitoria-Gasteiz,bus,Vitoria-Gasteiz,Vitoria-Gasteiz · Bus,229,24,349,True,Vitoria-Gasteiz|bus
