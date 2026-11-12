@@ -1,7 +1,7 @@
 ,lat,lon,anchor,town,system,label,name,departures,routes,score,important,group
 Bludenz|bigrail,47.155290263333335,9.814082505,Bludenz Bahnhof,Bludenz,bigrail,Bludenz,Bludenz · National railways,98.0,10,148.0,True,Bludenz|bigrail
 Bludenz|localrail,47.15500417166667,9.814495729999999,Bludenz Bahnhof,Bludenz,localrail,Bludenz,Bludenz · Local railways,34.0,1,39.0,True,Bludenz|bigrail
-Bregenz|bigrail,47.503360146,9.741039888,Bregenz Bahnhof,Bregenz,bigrail,Bregenz,Bregenz · National railways,161.0,8,201.0,True,Bregenz|bigrail
+Bregenz|bigrail,47.503360146,9.741039888,Bregenz Bahnhof,Bregenz,bigrail,Bregenz,Bregenz · National railways,169.0,8,209.0,True,Bregenz|bigrail
 Dornbirn|bigrail,47.41731793,9.737930819999999,Dornbirn Bahnhof,Dornbirn,bigrail,Dornbirn,Dornbirn · National railways,164.0,7,199.0,True,Dornbirn|bigrail
 Feldkirch|bigrail,47.241603116,9.604928953999998,Feldkirch Bahnhof,Feldkirch,bigrail,Feldkirch,Feldkirch · National railways,170.0,10,220.0,True,Feldkirch|bigrail
 Frastanz|bigrail,47.220107415,9.638963425,Frastanz Bahnhof,Frastanz,bigrail,Frastanz,Frastanz · National railways,126.0,4,146.0,True,Frastanz|bigrail
@@ -9,7 +9,8 @@ Götzis|bigrail,47.336813845,9.636852385000001,Götzis Bahnhof,Götzis,bigrail,G
 Hard|bigrail,47.47984353,9.68818661,Hard-Fussach Bahnhof,Hard,bigrail,Hard,Hard · National railways,66.0,1,71.0,True,Hard|bigrail
 Hohenems|bigrail,47.36498052666666,9.681290546666666,Hohenems Bahnhof,Hohenems,bigrail,Hohenems,Hohenems · National railways,144.0,6,174.0,True,Hohenems|bigrail
 Klaus|bigrail,47.308099175,9.62484191,Klaus Bahnhof,Klaus,bigrail,Klaus,Klaus · National railways,86.0,2,96.0,True,Klaus|bigrail
-Lochau|bigrail,47.529822635,9.742013660000001,Lochau-Hörbranz Bahnhof,Lochau,bigrail,Lochau,Lochau · National railways,43.0,3,58.0,True,Lochau|bigrail
+Lindau (Bodensee)|bigrail,47.54537727333334,9.680688673333334,Lindau-Insel,Lindau (Bodensee),bigrail,Lindau (Bodensee),Lindau (Bodensee) · National railways,46.0,4,66.0,True,Lindau (Bodensee)|bigrail
+Lochau|bigrail,47.529822635,9.742013660000001,Lochau-Hörbranz Bahnhof,Lochau,bigrail,Lochau,Lochau · National railways,81.0,3,96.0,True,Lochau|bigrail
 Ludesch|bigrail,47.18058125,9.770306099999999,Ludesch Bahnhof,Ludesch,bigrail,Ludesch,Ludesch · National railways,85.0,2,95.0,True,Ludesch|bigrail
 Lustenau|bigrail,47.450860455,9.66738612,Lustenau Bahnhof,Lustenau,bigrail,Lustenau,Lustenau · National railways,65.0,2,75.0,True,Lustenau|bigrail
 Nenzing|bigrail,47.19184518,9.707446489999999,Nenzing Bahnhof,Nenzing,bigrail,Nenzing,Nenzing · National railways,122.0,3,137.0,True,Nenzing|bigrail
@@ -56,9 +57,8 @@ Rankweil|bus,47.27152178,9.637903415,Rankweil Bahnhof,Rankweil,bus,Rankweil,Rank
 Riefensberg|bus,47.50469642,9.96383466,Riefensberg Dorf,Riefensberg,bus,Riefensberg,Riefensberg · Regional bus,14.0,3,29.0,True,Riefensberg|bus
 Ruggell|bus,47.24060657333334,9.52455549,Ruggell Rathaus,Ruggell,bus,Ruggell,Ruggell · Regional bus,0.0,4,20.0,True,Ruggell|bus
 Sankt Anton am Arlberg|bus,47.12746819,10.26663877,St. Anton a.A. Bahnhof,Sankt Anton am Arlberg,bus,Sankt Anton am Arlberg,Sankt Anton am Arlberg · Regional bus,12.0,1,17.0,True,Sankt Anton am Arlberg|bigrail
-Satteins|bus,47.22497901,9.66560296,Satteins Mittelschule,Satteins,bus,Satteins,Satteins · Regional bus,75.0,5,100.0,True,Satteins|bus
+Satteins|bus,47.22497901,9.66560296,Satteins Mittelschule,Satteins,bus,Satteins,Satteins · Regional bus,66.0,5,91.0,True,Satteins|bus
 Scheidegg|bus,47.58481376,9.85375061,Scheidegg Bahnhofstraße,Scheidegg,bus,Scheidegg,Scheidegg · Regional bus,12.0,1,17.0,True,Scheidegg|bus
-Schlins|bus,47.2062345,9.699083175,Schlins Postamt,Schlins,bus,Schlins,Schlins · Regional bus,89.0,5,114.0,True,Schlins|bus
 Schnifis|bus,47.215815045,9.719856714999999,Schnifis Tobel,Schnifis,bus,Schnifis,Schnifis · Regional bus,23.0,1,28.0,True,Schnifis|bus
 Schoppernau|bus,47.31225617,10.016565765,Schoppernau Gemeindeamt,Schoppernau,bus,Schoppernau,Schoppernau · Regional bus,33.0,4,53.0,True,Schoppernau|bus
 Schruns|bus,47.07960912,9.91778701,Schruns Bahnhof,Schruns,bus,Schruns,Schruns · Regional bus,46.0,8,86.0,True,Schruns|bus

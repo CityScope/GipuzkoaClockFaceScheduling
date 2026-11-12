@@ -611,11 +611,11 @@ let map;
   // two lines per direction: timed -> values with timing / values without timing (muted); otherwise the status / the values
   const dir=(d,arrow)=>{if(!d)return `<div class="dv"><span class="da">${arrow}</span><span class="l1 mu">no service</span></div>`;
    const nt=d[9]!=null?val(d[9],d[13],d[10]):'';
-   const l1=d[0]==='c'?`<span class="l1 tm">${val(d[4],d[5],d[3])}</span>`:d[0]==='f'?`<span class="l1 fr">frequent${d[2]!=null&&d[9]!=null&&Math.round(d[9])===0&&d[10]===d[2]?' · direct · every '+f1(d[2]):''}</span>`:d[0]==='d'?`<span class="l1 fr">direct · every ${f1(d[2])}</span>`:d[0]==='b'?`<span class="l1 mu">goes back</span>`:`<span class="l1 mu">not timed</span>`;
+   const l1=d[0]==='c'?`<span class="l1 tm">${val(d[4],d[5],d[3])}</span>`:d[0]==='f'?`<span class="l1 fr">frequent${d[2]!=null&&d[9]!=null&&Math.round(d[9])===0&&d[10]===d[2]?' · direct · every '+f1(d[2]):''}</span>`:d[0]==='d'?`<span class="l1 fr">direct · every ${f1(d[2])}</span>`:d[0]==='b'?`<span class="l1 mu">goes back</span>`:d[0]==='o'?`<span class="l1 fr" title="another route, not through this node, is faster (travel time + 1.5 x headway)">other route · ${f1(d[15]&&d[15][0])} · every ${f1(d[15]&&d[15][1])}</span>`:`<span class="l1 mu">not timed</span>`;
    const same=(d[0]==='c'&&nt&&nt===val(d[4],d[5],d[3]))||d[14]===1||(d[0]==='f'&&d[2]!=null&&d[9]!=null&&Math.round(d[9])===0&&d[10]===d[2]);   // one line is enough
    const l2=nt&&!same?`<span class="l2" title="all services, real timetable (direct services with wait 0): mean wait and headway">${nt}</span>`:'';
    const allDirect=d[2]!=null&&d[9]!=null&&Math.round(d[9])===0&&d[10]===d[2];      // all services = the direct ones
-   const l3=d[2]!=null&&d[0]!=='d'&&!allDirect?`<span class="l2" title="direct services only">direct · every ${f1(d[2])}</span>`:'';
+   const l3=d[2]!=null&&d[0]!=='d'&&d[0]!=='o'&&!allDirect?`<span class="l2" title="direct services only">direct · every ${f1(d[2])}</span>`:'';
    return `<div class="dv${inG(d)?' ing':''}"><span class="da">${arrow}</span><span class="dl">${l1}${l2}${l3}</span></div>`;};
   const lines=(L,used)=>`<div class="lns">${(L||[]).map(([l,hw])=>`<span class="ln${used.has(l)?' u':''}" onclick="window.showTT('${q}','line','${String(l).replace(/'/g,"\\'")}')" title="timetable of line ${l}"><b>${l}</b><i>${hw}′</i></span>`).join('')}</div>`;
   const stn=(lab)=>`<b class="stl" onclick="window.showTT('${q}','dir','${String(lab).replace(/'/g,"\\'")}')" title="timetable towards / from ${lab}">${lab}</b>`;

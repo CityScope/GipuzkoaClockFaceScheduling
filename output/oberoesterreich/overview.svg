@@ -209,8 +209,6 @@
 <line x1='532.2' y1='685.4' x2='525.4' y2='692.9' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='873.7' cy='434.1' r='9.2' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='873.7' cy='434.1' r='4.6' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
-<line x1='873.7' y1='434.1' x2='884.3' y2='428.0' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='873.7' y1='434.1' x2='863.2' y2='440.2' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='909.1' cy='409.2' r='15.8' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='909.1' cy='409.2' r='10.5' fill='#2ca02c' stroke='#fff' stroke-width='1'/>
 <circle cx='909.1' cy='409.2' r='5.3' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
@@ -238,8 +236,6 @@
 <line x1='1031.6' y1='763.7' x2='1041.7' y2='760.4' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <circle cx='872.5' cy='500.9' r='9.1' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='872.5' cy='500.9' r='4.6' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
-<line x1='872.5' y1='500.9' x2='884.0' y2='497.2' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='872.5' y1='500.9' x2='860.9' y2='504.7' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <line x1='872.5' y1='500.9' x2='880.6' y2='509.9' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <line x1='872.5' y1='500.9' x2='864.4' y2='491.9' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='1351.5' cy='861.7' r='5.2' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
@@ -253,6 +249,7 @@
 <circle cx='1260.3' cy='1010.8' r='2.6' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <circle cx='824.3' cy='436.6' r='7.5' fill='#2ca02c' stroke='#fff' stroke-width='1.2'/>
 <circle cx='824.3' cy='436.6' r='3.7' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
+<line x1='824.3' y1='436.6' x2='823.2' y2='447.0' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <circle cx='740.9' cy='414.0' r='5.7' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='648.3' cy='308.2' r='5.7' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1009.6' cy='501.6' r='6.1' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>

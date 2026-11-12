@@ -9,6 +9,7 @@ Götzis|bigrail,47.336813845,9.636852385000001,Götzis Bahnhof,Götzis,bigrail,G
 Hard|bigrail,47.47984353,9.68818661,Hard-Fussach Bahnhof,Hard,bigrail,Hard,Hard · National railways,81,2,91,True,Hard|bigrail
 Hohenems|bigrail,47.36498052666666,9.681290546666666,Hohenems Bahnhof,Hohenems,bigrail,Hohenems,Hohenems · National railways,162,7,197,True,Hohenems|bigrail
 Klaus|bigrail,47.308099175,9.62484191,Klaus Bahnhof,Klaus,bigrail,Klaus,Klaus · National railways,102,3,117,True,Klaus|bigrail
+Lindau (Bodensee)|bigrail,47.54537727333334,9.680688673333334,Lindau-Insel,Lindau (Bodensee),bigrail,Lindau (Bodensee),Lindau (Bodensee) · National railways,41,3,56,True,Lindau (Bodensee)|bigrail
 Lochau|bigrail,47.529822635,9.742013660000001,Lochau-Hörbranz Bahnhof,Lochau,bigrail,Lochau,Lochau · National railways,77,2,87,True,Lochau|bigrail
 Ludesch|bigrail,47.18058125,9.770306099999999,Ludesch Bahnhof,Ludesch,bigrail,Ludesch,Ludesch · National railways,85,3,100,True,Ludesch|bigrail
 Lustenau|bigrail,47.450860455,9.66738612,Lustenau Bahnhof,Lustenau,bigrail,Lustenau,Lustenau · National railways,79,3,94,True,Lustenau|bigrail
@@ -58,7 +59,6 @@ Ruggell|bus,47.24060657333334,9.52455549,Ruggell Rathaus,Ruggell,bus,Ruggell,Rug
 Sankt Anton am Arlberg|bus,47.12746819,10.26663877,St. Anton a.A. Bahnhof,Sankt Anton am Arlberg,bus,Sankt Anton am Arlberg,Sankt Anton am Arlberg · Regional bus,12,1,17,True,Sankt Anton am Arlberg|bigrail
 Satteins|bus,47.22497901,9.66560296,Satteins Mittelschule,Satteins,bus,Satteins,Satteins · Regional bus,131,9,176,True,Satteins|bus
 Scheidegg|bus,47.58481376,9.85375061,Scheidegg Bahnhofstraße,Scheidegg,bus,Scheidegg,Scheidegg · Regional bus,20,1,25,True,Scheidegg|bus
-Schlins|bus,47.2062345,9.699083175,Schlins Postamt,Schlins,bus,Schlins,Schlins · Regional bus,139,9,184,True,Schlins|bus
 Schnifis|bus,47.215815045,9.719856714999999,Schnifis Tobel,Schnifis,bus,Schnifis,Schnifis · Regional bus,39,2,49,True,Schnifis|bus
 Schoppernau|bus,47.31225617,10.016565765,Schoppernau Gemeindeamt,Schoppernau,bus,Schoppernau,Schoppernau · Regional bus,49,4,69,True,Schoppernau|bus
 Schruns|bus,47.07960912,9.91778701,Schruns Bahnhof,Schruns,bus,Schruns,Schruns · Regional bus,69,11,124,True,Schruns|bus

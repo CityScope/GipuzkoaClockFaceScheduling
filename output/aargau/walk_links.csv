@@ -3,6 +3,7 @@ Aarau|bigrail,Aarau|localrail,89,1.2
 Aarau|bigrail,Aarau|bus,128,1.7
 Aarau|localrail,Aarau|bus,215,2.9
 Baden|bigrail,Baden|bus,112,1.5
+Basel|bigrail,Basel|bigrail|3,319,4.2
 Beinwil am See|bigrail,Beinwil am See|bus,53,0.7
 Bremgarten|localrail,Bremgarten|bus,50,0.7
 Brugg|bigrail,Brugg|bus,16,0.2
@@ -21,7 +22,6 @@ Menziken|localrail,Menziken|bus,42,0.6
 Muri|bigrail,Muri|bus,65,0.9
 Möhlin|bigrail,Möhlin|bus,37,0.5
 Möriken-Wildegg|bigrail,Möriken-Wildegg|bus,209,2.8
-Pratteln|bigrail,Pratteln|bus,95,1.3
 Rheinfelden|bigrail,Rheinfelden|bus,61,0.8
 Schöftland|localrail,Schöftland|bus,36,0.5
 Sins|bigrail,Sins|bus,111,1.5

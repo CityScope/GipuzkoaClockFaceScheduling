@@ -20,12 +20,15 @@ Augst|bus,night,30,"0,16,21,25,31,55",0,0.8666666666666667
 Baden|bigrail,peak,56,"1,14,23,30,42,53",0,0.7142857142857143
 Baden|bigrail,day,112,"1,14,23,30,42,53",0,0.7142857142857143
 Baden|bigrail,night,53,"7,13,23,29,46,53",0,0.7169811320754716
-Baden|bus,peak,100,"12,26,41,57",15,0.8
-Baden|bus,day,200,"12,26,41,57",15,0.8
-Baden|bus,night,59,"12,26,41,57",15,0.7627118644067796
-Basel|bigrail,peak,52,"6,16,20,31,44,59",0,0.8461538461538461
-Basel|bigrail,day,110,"3,7,16,29,44,59",0,0.7818181818181819
-Basel|bigrail,night,36,"6,20,29,44,59",0,0.8055555555555556
+Baden|bus,peak,116,"12,26,41,57",15,0.8275862068965517
+Baden|bus,day,232,"12,26,41,57",15,0.8275862068965517
+Baden|bus,night,69,"12,26,41,57",15,0.7971014492753623
+Basel|bigrail,peak,47,"6,15,20,30,36,44",0,0.851063829787234
+Basel|bigrail,day,95,"5,15,20,30,44,48",0,0.8315789473684211
+Basel|bigrail,night,36,"6,20,44",0,0.6388888888888888
+Basel|bigrail|3,peak,16,"0,7,30,39",0,0.9375
+Basel|bigrail|3,day,32,"0,7,30,37",0,1.0
+Basel|bigrail|3,night,15,"1,9,29,39",0,0.9333333333333333
 Beinwil am See|bigrail,peak,16,"1,27,54",0,1.0
 Beinwil am See|bigrail,day,32,"1,27,54",0,1.0
 Beinwil am See|bigrail,night,9,"1,29,52",0,1.0
@@ -182,9 +185,6 @@ Olten|bigrail,night,59,36,60,0.2711864406779661
 Othmarsingen|bigrail,peak,20,"15,30,38,43,57",0,1.0
 Othmarsingen|bigrail,day,40,"15,30,38,43,57",0,1.0
 Othmarsingen|bigrail,night,12,"28,36,56",0,0.8333333333333334
-Pratteln|bigrail,peak,37,"3,10,17,27,33,39",0,0.7567567567567568
-Pratteln|bigrail,day,77,"3,10,17,27,33,39",0,0.7922077922077922
-Pratteln|bigrail,night,41,"17,27,31",0,0.4878048780487805
 Pratteln|bus,peak,22,"3,21,27,33,51,58",0,1.0
 Pratteln|bus,day,47,"3,21,27,33,51,58",0,1.0
 Pratteln|bus,night,22,"21,27,33,51,58",0,1.0
@@ -272,6 +272,9 @@ Waltenschwil|bus,night,2,56,0,1.0
 Wegenstetten|bus,peak,10,"18,31,49",0,1.0
 Wegenstetten|bus,day,23,"18,31,49",0,1.0
 Wegenstetten|bus,night,4,"18,49",30,1.0
+Wettingen|bus|1,peak,32,"6,22,28,36,51,58",0,1.0
+Wettingen|bus|1,day,64,"6,22,28,36,51,58",0,1.0
+Wettingen|bus|1,night,20,"6,28,58",0,0.7
 Wohlen|bigrail,peak,24,"6,10,14,43,49",0,1.0
 Wohlen|bigrail,day,48,"6,10,14,43,49",0,1.0
 Wohlen|bigrail,night,13,"12,16,46",0,0.7692307692307693

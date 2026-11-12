@@ -23,9 +23,9 @@ Bludenz|localrail,night,3,"24,45,54",0,1.0
 Brand|bus,peak,3,"0,29",30,1.0
 Brand|bus,day,14,"0,29",30,1.0
 Brand|bus,night,0,,0,0.0
-Bregenz|bigrail,peak,33,"11,18,40,44,48",0,0.8484848484848485
-Bregenz|bigrail,day,67,"10,18,41,48",0,0.7164179104477612
-Bregenz|bigrail,night,32,"15,45",30,0.75
+Bregenz|bigrail,peak,35,"0,10,18,42,48",0,0.9142857142857143
+Bregenz|bigrail,day,71,"1,11,18,41,48",0,0.7887323943661971
+Bregenz|bigrail,night,33,"15,45",30,0.7272727272727273
 Bregenz|bus,peak,70,"9,20,25,34,39,56",0,0.7285714285714285
 Bregenz|bus,day,132,"11,20,25,39,51,55",0,0.7575757575757576
 Bregenz|bus,night,36,"8,21,51",0,0.6944444444444444
@@ -101,12 +101,15 @@ Laterns|bus,night,0,,0,0.0
 Lech|bus,peak,1,51,0,1.0
 Lech|bus,day,9,"20,50",30,1.0
 Lech|bus,night,0,,0,0.0
+Lindau (Bodensee)|bigrail,peak,10,"24,47,56",0,1.0
+Lindau (Bodensee)|bigrail,day,20,"24,47,56",0,1.0
+Lindau (Bodensee)|bigrail,night,6,"24,55",30,0.6666666666666666
 Lingenau|bus,peak,9,"10,46",0,1.0
 Lingenau|bus,day,14,46,60,0.8571428571428571
 Lingenau|bus,night,3,"15,44",30,1.0
-Lochau|bigrail,peak,8,"5,33",0,1.0
-Lochau|bigrail,day,16,"6,33",0,1.0
-Lochau|bigrail,night,11,7,60,0.7272727272727273
+Lochau|bigrail,peak,16,"5,25,33,55",0,1.0
+Lochau|bigrail,day,32,"6,24,33,55",0,0.96875
+Lochau|bigrail,night,17,7,60,0.47058823529411764
 Lochau|bus,peak,12,"0,29",30,1.0
 Lochau|bus,day,24,"0,29",30,1.0
 Lochau|bus,night,1,29,0,1.0
@@ -155,15 +158,12 @@ Sankt Anton am Arlberg|bigrail,night,1,29,0,1.0
 Sankt Anton am Arlberg|bus,peak,3,"15,40",0,1.0
 Sankt Anton am Arlberg|bus,day,8,40,60,1.0
 Sankt Anton am Arlberg|bus,night,0,,0,0.0
-Satteins|bus,peak,18,"12,21,32,43",0,0.8888888888888888
-Satteins|bus,day,44,"12,21,34,43",0,0.8636363636363636
-Satteins|bus,night,4,"15,44",30,1.0
+Satteins|bus,peak,16,"12,23,32,37,44",0,1.0
+Satteins|bus,day,38,"12,23,34,43",0,0.9210526315789473
+Satteins|bus,night,3,"15,44",30,1.0
 Scheidegg|bus,peak,3,"5,57",0,1.0
 Scheidegg|bus,day,8,"5,59",0,1.0
 Scheidegg|bus,night,0,,0,0.0
-Schlins|bus,peak,24,"6,15,39,50",0,0.7083333333333334
-Schlins|bus,day,52,"4,15,30,39,51",0,0.8076923076923077
-Schlins|bus,night,3,"7,50",0,1.0
 Schnifis|bus,peak,7,31,60,0.42857142857142855
 Schnifis|bus,day,14,"22,31,35",0,0.8571428571428571
 Schnifis|bus,night,0,,0,0.0

@@ -26,6 +26,9 @@ Baden|bus,night,102,"12,27,41,57",15,0.7647058823529411
 Basel|bigrail,peak,62,"6,15,35",0,0.5806451612903226
 Basel|bigrail,day,120,"6,15,36",0,0.5333333333333333
 Basel|bigrail,night,35,"7,15,19,36,49,57",0,0.7142857142857143
+Basel|bigrail|3,peak,42,"0,7,15,20,30,38",0,0.8095238095238095
+Basel|bigrail|3,day,65,"0,7,15,30,39,46",0,0.8615384615384616
+Basel|bigrail|3,night,19,"1,29,37",0,0.631578947368421
 Beinwil (Freiamt)|bus,peak,14,"6,11,39,44,49",0,0.7857142857142857
 Beinwil (Freiamt)|bus,day,16,"5,9,15,42,47",0,0.8125
 Beinwil (Freiamt)|bus,night,2,"41,46",0,1.0
@@ -188,9 +191,6 @@ Olten|bigrail,night,84,"6,36,48",0,0.5
 Othmarsingen|bigrail,peak,40,"0,5,15,24,29,41",0,0.8
 Othmarsingen|bigrail,day,66,"0,17,24,29,34,41",0,0.9696969696969697
 Othmarsingen|bigrail,night,24,"0,24,30",0,0.6666666666666666
-Pratteln|bigrail,peak,55,"3,27,33,48,57",0,0.7454545454545455
-Pratteln|bigrail,day,97,"3,11,27,33,48,57",0,0.8350515463917526
-Pratteln|bigrail,night,34,"1,18,27,31,41,57",0,0.7647058823529411
 Pratteln|bus,peak,40,"7,21,25,37,49,57",0,0.9
 Pratteln|bus,day,80,"7,21,25,37,49,57",0,0.9
 Pratteln|bus,night,20,"5,18,35,48",0,0.9
@@ -293,6 +293,9 @@ Waltenschwil|bus,night,7,"27,56",30,1.0
 Wegenstetten|bus,peak,16,"0,20,31,48",0,1.0
 Wegenstetten|bus,day,26,"20,30,49",0,0.9230769230769231
 Wegenstetten|bus,night,8,"18,49",30,1.0
+Wettingen|bus|1,peak,48,"5,13,18,28,43,58",0,0.8333333333333334
+Wettingen|bus|1,day,96,"5,13,18,28,43,58",0,0.8333333333333334
+Wettingen|bus|1,night,30,"27,35,58",0,0.5666666666666667
 Wohlen|bigrail,peak,40,"8,12,17,41,46,50",0,0.975
 Wohlen|bigrail,day,53,"8,12,16,46,50",0,0.9433962264150944
 Wohlen|bigrail,night,16,"10,14,42,46",0,0.875

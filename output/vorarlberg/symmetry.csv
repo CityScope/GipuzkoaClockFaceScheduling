@@ -1,42 +1,35 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
-Bludenz|bigrail,peak,"0,30",30,0.27,0.77,8,National railways + Local railways + Regional bus,dotted
-Bludenz|bigrail,day,"3,33",30,0.34,0.52,10,National railways + Local railways + Regional bus,dotted
-Bludenz|bigrail,day,23,60,1.0,1.0,1,National railways + Regional bus,solid
-Bregenz|bigrail,peak,"11,41",30,0.79,0.79,3,National railways + Regional bus,solid
-Bregenz|bigrail,peak,"21,51",30,0.79,0.79,3,National railways + Regional bus,solid
-Bregenz|bigrail,day,"24,54",30,0.44,0.65,6,National railways + Regional bus,dotted
+Bludenz|bigrail,peak,4,60,0.0,1.0,2,National railways + Local railways + Regional bus,dotted
+Bludenz|bigrail,peak,30,60,0.46,0.73,3,National railways + Local railways + Regional bus,dotted
+Bludenz|bigrail,day,30,60,0.73,0.73,5,National railways + Local railways + Regional bus,solid
+Bludenz|bigrail,day,56,60,1.0,1.0,1,National railways + Local railways + Regional bus,solid
+Bregenz|bigrail,day,54,60,0.0,0.83,2,National railways + Regional bus,dotted
+Bregenz|bigrail,day,24,60,0.0,1.0,1,National railways + Regional bus,dotted
 Dornbirn|bigrail,peak,"1,31",30,0.75,0.75,4,National railways + Regional bus,solid
 Dornbirn|bigrail,peak,"21,51",30,1.0,1.0,1,National railways + Regional bus,solid
 Dornbirn|bigrail,day,"29,59",30,1.0,1.0,2,National railways + Regional bus,solid
 Feldkirch|bigrail,peak,"6,36",30,0.51,0.86,5,National railways + Regional bus,solid
 Feldkirch|bigrail,day,"0,30",30,0.47,0.47,5,National railways + Regional bus,dotted
 Feldkirch|bigrail,day,47,60,0.28,0.72,3,National railways + Regional bus,dotted
+Feldkirch|bigrail,day,20,60,1.0,1.0,2,National railways + Regional bus,solid
 Frastanz|bigrail,peak,54,60,0.0,1.0,1,National railways + Regional bus,dotted
-Frastanz|bigrail,day,53,60,0.11,0.11,2,National railways + Regional bus,dotted
-Frastanz|bigrail,day,3,60,1.0,1.0,2,National railways + Regional bus,solid
-Götzis|bigrail,peak,"15,45",30,1.0,1.0,1,National railways + Regional bus,solid
+Frastanz|bigrail,day,53,60,1.0,1.0,1,National railways + Regional bus,solid
 Hard|bigrail,peak,"7,37",30,1.0,1.0,1,National railways + Regional bus,solid
 Hard|bigrail,peak,47,60,1.0,1.0,1,National railways + Regional bus,solid
 Hard|bigrail,day,"7,37",30,1.0,1.0,1,National railways + Regional bus,solid
 Hohenems|bigrail,peak,"14,44",30,0.0,1.0,1,National railways + Regional bus,dotted
-Hohenems|bigrail,peak,29,60,1.0,1.0,1,National railways + Regional bus,solid
+Hohenems|bigrail,peak,24,60,0.0,1.0,1,National railways + Regional bus,dotted
 Hohenems|bigrail,day,"14,44",30,0.0,1.0,1,National railways + Regional bus,dotted
-Klaus|bigrail,day,"14,44",30,1.0,1.0,1,National railways + Regional bus,solid
-Ludesch|bigrail,peak,"15,45",30,0.63,0.81,3,National railways + Regional bus,solid
+Ludesch|bigrail,peak,"15,45",30,1.0,1.0,1,National railways + Regional bus,solid
 Lustenau|bigrail,day,"0,30",30,1.0,1.0,1,National railways + Regional bus,solid
-Nenzing|bigrail,peak,53,60,0.56,0.56,3,National railways + Regional bus,solid
-Nenzing|bigrail,day,20,60,0.0,1.0,2,National railways + Regional bus,dotted
-Nenzing|bigrail,day,50,60,0.94,1.0,2,National railways + Regional bus,solid
+Nenzing|bigrail,day,50,60,0.51,0.76,3,National railways + Regional bus,solid
 Rankweil|bigrail,peak,"11,41",30,0.28,1.0,2,National railways + Regional bus,dotted
 Rankweil|bigrail,day,"11,41",30,0.0,0.72,3,Regional bus,dotted
-Wolfurt|bigrail,peak,4,60,0.0,1.0,1,National railways + Regional bus,dotted
+Schruns|bus,day,"3,33",30,0.35,1.0,2,Local railways + Regional bus,dotted
 Alberschwende|bus,peak,20,60,0.47,0.62,3,Regional bus,dotted
 Alberschwende|bus,day,20,60,0.63,0.63,3,Regional bus,solid
 Alberschwende|bus,day,35,60,0.63,0.63,3,Regional bus,solid
 Andelsbuch|bus,day,"13,43",30,0.5,1.0,2,Regional bus,dotted
 Egg|bus,peak,"1,31",30,0.26,0.52,3,Regional bus,dotted
-Egg|bus,day,57,60,1.0,1.0,2,Regional bus,solid
-Lingenau|bus,peak,46,60,0.73,0.73,3,Regional bus,solid
-Lingenau|bus,day,45,60,0.67,0.67,3,Regional bus,solid
 Schoppernau|bus,peak,5,60,0.5,0.75,3,Regional bus,dotted
-Thüringen|bus,day,40,60,0.76,1.0,2,Regional bus,solid
+Thüringen|bus,day,40,60,0.78,1.0,2,Regional bus,solid

@@ -198,8 +198,29 @@ GROUP_TOL, GROUP_SEP = 5, 10
 DEP_AFTER_MAX = 6             # a connection leaves at most 6 min after the symmetry minute (it arrives at most 6 / 12 min before it)
 SYM_PULSE_MAX = 120           # a symmetry's pulses (with a timed connection) must run at least every 120 min
 DIRECT_GAIN = 0.75            # with direct trips: headway (timed + direct) + 2 x mean wait <= 0.75 x direct headway
+ALT_HW_FACTOR = 1.5           # another route A -> B (not through the node): compared by travel time + 1.5 x headway
+CHANCE_SHARE = 1 / 3          # a timed change (walk + wait) must take <= 1/3 of the departing headway (chance: 1/2)
 TIMED_MOST = 0.8              # timed services >= 80 % of the departures reached: coordinated without the timed-vs-any comparison
 BACK_DEG = 45                 # two edges less than 45 degrees apart lead the same way (a change between them goes back)  # coordinated relations within 5 min (mod 30) form one symmetry; symmetries >= 10 min apart
+
+
+def _alt_trips(sa, sb, excl):
+    """One-vehicle trips from station sa to station sb that pass no station in excl: [(t_dep at sa, t_arr at sb)]."""
+    out = []
+    bn = _W.get("bynode", {})
+    for tk in bn.get(sa, set()) & bn.get(sb, set()):
+        ns, ts, ks = _W["trips"][tk]
+        i = None
+        for j in range(len(ns)):
+            if i is None:
+                if ns[j] == sa and ks[j] == "dep":
+                    i = j
+                continue
+            if ns[j] in excl:
+                break
+            if ns[j] == sb and ks[j] == "arr":
+                out.append((ts[i], ts[j])); break
+    return out
 
 
 def _circ(vals, period, w=None):
@@ -340,6 +361,25 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
     _tA = A.e.map(town); _tD = Dall.e.map(town)
     hAt = {t: _hw(A.t[_tA == t].values, wins) for t in set(_tA)}     # headway from / to each neighbouring municipality,
     hDt = {t: _hw(Dall.t[_tD == t].values, wins) for t in set(_tD)}  # all its stops, modes and lines together
+    # another route between the two neighbouring stations that does not pass this node (or its walk partners):
+    # one-vehicle trips, compared by travel time + ALT_HW_FACTOR x headway with the way through the node
+    excl_ = set(memset) | {b_ for a_, b_ in wk if a_ in memset}
+    _ttc = {}
+    def ttmed(sa, sb):                                   # median one-vehicle travel time sa -> sb (any route)
+        if (sa, sb) not in _ttc:
+            tr_ = _alt_trips(sa, sb, set())
+            _ttc[(sa, sb)] = float(np.median([b - a for a, b in tr_])) if tr_ else None
+        return _ttc[(sa, sb)]
+    def altroute(x, y):
+        sa, sb = x.split("¦")[0], y.split("¦")[0]
+        tr_ = [(a, b) for a, b in _alt_trips(sa, sb, excl_) if in_band(np.array([a]), wins)[0]]
+        if not tr_:
+            return None
+        tt_ = float(np.median([b - a for a, b in tr_])); h_ = _hw(sorted(a for a, _ in tr_), wins)
+        return (tt_ + ALT_HW_FACTOR * min(h_, 999.0), tt_, h_)
+    def legs_tt(x, y):                                   # travel time to the node from x's station and on to y's station
+        a_, b_ = ttmed(x.split("¦")[0], enode[x]), ttmed(enode[y], y.split("¦")[0])
+        return None if a_ is None or b_ is None else a_ + b_
     st_ = {}
     for x in E:
         for y in E:
@@ -364,6 +404,13 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             # departure towards y it can reach (same vehicle = wait 0). Candidate connections: per departure every arrival
             # that catches it within limit + 6 min; whether they are connections is decided at a symmetry minute (fit + use).
             limw = COORD_WAIT_RAIL if sysof[enode[x]] in RAIL_SYSTEMS else COORD_WAIT_BUS
+            alt_ = altroute(x, y); lg_ = legs_tt(x, y) if alt_ else None
+            if alt_ and lg_ is not None and _wall is not None:
+                via_ = lg_ + _wall + (_tr or 0.0) * (waits.nall - waits.ndir) / max(1, waits.nall) + ALT_HW_FACTOR * _hall
+                if alt_[0] < via_:                       # another route is faster (time + 1.5 x headway): no timing needed
+                    st_[(x, y)] = dict(k="o", w=wgt, Hd=Hd, Hc=None, C=[], share=None, wait=None, walk=None,
+                                       alt=[round(alt_[1]), None if alt_[2] >= 999 else round(alt_[2])])
+                    continue
             if _wall is None:
                 st_[(x, y)] = dict(k="n", w=wgt, Hd=Hd, Hc=None, C=[], share=None, wait=None, walk=None)
                 continue
@@ -383,9 +430,9 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             st_[(x, y)] = dict(k="c" if ok else "n", w=wgt, Hd=Hd, Hc=Hc if C else _hall, C=C if ok else [], CS=CS if ok else [], rep=rep_,
                                hDy=hD[y], share=len(C) / nA[x], lim=limw, nall=waits.nall, ndir=waits.ndir, ddir=waits.ddir, hall=_hall,
                                dirdep=[float(b) for _, b in dr if in_band(np.array([b]), wins)[0]],
-                               wait=_wall, walk=float(np.median([c[3] for c in C])) if C else _tr)
+                               wait=_wall, walk=float(np.median([c[3] for c in C])) if C else _tr, altc=alt_[0] if alt_ else None, legs=lg_)
     # ---- symmetries: hands inside the timed changes of the coordinated directions
-    need = {d: v for d, v in st_.items() if v["k"] not in ("f", "d")}     # directions that need coordination
+    need = {d: v for d, v in st_.items() if v["k"] not in ("f", "d", "o")}     # directions that need coordination
     tot = sum(v["w"] for v in st_.values()) or 1.0
     sym, gof = [], {}
     if st_ and sum(v["w"] for v in st_.values() if v["k"] == "f") / tot < SYM_NO_NEED:
@@ -417,11 +464,15 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             the headway of the direct trips (if any; now: H_t + 2 W_t <= 0.75 H_direct); then either they are >= 80 % of the departures, or the wait they
             save pays for the headway they lose: (H_timed - H_all) / 2 <= wait_all - wait_timed (formula headways)."""
             v = cd_[d]
-            if not ch or float(np.mean([c[8] for c in ch])) >= v["hDy"] / 2:
+            # better than chance: walk + wait <= 1/3 of the departing headway (a random arrival waits 1/2 of it)
+            if not ch or float(np.mean([c[8] + (c[3] or 0.0) for c in ch])) > CHANCE_SHARE * v["hDy"] + 0.5:
                 return False
             dep = sorted(set(v["ddir"]) | set(v["dirdep"]) | {c[1] for c in ch})
             ht = _hw(dep, wins)
             wt = sum(c[8] for c in ch) / len(dep)                    # mean wait, direct trips counting 0
+            if v.get("altc") is not None and v.get("legs") is not None and \
+                    v["altc"] < v["legs"] + sum(c[8] + (c[3] or 0.0) for c in ch) / len(dep) + ALT_HW_FACTOR * ht:
+                return False                                          # another route is faster (time + 1.5 x headway)
             if v["dirdep"] and ht + 2 * wt > DIRECT_GAIN * _hw(sorted(v["dirdep"]), wins):   # direct trips exist: headway
                 return False                                          # + 2 x wait must be <= 0.75 x the direct headway
             if len(dep) >= TIMED_MOST * v["nall"]:
@@ -552,7 +603,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             wpair = lambda p: max(st_.get(p, {}).get("w", 0), st_.get(p[::-1], {}).get("w", 0))
             # a direction "works" if it is connected in this symmetry, needs no coordination (frequent / served directly)
             # or has no service at all (one-way relation); a pair is counted if at least one direction needs coordination
-            works = lambda d: d in dirs or d not in st_ or st_[d]["k"] in ("c", "f", "d")   # timed here or in another pulse of the node
+            works = lambda d: d in dirs or d not in st_ or st_[d]["k"] in ("c", "f", "d", "o")   # timed here or in another pulse of the node
             timed = lambda d: d in dirs
             W = sum(wpair(p) for p in pairs) or 1.0
             both = sum(wpair(p) for p in pairs if works(p) and works(p[::-1])) / W
@@ -614,7 +665,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                 gof.get(d, -1), len(v["C"]),
                 None if wall is None else round(wall, 1), None if wall is None else round(wall, 1),
                 rh(hall) if hall is not None else None, used_in, used_out, None if tr is None else round(tr, 1),
-                1 if v.get("alld") else 0]
+                1 if v.get("alld") else 0, v.get("alt")]
     cat = lambda e1, e2: (max(rank[e1.split("¦")[1]], rank[e2.split("¦")[1]]), min(rank[e1.split("¦")[1]], rank[e2.split("¦")[1]]))
     seen, ep = set(), []
     for (x, y) in st_:
@@ -807,6 +858,13 @@ def transfers(ev, groups, node, walk):
     _vg = _v.groupby(["trip_key", "town"]).t.agg(["min", "max"])
     _W.update(ev=ev, groups=groups, node=node, wk=wk, VMAX=_vg["max"].to_dict(), VMIN=_vg["min"].to_dict(),
               members=_members(groups), arr_all=ev[ev.kind == "arr"], dep_all=ev[ev.kind == "dep"])
+    _e = ev[["trip_key", "node", "t", "kind"]].sort_values(["trip_key", "t", "kind"])
+    trips_, bynode = {}, defaultdict(set)
+    for tk, g in _e.groupby("trip_key", sort=False):
+        ns = g.node.tolist(); trips_[tk] = (ns, g.t.tolist(), g.kind.tolist())
+        for n_ in set(ns):
+            bynode[n_].add(tk)
+    _W.update(trips=trips_, bynode=bynode)
     gids = list(_W["members"])
     nproc = min(os.cpu_count() or 1, 12)
     if nproc > 1 and len(gids) > 20:

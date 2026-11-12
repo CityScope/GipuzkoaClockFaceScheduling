@@ -1,7 +1,7 @@
 a,b,mode,trips_day,action
 Auggen|bus,Schliengen|bus,bus,2,dropped
 Basel|bigrail,Grellingen|bigrail,bigrail,2,dropped
-Basel|bigrail|3,Rheinfelden|bigrail,bigrail,1,via Muttenz|bigrail - Pratteln|bigrail
+Basel|bigrail|3,Rheinfelden|bigrail,bigrail,1,via Kaiseraugst|bigrail
 Basel|bigrail|3,Zürich|bigrail,bigrail,1,via Liestal|bigrail - Olten|bigrail
 Basel|localrail|17,Basel|localrail|1,localrail,135,via Basel|localrail
 Basel|localrail|19,Basel|localrail,localrail,138,via Basel|localrail|9
@@ -24,8 +24,6 @@ Kandern|bus|1,Lörrach|bus|3,bus,1,via Schallbach|bus
 Küsnacht (ZH)|localrail,Zürich|localrail|16,localrail,84,via Zürich|localrail|60
 Lenzburg|bigrail,Zürich|bigrail|5,bigrail,3,via Dietikon|bigrail
 Lenzburg|bus,Suhr|bus,bus,1,kept one-way (only service of its line)
-Liestal|bigrail,Basel|bigrail|3,bigrail,2,via Pratteln|bigrail - Muttenz|bigrail
-Liestal|bigrail,Muttenz|bigrail,bigrail,1,via Pratteln|bigrail
 Luzern|localrail,Kriens|localrail,localrail,1,via Luzern|localrail|1
 Lörrach|bus|2,Weil am Rhein|bus|1,bus,1,via Riehen|bus
 Muttenz|bus,Binningen|bus|2,bus,99,via Bottmingen|bus
@@ -33,16 +31,14 @@ Neuenburg am Rhein|bus,Bad Bellingen|bus,bus,2,via Schliengen|bus
 Neuendorf|bus,Oberbuchsiten|bus,bus,2,via Egerkingen|bus|2
 Opfikon|bus,Kloten|bus,bus,34,via Kloten|bus|1
 Regensdorf|bus,Würenlos|bus,bus,1,dropped
-Rheinfelden|bigrail,Pratteln|bigrail,bigrail,1,via Kaiseraugst|bigrail
 Suhr|bus,Zofingen|bus,bus,1,kept one-way (only service of its line)
 Thayngen|bus,Schaffhausen|bus,bus,3,via Büttenhardt|bus
+Würenlos|bus,Baden|bus,bus,1,via Wettingen|bus|1
 Zürich|localrail,Zürich|localrail|7,localrail,1,via Zürich|localrail|6
 Zürich|localrail|60,Küsnacht (ZH)|localrail,localrail,84,via Zürich|localrail|16
-Basel|bigrail|3,Liestal|bigrail,bigrail,1,via Muttenz|bigrail - Pratteln|bigrail
 Dübendorf|localrail,Dübendorf|localrail|2,localrail,77,moved to Dübendorf|localrail|2 - Dübendorf|localrail
 Küsnacht (ZH)|localrail,Zürich|localrail|60,localrail,84,via Zürich|localrail|16
 Lenzburg|bus,Suhr|bus,bus,1,kept one-way (only service of its line)
-Pratteln|bigrail,Rheinfelden|bigrail,bigrail,1,via Kaiseraugst|bigrail
 Suhr|bus,Zofingen|bus,bus,1,kept one-way (only service of its line)
 Zürich|localrail|16,Küsnacht (ZH)|localrail,localrail,84,via Zürich|localrail|60
 Dübendorf|localrail,Zürich|localrail|63,localrail,77,kept one-way

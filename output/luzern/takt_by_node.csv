@@ -1,7 +1,4 @@
 node,band,n,minutes,interval,share_in_window
-Adligenswil|bus,peak,60,"4,17,34,49",0,0.6333333333333333
-Adligenswil|bus,day,77,"4,19,34,49",15,0.7272727272727273
-Adligenswil|bus,night,30,"9,18,22,39,48,53",0,0.9
 Arth|bigrail,peak,32,"15,19,33,46,55",0,0.90625
 Arth|bigrail,day,64,"15,20,33,45,49,55",0,1.0
 Arth|bigrail,night,16,"15,19,31",0,0.6875

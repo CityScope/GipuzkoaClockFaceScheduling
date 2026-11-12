@@ -1,29 +1,20 @@
 node,band,from_line,to_line,wait_min,transfer_min,frequency,reversing
-Aarau|bigrail,peak,Gelterkinden,Olten,5.0,0.0,direct None / with changes 60,False
 Aarau|bigrail,peak,Gelterkinden,Zürich,10.0,0.0,direct None / with changes 60,False
 Aarau|bigrail,peak,Gelterkinden,Schöftland,1.8,1.2,direct None / with changes 60,False
 Aarau|bigrail,peak,Gelterkinden,Suhr,3.8,1.2,direct None / with changes 60,False
 Aarau|bigrail,peak,Schöftland,Zürich,10.8,1.2,direct None / with changes 60,False
-Aarau|bigrail,peak,Lenzburg,Schönenwerd,4.7,1.7,direct None / with changes 30,False
-Aarau|bigrail,peak,Brugg,Frick,7.3,1.7,direct None / with changes 90,False
 Aarau|bigrail,peak,Brugg,Schönenwerd,2.3,1.7,direct None / with changes 60,False
-Aarau|bigrail,peak,Brugg,Suhr,2.3,1.7,direct None / with changes 60,False
 Aarau|bigrail,peak,Frick,Gelterkinden,8.6,1.7,direct None / with changes 60,False
 Aarau|bigrail,peak,Frick,Zürich,6.3,1.7,direct None / with changes 60,False
-Aarau|bigrail,peak,Gelterkinden,Suhr,3.3,1.7,direct None / with changes 60,False
 Aarau|bigrail,peak,Schönenwerd,Zürich,3.3,1.7,direct None / with changes 60,False
-Aarau|bigrail,day,Gelterkinden,Olten,5.0,0.0,direct None / with changes 60,False
 Aarau|bigrail,day,Gelterkinden,Zürich,10.0,0.0,direct None / with changes 60,False
 Aarau|bigrail,day,Gelterkinden,Schöftland,1.8,1.2,direct None / with changes 60,False
 Aarau|bigrail,day,Gelterkinden,Suhr,3.8,1.2,direct None / with changes 60,False
 Aarau|bigrail,day,Schöftland,Zürich,10.8,1.2,direct None / with changes 60,False
-Aarau|bigrail,day,Lenzburg,Schönenwerd,5.3,1.7,direct None / with changes 30,False
 Aarau|bigrail,day,Brugg,Schönenwerd,2.3,1.7,direct None / with changes 60,False
-Aarau|bigrail,day,Brugg,Suhr,2.3,1.7,direct None / with changes 60,False
 Aarau|bigrail,day,Frick,Gelterkinden,11.3,1.7,direct None / with changes 60,False
 Aarau|bigrail,day,Frick,Zürich,6.3,1.7,direct None / with changes 60,False
 Aarau|bigrail,day,Schönenwerd,Zürich,3.3,1.7,direct None / with changes 60,False
-Aarau|bigrail,night,Gelterkinden,Olten,5.0,0.0,direct None / with changes 375,False
 Aarau|bigrail,night,Gelterkinden,Schöftland,1.8,1.2,direct None / with changes 375,False
 Aarau|bigrail,night,Gelterkinden,Suhr,3.8,1.2,direct None / with changes 375,False
 Aarau|bigrail,night,Brugg,Schöftland,7.8,1.2,direct None / with changes 375,False
@@ -33,22 +24,16 @@ Aarau|bigrail,night,Gelterkinden,Schönenwerd,11.3,1.7,direct None / with change
 Aarau|bigrail,night,Brugg,Suhr,2.3,1.7,direct None / with changes 375,False
 Baden|bigrail,peak,Brugg,Regensdorf,5.0,0.0,direct None / with changes 30,False
 Baden|bigrail,peak,Würenlingen,Zürich,5.0,0.0,direct None / with changes 30,False
-Baden|bigrail,peak,Birmenstorf,Regensdorf,9.5,1.5,direct None / with changes 30,False
-Baden|bigrail,peak,Birmenstorf,Zürich,11.5,1.5,direct None / with changes 45,False
 Baden|bigrail,peak,Endingen,Regensdorf,5.5,1.5,direct None / with changes 38,False
 Baden|bigrail,peak,Endingen,Zürich,4.4,1.5,direct None / with changes 30,False
 Baden|bigrail,peak,Fislisbach,Regensdorf,3.5,1.5,direct None / with changes 30,False
 Baden|bigrail,peak,Fislisbach,Zürich,5.0,1.5,direct None / with changes 30,False
 Baden|bigrail,peak,Gebenstorf,Regensdorf,2.5,1.5,direct None / with changes 30,False
 Baden|bigrail,peak,Gebenstorf,Zürich,4.5,1.5,direct None / with changes 30,False
-Baden|bigrail,peak,Niederweningen,Zürich,14.5,1.5,direct None / with changes 45,False
 Baden|bigrail,peak,Untersiggenthal,Zürich,4.5,1.5,direct None / with changes 30,False
-Baden|bigrail,peak,Dietikon,Gebenstorf,7.0,1.5,direct None / with changes 60,False
 Baden|bigrail,peak,Dietikon,Niederweningen,3.0,1.5,direct None / with changes 60,False
 Baden|bigrail,peak,Brugg,Remetschwil,9.5,1.5,direct None / with changes 90,False
 Baden|bigrail,peak,Remetschwil,Würenlingen,1.5,1.5,direct None / with changes 90,False
-Baden|bigrail,peak,Birmenstorf,Niederweningen,12.0,0.0,direct None / with changes 45,False
-Baden|bigrail,peak,Endingen,Niederweningen,4.9,0.0,direct None / with changes 30,False
 Baden|bigrail,peak,Fislisbach,Niederweningen,5.5,0.0,direct None / with changes 30,False
 Baden|bigrail,peak,Gebenstorf,Niederweningen,5.0,0.0,direct None / with changes 30,False
 Baden|bigrail,peak,Killwangen,Niederweningen,5.0,0.0,direct None / with changes 30,False
@@ -57,58 +42,49 @@ Baden|bigrail,peak,Endingen,Remetschwil,13.0,0.0,direct None / with changes 90,F
 Baden|bigrail,peak,Gebenstorf,Remetschwil,10.0,0.0,direct None / with changes 90,False
 Baden|bigrail,peak,Niederweningen,Remetschwil,5.5,0.0,direct None / with changes 90,False
 Baden|bigrail,day,Brugg,Regensdorf,5.0,0.0,direct None / with changes 30,False
-Baden|bigrail,day,Birmenstorf,Würenlingen,12.5,1.5,direct None / with changes 30,False
+Baden|bigrail,day,Würenlingen,Zürich,5.0,0.0,direct None / with changes 30,False
 Baden|bigrail,day,Fislisbach,Würenlingen,6.1,1.5,direct None / with changes 30,False
 Baden|bigrail,day,Killwangen,Würenlingen,5.5,1.5,direct None / with changes 30,False
+Baden|bigrail,day,Wettingen,Würenlingen,2.5,1.5,direct None / with changes 30,False
 Baden|bigrail,day,Brugg,Endingen,5.0,1.5,direct None / with changes 30,False
-Baden|bigrail,day,Birmenstorf,Killwangen,5.5,1.5,direct None / with changes 30,False
-Baden|bigrail,day,Birmenstorf,Regensdorf,9.5,1.5,direct None / with changes 30,False
-Baden|bigrail,day,Endingen,Killwangen,13.7,1.5,direct None / with changes 30,False
-Baden|bigrail,day,Fislisbach,Killwangen,14.5,1.5,direct None / with changes 30,False
+Baden|bigrail,day,Endingen,Zürich,5.5,1.5,direct None / with changes 30,False
 Baden|bigrail,day,Fislisbach,Regensdorf,3.5,1.5,direct None / with changes 30,False
-Baden|bigrail,day,Gebenstorf,Killwangen,13.5,1.5,direct None / with changes 30,False
+Baden|bigrail,day,Fislisbach,Zürich,5.5,1.5,direct None / with changes 30,False
 Baden|bigrail,day,Gebenstorf,Regensdorf,2.5,1.5,direct None / with changes 30,False
-Baden|bigrail,day,Regensdorf,Untersiggenthal,0.5,1.5,direct None / with changes 30,False
-Baden|bigrail,day,Brugg,Niederweningen,3.5,1.5,direct None / with changes 71,False
+Baden|bigrail,day,Gebenstorf,Zürich,4.5,1.5,direct None / with changes 30,False
+Baden|bigrail,day,Untersiggenthal,Zürich,4.5,1.5,direct None / with changes 30,False
+Baden|bigrail,day,Brugg,Niederweningen,3.9,1.5,direct None / with changes 60,False
 Baden|bigrail,day,Niederweningen,Würenlingen,2.1,1.5,direct None / with changes 52,False
 Baden|bigrail,day,Birmenstorf,Dietikon,3.5,1.5,direct None / with changes 60,False
-Baden|bigrail,day,Dietikon,Fislisbach,3.5,1.5,direct None / with changes 60,False
 Baden|bigrail,day,Brugg,Remetschwil,9.5,1.5,direct None / with changes 480,False
 Baden|bigrail,day,Birmenstorf,Endingen,2.0,0.0,direct None / with changes 34,False
-Baden|bigrail,day,Endingen,Fislisbach,2.0,0.0,direct None / with changes 30,False
-Baden|bigrail,day,Endingen,Killwangen,3.0,0.0,direct None / with changes 30,False
-Baden|bigrail,day,Endingen,Würenlos,3.0,0.0,direct None / with changes 30,False
-Baden|bigrail,day,Birmenstorf,Niederweningen,2.0,0.0,direct None / with changes 71,False
-Baden|bigrail,day,Endingen,Niederweningen,11.0,0.0,direct None / with changes 71,False
-Baden|bigrail,day,Fislisbach,Niederweningen,11.0,0.0,direct None / with changes 71,False
-Baden|bigrail,day,Gebenstorf,Niederweningen,10.0,0.0,direct None / with changes 71,False
-Baden|bigrail,day,Killwangen,Niederweningen,3.0,0.0,direct None / with changes 71,False
+Baden|bigrail,day,Birmenstorf,Niederweningen,4.0,0.0,direct None / with changes 53,False
+Baden|bigrail,day,Fislisbach,Niederweningen,10.0,0.0,direct None / with changes 53,False
+Baden|bigrail,day,Gebenstorf,Niederweningen,9.0,0.0,direct None / with changes 53,False
+Baden|bigrail,day,Killwangen,Niederweningen,3.4,0.0,direct None / with changes 53,False
+Baden|bigrail,day,Birmenstorf,Remetschwil,2.0,0.0,direct None / with changes 480,False
 Baden|bigrail,night,Niederweningen,Regensdorf,1.5,1.5,direct None / with changes 480,False
 Baden|bigrail,night,Niederweningen,Würenlingen,4.5,1.5,direct None / with changes 480,False
 Baden|bigrail,night,Birmenstorf,Dietikon,6.5,1.5,direct None / with changes 375,False
 Baden|bigrail,night,Dietikon,Gebenstorf,11.5,1.5,direct None / with changes 375,False
 Baden|bigrail,night,Dietikon,Untersiggenthal,11.5,1.5,direct None / with changes 375,False
-Baden|bigrail,night,Endingen,Niederweningen,7.3,0.0,direct None / with changes 305,False
 Baden|bigrail,night,Niederweningen,Untersiggenthal,8.0,0.0,direct None / with changes 480,False
-Baden|bigrail,night,Niederweningen,Würenlos,1.0,0.0,direct None / with changes 480,False
+Baden|bigrail,night,Niederweningen,Wettingen,1.0,0.0,direct None / with changes 480,False
 Beinwil am See|bigrail,peak,Hochdorf,Menziken,7.3,0.7,direct None / with changes 45,False
 Beinwil am See|bigrail,day,Hochdorf,Menziken,8.1,0.7,direct None / with changes 34,False
 Beinwil am See|bigrail,night,Hochdorf,Menziken,11.3,0.7,direct None / with changes 375,False
 Beinwil am See|bigrail,night,Lenzburg,Menziken,2.3,0.7,direct None / with changes 285,False
+Bremgarten|bus,peak,Dietikon · main station,Stetten,2.3,0.7,direct None / with changes 30,False
 Bremgarten|bus,peak,Oberwil-Lieli,Wohlen,9.6,0.7,direct None / with changes 30,False
 Bremgarten|bus,peak,Mellingen,Wohlen,1.6,0.7,direct None / with changes 30,False
 Bremgarten|bus,peak,Jonen (fast),Wohlen,2.3,0.7,direct None / with changes 75,False
 Bremgarten|bus,peak,Jonen (slow),Wohlen,2.3,0.7,direct None / with changes 75,False
-Bremgarten|bus,peak,Oberwil-Lieli,Stetten,12.2,0.0,direct None / with changes 30,False
-Bremgarten|bus,peak,Mellingen,Oberwil-Lieli,12.2,0.0,direct None / with changes 45,False
 Bremgarten|bus,peak,Jonen (fast),Stetten,5.0,0.0,direct None / with changes 75,False
 Bremgarten|bus,peak,Jonen (slow),Mellingen,7.0,0.0,direct None / with changes 75,False
 Bremgarten|bus,peak,Jonen (slow),Stetten,5.0,0.0,direct None / with changes 75,False
 Bremgarten|bus,day,Dietikon · main station,Mellingen,7.3,0.7,direct None / with changes 41,False
 Bremgarten|bus,day,Dietikon · main station,Oberwil-Lieli,10.3,0.7,direct None / with changes 60,False
-Bremgarten|bus,day,Oberwil-Lieli,Wohlen,10.3,0.7,direct None / with changes 60,False
 Bremgarten|bus,day,Mellingen,Oberwil-Lieli,13.0,0.0,direct None / with changes 60,False
-Bremgarten|bus,day,Oberwil-Lieli,Stetten,13.0,0.0,direct None / with changes 60,False
 Bremgarten|bus,day,Jonen (fast),Mellingen,10.0,0.0,direct None / with changes 199,False
 Bremgarten|bus,night,Jonen (slow),Wohlen,2.3,0.7,direct None / with changes 285,False
 Bremgarten|bus,night,Dietikon · main station,Mellingen,5.8,0.7,direct None / with changes 371,False
@@ -119,7 +95,6 @@ Bremgarten|bus,night,Jonen (fast),Mellingen,7.0,0.0,direct None / with changes 4
 Bremgarten|bus,night,Jonen (fast),Stetten,5.0,0.0,direct None / with changes 480,False
 Brugg|bigrail,peak,Baden,Othmarsingen,1.5,0.0,direct 60 / with changes 34,False
 Brugg|bigrail,peak,Aarau,Frick,9.0,0.0,direct None / with changes 60,False
-Brugg|bigrail,peak,Aarau,Othmarsingen,5.0,0.0,direct None / with changes 60,False
 Brugg|bigrail,peak,Baden,Schinznach,4.8,0.2,direct None / with changes 30,False
 Brugg|bigrail,peak,Baden,Villigen,4.4,0.2,direct None / with changes 30,False
 Brugg|bigrail,peak,Baden,Frick,4.8,0.2,direct None / with changes 30,False
@@ -140,28 +115,22 @@ Brugg|bigrail,peak,Frick,Mellingen,9.2,0.0,direct None / with changes 60,False
 Brugg|bigrail,peak,Frick,Schinznach,9.2,0.0,direct None / with changes 45,False
 Brugg|bigrail,peak,Frick,Villigen,8.7,0.0,direct None / with changes 45,False
 Brugg|bigrail,peak,Frick,Würenlingen,9.2,0.0,direct None / with changes 60,False
-Brugg|bigrail,peak,Gebenstorf,Mellingen,10.0,0.0,direct None / with changes 60,False
-Brugg|bigrail,peak,Gebenstorf,Schinznach,10.0,0.0,direct None / with changes 45,False
 Brugg|bigrail,peak,Gebenstorf,Villigen,9.5,0.0,direct None / with changes 45,False
 Brugg|bigrail,peak,Gebenstorf,Würenlingen,10.0,0.0,direct None / with changes 60,False
-Brugg|bigrail,peak,Mellingen,Schinznach,10.0,0.0,direct None / with changes 45,False
 Brugg|bigrail,peak,Mellingen,Villigen,9.5,0.0,direct None / with changes 45,False
 Brugg|bigrail,peak,Mellingen,Würenlingen,10.0,0.0,direct None / with changes 60,False
 Brugg|bigrail,peak,Schinznach,Würenlingen,10.0,0.0,direct None / with changes 60,False
 Brugg|bigrail,peak,Gebenstorf,Mönthal,10.0,0.0,direct None / with changes 82,False
 Brugg|bigrail,peak,Mellingen,Mönthal,10.0,0.0,direct None / with changes 82,False
-Brugg|bigrail,peak,Mönthal,Schinznach,10.0,0.0,direct None / with changes 60,False
 Brugg|bigrail,peak,Mönthal,Villigen,9.6,0.0,direct None / with changes 60,False
 Brugg|bigrail,peak,Mönthal,Würenlingen,10.0,0.0,direct None / with changes 60,False
 Brugg|bigrail,peak,Gebenstorf,Laufenburg,10.0,0.0,direct None / with changes 60,False
 Brugg|bigrail,peak,Laufenburg,Mellingen,10.0,0.0,direct None / with changes 60,False
-Brugg|bigrail,peak,Laufenburg,Schinznach,10.0,0.0,direct None / with changes 45,False
 Brugg|bigrail,peak,Laufenburg,Villigen,9.5,0.0,direct None / with changes 45,False
 Brugg|bigrail,peak,Laufenburg,Würenlingen,10.0,0.0,direct None / with changes 60,False
 Brugg|bigrail,day,Baden,Möriken-Wildegg,3.7,0.0,direct 75 / with changes 39,False
 Brugg|bigrail,day,Baden,Othmarsingen,1.5,0.0,direct 60 / with changes 34,False
 Brugg|bigrail,day,Aarau,Frick,9.0,0.0,direct None / with changes 60,False
-Brugg|bigrail,day,Aarau,Othmarsingen,5.0,0.0,direct None / with changes 60,False
 Brugg|bigrail,day,Baden,Villigen,4.7,0.2,direct None / with changes 30,False
 Brugg|bigrail,day,Baden,Schinznach,4.8,0.2,direct None / with changes 30,False
 Brugg|bigrail,day,Baden,Würenlingen,4.8,0.2,direct None / with changes 41,False
@@ -184,7 +153,6 @@ Brugg|bigrail,day,Schinznach,Würenlingen,10.0,0.0,direct None / with changes 49
 Brugg|bigrail,day,Frick,Gebenstorf,9.0,0.0,direct None / with changes 52,False
 Brugg|bigrail,day,Frick,Schinznach,9.0,0.0,direct None / with changes 52,False
 Brugg|bigrail,day,Frick,Villigen,8.9,0.0,direct None / with changes 53,False
-Brugg|bigrail,day,Gebenstorf,Mellingen,10.0,0.0,direct None / with changes 60,False
 Brugg|bigrail,day,Mellingen,Schinznach,10.0,0.0,direct None / with changes 71,False
 Brugg|bigrail,day,Mellingen,Villigen,10.0,0.0,direct None / with changes 71,False
 Brugg|bigrail,day,Mellingen,Würenlingen,10.0,0.0,direct None / with changes 71,False
@@ -217,8 +185,6 @@ Bülach|bigrail,night,Zurzach · Kaiserstuhl AG,Zürich,5.0,0.0,direct None / wi
 Dietikon|bigrail,peak,Bremgarten,Othmarsingen,9.5,1.5,direct None / with changes 90,False
 Dietikon|bigrail,day,Bremgarten,Othmarsingen,9.5,1.5,direct None / with changes 375,False
 Döttingen|bigrail,peak,Villigen,Zurzach · Bad,1.4,1.6,direct None / with changes 60,False
-Döttingen|bigrail,peak,Endingen,Villigen,14.1,0.0,direct None / with changes 38,False
-Döttingen|bigrail,peak,Schwaderloch,Villigen,11.0,0.0,direct None / with changes 30,False
 Döttingen|bigrail,day,Schwaderloch,Würenlingen,5.5,1.6,direct None / with changes 34,False
 Döttingen|bigrail,day,Villigen,Zurzach · Bad,1.4,1.6,direct None / with changes 60,False
 Döttingen|bigrail,day,Schwaderloch,Villigen,10.5,0.0,direct None / with changes 30,False
@@ -227,70 +193,55 @@ Frick|bigrail,peak,Brugg,Stein,1.0,0.0,direct None / with changes 60,False
 Frick|bigrail,night,Brugg,Stein,2.4,0.6,direct None / with changes 375,False
 Frick|bigrail,night,Brugg,Stein,10.4,0.6,direct None / with changes 375,False
 Frick|bigrail,night,Aarau,Stein,8.0,0.0,direct None / with changes 375,False
-Gelterkinden|bigrail,peak,Aarau,Pratteln,5.0,0.0,direct None / with changes 60,False
-Gelterkinden|bigrail,peak,Olten,Rheinfelden,8.9,3.8,direct None / with changes 45,False
-Gelterkinden|bigrail,peak,Olten,Wegenstetten,8.8,3.8,direct None / with changes 60,False
-Gelterkinden|bigrail,peak,Pratteln,Wegenstetten,8.2,3.8,direct None / with changes 60,False
-Gelterkinden|bigrail,peak,Basel,Wegenstetten,2.2,3.8,direct None / with changes 60,False
-Gelterkinden|bigrail,day,Aarau,Pratteln,5.0,0.0,direct None / with changes 60,False
-Gelterkinden|bigrail,day,Basel,Wegenstetten,2.2,3.8,direct None / with changes 60,False
-Gelterkinden|bigrail,night,Aarau,Pratteln,5.2,0.0,direct None / with changes 209,False
+Gelterkinden|bigrail,peak,Aarau,Basel · SBB,5.0,0.0,direct None / with changes 90,False
+Gelterkinden|bigrail,peak,Basel · SBB,Wegenstetten,2.2,3.8,direct None / with changes 60,False
+Gelterkinden|bigrail,day,Aarau,Basel · SBB,5.0,0.0,direct None / with changes 60,False
+Gelterkinden|bigrail,day,Basel · SBB,Wegenstetten,2.2,3.8,direct None / with changes 60,False
+Gelterkinden|bigrail,night,Aarau,Basel · SBB,5.2,0.0,direct None / with changes 209,False
 Kaiseraugst|bigrail,peak,Pratteln,Rheinfelden,5.2,0.8,direct None / with changes 45,False
 Kaiseraugst|bigrail,day,Augst,Rheinfelden,2.2,0.8,direct None / with changes 34,False
 Kaiseraugst|bigrail,day,Pratteln,Rheinfelden,5.2,0.8,direct None / with changes 375,False
 Killwangen|bigrail,peak,Baden,Mellingen,2.9,1.1,direct None / with changes 30,False
 Killwangen|bigrail,peak,Mellingen,Würenlos,3.9,1.1,direct None / with changes 30,False
-Killwangen|bigrail,peak,Baden,Würenlos,6.0,0.0,direct None / with changes 30,False
 Killwangen|bigrail,peak,Spreitenbach,Würenlos,1.0,0.0,direct None / with changes 30,False
 Killwangen|bigrail,day,Baden,Mellingen,2.9,1.1,direct None / with changes 30,False
 Killwangen|bigrail,day,Mellingen,Würenlos,3.9,1.1,direct None / with changes 30,False
-Killwangen|bigrail,day,Baden,Würenlos,6.0,0.0,direct None / with changes 30,False
 Killwangen|bigrail,day,Spreitenbach,Würenlos,1.0,0.0,direct None / with changes 30,False
 Laufenburg|bigrail,peak,Frick,Stein,13.1,1.7,direct None / with changes 60,False
 Laufenburg|bigrail,peak,Schwaderloch,Stein,14.3,1.7,direct None / with changes 60,False
 Laufenburg|bigrail,peak,Frick,Schwaderloch,4.8,0.0,direct None / with changes 60,False
-Laufenburg|bigrail,peak,Schwaderloch,Stein,12.0,0.0,direct None / with changes 60,False
 Laufenburg|bigrail,day,Brugg,Stein,7.3,1.7,direct None / with changes 60,False
 Laufenburg|bigrail,day,Frick,Stein,16.3,1.7,direct None / with changes 60,False
 Laufenburg|bigrail,day,Schwaderloch,Stein,14.3,1.7,direct None / with changes 60,False
 Laufenburg|bigrail,day,Brugg,Stein,5.0,0.0,direct None / with changes 60,False
 Laufenburg|bigrail,day,Brugg,Schwaderloch,14.0,0.0,direct None / with changes 75,False
 Laufenburg|bigrail,day,Frick,Schwaderloch,3.0,0.0,direct None / with changes 75,False
-Laufenburg|bigrail,day,Schwaderloch,Stein,12.0,0.0,direct None / with changes 60,False
 Laufenburg|bigrail,night,Brugg,Stein,7.3,1.7,direct None / with changes 480,False
 Lenzburg|bigrail,peak,Aarau,Wohlen,2.3,0.0,direct 93 / with changes 28,False
-Lenzburg|bigrail,peak,Othmarsingen,Wohlen,0.2,0.0,direct None / with changes 60,False
 Lenzburg|bigrail,peak,Möriken-Wildegg,Othmarsingen,0.1,2.9,direct None / with changes 60,False
 Lenzburg|bigrail,peak,Möriken-Wildegg,Wohlen,3.3,2.9,direct None / with changes 45,False
 Lenzburg|bigrail,peak,Aarau,Möriken-Wildegg (slow),1.1,2.9,direct None / with changes 30,False
 Lenzburg|bigrail,peak,Möriken-Wildegg,Zürich,2.1,2.9,direct None / with changes 45,False
 Lenzburg|bigrail,peak,Aarau,Mägenwil,2.6,2.9,direct None / with changes 30,False
-Lenzburg|bigrail,peak,Mägenwil,Wohlen,6.6,2.9,direct None / with changes 45,False
-Lenzburg|bigrail,peak,Mägenwil,Suhr,10.1,2.9,direct None / with changes 45,False
 Lenzburg|bigrail,peak,Möriken-Wildegg,Suhr,6.8,2.9,direct None / with changes 45,False
 Lenzburg|bigrail,peak,Aarau,Teufenthal,3.1,2.9,direct None / with changes 60,False
 Lenzburg|bigrail,peak,Othmarsingen,Teufenthal,2.1,2.9,direct None / with changes 60,False
-Lenzburg|bigrail,peak,Teufenthal,Wohlen,6.9,2.9,direct None / with changes 52,False
 Lenzburg|bigrail,peak,Teufenthal,Zürich,5.3,2.9,direct None / with changes 53,False
 Lenzburg|bigrail,peak,Aarau,Möriken-Wildegg (fast),2.1,2.9,direct None / with changes 120,False
 Lenzburg|bigrail,peak,Beinwil am See,Möriken-Wildegg (fast),4.1,2.9,direct None / with changes 120,False
 Lenzburg|bigrail,peak,Dietikon,Meisterschwanden,2.1,2.9,direct None / with changes 120,False
 Lenzburg|bigrail,day,Aarau,Wohlen,2.9,0.0,direct 75 / with changes 30,False
-Lenzburg|bigrail,day,Othmarsingen,Wohlen,0.8,0.0,direct None / with changes 60,False
 Lenzburg|bigrail,day,Möriken-Wildegg,Othmarsingen,0.1,2.9,direct None / with changes 60,False
 Lenzburg|bigrail,day,Aarau,Möriken-Wildegg (slow),1.1,2.9,direct None / with changes 30,False
 Lenzburg|bigrail,day,Möriken-Wildegg,Wohlen,3.1,2.9,direct None / with changes 34,False
 Lenzburg|bigrail,day,Aarau,Mägenwil,2.6,2.9,direct None / with changes 30,False
 Lenzburg|bigrail,day,Mägenwil,Wohlen,6.6,2.9,direct None / with changes 34,False
 Lenzburg|bigrail,day,Möriken-Wildegg,Zürich,2.1,2.9,direct None / with changes 34,False
-Lenzburg|bigrail,day,Mägenwil,Suhr,9.7,2.9,direct None / with changes 34,False
 Lenzburg|bigrail,day,Möriken-Wildegg,Suhr,6.2,2.9,direct None / with changes 34,False
 Lenzburg|bigrail,day,Aarau,Meisterschwanden,2.1,2.9,direct None / with changes 60,False
-Lenzburg|bigrail,day,Meisterschwanden,Suhr,8.1,2.9,direct None / with changes 75,False
 Lenzburg|bigrail,day,Meisterschwanden,Zürich,6.1,2.9,direct None / with changes 75,False
 Lenzburg|bigrail,day,Aarau,Teufenthal,3.1,2.9,direct None / with changes 60,False
 Lenzburg|bigrail,day,Othmarsingen,Teufenthal,2.1,2.9,direct None / with changes 60,False
-Lenzburg|bigrail,day,Teufenthal,Wohlen,7.8,2.9,direct None / with changes 60,False
 Lenzburg|bigrail,day,Teufenthal,Zürich,5.1,2.9,direct None / with changes 60,False
 Lenzburg|bigrail,day,Aarau,Möriken-Wildegg (fast),2.1,2.9,direct None / with changes 75,False
 Lenzburg|bigrail,day,Beinwil am See,Möriken-Wildegg (fast),4.1,2.9,direct None / with changes 75,False
@@ -328,14 +279,12 @@ Mellingen|bigrail,day,Killwangen,Mägenwil,5.7,0.4,direct None / with changes 34
 Mellingen|bigrail,day,Brugg,Killwangen,8.6,0.4,direct None / with changes 56,False
 Mellingen|bigrail,day,Birmenstorf,Bremgarten,1.0,0.0,direct None / with changes 34,False
 Mellingen|bigrail,day,Birmenstorf,Fislisbach,1.0,0.0,direct None / with changes 34,False
-Mellingen|bigrail,day,Bremgarten,Fislisbach,0.9,0.0,direct 60 / with changes 34,False
 Mellingen|bigrail,day,Birmenstorf,Mägenwil,1.1,0.0,direct None / with changes 34,False
 Mellingen|bigrail,day,Bremgarten,Mägenwil,2.1,0.0,direct None / with changes 34,False
 Mellingen|bigrail,day,Fislisbach,Mägenwil,1.7,0.0,direct 75 / with changes 34,False
 Mellingen|bigrail,day,Bremgarten,Brugg,6.0,0.0,direct None / with changes 56,False
 Mellingen|bigrail,day,Brugg,Fislisbach,5.0,0.0,direct None / with changes 56,False
 Mellingen|bigrail,day,Brugg,Mägenwil,5.1,0.0,direct None / with changes 56,False
-Mellingen|bigrail,day,Brugg,Stetten,13.0,0.0,direct None / with changes 60,False
 Mellingen|bigrail,night,Birmenstorf,Killwangen,4.6,0.4,direct None / with changes 285,False
 Mellingen|bigrail,night,Othmarsingen,Stetten,3.6,0.4,direct None / with changes 285,False
 Mellingen|bigrail,night,Bremgarten,Killwangen,5.6,0.4,direct None / with changes 375,False
@@ -343,7 +292,6 @@ Mellingen|bigrail,night,Fislisbach,Mägenwil,1.7,0.0,direct 278 / with changes 1
 Mellingen|bigrail,night,Birmenstorf,Fislisbach,1.0,0.0,direct None / with changes 375,False
 Mellingen|bigrail,night,Birmenstorf,Mägenwil,1.0,0.0,direct None / with changes 210,False
 Mellingen|bigrail,night,Birmenstorf,Stetten,9.0,0.0,direct None / with changes 285,False
-Mellingen|bigrail,night,Fislisbach,Stetten,11.0,0.0,direct None / with changes 285,False
 Mellingen|bigrail,night,Mägenwil,Stetten,9.0,0.0,direct None / with changes 375,False
 Mellingen|bigrail,night,Birmenstorf,Bremgarten,1.0,0.0,direct None / with changes 285,False
 Mellingen|bigrail,night,Bremgarten,Mägenwil,2.0,0.0,direct None / with changes 375,False
@@ -351,7 +299,6 @@ Muri|bigrail,peak,Affoltern am Albis,Wohlen,4.1,0.9,direct None / with changes 3
 Muri|bigrail,peak,Rottenschwil,Wohlen,5.1,0.9,direct None / with changes 38,False
 Muri|bigrail,day,Affoltern am Albis,Wohlen,3.2,0.9,direct None / with changes 30,False
 Muri|bigrail,day,Rottenschwil,Wohlen,4.2,0.9,direct None / with changes 30,False
-Möhlin|bigrail,peak,Rheinfelden,Wegenstetten,3.5,0.5,direct None / with changes 30,False
 Möhlin|bigrail,day,Rheinfelden,Wegenstetten,3.5,0.5,direct None / with changes 30,False
 Möhlin|bigrail,day,Rheinfelden,Wallbach,9.5,0.5,direct None / with changes 255,False
 Möhlin|bigrail,night,Rheinfelden,Wegenstetten,1.0,0.0,direct None / with changes 285,False
@@ -366,36 +313,25 @@ Möriken-Wildegg|bigrail,night,Aarau,Mägenwil,2.2,2.8,direct None / with change
 Möriken-Wildegg|bigrail,night,Brugg,Mägenwil,0.2,2.8,direct None / with changes 285,False
 Olten|bigrail,peak,Aarau,Gelterkinden,4.4,0.0,direct None / with changes 31,False
 Olten|bigrail,peak,Gelterkinden,Zofingen,1.0,0.0,direct 60 / with changes 32,False
-Olten|bigrail,peak,Aarau,Basel,7.0,0.0,direct None / with changes 45,False
-Olten|bigrail,peak,Basel,Zürich,3.0,0.0,direct None / with changes 30,False
+Olten|bigrail,peak,Aarau,Basel · SBB,7.0,0.0,direct None / with changes 45,False
 Olten|bigrail,peak,Zofingen,Zürich,7.5,0.0,direct None / with changes 30,False
 Olten|bigrail,day,Aarau,Gelterkinden,5.0,0.0,direct None / with changes 31,False
 Olten|bigrail,day,Gelterkinden,Zofingen,1.0,0.0,direct 60 / with changes 32,False
-Olten|bigrail,day,Aarau,Basel,7.4,0.0,direct None / with changes 34,False
-Olten|bigrail,day,Basel,Zürich,3.0,0.0,direct None / with changes 30,False
+Olten|bigrail,day,Aarau,Basel · SBB,7.4,0.0,direct None / with changes 34,False
 Olten|bigrail,day,Zofingen,Zürich,7.5,0.0,direct None / with changes 30,False
-Olten|bigrail,night,Basel,Zofingen,8.0,0.0,direct 480 / with changes 211,False
-Othmarsingen|bigrail,peak,Brugg,Dietikon,12.0,0.0,direct None / with changes 60,False
-Othmarsingen|bigrail,day,Lenzburg,Wohlen,10.0,0.0,direct None / with changes 60,False
+Olten|bigrail,day,Aarau,Basel · SBB,9.0,0.0,direct None / with changes 480,False
+Olten|bigrail,night,Basel · SBB,Zofingen,8.0,0.0,direct 480 / with changes 211,False
 Othmarsingen|bigrail,day,Mellingen,Wohlen,12.0,0.0,direct None / with changes 60,False
-Othmarsingen|bigrail,day,Brugg,Dietikon,12.0,0.0,direct None / with changes 480,False
 Othmarsingen|bigrail,night,Brugg,Mellingen,4.0,0.0,direct None / with changes 285,False
-Othmarsingen|bigrail,night,Lenzburg,Wohlen,10.0,0.0,direct None / with changes 480,False
 Othmarsingen|bigrail,night,Mellingen,Wohlen,12.0,0.0,direct None / with changes 480,False
-Othmarsingen|bigrail,night,Brugg,Dietikon,10.0,0.0,direct None / with changes 480,False
-Pratteln|bigrail,peak,Basel,Gelterkinden,9.3,0.0,direct None / with changes 38,False
-Pratteln|bigrail,peak,Augst,Gelterkinden,11.7,1.3,direct None / with changes 45,False
-Pratteln|bigrail,day,Basel,Gelterkinden,11.5,0.0,direct None / with changes 34,False
-Rheinfelden|bigrail,peak,Gelterkinden,Möhlin,5.7,0.8,direct None / with changes 30,False
 Rheinfelden|bigrail,peak,Kaiseraugst,Möhlin,5.2,0.8,direct None / with changes 68,False
 Rheinfelden|bigrail,peak,Gelterkinden,Kaiseraugst,2.0,0.0,direct None / with changes 38,False
 Rheinfelden|bigrail,peak,Gelterkinden,Möhlin,3.0,0.0,direct None / with changes 68,False
 Rheinfelden|bigrail,peak,Kaiseraugst,Möhlin,4.0,0.0,direct None / with changes 68,False
-Rheinfelden|bigrail,day,Gelterkinden,Möhlin,5.7,0.8,direct None / with changes 30,False
 Rheinfelden|bigrail,day,Kaiseraugst,Möhlin,7.2,0.8,direct None / with changes 60,False
 Rheinfelden|bigrail,day,Gelterkinden,Möhlin,3.0,0.0,direct None / with changes 60,False
 Rheinfelden|bigrail,night,Gelterkinden,Kaiseraugst,8.2,0.8,direct None / with changes 210,False
-Rheinfelden|bigrail,night,Basel,Möhlin,9.2,0.8,direct None / with changes 285,False
+Rheinfelden|bigrail,night,Basel · SBB,Möhlin,9.2,0.8,direct None / with changes 285,False
 Rheinfelden|bigrail,night,Kaiseraugst,Möhlin,4.0,0.0,direct None / with changes 285,False
 Risch-Rotkreuz|bigrail,peak,Sursee,Zürich,6.0,0.0,direct None / with changes 60,False
 Risch-Rotkreuz|bigrail,day,Sursee,Zürich,6.0,0.0,direct None / with changes 60,False
@@ -415,20 +351,16 @@ Sins|bigrail,night,Abtwil,Muri,3.5,1.5,direct None / with changes 480,False
 Sins|bigrail,night,Abtwil,Risch-Rotkreuz,3.5,1.5,direct None / with changes 480,False
 Stein|bigrail,peak,Frick,Laufenburg,9.5,1.5,direct None / with changes 90,False
 Stein|bigrail,night,Frick,Möhlin,2.5,1.5,direct None / with changes 285,False
-Stein|bigrail,night,Frick,Laufenburg,1.0,0.0,direct None / with changes 375,False
 Suhr|bigrail,peak,Aarau,Zofingen,0.8,0.2,direct None / with changes 30,False
 Suhr|bigrail,peak,Lenzburg,Teufenthal,1.8,0.2,direct None / with changes 30,False
 Suhr|bigrail,peak,Teufenthal,Zofingen,5.8,0.2,direct None / with changes 30,False
 Suhr|bigrail,peak,Aarau,Zofingen,5.1,0.9,direct None / with changes 30,False
 Suhr|bigrail,day,Teufenthal,Zofingen,5.8,0.2,direct None / with changes 30,False
 Suhr|bigrail,day,Aarau,Lenzburg,8.3,0.9,direct None / with changes 30,False
-Suhr|bigrail,day,Aarau,Zofingen,11.8,0.9,direct None / with changes 30,False
 Suhr|bigrail,night,Aarau,Lenzburg,11.8,0.2,direct None / with changes 480,False
 Suhr|bigrail,night,Aarau,Zofingen,0.8,0.2,direct None / with changes 480,False
 Suhr|bigrail,night,Lenzburg,Teufenthal,1.8,0.2,direct None / with changes 480,False
 Suhr|bigrail,night,Teufenthal,Zofingen,5.8,0.2,direct None / with changes 480,False
-Sursee|bigrail,peak,Risch-Rotkreuz,Zofingen,8.0,0.0,direct None / with changes 30,False
-Sursee|bigrail,day,Risch-Rotkreuz,Zofingen,8.0,0.0,direct None / with changes 30,False
 Teufenthal|bus,peak,Lenzburg,Suhr,3.9,1.1,direct None / with changes 60,False
 Teufenthal|bus,day,Lenzburg,Suhr,3.9,1.1,direct None / with changes 60,False
 Wohlen|bigrail,peak,Bremgarten,Othmarsingen,2.1,0.9,direct None / with changes 60,False
@@ -440,18 +372,13 @@ Wohlen|bigrail,peak,Muri,Stetten,0.8,3.2,direct None / with changes 30,False
 Wohlen|bigrail,peak,Meisterschwanden,Othmarsingen,0.8,3.2,direct None / with changes 60,False
 Wohlen|bigrail,peak,Othmarsingen,Stetten,0.8,3.2,direct None / with changes 60,False
 Wohlen|bigrail,peak,Hägglingen (fast),Muri,2.8,3.2,direct None / with changes 60,False
-Wohlen|bigrail,peak,Bremgarten,Meisterschwanden,9.3,2.7,direct None / with changes 38,False
 Wohlen|bigrail,peak,Bremgarten,Hägglingen (slow),8.8,2.7,direct None / with changes 44,False
-Wohlen|bigrail,peak,Bremgarten,Stetten,9.3,2.7,direct None / with changes 30,False
 Wohlen|bigrail,day,Bremgarten,Lenzburg,7.2,0.9,direct None / with changes 34,False
 Wohlen|bigrail,day,Lenzburg,Wohlen,1.7,3.2,direct None / with changes 49,False
 Wohlen|bigrail,day,Lenzburg,Meisterschwanden,5.0,3.2,direct None / with changes 30,False
 Wohlen|bigrail,day,Lenzburg,Stetten,5.0,3.2,direct None / with changes 30,False
 Wohlen|bigrail,day,Lenzburg,Waltenschwil,4.0,3.2,direct None / with changes 30,False
 Wohlen|bigrail,day,Hägglingen (fast),Muri,2.8,3.2,direct None / with changes 60,False
-Wohlen|bigrail,day,Bremgarten,Meisterschwanden,9.3,2.7,direct None / with changes 30,False
-Wohlen|bigrail,day,Bremgarten,Stetten,9.3,2.7,direct None / with changes 30,False
-Wohlen|bigrail,day,Bremgarten,Wohlen,5.4,2.7,direct None / with changes 49,False
 Wohlen|bigrail,day,Bremgarten,Hägglingen (slow),9.5,2.7,direct None / with changes 49,False
 Wohlen|bigrail,night,Lenzburg,Stetten,4.5,3.2,direct None / with changes 285,False
 Wohlen|bigrail,night,Muri,Stetten,0.8,3.2,direct None / with changes 285,False
@@ -460,114 +387,81 @@ Wohlen|bigrail,night,Bremgarten,Hägglingen (fast),11.3,2.7,direct None / with c
 Wohlen|bigrail,night,Bremgarten,Hägglingen (slow),6.3,2.7,direct None / with changes 480,False
 Würenlingen|bigrail,peak,Baden,Villigen,0.6,1.4,direct None / with changes 30,False
 Würenlingen|bigrail,peak,Baden,Brugg,6.6,1.4,direct None / with changes 30,False
+Würenlingen|bigrail,peak,Döttingen,Untersiggenthal,0.6,1.4,direct None / with changes 38,False
 Würenlingen|bigrail,peak,Brugg,Untersiggenthal,9.0,0.0,direct None / with changes 38,False
-Würenlingen|bigrail,peak,Endingen,Untersiggenthal,15.0,0.0,direct None / with changes 38,False
 Würenlingen|bigrail,day,Baden,Villigen,0.6,1.4,direct None / with changes 30,False
 Würenlingen|bigrail,day,Baden,Brugg,6.6,1.4,direct None / with changes 45,False
 Würenlingen|bigrail,day,Brugg,Untersiggenthal,6.3,0.0,direct None / with changes 56,False
 Würenlingen|bigrail,night,Baden,Villigen,0.6,1.4,direct None / with changes 480,False
-Zofingen|bigrail,peak,Olten,Sursee (fast),2.7,0.0,direct 38 / with changes 22,False
+Zofingen|bigrail,peak,Olten,Suhr,5.0,0.0,direct None / with changes 30,False
 Zofingen|bigrail,peak,Suhr,Sursee (slow),6.0,0.0,direct None / with changes 60,False
-Zofingen|bigrail,peak,Bottenwil,Olten,7.3,3.7,direct None / with changes 45,False
 Zofingen|bigrail,peak,Bottenwil,Sursee (slow),14.3,3.7,direct None / with changes 60,False
 Zofingen|bigrail,peak,Olten,Schöftland,6.3,3.7,direct None / with changes 60,False
-Zofingen|bigrail,peak,Schöftland,Sursee (fast),4.3,3.7,direct None / with changes 60,False
-Zofingen|bigrail,day,Olten,Sursee (fast),2.7,0.0,direct 38 / with changes 22,False
+Zofingen|bigrail,day,Olten,Suhr,5.0,0.0,direct None / with changes 30,False
 Zofingen|bigrail,day,Suhr,Sursee (slow),6.0,0.0,direct None / with changes 60,False
-Zofingen|bigrail,day,Bottenwil,Olten,9.3,3.7,direct None / with changes 60,False
+Zofingen|bigrail,day,Olten,Reiden,4.6,3.7,direct None / with changes 34,False
 Zofingen|bigrail,day,Bottenwil,Sursee (slow),14.3,3.7,direct None / with changes 60,False
-Zofingen|bigrail,day,Olten,Schöftland,6.5,3.7,direct None / with changes 60,False
-Zofingen|bigrail,day,Schöftland,Sursee (fast),4.3,3.7,direct None / with changes 60,False
+Zofingen|bigrail,day,Olten,Schöftland,6.3,3.7,direct None / with changes 75,False
 Zofingen|bigrail,night,Suhr,Sursee (fast),5.0,0.0,direct None / with changes 480,False
 Zofingen|bigrail,night,Bottenwil,Olten,7.3,3.7,direct None / with changes 306,False
 Zofingen|bigrail,night,Bottenwil,Sursee (slow),9.8,3.7,direct None / with changes 299,False
 Zofingen|bigrail,night,Suhr,Sursee (fast),7.3,3.7,direct None / with changes 480,False
 Zurzach|bigrail,peak,Endingen,Zurzach · Kaiserstuhl AG,14.0,1.0,direct None / with changes 60,False
 Zürich|bigrail,peak,Baden,Risch-Rotkreuz,11.0,0.0,direct None / with changes 60,False
-Zürich|bigrail,peak,Basel,Risch-Rotkreuz,9.0,0.0,direct None / with changes 60,False
+Zürich|bigrail,peak,Basel · SBB,Risch-Rotkreuz,9.0,0.0,direct None / with changes 60,False
 Zürich|bigrail,peak,Bülach,Risch-Rotkreuz,5.2,0.0,direct None / with changes 60,False
 Zürich|bigrail,peak,Dietikon,Risch-Rotkreuz,5.0,0.0,direct None / with changes 60,False
-Zürich|bigrail,peak,Olten,Risch-Rotkreuz,5.0,0.0,direct None / with changes 60,False
 Zürich|bigrail,peak,Regensdorf,Risch-Rotkreuz,7.0,0.0,direct None / with changes 60,False
 Zürich|bigrail,peak,Aarau,Regensdorf,5.0,0.0,direct None / with changes 120,False
-Zürich|bigrail,day,Bülach,Dietikon,5.0,0.0,direct None / with changes 30,False
 Zürich|bigrail,day,Olten,Regensdorf,1.0,0.0,direct None / with changes 60,False
 Zürich|bigrail,day,Baden,Risch-Rotkreuz,11.0,0.0,direct None / with changes 60,False
-Zürich|bigrail,day,Basel,Risch-Rotkreuz,9.0,0.0,direct None / with changes 75,False
+Zürich|bigrail,day,Basel · SBB,Risch-Rotkreuz,9.0,0.0,direct None / with changes 75,False
 Zürich|bigrail,day,Bülach,Risch-Rotkreuz,12.0,0.0,direct None / with changes 60,False
 Zürich|bigrail,day,Dietikon,Risch-Rotkreuz,5.0,0.0,direct None / with changes 60,False
-Zürich|bigrail,day,Olten,Risch-Rotkreuz,5.0,0.0,direct None / with changes 60,False
 Zürich|bigrail,day,Regensdorf,Risch-Rotkreuz,7.0,0.0,direct None / with changes 60,False
 Zürich|bigrail,day,Aarau,Bülach,9.0,0.0,direct None / with changes 75,False
 Zürich|bigrail,day,Aarau,Regensdorf,5.0,0.0,direct None / with changes 75,False
+Zürich|bigrail,day,Basel · SBB,Risch-Rotkreuz,9.0,0.0,direct None / with changes 480,False
 Zürich|bigrail,night,Regensdorf,Risch-Rotkreuz,7.0,0.0,direct None / with changes 375,False
-Affoltern am Albis|bus,peak,Jonen,Zürich,2.0,0.0,direct None / with changes 30,False
 Affoltern am Albis|bus,day,Jonen,Zürich,2.0,0.0,direct None / with changes 30,False
-Birmenstorf|bus,peak,Baden,Mellingen,9.0,0.0,direct None / with changes 30,False
-Birmenstorf|bus,day,Baden,Mellingen,9.0,0.0,direct None / with changes 30,False
-Birmenstorf|bus,night,Baden,Gebenstorf,11.8,0.0,direct None / with changes 210,False
-Endingen|bus,peak,Baden,Niederweningen,6.0,0.0,direct None / with changes 38,False
-Endingen|bus,peak,Baden,Würenlingen,5.0,0.0,direct None / with changes 38,False
-Endingen|bus,peak,Baden,Zurzach · Bad,8.0,0.0,direct None / with changes 38,False
-Endingen|bus,peak,Niederweningen,Würenlingen,15.0,0.0,direct None / with changes 38,False
-Endingen|bus,peak,Niederweningen,Zurzach · Bad,18.0,0.0,direct None / with changes 38,False
 Endingen|bus,day,Baden,Zurzach · Bad,8.0,0.0,direct None / with changes 41,False
 Endingen|bus,day,Döttingen,Würenlingen,8.5,0.0,direct None / with changes 60,False
-Gebenstorf|bus,peak,Baden,Birmenstorf,1.0,0.0,direct None / with changes 30,False
 Gebenstorf|bus,peak,Baden,Brugg,5.0,0.0,direct None / with changes 30,False
-Gebenstorf|bus,day,Baden,Birmenstorf,1.0,0.0,direct None / with changes 30,False
 Gebenstorf|bus,day,Baden,Brugg,5.0,0.0,direct None / with changes 30,False
-Gebenstorf|bus,day,Baden,Untersiggenthal,3.0,0.0,direct None / with changes 34,False
 Gebenstorf|bus,night,Baden,Brugg,6.5,0.0,direct None / with changes 210,False
-Gelterkinden|bus,peak,Olten,Rheinfelden,8.9,3.8,direct None / with changes 45,False
-Gelterkinden|bus,peak,Olten,Wegenstetten,8.8,3.8,direct None / with changes 60,False
-Gelterkinden|bus,peak,Pratteln,Wegenstetten,8.2,3.8,direct None / with changes 60,False
-Gelterkinden|bus,peak,Basel,Wegenstetten,2.2,3.8,direct None / with changes 60,False
-Gelterkinden|bus,day,Olten,Rheinfelden,8.7,3.8,direct None / with changes 34,False
-Gelterkinden|bus,day,Basel,Wegenstetten,2.2,3.8,direct None / with changes 60,False
-Gelterkinden|bus,day,Olten,Wegenstetten,8.4,3.8,direct None / with changes 60,False
-Gelterkinden|bus,day,Pratteln,Wegenstetten,8.2,3.8,direct None / with changes 60,False
+Gelterkinden|bus,peak,Basel · SBB,Wegenstetten,2.2,3.8,direct None / with changes 60,False
+Gelterkinden|bus,day,Basel · SBB,Wegenstetten,2.2,3.8,direct None / with changes 60,False
 Lenzburg|bus,peak,Möriken-Wildegg,Othmarsingen,0.1,2.9,direct None / with changes 60,False
 Lenzburg|bus,peak,Aarau,Möriken-Wildegg (slow),1.1,2.9,direct None / with changes 30,False
 Lenzburg|bus,peak,Aarau,Mägenwil,2.6,2.9,direct None / with changes 30,False
-Lenzburg|bus,peak,Mägenwil,Suhr,10.1,2.9,direct None / with changes 45,False
 Lenzburg|bus,peak,Möriken-Wildegg,Suhr,6.8,2.9,direct None / with changes 45,False
 Lenzburg|bus,peak,Aarau,Meisterschwanden,3.4,2.9,direct None / with changes 45,False
 Lenzburg|bus,peak,Aarau,Teufenthal,3.1,2.9,direct None / with changes 60,False
 Lenzburg|bus,peak,Othmarsingen,Teufenthal,2.1,2.9,direct None / with changes 60,False
-Lenzburg|bus,peak,Teufenthal,Wohlen,7.3,2.9,direct None / with changes 60,False
 Lenzburg|bus,peak,Teufenthal,Zürich,5.1,2.9,direct None / with changes 60,False
 Lenzburg|bus,peak,Aarau,Möriken-Wildegg (fast),2.1,2.9,direct None / with changes 120,False
 Lenzburg|bus,peak,Beinwil am See,Möriken-Wildegg (fast),4.1,2.9,direct None / with changes 120,False
 Lenzburg|bus,peak,Dietikon,Meisterschwanden,2.1,2.9,direct None / with changes 120,False
-Lenzburg|bus,peak,Mägenwil,Möriken-Wildegg (slow),10.0,0.0,direct None / with changes 45,False
 Lenzburg|bus,peak,Mägenwil,Teufenthal,12.0,0.0,direct None / with changes 60,False
 Lenzburg|bus,peak,Möriken-Wildegg,Teufenthal,9.0,0.0,direct None / with changes 60,False
 Lenzburg|bus,peak,Meisterschwanden,Möriken-Wildegg (fast),9.0,0.0,direct None / with changes 120,False
-Lenzburg|bus,peak,Mägenwil,Möriken-Wildegg (fast),9.0,0.0,direct None / with changes 120,False
 Lenzburg|bus,day,Möriken-Wildegg,Othmarsingen,0.1,2.9,direct None / with changes 60,False
-Lenzburg|bus,day,Aarau,Möriken-Wildegg (slow),1.0,2.9,direct None / with changes 34,False
+Lenzburg|bus,day,Aarau,Möriken-Wildegg (slow),1.1,2.9,direct None / with changes 30,False
 Lenzburg|bus,day,Möriken-Wildegg,Wohlen,3.1,2.9,direct None / with changes 34,False
-Lenzburg|bus,day,Aarau,Mägenwil,2.6,2.9,direct None / with changes 34,False
+Lenzburg|bus,day,Aarau,Mägenwil,2.6,2.9,direct None / with changes 30,False
 Lenzburg|bus,day,Mägenwil,Wohlen,6.6,2.9,direct None / with changes 34,False
 Lenzburg|bus,day,Möriken-Wildegg,Zürich,2.1,2.9,direct None / with changes 34,False
-Lenzburg|bus,day,Beinwil am See,Möriken-Wildegg (slow),8.2,2.9,direct None / with changes 34,False
+Lenzburg|bus,day,Möriken-Wildegg,Suhr,6.2,2.9,direct None / with changes 34,False
 Lenzburg|bus,day,Aarau,Meisterschwanden,2.1,2.9,direct None / with changes 60,False
-Lenzburg|bus,day,Meisterschwanden,Suhr,8.1,2.9,direct None / with changes 75,False
 Lenzburg|bus,day,Meisterschwanden,Zürich,6.1,2.9,direct None / with changes 75,False
 Lenzburg|bus,day,Aarau,Teufenthal,3.1,2.9,direct None / with changes 60,False
 Lenzburg|bus,day,Othmarsingen,Teufenthal,2.1,2.9,direct None / with changes 60,False
-Lenzburg|bus,day,Teufenthal,Wohlen,7.8,2.9,direct None / with changes 60,False
 Lenzburg|bus,day,Teufenthal,Zürich,5.1,2.9,direct None / with changes 60,False
 Lenzburg|bus,day,Aarau,Möriken-Wildegg (fast),2.1,2.9,direct None / with changes 75,False
 Lenzburg|bus,day,Beinwil am See,Möriken-Wildegg (fast),4.1,2.9,direct None / with changes 75,False
-Lenzburg|bus,day,Mägenwil,Möriken-Wildegg (slow),10.4,0.0,direct None / with changes 34,False
-Lenzburg|bus,day,Meisterschwanden,Mägenwil,12.0,0.0,direct None / with changes 75,False
-Lenzburg|bus,day,Meisterschwanden,Möriken-Wildegg (slow),12.0,0.0,direct None / with changes 75,False
 Lenzburg|bus,day,Mägenwil,Teufenthal,12.0,0.0,direct None / with changes 60,False
 Lenzburg|bus,day,Möriken-Wildegg,Teufenthal,9.0,0.0,direct None / with changes 60,False
 Lenzburg|bus,day,Meisterschwanden,Möriken-Wildegg (fast),9.0,0.0,direct None / with changes 75,False
-Lenzburg|bus,day,Mägenwil,Möriken-Wildegg (fast),9.0,0.0,direct None / with changes 75,False
 Lenzburg|bus,night,Möriken-Wildegg,Othmarsingen,1.9,2.9,direct None / with changes 205,False
 Lenzburg|bus,night,Aarau,Mägenwil,1.4,2.9,direct None / with changes 210,False
 Lenzburg|bus,night,Mägenwil,Wohlen,5.1,2.9,direct None / with changes 375,False
@@ -581,8 +475,6 @@ Lenzburg|bus,night,Meisterschwanden,Zürich,5.1,2.9,direct None / with changes 3
 Lenzburg|bus,night,Aarau,Teufenthal,5.1,2.9,direct None / with changes 480,False
 Lenzburg|bus,night,Möriken-Wildegg,Suhr,11.1,2.9,direct None / with changes 480,False
 Lenzburg|bus,night,Othmarsingen,Teufenthal,2.1,2.9,direct None / with changes 480,False
-Lenzburg|bus,night,Mägenwil,Möriken-Wildegg (slow),12.0,0.0,direct None / with changes 375,False
-Lenzburg|bus,night,Mägenwil,Möriken-Wildegg (fast),9.0,0.0,direct None / with changes 375,False
 Lenzburg|bus,night,Meisterschwanden,Möriken-Wildegg (slow),10.5,0.0,direct None / with changes 371,False
 Lenzburg|bus,night,Möriken-Wildegg,Teufenthal,12.0,0.0,direct None / with changes 480,False
 Meisterschwanden|bus,peak,Bettwil,Wohlen,0.0,0.0,direct None / with changes 90,False
@@ -592,7 +484,6 @@ Möriken-Wildegg|bus,peak,Brugg,Schinznach,2.2,2.8,direct None / with changes 60
 Möriken-Wildegg|bus,peak,Aarau,Mägenwil,2.2,2.8,direct None / with changes 60,False
 Möriken-Wildegg|bus,peak,Brugg,Mägenwil,0.2,2.8,direct None / with changes 60,False
 Möriken-Wildegg|bus,peak,Lenzburg (fast),Schinznach,2.0,0.0,direct None / with changes 60,False
-Möriken-Wildegg|bus,peak,Lenzburg (slow),Mägenwil,8.0,0.0,direct None / with changes 60,False
 Möriken-Wildegg|bus,peak,Mägenwil,Schinznach,2.3,0.0,direct None / with changes 90,False
 Möriken-Wildegg|bus,day,Aarau,Schinznach,4.2,2.8,direct None / with changes 60,False
 Möriken-Wildegg|bus,day,Brugg,Schinznach,2.2,2.8,direct None / with changes 60,False
@@ -600,21 +491,15 @@ Möriken-Wildegg|bus,day,Aarau,Mägenwil,2.2,2.8,direct None / with changes 60,F
 Möriken-Wildegg|bus,day,Brugg,Mägenwil,0.2,2.8,direct None / with changes 60,False
 Möriken-Wildegg|bus,day,Lenzburg (slow),Schinznach,10.0,0.0,direct None / with changes 60,False
 Möriken-Wildegg|bus,day,Lenzburg (fast),Schinznach,2.0,0.0,direct None / with changes 60,False
-Möriken-Wildegg|bus,day,Lenzburg (slow),Mägenwil,8.0,0.0,direct None / with changes 60,False
 Möriken-Wildegg|bus,night,Aarau,Mägenwil,2.2,2.8,direct None / with changes 210,False
 Möriken-Wildegg|bus,night,Brugg,Mägenwil,0.2,2.8,direct None / with changes 285,False
-Möriken-Wildegg|bus,night,Lenzburg (slow),Mägenwil,8.0,0.0,direct None / with changes 285,False
-Niederweningen|bus,peak,Baden,Endingen,3.0,0.0,direct None / with changes 45,False
 Niederweningen|bus,peak,Endingen,Zurzach · Kaiserstuhl AG,4.0,0.0,direct None / with changes 60,False
 Remetschwil|bus,night,Fislisbach,Zürich,12.0,0.0,direct None / with changes 480,False
 Remetschwil|bus,night,Stetten,Zürich,18.0,0.0,direct None / with changes 480,False
 Rottenschwil|bus,peak,Muri,Waltenschwil,7.0,0.0,direct None / with changes 60,False
 Rottenschwil|bus,day,Muri,Waltenschwil,7.0,0.0,direct None / with changes 60,False
-Rottenschwil|bus,day,Jonen,Muri,14.0,0.0,direct None / with changes 480,False
 Stetten|bus,peak,Bremgarten,Wohlen,8.0,0.0,direct None / with changes 30,False
-Stetten|bus,day,Bremgarten,Wohlen,8.0,0.0,direct None / with changes 30,False
 Stetten|bus,night,Bremgarten,Wohlen,8.0,0.0,direct None / with changes 285,False
-Untersiggenthal|bus,peak,Baden,Gebenstorf,2.0,0.0,direct None / with changes 120,False
 Untersiggenthal|bus,day,Baden,Würenlingen,0.0,0.0,direct None / with changes 60,False
 Wohlen|bus,peak,Lenzburg,Meisterschwanden,4.5,3.2,direct None / with changes 30,False
 Wohlen|bus,peak,Meisterschwanden,Muri,0.8,3.2,direct None / with changes 38,False
@@ -624,29 +509,13 @@ Wohlen|bus,peak,Muri,Stetten,0.8,3.2,direct None / with changes 30,False
 Wohlen|bus,peak,Meisterschwanden,Othmarsingen,0.8,3.2,direct None / with changes 60,False
 Wohlen|bus,peak,Othmarsingen,Stetten,0.8,3.2,direct None / with changes 60,False
 Wohlen|bus,peak,Hägglingen (fast),Muri,2.8,3.2,direct None / with changes 60,False
-Wohlen|bus,peak,Bremgarten,Meisterschwanden,9.3,2.7,direct None / with changes 38,False
 Wohlen|bus,peak,Bremgarten,Hägglingen (slow),8.8,2.7,direct None / with changes 44,False
-Wohlen|bus,peak,Bremgarten,Stetten,9.3,2.7,direct None / with changes 30,False
-Wohlen|bus,peak,Hägglingen (slow),Meisterschwanden,12.0,0.0,direct None / with changes 38,False
-Wohlen|bus,peak,Hägglingen (slow),Waltenschwil,11.0,0.0,direct None / with changes 30,False
-Wohlen|bus,peak,Meisterschwanden,Stetten,13.0,0.0,direct None / with changes 30,False
-Wohlen|bus,peak,Meisterschwanden,Waltenschwil,12.0,0.0,direct None / with changes 30,False
-Wohlen|bus,peak,Stetten,Waltenschwil,11.0,0.0,direct None / with changes 30,False
-Wohlen|bus,peak,Hägglingen (fast),Waltenschwil,14.0,0.0,direct None / with changes 60,False
 Wohlen|bus,day,Lenzburg,Meisterschwanden,5.0,3.2,direct None / with changes 30,False
 Wohlen|bus,day,Lenzburg,Stetten,5.0,3.2,direct None / with changes 30,False
 Wohlen|bus,day,Lenzburg,Waltenschwil,4.0,3.2,direct None / with changes 30,False
 Wohlen|bus,day,Muri,Stetten,1.7,3.2,direct None / with changes 30,False
 Wohlen|bus,day,Hägglingen (fast),Muri,2.8,3.2,direct None / with changes 60,False
-Wohlen|bus,day,Bremgarten,Meisterschwanden,9.3,2.7,direct None / with changes 30,False
-Wohlen|bus,day,Bremgarten,Stetten,9.3,2.7,direct None / with changes 30,False
 Wohlen|bus,day,Bremgarten,Hägglingen (slow),9.5,2.7,direct None / with changes 49,False
-Wohlen|bus,day,Meisterschwanden,Stetten,13.0,0.0,direct None / with changes 30,False
-Wohlen|bus,day,Meisterschwanden,Waltenschwil,12.0,0.0,direct None / with changes 30,False
-Wohlen|bus,day,Stetten,Waltenschwil,11.0,0.0,direct None / with changes 30,False
-Wohlen|bus,day,Hägglingen (slow),Meisterschwanden,12.0,0.0,direct None / with changes 52,False
-Wohlen|bus,day,Hägglingen (slow),Waltenschwil,11.0,0.0,direct None / with changes 52,False
-Wohlen|bus,day,Hägglingen (fast),Waltenschwil,14.0,0.0,direct None / with changes 60,False
 Wohlen|bus,night,Lenzburg,Stetten,4.5,3.2,direct None / with changes 285,False
 Wohlen|bus,night,Muri,Stetten,0.8,3.2,direct None / with changes 285,False
 Wohlen|bus,night,Bremgarten,Hägglingen (fast),11.3,2.7,direct None / with changes 375,False
@@ -656,21 +525,16 @@ Wohlen|bus,night,Meisterschwanden,Stetten,13.0,0.0,direct None / with changes 28
 Wohlen|bus,night,Hägglingen (fast),Meisterschwanden,11.0,0.0,direct None / with changes 285,False
 Zofingen|bus,peak,Bottenwil,Sursee (slow),14.3,3.7,direct None / with changes 60,False
 Zofingen|bus,peak,Olten,Schöftland,6.3,3.7,direct None / with changes 60,False
-Zofingen|bus,peak,Schöftland,Sursee (fast),4.3,3.7,direct None / with changes 60,False
 Zofingen|bus,peak,Bottenwil,Reiden,7.0,0.0,direct None / with changes 60,False
-Zofingen|bus,day,Bottenwil,Olten,9.3,3.7,direct None / with changes 60,False
 Zofingen|bus,day,Bottenwil,Sursee (slow),14.3,3.7,direct None / with changes 60,False
 Zofingen|bus,day,Olten,Schöftland,6.5,3.7,direct None / with changes 60,False
-Zofingen|bus,day,Schöftland,Sursee (fast),4.3,3.7,direct None / with changes 60,False
 Zofingen|bus,day,Bottenwil,Reiden,7.0,0.0,direct None / with changes 60,False
 Zofingen|bus,night,Bottenwil,Olten,7.3,3.7,direct None / with changes 306,False
 Zofingen|bus,night,Bottenwil,Sursee (slow),9.8,3.7,direct None / with changes 299,False
 Zofingen|bus,night,Suhr,Sursee (fast),7.3,3.7,direct None / with changes 480,False
-Zurzach|bigrail|2,peak,Bülach,Niederweningen,11.1,0.9,direct None / with changes 60,False
 Zurzach|bigrail|2,peak,Stadel,Zurzach · Bad,4.1,0.9,direct None / with changes 60,False
 Zurzach|bigrail|2,day,Bülach,Niederweningen,11.1,0.9,direct None / with changes 60,False
 Zurzach|bigrail|2,day,Stadel,Zurzach · Bad,6.1,0.9,direct None / with changes 60,False
-Zurzach|bigrail|2,day,Niederweningen,Stadel,14.6,0.0,direct None / with changes 60,False
 Zurzach|bigrail|2,night,Stadel,Zurzach · Bad,6.1,0.9,direct None / with changes 480,False
 Zurzach|bigrail|2,night,Bülach,Niederweningen,11.1,0.9,direct None / with changes 480,False
 Zürich|bus|4,day,Affoltern am Albis,Remetschwil,5.0,0.0,direct None / with changes 480,False
