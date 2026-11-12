@@ -4,11 +4,11 @@ Deba|bus,day,39,60,0.0,1.0,3,Euskotren + Bus,dotted
 Donostia / San Sebastián|renfe,peak,"0,30",30,0.0,1.0,6,Renfe + Bus,dotted
 Elgoibar|euskotren,day,"0,30",30,0.0,1.0,3,Euskotren + Bus,dotted
 Elgoibar|euskotren,day,15,60,0.5,1.0,2,Euskotren + Bus,solid
-Ermua|euskotren,peak,"25,55",30,0.36,1.0,3,Euskotren + Bus,dotted
+Ermua|euskotren,peak,"26,56",30,0.36,1.0,3,Euskotren + Bus,dotted
 Ermua|euskotren,day,"26,56",30,0.0,1.0,4,Euskotren + Bus,dotted
 Zestoa|euskotren,peak,27,60,0.0,1.0,2,Euskotren + Bus,dotted
 Zestoa|euskotren,day,27,60,0.0,1.0,2,Euskotren + Bus,dotted
-Zizurkil|renfe,peak,"25,55",30,0.0,1.0,2,Renfe + Bus,dotted
+Zizurkil|renfe,peak,"24,54",30,0.0,1.0,2,Renfe + Bus,dotted
 Zumarraga|bus,peak,15,60,0.22,1.0,4,Renfe + Bus,dotted
 Zumarraga|bus,day,11,60,0.33,1.0,3,Bus,dotted
 Arrasate / Mondragón|bus,peak,"22,52",30,0.0,1.0,2,Bus,dotted
@@ -30,11 +30,11 @@ Lasarte-Oria|bus,day,25,60,0.5,1.0,2,Bus,dotted
 Ondarroa|bus,peak,"5,35",30,0.24,0.59,3,Bus,dotted
 Ondarroa|bus,day,4,60,0.33,1.0,3,Bus,dotted
 Tolosa|bus,peak,"10,40",30,0.0,0.68,3,Bus,dotted
-Villabona|bus,peak,"25,55",30,0.0,0.72,3,Renfe + Bus,dotted
+Villabona|bus,peak,"24,54",30,0.0,0.72,3,Renfe + Bus,dotted
 Vitoria-Gasteiz|bus,day,30,60,0.0,1.0,3,Bus,dotted
 Zarautz|bus,peak,"2,32",30,0.28,0.55,7,Bus,dotted
 Zarautz|bus,day,"15,45",30,0.18,0.64,5,Bus,dotted
-Ermua|bus|1,peak,"25,55",30,0.0,1.0,2,Euskotren + Bus,dotted
+Ermua|bus|1,peak,"26,56",30,0.0,1.0,2,Euskotren + Bus,dotted
 Ermua|bus|1,day,"27,57",30,0.0,1.0,2,Euskotren + Bus,dotted
 Zestoa|bus|1,peak,27,60,0.0,0.67,3,Euskotren + Bus,dotted
 Zestoa|bus|1,peak,"17,47",30,0.0,0.71,3,Euskotren + Bus,dotted

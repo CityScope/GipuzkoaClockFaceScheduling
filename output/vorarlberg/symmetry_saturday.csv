@@ -42,8 +42,9 @@ Rankweil|bigrail,night,"22,52",30,1.0,1.0,2,National railways + Regional bus,sol
 Schwarzach|bigrail,day,"3,33",30,0.13,0.6,6,National railways + Regional bus,dotted
 Schwarzach|bigrail,night,"20,50",30,0.0,0.77,3,National railways + Regional bus,dotted
 Wolfurt|bigrail,peak,"1,31",30,0.0,0.37,5,National railways + Regional bus,dotted
+Wolfurt|bigrail,day,"1,31",30,0.05,0.41,5,National railways + Regional bus,dotted
 Egg|bus,peak,57,60,1.0,1.0,2,Regional bus,solid
 Egg|bus,day,57,60,1.0,1.0,2,Regional bus,solid
 Thüringen|bus,peak,10,60,1.0,1.0,2,Regional bus,solid
 Thüringen|bus,day,"13,43",30,1.0,1.0,2,Regional bus,solid
-Thüringen|bus,day,55,60,1.0,1.0,2,Regional bus,solid
+Thüringen|bus,day,53,60,1.0,1.0,2,Regional bus,solid

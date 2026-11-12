@@ -1,6 +1,6 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Bludenz|bigrail,peak,"0,30",30,0.13,0.54,14,National railways + Local railways + Regional bus,dotted
-Bludenz|bigrail,day,"5,35",30,0.31,0.58,18,National railways + Local railways + Regional bus,dotted
+Bludenz|bigrail,day,"4,34",30,0.31,0.58,18,National railways + Local railways + Regional bus,dotted
 Bregenz|bigrail,peak,"14,44",30,0.26,0.55,28,National railways + Regional bus,dotted
 Bregenz|bigrail,day,"14,44",30,0.32,0.52,23,National railways + Regional bus,dotted
 Bregenz|bigrail,day,"25,55",30,0.09,0.27,13,National railways + Regional bus,dotted
@@ -10,10 +10,10 @@ Dornbirn|bigrail,peak,"1,31",30,0.04,0.41,23,National railways + Regional bus,do
 Dornbirn|bigrail,day,"0,30",30,0.19,0.6,29,National railways + Regional bus,dotted
 Dornbirn|bigrail,night,"29,59",30,0.0,0.75,10,National railways + Regional bus,dotted
 Feldkirch|bigrail,peak,"7,37",30,0.21,0.3,15,National railways + Regional bus,dotted
-Feldkirch|bigrail,peak,"25,55",30,0.42,0.42,7,National railways + Regional bus,dotted
+Feldkirch|bigrail,peak,"26,56",30,0.42,0.42,7,National railways + Regional bus,dotted
 Feldkirch|bigrail,day,"0,30",30,0.3,0.42,17,National railways + Regional bus,dotted
 Frastanz|bigrail,peak,54,60,0.0,0.4,3,National railways + Regional bus,dotted
-Frastanz|bigrail,day,55,60,0.0,0.39,6,National railways + Regional bus,dotted
+Frastanz|bigrail,day,54,60,0.0,0.39,6,National railways + Regional bus,dotted
 Götzis|bigrail,peak,"15,45",30,0.47,0.7,4,National railways + Regional bus,dotted
 Götzis|bigrail,day,"15,45",30,0.4,0.7,7,National railways + Regional bus,dotted
 Götzis|bigrail,night,"15,45",30,0.75,0.75,4,National railways + Regional bus,solid
@@ -24,7 +24,7 @@ Hard|bigrail,day,"27,57",30,0.5,1.0,2,National railways + Regional bus,dotted
 Hard|bigrail,day,"7,37",30,0.13,0.56,4,National railways + Regional bus,dotted
 Hard|bigrail,day,47,60,0.67,1.0,3,National railways + Regional bus,solid
 Hohenems|bigrail,peak,"14,44",30,0.67,1.0,3,National railways + Regional bus,solid
-Hohenems|bigrail,peak,25,60,0.0,1.0,2,National railways + Regional bus,dotted
+Hohenems|bigrail,peak,24,60,0.0,1.0,2,National railways + Regional bus,dotted
 Hohenems|bigrail,day,"14,44",30,0.67,1.0,3,National railways + Regional bus,solid
 Hohenems|bigrail,night,"14,44",30,1.0,1.0,3,National railways + Regional bus,solid
 Klaus|bigrail,peak,"14,44",30,0.6,1.0,5,National railways + Regional bus,solid
@@ -37,7 +37,7 @@ Lustenau|bigrail,day,"0,30",30,0.13,0.33,12,National railways + Regional bus,dot
 Lustenau|bigrail,night,57,60,0.0,0.81,5,National railways + Regional bus,dotted
 Nenzing|bigrail,peak,"20,50",30,1.0,1.0,2,National railways + Regional bus,solid
 Nenzing|bigrail,day,"20,50",30,0.5,0.69,4,National railways + Regional bus,dotted
-Nenzing|bigrail,day,"5,35",30,1.0,1.0,2,National railways + Regional bus,solid
+Nenzing|bigrail,day,"10,40",30,1.0,1.0,2,National railways + Regional bus,solid
 Rankweil|bigrail,peak,"11,41",30,0.26,0.83,6,National railways + Regional bus,dotted
 Rankweil|bigrail,day,"11,41",30,0.0,0.58,5,Regional bus,dotted
 Rankweil|bigrail,night,12,60,0.33,1.0,3,National railways + Regional bus,dotted

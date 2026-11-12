@@ -4,13 +4,13 @@ Amstetten|bigrail,day,55,60,1.0,1.0,2,National railways,solid
 Eferding|bus,peak,32,60,0.15,0.78,12,Local railways + Regional bus,dotted
 Eferding|bus,day,32,60,0.19,0.68,16,Local railways + Regional bus,dotted
 Lambach|bigrail,peak,38,60,0.47,0.73,4,National railways + Local railways + Regional bus,dotted
-Lambach|bigrail,peak,25,60,1.0,1.0,2,National railways + Local railways + Regional bus,solid
-Lambach|bigrail,day,25,60,0.74,0.74,4,National railways + Local railways + Regional bus,solid
+Lambach|bigrail,peak,22,60,1.0,1.0,2,National railways + Local railways + Regional bus,solid
+Lambach|bigrail,day,23,60,0.74,0.74,4,National railways + Local railways + Regional bus,solid
 Lambach|bigrail,day,38,60,0.74,0.74,4,National railways + Local railways + Regional bus,solid
 Linz|bigrail,night,34,60,0.17,0.61,5,National railways + Regional bus,dotted
 Neuhofen an der Krems|bigrail,day,0,60,1.0,1.0,2,National railways + Regional bus,solid
 Rohr im Kremstal|bigrail,peak,25,60,0.0,1.0,2,National railways + Regional bus,dotted
-Steyr|bigrail,peak,55,60,0.66,1.0,3,Regional bus,solid
+Steyr|bigrail,peak,56,60,0.66,1.0,3,Regional bus,solid
 Steyr|bigrail,day,55,60,0.92,1.0,4,Regional bus,solid
 Traun|bigrail,day,21,60,0.0,1.0,2,National railways + Regional bus,dotted
 Wels|bigrail,peak,30,60,0.0,0.75,8,National railways + Regional bus,dotted

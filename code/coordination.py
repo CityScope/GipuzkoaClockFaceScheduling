@@ -453,7 +453,8 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                 g2, sc2 = best_for(hs, pool)
                 if len(g2) < 2:
                     continue
-                pick.append(((sc2, 1 if h0 % 5 == 0 else 0, sum(slack(d, hs, f) for d, f in g2.items())), hs, g2))
+                rnd = 2 if hs[0] % 15 == 0 else 1 if hs[0] % 10 == 0 else 0   # same services: prefer :00/:15/:30/:45, then :10/:20/...
+                pick.append(((sc2, rnd, sum(slack(d, hs, f) for d, f in g2.items())), hs, g2))
             if not pick:
                 break
             _, hs, got = max(pick, key=lambda z: z[0])

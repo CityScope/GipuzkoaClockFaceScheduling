@@ -217,7 +217,6 @@ Schwarzach|bigrail,day,Alberschwende,Dornbirn,2.0,0.0,direct None / with changes
 Schwarzach|bigrail,night,Alberschwende,Dornbirn,5.3,1.7,direct None / with changes 300,False
 Schwarzach|bigrail,night,Alberschwende,Wolfurt,13.3,1.7,direct None / with changes 300,False
 St. Margrethen|bigrail,day,Bregenz,Dornbirn,4.0,0.0,direct None / with changes 180,False
-Wolfurt|bigrail,day,Bregenz,Dornbirn,1.2,4.8,direct None / with changes 41,False
 Wolfurt|bigrail,day,Bregenz,Schwarzach,3.2,4.8,direct None / with changes 41,False
 Wolfurt|bigrail,day,Alberschwende,Bregenz,2.0,0.0,direct None / with changes 120,False
 Wolfurt|bigrail,day,Alberschwende,Dornbirn,4.0,0.0,direct None / with changes 120,False

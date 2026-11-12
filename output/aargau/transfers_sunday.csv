@@ -91,8 +91,6 @@ Berikon|bus,night,Bremgarten,Remetschwil,3.2,0.8,direct None / with changes 278,
 Berikon|bus,night,Dietikon · main station,Oberwil-Lieli,2.2,0.8,direct None / with changes 322,False
 Berikon|bus,night,Dietikon · main station,Remetschwil,2.2,0.8,direct None / with changes 236,False
 Berikon|bus,night,Oberwil-Lieli,Remetschwil,1.0,0.0,direct None / with changes 236,False
-Bremgarten|bus,peak,Berikon,Stetten,2.3,0.7,direct None / with changes 30,False
-Bremgarten|bus,peak,Berikon,Mellingen,5.3,0.7,direct None / with changes 82,False
 Bremgarten|bus,peak,Jonen (fast),Wohlen,2.3,0.7,direct None / with changes 90,False
 Bremgarten|bus,peak,Jonen (slow),Wohlen,2.3,0.7,direct None / with changes 90,False
 Bremgarten|bus,peak,Jonen (fast),Stetten,5.0,0.0,direct None / with changes 90,False
