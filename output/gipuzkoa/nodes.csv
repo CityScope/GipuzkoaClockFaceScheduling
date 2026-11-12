@@ -1,5 +1,5 @@
 ,lat,lon,anchor,town,system,label,name,departures,routes,score,important,group
-Aia|euskotren,43.274211,-2.126171,Aia-Orio,Aia,euskotren,Aia,Aia · Euskotren,69,1,74,True,Aia|euskotren
+Aia|euskotren,43.274211,-2.126171,Aia-Orio,Aia,euskotren,Aia,Aia · Euskotren,69,1,74,True,Aia|bus|1
 Alegia|renfe,43.1017599,-2.09714,Alegia,Alegia,renfe,Alegia,Alegia · Renfe,47,2,57,True,Alegia|renfe
 Altsasu / Alsasua|renfe,42.894847,-2.181237,Altsasu/Alsasua-Estación,Altsasu / Alsasua,renfe,Altsasu,Altsasu · Renfe,19,4,39,True,Altsasu / Alsasua|renfe
 Beasain|renfe,43.0462687,-2.2022994,Beasain,Beasain,renfe,Beasain,Beasain · Renfe,65,5,90,True,Beasain|bus
@@ -16,7 +16,6 @@ Vitoria-Gasteiz|renfe,42.841517,-2.672601,Vitoria/Gasteiz,Vitoria-Gasteiz,renfe,
 Zestoa|euskotren,43.278328,-2.270813,Arroa-Zestoa,Zestoa,euskotren,Zestoa,Zestoa · Euskotren,32,1,37,True,Zestoa|euskotren
 Zizurkil|renfe,43.1891906,-2.0553722,Billabona-Zizurkil,Zizurkil,renfe,Zizurkil,Zizurkil · Renfe,60,5,85,True,Zizurkil|renfe
 Zumarraga|renfe,43.0870824,-2.3202298,Zumarraga,Zumarraga,renfe,Zumarraga,Zumarraga · Renfe,70,7,105,True,Zumarraga|bus
-Abaltzisketa|bus,43.04734752356282,-2.1053701009196066,"Abaltzisketa - Abaltzisketa Hirigunea 22, San Juan Plaza",Abaltzisketa,bus,Abaltzisketa,Abaltzisketa · Bus,17,2,27,True,Abaltzisketa|bus
 Agurain / Salvatierra|bus,42.8494776,-2.3877419025,SALVATIERRA / AGURAIN (TC/EG),Agurain / Salvatierra,bus,Agurain,Agurain · Bus,171,6,201,True,Agurain / Salvatierra|bus
 Albiztur|bus,43.1217763812073,-2.1525543498495328,"Albiztur - Aizkorri Txiki Bailara 7 Parean, Santutxu",Albiztur,bus,Albiztur,Albiztur · Bus,20,3,35,True,Albiztur|bus
 Andoain|bus,43.21918443443951,-2.0222603558311274,"Andoain - Goiko Plaza, San Martin Eliza",Andoain,bus,Andoain,Andoain · Bus,149,10,199,True,Andoain|bus
@@ -50,11 +49,11 @@ Mutriku|bus,43.30808788117716,-2.397123563269007,"Mutriku - Mijoa Industrialdea 
 Oiartzun|bus,43.31080650783253,-1.8848488221677788,Errenteria - Lartzabal Auzoa 1 Parean,Oiartzun,bus,Oiartzun,Oiartzun · Bus,166,7,201,True,Oiartzun|bus
 Ondarroa|bus,43.32287908009384,-2.421736994358941,ITXASAURRE (PORTUA/PUERTO) (3432),Ondarroa,bus,Ondarroa,Ondarroa · Bus,71,6,101,True,Ondarroa|bus
 Orexa|bus,43.09384114067655,-2.011420806292211,Orexa - Errebote Plaza,Orexa,bus,Orexa,Orexa · Bus,12,1,17,True,Orexa|bus
-Orio|bus,43.2774030483125,-2.11661704960709,"Orio - Anibarko Portua Donostirantz, Anibarko Portua",Orio,bus,Orio,Orio · Bus,83,3,98,True,Orio|bus
 Ormaiztegi|bus,43.043782281829685,-2.2564451518181015,Ormaiztegi - Zumarralde  14,Ormaiztegi,bus,Ormaiztegi,Ormaiztegi · Bus,58,3,73,True,Ormaiztegi|bus
 Pamplona / Iruña|bus,42.81171251,-1.645344915,PAMPLONA/IRUÑA (Estación bus geltokia),Pamplona / Iruña,bus,Pamplona,Pamplona · Bus,38,8,78,True,Pamplona / Iruña|bus
 Pasaia|bus,43.31910316965765,-1.918025821113583,Pasaia - Nafarroa Hiribidea 5,Pasaia,bus,Pasaia,Pasaia · Bus,582,11,637,True,Pasaia|bus
 Tolosa|bus,43.13322735106909,-2.0767536718459865,"Tolosa - Oria Kalea, Zezen Plaza",Tolosa,bus,Tolosa,Tolosa · Bus,181,24,301,True,Tolosa|bus
+Usurbil|bus,43.271684995957386,-2.0530144189838557,"Usurbil - Zelaiaundi Kalea, Biribilgunea",Usurbil,bus,Usurbil,Usurbil · Bus,65,3,80,True,Usurbil|bus
 Villabona|bus,43.189930405097115,-2.052845703973096,Villabona - Kale Berria 10,Villabona,bus,Villabona,Villabona · Bus,173,11,228,True,Villabona|bus
 Vitoria-Gasteiz|bus,42.85898154051944,-2.684649533278899,VITORIA-GASTEIZ (Estación Bus Geltokia),Vitoria-Gasteiz,bus,Vitoria-Gasteiz,Vitoria-Gasteiz · Bus,229,24,349,True,Vitoria-Gasteiz|bus
 Zaldibia|bus,43.03737594285745,-2.1504575189623787,Zaldibia - Santa Fe  47,Zaldibia,bus,Zaldibia,Zaldibia · Bus,22,2,32,True,Zaldibia|bus
@@ -62,6 +61,8 @@ Zarautz|bus,43.28292772886843,-2.1609143479606923,Zarautz - Zubiaurrezahar Kalea
 Zegama|bus,42.97225759326767,-2.29230627565755,Zegama - Ugarte Zelai,Zegama,bus,Zegama,Zegama · Bus,24,1,29,True,Zegama|bus
 Zumaia|bus,43.294602599863516,-2.2563771113443765,Zumaia - Patxita Etxezarreta Kalea 13 Parean,Zumaia,bus,Zumaia,Zumaia · Bus,103,7,138,True,Zumaia|bus
 Zumarraga|bus,43.087063420478394,-2.3204232255809982,Zumarraga - Renfe Geltokia,Zumarraga,bus,Zumarraga,Zumarraga · Bus,117,8,157,True,Zumarraga|bus
+Aia|bus|1,43.273906344019494,-2.1250229471154274,Aia - Tren Geltokia,Aia,bus,Aia,Aia · Bus,15,1,20,True,Aia|bus|1
+Alegia|bus|1,43.10035135665267,-2.0976618210666547,"Alegia - San Juan Kalea 38, Tontokalea",Alegia,bus,Alegia,Alegia · Bus,49,5,74,True,Alegia|bus|1
 Ermua|bus|1,43.18290648895594,-2.4994306709792125,Ermua - Gipuzkoa Hiribidea 16,Ermua,bus,Ermua · Gipuzkoa Hiribi…,Ermua · Gipuzkoa Hiribi… · Bus,220,6,250,True,Ermua|bus|1
 Irun|bus|1,43.342293510464025,-1.7988536467961023,"Irun - Hondarribia Kalea 25, Gurutze Gorria",Irun,bus,Irun,Irun · Bus,255,15,330,True,Irun|bus|1
 Zestoa|bus|1,43.27698279487781,-2.2716912094617614,Zestoa - Arroabea,Zestoa,bus,Zestoa,Zestoa · Bus,236,5,261,True,Zestoa|bus|1

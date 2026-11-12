@@ -305,6 +305,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
         T = Dg[y].t.values; nT = len(T); rkd = Dg[y].route_key.values; trd = Dg[y].trip_key.values
         k = np.searchsorted(T, ta + tr)
         best = {}                                        # departure time -> (latest arrival catching it, wait)
+        alts = defaultdict(list)                         # departure time -> every change arrival catching it
         for j in range(len(ta)):
             own = ownd.get((x, y, tri[j]))
             if own is not None:                          # the same vehicle continues towards y: wait 0
@@ -319,6 +320,8 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                 continue
             if not in_band(np.array([d_]), wins)[0]:     # departures inside the time band only (as for the timed changes)
                 continue
+            if own is None:
+                alts[d_].append((float(ta[j]), float(d_), float(w_), tr, rka[j], rkd[k[j]], tri[j], trd[k[j]]))
             if d_ not in best or ta[j] > best[d_][0]:
                 best[d_] = (ta[j], w_, own is not None,
                             None if own is not None else (float(ta[j]), float(d_), float(w_), tr, rka[j], rkd[k[j]], tri[j], trd[k[j]]))
@@ -329,7 +332,9 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
         waits.ndir = sum(1 for v in best.values() if v[2])      # of which direct (same vehicle / same line, wait 0)
         waits.ddir = [float(k_) for k_, v in best.items() if v[2]]   # their departure times
         waits.opts = [v[3] for v in best.values() if v[3] is not None]   # the changes among them (for the change minutes)
+        waits.optsets = [sorted(alts[k_]) for k_, v in best.items() if v[3] is not None]   # all arrivals catching each of them
         return float(np.mean([v[1] for v in best.values()])), _hw(np.array(sorted(best)), wins), tr
+    nDb = {y: int(in_band(g.t.values, wins).sum()) for y, g in Dg.items()}   # departures towards y in the band
     st_ = {}
     for x in E:
         for y in E:
@@ -351,23 +356,27 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                 st_[(x, y)] = dict(k="d", w=wgt, Hd=_hall, Hc=None, C=[], share=None, wait=None, walk=None, alld=True)
                 continue
             # ---- the relation, measured on the real timetable (all services): every arrival from x takes the first
-            # departure towards y it can reach (same vehicle = wait 0); when several arrivals catch the same departure
-            # only the latest counts. Coordinated when the AVERAGE wait is within the limit (6 min, 12 min arriving by
-            # bus), it repeats (>= 2 changes within the limit), it is shorter than half the departing headway (else it is
-            # chance) and the changes make the relation run more often than the direct trips alone.
+            # departure towards y it can reach (same vehicle = wait 0). Candidate connections: per departure every arrival
+            # that catches it within limit + 6 min; whether they are connections is decided at a symmetry minute (fit + use).
             limw = COORD_WAIT_RAIL if sysof[enode[x]] in RAIL_SYSTEMS else COORD_WAIT_BUS
             if _wall is None:
                 st_[(x, y)] = dict(k="n", w=wgt, Hd=Hd, Hc=None, C=[], share=None, wait=None, walk=None)
                 continue
             # a connection arrives at most limw (6, 12 by bus) + walk before the symmetry minute and leaves at most 6 min
             # after it: its wait (walk not included) is at most limw + 6
-            C = [c for c in waits.opts if c[2] <= limw + DEP_AFTER_MAX]
+            C, CS = [], []                                              # per departure: latest candidate, all candidates
+            for cs in waits.optsets:
+                cs = [o for o in cs if o[2] <= limw + DEP_AFTER_MAX]
+                if cs:
+                    C.append(cs[-1]); CS.append(cs)
+            rep_ = 2 if min(nA.get(x, 0), nDb.get(y, 0)) >= 2 else 1  # it repeats (a line with one service in the band: once)
             Hc = _hw([b for _, b in dr] + [c[1] for c in C], wins) if (dr or C) else 999.0
             if dr and not Hc < Hd:                                      # the changes add nothing to the direct trips
                 st_[(x, y)] = dict(k="d", w=wgt, Hd=Hd, Hc=None, C=[], share=None, wait=None, walk=None)
                 continue
-            ok = round(_wall) <= limw + DEP_AFTER_MAX and len(C) >= 2 and _wall < hD[y] / 2
-            st_[(x, y)] = dict(k="c" if ok else "n", w=wgt, Hd=Hd, Hc=Hc if C else _hall, C=C if ok else [], share=len(C) / nA[x], lim=limw, nall=waits.nall, ndir=waits.ndir, ddir=waits.ddir, hall=_hall,
+            ok = len(C) >= rep_                                         # judged in the symmetry search (fit + use)
+            st_[(x, y)] = dict(k="c" if ok else "n", w=wgt, Hd=Hd, Hc=Hc if C else _hall, C=C if ok else [], CS=CS if ok else [], rep=rep_,
+                               hDy=hD[y], share=len(C) / nA[x], lim=limw, nall=waits.nall, ndir=waits.ndir, ddir=waits.ddir, hall=_hall,
                                dirdep=[float(b) for _, b in dr if in_band(np.array([b]), wins)[0]],
                                wait=_wall, walk=float(np.median([c[3] for c in C])) if C else _tr)
     # ---- symmetries: hands inside the timed changes of the coordinated directions
@@ -382,47 +391,59 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
         # a multiple of 5, then the hand in the middle of the changes; its relations are taken out and the next
         # symmetry (hands >= GROUP_SEP min from the previous ones) is searched among the rest.
         cd_ = {d: v for d, v in need.items() if v["k"] == "c"}
-        # change -> (arrival, departure, longest arrival offset before the hand = limit + walk), minutes rounded
-        IV = {d: [(int(round(c[0])), int(round(c[1])), v["lim"] + (c[3] or 0.0)) for c in v["C"]] for d, v in cd_.items()}
-        # fits hand h: arrives at or before h (at most limit + walk before) and leaves at or after h (at most 6 min after)
-        fits = lambda iv, h: [((h - a) % 60) <= (b - a) and ((h - a) % 60) <= am + 0.5 and (b - a) - ((h - a) % 60) <= DEP_AFTER_MAX
-                              for a, b, am in iv]
+        def fit1(d, o, h):
+            """Change o (one arrival -> departure) is a connection at symmetry minute h: it arrives at or before h, at most
+            the limit (6 min, 12 by bus) + walk before, and leaves at or after h, at most 6 min after (minutes rounded)."""
+            a, b = int(round(o[0])), int(round(o[1]))
+            off = (h - a) % 60
+            return off <= b - a and off <= cd_[d]["lim"] + (o[3] or 0.0) + 0.5 and (b - a) - off <= DEP_AFTER_MAX
 
-        def pays(d, f):
-            """Are the timed changes of any use? Timed = direct trips (wait 0) + the timed changes f; normal = every
-            departure reached (direct trips + all changes). Keeping only the timed ones loses headway, which must be paid
-            back by the wait saved: (H_timed - H_all) / 2 <= wait_all - wait_timed (headways: pyGTFSHandler formula)."""
+        def choose(d, hs):
+            """Per departure of relation d: the latest arrival that connects to it at one of the hands (or None)."""
+            out = []
+            for cs in cd_[d]["CS"]:
+                ok_ = [o for o in cs if any(fit1(d, o, h) for h in hs)]
+                out.append(ok_[-1] if ok_ else None)
+            return out
+
+        def pays(d, ch):
+            """Are the timed changes ch of any use? Timed = direct trips (wait 0) + ch; normal = every departure reached
+            (direct trips + all changes). The timed changes must wait less than half the departing headway, at least halve
+            the headway of the direct trips (if any); then either they are >= 80 % of the departures, or the wait they
+            save pays for the headway they lose: (H_timed - H_all) / 2 <= wait_all - wait_timed (formula headways)."""
             v = cd_[d]
-            dep = sorted(set(v["ddir"]) | set(v["dirdep"]) | {c[1] for c, ok in zip(v["C"], f) if ok})
-            if not dep:
+            if not ch or float(np.mean([c[2] for c in ch])) >= v["hDy"] / 2:
                 return False
+            dep = sorted(set(v["ddir"]) | set(v["dirdep"]) | {c[1] for c in ch})
             ht = _hw(dep, wins)
-            if v["dirdep"] and ht > _hw(sorted(v["dirdep"]), wins) / 2:   # direct trips exist: the timed changes must at
-                return False                                              # least halve their headway, else they add too little
-            if len(dep) >= TIMED_MOST * v["nall"]:                    # (almost) every service is timed: nothing to compare
+            if v["dirdep"] and ht > _hw(sorted(v["dirdep"]), wins) / 2:
+                return False
+            if len(dep) >= TIMED_MOST * v["nall"]:
                 return True
-            wt = sum(c[2] for c, ok in zip(v["C"], f) if ok) / len(dep)
+            wt = sum(c[2] for c in ch) / len(dep)
             return (ht - min(ht, v["hall"])) / 2 <= v["wait"] - wt + 1e-9
 
         def rel_fit(d, hs):
-            """Changes of relation d that fit the hands (arrival <= hand <= departure; >= 2 of them), or None when d is
-            not coordinated in this symmetry (the fitting changes are of no use, see pays())."""
-            f = np.zeros(len(IV[d]), bool)
-            for h in hs:
-                f |= np.array(fits(IV[d], h), bool)
-            return f if (f.sum() >= 2 and pays(d, f)) else None
+            """The connections of relation d at the hands (list per departure, None = not connected), or None when d is
+            not coordinated there (fewer than it repeats, or of no use)."""
+            ch = choose(d, hs)
+            got_ = [c for c in ch if c is not None]
+            return ch if (len(got_) >= cd_[d]["rep"] and pays(d, got_)) else None
 
-        def slack(d, hs, f):                                      # how central the hands lie in the fitting changes
+        nfit = lambda ch: sum(1 for c in ch if c is not None)
+
+        def slack(d, hs, ch):                                     # how central the hands lie in the connections
             s_ = 0
-            for (a, b, _am), ok in zip(IV[d], f):
-                if ok:
-                    s_ += max(min((h - a) % 60, (b - h) % 60) if ((h - a) % 60) <= (b - a) else -99 for h in hs)
+            for c in ch:
+                if c is not None:
+                    a, b = int(round(c[0])), int(round(c[1]))
+                    s_ += max(min((h - a) % 60, (b - a) - (h - a) % 60) if fit1(d, c, h) else -99 for h in hs)
             return s_
 
         def best_for(hs, pool):
             got = {d: rel_fit(d, hs) for d in pool}
             got = {d: f for d, f in got.items() if f is not None}
-            return got, (round(sum(cd_[d]["w"] for d in got), 6), sum(int(f.sum()) for f in got.values()))
+            return got, (round(sum(cd_[d]["w"] for d in got), 6), sum(nfit(f) for f in got.values()))
 
         groups_ = []                                                  # [hands, weight, [directions], {direction: fit mask}]
         pool = set(cd_)
@@ -438,17 +459,17 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             if not cands:
                 break
             top = max(c[0] for c in cands)
-            cands = [c for c in cands if c[0] == top]
             # period: both hands (every 30 min) when each of them carries >= 20 % of the fitting changes, else the busier one
-            sc, h0, got = cands[0]
-            nh = [sum(int(np.sum(fits([iv for iv, ok in zip(IV[d], f) if ok], h))) for d, f in got.items()) for h in (h0, h0 + 30)]
+            sc, h0, got = next(c for c in cands if c[0] == top)
+            cands = [c for c in cands if c[0][0] == top[0]]          # the same relations (weight); changes may differ
+            nh = [sum(nfit(choose(d, (h,))) for d in got) for h in (h0, h0 + 30)]
             two = min(nh) >= 0.2 * sum(nh)
             pick = []
             for sc, h0, got in cands:
                 if two:
                     hs = (h0, h0 + 30)
                 else:
-                    nh_ = [sum(int(np.sum(fits(IV[d], h))) for d in got) for h in (h0, h0 + 30)]
+                    nh_ = [sum(nfit(choose(d, (h,))) for d in got) for h in (h0, h0 + 30)]
                     hs = (h0,) if nh_[0] >= nh_[1] else (h0 + 30,)
                 g2, sc2 = best_for(hs, pool)
                 if len(g2) < 2:
@@ -457,23 +478,30 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                 pick.append(((sc2, rnd, sum(slack(d, hs, f) for d, f in g2.items())), hs, g2))
             if not pick:
                 break
-            _, hs, got = max(pick, key=lambda z: z[0])
+            best = max(pick, key=lambda z: z[0])
+            # a rounder minute (:00/:15/:30/:45, then :10/:20/:40/:50) with the same relations is taken when no relation's
+            # timed headway gets more than 10 % (at least 3 min) worse
+            th = lambda d, f: _hw(sorted(set(cd_[d]["ddir"]) | set(cd_[d]["dirdep"]) | {c[1] for c in f if c is not None}), wins)
+            hb = {d: th(d, f) for d, f in best[2].items()}
+            alt = [z for z in pick if z[0][1] > best[0][1] and set(z[2]) == set(best[2])
+                   and all(th(d, f) <= hb[d] + max(3.0, 0.1 * hb[d]) for d, f in z[2].items())]
+            _, hs, got = max(alt, key=lambda z: (z[0][1], z[0][0], z[0][2])) if alt else best
             groups_.append([list(hs), sum(cd_[d]["w"] for d in got), list(got), got])
             pool -= set(got)
         for d in pool:                                                # left over (in no symmetry): coordinated only if some symmetry
             fbest = None                                              # minute would make it a connection that is of use
             for h in range(60):
                 fb = rel_fit(d, (h,))
-                if fb is not None and (fbest is None or fb.sum() > fbest.sum()):
+                if fb is not None and (fbest is None or nfit(fb) > nfit(fbest)):
                     fbest = fb
             if fbest is None:
                 st_[d].update(k="n", C=[])
             else:
-                st_[d]["C"] = [c for c, ok in zip(st_[d]["C"], fbest) if ok]
+                st_[d]["C"] = [c for c in fbest if c is not None]
         for d in cd_:                                                 # the timed changes of a relation in a symmetry: those that fit it
             for g in groups_:
                 if d in g[3]:
-                    cd_[d]["C"] = [c for c, ok in zip(cd_[d]["C"], g[3][d]) if ok]
+                    cd_[d]["C"] = [c for c in g[3][d] if c is not None]
             v = cd_[d]                                                # shown: headway (formula) and mean wait of direct + timed
             if v["k"] == "c" and v["C"]:
                 dep = sorted(set(v["ddir"]) | set(v["dirdep"]) | {c[1] for c in v["C"]})

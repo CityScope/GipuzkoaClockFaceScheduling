@@ -1,20 +1,25 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Amstetten|bigrail,day,5,60,1.0,1.0,2,National railways,solid
 Amstetten|bigrail,day,55,60,1.0,1.0,2,National railways,solid
-Eferding|bus,peak,32,60,0.15,0.78,12,Local railways + Regional bus,dotted
+Eferding|bus,peak,32,60,0.16,0.67,16,Local railways + Regional bus,dotted
 Eferding|bus,day,32,60,0.19,0.68,16,Local railways + Regional bus,dotted
 Lambach|bigrail,peak,38,60,0.47,0.73,4,National railways + Local railways + Regional bus,dotted
 Lambach|bigrail,peak,22,60,1.0,1.0,2,National railways + Local railways + Regional bus,solid
 Lambach|bigrail,day,23,60,0.74,0.74,4,National railways + Local railways + Regional bus,solid
 Lambach|bigrail,day,38,60,0.74,0.74,4,National railways + Local railways + Regional bus,solid
-Linz|bigrail,night,34,60,0.17,0.61,5,National railways + Regional bus,dotted
+Leonding|bigrail,day,35,60,0.9,0.9,3,Regional bus,solid
+Linz|bigrail,peak,"4,34",30,0.22,0.35,152,National railways + Local railways + Regional bus,dotted
 Neuhofen an der Krems|bigrail,day,0,60,1.0,1.0,2,National railways + Regional bus,solid
 Rohr im Kremstal|bigrail,peak,25,60,0.0,1.0,2,National railways + Regional bus,dotted
-Steyr|bigrail,peak,56,60,0.66,1.0,3,Regional bus,solid
+Sattledt|bigrail,day,10,60,0.0,1.0,2,National railways + Regional bus,dotted
+Steyr|bigrail,peak,56,60,0.45,0.91,8,Regional bus,dotted
 Steyr|bigrail,day,55,60,0.92,1.0,4,Regional bus,solid
+Traun|bigrail,peak,17,60,0.0,1.0,2,National railways + Regional bus,dotted
 Traun|bigrail,day,21,60,0.0,1.0,2,National railways + Regional bus,dotted
-Wels|bigrail,peak,30,60,0.0,0.75,8,National railways + Regional bus,dotted
-Wels|bigrail,day,30,60,0.09,0.56,9,National railways + Regional bus,dotted
-Bad Hall|bus,peak,45,60,0.0,1.0,2,Regional bus,dotted
+Wels|bigrail,peak,30,60,0.18,0.59,17,National railways + Regional bus,dotted
+Bad Hall|bus,peak,41,60,0.75,0.75,4,Regional bus,solid
+Bad Hall|bus,peak,21,60,0.67,0.67,3,Regional bus,solid
 Bad Hall|bus,day,16,60,0.18,0.82,4,Regional bus,dotted
+Hellmonsödt|bus,peak,"10,40",30,0.0,0.67,3,Regional bus,dotted
+Ottensheim|bus,peak,36,60,0.5,1.0,2,Regional bus,dotted
 Ottensheim|bus,day,40,60,0.53,1.0,2,Regional bus,solid

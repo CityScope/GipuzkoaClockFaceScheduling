@@ -1,16 +1,19 @@
 node,band,n,minutes,interval,share_in_window
-Abaltzisketa|bus,peak,3,"12,16,38",0,1.0
-Abaltzisketa|bus,day,7,38,60,0.2857142857142857
-Abaltzisketa|bus,night,4,"24,28,52,56",0,1.0
 Agurain / Salvatierra|bus,peak,40,"7,30",0,0.425
 Agurain / Salvatierra|bus,day,83,"7,29,43",0,0.5421686746987951
 Agurain / Salvatierra|bus,night,8,"8,44",0,0.875
+Aia|bus|1,peak,3,"1,22,42",20,1.0
+Aia|bus|1,day,8,46,60,0.25
+Aia|bus|1,night,0,,0,0.0
 Aia|euskotren,peak,18,"15,45",30,0.8888888888888888
 Aia|euskotren,day,32,"15,45",30,1.0
 Aia|euskotren,night,3,"15,44",30,1.0
 Albiztur|bus,peak,5,"10,23,42,46,52",0,1.0
 Albiztur|bus,day,12,"25,40",0,0.4166666666666667
 Albiztur|bus,night,0,,0,0.0
+Alegia|bus|1,peak,13,"0,25,30,51",0,0.6923076923076923
+Alegia|bus|1,day,20,"10,15,20,37,46,51",0,0.85
+Alegia|bus|1,night,8,12,60,0.625
 Alegia|renfe,peak,10,"37,42,48",0,0.8
 Alegia|renfe,day,21,"37,44,58",0,0.7142857142857143
 Alegia|renfe,night,4,"27,34,38,44",0,1.0
@@ -146,9 +149,6 @@ Ondarroa|bus,night,3,"10,40",30,1.0
 Orexa|bus,peak,3,"0,20",0,1.0
 Orexa|bus,day,5,"0,20,36,49",0,1.0
 Orexa|bus,night,0,,0,0.0
-Orio|bus,peak,21,"2,9,36,57",0,0.8095238095238095
-Orio|bus,day,41,"4,8,36,55",0,0.8292682926829268
-Orio|bus,night,3,"5,31",0,1.0
 Ormaiztegi|bus,peak,16,"15,20,29,45",0,0.75
 Ormaiztegi|bus,day,28,"20,30",0,0.6428571428571429
 Ormaiztegi|bus,night,1,20,0,1.0
@@ -161,6 +161,9 @@ Pasaia|bus,night,39,"7,19,29,37,42,59",0,0.717948717948718
 Tolosa|bus,peak,43,"1,10,39,55",0,0.5813953488372093
 Tolosa|bus,day,81,"10,15,25,30,41,55",0,0.7283950617283951
 Tolosa|bus,night,16,"0,16",0,0.6875
+Usurbil|bus,peak,16,"18,27,46,57",0,0.875
+Usurbil|bus,day,35,"18,25,46,55",0,0.9142857142857143
+Usurbil|bus,night,1,57,0,1.0
 Villabona|bus,peak,42,"7,37,44,55",0,0.6904761904761905
 Villabona|bus,day,79,"7,25,37,43,57",0,0.7215189873417721
 Villabona|bus,night,20,"15,39",0,0.65

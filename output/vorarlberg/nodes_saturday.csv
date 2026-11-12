@@ -1,7 +1,7 @@
 ,lat,lon,anchor,town,system,label,name,departures,routes,score,important,group
 Bludenz|bigrail,47.155290263333335,9.814082505,Bludenz Bahnhof,Bludenz,bigrail,Bludenz,Bludenz · National railways,98.0,10,148.0,True,Bludenz|bigrail
 Bludenz|localrail,47.15500417166667,9.814495729999999,Bludenz Bahnhof,Bludenz,localrail,Bludenz,Bludenz · Local railways,34.0,1,39.0,True,Bludenz|bigrail
-Bregenz|bigrail,47.503360146,9.741039888,Bregenz Bahnhof,Bregenz,bigrail,Bregenz,Bregenz · National railways,169.0,8,209.0,True,Bregenz|bigrail
+Bregenz|bigrail,47.503360146,9.741039888,Bregenz Bahnhof,Bregenz,bigrail,Bregenz,Bregenz · National railways,161.0,8,201.0,True,Bregenz|bigrail
 Dornbirn|bigrail,47.41731793,9.737930819999999,Dornbirn Bahnhof,Dornbirn,bigrail,Dornbirn,Dornbirn · National railways,164.0,7,199.0,True,Dornbirn|bigrail
 Feldkirch|bigrail,47.241603116,9.604928953999998,Feldkirch Bahnhof,Feldkirch,bigrail,Feldkirch,Feldkirch · National railways,170.0,10,220.0,True,Feldkirch|bigrail
 Frastanz|bigrail,47.220107415,9.638963425,Frastanz Bahnhof,Frastanz,bigrail,Frastanz,Frastanz · National railways,126.0,4,146.0,True,Frastanz|bigrail
@@ -9,8 +9,7 @@ Götzis|bigrail,47.336813845,9.636852385000001,Götzis Bahnhof,Götzis,bigrail,G
 Hard|bigrail,47.47984353,9.68818661,Hard-Fussach Bahnhof,Hard,bigrail,Hard,Hard · National railways,66.0,1,71.0,True,Hard|bigrail
 Hohenems|bigrail,47.36498052666666,9.681290546666666,Hohenems Bahnhof,Hohenems,bigrail,Hohenems,Hohenems · National railways,144.0,6,174.0,True,Hohenems|bigrail
 Klaus|bigrail,47.308099175,9.62484191,Klaus Bahnhof,Klaus,bigrail,Klaus,Klaus · National railways,86.0,2,96.0,True,Klaus|bigrail
-Lindau (Bodensee)|bigrail,47.54537727333334,9.680688673333334,Lindau-Insel,Lindau (Bodensee),bigrail,Lindau (Bodensee),Lindau (Bodensee) · National railways,46.0,4,66.0,True,Lindau (Bodensee)|bigrail
-Lochau|bigrail,47.529822635,9.742013660000001,Lochau-Hörbranz Bahnhof,Lochau,bigrail,Lochau,Lochau · National railways,81.0,3,96.0,True,Lochau|bigrail
+Lochau|bigrail,47.529822635,9.742013660000001,Lochau-Hörbranz Bahnhof,Lochau,bigrail,Lochau,Lochau · National railways,43.0,3,58.0,True,Lochau|bigrail
 Ludesch|bigrail,47.18058125,9.770306099999999,Ludesch Bahnhof,Ludesch,bigrail,Ludesch,Ludesch · National railways,85.0,2,95.0,True,Ludesch|bigrail
 Lustenau|bigrail,47.450860455,9.66738612,Lustenau Bahnhof,Lustenau,bigrail,Lustenau,Lustenau · National railways,65.0,2,75.0,True,Lustenau|bigrail
 Nenzing|bigrail,47.19184518,9.707446489999999,Nenzing Bahnhof,Nenzing,bigrail,Nenzing,Nenzing · National railways,122.0,3,137.0,True,Nenzing|bigrail
@@ -68,6 +67,7 @@ Sibratsgfäll|bus,47.42710641,10.037357270000001,Sibratsgfäll Dorfplatz,Sibrats
 Sigmarszell|bus,47.60139192,9.79573292,Niederstaufen Kindergarten,Sigmarszell,bus,Sigmarszell,Sigmarszell · Regional bus,31.0,2,41.0,True,Sigmarszell|bus
 St. Gallenkirch|bus,47.03012423,9.957519495,St. Gallenkirch Badmunt,St. Gallenkirch,bus,St. Gallenkirch,St. Gallenkirch · Regional bus,80.0,2,90.0,True,St. Gallenkirch|bus
 Thüringen|bus,47.197835147999996,9.765691458000001,Thüringen Mittelschule,Thüringen,bus,Thüringen,Thüringen · Regional bus,81.0,4,101.0,True,Thüringen|bus
+Thüringerberg|bus,47.215516056666665,9.784917203333334,Thüringerberg Feuerwehrhaus,Thüringerberg,bus,Thüringerberg,Thüringerberg · Regional bus,18.0,1,23.0,True,Thüringerberg|bus
 Warth|bus,47.26742863,10.14927388,Warth Jägeralpe,Warth,bus,Warth,Warth · Regional bus,15.0,3,30.0,True,Warth|bus
 Wolfurt|bus,47.45527347,9.741631875,Wolfurt Bahnhof,Wolfurt,bus,Wolfurt,Wolfurt · Regional bus,387.0,11,442.0,True,Wolfurt|bigrail
 Klösterle|bus|1,47.13368359,10.12597158,Langen a. A. Oberlangen,Klösterle,bus,Klösterle,Klösterle · Regional bus,35.0,3,50.0,True,Klösterle|bus|1

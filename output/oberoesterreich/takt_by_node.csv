@@ -98,15 +98,15 @@ Hagenberg im Mühlkreis|bus,night,5,"12,24,38,42",0,1.0
 Haibach ob der Donau|bus,peak,8,"5,20,58",0,0.75
 Haibach ob der Donau|bus,day,11,"3,19,49,57",0,1.0
 Haibach ob der Donau|bus,night,3,"23,56",0,1.0
-Hargelsberg|bus,peak,10,"38,46",0,1.0
-Hargelsberg|bus,day,18,38,60,0.6111111111111112
-Hargelsberg|bus,night,2,"28,47",0,1.0
 Hellmonsödt|bus,peak,44,"6,12,28,32,37,58",0,0.7954545454545454
 Hellmonsödt|bus,day,97,"7,12,38,42",0,0.5360824742268041
 Hellmonsödt|bus,night,18,"6,12,22,48,52,58",0,0.8333333333333334
 Herzogsdorf|bus,peak,51,"1,9,41",0,0.49019607843137253
 Herzogsdorf|bus,day,103,1,60,0.2912621359223301
 Herzogsdorf|bus,night,19,20,60,0.3157894736842105
+Hofkirchen im Traunkreis|bus,peak,22,"9,17,44",0,0.8636363636363636
+Hofkirchen im Traunkreis|bus,day,46,"9,15,40,44",0,0.8043478260869565
+Hofkirchen im Traunkreis|bus,night,3,"14,36",0,1.0
 Hörsching|bigrail,peak,11,"10,50",0,0.7272727272727273
 Hörsching|bigrail,day,16,"10,50",0,0.9375
 Hörsching|bigrail,night,9,"9,49",0,0.7777777777777778

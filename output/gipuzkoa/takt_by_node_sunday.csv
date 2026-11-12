@@ -1,16 +1,19 @@
 node,band,n,minutes,interval,share_in_window
-Abaltzisketa|bus,peak,1,56,0,1.0
-Abaltzisketa|bus,day,3,28,60,1.0
-Abaltzisketa|bus,night,4,"6,28,56",0,1.0
 Agurain / Salvatierra|bus,peak,2,45,0,1.0
 Agurain / Salvatierra|bus,day,3,43,60,1.0
 Agurain / Salvatierra|bus,night,1,44,0,1.0
+Aia|bus|1,peak,11,54,60,0.7272727272727273
+Aia|bus|1,day,29,54,60,0.6206896551724138
+Aia|bus|1,night,15,"23,49",0,0.8
 Aia|euskotren,peak,9,15,60,0.7777777777777778
 Aia|euskotren,day,18,15,60,0.8888888888888888
 Aia|euskotren,night,2,"15,46",30,1.0
 Albiztur|bus,peak,2,"30,35",0,1.0
 Albiztur|bus,day,1,27,0,1.0
 Albiztur|bus,night,0,,0,0.0
+Alegia|bus|1,peak,2,10,0,1.0
+Alegia|bus|1,day,8,42,60,0.75
+Alegia|bus|1,night,8,"13,20,43",0,1.0
 Alegia|renfe,peak,12,"37,41,48",0,0.75
 Alegia|renfe,day,27,"37,45,58",0,0.5555555555555556
 Alegia|renfe,night,5,"15,26,39,46",0,1.0
@@ -113,9 +116,9 @@ Irun|renfe,night,3,"12,20,26",0,1.0
 Larraul|bus,peak,0,,0,0.0
 Larraul|bus,day,0,,0,0.0
 Larraul|bus,night,1,15,0,1.0
-Lasarte-Oria|bus,peak,29,"5,17,46",0,0.5517241379310345
-Lasarte-Oria|bus,day,52,"5,17,36,45",0,0.8076923076923077
-Lasarte-Oria|bus,night,24,"0,10,46",0,0.7083333333333334
+Lasarte-Oria|bus,peak,31,"5,17,46",0,0.5161290322580645
+Lasarte-Oria|bus,day,55,"5,17,36,45",0,0.7636363636363637
+Lasarte-Oria|bus,night,25,"0,10,46",0,0.68
 Lasarte-Oria|euskotren,peak,7,"0,29",30,1.0
 Lasarte-Oria|euskotren,day,16,"0,29",30,1.0
 Lasarte-Oria|euskotren,night,5,0,60,0.8
@@ -137,9 +140,6 @@ Oiartzun|bus,night,32,"8,14,28,39",0,0.84375
 Ondarroa|bus,peak,14,"5,10,40",0,0.8571428571428571
 Ondarroa|bus,day,27,"6,10,40",0,0.9629629629629629
 Ondarroa|bus,night,3,44,60,1.0
-Orio|bus,peak,11,"3,49",0,0.8181818181818182
-Orio|bus,day,29,"4,32,51",0,0.8275862068965517
-Orio|bus,night,16,"31,44",0,0.8125
 Ormaiztegi|bus,peak,9,"19,29",0,0.6666666666666666
 Ormaiztegi|bus,day,21,"20,30",0,0.47619047619047616
 Ormaiztegi|bus,night,4,"1,20,42",20,1.0
@@ -152,6 +152,9 @@ Pasaia|bus,night,89,"14,18,36,42,48,59",0,0.7865168539325843
 Tolosa|bus,peak,20,"0,10,26,30,39",0,0.85
 Tolosa|bus,day,40,"0,10,16,24,54",0,0.825
 Tolosa|bus,night,20,"0,30",30,0.7
+Usurbil|bus,peak,9,"14,39",0,0.7777777777777778
+Usurbil|bus,day,20,"14,39",0,0.8
+Usurbil|bus,night,15,"34,40",0,0.8666666666666667
 Villabona|bus,peak,25,"7,27,37,43,55",0,0.76
 Villabona|bus,day,53,"27,37",0,0.5094339622641509
 Villabona|bus,night,23,"23,37,47",0,0.8260869565217391

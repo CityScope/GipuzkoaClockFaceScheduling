@@ -23,8 +23,8 @@ Bludenz|localrail,night,3,"24,45,54",0,1.0
 Brand|bus,peak,4,"0,15,30",0,1.0
 Brand|bus,day,14,"0,29",30,1.0
 Brand|bus,night,0,,0,0.0
-Bregenz|bigrail,peak,32,"0,10,15,20,42,48",0,1.0
-Bregenz|bigrail,day,66,"1,13,19,41,48",0,0.8181818181818182
+Bregenz|bigrail,peak,30,"12,20,40,44,48",0,0.9333333333333333
+Bregenz|bigrail,day,62,"13,19,41,48",0,0.7580645161290323
 Bregenz|bigrail,night,30,"15,44",30,0.6666666666666666
 Bregenz|bus,peak,34,"21,51",30,0.7352941176470589
 Bregenz|bus,day,70,"21,51",30,0.7428571428571429
@@ -101,15 +101,12 @@ Laterns|bus,night,0,,0,0.0
 Lech|bus,peak,1,51,0,1.0
 Lech|bus,day,9,"20,50",30,1.0
 Lech|bus,night,0,,0,0.0
-Lindau (Bodensee)|bigrail,peak,10,"24,47,56",0,1.0
-Lindau (Bodensee)|bigrail,day,20,"24,47,56",0,1.0
-Lindau (Bodensee)|bigrail,night,6,"24,55",30,0.6666666666666666
 Lingenau|bus,peak,10,46,60,0.6
 Lingenau|bus,day,18,46,60,0.6666666666666666
 Lingenau|bus,night,1,56,0,1.0
-Lochau|bigrail,peak,16,"5,25,33,55",0,1.0
-Lochau|bigrail,day,32,"5,24,33,55",0,0.9375
-Lochau|bigrail,night,17,7,60,0.47058823529411764
+Lochau|bigrail,peak,8,"5,33",0,1.0
+Lochau|bigrail,day,16,"5,33",0,0.9375
+Lochau|bigrail,night,11,7,60,0.7272727272727273
 Lochau|bus,peak,11,29,60,0.7272727272727273
 Lochau|bus,day,24,"0,29",30,1.0
 Lochau|bus,night,1,29,0,1.0
@@ -197,6 +194,9 @@ St. Margrethen|bigrail,night,4,56,60,0.75
 Thüringen|bus,peak,19,"0,12,48",0,0.9473684210526315
 Thüringen|bus,day,40,"0,11,48",0,1.0
 Thüringen|bus,night,0,,0,0.0
+Thüringerberg|bus,peak,5,"24,31,43",0,1.0
+Thüringerberg|bus,day,8,"24,31",0,1.0
+Thüringerberg|bus,night,0,,0,0.0
 Warth|bus,peak,2,31,0,1.0
 Warth|bus,day,13,"17,31",0,1.0
 Warth|bus,night,0,,0,0.0

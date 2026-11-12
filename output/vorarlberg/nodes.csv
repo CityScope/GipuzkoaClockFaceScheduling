@@ -9,7 +9,6 @@ Götzis|bigrail,47.336813845,9.636852385000001,Götzis Bahnhof,Götzis,bigrail,G
 Hard|bigrail,47.47984353,9.68818661,Hard-Fussach Bahnhof,Hard,bigrail,Hard,Hard · National railways,81,2,91,True,Hard|bigrail
 Hohenems|bigrail,47.36498052666666,9.681290546666666,Hohenems Bahnhof,Hohenems,bigrail,Hohenems,Hohenems · National railways,162,7,197,True,Hohenems|bigrail
 Klaus|bigrail,47.308099175,9.62484191,Klaus Bahnhof,Klaus,bigrail,Klaus,Klaus · National railways,102,3,117,True,Klaus|bigrail
-Lindau (Bodensee)|bigrail,47.54537727333334,9.680688673333334,Lindau-Insel,Lindau (Bodensee),bigrail,Lindau (Bodensee),Lindau (Bodensee) · National railways,41,3,56,True,Lindau (Bodensee)|bigrail
 Lochau|bigrail,47.529822635,9.742013660000001,Lochau-Hörbranz Bahnhof,Lochau,bigrail,Lochau,Lochau · National railways,77,2,87,True,Lochau|bigrail
 Ludesch|bigrail,47.18058125,9.770306099999999,Ludesch Bahnhof,Ludesch,bigrail,Ludesch,Ludesch · National railways,85,3,100,True,Ludesch|bigrail
 Lustenau|bigrail,47.450860455,9.66738612,Lustenau Bahnhof,Lustenau,bigrail,Lustenau,Lustenau · National railways,79,3,94,True,Lustenau|bigrail
@@ -68,6 +67,7 @@ Sibratsgfäll|bus,47.42710641,10.037357270000001,Sibratsgfäll Dorfplatz,Sibrats
 Sigmarszell|bus,47.60139192,9.79573292,Niederstaufen Kindergarten,Sigmarszell,bus,Sigmarszell,Sigmarszell · Regional bus,30,2,40,True,Sigmarszell|bus
 St. Gallenkirch|bus,47.03012423,9.957519495,St. Gallenkirch Badmunt,St. Gallenkirch,bus,St. Gallenkirch,St. Gallenkirch · Regional bus,100,4,120,True,St. Gallenkirch|bus
 Thüringen|bus,47.197835147999996,9.765691458000001,Thüringen Mittelschule,Thüringen,bus,Thüringen,Thüringen · Regional bus,167,10,217,True,Thüringen|bus
+Thüringerberg|bus,47.215516056666665,9.784917203333334,Thüringerberg Feuerwehrhaus,Thüringerberg,bus,Thüringerberg,Thüringerberg · Regional bus,32,2,42,True,Thüringerberg|bus
 Warth|bus,47.26742863,10.14927388,Warth Jägeralpe,Warth,bus,Warth,Warth · Regional bus,17,3,32,True,Warth|bus
 Wolfurt|bus,47.45527347,9.741631875,Wolfurt Bahnhof,Wolfurt,bus,Wolfurt,Wolfurt · Regional bus,438,13,503,True,Wolfurt|bigrail
 Klösterle|bus|1,47.13368359,10.12597158,Langen a. A. Oberlangen,Klösterle,bus,Klösterle,Klösterle · Regional bus,38,3,53,True,Klösterle|bus|1

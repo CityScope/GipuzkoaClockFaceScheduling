@@ -104,9 +104,6 @@ Laterns|bus,night,1,56,0,1.0
 Lech|bus,peak,1,51,0,1.0
 Lech|bus,day,9,"20,50",30,1.0
 Lech|bus,night,0,,0,0.0
-Lindau (Bodensee)|bigrail,peak,9,"24,56",0,0.8888888888888888
-Lindau (Bodensee)|bigrail,day,17,"24,56",0,0.9411764705882353
-Lindau (Bodensee)|bigrail,night,7,"24,55",30,0.5714285714285714
 Lingenau|bus,peak,24,"10,46",0,0.5416666666666666
 Lingenau|bus,day,50,"10,46",0,0.56
 Lingenau|bus,night,5,"10,38,45",0,1.0
@@ -206,6 +203,9 @@ St. Margrethen|bigrail,night,8,"0,26,55",0,1.0
 Thüringen|bus,peak,44,"0,29,42,50",0,0.6818181818181818
 Thüringen|bus,day,91,"29,42,50,58",0,0.7142857142857143
 Thüringen|bus,night,7,10,60,0.2857142857142857
+Thüringerberg|bus,peak,9,"1,25,31",0,0.7777777777777778
+Thüringerberg|bus,day,14,"24,31",0,0.6428571428571429
+Thüringerberg|bus,night,0,,0,0.0
 Warth|bus,peak,2,31,0,1.0
 Warth|bus,day,14,"17,31",0,0.8571428571428571
 Warth|bus,night,0,,0,0.0

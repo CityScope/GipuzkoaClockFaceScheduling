@@ -77,6 +77,9 @@ Hellmonsödt|bus,night,4,"12,22",0,1.0
 Herzogsdorf|bus,peak,8,"0,9,45",0,0.75
 Herzogsdorf|bus,day,18,"2,10,44",0,0.7222222222222222
 Herzogsdorf|bus,night,4,"8,12,18,24",0,1.0
+Hofkirchen im Traunkreis|bus,peak,4,"15,38",0,1.0
+Hofkirchen im Traunkreis|bus,day,8,"15,38",0,1.0
+Hofkirchen im Traunkreis|bus,night,0,,0,0.0
 Hörsching|bigrail,peak,8,"10,50",0,1.0
 Hörsching|bigrail,day,16,"10,50",0,0.9375
 Hörsching|bigrail,night,7,"10,49",0,0.8571428571428571
