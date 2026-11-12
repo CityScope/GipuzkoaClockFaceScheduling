@@ -328,7 +328,7 @@ html,body,#map{margin:0;height:100%;font:13px/1.4 system-ui,-apple-system,"Segoe
 <div id="stack">
 <div id="ui"><div class="top"><h1>__TITLE__</h1><button id="themebtn" title="Light / dark map">☾</button></div>
 <div class="row"><span>Day</span><div class="seg" data-g="day"><button data-v="weekday" class="on">Weekday</button><button data-v="saturday">Sat</button><button data-v="sunday">Sun</button></div></div>
-<div class="row"><span>Time</span><div class="seg" data-g="per"><button data-v="peak" class="on" title="__PEAK__">Peak</button><button data-v="day" title="__DAYB__">Day</button><button data-v="night" title="__NIGHT__">Night</button></div></div>
+<div class="row"><span>Time</span><div class="seg" data-g="per"><button data-v="peak" title="__PEAK__">Peak</button><button data-v="day" class="on" title="__DAYB__">Day</button><button data-v="night" title="__NIGHT__">Night</button></div></div>
 <div class="row"><span>Trip</span><div class="seg" data-g="time"><button data-v="t_min">Min</button><button data-v="t_med" class="on">Median</button><button data-v="t_max">Max</button></div></div>
 <div class="row"><span>Base</span><select id="basesel"><option value="minimal">Minimal</option><option value="streets">Streets</option><option value="detailed">Detailed</option><option value="satellite">Google satellite</option><option value="hybrid">Google hybrid</option></select></div>
 <div class="t">Connections &amp; nodes</div>
@@ -352,7 +352,7 @@ __ROWS__
 <canvas id="anim" width="720" height="330"></canvas>
 <p style="margin:8px 0 0;font-size:13px"><a href="../../explain/symmetry/" target="_blank">Why symmetry</a> · <a href="../../docs/rules.html" target="_blank">Rules</a> · <a href="../../index.html">All regions</a></p></div></div><script>/*JS*/</script><script>
 const CFG=__CFG__;const SYS=CFG.systems,SK=SYS.map(s=>s.key),COL=Object.fromEntries(SYS.map(s=>[s.key,s.color]));
-const D=__DATA__,BOUND=__BOUNDARY__;let PER='peak',TIME='t_med',DAY='weekday',BASE='minimal',MODE='light',WALK=true,CONN=false;const ON=new Set(SK);
+const D=__DATA__,BOUND=__BOUNDARY__;let PER='day',TIME='t_med',DAY='weekday',BASE='minimal',MODE='light',WALK=true,CONN=false;const ON=new Set(SK);
 const STYLES={minimal:'https://tiles.openfreemap.org/styles/positron',streets:'https://tiles.openfreemap.org/styles/bright',detailed:'https://tiles.openfreemap.org/styles/liberty'};
 try{const sv=JSON.parse(localStorage.getItem('mapPrefs')||'{}');if(STYLES[sv.base]||sv.base==='satellite'||sv.base==='hybrid')BASE=sv.base;if(sv.mode==='dark'||sv.mode==='light')MODE=sv.mode;}catch(e){}
 const OFF=()=>false;                              // (night view: links without service between 00:00 and 05:00 are hidden per link, see 'nn')

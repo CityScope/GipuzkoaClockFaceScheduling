@@ -52,7 +52,7 @@ def stats(r):
     try:
         n = pd.read_csv(os.path.join(ROOT, "output", r, "nodes.csv"))
         s = pd.read_csv(os.path.join(ROOT, "output", r, "symmetry.csv"))
-        return n["group"].nunique(), s[s.band == "peak"].gid.nunique()
+        return n["group"].nunique(), s[s.band == "day"].gid.nunique()
     except Exception:
         return None, None
 
