@@ -4,8 +4,8 @@ Deba|bus,peak,42,60,0.29,0.58,8,Euskotren + Bus,dotted
 Deba|bus,day,39,60,0.0,1.0,3,Euskotren + Bus,dotted
 Elgoibar|euskotren,peak,15,60,0.0,1.0,2,Euskotren + Bus,dotted
 Elgoibar|euskotren,day,15,60,0.0,1.0,2,Euskotren + Bus,dotted
-Ermua|euskotren,day,25,60,0.5,1.0,2,Euskotren + Bus,dotted
-Errenteria|euskotren,day,"0,30",30,0.09,1.0,3,Euskotren + Bus,dotted
+Ermua|euskotren,day,25,60,0.0,1.0,1,Euskotren + Bus,dotted
+Errenteria|euskotren,day,"0,30",30,0.17,1.0,2,Euskotren + Bus,dotted
 Zestoa|euskotren,peak,27,60,0.0,1.0,2,Euskotren + Bus,dotted
 Zestoa|euskotren,day,27,60,0.0,1.0,2,Euskotren + Bus,dotted
 Zumarraga|bus,peak,0,60,0.22,0.64,5,Bus,dotted
@@ -14,18 +14,19 @@ Zumarraga|bus,day,11,60,0.0,0.7,3,Bus,dotted
 Zumarraga|bus,day,0,60,0.0,0.7,3,Bus,dotted
 Arrasate / Mondragón|bus,peak,20,60,0.0,1.0,3,Bus,dotted
 Bergara|bus,day,12,60,0.35,0.53,7,Bus,dotted
+Donostia / San Sebastián|bus,day,"12,42",30,0.1,0.57,19,Bus,dotted
 Eibar|bus,day,20,60,0.48,0.52,10,Bus,dotted
 Elgoibar|bus,peak,15,60,0.0,1.0,2,Euskotren + Bus,dotted
 Elgoibar|bus,day,15,60,0.17,0.66,5,Euskotren + Bus,dotted
 Ermua|bus,peak,34,60,0.0,0.56,3,Bus,dotted
 Ermua|bus,day,35,60,0.0,0.55,3,Bus,dotted
-Errenteria|bus,day,"0,30",30,0.0,1.0,2,Euskotren + Bus,dotted
-Hernani|bus,peak,54,60,0.27,0.55,3,Bus,dotted
-Hernani|bus,day,"24,54",30,0.25,0.75,3,Bus,dotted
-Lasarte-Oria|bus,peak,27,60,0.62,0.62,7,Euskotren + Bus,solid
-Lasarte-Oria|bus,peak,12,60,1.0,1.0,2,Bus,solid
-Lasarte-Oria|bus,day,27,60,0.62,0.62,7,Euskotren + Bus,solid
-Lasarte-Oria|bus,day,12,60,1.0,1.0,2,Bus,solid
+Errenteria|bus,day,"0,30",30,0.0,1.0,1,Euskotren + Bus,dotted
+Hernani|bus,peak,54,60,1.0,1.0,1,Bus,solid
+Hernani|bus,day,"24,54",30,1.0,1.0,1,Bus,solid
+Lasarte-Oria|bus,peak,27,60,0.67,0.67,3,Euskotren + Bus,solid
+Lasarte-Oria|bus,peak,12,60,1.0,1.0,1,Bus,solid
+Lasarte-Oria|bus,day,27,60,0.67,0.67,3,Euskotren + Bus,solid
+Lasarte-Oria|bus,day,12,60,1.0,1.0,1,Bus,solid
 Ondarroa|bus,peak,5,60,0.25,1.0,3,Bus,dotted
 Ondarroa|bus,day,4,60,0.0,1.0,3,Bus,dotted
 Zarautz|bus,peak,47,60,0.0,0.72,7,Bus,dotted
@@ -33,6 +34,6 @@ Zarautz|bus,day,45,60,0.06,0.63,9,Bus,dotted
 Zarautz|bus,day,59,60,0.18,0.54,9,Bus,dotted
 Zarautz|bus,day,31,60,0.5,1.0,2,Bus,dotted
 Ermua|bus|1,peak,25,60,0.78,1.0,4,Euskotren + Bus,solid
-Ermua|bus|1,day,25,60,0.5,1.0,2,Euskotren + Bus,dotted
+Ermua|bus|1,day,25,60,0.0,1.0,1,Euskotren + Bus,dotted
 Zestoa|bus|1,peak,27,60,0.0,1.0,2,Euskotren + Bus,dotted
 Zestoa|bus|1,day,27,60,0.0,1.0,2,Euskotren + Bus,dotted

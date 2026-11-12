@@ -1,7 +1,7 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Eferding|bus,peak,32,60,0.24,0.76,8,Local railways + Regional bus,dotted
 Eferding|bus,day,32,60,0.25,0.76,8,Local railways + Regional bus,dotted
-Linz|bigrail,peak,50,60,0.2,0.51,26,National railways + Local railways + Regional bus,dotted
+Linz|bigrail,peak,50,60,0.3,0.64,22,National railways + Local railways + Regional bus,dotted
 Steyr|bigrail,peak,51,60,0.0,0.67,6,National railways + Regional bus,dotted
 Steyr|bigrail,day,51,60,0.0,1.0,3,National railways + Regional bus,dotted
 Wels|bigrail,peak,22,60,0.0,0.75,3,National railways + Regional bus,dotted

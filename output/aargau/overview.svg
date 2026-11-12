@@ -157,8 +157,8 @@
 <circle cx='963.5' cy='844.4' r='3.1' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <circle cx='1183.3' cy='654.7' r='8.7' fill='#2ca02c' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1183.3' cy='654.7' r='4.4' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
-<line x1='1183.3' y1='654.7' x2='1186.9' y2='643.5' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='1183.3' y1='654.7' x2='1179.7' y2='665.8' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='1183.3' y1='654.7' x2='1186.9' y2='643.5' stroke='#000' stroke-width='2' stroke-linecap='round'/>
+<line x1='1183.3' y1='654.7' x2='1179.7' y2='665.8' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <line x1='1183.3' y1='654.7' x2='1191.2' y2='663.4' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <line x1='1183.3' y1='654.7' x2='1175.4' y2='645.9' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <circle cx='974.6' cy='359.9' r='10.3' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
@@ -217,8 +217,8 @@
 <circle cx='511.2' cy='652.1' r='9.9' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <line x1='511.2' y1='652.1' x2='513.9' y2='664.8' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <line x1='511.2' y1='652.1' x2='508.6' y2='639.4' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='511.2' y1='652.1' x2='523.6' y2='648.1' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
-<line x1='511.2' y1='652.1' x2='498.9' y2='656.1' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='511.2' y1='652.1' x2='523.6' y2='648.1' stroke='#000' stroke-width='2' stroke-linecap='round'/>
+<line x1='511.2' y1='652.1' x2='498.9' y2='656.1' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <circle cx='981.9' cy='527.4' r='7.1' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='179.0' cy='266.1' r='9.1' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='179.0' cy='266.1' r='4.6' fill='#1f77b4' stroke='#fff' stroke-width='1'/>

@@ -7,8 +7,9 @@ Lambach|bigrail,peak,38,60,0.47,0.73,4,National railways + Local railways + Regi
 Lambach|bigrail,peak,22,60,1.0,1.0,2,National railways + Local railways + Regional bus,solid
 Lambach|bigrail,day,23,60,0.74,0.74,4,National railways + Local railways + Regional bus,solid
 Lambach|bigrail,day,38,60,0.74,0.74,4,National railways + Local railways + Regional bus,solid
-Leonding|bigrail,day,35,60,0.9,0.9,3,Regional bus,solid
-Linz|bigrail,peak,"4,34",30,0.22,0.35,152,National railways + Local railways + Regional bus,dotted
+Leonding|bigrail,day,35,60,0.0,1.0,1,Regional bus,dotted
+Linz|bigrail,peak,"4,34",30,0.29,0.39,88,National railways + Local railways + Regional bus,dotted
+Linz|bigrail,peak,48,60,0.18,0.64,13,National railways + Local railways + Regional bus,dotted
 Neumarkt im Hausruckkreis|bigrail,day,22,60,0.69,0.69,3,National railways,solid
 Neumarkt im Hausruckkreis|bigrail,day,37,60,0.69,0.69,3,National railways,solid
 Rohr im Kremstal|bigrail,peak,25,60,0.0,1.0,2,National railways + Regional bus,dotted

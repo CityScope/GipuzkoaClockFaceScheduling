@@ -2,22 +2,22 @@ gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Dagmersellen|bigrail,peak,"2,32",30,0.0,0.83,3,National railways + Regional bus,dotted
 Dagmersellen|bigrail,day,"2,32",30,0.0,0.83,3,National railways + Regional bus,dotted
 Hochdorf|bigrail,day,27,60,1.0,1.0,3,National railways + Regional bus,solid
-Luzern|bigrail,peak,"26,56",30,0.26,0.45,79,National railways + Local railways + Regional bus,dotted
-Luzern|bigrail,day,"26,56",30,0.28,0.49,79,National railways + Local railways + Regional bus,dotted
+Luzern|bigrail,peak,"26,56",30,0.32,0.47,58,National railways + Local railways + Regional bus,dotted
+Luzern|bigrail,day,"26,56",30,0.36,0.52,58,National railways + Local railways + Regional bus,dotted
 Malters|bigrail,peak,30,60,1.0,1.0,2,National railways + Regional bus,solid
 Malters|bigrail,day,30,60,1.0,1.0,2,National railways + Regional bus,solid
-Neuenkirch|bigrail,peak,31,60,0.72,1.0,3,National railways + Regional bus,solid
-Neuenkirch|bigrail,peak,1,60,1.0,1.0,2,National railways + Regional bus,solid
-Neuenkirch|bigrail,peak,21,60,1.0,1.0,2,National railways + Regional bus,solid
-Neuenkirch|bigrail,day,31,60,0.72,1.0,3,National railways + Regional bus,solid
-Neuenkirch|bigrail,day,1,60,1.0,1.0,2,National railways + Regional bus,solid
-Neuenkirch|bigrail,day,21,60,1.0,1.0,2,National railways + Regional bus,solid
+Neuenkirch|bigrail,peak,31,60,0.5,1.0,2,National railways + Regional bus,dotted
+Neuenkirch|bigrail,peak,1,60,1.0,1.0,1,National railways + Regional bus,solid
+Neuenkirch|bigrail,peak,21,60,1.0,1.0,1,National railways + Regional bus,solid
+Neuenkirch|bigrail,day,31,60,0.5,1.0,2,National railways + Regional bus,dotted
+Neuenkirch|bigrail,day,1,60,1.0,1.0,1,National railways + Regional bus,solid
+Neuenkirch|bigrail,day,21,60,1.0,1.0,1,National railways + Regional bus,solid
 Risch-Rotkreuz|bigrail,peak,"13,43",30,0.46,0.62,8,National railways + Regional bus,dotted
 Risch-Rotkreuz|bigrail,peak,"23,53",30,0.37,0.62,5,National railways + Regional bus,dotted
 Risch-Rotkreuz|bigrail,day,"13,43",30,0.45,0.62,8,National railways + Regional bus,dotted
 Risch-Rotkreuz|bigrail,day,"23,53",30,0.37,0.61,5,National railways + Regional bus,dotted
-Root|bigrail,peak,"0,30",30,0.33,1.0,2,National railways + Regional bus,dotted
-Root|bigrail,day,"1,31",30,1.0,1.0,2,National railways + Regional bus,solid
+Root|bigrail,peak,"0,30",30,1.0,1.0,1,National railways + Regional bus,solid
+Root|bigrail,day,"1,31",30,1.0,1.0,1,National railways + Regional bus,solid
 Schüpfheim|bigrail,peak,28,60,1.0,1.0,4,National railways + Regional bus,solid
 Schüpfheim|bigrail,day,29,60,0.32,1.0,4,National railways + Regional bus,dotted
 Sursee|bigrail,peak,"14,44",30,0.68,0.91,12,National railways + Regional bus,solid
@@ -44,8 +44,8 @@ Küssnacht (SZ)|bus,peak,"2,32",30,0.44,0.72,3,Regional bus,dotted
 Küssnacht (SZ)|bus,peak,22,60,0.44,0.72,3,Regional bus,dotted
 Küssnacht (SZ)|bus,day,"3,33",30,0.75,1.0,3,Regional bus,solid
 Küssnacht (SZ)|bus,day,22,60,0.75,0.75,3,Regional bus,solid
-Luzern|bus,peak,"29,59",30,0.3,0.76,50,National railways + Local railways + Regional bus,dotted
-Luzern|bus,day,"0,30",30,0.34,0.85,45,National railways + Local railways + Regional bus,dotted
+Luzern|bus,peak,"29,59",30,0.39,0.76,24,National railways + Local railways + Regional bus,dotted
+Luzern|bus,day,"0,30",30,0.46,0.96,20,National railways + Local railways + Regional bus,dotted
 Rain|bus,peak,7,60,0.5,1.0,2,Regional bus,dotted
 Rain|bus,day,7,60,0.5,1.0,2,Regional bus,dotted
 Ruswil|bus,day,30,60,0.5,1.0,2,Regional bus,dotted
@@ -57,5 +57,5 @@ Zofingen|bus,peak,45,60,1.0,1.0,2,National railways + Regional bus,solid
 Zofingen|bus,peak,10,60,1.0,1.0,2,National railways + Regional bus,solid
 Zofingen|bus,day,45,60,1.0,1.0,2,National railways + Regional bus,solid
 Zofingen|bus,day,10,60,1.0,1.0,2,National railways + Regional bus,solid
-Root|bus|1,peak,"26,56",30,0.25,1.0,3,National railways + Regional bus,dotted
-Root|bus|1,day,"1,31",30,0.75,0.75,3,National railways + Regional bus,solid
+Root|bus|1,peak,"26,56",30,1.0,1.0,1,National railways + Regional bus,solid
+Root|bus|1,day,"1,31",30,1.0,1.0,1,National railways + Regional bus,solid

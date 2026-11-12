@@ -546,7 +546,9 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             if len(dirs) < 2:
                 continue
             GE = {e for d in dirs for e in d}
-            pairs = {tuple(sorted(d)) for d in need if d[0] in GE and d[1] in GE}
+            nfe = lambda e: min(hAt.get(town(e), 999.0), hDt.get(town(e), 999.0)) >= FREQ_CUT   # by PLACE: all its stops together
+            # completeness counts only pairs of two NON-frequent places (a frequent place needs no timing either way)
+            pairs = {tuple(sorted(d)) for d in need if d[0] in GE and d[1] in GE and nfe(d[0]) and nfe(d[1])}
             wpair = lambda p: max(st_.get(p, {}).get("w", 0), st_.get(p[::-1], {}).get("w", 0))
             # a direction "works" if it is connected in this symmetry, needs no coordination (frequent / served directly)
             # or has no service at all (one-way relation); a pair is counted if at least one direction needs coordination
@@ -560,7 +562,6 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             # a symmetry needs at least one timed change between two NON-frequent edges (a node whose only timed changes
             # involve a frequent line, < 15 min, is not symmetric); its >= 2 directions and >= 3 distinct neighbouring
             # places count all its timed changes
-            nfe = lambda e: min(hAt.get(town(e), 999.0), hDt.get(town(e), 999.0)) >= FREQ_CUT   # by PLACE: all its stops together
             dnf = [d for d in dirs if nfe(d[0]) and nfe(d[1])]
             nbs = {town(e) for d in dirs for e in d}   # distinct neighbouring places (municipalities: fast / slow, walk sides, modes and stops of one place count once)
             if not dnf or len(dirs) < 2 or len(nbs) < 3 or (one <= SYM_ONE_MIN and not regular):
