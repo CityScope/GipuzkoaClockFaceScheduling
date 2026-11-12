@@ -365,6 +365,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                 continue
             ok = round(_wall) <= limw and len(C) >= 2 and _wall < hD[y] / 2
             st_[(x, y)] = dict(k="c" if ok else "n", w=wgt, Hd=Hd, Hc=Hc if C else _hall, C=C if ok else [], share=len(C) / nA[x], nall=waits.nall, ndir=waits.ndir, ddir=waits.ddir, hall=_hall,
+                               dirdep=[float(b) for _, b in dr if in_band(np.array([b]), wins)[0]],
                                wait=_wall, walk=float(np.median([c[3] for c in C])) if C else _tr)
     # ---- symmetries: hands inside the timed changes of the coordinated directions
     need = {d: v for d, v in st_.items() if v["k"] not in ("f", "d")}     # directions that need coordination
@@ -386,13 +387,15 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             departure reached (direct trips + all changes). Keeping only the timed ones loses headway, which must be paid
             back by the wait saved: (H_timed - H_all) / 2 <= wait_all - wait_timed (headways: pyGTFSHandler formula)."""
             v = cd_[d]
-            dep = v["ddir"] + [c[1] for c, ok in zip(v["C"], f) if ok]
+            dep = sorted(set(v["ddir"]) | set(v["dirdep"]) | {c[1] for c, ok in zip(v["C"], f) if ok})
             if not dep:
                 return False
+            ht = _hw(dep, wins)
+            if v["dirdep"] and ht > _hw(sorted(v["dirdep"]), wins) / 2:   # direct trips exist: the timed changes must at
+                return False                                              # least halve their headway, else they add too little
             if len(dep) >= TIMED_MOST * v["nall"]:                    # (almost) every service is timed: nothing to compare
                 return True
             wt = sum(c[2] for c, ok in zip(v["C"], f) if ok) / len(dep)
-            ht = _hw(sorted(dep), wins)
             return (ht - min(ht, v["hall"])) / 2 <= v["wait"] - wt + 1e-9
 
         def rel_fit(d, hs):
@@ -459,8 +462,8 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
                     cd_[d]["C"] = [c for c, ok in zip(cd_[d]["C"], g[3][d]) if ok]
             v = cd_[d]                                                # shown: headway (formula) and mean wait of direct + timed
             if v["k"] == "c" and v["C"]:
-                dep = v["ddir"] + [c[1] for c in v["C"]]
-                v["Hc"] = _hw(sorted(dep), wins); v["wt"] = sum(c[2] for c in v["C"]) / len(dep)
+                dep = sorted(set(v["ddir"]) | set(v["dirdep"]) | {c[1] for c in v["C"]})
+                v["Hc"] = _hw(dep, wins); v["wt"] = sum(c[2] for c in v["C"]) / len(dep)
         groups_.sort(key=lambda g: -g[1])
         for gi, (hands, wsum, dirs, _fm) in enumerate(groups_):
             if len(dirs) < 2:

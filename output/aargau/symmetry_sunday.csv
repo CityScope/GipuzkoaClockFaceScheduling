@@ -3,10 +3,10 @@ Aarau|bigrail,peak,"26,56",30,0.4,0.5,21,National railways + Local railways + Re
 Aarau|bigrail,peak,"10,40",30,0.14,0.48,4,National railways + Local railways + Regional bus,dotted
 Aarau|bigrail,day,"26,56",30,0.17,0.63,16,National railways + Local railways + Regional bus,dotted
 Aarau|bigrail,day,"10,40",30,0.14,0.46,4,National railways + Local railways + Regional bus,dotted
-Baden|bigrail,peak,"24,54",30,0.61,0.43,45,National railways + Regional bus,solid
-Baden|bigrail,peak,"8,38",30,0.59,0.29,50,National railways + Regional bus,solid
-Baden|bigrail,day,"24,54",30,0.64,0.44,45,National railways + Regional bus,solid
-Baden|bigrail,day,"8,38",30,0.61,0.31,50,National railways + Regional bus,solid
+Baden|bigrail,peak,"24,54",30,0.57,0.43,45,National railways + Regional bus,solid
+Baden|bigrail,peak,"8,38",30,0.56,0.26,50,National railways + Regional bus,solid
+Baden|bigrail,day,"24,54",30,0.6,0.44,45,National railways + Regional bus,solid
+Baden|bigrail,day,"8,38",30,0.66,0.36,40,National railways + Regional bus,solid
 Beinwil am See|bigrail,peak,"23,53",30,0.5,1.0,2,National railways + Regional bus,dotted
 Beinwil am See|bigrail,day,"23,53",30,0.5,1.0,2,National railways + Regional bus,dotted
 Beinwil am See|bigrail,night,2,60,0.5,1.0,2,National railways + Regional bus,dotted
@@ -16,8 +16,7 @@ Bremgarten|bus,peak,37,60,0.57,0.57,5,Local railways + Regional bus,solid
 Bremgarten|bus,day,"27,57",30,0.75,0.8,8,Local railways + Regional bus,solid
 Bremgarten|bus,night,"25,55",30,0.15,0.64,8,Local railways + Regional bus,dotted
 Brugg|bigrail,peak,"0,30",30,0.47,0.66,63,National railways + Regional bus,dotted
-Brugg|bigrail,day,"0,30",30,0.47,0.66,63,National railways + Regional bus,dotted
-Brugg|bigrail,night,"0,30",30,0.38,0.59,16,National railways + Regional bus,dotted
+Brugg|bigrail,day,"0,30",30,0.45,0.64,63,National railways + Regional bus,dotted
 Dietikon|bigrail,night,"0,30",30,0.76,0.73,4,National railways + Local railways,solid
 Döttingen|bigrail,peak,6,60,0.5,0.75,4,National railways + Regional bus,dotted
 Döttingen|bigrail,peak,50,60,0.67,0.67,3,Regional bus,solid
@@ -40,10 +39,9 @@ Killwangen|bigrail,day,"10,40",30,0.75,0.5,3,National railways + Local railways 
 Killwangen|bigrail,night,"10,40",30,0.3,0.7,3,National railways + Local railways + Regional bus,dotted
 Lenzburg|bigrail,peak,"29,59",30,0.52,0.61,18,National railways + Regional bus,solid
 Lenzburg|bigrail,day,"29,59",30,0.51,0.6,18,National railways + Regional bus,solid
-Lenzburg|bigrail,night,"29,59",30,1.0,1.0,4,National railways + Regional bus,solid
-Mellingen|bigrail,peak,29,60,0.57,0.65,23,National railways + Regional bus,solid
-Mellingen|bigrail,day,29,60,0.53,0.55,23,National railways + Regional bus,solid
-Mellingen|bigrail,night,29,60,0.8,0.92,12,National railways + Regional bus,solid
+Mellingen|bigrail,peak,29,60,0.51,0.59,23,National railways + Regional bus,solid
+Mellingen|bigrail,day,29,60,0.62,0.74,16,National railways + Regional bus,solid
+Mellingen|bigrail,night,29,60,0.72,0.84,12,National railways + Regional bus,solid
 Muri|bigrail,peak,"5,35",30,0.67,0.67,3,National railways + Regional bus,solid
 Muri|bigrail,peak,"21,51",30,0.67,0.67,3,National railways + Regional bus,solid
 Muri|bigrail,day,"5,35",30,0.67,0.67,3,National railways + Regional bus,solid

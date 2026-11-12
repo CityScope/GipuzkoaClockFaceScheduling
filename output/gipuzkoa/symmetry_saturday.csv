@@ -7,17 +7,14 @@ Ermua|euskotren,peak,"25,55",30,0.5,1.0,2,Euskotren + Bus,dotted
 Ermua|euskotren,day,"25,55",30,0.33,1.0,3,Euskotren + Bus,dotted
 Errenteria|euskotren,day,"23,53",30,0.43,0.93,4,Euskotren + Bus,dotted
 Lasarte-Oria|euskotren,day,25,60,0.5,1.0,2,Euskotren + Bus,dotted
-Pasaia|bus,night,"0,30",30,0.29,1.0,2,Bus,dotted
 Zumarraga|bus,peak,11,60,0.0,0.61,5,Renfe + Bus,dotted
-Zumarraga|bus,peak,0,60,0.31,0.69,3,Bus,dotted
 Zumarraga|bus,day,11,60,0.0,0.7,3,Bus,dotted
 Zumarraga|bus,day,0,60,0.0,0.7,3,Bus,dotted
 Bilbao|bus,day,58,60,0.3,1.0,6,Bus,dotted
 Donostia / San Sebastián|bus,day,"27,57",30,0.47,0.79,25,Bus,dotted
 Donostia / San Sebastián|bus,day,"13,43",30,0.57,0.43,9,Bus,solid
 Donostia / San Sebastián|bus,night,5,60,0.44,0.56,3,Bus,dotted
-Elgoibar|bus,peak,"13,43",30,0.46,1.0,4,Euskotren + Bus,dotted
-Elgoibar|bus,day,13,60,0.25,0.75,7,Euskotren + Bus,dotted
+Elgoibar|bus,peak,13,60,0.0,1.0,3,Euskotren + Bus,dotted
 Errenteria|bus,peak,"24,54",30,0.0,1.0,2,Euskotren + Bus,dotted
 Hernani|bus,peak,45,60,0.0,0.55,3,Bus,dotted
 Hernani|bus,day,45,60,0.0,1.0,2,Bus,dotted
@@ -28,8 +25,8 @@ Lasarte-Oria|bus,day,15,60,0.5,1.0,2,Bus,dotted
 Lasarte-Oria|bus,night,15,60,0.0,1.0,2,Bus,dotted
 Ondarroa|bus,peak,5,60,0.0,1.0,3,Bus,dotted
 Ondarroa|bus,day,5,60,0.0,0.67,3,Bus,dotted
-Zarautz|bus,peak,47,60,0.17,0.66,10,Bus,dotted
+Zarautz|bus,peak,47,60,0.0,0.72,7,Bus,dotted
 Zarautz|bus,day,59,60,0.0,0.62,7,Bus,dotted
 Ermua|bus|1,peak,25,60,0.78,1.0,4,Euskotren + Bus,solid
 Ermua|bus|1,day,"25,55",30,0.5,1.0,2,Euskotren + Bus,dotted
-Zestoa|bus|1,day,"17,47",30,0.17,0.56,7,Euskotren + Bus,dotted
+Zestoa|bus|1,day,"17,47",30,0.0,0.8,4,Euskotren + Bus,dotted

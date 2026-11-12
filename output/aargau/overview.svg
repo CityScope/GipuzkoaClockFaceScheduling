@@ -178,16 +178,14 @@
 <circle cx='1046.4' cy='146.4' r='3.6' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
 <circle cx='672.4' cy='301.6' r='8.3' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='672.4' cy='301.6' r='4.1' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
-<line x1='672.4' y1='301.6' x2='681.5' y2='295.0' stroke='#000' stroke-width='2' stroke-linecap='round'/>
-<line x1='672.4' y1='301.6' x2='663.3' y2='308.2' stroke='#000' stroke-width='2' stroke-linecap='round'/>
+<line x1='672.4' y1='301.6' x2='681.5' y2='295.0' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
+<line x1='672.4' y1='301.6' x2='663.3' y2='308.2' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='417.4' cy='394.6' r='6.9' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <line x1='417.4' y1='394.6' x2='426.0' y2='399.6' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <line x1='417.4' y1='394.6' x2='408.8' y2='389.7' stroke='#000' stroke-width='2' stroke-dasharray='2.5 2'/>
 <circle cx='1095.5' cy='1071.8' r='6.0' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='228.7' cy='230.0' r='7.0' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='228.7' cy='230.0' r='3.5' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
-<line x1='228.7' y1='230.0' x2='229.8' y2='240.0' stroke='#000' stroke-width='2' stroke-linecap='round'/>
-<line x1='228.7' y1='230.0' x2='227.7' y2='220.0' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <circle cx='1196.5' cy='468.5' r='9.7' fill='#d62728' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1196.5' cy='468.5' r='6.5' fill='#2ca02c' stroke='#fff' stroke-width='1'/>
 <circle cx='1196.5' cy='468.5' r='3.2' fill='#1f77b4' stroke='#fff' stroke-width='1'/>
@@ -311,8 +309,8 @@
 <circle cx='1246.3' cy='686.6' r='7.0' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='605.3' cy='903.6' r='5.3' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1156.4' cy='527.6' r='8.3' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
-<line x1='1156.4' y1='527.6' x2='1167.7' y2='527.6' stroke='#000' stroke-width='2' stroke-linecap='round'/>
-<line x1='1156.4' y1='527.6' x2='1145.1' y2='527.6' stroke='#000' stroke-width='2' stroke-linecap='round'/>
+<line x1='1156.4' y1='527.6' x2='1167.6' y2='526.5' stroke='#000' stroke-width='2' stroke-linecap='round'/>
+<line x1='1156.4' y1='527.6' x2='1145.1' y2='528.8' stroke='#000' stroke-width='2' stroke-linecap='round'/>
 <circle cx='1259.7' cy='1176.0' r='7.8' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='1209.4' cy='738.9' r='6.1' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
 <circle cx='866.1' cy='439.8' r='6.7' fill='#1f77b4' stroke='#fff' stroke-width='1.2'/>
@@ -373,4 +371,4 @@
 <text x='1320.5' y='1123.2' font-size='11' fill='#222' stroke='#fff' stroke-width='3' paint-order='stroke'>Risch-Rotkreuz</text>
 <text x='571.0' y='791.6' font-size='11' fill='#222' stroke='#fff' stroke-width='3' paint-order='stroke'>Zofingen</text>
 <text x='1180.8' y='818.1' font-size='11' fill='#222' stroke='#fff' stroke-width='3' paint-order='stroke'>Muri</text>
-<text x='14' y='20' font-size='15' font-weight='bold'>Aargau public transport - weekday: 113 nodes, 142 connections, 37 symmetry nodes (peak)</text></svg>
+<text x='14' y='20' font-size='15' font-weight='bold'>Aargau public transport - weekday: 113 nodes, 142 connections, 36 symmetry nodes (peak)</text></svg>

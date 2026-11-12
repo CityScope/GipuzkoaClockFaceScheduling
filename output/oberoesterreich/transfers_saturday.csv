@@ -97,7 +97,6 @@ Linz|bigrail,night,Leonding,Linz · Donau Rudolfstr…,2.1,1.1,direct None / wit
 Linz|bigrail,night,Leonding,Pregarten,1.3,3.7,direct None / with changes 375,False
 Neuhofen an der Krems|bigrail,day,Rohr im Kremstal,Wels,3.8,3.2,direct None / with changes 300,False
 Neuhofen an der Krems|bigrail,day,Traun,Wels,3.8,3.2,direct None / with changes 300,False
-Neumarkt im Hausruckkreis|bigrail,day,Schlüßlberg,Schärding,1.0,0.0,direct 90 / with changes 60,False
 Rohr im Kremstal|bigrail,peak,Bad Hall,Neuhofen an der Krems,4.0,1.6,direct None / with changes 41,False
 Rohr im Kremstal|bigrail,day,Bad Hall,Neuhofen an der Krems,3.9,1.6,direct None / with changes 37,False
 Sankt Valentin|bigrail,peak,Amstetten (slow),Enns,4.0,0.0,direct None / with changes 60,False
@@ -117,7 +116,6 @@ Traun|bigrail,day,Ansfelden,Leonding,2.0,0.0,direct None / with changes 60,False
 Traun|bigrail,day,Ansfelden,Linz,12.0,0.0,direct None / with changes 255,False
 Waizenkirchen|bus,peak,Eferding,Peuerbach,1.2,0.8,direct None / with changes 120,False
 Waizenkirchen|bus,day,Eferding,Peuerbach,1.2,0.8,direct None / with changes 75,False
-Wels|bigrail,peak,Bad Schallerbach,Linz · Donau Hbf,0.5,0.0,direct 120 / with changes 62,False
 Wels|bigrail,peak,Gunskirchen,Hörsching,1.0,0.0,direct None / with changes 60,False
 Wels|bigrail,peak,Attnang-Puchheim,Sattledt,1.0,0.0,direct None / with changes 90,False
 Wels|bigrail,peak,Linz · Donau Hbf,Sattledt,2.7,0.0,direct None / with changes 90,False

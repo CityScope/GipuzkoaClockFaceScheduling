@@ -77,7 +77,6 @@ Luzern|bigrail,day,Kriens · Sternmatt (fast),Sursee,0.6,4.8,direct None / with 
 Luzern|bigrail,day,Kriens · Sternmatt (slow),Sursee,3.6,4.8,direct None / with changes 34,False
 Luzern|bigrail,day,Ebikon (slow),Malters,2.9,4.8,direct None / with changes 34,False
 Luzern|bigrail,day,Kriens · Sternmatt (fast),Malters,3.3,4.8,direct None / with changes 34,False
-Luzern|bigrail,night,Arth,Olten,1.0,0.0,direct 375 / with changes 285,False
 Luzern|bigrail,night,Olten,Zug,4.0,0.0,direct None / with changes 375,False
 Luzern|bigrail,night,Arth,Horw,3.0,1.5,direct None / with changes 281,False
 Luzern|bigrail,night,Kriens · Sternmatt (fast),Rothenburg,5.6,4.8,direct None / with changes 216,False
@@ -201,8 +200,6 @@ Ettiswil|bus,day,Ruswil,Sursee,3.0,0.0,direct None / with changes 30,False
 Ettiswil|bus,day,Ruswil,Willisau,4.0,0.0,direct None / with changes 30,False
 Ettiswil|bus,night,Ruswil,Sursee,5.7,0.0,direct None / with changes 275,False
 Ettiswil|bus,night,Ruswil,Willisau,4.7,0.0,direct None / with changes 289,False
-Kriens|bus,peak,Kriens · Sternmatt,Schwarzenberg,2.7,0.0,direct 120 / with changes 98,False
-Kriens|bus,day,Kriens · Sternmatt,Schwarzenberg,0.7,0.0,direct 60 / with changes 49,False
 Küssnacht (SZ)|bus,peak,Risch-Rotkreuz · Langmatt,Weggis,3.9,0.0,direct None / with changes 38,False
 Küssnacht (SZ)|bus,day,Risch-Rotkreuz · Langmatt,Weggis,4.0,0.0,direct None / with changes 30,False
 Küssnacht (SZ)|bus,day,Risch-Rotkreuz · Langmatt,Udligenswil,5.0,0.0,direct None / with changes 60,False
@@ -322,10 +319,8 @@ Rain|bus,peak,Beromünster,Hochdorf,11.0,0.0,direct None / with changes 60,False
 Rain|bus,peak,Beromünster,Neuenkirch,12.0,0.0,direct None / with changes 60,False
 Rain|bus,day,Beromünster,Hochdorf,11.0,0.0,direct None / with changes 60,False
 Rain|bus,day,Beromünster,Neuenkirch,12.0,0.0,direct None / with changes 60,False
-Reiden|bus,peak,Roggwil (BE),Zofingen,0.0,0.0,direct 90 / with changes 60,False
 Reiden|bus,day,Roggwil (BE),Zofingen,3.0,0.0,direct 375 / with changes 64,False
 Rickenbach|bus,peak,Beromünster,Menziken,5.5,0.0,direct None / with changes 60,False
-Rickenbach|bus,day,Beromünster,Sursee,2.1,0.0,direct 60 / with changes 39,False
 Rickenbach|bus,day,Beromünster,Menziken,5.9,0.0,direct None / with changes 61,False
 Ruswil|bus,day,Ettiswil,Wolhusen,11.0,0.0,direct None / with changes 60,False
 Ruswil|bus,day,Luzern,Wolhusen,3.0,0.0,direct None / with changes 60,False

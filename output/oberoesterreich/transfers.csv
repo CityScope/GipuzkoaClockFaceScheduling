@@ -10,7 +10,6 @@ Bad Schallerbach|bigrail,day,Pichl bei Wels,Wallern an der Trattnach,9.0,0.0,dir
 Eferding|bus,peak,Waizenkirchen,Wilhering,4.0,0.0,direct None / with changes 45,False
 Eferding|bus,peak,Aschach an der Donau,Waizenkirchen,6.3,1.2,direct None / with changes 60,False
 Eferding|bus,peak,Haibach ob der Donau,Wilhering,1.8,1.2,direct None / with changes 90,False
-Eferding|bus,peak,Alkoven,Aschach an der Donau,2.4,0.0,direct 90 / with changes 55,False
 Eferding|bus,peak,Alkoven,Wels,8.0,0.0,direct None / with changes 120,False
 Eferding|bus,peak,Aschach an der Donau,Stroheim,7.5,0.0,direct None / with changes 120,False
 Eferding|bus,day,Waizenkirchen,Wilhering,4.0,0.0,direct None / with changes 60,False
@@ -19,7 +18,6 @@ Eferding|bus,day,Alkoven,Waizenkirchen,11.0,1.2,direct None / with changes 49,Fa
 Eferding|bus,day,Aschach an der Donau,Waizenkirchen,8.6,1.2,direct None / with changes 60,False
 Eferding|bus,day,Haibach ob der Donau,Wilhering,1.8,1.2,direct None / with changes 150,False
 Eferding|bus,day,Stroheim,Wilhering,3.3,1.2,direct None / with changes 131,False
-Eferding|bus,day,Alkoven,Aschach an der Donau,2.7,0.0,direct 92 / with changes 49,False
 Eferding|bus,day,Haibach ob der Donau,St. Marienkirchen an der Polsenz,9.0,0.0,direct None / with changes 150,False
 Eferding|bus,night,Waizenkirchen,Wilhering,4.0,0.0,direct None / with changes 426,False
 Eferding|bus,night,Haibach ob der Donau,Wilhering,7.8,1.2,direct None / with changes 426,False
@@ -27,7 +25,6 @@ Enns|bigrail,peak,Sankt Valentin,St. Nikola an der Donau,4.0,0.0,direct None / w
 Enns|bigrail,peak,Asten,Hargelsberg,9.0,0.0,direct None / with changes 90,False
 Enns|bigrail,day,Sankt Valentin,St. Nikola an der Donau,4.0,0.0,direct None / with changes 180,False
 Enns|bigrail,day,Asten,Hargelsberg,9.5,0.0,direct None / with changes 91,False
-Garsten|bigrail,peak,Losenstein,Steyr,0.5,0.0,direct 120 / with changes 75,False
 Gunskirchen|bigrail,peak,Lambach (fast),Wels,6.1,1.2,direct None / with changes 90,False
 Gunskirchen|bigrail,day,Lambach (fast),Wels,3.8,1.2,direct None / with changes 75,False
 Hörsching|bigrail,day,Kirchberg-Thening,Leonding,5.0,0.0,direct None / with changes 180,False
@@ -101,21 +98,17 @@ Linz|bigrail,night,Gramastetten,Wels,0.3,3.7,direct None / with changes 374,Fals
 Neuhofen an der Krems|bigrail,peak,Traun,Wels,3.8,3.2,direct None / with changes 90,False
 Neuhofen an der Krems|bigrail,peak,Piberbach,Traun,6.8,3.2,direct None / with changes 120,False
 Neuhofen an der Krems|bigrail,day,Piberbach,Traun,2.6,3.2,direct None / with changes 117,False
-Neumarkt im Hausruckkreis|bigrail,day,Schlüßlberg,Schärding,0.8,0.0,direct 82 / with changes 56,False
 Pregarten|bigrail,peak,Hagenberg im Mühlkreis,Linz · Donau Hbf (slow),2.4,1.6,direct None / with changes 90,False
 Pregarten|bigrail,peak,Hagenberg im Mühlkreis,Wartberg ob der Aist,6.0,0.0,direct None / with changes 90,False
 Pregarten|bigrail,peak,Perg,Wartberg ob der Aist,6.0,0.0,direct None / with changes 90,False
 Pregarten|bigrail,day,Hagenberg im Mühlkreis,Linz · Donau Hbf (slow),2.4,1.6,direct None / with changes 90,False
-Pregarten|bigrail,day,Hagenberg im Mühlkreis,Linz,1.4,0.0,direct 90 / with changes 73,False
 Rohr im Kremstal|bigrail,peak,Bad Hall,Neuhofen an der Krems,3.9,1.6,direct None / with changes 34,False
 Rohr im Kremstal|bigrail,peak,Bad Hall,Kremsmünster,7.0,0.0,direct None / with changes 82,False
 Rohr im Kremstal|bigrail,day,Bad Hall,Neuhofen an der Krems,3.8,1.6,direct None / with changes 36,False
 Rohr im Kremstal|bigrail,day,Bad Hall,Kremsmünster,4.5,0.0,direct None / with changes 86,False
 Rohr im Kremstal|bigrail,night,Bad Hall,Neuhofen an der Krems,8.4,1.6,direct None / with changes 444,False
-Sankt Valentin|bigrail,peak,Enns,Steyr,1.7,0.0,direct 60 / with changes 38,False
 Sankt Valentin|bigrail,peak,Amstetten (slow),Enns,4.0,0.0,direct None / with changes 60,False
 Sankt Valentin|bigrail,peak,Enns,St. Nikola an der Donau,5.3,0.0,direct None / with changes 90,False
-Sankt Valentin|bigrail,day,Enns,Steyr,1.5,0.0,direct 60 / with changes 41,False
 Sankt Valentin|bigrail,day,Amstetten (slow),Enns,4.0,0.0,direct None / with changes 60,False
 Sankt Valentin|bigrail,day,Linz · Donau Hbf,St. Nikola an der Donau,6.0,0.0,direct None / with changes 105,False
 Sankt Valentin|bigrail,night,Amstetten (slow),Enns,3.0,0.0,direct None / with changes 313,False
@@ -142,7 +135,6 @@ Traun|bigrail,day,Ansfelden,Leonding,2.0,0.0,direct None / with changes 52,False
 Waizenkirchen|bus,peak,Eferding,Peuerbach,1.2,0.8,direct None / with changes 90,False
 Waizenkirchen|bus,day,Eferding,Peuerbach,1.2,0.8,direct None / with changes 71,False
 Wels|bigrail,peak,Bad Schallerbach,Linz · Donau Hbf,0.4,0.0,direct 120 / with changes 50,False
-Wels|bigrail,peak,Gunskirchen,Hörsching,0.6,0.0,direct 97 / with changes 80,False
 Wels|bigrail,peak,Attnang-Puchheim,Sattledt,1.0,0.0,direct None / with changes 60,False
 Wels|bigrail,peak,Attnang-Puchheim,Pichl bei Wels,4.1,1.9,direct None / with changes 68,False
 Wels|bigrail,peak,Gunskirchen,Marchtrenk,2.5,1.9,direct None / with changes 52,False
@@ -196,23 +188,18 @@ Hellmonsödt|bus,peak,Reichenau im Mühlkreis,Zwettl an der Rodl,4.5,0.0,direct 
 Hellmonsödt|bus,peak,Linz (slow),Zwettl an der Rodl,10.0,0.0,direct None / with changes 90,False
 Hellmonsödt|bus,day,Linz (fast),Reichenau im Mühlkreis,3.3,0.0,direct 210 / with changes 66,False
 Hellmonsödt|bus,day,Reichenau im Mühlkreis,Zwettl an der Rodl,3.6,0.0,direct None / with changes 124,False
-Herzogsdorf|bus,day,Feldkirchen an der Donau,Niederwaldkirchen,0.2,0.0,direct 29 / with changes 28,False
 Losenstein|bus,peak,Großraming,Laussa,3.5,0.0,direct None / with changes 90,False
 Marchtrenk|bus,peak,Ansfelden,Wels,11.3,0.0,direct None / with changes 90,False
 Mauthausen|bus,peak,Linz (slow),Perg,10.0,0.0,direct None / with changes 120,False
 Mauthausen|bus,day,Linz (slow),Perg,10.4,0.0,direct None / with changes 120,False
 Meggenhofen|bus,night,Gaspoltshofen,Pichl bei Wels,7.0,0.0,direct None / with changes 424,False
-Neumarkt im Mühlkreis|bus,day,Freistadt,Hagenberg im Mühlkreis,1.7,0.0,direct 102 / with changes 58,False
 Ottensheim|bus,peak,Ottensheim · B127/Hambergstr…,Walding,2.4,0.0,direct 120 / with changes 50,False
 Ottensheim|bus,peak,Goldwörth,Linz,8.5,0.0,direct None / with changes 60,False
 Ottensheim|bus,peak,Goldwörth,Walding,3.5,0.0,direct None / with changes 90,False
-Ottensheim|bus,day,Linz,Walding,0.1,0.0,direct 22 / with changes 21,False
 Ottensheim|bus,day,Goldwörth,Linz,8.6,0.0,direct None / with changes 105,False
 Ottensheim|bus,day,Goldwörth,Walding,2.0,0.0,direct None / with changes 104,False
-Ottensheim|bus,day,Aschach an der Donau,Linz,3.6,0.0,direct 233 / with changes 125,False
 Ottensheim|bus,night,Goldwörth,Linz,4.0,0.0,direct None / with changes 431,False
 Pichl bei Wels|bus,day,Grieskirchen,Meggenhofen,5.0,0.0,direct None / with changes 270,False
-Prambachkirchen|bus,peak,Grieskirchen,Waizenkirchen,4.7,0.0,direct 120 / with changes 108,False
 Schlüßlberg|bus,peak,Bad Schallerbach,Neumarkt im Hausruckkreis,8.5,3.5,direct None / with changes 60,False
 Schlüßlberg|bus,day,Meggenhofen,Neumarkt im Hausruckkreis,1.0,3.5,direct None / with changes 134,False
 Sierning|bus,peak,St. Marien,Steyr,7.0,0.0,direct None / with changes 96,False
@@ -230,8 +217,6 @@ Walding|bigrail|1,peak,Feldkirchen an der Donau,Linz · Donau Urfahr Bf,3.2,0.9,
 Walding|bigrail|1,peak,Herzogsdorf,Linz · Donau Urfahr Bf,5.1,0.9,direct None / with changes 120,False
 Walding|bigrail|1,day,Herzogsdorf,Linz · Donau Urfahr Bf,5.1,0.9,direct None / with changes 90,False
 Walding|bigrail|1,night,Feldkirchen an der Donau,Linz · Donau Urfahr Bf,2.1,0.9,direct None / with changes 396,False
-Wallern an der Trattnach|bus,peak,Bad Schallerbach,St. Marienkirchen an der Polsenz,1.2,0.0,direct 54 / with changes 48,False
-Wallern an der Trattnach|bus,day,Bad Schallerbach,St. Marienkirchen an der Polsenz,2.0,0.0,direct 90 / with changes 74,False
 Linz|bigrail|1,peak,Linz · Donau JKU I Uni…,Walding,2.2,4.0,direct None / with changes 36,False
 Linz|bigrail|1,peak,Linz · Donau Hbf,Walding,0.9,4.0,direct None / with changes 36,False
 Linz|bigrail|1,day,Linz · Donau JKU I Uni…,Walding,3.6,4.0,direct None / with changes 29,False

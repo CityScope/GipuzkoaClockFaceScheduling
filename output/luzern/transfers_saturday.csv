@@ -81,7 +81,6 @@ Luzern|bigrail,day,Kriens · Sternmatt (fast),Sursee,1.5,4.8,direct None / with 
 Luzern|bigrail,day,Kriens · Sternmatt (slow),Sursee,0.3,4.8,direct None / with changes 34,False
 Luzern|bigrail,day,Ebikon (slow),Malters,3.9,4.8,direct None / with changes 34,False
 Luzern|bigrail,day,Kriens · Sternmatt (fast),Malters,3.0,4.8,direct None / with changes 34,False
-Luzern|bigrail,night,Arth,Olten,1.0,0.0,direct 375 / with changes 285,False
 Luzern|bigrail,night,Malters,Rothenburg,1.5,0.0,direct None / with changes 310,False
 Luzern|bigrail,night,Malters,Zug,6.0,0.0,direct None / with changes 375,False
 Luzern|bigrail,night,Olten,Zug,4.0,0.0,direct None / with changes 375,False
@@ -197,7 +196,6 @@ Wolhusen|bigrail,day,Ruswil,Schüpfheim,4.6,0.9,direct None / with changes 30,Fa
 Wolhusen|bigrail,day,Ruswil,Willisau,6.1,0.9,direct None / with changes 30,False
 Wolhusen|bigrail,day,Romoos,Willisau,5.1,0.9,direct None / with changes 64,False
 Wolhusen|bigrail,day,Romoos,Ruswil,7.0,0.0,direct None / with changes 64,False
-Wolhusen|bigrail,night,Malters,Willisau,1.2,0.0,direct 290 / with changes 245,False
 Wolhusen|bigrail,night,Schüpfheim,Willisau,2.0,0.0,direct None / with changes 322,False
 Wolhusen|bigrail,night,Malters,Romoos,3.1,0.9,direct None / with changes 375,False
 Wolhusen|bigrail,night,Malters,Ruswil,3.1,0.9,direct None / with changes 375,False
@@ -233,8 +231,6 @@ Ettiswil|bus,day,Ruswil,Willisau,4.0,0.0,direct None / with changes 30,False
 Ettiswil|bus,night,Ruswil,Sursee,5.7,0.0,direct None / with changes 275,False
 Ettiswil|bus,night,Ruswil,Willisau,4.7,0.0,direct None / with changes 289,False
 Kriens|bus,peak,Kriens · Sternmatt,Malters,4.2,0.0,direct None / with changes 60,False
-Kriens|bus,peak,Kriens · Sternmatt,Schwarzenberg,2.3,0.0,direct 120 / with changes 98,False
-Kriens|bus,day,Kriens · Sternmatt,Schwarzenberg,1.9,0.0,direct 60 / with changes 49,False
 Kriens|bus,day,Kriens · Sternmatt,Malters,3.5,0.0,direct None / with changes 60,False
 Küssnacht (SZ)|bus,peak,Risch-Rotkreuz · Langmatt,Weggis,4.0,0.0,direct None / with changes 30,False
 Küssnacht (SZ)|bus,peak,Risch-Rotkreuz · Langmatt,Udligenswil,5.0,0.0,direct None / with changes 60,False
@@ -353,10 +349,8 @@ Rain|bus,peak,Beromünster,Hochdorf,11.0,0.0,direct None / with changes 60,False
 Rain|bus,peak,Beromünster,Neuenkirch,12.0,0.0,direct None / with changes 60,False
 Rain|bus,day,Beromünster,Hochdorf,11.0,0.0,direct None / with changes 60,False
 Rain|bus,day,Beromünster,Neuenkirch,12.0,0.0,direct None / with changes 60,False
-Reiden|bus,peak,Roggwil (BE),Zofingen,0.0,0.0,direct 90 / with changes 60,False
 Reiden|bus,day,Roggwil (BE),Zofingen,3.0,0.0,direct 375 / with changes 64,False
 Rickenbach|bus,peak,Beromünster,Menziken,5.5,0.0,direct None / with changes 60,False
-Rickenbach|bus,day,Beromünster,Sursee,2.1,0.0,direct 60 / with changes 39,False
 Rickenbach|bus,day,Beromünster,Menziken,5.9,0.0,direct None / with changes 61,False
 Ruswil|bus,peak,Ettiswil,Wolhusen,11.0,0.0,direct None / with changes 52,False
 Ruswil|bus,peak,Luzern,Wolhusen,3.0,0.0,direct None / with changes 52,False
