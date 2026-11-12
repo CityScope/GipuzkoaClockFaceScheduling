@@ -9,10 +9,6 @@ Ebikon|bigrail,peak,Luzern,Root,5.0,1.3,direct None / with changes 45,False
 Ebikon|bigrail,peak,Luzern (slow),Root,6.0,0.0,direct None / with changes 45,False
 Ebikon|bigrail,day,Luzern,Root,5.2,1.3,direct None / with changes 34,False
 Ebikon|bigrail,day,Luzern (slow),Root,5.2,0.0,direct None / with changes 34,False
-Ebikon|bigrail,night,Luzern (slow),Root,11.2,1.3,direct None / with changes 166,False
-Ebikon|bigrail,night,Adligenswil,Root,16.3,1.3,direct None / with changes 278,False
-Ebikon|bigrail,night,Adligenswil,Luzern (slow),6.2,0.0,direct None / with changes 238,False
-Hergiswil (NW)|localrail,night,Sachseln,Stansstad,7.7,0.0,direct None / with changes 193,False
 Hergiswil (NW)|localrail,night,Luzern,Sachseln,6.0,0.0,direct None / with changes 480,False
 Hochdorf|bigrail,peak,Lenzburg,Rain,5.1,1.9,direct None / with changes 60,False
 Hochdorf|bigrail,day,Lenzburg,Rain,5.1,1.9,direct None / with changes 60,False
@@ -130,10 +126,8 @@ Root|bigrail,peak,Ebikon,Risch-Rotkreuz,10.8,4.2,direct None / with changes 45,F
 Root|bigrail,peak,Risch-Rotkreuz,Udligenswil,2.8,4.2,direct None / with changes 120,False
 Root|bigrail,day,Ebikon,Risch-Rotkreuz,10.8,4.2,direct None / with changes 34,False
 Root|bigrail,day,Risch-Rotkreuz,Udligenswil,2.8,4.2,direct None / with changes 75,False
-Root|bigrail,night,Ebikon,Risch-Rotkreuz,9.5,4.2,direct None / with changes 169,False
 Rothenburg|bigrail,peak,Luzern,Neuenkirch,0.4,1.6,direct None / with changes 30,False
 Rothenburg|bigrail,day,Luzern,Neuenkirch,0.4,1.6,direct None / with changes 30,False
-Rothenburg|bigrail,night,Luzern,Neuenkirch,0.4,1.6,direct None / with changes 278,False
 Rothenburg|bigrail,night,Luzern,Ruswil,0.4,1.6,direct None / with changes 480,False
 Schüpfheim|bigrail,peak,Flühli,Langnau im Emmental,5.3,0.9,direct None / with changes 60,False
 Schüpfheim|bigrail,peak,Flühli,Wolhusen,5.3,0.9,direct None / with changes 60,False
@@ -287,18 +281,15 @@ Luzern|bus,day,Rain,Stansstad,9.2,3.8,direct None / with changes 75,False
 Luzern|bus,day,Ruswil,Sachseln,10.2,3.8,direct None / with changes 75,False
 Luzern|bus,day,Ruswil,Stansstad,14.2,3.8,direct None / with changes 75,False
 Luzern|bus,day,Ebikon (slow),Giswil,1.2,3.8,direct None / with changes 375,False
-Luzern|bus,night,Hochdorf,Kriens · Sternmatt (fast),2.8,4.8,direct None / with changes 280,False
 Luzern|bus,night,Ebikon (slow),Olten,10.2,4.8,direct None / with changes 285,False
 Luzern|bus,night,Kriens · Sternmatt (fast),Olten,4.5,4.8,direct None / with changes 285,False
 Luzern|bus,night,Kriens · Sternmatt (fast),Risch-Rotkreuz,4.2,4.8,direct None / with changes 210,False
 Luzern|bus,night,Malters,Risch-Rotkreuz,1.2,4.8,direct None / with changes 375,False
-Luzern|bus,night,Arth,Rain,7.9,4.8,direct None / with changes 326,False
 Luzern|bus,night,Rain,Risch-Rotkreuz,3.2,4.8,direct None / with changes 285,False
 Luzern|bus,night,Kriens · Sternmatt (fast),Zug,4.2,4.8,direct None / with changes 375,False
 Luzern|bus,night,Risch-Rotkreuz,Ruswil,1.2,4.8,direct None / with changes 375,False
 Luzern|bus,night,Ebikon (slow),Malters,5.2,4.8,direct None / with changes 480,False
 Luzern|bus,night,Kriens · Sternmatt (fast),Malters,8.2,4.8,direct None / with changes 480,False
-Luzern|bus,night,Horw,Rain,0.2,3.8,direct None / with changes 278,False
 Luzern|bus,night,Ebikon (slow),Stansstad,0.2,3.8,direct None / with changes 480,False
 Luzern|bus,night,Horw,Ruswil,11.2,3.8,direct None / with changes 375,False
 Luzern|bus,night,Adligenswil,Hergiswil (NW),12.2,3.8,direct None / with changes 480,False
@@ -334,4 +325,3 @@ Root|bus|1,peak,Ebikon,Udligenswil,14.0,0.0,direct None / with changes 120,False
 Root|bus|1,day,Ebikon,Risch-Rotkreuz,10.8,4.2,direct None / with changes 34,False
 Root|bus|1,day,Risch-Rotkreuz,Udligenswil,2.8,4.2,direct None / with changes 75,False
 Root|bus|1,day,Ebikon,Udligenswil,14.0,0.0,direct None / with changes 75,False
-Root|bus|1,night,Ebikon,Risch-Rotkreuz,9.5,4.2,direct None / with changes 169,False

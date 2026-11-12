@@ -26,8 +26,6 @@ Eferding|bus,day,Alkoven,Aschach an der Donau,2.7,0.0,direct 92 / with changes 4
 Eferding|bus,day,Aschach an der Donau,St. Marienkirchen an der Polsenz,16.5,0.0,direct None / with changes 90,False
 Eferding|bus,day,Haibach ob der Donau,St. Marienkirchen an der Polsenz,9.0,0.0,direct None / with changes 150,False
 Eferding|bus,day,Prambachkirchen,Wels,14.7,0.0,direct None / with changes 225,False
-Eferding|bus,night,Waizenkirchen,Wilhering,4.0,0.0,direct None / with changes 426,False
-Eferding|bus,night,Haibach ob der Donau,Wilhering,7.8,1.2,direct None / with changes 426,False
 Eferding|bus,night,Aschach an der Donau,St. Marienkirchen an der Polsenz,14.0,0.0,direct None / with changes 480,False
 Enns|bigrail,peak,Sankt Valentin,St. Nikola an der Donau,4.0,0.0,direct None / with changes 120,False
 Enns|bigrail,peak,Linz · Donau Hbf,Steyr (fast),6.9,2.1,direct None / with changes 75,False
@@ -75,13 +73,12 @@ Lambach|bigrail,day,Bad Wimsbach-Neydharting,Schlatt,14.0,0.0,direct None / with
 Lambach|bigrail,night,Bachmanning,Gunskirchen,5.3,0.7,direct None / with changes 480,False
 Lambach|bigrail,night,Steinerkirchen an der Traun,Vorchdorf,2.1,0.9,direct None / with changes 480,False
 Lambach|bigrail,night,Bachmanning,Wels,0.0,0.0,direct None / with changes 480,False
-Leonding|bigrail,peak,Hörsching,Linz · Donau Hbf,9.7,1.9,direct None / with changes 53,False
+Leonding|bigrail,peak,Hörsching,Linz · Donau Hbf,10.3,1.9,direct None / with changes 60,False
 Leonding|bigrail,peak,Linz · Donau Hbf,Traun,0.1,1.9,direct None / with changes 90,False
 Leonding|bigrail,day,Hörsching,Linz,3.0,1.9,direct None / with changes 75,False
 Leonding|bigrail,day,Linz · Donau Hbf,Wilhering,0.1,1.9,direct None / with changes 60,False
 Leonding|bigrail,day,Linz,Traun,0.0,0.0,direct 146 / with changes 56,False
-Leonding|bigrail,day,Traun,Wilhering,0.0,0.0,direct None / with changes 56,False
-Leonding|bigrail,day,Marchtrenk,Traun,5.8,0.0,direct None / with changes 131,False
+Leonding|bigrail,day,Traun,Wilhering,0.0,0.0,direct None / with changes 60,False
 Leonding|bigrail,night,Hörsching,Linz · Donau Hbf,7.1,1.9,direct None / with changes 294,False
 Leonding|bigrail,night,Linz · Donau Hbf,Wilhering,0.6,1.9,direct None / with changes 480,False
 Leonding|bigrail,night,Marchtrenk,Traun,10.0,0.0,direct None / with changes 480,False
@@ -113,7 +110,6 @@ Linz|bigrail,night,Sankt Valentin,Traun,8.3,0.0,direct None / with changes 285,F
 Linz|bigrail,night,Pregarten (slow),Sankt Valentin,7.0,0.0,direct None / with changes 372,False
 Linz|bigrail,night,Linz · Donau solarCity,Pregarten,1.9,1.1,direct None / with changes 285,False
 Linz|bigrail,night,Pregarten (fast),Wilhering,10.9,1.1,direct None / with changes 480,False
-Linz|bigrail,night,Linz · Donau Rudolfstr…,Wilhering,2.0,0.0,direct None / with changes 244,False
 Linz|bigrail,night,Leonding,Pregarten,1.3,3.7,direct None / with changes 375,False
 Linz|bigrail,night,Ottensheim · Bf,Pregarten,0.3,3.7,direct None / with changes 375,False
 Linz|bigrail,night,Asten,Pregarten,11.3,3.7,direct None / with changes 375,False
@@ -124,7 +120,6 @@ Losenstein|bigrail,peak,Garsten,Sankt Gallen,10.9,4.1,direct None / with changes
 Neuhofen an der Krems|bigrail,peak,Traun,Wels,3.8,3.2,direct None / with changes 90,False
 Neuhofen an der Krems|bigrail,peak,Rohr im Kremstal,Traun,5.8,3.2,direct None / with changes 120,False
 Neuhofen an der Krems|bigrail,peak,Rohr im Kremstal,Wels,5.0,0.0,direct None / with changes 120,False
-Neuhofen an der Krems|bigrail,day,Traun,Wels,5.0,3.2,direct None / with changes 86,False
 Neuhofen an der Krems|bigrail,day,Piberbach,Traun,1.8,3.2,direct None / with changes 120,False
 Neuhofen an der Krems|bigrail,night,Rohr im Kremstal,Wels,3.8,3.2,direct None / with changes 480,False
 Neuhofen an der Krems|bigrail,night,Traun,Wels,3.8,3.2,direct None / with changes 480,False
@@ -138,8 +133,6 @@ Pregarten|bigrail,peak,Hagenberg im Mühlkreis,Wartberg ob der Aist,6.0,0.0,dire
 Pregarten|bigrail,peak,Perg,Wartberg ob der Aist,6.0,0.0,direct None / with changes 90,False
 Pregarten|bigrail,day,Hagenberg im Mühlkreis,Linz · Donau Hbf (slow),2.4,1.6,direct None / with changes 90,False
 Pregarten|bigrail,day,Hagenberg im Mühlkreis,Linz (slow),10.0,0.0,direct None / with changes 480,False
-Rohr im Kremstal|bigrail,peak,Bad Hall,Kremsmünster,7.0,0.0,direct None / with changes 82,False
-Rohr im Kremstal|bigrail,day,Bad Hall,Kremsmünster,4.5,0.0,direct None / with changes 86,False
 Rohr im Kremstal|bigrail,day,Bad Hall,Neuhofen an der Krems,7.0,0.0,direct None / with changes 480,False
 Rohr im Kremstal|bigrail,day,Kremsmünster,Neuhofen an der Krems,1.0,0.0,direct None / with changes 480,False
 Rohr im Kremstal|bigrail,night,Kirchdorf an der Krems,Kremsmünster,2.4,1.6,direct None / with changes 480,False
@@ -164,13 +157,12 @@ Schlüßlberg|bigrail,day,Meggenhofen,Neumarkt im Hausruckkreis,1.0,3.5,direct N
 Schlüßlberg|bigrail,day,Gaspoltshofen,Neumarkt im Hausruckkreis,2.5,3.5,direct None / with changes 480,False
 Schlüßlberg|bigrail,night,Bad Schallerbach,Grieskirchen,3.5,3.5,direct None / with changes 480,False
 Steyr|bigrail,peak,Enns (slow),Garsten,3.7,1.0,direct None / with changes 90,False
-Steyr|bigrail,peak,Sierning,Wolfern,4.0,0.0,direct None / with changes 70,False
+Steyr|bigrail,peak,Sierning,Wolfern,7.8,0.0,direct None / with changes 60,False
 Steyr|bigrail,peak,Enns (slow),Sierning,9.0,0.0,direct None / with changes 90,False
 Steyr|bigrail,peak,Enns (fast),Waldneukirchen,0.0,0.0,direct None / with changes 90,False
 Steyr|bigrail,peak,Enns (fast),Großraming,0.0,0.0,direct None / with changes 120,False
 Steyr|bigrail,peak,Garsten,Großraming,13.0,0.0,direct None / with changes 120,False
 Steyr|bigrail,peak,Großraming,Sierning,7.5,0.0,direct None / with changes 90,False
-Steyr|bigrail,day,Enns (fast),Garsten,12.2,1.0,direct None / with changes 60,False
 Steyr|bigrail,day,Enns (slow),Garsten,2.5,1.0,direct None / with changes 90,False
 Steyr|bigrail,day,Losenstein,Sankt Valentin,8.0,1.0,direct None / with changes 375,False
 Steyr|bigrail,day,Garsten,Wolfern,3.9,0.0,direct None / with changes 60,False
@@ -183,21 +175,17 @@ Traun|bigrail,peak,Ansfelden,Linz · Donau Hbf,2.8,4.8,direct None / with change
 Traun|bigrail,peak,Linz,Neuhofen an der Krems,13.4,4.8,direct None / with changes 60,False
 Traun|bigrail,peak,Ansfelden,Leonding,2.1,0.0,direct 117 / with changes 44,False
 Traun|bigrail,peak,Ansfelden,Linz,11.0,0.0,direct None / with changes 60,False
-Traun|bigrail,day,Ansfelden,Leonding,2.0,0.0,direct None / with changes 52,False
-Traun|bigrail,night,Ansfelden,Linz · Donau Hbf,8.9,4.8,direct None / with changes 254,False
+Traun|bigrail,day,Ansfelden,Leonding,2.5,0.0,direct None / with changes 60,False
 Traun|bigrail,night,Ansfelden,Leonding,0.0,0.0,direct None / with changes 480,False
 Traun|bigrail,night,Ansfelden,Linz,7.0,0.0,direct None / with changes 480,False
 Waizenkirchen|bus,peak,Eferding,Peuerbach,1.2,0.8,direct None / with changes 90,False
 Waizenkirchen|bus,peak,Eferding,Peuerbach,7.0,0.0,direct None / with changes 120,False
 Waizenkirchen|bus,peak,Grieskirchen,Stroheim,4.0,0.0,direct None / with changes 120,False
 Waizenkirchen|bus,peak,Prambachkirchen,Stroheim,0.0,0.0,direct None / with changes 120,False
-Waizenkirchen|bus,day,Eferding,Peuerbach,1.2,0.8,direct None / with changes 71,False
 Waizenkirchen|bus,night,Peuerbach,Prambachkirchen,8.0,0.0,direct None / with changes 480,False
-Wels|bigrail,peak,Bad Schallerbach,Hörsching,2.5,0.0,direct None / with changes 99,False
 Wels|bigrail,peak,Attnang-Puchheim,Sattledt,1.0,0.0,direct None / with changes 60,False
 Wels|bigrail,peak,Linz · Donau Hbf,Sattledt,3.5,0.0,direct None / with changes 60,False
-Wels|bigrail,peak,Bad Schallerbach,Marchtrenk,2.1,1.9,direct None / with changes 98,False
-Wels|bigrail,peak,Gunskirchen,Marchtrenk,2.5,1.9,direct None / with changes 52,False
+Wels|bigrail,peak,Gunskirchen,Marchtrenk,2.6,1.9,direct None / with changes 60,False
 Wels|bigrail,peak,Attnang-Puchheim,Neuhofen an der Krems,9.1,1.9,direct None / with changes 90,False
 Wels|bigrail,peak,Hörsching,Neuhofen an der Krems,6.1,1.9,direct None / with changes 90,False
 Wels|bigrail,peak,Gunskirchen,Sattledt,11.6,1.9,direct None / with changes 60,False
@@ -245,7 +233,6 @@ Bad Hall|bus,peak,Schlierbach · Krems Abzw Bf,Sierning,6.5,0.0,direct None / wi
 Bad Hall|bus,day,Sierning,Waldneukirchen,8.5,0.0,direct None / with changes 137,False
 Engerwitzdorf|bus,peak,Linz (slow),Perg,13.0,0.0,direct None / with changes 120,False
 Engerwitzdorf|bus,day,Linz (slow),Neumarkt im Mühlkreis,10.0,0.0,direct 375 / with changes 60,False
-Freistadt|bus,peak,Neumarkt im Mühlkreis,Rohrbach-Berg,7.5,0.0,direct None / with changes 120,False
 Freistadt|bus,peak,Linz,St. Oswald bei Freistadt,2.0,0.0,direct None / with changes 90,False
 Freistadt|bus,peak,Linz,Sandl,11.0,0.0,direct None / with changes 90,False
 Freistadt|bus,peak,Hagenberg im Mühlkreis,Sandl,18.0,0.0,direct None / with changes 120,False
@@ -282,7 +269,6 @@ Ottensheim|bus,day,Goldwörth,Walding,2.0,0.0,direct None / with changes 104,Fal
 Ottensheim|bus,day,Aschach an der Donau,Linz,3.6,0.0,direct 233 / with changes 125,False
 Peuerbach|bus,peak,Raab,Waldkirchen am Wesen,9.0,0.0,direct None / with changes 120,False
 Peuerbach|bus,peak,Waizenkirchen,Waldkirchen am Wesen,4.0,0.0,direct None / with changes 120,False
-Pichl bei Wels|bus,day,Grieskirchen,Meggenhofen,5.0,0.0,direct None / with changes 270,False
 Pichl bei Wels|bus,day,Gunskirchen,Meggenhofen,13.0,0.0,direct None / with changes 300,False
 Prambachkirchen|bus,peak,Eferding,Grieskirchen,9.0,0.0,direct None / with changes 120,False
 Rohrbach-Berg|bus,peak,Freistadt,Neufelden,1.0,0.0,direct None / with changes 120,False
@@ -292,7 +278,6 @@ Schlüßlberg|bus,day,Meggenhofen,Neumarkt im Hausruckkreis,1.0,3.5,direct None 
 Schlüßlberg|bus,day,Gaspoltshofen,Neumarkt im Hausruckkreis,2.5,3.5,direct None / with changes 480,False
 Schlüßlberg|bus,night,Bad Schallerbach,Grieskirchen,3.5,3.5,direct None / with changes 480,False
 Sierning|bus,peak,Bad Hall,St. Marien,17.0,0.0,direct None / with changes 90,False
-Sierning|bus,peak,St. Marien,Steyr,7.0,0.0,direct None / with changes 96,False
 Sierning|bus,day,Piberbach,Steyr,7.0,0.0,direct None / with changes 150,False
 Sierning|bus,night,Bad Hall,Piberbach,17.0,0.0,direct None / with changes 480,False
 St. Florian|bus,peak,Enns,Linz (slow),1.3,0.7,direct None / with changes 120,False

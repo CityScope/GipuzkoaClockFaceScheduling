@@ -4,7 +4,6 @@ Aarau|localrail,47.390860765,8.05261948,Aarau,Aarau,localrail,Aarau,Aarau · Loc
 Baden|bigrail,47.475986615,8.3072278575,Baden,Baden,bigrail,Baden,Baden · National railways,377.0,10,427.0,True,Baden|bigrail
 Basel|bigrail,47.546720882399995,7.589800078000001,Basel SBB,Basel,bigrail,Basel,Basel · National railways,275.0,23,390.0,True,Basel|bigrail
 Beinwil am See|bigrail,47.26776694,8.202305755000001,Beinwil am See,Beinwil am See,bigrail,Beinwil am See,Beinwil am See · National railways,74.0,1,79.0,True,Beinwil am See|bigrail
-Berikon|localrail,47.362059875,8.366369565,Berikon-Widen,Berikon,localrail,Berikon,Berikon · Local railways,155.0,1,160.0,True,Berikon|bus
 Bremgarten|localrail,47.35116279666667,8.345579556666666,Bremgarten,Bremgarten,localrail,Bremgarten,Bremgarten · Local railways,157.0,1,162.0,True,Bremgarten|bus
 Brugg|bigrail,47.481210147999995,8.209439276000001,Brugg AG,Brugg,bigrail,Brugg,Brugg · National railways,325.0,9,370.0,True,Brugg|bigrail
 Bülach|bigrail,47.524120158,8.536034376,Bülach,Bülach,bigrail,Bülach,Bülach · National railways,177.0,6,207.0,True,Bülach|bigrail
@@ -49,7 +48,6 @@ Augst|bus,47.53493861,7.71162349,"Augst BL, Stundeglas",Augst,bus,Augst,Augst ·
 Baden|bus,47.47670837166667,8.307625735833334,"Baden, Bahnhof West",Baden,bus,Baden,Baden · Regional bus,910.0,16,990.0,True,Baden|bigrail
 Beinwil (Freiamt)|bus,47.22942009,8.34289659,"Beinwil (Freiamt), Dorf",Beinwil (Freiamt),bus,Beinwil (Freiamt),Beinwil (Freiamt) · Regional bus,39.0,1,44.0,True,Beinwil (Freiamt)|bus
 Beinwil am See|bus,47.26740729,8.20221592,"Beinwil am See, Bahnhof",Beinwil am See,bus,Beinwil am See,Beinwil am See · Regional bus,16.0,2,26.0,True,Beinwil am See|bigrail
-Berikon|bus,47.362062306,8.36694449,"Berikon-Widen, Bahnhof",Berikon,bus,Berikon,Berikon · Regional bus,119.0,3,134.0,True,Berikon|bus
 Beromünster|bus,47.204394465,8.200554045,"Beromünster, Mooskapelle",Beromünster,bus,Beromünster,Beromünster · Regional bus,131.0,8,171.0,True,Beromünster|bus
 Bettwil|bus,47.29034983,8.26954915,"Bettwil, Oberdorf",Bettwil,bus,Bettwil,Bettwil · Regional bus,16.0,1,21.0,True,Bettwil|bus
 Birmensdorf (ZH)|bus,47.35698891333334,8.438466855,"Birmensdorf ZH, Bahnhof",Birmensdorf (ZH),bus,Birmensdorf (ZH),Birmensdorf (ZH) · Regional bus,263.0,6,293.0,True,Birmensdorf (ZH)|bus

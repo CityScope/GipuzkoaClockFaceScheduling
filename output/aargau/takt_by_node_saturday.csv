@@ -35,12 +35,6 @@ Beinwil am See|bigrail,night,9,"1,29,52",0,1.0
 Beinwil am See|bus,peak,4,3,60,1.0
 Beinwil am See|bus,day,8,3,60,1.0
 Beinwil am See|bus,night,0,,0,0.0
-Berikon|bus,peak,21,"1,31",30,0.7619047619047619
-Berikon|bus,day,39,"1,31",30,0.8205128205128205
-Berikon|bus,night,21,"3,31",0,0.6190476190476191
-Berikon|localrail,peak,32,"0,14,29,45",15,1.0
-Berikon|localrail,day,64,"0,14,29,45",15,1.0
-Berikon|localrail,night,24,"0,14,30,45",15,1.0
 Beromünster|bus,peak,8,"7,23,39",0,1.0
 Beromünster|bus,day,16,"7,39",0,0.8125
 Beromünster|bus,night,7,"20,39",0,0.8571428571428571
@@ -58,7 +52,7 @@ Bottenwil|bus,day,16,"7,46",0,1.0
 Bottenwil|bus,night,1,0,0,1.0
 Bremgarten|bus,peak,27,"0,6,26,31,36,56",0,1.0
 Bremgarten|bus,day,51,"0,6,28,56",0,0.9411764705882353
-Bremgarten|bus,night,15,37,60,0.5333333333333333
+Bremgarten|bus,night,14,37,60,0.5714285714285714
 Bremgarten|localrail,peak,24,"3,20,25,35,49,55",0,1.0
 Bremgarten|localrail,day,48,"3,20,25,35,49,55",0,1.0
 Bremgarten|localrail,night,18,"3,19,26,34,48,56",0,1.0
@@ -185,9 +179,9 @@ Möriken-Wildegg|bus,night,3,52,60,1.0
 Niederweningen|bus,peak,12,"3,31,57",0,1.0
 Niederweningen|bus,day,24,"3,31,57",0,1.0
 Niederweningen|bus,night,8,"0,4,29",0,0.875
-Oberwil-Lieli|bus,peak,31,"7,11,18,30,37,47",0,0.8387096774193549
-Oberwil-Lieli|bus,day,58,"7,12,18,37,49",0,0.8448275862068966
-Oberwil-Lieli|bus,night,10,"6,23,37,53",0,1.0
+Oberwil-Lieli|bus,peak,17,"7,12,37",0,0.8823529411764706
+Oberwil-Lieli|bus,day,35,"7,12,37",0,0.9428571428571428
+Oberwil-Lieli|bus,night,4,"23,54",30,1.0
 Olten|bigrail,peak,72,"5,29,36,49",0,0.6388888888888888
 Olten|bigrail,day,144,"5,29,36,49",0,0.6319444444444444
 Olten|bigrail,night,66,"6,36",30,0.48484848484848486
@@ -206,9 +200,9 @@ Regensdorf|bigrail,night,12,"10,15,42",0,0.75
 Reiden|bus,peak,4,15,60,1.0
 Reiden|bus,day,8,15,60,1.0
 Reiden|bus,night,2,15,0,1.0
-Remetschwil|bus,peak,40,"9,15,21,39,43,47",0,0.9
-Remetschwil|bus,day,80,"9,15,21,39,43,47",0,0.9
-Remetschwil|bus,night,36,"15,46,51",0,0.6944444444444444
+Remetschwil|bus,peak,32,"12,16,21,39,44,51",0,1.0
+Remetschwil|bus,day,64,"12,16,21,39,44,51",0,1.0
+Remetschwil|bus,night,25,"14,42,46,52",0,0.84
 Rheinfelden|bigrail,peak,32,"9,22,38,49,53",0,1.0
 Rheinfelden|bigrail,day,64,"9,22,38,49,53",0,1.0
 Rheinfelden|bigrail,night,33,"9,22,37",0,0.7272727272727273

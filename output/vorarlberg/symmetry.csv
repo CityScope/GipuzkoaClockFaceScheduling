@@ -1,6 +1,7 @@
 gid,band,hands,period,arr_share,dep_share,lines,basis,style
 Bludenz|bigrail,peak,"0,30",30,0.13,0.54,14,National railways + Local railways + Regional bus,dotted
-Bludenz|bigrail,day,"3,33",30,0.31,0.62,18,National railways + Local railways + Regional bus,dotted
+Bludenz|bigrail,day,"3,33",30,0.24,0.62,18,National railways + Local railways + Regional bus,dotted
+Bludenz|bigrail,day,23,60,0.6,0.6,5,National railways + Regional bus,solid
 Bregenz|bigrail,peak,"11,41",30,0.19,0.63,34,National railways + Regional bus,dotted
 Dornbirn|bigrail,peak,"21,51",30,0.24,1.0,5,National railways + Regional bus,dotted
 Dornbirn|bigrail,day,"29,59",30,0.3,0.74,29,National railways + Regional bus,dotted
@@ -18,20 +19,18 @@ Hohenems|bigrail,day,"14,44",30,0.67,1.0,3,National railways + Regional bus,soli
 Klaus|bigrail,day,"14,44",30,0.6,1.0,5,National railways + Regional bus,solid
 Ludesch|bigrail,peak,"15,45",30,0.48,0.86,7,National railways + Regional bus,dotted
 Lustenau|bigrail,day,"0,30",30,0.2,0.4,12,National railways + Regional bus,dotted
-Nenzing|bigrail,peak,"23,53",30,0.54,0.54,5,National railways + Regional bus,solid
-Nenzing|bigrail,peak,"11,41",30,1.0,1.0,2,National railways + Regional bus,solid
-Nenzing|bigrail,day,"20,50",30,0.48,0.68,6,National railways + Regional bus,dotted
-Nenzing|bigrail,day,"10,40",30,1.0,1.0,2,National railways + Regional bus,solid
+Nenzing|bigrail,peak,53,60,0.56,0.56,3,National railways + Regional bus,solid
+Nenzing|bigrail,day,20,60,0.0,1.0,2,National railways + Regional bus,dotted
+Nenzing|bigrail,day,50,60,0.94,1.0,2,National railways + Regional bus,solid
 Rankweil|bigrail,peak,"11,41",30,0.4,0.83,6,National railways + Regional bus,dotted
 Rankweil|bigrail,day,"11,41",30,0.0,0.58,5,Regional bus,dotted
 Alberschwende|bus,peak,20,60,0.47,0.62,3,Regional bus,dotted
 Alberschwende|bus,day,20,60,0.63,0.63,3,Regional bus,solid
 Alberschwende|bus,day,35,60,0.63,0.63,3,Regional bus,solid
 Andelsbuch|bus,day,"13,43",30,0.5,1.0,2,Regional bus,dotted
-Egg|bus,peak,"27,57",30,0.26,0.52,3,Regional bus,dotted
+Egg|bus,peak,"1,31",30,0.26,0.52,3,Regional bus,dotted
 Egg|bus,day,57,60,1.0,1.0,2,Regional bus,solid
-Lingenau|bus,peak,"16,46",30,0.73,0.73,3,Regional bus,solid
+Lingenau|bus,peak,46,60,0.73,0.73,3,Regional bus,solid
 Lingenau|bus,day,45,60,0.67,0.67,3,Regional bus,solid
 Schoppernau|bus,peak,5,60,0.5,0.75,3,Regional bus,dotted
-Thüringen|bus,peak,"24,54",30,0.68,1.0,2,Regional bus,solid
-Thüringen|bus,day,"10,40",30,0.5,0.77,5,Regional bus,solid
+Thüringen|bus,day,40,60,0.76,1.0,2,Regional bus,solid

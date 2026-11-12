@@ -452,26 +452,43 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
 
         groups_ = []                                                  # [hands, weight, [directions], {direction: fit mask}]
         pool = set(cd_)
+        def pulses(d, ch, hs):                                    # hand times at which relation d has a connection
+            Ts = set()
+            for c in ch:
+                if c is not None:
+                    hh = [h for h in hs if fit1(d, c, h)]
+                    if hh:
+                        a_ = int(round(c[0])); Ts.add(a_ + min((h - a_) % 60 for h in hh))
+            return Ts
+
+        skip = set()
         while len(pool) >= 2:
             cands = []
             for h0 in range(30):
-                if any(min((h0 - x) % 30, (x - h0) % 30) < GROUP_SEP for g in groups_ for x in g[0]):
+                if h0 in skip:
                     continue
-                got, sc = best_for((h0, h0 + 30), pool)
+                # hands >= GROUP_SEP min (mod 60) from those of the symmetries already found (an hourly symmetry leaves
+                # room for another one 30 min later)
+                allowed = tuple(h for h in (h0, h0 + 30) if all(min((h - x) % 60, (x - h) % 60) >= GROUP_SEP for g in groups_ for x in g[0]))
+                if not allowed:
+                    continue
+                got, sc = best_for(allowed, pool)
                 if len(got) < 2:
                     continue
-                cands.append((sc, h0, got))
+                cands.append((sc, h0, got, allowed))
             if not cands:
                 break
             top = max(c[0] for c in cands)
             # period: both hands (every 30 min) when each of them carries >= 20 % of the fitting changes, else the busier one
-            sc, h0, got = next(c for c in cands if c[0] == top)
+            sc, h0, got, allowed = next(c for c in cands if c[0] == top)
             cands = [c for c in cands if c[0][0] == top[0]]          # the same relations (weight); changes may differ
             nh = [sum(nfit(choose(d, (h,))) for d in got) for h in (h0, h0 + 30)]
             two = min(nh) >= 0.2 * sum(nh)
             pick = []
-            for sc, h0, got in cands:
-                if two:
+            for sc, h0, got, allowed in cands:
+                if len(allowed) == 1:
+                    hs = allowed
+                elif two:
                     hs = (h0, h0 + 30)
                 else:
                     nh_ = [sum(nfit(choose(d, (h,))) for d in got) for h in (h0, h0 + 30)]
@@ -491,6 +508,19 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             alt = [z for z in pick if z[0][1] > best[0][1] and set(z[2]) == set(best[2])
                    and all(th(d, f) <= hb[d] + max(3.0, 0.1 * hb[d]) for d, f in z[2].items())]
             _, hs, got = max(alt, key=lambda z: (z[0][1], z[0][0], z[0][2])) if alt else best
+            # the hands follow the headway: two hands (every 30 min) only if some connection is met every 30 min at
+            # >= 75 % of the pulses; otherwise one hand (60 / 120 min), the busier one -- the connections at the other
+            # hand stay in the pool and may make their own symmetry there
+            if len(hs) == 2:
+                hw2 = [_clock_hw(pulses(d, f, hs), hs, wins) for d, f in got.items()]
+                if not any(h_ == 30 for h_ in hw2):
+                    nh1 = [sum(nfit(choose(d, (h,))) for d in got) for h in hs]
+                    h1 = (hs[0],) if nh1[0] >= nh1[1] else (hs[1],)
+                    g1, _ = best_for(h1, pool)
+                    if len(g1) < 2:
+                        skip.add(hs[0] % 30)
+                        continue
+                    hs, got = h1, g1
             groups_.append([list(hs), sum(cd_[d]["w"] for d in got), list(got), got])
             pool -= set(got)
         for d in pool:                                                # left over (in no symmetry): coordinated only if some symmetry
@@ -681,6 +711,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
         key = (enode[e], nbk, sy_)
         rec = edl.setdefault(key, dict(i=mem_l.index(enode[e]) if enode[e] in mem_l else -1, nb=str(node.label.get(nbk, nbk)), sy=sy_, wk=wk_,
                                        via=None if wk_ is None else str(node.label.get(enode[e], enode[e])),
+                                       vid=None if wk_ is None else str(groups.get(enode[e], enode[e])),
                                        la=round(float(node.lat[nbk]), 5) if nbk in node.index else None,
                                        lo=round(float(node.lon[nbk]), 5) if nbk in node.index else None, ln={}, g={}, keys=[]))
         rec["keys"].append(e)
@@ -703,7 +734,7 @@ def _node_conn(gid, memset, groups, node, A, D, Dall, wk, VMAX, VMIN, wins, bm):
             rec["g"][gi] = [ti, to, sorted({v[1] for v in ins.values()} | {v[1] for v in outs.values()}),
                             round(float(np.median(wks))) if wks else 0]
     net = dict(st=stl, wk=wkl, ed=[[r_["i"], r_["nb"], r_["sy"], r_["la"], r_["lo"], sorted(([l_, h_] for l_, h_ in r_["ln"].items()), key=lambda z: z[1]),
-                                    {str(k_): v_ for k_, v_ in r_["g"].items()}, rh(r_.get("hi", 999.0)), rh(r_.get("ho", 999.0)), r_["wk"], r_["via"]]
+                                    {str(k_): v_ for k_, v_ in r_["g"].items()}, rh(r_.get("hi", 999.0)), rh(r_.get("ho", 999.0)), r_["wk"], r_["via"], r_["vid"]]
                                    for r_ in edl.values() if r_["la"] is not None and (r_["wk"] is None or r_["g"])])
     return dict(ep=ep, rp=rp, sym=sym, ce=ce, trips=strips, net=net)
 

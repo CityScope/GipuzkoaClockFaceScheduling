@@ -503,7 +503,7 @@ let map;
    // (bus station, local-rail station) needs that walk for its changes
    const mainI=Math.max(0,net.st.findIndex(x=>x[0]===id)),wkTo=(i)=>i===mainI||i<0?0:((net.wk.find(w=>(w[0]===i&&w[1]===mainI)||(w[1]===i&&w[0]===mainI))||[0,0,0])[2]);
    const spk={};for(const e of net.ed){if(e[9]!=null&&!(ys.length&&e[6][gk]))continue;   // walk directions: only when used in the selected symmetry
-    const k=e[9]!=null?e[1]+'¦w':e[1];const s=spk[k]||(spk[k]={nb:e[1],wk:e[9],via:e[10],sy:e[2],la:e[3],lo:e[4],ln:{},in:[],out:[],hwi:null,hwo:null,used:new Set(),fh:999});
+    const k=e[9]!=null?e[1]+'¦w':e[1];const s=spk[k]||(spk[k]={nb:e[1],wk:e[9],via:e[10],vid:e[11],sy:e[2],la:e[3],lo:e[4],ln:{},in:[],out:[],hwi:null,hwo:null,used:new Set(),fh:999});
     s.fh=Math.min(s.fh,e[7]??999,e[8]??999);
     for(const [l,h_] of e[5])spk[k].ln[l]=Math.min(spk[k].ln[l]??999,h_);
     const g=ys.length?e[6][gk]:null;if(g){if(g[0]){s.in.push(...g[0][0]);s.hwi=g[0][2];}if(g[1]){s.out.push(...g[1][0]);s.hwo=g[1][2];}g[2].forEach(x=>s.used.add(x));s.wch=Math.max(s.wch||0,g[3]||0);}s.wkc=Math.min(s.wkc??99,wkTo(e[0]));}
@@ -520,7 +520,7 @@ let map;
     // numbers: the REAL timetable (all services, no arrival left out): mean over every symmetry minute in the band of the minutes
     // from the last arrival before it and to the next departure after it
     let fvi=null,fvo=null;
-    if(hs.length){const T_=D[DAY],TT=(T_.tt||{})[id]||[];
+    if(hs.length){const T_=D[DAY],TT=(T_.tt||{})[s.vid||id]||[];   // a direction served at a nearby stop: that stop's timetable
      const am=TT.filter(r=>r[5]===1&&T_.ttn[r[2]]===s.nb).map(r=>r[0]).sort((u,v)=>u-v),dm=TT.filter(r=>r[5]===0&&T_.ttn[r[2]]===s.nb).map(r=>r[0]).sort((u,v)=>u-v);
      const occ=[];for(const [a0,b0] of CFG.periods[PER])for(let t=Math.floor(a0/Pp)*Pp;t<b0+Pp;t+=Pp)for(const h_ of hs){const T0=t+(h_%Pp);if(T0>=a0&&T0<b0)occ.push(T0);}
      const mean=(v)=>v.length?Math.round(v.reduce((x,y)=>x+y,0)/v.length):null;

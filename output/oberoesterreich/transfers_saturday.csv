@@ -49,7 +49,7 @@ Leonding|bigrail,night,Hörsching,Linz · Donau Hbf,10.1,1.9,direct None / with 
 Leonding|bigrail,night,Linz · Donau Hbf,Marchtrenk,6.1,1.9,direct None / with changes 480,False
 Leonding|bigrail,night,Linz · Donau Hbf,Wilhering,0.6,1.9,direct None / with changes 480,False
 Linz|bigrail,peak,Amstetten,Pregarten,11.0,0.0,direct None / with changes 60,False
-Linz|bigrail,peak,Pregarten,Wels,2.6,0.0,direct None / with changes 52,False
+Linz|bigrail,peak,Pregarten,Wels,2.0,0.0,direct None / with changes 60,False
 Linz|bigrail,peak,Enns,Traun,0.8,0.0,direct None / with changes 60,False
 Linz|bigrail,peak,Pregarten,Sankt Valentin,8.0,0.0,direct None / with changes 60,False
 Linz|bigrail,peak,Sankt Valentin,Traun,9.0,0.0,direct None / with changes 60,False
@@ -58,7 +58,6 @@ Linz|bigrail,peak,Linz · Donau Rudolfstr…,Traun,2.4,1.1,direct None / with ch
 Linz|bigrail,peak,Linz · Donau Rudolfstr…,Pregarten,2.4,1.1,direct None / with changes 60,False
 Linz|bigrail,peak,Linz · Donau Rudolfstr…,Sankt Valentin,0.9,1.1,direct None / with changes 60,False
 Linz|bigrail,peak,Linz · Donau solarCity,Pregarten,4.9,1.1,direct None / with changes 90,False
-Linz|bigrail,peak,Linz · Donau Rudolfstr…,Wilhering,2.0,0.0,direct None / with changes 45,False
 Linz|bigrail,peak,Leonding,Pregarten,5.3,3.7,direct None / with changes 60,False
 Linz|bigrail,peak,Engerwitzdorf,Enns,4.3,3.7,direct None / with changes 60,False
 Linz|bigrail,peak,Amstetten,Hellmonsödt (fast),10.3,3.7,direct None / with changes 52,False
@@ -210,12 +209,8 @@ Sierning|bus,peak,St. Marien,Steyr,9.0,0.0,direct None / with changes 120,False
 Sierning|bus,day,St. Marien,Steyr,4.0,0.0,direct None / with changes 180,False
 Stadl-Paura|bus,day,Bad Wimsbach-Neydharting,Lambach,0.0,0.0,direct None / with changes 165,False
 Walding|bigrail|1,peak,Feldkirchen an der Donau,Linz · Donau Urfahr Bf,5.1,0.9,direct None / with changes 60,False
-Linz|bigrail|1,peak,Linz · Donau JKU I Uni…,Walding,3.2,4.0,direct None / with changes 60,False
-Linz|bigrail|1,peak,Linz · Donau Hbf,Walding,3.0,4.0,direct None / with changes 60,False
 Linz|bigrail|1,day,Linz · Donau JKU I Uni…,Walding,2.0,4.0,direct None / with changes 38,False
 Linz|bigrail|1,day,Linz · Donau Hbf,Walding,3.0,4.0,direct None / with changes 38,False
-Linz|localrail|2,peak,Linz · Donau JKU I Uni…,Walding,3.2,4.0,direct None / with changes 60,False
-Linz|localrail|2,peak,Linz · Donau Hbf,Walding,3.0,4.0,direct None / with changes 60,False
 Linz|localrail|2,day,Linz · Donau JKU I Uni…,Walding,2.0,4.0,direct None / with changes 38,False
 Linz|localrail|2,day,Linz · Donau Hbf,Walding,3.0,4.0,direct None / with changes 38,False
 Ottensheim|bus|1,day,Linz,Ottensheim · Bf,1.4,3.6,direct None / with changes 60,False

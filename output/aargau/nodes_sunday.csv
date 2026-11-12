@@ -4,7 +4,6 @@ Aarau|localrail,47.390860765,8.05261948,Aarau,Aarau,localrail,Aarau,Aarau · Loc
 Baden|bigrail,47.475986615,8.3072278575,Baden,Baden,bigrail,Baden,Baden · National railways,277.0,9.0,322.0,True,Baden|bigrail
 Basel|bigrail,47.546720882399995,7.589800078000001,Basel SBB,Basel,bigrail,Basel,Basel · National railways,254.0,26.0,384.0,True,Basel|bigrail
 Beinwil am See|bigrail,47.26776694,8.202305755000001,Beinwil am See,Beinwil am See,bigrail,Beinwil am See,Beinwil am See · National railways,70.0,1.0,75.0,True,Beinwil am See|bigrail
-Berikon|localrail,47.362059875,8.366369565,Berikon-Widen,Berikon,localrail,Berikon,Berikon · Local railways,113.0,1.0,118.0,True,Berikon|bus
 Bremgarten|localrail,47.35116279666667,8.345579556666666,Bremgarten,Bremgarten,localrail,Bremgarten,Bremgarten · Local railways,95.0,1.0,100.0,True,Bremgarten|bus
 Brugg|bigrail,47.481210147999995,8.209439276000001,Brugg AG,Brugg,bigrail,Brugg,Brugg · National railways,274.0,10.0,324.0,True,Brugg|bigrail
 Bülach|bigrail,47.524120158,8.536034376,Bülach,Bülach,bigrail,Bülach,Bülach · National railways,75.0,6.0,105.0,True,Bülach|bigrail
@@ -49,7 +48,6 @@ Augst|bus,47.53493861,7.71162349,"Augst BL, Stundeglas",Augst,bus,Augst,Augst ·
 Baden|bus,47.47670837166667,8.307625735833334,"Baden, Bahnhof West",Baden,bus,Baden,Baden · Regional bus,455.0,18.0,545.0,True,Baden|bigrail
 Beinwil (Freiamt)|bus,47.22942009,8.34289659,"Beinwil (Freiamt), Dorf",Beinwil (Freiamt),bus,Beinwil (Freiamt),Beinwil (Freiamt) · Regional bus,0.0,0.0,0.0,True,Beinwil (Freiamt)|bus
 Beinwil am See|bus,47.26740729,8.20221592,"Beinwil am See, Bahnhof",Beinwil am See,bus,Beinwil am See,Beinwil am See · Regional bus,14.0,2.0,24.0,True,Beinwil am See|bigrail
-Berikon|bus,47.362062306,8.36694449,"Berikon-Widen, Bahnhof",Berikon,bus,Berikon,Berikon · Regional bus,88.0,3.0,103.0,True,Berikon|bus
 Beromünster|bus,47.204394465,8.200554045,"Beromünster, Mooskapelle",Beromünster,bus,Beromünster,Beromünster · Regional bus,33.0,7.0,68.0,True,Beromünster|bus
 Bettwil|bus,47.29034983,8.26954915,"Bettwil, Oberdorf",Bettwil,bus,Bettwil,Bettwil · Regional bus,14.0,1.0,19.0,True,Bettwil|bus
 Birmensdorf (ZH)|bus,47.35698891333334,8.438466855,"Birmensdorf ZH, Bahnhof",Birmensdorf (ZH),bus,Birmensdorf (ZH),Birmensdorf (ZH) · Regional bus,136.0,4.0,156.0,True,Birmensdorf (ZH)|bus
@@ -78,10 +76,10 @@ Möhlin|bus,47.56156682333333,7.833168543333334,"Möhlin, Bahnhof",Möhlin,bus,M
 Mönthal|bus,47.51709874,8.14441383,"Mönthal, Unterdorf",Mönthal,bus,Mönthal,Mönthal · Regional bus,15.0,1.0,20.0,True,Mönthal|bus
 Möriken-Wildegg|bus,47.415874265,8.162110635000001,"Wildegg, Bahnhof/Talstrasse",Möriken-Wildegg,bus,Möriken-Wildegg,Möriken-Wildegg · Regional bus,13.0,3.0,28.0,True,Möriken-Wildegg|bus
 Niederweningen|bus,47.5111634025,8.3698797375,"Niederweningen, Bahnhof",Niederweningen,bus,Niederweningen,Niederweningen · Regional bus,51.0,3.0,66.0,True,Niederweningen|bus
-Oberwil-Lieli|bus,47.33716896666667,8.386399003333333,"Oberwil-Lieli, Dreispitz",Oberwil-Lieli,bus,Oberwil-Lieli,Oberwil-Lieli · Regional bus,82.0,1.0,87.0,True,Oberwil-Lieli|bus
+Oberwil-Lieli|bus,47.33716896666667,8.386399003333333,"Oberwil-Lieli, Dreispitz",Oberwil-Lieli,bus,Oberwil-Lieli,Oberwil-Lieli · Regional bus,32.0,1.0,37.0,True,Oberwil-Lieli|bus
 Pratteln|bus,47.52230089,7.6918605499999995,"Pratteln, Bahnhof Süd",Pratteln,bus,Pratteln,Pratteln · Regional bus,113.0,5.0,138.0,True,Pratteln|bigrail
 Reiden|bus,47.24149699,7.96908963,"Reiden, Bahnhof",Reiden,bus,Reiden,Reiden · Regional bus,17.0,2.0,27.0,True,Reiden|bus
-Remetschwil|bus,47.407258286,8.327844418000002,"Remetschwil, Dorf",Remetschwil,bus,Remetschwil,Remetschwil · Regional bus,160.0,3.0,175.0,True,Remetschwil|bus
+Remetschwil|bus,47.407258286,8.327844418000002,"Remetschwil, Dorf",Remetschwil,bus,Remetschwil,Remetschwil · Regional bus,121.0,3.0,136.0,True,Remetschwil|bus
 Rheinfelden|bus,47.551305195,7.791869995000001,"Rheinfelden, Bahnhof",Rheinfelden,bus,Rheinfelden,Rheinfelden · Regional bus,32.0,3.0,47.0,True,Rheinfelden|bigrail
 Root|bus,47.121407925,8.395106675000001,"Gisikon-Root, Bahnhof",Root,bus,Root,Root · Regional bus,0.0,5.0,25.0,True,Root|bus
 Rottenschwil|bus,47.31410463,8.36236308,"Rottenschwil, Kapelle",Rottenschwil,bus,Rottenschwil,Rottenschwil · Regional bus,45.0,2.0,55.0,True,Rottenschwil|bus
