@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Why Symmetry</title>
-<meta name="description" content="A grid of four lines: coordination at one node, a symmetric timetable that is not clock-face, and a clock-face timetable.">
+<title>Integrated Clock-Face</title>
+<meta name="description" content="An eight-node network: departures at irregular minutes, a clock-face timetable, and an integrated clock-face timetable where all lines meet at the hubs.">
 <style>
-:root{--ink:#1d2433;--mute:#5d6678;--line:#dfe3ea;--bg:#f6f7fa;--card:#fff;--soft:#eef1f6;--link:#1d4ed8;--ok:#16a34a;--bad:#dc2626;--rail:#d32f2f;--rail2:#2e7d32}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--soft:#262e3d;--link:#93b4ff;--ok:#22c55e;--bad:#f87171;--rail:#ef5350;--rail2:#4caf50}}
-:root[data-theme="dark"]{--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--soft:#262e3d;--link:#93b4ff;--ok:#22c55e;--bad:#f87171;--rail:#ef5350;--rail2:#4caf50}
+:root{--ink:#1d2433;--mute:#5d6678;--line:#dfe3ea;--bg:#f6f7fa;--card:#fff;--soft:#eef1f6;--link:#1d4ed8;--ok:#16a34a;--bad:#dc2626;--warn:#d97706;--rail:#d32f2f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--soft:#262e3d;--link:#93b4ff;--ok:#22c55e;--bad:#f87171;--warn:#fbbf24;--rail:#ef5350}}
+:root[data-theme="dark"]{--ink:#e8ebf2;--mute:#a3abba;--line:#2e3646;--bg:#161b25;--card:#1f2633;--soft:#262e3d;--link:#93b4ff;--ok:#22c55e;--bad:#f87171;--warn:#fbbf24;--rail:#ef5350}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 main{max-width:820px;margin:0 auto;padding:22px 16px 40px}
@@ -18,6 +18,7 @@ h1{font-size:24px;margin:6px 0 12px}
 .tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 14px;font:600 14px system-ui,sans-serif;cursor:pointer}
 .tabs button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .stage{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.cap{padding:10px 16px;font-size:14.5px;border-bottom:1px solid var(--line)}
 svg{display:block;width:100%;height:auto;background:var(--soft)}
 svg text{font-family:system-ui,sans-serif}
 .bar{padding:12px 16px 14px;display:grid;gap:6px}
@@ -26,19 +27,20 @@ svg text{font-family:system-ui,sans-serif}
 .ok{color:var(--ok)}.bad{color:var(--bad)}
 .tt{font:600 15px ui-monospace,SFMono-Regular,Menlo,monospace}
 .tt span{display:inline-block;margin-right:12px}
-.lab{color:var(--mute);font-size:13px;min-width:70px}
+.lab{color:var(--mute);font-size:13px;min-width:90px}
 </style>
 </head>
 <body>
 <main>
 <a href="../../index.html">← back</a>
-<h1>Why symmetry</h1>
-<div class="tabs"><button data-s="0" class="on">Coordination</button><button data-s="1">Symmetric</button><button data-s="2">Clock-face</button></div>
+<h1>Clock-face and integrated clock-face</h1>
+<div class="tabs"><button data-s="0" class="on">No clock-face</button><button data-s="1">Clock-face</button><button data-s="2">Integrated clock-face</button></div>
 <div class="stage">
-<svg id="sv" viewBox="0 0 700 560" role="img" aria-label="Four lines crossing at four hubs, trains in both directions"></svg>
+<div class="cap" id="cap"></div>
+<svg id="sv" viewBox="0 0 760 600" role="img" aria-label="Network of eight stations A to H with trains in both directions on every link"></svg>
 <div class="bar">
-<div class="r"><span class="lab">Changes</span><span class="k" id="score"></span></div>
-<div class="r"><span class="lab">From A</span><span class="tt" id="tt"></span><span class="k" id="mem"></span></div>
+<div class="r"><span class="lab">Timed changes</span><span class="k" id="score"></span></div>
+<div class="r"><span class="lab">A → B leaves</span><span class="tt" id="tt"></span><span class="k" id="mem"></span></div>
 </div>
 </div>
 </main>
@@ -47,68 +49,79 @@ const NS='http://www.w3.org/2000/svg',sv=document.getElementById('sv');
 const el=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);(p||sv).appendChild(e);return e;};
 const mod=(x,n)=>((x%n)+n)%n,mm=(x)=>':'+String(mod(Math.round(x),60)).padStart(2,'0');
 const hm=(x)=>{const t=420+x;return Math.floor(t/60)+':'+String(mod(Math.round(t),60)).padStart(2,'0');};   // minute 0 = 7:00
-// four lines in a grid ("#"): two horizontal, two vertical; they cross at the hubs A B C D and continue beyond them.
-// trains run straight through; at each hub they stop 6' (arrive 3' before their pass time, leave 3' after).
-// a change between the two crossing lines is timed when both trains are at the hub together (pass times within 4').
-const N={A:[230,180],B:[470,180],C:[470,390],D:[230,390]},X0=40,X1=660,Y0=30,Y1=540,DW=6,EXT=10;
-const LINES=[{id:'H1',a:'A',b:'B',c:'var(--rail)'},{id:'H2',a:'D',b:'C',c:'var(--rail)'},{id:'V1',a:'A',b:'D',c:'var(--rail2)'},{id:'V2',a:'B',b:'C',c:'var(--rail2)'}];
-// per scene: period, travel time between the two hubs of each line, pass time of the forward train at a and of the backward train at b
-const SC=[
- {per:60,hub:{A:0},L:{H1:{tt:17,f:0,b:37},V1:{tt:23,f:0,b:31},H2:{tt:26,f:12,b:45},V2:{tt:19,f:50,b:20}}},
- {per:86,hub:{A:0,B:43,C:0,D:43},L:{H1:{tt:37,f:0,b:43},V1:{tt:37,f:0,b:43},H2:{tt:37,f:43,b:0},V2:{tt:37,f:43,b:0}}},
- {per:60,hub:{A:0,B:30,C:0,D:30},L:{H1:{tt:24,f:0,b:30},V1:{tt:24,f:0,b:30},H2:{tt:24,f:30,b:0},V2:{tt:24,f:30,b:0}}}
-];
+// network of Figure 13 (Castroviejo Bravo): link travel times now -> adjusted for the integrated clock-face timetable
+const N={A:[110,110],B:[330,170],C:[650,110],D:[170,320],E:[550,340],F:[350,430],G:[170,520],H:[610,520]};
+const SIDE={A:'n',B:'n',C:'n',D:'w',E:'e',F:'s',G:'s',H:'s'};   // where each station's label goes
+const E=[['A','B',42,45],['A','D',40,45],['B','C',63,60],['B','D',36,30],['B','E',49,60],['C','E',71,60],
+         ['D','F',39,30],['D','G',61,60],['E','F',64,60],['E','H',58,60],['F','G',30,30],['F','H',72,60],['G','H',93,90]];
+// integrated: the minute at which all trains are in each hub (A: two hubs, its links take 45')
+const HUB={A:[15,45],B:[30],C:[30],D:[0],E:[30],F:[30],G:[0],H:[30]};
+const LC=240,DW=6,TOL=4;          // animation cycle 4 h; trains stop 6' (pass time +-3'); a change is timed if both trains are in the station together
+const IRR=[[0,52,119,181],[0,67,121,186],[0,58,113,177],[0,63,128,171],[0,49,117,183]];
+const CAP=['Each line leaves at different minutes every hour: hard to remember, and changes work only by chance.',
+ 'Each line leaves at the same minute every hour (clock-face): easy to remember, but changes still work only by chance.',
+ 'Integrated clock-face: travel times adjusted to 30′, 60′ or 90′ (45′ at A), so all trains meet in every hub at the same minutes and every change works.'];
+const deg={};for(const [a,b] of E){deg[a]=(deg[a]||0)+1;deg[b]=(deg[b]||0)+1;}
+const TOT=Object.values(deg).reduce((s,d)=>s+d*(d-1),0);
 let T=0,last=0,dyn=null;
-function build(i){sv.innerHTML='';T=0;const sc=SC[i],per=sc.per;
+function build(i){sv.innerHTML='';T=0;
  document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on',+b.dataset.s===i));
- // trains: path end -> first hub -> second hub -> end, with their pass times at the hubs
+ document.getElementById('cap').textContent=CAP[i];
+ // trains: per link and direction, the pass times at its first station within the 4-hour cycle
  const tr=[];
- for(const l of LINES){const s=sc.L[l.id],[ax,ay]=N[l.a],[bx,by]=N[l.b],hz=ay===by;
-  const ea=hz?[X0,ay]:[ax,Y0],eb=hz?[X1,by]:[bx,Y1];
-  const pf={[l.a]:s.f,[l.b]:s.f+s.tt+DW},pb={[l.b]:s.b,[l.a]:s.b+s.tt+DW};
-  tr.push({l,dir:1,pts:[ea,N[l.a],N[l.b],eb],tt:s.tt,p0:s.f,pass:pf,c:l.c});
-  tr.push({l,dir:-1,pts:[eb,N[l.b],N[l.a],ea],tt:s.tt,p0:s.b,pass:pb,c:l.c});}
- // changes at each hub between the crossing lines: 2 arriving directions x 2 leaving directions, both ways = 8
+ E.forEach(([a,b,t0,t1],j)=>{const tt=i===2?t1:t0;
+  for(const [x,y,s] of [[a,b,0],[b,a,1]]){let p;
+   if(i===2)p=x!=='A'?[0,60,120,180].map(k=>HUB[x][0]+k):[0,60,120,180].map(k=>mod(HUB[y][0]-tt,60)+k);
+   else{const f=mod(j*23+7+s*31,60);p=(i===1?[0,60,120,180]:IRR[(j+s)%5]).map(k=>f+k);}
+   tr.push({e:j,x,y,tt,p,pts:[N[x],N[y]]});}});
+ // timed changes at each station: arriving on one link, leaving on another; every arrival within 4' of a departure
  const res={};let good=0;
- for(const n of Object.keys(N)){const here=tr.filter(t=>n in t.pass);let ok=0;
-  for(const x of here)for(const y of here)if(x.l!==y.l){const d=mod(y.pass[n]-x.pass[n]+per/2,per)-per/2;if(Math.abs(d)<=4)ok++;}
+ for(const n of Object.keys(N)){let ok=0;
+  for(const a of tr.filter(t=>t.y===n))for(const d of tr.filter(t=>t.x===n&&t.e!==a.e))
+   if(a.p.every(q=>d.p.some(r=>Math.abs(mod(r-(q+a.tt)+LC/2,LC)-LC/2)<=TOL)))ok++;
   res[n]=ok;good+=ok;}
- const sEl=document.getElementById('score');sEl.textContent=`${good} / 32`;sEl.className='k '+(good===32?'ok':'bad');
- const d0=sc.L.H1.f+DW/2;document.getElementById('tt').innerHTML=[0,1,2,3,4].map(k=>`<span>${hm(d0+k*per)}</span>`).join('');
- const mEl=document.getElementById('mem');mEl.textContent=per===60?'✓':'✗';mEl.className='k '+(per===60?'ok':'bad');
- const gL=el('g',{}),gT=el('g',{}),gN=el('g',{});
- for(const l of LINES){const t=tr.find(x=>x.l===l),p=t.pts;
-  el('polyline',{points:p.map(q=>q.join(',')).join(' '),fill:'none',stroke:l.c,'stroke-width':6,'stroke-linecap':'round',opacity:.3},gL);
-  const [ax,ay]=N[l.a],[bx,by]=N[l.b],hz=ay===by;
-  el('text',{x:(ax+bx)/2+(hz?0:-14),y:(ay+by)/2+(hz?-14:6),'text-anchor':hz?'middle':'end','font-size':18,'font-weight':800,fill:'var(--ink)'},gL).textContent=sc.L[l.id].tt+'′';}
- for(const t of tr)t.r=el('rect',{width:30,height:12,rx:4,fill:t.c,stroke:'var(--card)','stroke-width':1.5},gT);
+ const sEl=document.getElementById('score');sEl.textContent=`${good} / ${TOT}`;sEl.className='k '+(good===TOT?'ok':'bad');
+ const ab=tr.find(t=>t.x==='A'&&t.y==='B');
+ document.getElementById('tt').innerHTML=ab.p.map(q=>`<span>${hm(q)}</span>`).join('');
+ const mEl=document.getElementById('mem');mEl.textContent=i?'✓ same minute':'✗';mEl.className='k '+(i?'ok':'bad');
+ const gL=el('g',{}),gT=el('g',{}),gP=el('g',{}),gN=el('g',{});   // links, trains, travel-time pills, stations
+ E.forEach(([a,b,t0,t1])=>{const [ax,ay]=N[a],[bx,by]=N[b];
+  el('line',{x1:ax,y1:ay,x2:bx,y2:by,stroke:'var(--rail)','stroke-width':6,'stroke-linecap':'round',opacity:.3},gL);
+  const mx=(ax+bx)/2,my=(ay+by)/2,pl=el('rect',{rx:11,height:22,y:my-11,fill:'var(--card)',stroke:'var(--line)'},gP);
+  const tx=el('text',{x:mx,y:my+5.5,'text-anchor':'middle','font-size':15,'font-weight':800,fill:'var(--ink)'},gP);
+  tx.textContent=(i===2?t1:t0)+'′';
+  if(i===2&&t1!==t0){const s=el('tspan',{'font-size':12,'font-weight':600,fill:t1>t0?'var(--warn)':'var(--ok)',dx:3},tx);s.textContent=(t1>t0?'+':'−')+Math.abs(t1-t0);}
+  const w=tx.getComputedTextLength()+16;pl.setAttribute('x',mx-w/2);pl.setAttribute('width',w);});
+ for(const t of tr)t.r=el('rect',{width:24,height:10,rx:3,fill:'var(--rail)',stroke:'var(--card)','stroke-width':1.5,opacity:0},gT);
  const hubs=[];
  for(const n of Object.keys(N)){const [x,y]=N[n],g=el('g',{transform:`translate(${x},${y})`},gN);
-  const ring=el('circle',{r:38,fill:'none','stroke-width':5,opacity:0},g);
-  el('circle',{r:29,fill:'var(--card)',stroke:'var(--ink)','stroke-width':2.2},g);
-  for(let k=0;k<12;k++){const a=k/12*2*Math.PI;el('line',{x1:Math.sin(a)*24,y1:-Math.cos(a)*24,x2:Math.sin(a)*28,y2:-Math.cos(a)*28,stroke:'var(--mute)','stroke-width':1.2},g);}
-  const hh=sc.hub[n]==null?null:el('line',{x1:0,y1:0,x2:0,y2:-23,stroke:'var(--ink)','stroke-width':5,'stroke-linecap':'round'},g);
-  const mh=el('line',{x1:0,y1:0,x2:0,y2:-25,stroke:'var(--bad)','stroke-width':2.2,'stroke-linecap':'round'},g);
+  const ring=el('circle',{r:33,fill:'none','stroke-width':5,opacity:0},g);
+  el('circle',{r:25,fill:'var(--card)',stroke:'var(--ink)','stroke-width':2.2},g);
+  for(let k=0;k<12;k++){const a=k/12*2*Math.PI;el('line',{x1:Math.sin(a)*20,y1:-Math.cos(a)*20,x2:Math.sin(a)*24,y2:-Math.cos(a)*24,stroke:'var(--mute)','stroke-width':1.2},g);}
+  if(i===2)for(const h of HUB[n]){const b=h/60*2*Math.PI;el('line',{x1:0,y1:0,x2:Math.sin(b)*19,y2:-Math.cos(b)*19,stroke:'var(--ink)','stroke-width':4.5,'stroke-linecap':'round'},g);}
+  const mh=el('line',{x1:0,y1:0,x2:0,y2:-21,stroke:'var(--bad)','stroke-width':2,'stroke-linecap':'round'},g);
   el('circle',{r:3,fill:'var(--ink)'},g);
-  const sx=x<350?-1:1,sy=y<285?-1:1,tx=sx*44,ty=sy*44;
-  const lab=el('text',{x:tx,y:ty+(sy<0?-14:6),'text-anchor':sx<0?'end':'start','font-size':16,'font-weight':800,fill:'var(--ink)'},g);
-  el('text',{x:tx,y:ty+(sy<0?6:26),'text-anchor':sx<0?'end':'start','font-size':15,'font-weight':800,fill:res[n]===8?'var(--ok)':'var(--bad)'},g).textContent=`${res[n]}/8`;
-  hubs.push({n,mh,hh,ring,lab});}
- for(const t of tr){t.lens=[0,1,2].map(k=>Math.hypot(t.pts[k+1][0]-t.pts[k][0],t.pts[k+1][1]-t.pts[k][1]));}
- dyn=(m)=>{
-  for(const t of tr){   // timeline: EXT to the first hub, DW stop, tt, DW stop, EXT to the end
-   const st=t.p0-DW/2-EXT,u=mod(m-st,per),seq=[[0,EXT],[null,DW],[1,t.tt],[null,DW],[2,EXT]];let acc=0,pos=null,seg=0;
-   for(const [k,du] of seq){if(u<=acc+du){if(k===null){const hub=seg===1?1:2;pos=t.pts[hub];}else{const f=(u-acc)/du,a=t.pts[k],b=t.pts[k+1];pos=[a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f];}break;}acc+=du;if(k!==null)seg=k+1;}
+  const need=deg[n]*(deg[n]-1),sd=SIDE[n];
+  const lb=el('g',{},g),pr=el('rect',{rx:13,height:26,fill:'var(--ink)'},lb);
+  const t1=el('text',{y:5.5,'font-size':15,'font-weight':800,fill:'var(--bg)'},lb);t1.textContent=n+(i===2?'  '+HUB[n].map(mm).join(' '):'');
+  const t2=el('tspan',{dx:8,'font-size':13,fill:res[n]===need?'var(--ok)':'var(--bad)'},t1);t2.textContent=`${res[n]}/${need}`;
+  const w=t1.getComputedTextLength()+22;t1.setAttribute('x',-w/2+11);pr.setAttribute('x',-w/2);pr.setAttribute('width',w);pr.setAttribute('y',-13);
+  const [lx,ly]=sd==='n'?[0,-50]:sd==='s'?[0,50]:sd==='w'?[-38-w/2,0]:[38+w/2,0];
+  lb.setAttribute('transform',`translate(${lx},${ly})`);
+  hubs.push({n,mh,ring});}
+ dyn=(m)=>{const at={};
+  for(const t of tr){let pos=null;
+   for(const q of t.p){const u=mod(m-(q-DW/2),LC);if(u>t.tt+DW)continue;
+    if(u<=DW){pos=t.pts[0];(at[t.x]=at[t.x]||new Set()).add(t.e);}
+    else if(u>=t.tt){pos=t.pts[1];(at[t.y]=at[t.y]||new Set()).add(t.e);}
+    else{const f=(u-DW)/(t.tt-DW),[a,b]=t.pts;pos=[a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f];}
+    break;}
    if(!pos){t.r.setAttribute('opacity',0);continue;}
-   const a=t.pts[1],b=t.pts[2],ang=Math.atan2(b[1]-a[1],b[0]-a[0])*180/Math.PI,ox=-(b[1]-a[1]),oy=(b[0]-a[0]),L=Math.hypot(ox,oy);
-   t.r.setAttribute('opacity',1);t.r.setAttribute('transform',`translate(${pos[0]+ox/L*8},${pos[1]+oy/L*8}) rotate(${ang}) translate(-15,-6)`);}
-  for(const hb of hubs){const a=mod(m,60)/60*2*Math.PI;hb.mh.setAttribute('x2',Math.sin(a)*25);hb.mh.setAttribute('y2',-Math.cos(a)*25);
-   const h0=sc.hub[hb.n];
-   if(h0==null)hb.lab.textContent=hb.n;
-   else{const k=Math.round((m-h0)/per),pm=h0+k*per,b=mod(pm,60)/60*2*Math.PI;   // the pulse nearest to now: its clock minute
-    hb.hh.setAttribute('x2',Math.sin(b)*23);hb.hh.setAttribute('y2',-Math.cos(b)*23);hb.lab.textContent=`${hb.n} ${mm(pm)}`;}
-   let at=0;for(const t of tr)if(hb.n in t.pass&&Math.abs(mod(m-t.pass[hb.n]+per/2,per)-per/2)<=DW/2)at++;
-   hb.ring.setAttribute('opacity',at?.9:0);hb.ring.setAttribute('stroke',at>=4?'var(--ok)':'var(--bad)');}};}
+   const [a,b]=t.pts,ang=Math.atan2(b[1]-a[1],b[0]-a[0])*180/Math.PI,ox=-(b[1]-a[1]),oy=b[0]-a[0],L=Math.hypot(ox,oy);
+   t.r.setAttribute('opacity',1);t.r.setAttribute('transform',`translate(${pos[0]+ox/L*8},${pos[1]+oy/L*8}) rotate(${ang}) translate(-12,-5)`);}
+  for(const hb of hubs){const a=mod(m,60)/60*2*Math.PI;hb.mh.setAttribute('x2',Math.sin(a)*21);hb.mh.setAttribute('y2',-Math.cos(a)*21);
+   const k=at[hb.n]?at[hb.n].size:0;
+   hb.ring.setAttribute('opacity',k?.9:0);hb.ring.setAttribute('stroke',k>=2?'var(--ok)':'var(--bad)');}};}
 function frame(ts){const dt=last?(ts-last)/1000:0;last=ts;T+=dt*4;if(dyn)dyn(T);requestAnimationFrame(frame);}   // 4 timetable minutes per second
 document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{build(+b.dataset.s);history.replaceState(null,'','#'+(+b.dataset.s+1));});
 build(Math.max(0,Math.min(2,(parseInt(location.hash.slice(1))||1)-1)));requestAnimationFrame(frame);

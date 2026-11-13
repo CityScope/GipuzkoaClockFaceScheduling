@@ -134,7 +134,7 @@ def main():
 <h2>Regions</h2><div class="grid">{''.join(cards)}</div>
 <h2>Explainers</h2><div class="links">
 <a href="explain/clock-face/"><b>Clock-face hub</b></a>
-<a href="explain/symmetry/"><b>Why symmetry</b></a></div>
+<a href="explain/symmetry/"><b>Integrated clock-face</b></a></div>
 <h2>Method</h2><div class="links">
 <a href="docs/rules.html"><b>Rules</b></a>
 <a href="docs/literature.html"><b>Literature</b></a>
